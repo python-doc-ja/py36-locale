@@ -8,7 +8,7 @@ install:
 - pwd
 - ls -la
 - git clone https://github.com/python-doc-ja/py36.git py36
-- git clone --depth=5 -b intl-3.5 https://github.com/python-doc-ja/cpython-doc-intl.git cpython
+- git clone --depth=5 -b intl-3.6 https://github.com/python-doc-ja/cpython-doc-intl.git cpython
 - cd cpython/Doc
 - ln -s ../../py36-locale locale
 - ls -lF locale
