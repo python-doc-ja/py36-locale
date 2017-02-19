@@ -4139,6 +4139,10 @@ msgid ""
 "``b'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'``. ASCII decimal "
 "digits are those byte values in the sequence ``b'0123456789'``."
 msgstr ""
+"シーケンスが空でなく、かつ全てのバイト値が ASCII 文字のアルファベットまたは数字である場合は true を、そうでなければ false "
+"を返します。ここでの ASCII 文字のアルファベットとはシーケンス "
+"``b'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'`` に含まれるバイト値です。 "
+"ASCII 文字の数字とは ``b'0123456789'`` に含まれるバイト値です。"
 
 #: ../../library/stdtypes.rst:2903
 msgid ""
@@ -4147,6 +4151,9 @@ msgid ""
 "are those byte values in the sequence "
 "``b'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'``."
 msgstr ""
+"シーケンスが空でなく、かつ全てのバイト値が ASCII 文字のアルファベットである場合は true を、そうでなければ false を返します。ここでの"
+" ASCII 文字のアルファベットとはシーケンス "
+"``b'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'`` に含まれるバイト値です。"
 
 #: ../../library/stdtypes.rst:2919
 msgid ""
@@ -4154,12 +4161,16 @@ msgid ""
 "sequence is not empty, false otherwise. ASCII decimal digits are those byte "
 "values in the sequence ``b'0123456789'``."
 msgstr ""
+"シーケンスが空でなく、かつ全てのバイト値が ASCII 文字の数字である場合は true を、そうでなければ false を返します。ここでの "
+"ASCII 文字の数字とは ``b'0123456789'`` に含まれるバイト値です。"
 
 #: ../../library/stdtypes.rst:2934
 msgid ""
 "Return true if there is at least one lowercase ASCII character in the "
 "sequence and no uppercase ASCII characters, false otherwise."
 msgstr ""
+"シーケンス中に小文字アルファベットの ASCII 文字が一つ以上あり、かつ大文字アルファベットの ASCII 文字が一つも無い場合に true "
+"を返します。そうでなければ false を返します。"
 
 #: ../../library/stdtypes.rst:2944 ../../library/stdtypes.rst:2986
 #: ../../library/stdtypes.rst:3002 ../../library/stdtypes.rst:3052
@@ -4169,6 +4180,8 @@ msgid ""
 "``b'abcdefghijklmnopqrstuvwxyz'``. Uppercase ASCII characters are those byte"
 " values in the sequence ``b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'``."
 msgstr ""
+"ここでの小文字の ASCII 文字とは ``b'abcdefghijklmnopqrstuvwxyz'`` に含まれるバイト値です。また大文字の "
+"ASCII 文字とは ``b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`` に含まれるバイト値です。"
 
 #: ../../library/stdtypes.rst:2952
 msgid ""
@@ -4177,6 +4190,9 @@ msgid ""
 "those byte values in the sequence ``b' \\t\\n\\r\\x0b\\f'`` (space, tab, "
 "newline, carriage return, vertical tab, form feed)."
 msgstr ""
+"シーケンスが空でなく、かつ全てのバイト値が ASCII 空白文字である場合は true を、そうでなければ false を返します。ここでの ASCII"
+" 空白文字とはシーケンス ``b' \\t\\n\\r\\x0b\\f'`` に含まれるバイト値です "
+"(半角スペース、タブ、ラインフィード、キャリッジリターン、垂直タブ、フォームフィード) 。"
 
 #: ../../library/stdtypes.rst:2961
 msgid ""
@@ -4184,18 +4200,22 @@ msgid ""
 "empty, false otherwise. See :meth:`bytes.title` for more details on the "
 "definition of \"titlecase\"."
 msgstr ""
+"シーケンスが空でなく、かつ ASCII のタイトルケース文字列になっている場合は true を、そうでなければ false "
+"を返します。「タイトルケース文字列」の定義については :meth:`bytes.title` を参照してください。"
 
 #: ../../library/stdtypes.rst:2976
 msgid ""
 "Return true if there is at least one uppercase alphabetic ASCII character in"
 " the sequence and no lowercase ASCII characters, false otherwise."
 msgstr ""
+"シーケンス中に大文字アルファベットの ASCII 文字が一つ以上あり、かつ小文字アルファベットの ASCII 文字が一つも無い場合に true "
+"を返します。そうでなければ false を返します。"
 
 #: ../../library/stdtypes.rst:2994
 msgid ""
 "Return a copy of the sequence with all the uppercase ASCII characters "
 "converted to their corresponding lowercase counterpart."
-msgstr ""
+msgstr "シーケンスに含まれる大文字アルファベットの ASCII 文字を全て小文字アルファベットに変換したシーケンスのコピーを返します。"
 
 #: ../../library/stdtypes.rst:3019
 msgid ""
@@ -4204,6 +4224,8 @@ msgid ""
 "splitting lines. Line breaks are not included in the resulting list unless "
 "*keepends* is given and true."
 msgstr ""
+"バイナリシーケンスを ASCII の改行コードで分割し、各行をリストにして返します。このメソッドは :term:`universal newlines`"
+" アプローチで行を分割します。 *keepends* 引数に真を与えた場合を除き、改行コードは結果のリストに含まれません。"
 
 #: ../../library/stdtypes.rst:3031
 msgid ""
@@ -4211,12 +4233,17 @@ msgid ""
 "method returns an empty list for the empty string, and a terminal line break"
 " does not result in an extra line::"
 msgstr ""
+":meth:`~bytes.split` とは違って、空シーケンスに対して区切り *sep* "
+"を与えて呼び出すと空のリストを返します。またシーケンス末尾に改行コードがある場合、（訳註: "
+"その後ろに空行があるとは判断せず）余分な行を生成することはありません::"
 
 #: ../../library/stdtypes.rst:3044
 msgid ""
 "Return a copy of the sequence with all the lowercase ASCII characters "
 "converted to their corresponding uppercase counterpart and vice-versa."
 msgstr ""
+"シーケンスに含まれる小文字アルファベットの ASCII "
+"文字を全て大文字アルファベットに変換し、さらに大文字アルファベットを同様に小文字アルファベットに変換したシーケンスのコピーを返します。"
 
 #: ../../library/stdtypes.rst:3056
 msgid ""
@@ -4225,6 +4252,8 @@ msgid ""
 "conversions are symmetrical in ASCII, even though that is not generally true"
 " for arbitrary Unicode code points."
 msgstr ""
+":func:`str.swapcase()` とは違い、バイナリバージョンのこちらでは ``bin.swapcase().swapcase() == "
+"bin`` が常に成り立ちます。一般的に Unicode 文字の大文字小文字変換は対称的ではありませんが、 ASCII 文字の場合は対称的です。"
 
 #: ../../library/stdtypes.rst:3070
 msgid ""
@@ -4232,6 +4261,8 @@ msgid ""
 " uppercase ASCII character and the remaining characters are lowercase. "
 "Uncased byte values are left unmodified."
 msgstr ""
+"タイトルケース化したバイナリシーケンスを返します。具体的には、各単語が大文字アルファベットの ASCII "
+"文字で始まり、かつ残りの文字が小文字アルファベットになっているシーケンスが返ります。大文字小文字の区別が無いバイト値については変更されずそのままになります。"
 
 #: ../../library/stdtypes.rst:3079
 msgid ""
@@ -4240,12 +4271,15 @@ msgid ""
 " values in the sequence ``b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'``. All other byte "
 "values are uncased."
 msgstr ""
+"ここでの小文字の ASCII 文字とは ``b'abcdefghijklmnopqrstuvwxyz'`` に含まれるバイト値です。また大文字の "
+"ASCII 文字とは ``b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`` "
+"に含まれるバイト値です。その他のバイト値については、大文字小文字の区別はありません。"
 
 #: ../../library/stdtypes.rst:3113
 msgid ""
 "Return a copy of the sequence with all the lowercase ASCII characters "
 "converted to their corresponding uppercase counterpart."
-msgstr ""
+msgstr "シーケンスに含まれる小文字アルファベットの ASCII 文字を全て大文字アルファベットに変換したシーケンスのコピーを返します。"
 
 #: ../../library/stdtypes.rst:3134
 msgid ""
@@ -4255,10 +4289,13 @@ msgid ""
 "before. For :class:`bytes` objects, the original sequence is returned if "
 "*width* is less than or equal to ``len(seq)``."
 msgstr ""
+"長さが *width* になるよう ASCII ``b'0'`` で左詰めしたシーケンスのコピーを返します。先頭が符号接頭辞 "
+"(``b'+'``/``b'-'``) だった場合、 ``b'0'`` は符号の前ではなく *後* に挿入されます。 :class:`bytes` "
+"オブジェクトの場合、 *width* が ``len(seq)`` 以下であれば元のシーケンスが返ります。"
 
 #: ../../library/stdtypes.rst:3156
 msgid "``printf``-style Bytes Formatting"
-msgstr ""
+msgstr "``printf`` 形式での bytes の書式化"
 
 #: ../../library/stdtypes.rst:3174
 msgid ""
@@ -4267,6 +4304,8 @@ msgid ""
 "dictionaries correctly).  If the value being printed may be a tuple or "
 "dictionary, wrap it in a tuple."
 msgstr ""
+"ここで述べる書式化演算には様々な癖があり、よく間違いの元になっています "
+"(タプルや辞書を正しく表示できないなど)。もし表示する値がタプルや辞書かもしれない場合、それをタプルに包むようにしてください。"
 
 #: ../../library/stdtypes.rst:3179
 msgid ""
@@ -4277,6 +4316,10 @@ msgid ""
 " zero or more elements of *values*. The effect is similar to using the "
 ":c:func:`sprintf` in the C language."
 msgstr ""
+"bytes オブジェクト (``bytes``/``bytearray``) には固有の操作: ``%`` 演算子 (モジュロ) "
+"があります。この演算子は bytes の *書式化* または *補間* 演算子とも呼ばれます。``format % values`` (*format*"
+" は bytes オブジェクト) とすると、*format* 中の ``%`` 変換指定は *values* "
+"中のゼロ個またはそれ以上の要素で置換されます。この動作は C 言語における :c:func:`sprintf` に似ています。"
 
 #: ../../library/stdtypes.rst:3186
 msgid ""
@@ -4285,6 +4328,9 @@ msgid ""
 " items specified by the format bytes object, or a single mapping object (for"
 " example, a dictionary)."
 msgstr ""
+"*format* が単一の引数しか要求しない場合、 *values* はタプルではない単一のオブジェクトで問題ありません。 [5]_ それ以外の場合、 "
+"*values* は書式シーケンス（訳註: 先の例での *format* "
+"）中で指定された項目と正確に同じ数の要素を含むタプルか、単一のマッピング型のオブジェクト (たとえば辞書) でなければなりません。"
 
 #: ../../library/stdtypes.rst:3215
 msgid ""
@@ -4294,10 +4340,13 @@ msgid ""
 "mapping key selects the value to be formatted from the mapping.  For "
 "example:"
 msgstr ""
+"``%`` 演算子の右側の引数が辞書の場合 (またはその他のマッピング型の場合) 、 bytes "
+"オブジェクト中のフォーマットには、辞書のキーを丸括弧で囲って文字 ``'%'`` の直後に書いたものが含まれていなければ *なりません* "
+"。マップキーは書式化したい値をマッピングから選び出します。例えば:"
 
 #: ../../library/stdtypes.rst:3283
 msgid "Single byte (accepts integer or single byte objects)."
-msgstr ""
+msgstr "1 バイト (整数または要素 1 つの ``bytes``/``bytearray`` オブジェクトを受理します)"
 
 #: ../../library/stdtypes.rst:3286
 msgid "``'b'``"
@@ -4308,24 +4357,28 @@ msgid ""
 "Bytes (any object that follows the :ref:`buffer protocol <bufferobjects>` or"
 " has :meth:`__bytes__`)."
 msgstr ""
+"バイナリシーケンス (:ref:`buffer protocol <bufferobjects>` をサポートするか、 "
+":meth:`__bytes__` メソッドがあるオブジェクト)"
 
 #: ../../library/stdtypes.rst:3290
 msgid ""
 "``'s'`` is an alias for ``'b'`` and should only be used for Python2/3 code "
 "bases."
-msgstr ""
+msgstr "``'s'`` は ``'b'`` の別名です。Python 2/3 の両方を対象としたコードでのみ使用すべきです。"
 
 #: ../../library/stdtypes.rst:3293
 msgid ""
 "Bytes (converts any Python object using "
 "``repr(obj).encode('ascii','backslashreplace)``)."
 msgstr ""
+"バイナリシーケンス (Python オブジェクトを ``repr(obj).encode('ascii','backslashreplace)`` "
+"で変換します)。"
 
 #: ../../library/stdtypes.rst:3296
 msgid ""
 "``'r'`` is an alias for ``'a'`` and should only be used for Python2/3 code "
 "bases."
-msgstr ""
+msgstr "``'r'`` は ``'a'`` の別名です。Python 2/3 の両方を対象としたコードでのみ使用すべきです。"
 
 #: ../../library/stdtypes.rst:3296
 msgid "\\(7)"
@@ -4334,12 +4387,12 @@ msgstr "\\(7)"
 #: ../../library/stdtypes.rst:3331
 msgid ""
 "``b'%s'`` is deprecated, but will not be removed during the 3.x series."
-msgstr ""
+msgstr "``b'%s'`` は非推奨ですが、3.x 系では削除されません。"
 
 #: ../../library/stdtypes.rst:3334
 msgid ""
 "``b'%r'`` is deprecated, but will not be removed during the 3.x series."
-msgstr ""
+msgstr "``b'%r'`` は非推奨ですが、3.x 系では削除されません。"
 
 #: ../../library/stdtypes.rst:3344
 msgid ":pep:`461`."
@@ -4510,7 +4563,7 @@ msgstr ""
 msgid ""
 "Return a string object containing two hexadecimal digits for each byte in "
 "the buffer. ::"
-msgstr ""
+msgstr "バッファ中の各バイトを 2 つの 16 進数で表した文字列を返します::"
 
 #: ../../library/stdtypes.rst:3532
 msgid "Return the data in the buffer as a list of elements. ::"
