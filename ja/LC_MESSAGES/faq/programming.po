@@ -1104,6 +1104,10 @@ msgid ""
 " ``\"{:04d}\".format(144)`` yields ``'0144'`` and "
 "``\"{:.3f}\".format(1.0/3.0)`` yields ``'0.333'``."
 msgstr ""
+"例えば、144 という数を '144' という文字列に変換したいなら、組み込み型のコンストラクタ :func:`str` を使ってください。\n"
+"十六進数や八進数にしたければ、組み込み関数の :func:`hex` や :func:`oct` を使ってください。\n"
+"手の込んだフォーマット形式を使うなら、 :ref:`f-strings` と :ref:`formatstrings` の節を参照してください。\n"
+"例えば、 ``\"{:04d}\".format(144)`` は ``'0144'`` になり、 ``\"{:.3f}\".format(1.0/3.0)`` は ``'0.333'`` になります。"
 
 #: ../../faq/programming.rst:847
 msgid "How do I modify a string in place?"
