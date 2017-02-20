@@ -44,7 +44,7 @@ msgid "Open an LZMA-compressed file in binary or text mode, returning a :term:`f
 msgstr ""
 
 #: ../../library/lzma.rst:41
-msgid "The *filename* argument can be either an actual file name (given as a :class:`str`, :class:`bytes` or :term:`path-like object` object), in which case the named file is opened, or it can be an existing file object to read from or write to."
+msgid "The *filename* argument can be either an actual file name (given as a :class:`str`, :class:`bytes` or :term:`path-like <path-like object>` object), in which case the named file is opened, or it can be an existing file object to read from or write to."
 msgstr ""
 
 #: ../../library/lzma.rst:46
@@ -83,7 +83,7 @@ msgid "Open an LZMA-compressed file in binary mode."
 msgstr ""
 
 #: ../../library/lzma.rst:76
-msgid "An :class:`LZMAFile` can wrap an already-open :term:`file object`, or operate directly on a named file. The *filename* argument specifies either the file object to wrap, or the name of the file to open (as a :class:`str`, :class:`bytes` or :term:`path-like object` object). When wrapping an existing file object, the wrapped file will not be closed when the :class:`LZMAFile` is closed."
+msgid "An :class:`LZMAFile` can wrap an already-open :term:`file object`, or operate directly on a named file. The *filename* argument specifies either the file object to wrap, or the name of the file to open (as a :class:`str`, :class:`bytes` or :term:`path-like <path-like object>` object). When wrapping an existing file object, the wrapped file will not be closed when the :class:`LZMAFile` is closed."
 msgstr ""
 
 #: ../../library/lzma.rst:83

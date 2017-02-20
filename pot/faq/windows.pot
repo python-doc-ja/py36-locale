@@ -224,38 +224,38 @@ msgid "Under any editor, mixing tabs and spaces is a bad idea.  MSVC is no diffe
 msgstr ""
 
 #: ../../faq/windows.rst:303
-msgid "If you suspect mixed tabs and spaces are causing problems in leading whitespace, run Python with the :option:`-t` switch or run ``Tools/Scripts/tabnanny.py`` to check a directory tree in batch mode."
+msgid "Python raises :exc:`IndentationError` or :exc:`TabError` if mixed tabs and spaces are causing problems in leading whitespace. You may also run the :mod:`tabnanny` module to check a directory tree in batch mode."
 msgstr ""
 
-#: ../../faq/windows.rst:309
+#: ../../faq/windows.rst:310
 msgid "How do I check for a keypress without blocking?"
 msgstr ""
 
-#: ../../faq/windows.rst:311
+#: ../../faq/windows.rst:312
 msgid "Use the msvcrt module.  This is a standard Windows-specific extension module. It defines a function ``kbhit()`` which checks whether a keyboard hit is present, and ``getch()`` which gets one character without echoing it."
 msgstr ""
 
-#: ../../faq/windows.rst:317
+#: ../../faq/windows.rst:318
 msgid "How do I emulate os.kill() in Windows?"
 msgstr ""
 
-#: ../../faq/windows.rst:319
+#: ../../faq/windows.rst:320
 msgid "Prior to Python 2.7 and 3.2, to terminate a process, you can use :mod:`ctypes`::"
 msgstr ""
 
-#: ../../faq/windows.rst:329
+#: ../../faq/windows.rst:330
 msgid "In 2.7 and 3.2, :func:`os.kill` is implemented similar to the above function, with the additional feature of being able to send :kbd:`Ctrl+C` and :kbd:`Ctrl+Break` to console subprocesses which are designed to handle those signals. See :func:`os.kill` for further details."
 msgstr ""
 
-#: ../../faq/windows.rst:335
+#: ../../faq/windows.rst:336
 msgid "How do I extract the downloaded documentation on Windows?"
 msgstr ""
 
-#: ../../faq/windows.rst:337
+#: ../../faq/windows.rst:338
 msgid "Sometimes, when you download the documentation package to a Windows machine using a web browser, the file extension of the saved file ends up being .EXE. This is a mistake; the extension should be .TGZ."
 msgstr ""
 
-#: ../../faq/windows.rst:341
+#: ../../faq/windows.rst:342
 msgid "Simply rename the downloaded file to have the .TGZ extension, and WinZip will be able to handle it.  (If your copy of WinZip doesn't, get a newer one from https://www.winzip.com.)"
 msgstr ""
 

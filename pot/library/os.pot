@@ -2090,7 +2090,9 @@ msgid "Return the value of the extended filesystem attribute *attribute* for *pa
 msgstr ""
 
 #: ../../library/os.rst:2861
-msgid "Accepts a :term:`path-like object` fpr *path* and *attribute*."
+#: ../../library/os.rst:2889
+#: ../../library/os.rst:2912
+msgid "Accepts a :term:`path-like object` for *path* and *attribute*."
 msgstr ""
 
 #: ../../library/os.rst:2867
@@ -2099,11 +2101,6 @@ msgstr ""
 
 #: ../../library/os.rst:2881
 msgid "Removes the extended filesystem attribute *attribute* from *path*. *attribute* should be bytes or str (directly or indirectly through the :class:`PathLike` interface). If it is a string, it is encoded with the filesystem encoding."
-msgstr ""
-
-#: ../../library/os.rst:2889
-#: ../../library/os.rst:2912
-msgid "Accepts a :term:`path-like object` for *path* and *attribute*."
 msgstr ""
 
 #: ../../library/os.rst:2895
