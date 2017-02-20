@@ -528,6 +528,10 @@ msgid ""
 "Wrong <https://www.youtube.com/watch?v=jG7vhMMXagQ>`_, and start celebrating"
 " `Tau day <http://tauday.com/>`_ by eating twice as much pie!"
 msgstr ""
+"数学定数 τ = 6.283185... (利用可能な精度まで) です。タウは2πに等しい円定数で、円周と半径の比です。タウについて学ぶには Vi "
+"Hart のビデオ `Pi is (still) Wrong "
+"<https://www.youtube.com/watch?v=jG7vhMMXagQ>`_ をチェックして、パイを二倍食べて `Tau day "
+"<http://tauday.com/>`_ を祝い始めましょう！"
 
 #: ../../library/math.rst:441
 msgid ""

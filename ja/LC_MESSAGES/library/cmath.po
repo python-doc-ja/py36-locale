@@ -320,29 +320,29 @@ msgstr "定数 *e* (自然対数の底)で、浮動小数点数です。"
 
 #: ../../library/cmath.rst:258
 msgid "The mathematical constant *τ*, as a float."
-msgstr ""
+msgstr "数学定数 *τ* で、浮動小数点数です。"
 
 #: ../../library/cmath.rst:264
 msgid "Floating-point positive infinity. Equivalent to ``float('inf')``."
-msgstr ""
+msgstr "浮動小数点数の正の無限大です。``float('inf')`` と等価です。"
 
 #: ../../library/cmath.rst:270
 msgid ""
 "Complex number with zero real part and positive infinity imaginary part. "
 "Equivalent to ``complex(0.0, float('inf'))``."
-msgstr ""
+msgstr "実部がゼロ、虚部が正の無限大の複素数です。``complex(0.0, float('inf'))`` と等価です。"
 
 #: ../../library/cmath.rst:277
 msgid ""
 "A floating-point \"not a number\" (NaN) value.  Equivalent to "
 "``float('nan')``."
-msgstr ""
+msgstr "浮動小数点数の非数 \"not a number\" (NaN) です。``float('nan')`` と等価です。"
 
 #: ../../library/cmath.rst:284
 msgid ""
 "Complex number with zero real part and NaN imaginary part. Equivalent to "
 "``complex(0.0, float('nan'))``."
-msgstr ""
+msgstr "実部がゼロ、虚部が NaN の複素数です。``complex(0.0, float('nan'))`` と等価です。"
 
 #: ../../library/cmath.rst:292
 msgid ""

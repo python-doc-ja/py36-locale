@@ -23,11 +23,11 @@ msgstr "What's New In Python 3.6"
 
 #: ../../whatsnew/3.6.rst:5
 msgid "|release|"
-msgstr ""
+msgstr "|release|"
 
 #: ../../whatsnew/3.6.rst:6
 msgid "|today|"
-msgstr ""
+msgstr "|today|"
 
 #: ../../whatsnew/3.6.rst:7
 msgid "Elvis Pranskevichus <elvis@magic.io>, Yury Selivanov <yury@magic.io>"
@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:56
 msgid ":pep:`494` - Python 3.6 Release Schedule"
-msgstr ""
+msgstr ":pep:`494` - Python 3.6 リリース予定"
 
 #: ../../whatsnew/3.6.rst:60
 msgid "Summary -- Release highlights"
@@ -70,7 +70,7 @@ msgstr ":ref:`PEP 526 <whatsnew36-pep526>`、変数アノテーションのシ�
 
 #: ../../whatsnew/3.6.rst:70
 msgid ":ref:`PEP 525 <whatsnew36-pep525>`, asynchronous generators."
-msgstr ":ref:`PEP 525 <whatsnew36-pep525>`、非同期ジェネレータ"
+msgstr ":ref:`PEP 525 <whatsnew36-pep525>`、非同期ジェネレータ。"
 
 #: ../../whatsnew/3.6.rst:72
 msgid ":ref:`PEP 530 <whatsnew36-pep530>`: asynchronous comprehensions."
@@ -156,6 +156,7 @@ msgid ""
 "The :mod:`datetime` module has gained support for :ref:`Local Time "
 "Disambiguation <whatsnew36-pep495>`."
 msgstr ""
+":mod:`datetime` モジュールで :ref:`地域時間の曖昧さ回避 <whatsnew36-pep495>` がサポートされました。"
 
 #: ../../whatsnew/3.6.rst:122
 msgid ""
@@ -252,14 +253,14 @@ msgstr "新しい機能"
 
 #: ../../whatsnew/3.6.rst:183
 msgid "PEP 498: Formatted string literals"
-msgstr ""
+msgstr "PEP 498: 書式化済み文字列リテラル"
 
 #: ../../whatsnew/3.6.rst:185
 msgid ""
 ":pep:`498` introduces a new kind of string literals: *f-strings*, or "
 ":ref:`formatted string literals <f-strings>`."
 msgstr ""
-":pep:`498` は新たな種類の文字列リテラル、すなわち *f-strings* :ref:`書式化済み文字列リテラル <f-strings>` "
+":pep:`498` は新たな種類の文字列リテラル、すなわち *f-strings*、 :ref:`書式化済み文字列リテラル <f-strings>` "
 "を導入しました。"
 
 #: ../../whatsnew/3.6.rst:188
@@ -331,6 +332,8 @@ msgid ""
 "<http://github.com/python/mypy>`_, `pytype "
 "<http://github.com/google/pytype>`_, PyCharm, etc."
 msgstr ""
+"新構文を使用する、あるいは使用予定のツール: `mypy <http://github.com/python/mypy>`_, `pytype "
+"<http://github.com/google/pytype>`_, PyCharm, etc."
 
 #: ../../whatsnew/3.6.rst:250
 msgid "PEP 515: Underscores in Numeric Literals"
@@ -383,7 +386,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:299
 msgid "The new syntax allows for faster and more concise code."
-msgstr "新たな構文によりより速く、より簡潔にコードを書くことができます。"
+msgstr "新たな構文のおかげでより速く、より簡潔にコードを書くことができます。"
 
 #: ../../whatsnew/3.6.rst:303
 msgid ":pep:`525` -- Asynchronous Generators"
@@ -535,7 +538,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:470
 msgid "PEP 495: Local Time Disambiguation"
-msgstr ""
+msgstr "PEP 495: 地域時間の曖昧さ回避"
 
 #: ../../whatsnew/3.6.rst:472
 msgid ""
@@ -545,6 +548,8 @@ msgid ""
 "information displayed on a local clock (or stored in a Python datetime "
 "instance) is insufficient to identify a particular moment in time."
 msgstr ""
+"世界の大抵の場所で、地域時計が1日繰り下げられることがこれまでありましたし、これからもあるでしょう。そういった時に、同じ日に同じ時間を指す間隔があります。そういった状況では地域時計が表示する"
+" (あるいは Python の datetime インスタンスが格納する) 情報では、時間内の特定の瞬間を識別することはできません。"
 
 #: ../../whatsnew/3.6.rst:478
 msgid ""
@@ -553,6 +558,8 @@ msgid ""
 "differentiate between two moments in time for which local times are the "
 "same::"
 msgstr ""
+":pep:`495` は時間内の地域時間が同じ二つの瞬間を区別するために、新たな *fold* 属性を "
+":class:`datetime.datetime` インスタンスならびに :class:`datetime.time` クラスに追加しました。"
 
 #: ../../whatsnew/3.6.rst:493
 msgid ""
@@ -560,6 +567,8 @@ msgid ""
 "value ``0`` for all instances except those that represent the second "
 "(chronologically) moment in time in an ambiguous case."
 msgstr ""
+":attr:`fold <datetime.datetime.fold>` 属性の値は、曖昧な場合に時間内の二番目の (年代的) "
+"瞬間を表しているものを除く全てのインスタンスで ``0`` です。"
 
 #: ../../whatsnew/3.6.rst:500
 msgid ":pep:`495` -- Local Time Disambiguation"
@@ -607,7 +616,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:531
 msgid "PEP 528: Change Windows console encoding to UTF-8"
-msgstr ""
+msgstr "PEP 528: Windows コンソールのエンコーディングを UTF-8 に変更"
 
 #: ../../whatsnew/3.6.rst:533
 msgid ""
@@ -667,7 +676,7 @@ msgstr "PEP 468: キーワード引数の順番の保持"
 msgid ""
 "``**kwargs`` in a function signature is now guaranteed to be an insertion-"
 "order-preserving mapping."
-msgstr ""
+msgstr "関数シグニチャにおける ``**kwargs`` は挿入順が保証されるマッピングであることが保証されるようになりました。"
 
 #: ../../whatsnew/3.6.rst:576
 msgid ":pep:`468` -- Preserving Keyword Argument Order"
@@ -766,11 +775,11 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:647
 msgid "Newly allocated memory is filled with the byte ``0xCB``"
-msgstr "新たに割り当てられたメモリが ``0xCB`` バイトで埋められます"
+msgstr "新たに割り当てられたメモリを ``0xCB`` バイトで埋めます"
 
 #: ../../whatsnew/3.6.rst:648
 msgid "Freed memory is filled with the byte ``0xDB``"
-msgstr "解放されたメモリは ``0xDB`` バイトで埋められます"
+msgstr "解放されたメモリを ``0xDB`` バイトで埋めます"
 
 #: ../../whatsnew/3.6.rst:649
 msgid ""
@@ -843,7 +852,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:720
 msgid "function call/return"
-msgstr ""
+msgstr "関数の呼び出し/復帰"
 
 #: ../../whatsnew/3.6.rst:722
 msgid "garbage collection started/finished"
@@ -1156,6 +1165,8 @@ msgid ""
 ":const:`cmath.nanj` to match the format used by complex repr. (Contributed "
 "by Mark Dickinson in :issue:`23229`.)"
 msgstr ""
+"新たに定数が追加されました。 :const:`math.inf` と :const:`math.nan` に対応する :const:`cmath.inf` と :const:`cmath.nan`。複素数の repr が使用する書式に対応する :const:`cmath.infj` と :const:`cmath.nanj`。\n"
+"(Contributed by Mark Dickinson in :issue:`23229`.)"
 
 #: ../../whatsnew/3.6.rst:923
 msgid "collections"
@@ -1945,6 +1956,8 @@ msgid ""
 "The :class:`~time.struct_time` attributes :attr:`tm_gmtoff` and "
 ":attr:`tm_zone` are now available on all platforms."
 msgstr ""
+":class:`~time.struct_time` の属性 :attr:`tm_gmtoff` および :attr:`tm_zone` "
+"が全てのプラットフォームで利用できるようになりました。"
 
 #: ../../whatsnew/3.6.rst:1485
 msgid "timeit"
@@ -2747,7 +2760,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:2072
 msgid "The deprecated ``asynchat.fifo`` class has been removed."
-msgstr ""
+msgstr "非推奨の ``asynchat.fifo`` クラスは削除されました。"
 
 #: ../../whatsnew/3.6.rst:2076
 msgid "Porting to Python 3.6"
@@ -2943,7 +2956,7 @@ msgstr ""
 msgid ""
 "This behavior has also been backported to earlier Python versions by "
 "Setuptools 26.0.0."
-msgstr ""
+msgstr "この挙動は Setuptools 26.0.0 により以前の Python バージョンにバックポートされました。"
 
 #: ../../whatsnew/3.6.rst:2209
 msgid ""
@@ -3046,7 +3059,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:2280
 msgid "CPython bytecode changes"
-msgstr ""
+msgstr "CPython バイトコードの変更"
 
 #: ../../whatsnew/3.6.rst:2282
 msgid ""
