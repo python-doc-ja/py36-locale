@@ -129,7 +129,7 @@ msgstr ""
 msgid ""
 "The :envvar:`PYTHONMALLOC` environment variable can be used to configure the"
 " memory allocators used by Python."
-msgstr ""
+msgstr "環境変数 :envvar:`PYTHONMALLOC` を使用して Python が利用するメモリアロケータを制御することができます。"
 
 #: ../../c-api/memory.rst:91
 msgid ""
@@ -137,6 +137,8 @@ msgid ""
 "statistics of the :ref:`pymalloc memory allocator <pymalloc>` every time a "
 "new pymalloc object arena is created, and on shutdown."
 msgstr ""
+"環境変数 :envvar:`PYTHONMALLOCSTATS` を使用して、新たなオブジェクトアリーナが生成される時と、シャットダウン時に "
+":ref:`pymalloc メモリアロケータ <pymalloc>` の統計情報を表示できます。"
 
 #: ../../c-api/memory.rst:97
 msgid "Raw Memory Interface"
@@ -473,51 +475,51 @@ msgstr ""
 
 #: ../../c-api/memory.rst:304
 msgid ":c:func:`PyMem_RawMalloc`"
-msgstr ""
+msgstr ":c:func:`PyMem_RawMalloc`"
 
 #: ../../c-api/memory.rst:305
 msgid ":c:func:`PyMem_RawRealloc`"
-msgstr ""
+msgstr ":c:func:`PyMem_RawRealloc`"
 
 #: ../../c-api/memory.rst:306
 msgid ":c:func:`PyMem_RawCalloc`"
-msgstr ""
+msgstr ":c:func:`PyMem_RawCalloc`"
 
 #: ../../c-api/memory.rst:307
 msgid ":c:func:`PyMem_RawFree`"
-msgstr ""
+msgstr ":c:func:`PyMem_RawFree`"
 
 #: ../../c-api/memory.rst:313
 msgid ":c:func:`PyMem_Malloc`,"
-msgstr ""
+msgstr ":c:func:`PyMem_Malloc`,"
 
 #: ../../c-api/memory.rst:314
 msgid ":c:func:`PyMem_Realloc`"
-msgstr ""
+msgstr ":c:func:`PyMem_Realloc`"
 
 #: ../../c-api/memory.rst:315
 msgid ":c:func:`PyMem_Calloc`"
-msgstr ""
+msgstr ":c:func:`PyMem_Calloc`"
 
 #: ../../c-api/memory.rst:316
 msgid ":c:func:`PyMem_Free`"
-msgstr ""
+msgstr ":c:func:`PyMem_Free`"
 
 #: ../../c-api/memory.rst:322
 msgid ":c:func:`PyObject_Malloc`"
-msgstr ""
+msgstr ":c:func:`PyObject_Malloc`"
 
 #: ../../c-api/memory.rst:323
 msgid ":c:func:`PyObject_Realloc`"
-msgstr ""
+msgstr ":c:func:`PyObject_Realloc`"
 
 #: ../../c-api/memory.rst:324
 msgid ":c:func:`PyObject_Calloc`"
-msgstr ""
+msgstr ":c:func:`PyObject_Calloc`"
 
 #: ../../c-api/memory.rst:325
 msgid ":c:func:`PyObject_Free`"
-msgstr ""
+msgstr ":c:func:`PyObject_Free`"
 
 #: ../../c-api/memory.rst:329
 msgid "Get the memory block allocator of the specified domain."
@@ -553,17 +555,17 @@ msgstr ""
 
 #: ../../c-api/memory.rst:350
 msgid "Setup hooks to detect bugs in the Python memory allocator functions."
-msgstr ""
+msgstr "Python メモリアロケータ関数のバグを検出するためのフックを設定します。"
 
 #: ../../c-api/memory.rst:352
 msgid ""
 "Newly allocated memory is filled with the byte ``0xCB``, freed memory is "
 "filled with the byte ``0xDB``."
-msgstr ""
+msgstr "新たに割り当てられたメモリはバイト ``0xCB`` で埋められ、解放されたメモリはバイト ``0xDB`` で埋められます。"
 
 #: ../../c-api/memory.rst:355
 msgid "Runtime checks:"
-msgstr ""
+msgstr "実行時チェック:"
 
 #: ../../c-api/memory.rst:357
 msgid ""
