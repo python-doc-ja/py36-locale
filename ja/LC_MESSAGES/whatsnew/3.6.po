@@ -27,7 +27,7 @@ msgstr "|release|"
 
 #: ../../whatsnew/3.6.rst:6
 msgid "|today|"
-msgstr "|today|"
+msgstr ""
 
 #: ../../whatsnew/3.6.rst:7
 msgid "Elvis Pranskevichus <elvis@magic.io>, Yury Selivanov <yury@magic.io>"

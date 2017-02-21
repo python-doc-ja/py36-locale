@@ -95,7 +95,7 @@ msgstr ""
 
 #: ../../glossary.rst:41
 msgid "argument"
-msgstr "引数 (argument)"
+msgstr "argument"
 
 #: ../../glossary.rst:43
 msgid ""
@@ -161,7 +161,7 @@ msgstr ""
 
 #: ../../glossary.rst:76
 msgid "asynchronous generator"
-msgstr ""
+msgstr "asynchronous generator"
 
 #: ../../glossary.rst:78
 msgid ""
@@ -186,7 +186,7 @@ msgstr ""
 
 #: ../../glossary.rst:90
 msgid "asynchronous generator iterator"
-msgstr ""
+msgstr "asynchronous generator iterator"
 
 #: ../../glossary.rst:92
 msgid "An object created by a :term:`asynchronous generator` function."
@@ -934,7 +934,7 @@ msgid ""
 "doing I/O."
 msgstr ""
 "ただし、標準あるいは外部のいくつかの拡張モジュールは、圧縮やハッシュ計算などの計算の重い処理をするときに GIL "
-"を解放するように設計されています。また、I/O 処理をするときも GIL は常に解放されます。"
+"を解除するように設計されています。また、I/O 処理をする場合 GIL は常に解除されます。"
 
 #: ../../glossary.rst:446
 msgid ""
@@ -1720,7 +1720,7 @@ msgstr ""
 
 #: ../../glossary.rst:808
 msgid "path-like object"
-msgstr ""
+msgstr "path-like object"
 
 #: ../../glossary.rst:810
 msgid ""
@@ -2077,7 +2077,7 @@ msgstr ""
 
 #: ../../glossary.rst:994
 msgid "variable annotation"
-msgstr ""
+msgstr "variable annotation"
 
 #: ../../glossary.rst:996
 msgid ""
@@ -2086,6 +2086,9 @@ msgid ""
 "are stored in the :attr:`__annotations__` special attribute of a class or "
 "module object and can be accessed using :func:`typing.get_type_hints`."
 msgstr ""
+"(変数アノテーション) モジュールの大域変数やクラス属性に関連付けられた型のメタデータ値です。構文は :ref:`annassign` "
+"節で説明されています。アノテーションはクラスやモジュールオブジェクトの :attr:`__annotations__` "
+"特殊属性に保存され、:func:`typing.get_type_hints` を使ってアクセスできます。"
 
 #: ../../glossary.rst:1002
 msgid ""
@@ -2111,7 +2114,7 @@ msgstr ""
 
 #: ../../glossary.rst:1013
 msgid "See also :mod:`venv`."
-msgstr ""
+msgstr ":mod:`venv` を参照してください。"
 
 #: ../../glossary.rst:1014
 msgid "virtual machine"

@@ -4852,7 +4852,7 @@ msgstr ""
 
 #: ../../library/os.rst:3940
 msgid "Random numbers"
-msgstr ""
+msgstr "乱数"
 
 #: ../../library/os.rst:3945
 msgid ""

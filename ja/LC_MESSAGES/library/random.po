@@ -203,7 +203,7 @@ msgstr ""
 
 #: ../../library/random.rst:111
 msgid "Functions for integers"
-msgstr ""
+msgstr "整数用の関数"
 
 #: ../../library/random.rst:116
 msgid ""
@@ -241,7 +241,7 @@ msgstr ""
 
 #: ../../library/random.rst:135
 msgid "Functions for sequences"
-msgstr ""
+msgstr "シーケンス用の関数"
 
 #: ../../library/random.rst:139
 msgid ""
@@ -284,7 +284,7 @@ msgstr ""
 
 #: ../../library/random.rst:170
 msgid "Shuffle the sequence *x* in place."
-msgstr ""
+msgstr "シーケンス *x* をインプレースにシャッフルします。"
 
 #: ../../library/random.rst:172
 msgid ""
@@ -349,7 +349,7 @@ msgstr "サンプルの大きさが母集団の大きさより大きいなら、
 
 #: ../../library/random.rst:207
 msgid "Real-valued distributions"
-msgstr ""
+msgstr "実数分布"
 
 #: ../../library/random.rst:209
 msgid ""
@@ -468,7 +468,7 @@ msgstr "ワイブル分布です。 *alpha* は尺度パラメタで、 *beta* �
 
 #: ../../library/random.rst:304
 msgid "Alternative Generator"
-msgstr ""
+msgstr "他の生成器"
 
 #: ../../library/random.rst:308
 msgid ""
@@ -524,11 +524,11 @@ msgstr "例とレシピ"
 
 #: ../../library/random.rst:337
 msgid "Basic examples::"
-msgstr ""
+msgstr "基礎的な例::"
 
 #: ../../library/random.rst:365
 msgid "Simulations::"
-msgstr ""
+msgstr "シミュレーション::"
 
 #: ../../library/random.rst:390
 msgid ""
@@ -551,7 +551,7 @@ msgstr ""
 msgid ""
 "Simulation of arrival times and service deliveries in a single server "
 "queue::"
-msgstr ""
+msgstr "一つのサーバーキューにおける到達時間とサービス提供のシミュレーション::"
 
 #: ../../library/random.rst:462
 msgid ""

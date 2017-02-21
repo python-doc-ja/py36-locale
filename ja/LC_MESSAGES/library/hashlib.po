@@ -72,7 +72,7 @@ msgid ""
 "for data larger than 2047 bytes at object creation or on update."
 msgstr ""
 "マルチスレッドにおける良好なパフォーマンスを得るために、オブジェクトの生成時または更新時に与えるデータが 2047 バイトを超えている場合、Python"
-" :term:`GIL` が解放されます。"
+" :term:`GIL` が解除されます。"
 
 #: ../../library/hashlib.rst:61
 msgid ""
@@ -102,7 +102,7 @@ msgstr ""
 
 #: ../../library/hashlib.rst:80
 msgid ":func:`blake2b` and :func:`blake2s` were added."
-msgstr ""
+msgstr ":func:`blake2b` と :func:`blake2s` が追加されました。"
 
 #: ../../library/hashlib.rst:83
 msgid ""
