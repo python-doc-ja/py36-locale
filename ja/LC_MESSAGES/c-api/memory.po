@@ -259,7 +259,7 @@ msgstr ""
 #: ../../c-api/memory.rst:168
 msgid ""
 "By default, these functions use :ref:`pymalloc memory allocator <pymalloc>`."
-msgstr ""
+msgstr "デフォルトではこれらの関数は :ref:`pymalloc メモリアロケータ <pymalloc>` を利用します。"
 
 #: ../../c-api/memory.rst:172
 msgid ""
@@ -270,7 +270,7 @@ msgstr "これらの関数を呼ぶときには、 :term:`GIL <global interprete
 #: ../../c-api/memory.rst:177
 msgid ""
 "The default allocator is now pymalloc instead of system :c:func:`malloc`."
-msgstr ""
+msgstr "デフォルトのアロケータがシステムの :c:func:`malloc` から pymalloc になりました。"
 
 #: ../../c-api/memory.rst:184
 msgid ""
