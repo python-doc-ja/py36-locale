@@ -41,6 +41,10 @@ msgid ""
 ":class:`Generic`.  For full specification please see :pep:`484`.  For a "
 "simplified introduction to type hints see :pep:`483`."
 msgstr ""
+"このモジュールは :pep:`484` と :pep:`526` によって規定された型ヒントをサポートします。最も基本的なサポートとして "
+":data:`Any`、 :data:`Union`、 :data:`Tuple`、 :data:`Callable`、 "
+":class:`TypeVar` および :class:`Generic` 型を含みます。完全な仕様は :pep:`484` "
+"を参照してください。型ヒントの簡単な導入は :pep:`483` を参照してください。"
 
 #: ../../library/typing.rst:27
 msgid ""

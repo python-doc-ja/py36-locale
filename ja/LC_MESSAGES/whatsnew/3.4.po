@@ -379,6 +379,9 @@ msgid ""
 "default, while when using the :mod:`venv` module :ref:`venv-api` "
 "installation of ``pip`` must be requested explicitly."
 msgstr ""
+"``pyvenv`` コマンドラインユーティリティと :mod:`venv` モジュールは、仮想環境で ``pip`` が使えるようにするために :mod:`ensurepip` モジュールを使います。\n"
+"コマンドラインユーティリティを使う際は ``pip`` はデフォルトでインストールされます。\n"
+":mod:`venv` モジュールの :ref:`venv-api` を使う際は、 ``pip`` のインストールは明示的に要求しなければなりません。"
 
 #: ../../whatsnew/3.4.rst:206
 msgid ""
@@ -1400,6 +1403,12 @@ msgid ""
 " final in Python 3.5 (possibly with a few minor additions in the area of "
 "error handling).  (Contributed by R. David Murray in :issue:`18891`.)"
 msgstr ""
+"サブモジュール :mod:`~email.contentmanager` と :mod:`~email.policy` 属性の :attr:`~email.policy.EmailPolicy.content_manager` の追加と併せて、 :class:`~email.message.Message` の対となる二つのサブクラス (:class:`.EmailMessage` と :class:`.MIMEPart`) が追加されました。\n"
+"全てのドキュメントは、 email の新規 :term:`暫定 API <provisional API>` の構成要素として追加されたこの新しいモジュールにあります。\n"
+"これらのクラスは、 email メッセージからの内容抽出や挿入を遥かに簡単に行える、数多くの新規メソッドを提供しています。\n"
+"詳細は :mod:`~email.contentmanager` のドキュメントと :ref:`email-examples` を参照してください。\n"
+"これらの API の追加作業により email6 プロジェクトの一部として計画されていた作業は、その大部分が完了しました。\n"
+"現在のところ、暫定 API 状態は Python 3.5 で最後となる予定です (可能性としてはエラー処理あたりのゾーンでは少々の些細な追加は残るかもしれません)。 (Contributed by R. David Murray in :issue:`18891`.)"
 
 #: ../../whatsnew/3.4.rst:835
 msgid "filecmp"
@@ -3659,6 +3668,8 @@ msgid ""
 "rather than symlinks even on systems where symlinks are the default.  "
 "(Contributed by Vinay Sajip in :issue:`18807`.)"
 msgstr ""
+"``pyvenv`` コマンドに、シンボリックリンクがデフォルトのシステムでもそうせずにコピーを使うようにするための ``--copies`` "
+"オプションが追加されました。 (Contributed by Vinay Sajip in :issue:`18807`.)"
 
 #: ../../whatsnew/3.4.rst:1996
 msgid ""
@@ -3667,6 +3678,9 @@ msgid ""
 "(Contributed by Nick Coghlan in :issue:`19552` as part of the :pep:`453` "
 "implementation.)"
 msgstr ""
+"``pyvenv`` コマンドにはさらに、そうしなければ自動的に仮想環境に pip がブートストラップされてしまうのを抑制するための、 "
+"``--without-pip`` オプションが追加されました。(Contributed by Nick Coghlan in "
+":issue:`19552` as part of the :pep:`453` implementation.)"
 
 #: ../../whatsnew/3.4.rst:2001
 msgid ""
@@ -4645,6 +4659,8 @@ msgid ""
 "If you use ``pyvenv`` in a script and desire that pip *not* be installed, "
 "you must add ``--without-pip`` to your command invocation."
 msgstr ""
+"スクリプト内から ``pyvenv`` を使っていて、pip がインストール *されない* ことを望むならば、コマンド呼び出しに "
+"``--without-pip`` を追加しなければなりません。"
 
 #: ../../whatsnew/3.4.rst:2466
 msgid ""

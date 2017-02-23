@@ -950,14 +950,14 @@ msgid ""
 ":`positional-only parameters <positional-only_parameter>`. Returns true on "
 "success; on failure, it returns false and raises the appropriate exception."
 msgstr ""
-"位置引数とキーワード引数の両者を取る関数の引数を解釈します。*keywords*引数は*NULL*で終端されたキーワード名の配列です。空の名前は:ref:`位置引数のみ"
-" <positional-only_parameter>`を示します。成功した場合、真を返します。失敗した場合は偽を返し、また適切な例外を発生させます。"
+"位置引数とキーワード引数の両者を取る関数の引数を解釈します。 *keywords* 引数は *NULL* で終端されたキーワード名の配列です。\n"
+"空の名前は :ref:`位置引数のみ <positional-only_parameter>` を示します。成功した場合、真を返します。失敗した場合は偽を返し、また適切な例外を発生させます。"
 
 #: ../../c-api/arg.rst:429
 msgid ""
 "Added support for :ref:`positional-only parameters <positional-"
 "only_parameter>`."
-msgstr ":ref:`位置引数のみ <positional-only_parameter>`を追加した。"
+msgstr ":ref:`位置引数のみ <positional-only_parameter>` を追加した。"
 
 #: ../../c-api/arg.rst:436
 msgid ""
