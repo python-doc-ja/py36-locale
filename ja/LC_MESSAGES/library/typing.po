@@ -267,6 +267,8 @@ msgid ""
 " for each position. In the following example, ``MyIterable`` is not generic "
 "but implicitly inherits from ``Iterable[Any]``::"
 msgstr ""
+"型引数を指定せずにジェネリッククラスを使う場合、それぞれの型引数を :class:`Any` と仮定します。\n"
+"次の例では、``MyIterable`` はジェネリックではありませんが ``Iterable[Any]`` を暗黙的に継承しています::"
 
 #: ../../library/typing.rst:284
 msgid "User defined generic type aliases are also supported. Examples::"
