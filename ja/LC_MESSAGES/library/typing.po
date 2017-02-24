@@ -461,6 +461,8 @@ msgid ""
 "The only legal parameters for :class:`Type` are classes, unions of classes, "
 "and :data:`Any`. For example::"
 msgstr ""
+":class:`Type` で許されているパラメータは、クラスかクラスの直和型か :data:`Any` です。\n"
+"例えば次のようになります::"
 
 #: ../../library/typing.rst:488
 msgid ""
@@ -516,7 +518,7 @@ msgstr ":class:`collections.abc.Sized` へのエイリアス"
 
 #: ../../library/typing.rst:535
 msgid "A generic version of :class:`collections.abc.Collection`"
-msgstr ""
+msgstr ":class:`collections.abc.Collection` のジェネリック版です。"
 
 #: ../../library/typing.rst:541
 msgid "A generic version of :class:`collections.abc.Set`."
@@ -560,7 +562,7 @@ msgstr "この型の省略形として、 :class:`bytes` を上に挙げた任�
 
 #: ../../library/typing.rst:575
 msgid "A generic version of :class:`collections.deque`."
-msgstr ""
+msgstr ":class:`collections.deque` のジェネリック版です。"
 
 #: ../../library/typing.rst:581
 msgid ""
@@ -621,7 +623,7 @@ msgstr ":class:`collections.abc.AsyncIterator` のジェネリック版です。
 
 #: ../../library/typing.rst:647
 msgid "A generic version of :class:`contextlib.AbstractContextManager`."
-msgstr ""
+msgstr ":class:`contextlib.AbstractContextManager` のジェネリック版です。"
 
 #: ../../library/typing.rst:653
 msgid ""
