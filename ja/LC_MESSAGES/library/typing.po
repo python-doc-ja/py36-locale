@@ -267,7 +267,7 @@ msgid ""
 " for each position. In the following example, ``MyIterable`` is not generic "
 "but implicitly inherits from ``Iterable[Any]``::"
 msgstr ""
-"型引数を指定せずにジェネリッククラスを使う場合、それぞれの型引数を :class:`Any` と仮定します。\n"
+"型引数を指定せずにジェネリッククラスを使う場合、それぞれの型引数を :data:`Any` と仮定します。\n"
 "次の例では、``MyIterable`` はジェネリックではありませんが ``Iterable[Any]`` を暗黙的に継承しています::"
 
 #: ../../library/typing.rst:284
@@ -294,7 +294,7 @@ msgid ""
 "every type as being compatible with :data:`Any` and :data:`Any` as being "
 "compatible with every type."
 msgstr ""
-":data:`Any` は特別な種類の型です。静的型検査器はすべての型を :class:`Any` と互換として扱い、 :class:`Any` "
+":data:`Any` は特別な種類の型です。静的型検査器はすべての型を :data:`Any` と互換として扱い、 :data:`Any` "
 "をすべての型と互換として扱います。"
 
 #: ../../library/typing.rst:315
