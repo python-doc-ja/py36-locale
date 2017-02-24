@@ -1182,11 +1182,11 @@ msgstr ":exc:`ImportError`"
 
 #: ../../c-api/exceptions.rst:792
 msgid ":c:data:`PyExc_ModuleNotFoundError`"
-msgstr ""
+msgstr ":c:data:`PyExc_ModuleNotFoundError`"
 
 #: ../../c-api/exceptions.rst:792
 msgid ":exc:`ModuleNotFoundError`"
-msgstr ""
+msgstr ":exc:`ModuleNotFoundError`"
 
 #: ../../c-api/exceptions.rst:794
 msgid ":c:data:`PyExc_IndexError`"

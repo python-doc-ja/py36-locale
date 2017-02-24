@@ -287,12 +287,16 @@ msgid ""
 "Return a C :c:type:`unsigned long long` representation of *pylong*.  "
 "*pylong* must be an instance of :c:type:`PyLongObject`."
 msgstr ""
+"*pylong* を表す C の :c:type:`unsigned long long` を返します。 *pylong* は "
+":c:type:`PyLongObject` のインスタンスでなければなりません。"
 
 #: ../../c-api/long.rst:221
 msgid ""
 "Raise :exc:`OverflowError` if the value of *pylong* is out of range for an "
 ":c:type:`unsigned long long`."
 msgstr ""
+"もし *pylong* の値が :c:type:`unsigned long long` の範囲外であれば、 :exc:`OverflowError` "
+"を送出します。"
 
 #: ../../c-api/long.rst:224
 msgid ""

@@ -2096,6 +2096,8 @@ msgid ""
 "it to be run as any other test case.  Running a :class:`TestSuite` instance "
 "is the same as iterating over the suite, running each test individually."
 msgstr ""
+"このクラスは、個々のテストケースやテストスイートの集約を示します。通常のテストケースと同じようにテストランナーで実行するためのインタフェースを備えています。"
+" :class:`TestSuite` インスタンスを実行することはスイートの繰り返しを使って個々のテストを実行することと同じです。"
 
 #: ../../library/unittest.rst:1473
 msgid ""
@@ -2252,6 +2254,7 @@ msgid ""
 "Return a suite of all test cases contained in the :class:`TestCase`\\ "
 "-derived :class:`testCaseClass`."
 msgstr ""
+":class:`TestCase` の派生クラス :class:`testCaseClass` に含まれる全テストケースのスイートを返します。"
 
 #: ../../library/unittest.rst:1579
 msgid ""
@@ -2271,6 +2274,8 @@ msgid ""
 "searches *module* for classes derived from :class:`TestCase` and creates an "
 "instance of the class for each test method defined for the class."
 msgstr ""
+"指定したモジュールに含まれる全テストケースのスイートを返します。このメソッドは *module* 内の :class:`TestCase` "
+"派生クラスを検索し、見つかったクラスのテストメソッドごとにクラスのインスタンスを作成します。"
 
 #: ../../library/unittest.rst:1595
 msgid ""
@@ -2313,7 +2318,7 @@ msgstr ""
 
 #: ../../library/unittest.rst:1618
 msgid "Return a suite of all test cases given a string specifier."
-msgstr ""
+msgstr "文字列で指定される全テストケースを含むスイートを返します。"
 
 #: ../../library/unittest.rst:1620
 msgid ""

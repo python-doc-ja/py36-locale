@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Masato HASHIMOTO <cabezon.hashimoto@gmail.com>, 2017\n"
+"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,7 +27,7 @@ msgstr "**ソースコード:** :source:`Lib/asyncore.py`"
 
 #: ../../library/asyncore.rst:15
 msgid "Please use :mod:`asyncio` instead."
-msgstr ""
+msgstr "代わりにモジュール :mod:`asyncio` を使ってください。"
 
 #: ../../library/asyncore.rst:22
 msgid ""
