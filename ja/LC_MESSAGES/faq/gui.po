@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>, 2017\n"
+"Last-Translator: okazaki jun <okazakijun54392@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -153,7 +153,7 @@ msgstr ""
 
 #: ../../faq/gui.rst:81
 msgid "Kivy"
-msgstr ""
+msgstr "Kivy"
 
 #: ../../faq/gui.rst:83
 msgid ""
@@ -162,11 +162,13 @@ msgid ""
 "(Android, iOS).  It is written in Python and Cython, and can use a range of "
 "windowing backends."
 msgstr ""
+"Kivy <https://kivy.org/> "
+"`_は、デスクトップオペレーティングシステム（Windows、macOS、Linux）とモバイルデバイス（Android、iOS）の両方をサポートするクロスプラットフォームのGUIライブラリです。これはPythonとCythonで書かれており、一連のウィンドウのバックエンド処理で使用できます。"
 
 #: ../../faq/gui.rst:88
 msgid ""
 "Kivy is free and open source software distributed under the MIT license."
-msgstr ""
+msgstr "Kivyは、MITライセンスで配布されるライセンスフリーでオープンソースのソフトウェアです。"
 
 #: ../../faq/gui.rst:91
 msgid "FLTK"
