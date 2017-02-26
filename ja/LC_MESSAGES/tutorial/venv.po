@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Arihiro TAKASE <artakase@gmail.com>, 2017\n"
+"Last-Translator: hitsumabushi.org <053023.math@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -54,6 +54,8 @@ msgid ""
 "self-contained directory tree that contains a Python installation for a "
 "particular version of Python, plus a number of additional packages."
 msgstr ""
+"この問題の解決策は :term:`仮想環境<virtual environment>` を作ることです。仮想環境とは、特定のバージョンの Python "
+"と幾つかの追加パッケージを含んだ Python インストールを構成するディレクトリです。"
 
 #: ../../tutorial/venv.rst:27
 msgid ""
@@ -64,6 +66,10 @@ msgid ""
 "application B requires a library be upgraded to version 3.0, this will not "
 "affect application A's environment."
 msgstr ""
+"別のアプリケーションはそれぞれ別の仮想環境を使うことができます。先の例にあった要求の衝突を解決する場合、アプリケーションAが固有の仮想環境を持ってそこにライブラリのバージョン"
+" 1.0 をインストールし、アプリケーションBが持つ別の仮想環境にライブラリのバージョン 2.0 "
+"をインストールすることができます。そしてアプリケーションBがライブラリのバージョンを 3.0 "
+"に更新することを要求する場合も、アプリケーションAに影響しません。"
 
 #: ../../tutorial/venv.rst:36
 msgid "Creating Virtual Environments"
@@ -77,6 +83,9 @@ msgid ""
 "your system, you can select a specific Python version by running ``python3``"
 " or whichever version you want."
 msgstr ""
+"仮想環境の作成と管理を行うためのモジュールが :mod:`venv` です。 :mod:`venv` は通常利用可能なもっとも新しいバージョンの "
+"Python をインストールします。複数のバージョンの Python がインストールされている場合、 ``python3`` "
+"のように利用したいバージョンを指定して実行することで Python バージョンを選択できます。"
 
 #: ../../tutorial/venv.rst:44
 msgid ""
@@ -84,6 +93,7 @@ msgid ""
 "place it, and run the :mod:`venv` module as a script with the directory "
 "path::"
 msgstr ""
+"仮想環境を作るには、仮想環境を置くディレクトリを決めて、 そのディレクトリのパスを指定して、 :mod:`venv` をスクリプトとして実行します::"
 
 #: ../../tutorial/venv.rst:49
 msgid ""
@@ -96,7 +106,7 @@ msgstr ""
 
 #: ../../tutorial/venv.rst:53
 msgid "Once you've created a virtual environment, you may activate it."
-msgstr ""
+msgstr "仮想環境を作ったら、それを有効化する必要があります。"
 
 #: ../../tutorial/venv.rst:55
 msgid "On Windows, run::"
@@ -122,6 +132,8 @@ msgid ""
 "running ``python`` will get you that particular version and installation of "
 "Python. For example:"
 msgstr ""
+"仮想環境を有効化すると、シェルのプロンプトに利用中の仮想環境が表示されるようになり、``python`` を実行するとその仮想環境の Python "
+"を実行するようになります::"
 
 #: ../../tutorial/venv.rst:87
 msgid "Managing Packages with pip"
@@ -135,6 +147,10 @@ msgid ""
 "Package Index by going to it in your web browser, or you can use ``pip``'s "
 "limited search feature:"
 msgstr ""
+" :program:`pip` と呼ばれるプログラムでパッケージをインストール、アップグレード、削除することができます。デフォルトでは ``pip`` "
+"は Python Package Index <https://pypi.python.org/pypi> "
+"からパッケージをインストールします。ブラウザで Python Package Index をブラウズすることもできますし、 ``pip`` "
+"の限定的な検索機能を使うこともできます::"
 
 #: ../../tutorial/venv.rst:105
 msgid ""
@@ -150,13 +166,13 @@ msgstr ""
 msgid ""
 "You can install the latest version of a package by specifying a package's "
 "name:"
-msgstr ""
+msgstr "パッケージ名を指定してそのパッケージの最新版をインストールすることができます::"
 
 #: ../../tutorial/venv.rst:120
 msgid ""
 "You can also install a specific version of a package by giving the package "
 "name  followed by ``==`` and the version number:"
-msgstr ""
+msgstr "パッケージ名のあとに ``==`` とバージョン番号を付けることで、特定のバージョンのパッケージをインストールすることもできます::"
 
 #: ../../tutorial/venv.rst:131
 msgid ""
@@ -165,6 +181,9 @@ msgid ""
 "number to get that version, or you can run ``pip install --upgrade`` to "
 "upgrade the package to the latest version:"
 msgstr ""
+"同じコマンドを再び実行した場合、``pip`` "
+"は要求されたバージョンがインストール済みだと表示して何もしません。別のバージョン番号を指定すればそのバージョンをインストールしますし、``pip "
+"install --upgrade`` を実行すればそのパッケージを最新版に更新します::"
 
 #: ../../tutorial/venv.rst:146
 msgid ""
@@ -174,13 +193,13 @@ msgstr "``pip uninstall`` コマンドに削除するパッケージ名を1つ�
 
 #: ../../tutorial/venv.rst:149
 msgid "``pip show`` will display information about a particular package:"
-msgstr ""
+msgstr "``pip show`` は指定されたパッケージの情報を表示します::"
 
 #: ../../tutorial/venv.rst:166
 msgid ""
 "``pip list`` will display all of the packages installed in the virtual "
 "environment:"
-msgstr ""
+msgstr "``pip list`` は仮想環境にインストールされた全てのパッケージを表示します::"
 
 #: ../../tutorial/venv.rst:178
 msgid ""
@@ -188,6 +207,8 @@ msgid ""
 "the output uses the format that ``pip install`` expects. A common convention"
 " is to put this list in a ``requirements.txt`` file:"
 msgstr ""
+"``pip freeze`` はインストールされたパッケージ一覧を、``pip install`` "
+"が解釈するフォーマットで生成します。一般的な慣習として、このリストを ``requirements.txt`` というファイルに保存します::"
 
 #: ../../tutorial/venv.rst:190
 msgid ""
@@ -195,6 +216,9 @@ msgid ""
 "shipped as part of an application.  Users can then install all the necessary"
 " packages with ``install -r``:"
 msgstr ""
+"``requirements.txt`` "
+"をバージョン管理システムにコミットして、アプリケーションの一部として配布することができます。ユーザーは必要なパッケージを ``install -r`` "
+"でインストールできます::"
 
 #: ../../tutorial/venv.rst:207
 msgid ""

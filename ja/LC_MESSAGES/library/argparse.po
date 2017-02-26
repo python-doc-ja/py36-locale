@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: shirou - しろう <shirou.faw@gmail.com>, 2017\n"
+"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -232,7 +232,7 @@ msgstr "conflict_handler_ - 衝突するオプションを解決する方法 (�
 #: ../../library/argparse.rst:177
 msgid ""
 "add_help_ - Add a ``-h/--help`` option to the parser (default: ``True``)"
-msgstr ""
+msgstr "add_help_ - ``-h/--help`` オプションをパーサーに追加する (デフォルト: ``True``)"
 
 #: ../../library/argparse.rst:179
 msgid ""

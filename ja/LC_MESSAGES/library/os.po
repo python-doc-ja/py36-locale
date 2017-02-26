@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: cocoatomo <cocoatomo77@gmail.com>, 2017\n"
+"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1180,7 +1180,7 @@ msgstr ""
 #: ../../library/os.rst:2875 ../../library/os.rst:3016
 #: ../../library/os.rst:3329
 msgid "Accepts a :term:`path-like object`."
-msgstr ""
+msgstr ":term:`path-like object` を受け入れるようになりました。"
 
 #: ../../library/os.rst:939
 msgid ""

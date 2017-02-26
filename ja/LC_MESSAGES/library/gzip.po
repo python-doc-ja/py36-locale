@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Arihiro TAKASE <artakase@gmail.com>, 2017\n"
+"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -125,7 +125,7 @@ msgstr " ``'x'``、``'xb'``、``'xt'`` モードのサポートが追加され�
 
 #: ../../library/gzip.rst:59 ../../library/gzip.rst:156
 msgid "Accepts a :term:`path-like object`."
-msgstr ""
+msgstr ":term:`path-like object` を受け入れるようになりました。"
 
 #: ../../library/gzip.rst:64
 msgid ""

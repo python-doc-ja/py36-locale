@@ -2246,6 +2246,9 @@ msgid ""
 "formatted strings, see the :ref:`f-strings` and :ref:`formatstrings` "
 "sections.  In addition, see the :ref:`stringservices` section."
 msgstr ""
+"``str`` クラスとそのメソッドについて詳しくは、 :ref:`テキストシーケンス型 — str <textseq>` や :ref"
+":`string-methods` の節を参照してください。書式化された文字列を出力するには、 :ref:`f-strings` と :ref"
+":`string-formatting` の節を参照してください。加えて、 :ref:`stringservices` の節も参照してください。"
 
 #: ../../library/stdtypes.rst:1473
 msgid "String Methods"
@@ -3935,7 +3938,7 @@ msgstr "文字を削除するだけの変換には、 *table* 引数を ``None``
 
 #: ../../library/stdtypes.rst:2656
 msgid "*delete* is now supported as a keyword argument."
-msgstr ""
+msgstr "*delete* はキーワード引数として指定可能になりました。"
 
 #: ../../library/stdtypes.rst:2660
 msgid ""

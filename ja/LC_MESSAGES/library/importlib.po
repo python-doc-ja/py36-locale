@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>, 2017\n"
+"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1574,7 +1574,7 @@ msgstr "*optimization* パラメータが追加され、 *debug_override* パラ
 #: ../../library/importlib.rst:1156 ../../library/importlib.rst:1172
 #: ../../library/importlib.rst:1311
 msgid "Accepts a :term:`path-like object`."
-msgstr ""
+msgstr ":term:`path-like object` を受け入れるようになりました。"
 
 #: ../../library/importlib.rst:1162
 msgid ""

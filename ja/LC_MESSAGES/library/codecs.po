@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Masato HASHIMOTO <cabezon.hashimoto@gmail.com>, 2017\n"
+"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2595,7 +2595,7 @@ msgstr "mbcs"
 
 #: ../../library/codecs.rst:1266
 msgid "ansi, dbcs"
-msgstr ""
+msgstr "ansi, dbcs"
 
 #: ../../library/codecs.rst:1266
 msgid "Windows only: Encode operand according to the ANSI codepage (CP_ACP)"
@@ -2603,11 +2603,11 @@ msgstr "Windows のみ: 被演算子を ANSI コードページ (CP_ACP) に従�
 
 #: ../../library/codecs.rst:1270
 msgid "oem"
-msgstr ""
+msgstr "oem"
 
 #: ../../library/codecs.rst:1270
 msgid "Windows only: Encode operand according to the OEM codepage (CP_OEMCP)"
-msgstr ""
+msgstr "Windows のみ: 被演算子を OEM コードページ (CP_OEMCP) に従ってエンコードします"
 
 #: ../../library/codecs.rst:1276
 msgid "palmos"
