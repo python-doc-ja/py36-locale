@@ -286,6 +286,8 @@ msgid ""
 "true value if all the files compiled successfully, and a false value "
 "otherwise."
 msgstr ""
+"``sys.path`` からたどって見つけたすべての :file:`.py` ファイルをバイトコンパイルします。\n"
+"すべてのファイルを問題なくコンパイルできたときに真を、それ以外のときに偽を返します。"
 
 #: ../../library/compileall.rst:201
 msgid ""
@@ -294,6 +296,9 @@ msgid ""
 ":func:`compile_dir` function.  Note that unlike the other compile functions,"
 " ``maxlevels`` defaults to ``0``."
 msgstr ""
+"*skip_curdir* が真(デフォルト)のとき、カレントディレクトリは走査から除外されます。\n"
+"それ以外のすべての引数は :func:`compile_dir` 関数に渡されます。\n"
+"その他の compile 関数群と異なり、 ``maxlevels`` のデフォルトが ``0`` になっていることに注意してください。"
 
 #: ../../library/compileall.rst:216
 msgid ""
