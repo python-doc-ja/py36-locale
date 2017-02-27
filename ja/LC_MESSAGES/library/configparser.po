@@ -1185,7 +1185,7 @@ msgstr "代わりに :meth:`read_file` を使ってください。"
 #: ../../library/configparser.rst:1163
 msgid ""
 ":meth:`readfp` now iterates on *fp* instead of calling ``fp.readline()``."
-msgstr ""
+msgstr ":meth:`readfp` は ``fp.readline()`` を呼び出す代わりに *fp* をイテレートするようになりました。"
 
 #: ../../library/configparser.rst:1166
 msgid ""
@@ -1201,6 +1201,8 @@ msgid ""
 "Instead of ``parser.readfp(fp)`` use "
 "``parser.read_file(readline_generator(fp))``."
 msgstr ""
+"``parser.readfp(fp)`` の代わりに ``parser.read_file(readline_generator(fp))`` "
+"を使ってください。"
 
 #: ../../library/configparser.rst:1182
 msgid ""

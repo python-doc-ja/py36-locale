@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>, 2017\n"
+"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -67,10 +67,16 @@ msgid ""
 "the banner and exit message to use, if provided.  The console object is "
 "discarded after use."
 msgstr ""
+"read-eval-print ループを実行するための便利な関数。これは :class:`InteractiveConsole` "
+"の新しいインスタンスを作り、 *readfunc* が与えられた場合は :meth:`InteractiveConsole.raw_input` "
+"メソッドとして使われるように設定します。 *local* が与えられた場合は、インタプリタループのデフォルト名前空間として使うために "
+":class:`InteractiveConsole` コンストラクタへ渡されます。そして、インスタンスの :meth:`interact` "
+"メソッドは（もし提供されていれば）見出しと終了メッセージして使うために *banner* と *exitmsg* "
+"を受け取り実行されます。コンソールオブジェクトは使われた後捨てられます。"
 
 #: ../../library/code.rst:44
 msgid "Added *exitmsg* parameter."
-msgstr ""
+msgstr "*exitmsg* 引数が追加されました."
 
 #: ../../library/code.rst:50
 msgid ""
@@ -243,6 +249,8 @@ msgid ""
 "exiting. Pass the empty string to suppress the exit message. If *exitmsg* is"
 " not given or ``None``, a default message is printed."
 msgstr ""
+"オプション引数の *exitmsg* は、終了時に出力される終了メッセージを指定します。空文字列を渡すと、出力メッセージを抑止します。もし、 "
+"*exitmsg* が与えられないか、``None`` の場合は、デフォルトのメッセージが出力されます。"
 
 #: ../../library/code.rst:155
 msgid "To suppress printing any banner, pass an empty string."
@@ -250,7 +258,7 @@ msgstr "バナーの表示を抑制するには、空の文字列を渡してく
 
 #: ../../library/code.rst:158
 msgid "Print an exit message when exiting."
-msgstr ""
+msgstr "終了時に、終了メッセージを表示します。"
 
 #: ../../library/code.rst:164
 msgid ""

@@ -92,6 +92,8 @@ msgid ""
 "A list of available password hashing algorithms, as ``crypt.METHOD_*`` "
 "objects.  This list is sorted from strongest to weakest."
 msgstr ""
+"利用可能なパスワードのハッシュアルゴリズムのリストを、``crypt.METHOD_*`` オブジェクトとして返します。\n"
+"このリストは最も強いものから弱いものの順で並べられています。"
 
 #: ../../library/crypt.rst:75
 msgid "Module Functions"

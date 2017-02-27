@@ -1197,7 +1197,7 @@ msgstr ""
 
 #: ../../c-api/unicode.rst:824 ../../c-api/unicode.rst:841
 msgid "Accepts a :term:`path-like object`."
-msgstr ""
+msgstr ":term:`path-like object` を受け入れるようになりました。"
 
 #: ../../c-api/unicode.rst:827
 msgid ""
