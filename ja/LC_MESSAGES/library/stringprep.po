@@ -85,7 +85,7 @@ msgid ""
 "Determine whether *code* is in tableA.1 (Unassigned code points in Unicode "
 "3.2)."
 msgstr ""
-"*code* がテーブル A.1 (Unicode 3.2 における未割り当てコード点: unassigned code point) "
+"*code* がテーブル A.1 (Unicode 3.2 における未割り当てコードポイント: unassigned code point) "
 "かどうか判定します。"
 
 #: ../../library/stringprep.rst:49
@@ -141,7 +141,7 @@ msgstr "*code* がテーブル C.3 (プライベート利用) かどうか判定
 
 #: ../../library/stringprep.rst:103
 msgid "Determine whether *code* is in tableC.4  (Non-character code points)."
-msgstr "*code* がテーブル C.4 (非文字コード点: non-character code points) かどうか判定します。"
+msgstr "*code* がテーブル C.4 (非文字コードポイント: non-character code points) かどうか判定します。"
 
 #: ../../library/stringprep.rst:108
 msgid "Determine whether *code* is in tableC.5  (Surrogate codes)."
