@@ -87,6 +87,8 @@ msgid ""
 "Return zero-based index in the list of the first item whose value is *x*. "
 "Raises a :exc:`ValueError` if there is no such item."
 msgstr ""
+"リスト中で、値 *x* を持つ最初の要素の位置をゼロから始まる添字で返します。 該当する要素がなければ、:exc:`ValueError` "
+"を送出します。"
 
 #: ../../tutorial/datastructures.rst:69
 msgid ""
@@ -95,6 +97,8 @@ msgid ""
 "*x*.  The returned index is computed relative to the beginning of the full "
 "sequence rather than the *start* argument."
 msgstr ""
+"任意の引数である *start* と *end* はスライス記法として解釈され、*x* の探索範囲を指定できます。返される添字は、*start* "
+"引数からの相対位置ではなく、リスト全体の先頭からの位置になります。"
 
 #: ../../tutorial/datastructures.rst:78
 msgid "Return the number of times *x* appears in the list."
