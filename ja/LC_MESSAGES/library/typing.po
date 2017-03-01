@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Shun Sakurai <justmyway.yui@gmail.com>, 2017\n"
+"Last-Translator: cocoatomo <cocoatomo77@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,6 +32,9 @@ msgid ""
 " API may change even between minor releases if deemed necessary by the core "
 "developers."
 msgstr ""
+"typing モジュールは :term:`暫定的に <provisional package>` "
+"標準ライブラリに追加されました。マイナーリリースの間でもコアデベロッパーが必要だと判断した場合は、新機能の追加や API "
+"の変更がなされることがあります。"
 
 #: ../../library/typing.rst:20
 msgid ""
@@ -49,7 +52,7 @@ msgstr ""
 #: ../../library/typing.rst:27
 msgid ""
 "The function below takes and returns a string and is annotated as follows::"
-msgstr "以下の関数は文字列を取り文字列を返す関数で、次のようにアノテーションがつけられます::"
+msgstr "以下の関数は文字列を受け取って文字列を返す関数で、次のようにアノテーションがつけられます::"
 
 #: ../../library/typing.rst:32
 msgid ""
@@ -58,7 +61,7 @@ msgid ""
 " arguments."
 msgstr ""
 "関数 ``greeting`` で、実引数 ``name`` の型は :class:`str` であり、返り値の型は :class:`str` "
-"であることが期待されます。サブタイプも実引数として受け入れられます。"
+"であることが期待されます。サブタイプも実引数として許容されます。"
 
 #: ../../library/typing.rst:37
 msgid "Type aliases"
@@ -149,8 +152,8 @@ msgid ""
 "treat ``Alias`` as being *exactly equivalent* to ``Original`` in all cases. "
 "This is useful when you want to simplify complex type signatures."
 msgstr ""
-"型エイリアスの使用は2つの型が互いに *同値* であると言うことを宣言していると言うことを思い出してください。 ``Alias = Original``"
-" とすると、静的型検査器は ``Alias`` をすべての場合で ``Original`` と *完全に同値* "
+"型エイリアスの使用は二つの型が互いに *等価* だと宣言している、ということを思い出してください。 ``Alias = Original`` "
+"とすると、静的型検査器は ``Alias`` をすべての場合において ``Original`` と *完全に等価* "
 "なものとして扱います。これは複雑な型シグネチャを単純化したい時に有用です。"
 
 #: ../../library/typing.rst:136
@@ -326,7 +329,7 @@ msgid ""
 "This behavior allows :data:`Any` to be used as an *escape hatch* when you "
 "need to mix dynamically and statically typed code."
 msgstr ""
-"この挙動により、動的型付けと静的型付けが混在したコードを書かなければならない時に :dataAny` を *非常口* として使用することができます。"
+"この挙動により、動的型付けと静的型付けが混在したコードを書かなければならない時に :data:`Any` を *非常口* として使用することができます。"
 
 #: ../../library/typing.rst:355
 msgid ""
@@ -469,8 +472,8 @@ msgid ""
 "``Type[Any]`` is equivalent to ``Type`` which in turn is equivalent to "
 "``type``, which is the root of Python's metaclass hierarchy."
 msgstr ""
-"``Type[Any]`` は ``Type`` と等しく、さらにこれは ``type`` と等しいもので、 Python "
-"のメタクラス階層のルートです。"
+"``Type[Any]`` は ``Type`` と等価で、同様に ``Type`` は ``type`` と等価です。``type`` は "
+"Python のメタクラス階層のルートです。"
 
 #: ../../library/typing.rst:493
 msgid "A generic version of :class:`collections.abc.Iterable`."
@@ -486,23 +489,23 @@ msgstr ":class:`collections.abc.Reversible` のジェネリック版です。"
 
 #: ../../library/typing.rst:505
 msgid "An ABC with one abstract method ``__int__``."
-msgstr "一つの抽象メソッド ``__int__`` を備えた ABC です。"
+msgstr "抽象メソッド ``__int__`` を備えた ABC です。"
 
 #: ../../library/typing.rst:509
 msgid "An ABC with one abstract method ``__float__``."
-msgstr "一つの抽象メソッド ``__float__`` を備えた ABC です。"
+msgstr "抽象メソッド ``__float__`` を備えた ABC です。"
 
 #: ../../library/typing.rst:513
 msgid ""
 "An ABC with one abstract method ``__abs__`` that is covariant in its return "
 "type."
-msgstr "返り値の型が共変である、一つの抽象メソッド ``__abs__`` を備えた ABC です。"
+msgstr "返り値の型と共変な抽象メソッド ``__abs__`` を備えた ABC です。"
 
 #: ../../library/typing.rst:518
 msgid ""
 "An ABC with one abstract method ``__round__`` that is covariant in its "
 "return type."
-msgstr "返り値の型が共変である、一つの抽象メソッド ``__round__`` を備えた ABC です。"
+msgstr "返り値の型と共変な抽象メソッド ``__round__`` を備えた ABC です。"
 
 #: ../../library/typing.rst:523
 msgid "A generic version of :class:`collections.abc.Container`."
@@ -671,6 +674,8 @@ msgid ""
 "An async generator can be annotated by the generic type "
 "``AsyncGenerator[YieldType, SendType]``. For example::"
 msgstr ""
+"非同期ジェネレータはジェネリック型 ``AsyncGenerator[YieldType, SendType]`` "
+"によってアノテーションを付けられます。例えば::"
 
 #: ../../library/typing.rst:705
 msgid ""
@@ -678,17 +683,21 @@ msgid ""
 "is no ``ReturnType`` type parameter. As with :class:`Generator`, the "
 "``SendType`` behaves contravariantly."
 msgstr ""
+"通常のジェネレータと違って非同期ジェネレータは値を返せないので、``ReturnType`` 型引数はありません。:class:`Generator` "
+"と同様に、``SendType`` は反変的に振る舞います。"
 
 #: ../../library/typing.rst:709
 msgid ""
 "If your generator will only yield values, set the ``SendType`` to ``None``::"
-msgstr ""
+msgstr "ジェネレータが値を yield するだけなら、``SendType`` を ``None`` にします::"
 
 #: ../../library/typing.rst:717
 msgid ""
 "Alternatively, annotate your generator as having a return type of either "
 "``AsyncIterable[YieldType]`` or ``AsyncIterator[YieldType]``::"
 msgstr ""
+"あるいは、ジェネレータが ``AsyncIterable[YieldType]`` と ``AsyncIterator[YieldType]`` "
+"のいずれかの戻り値型を持つとアノテートします::"
 
 #: ../../library/typing.rst:729
 msgid ""
@@ -740,7 +749,7 @@ msgstr ""
 
 #: ../../library/typing.rst:761
 msgid "Typed version of namedtuple."
-msgstr "namedtuple の型付き版。"
+msgstr "namedtuple の型付き版です。"
 
 #: ../../library/typing.rst:769
 msgid "This is equivalent to::"
@@ -749,7 +758,7 @@ msgstr "これは次と等価です::"
 #: ../../library/typing.rst:773
 msgid ""
 "To give a field a default value, you can assign to it in the class body::"
-msgstr ""
+msgstr "フィールドにデフォルト値を与えるにはクラス本体で代入してください::"
 
 #: ../../library/typing.rst:782
 msgid ""
@@ -766,15 +775,15 @@ msgstr ""
 
 #: ../../library/typing.rst:789
 msgid "Backward-compatible usage::"
-msgstr ""
+msgstr "後方互換な使用法::"
 
 #: ../../library/typing.rst:793
 msgid "Added support for :pep:`526` variable annotation syntax."
-msgstr ""
+msgstr ":pep:`526` 変数アノテーションシンタックスが追加されました。"
 
 #: ../../library/typing.rst:796
 msgid "Added support for default values."
-msgstr ""
+msgstr "デフォルト値がサポートされました。"
 
 #: ../../library/typing.rst:801
 msgid ""

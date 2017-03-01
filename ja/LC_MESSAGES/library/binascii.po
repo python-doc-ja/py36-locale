@@ -33,7 +33,7 @@ msgstr ""
 ":mod:`binascii` モジュールにはバイナリと ASCII "
 "コード化されたバイナリ表現との間の変換を行うための多数のメソッドが含まれています。通常、これらの関数を直接使う必要はなく、 :mod:`uu` 、 "
 ":mod:`base64` や :mod:`binhex` といった、ラッパ (wrapper) モジュールを使うことになるでしょう。 "
-":mod:`binascii` モジュールは、高レベルなモジュールで利用される、高速な C で書かれた低レベル関数を提供しています。"
+":mod:`binascii` モジュールは C で書かれた高速な低水準関数を提供していて、それらは上記の高水準なモジュールで利用されます。"
 
 #: ../../library/binascii.rst:24
 msgid ""
@@ -86,6 +86,8 @@ msgid ""
 "return value is the converted line, including a newline char if *newline* is"
 " true.  The output of this function conforms to :rfc:`3548`."
 msgstr ""
+"バイナリデータを base64 でエンコードされた 1 行の ASCII 文字列に変換します。戻り値は変換後の 1 行の文字列で、*newline* "
+"が真の場合改行文字を含みます。この関数の出力は :rfc:`3548` を遵守します。"
 
 #: ../../library/binascii.rst:62
 msgid "Added the *newline* parameter."

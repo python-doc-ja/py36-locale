@@ -85,6 +85,8 @@ msgid ""
 ":mod:`secrets`: :ref:`PEP 506 -- Adding A Secrets Module To The Standard "
 "Library <whatsnew36-pep506>`."
 msgstr ""
+":mod:`secrets`: :ref:`PEP 506 -- 標準ライブラリーに Secrets モジュールを追加 "
+"<whatsnew36-pep506>`."
 
 #: ../../whatsnew/3.6.rst:80
 msgid "CPython implementation improvements:"
@@ -548,7 +550,7 @@ msgid ""
 "information displayed on a local clock (or stored in a Python datetime "
 "instance) is insufficient to identify a particular moment in time."
 msgstr ""
-"世界の大抵の場所で、地域時計が1日繰り下げられることがこれまでありましたし、これからもあるでしょう。そういった時に、同じ日に同じ時間を指す間隔があります。そういった状況では地域時計が表示する"
+"世界の大抵の場所で、地域時計が1日繰り下げられることがこれまでありましたし、これからもあるでしょう。そういった時に、同じ日に同じ時間を指す区間があります。そういった状況では地域時計が表示する"
 " (あるいは Python の datetime インスタンスが格納する) 情報では、時間内の特定の瞬間を識別することはできません。"
 
 #: ../../whatsnew/3.6.rst:478
