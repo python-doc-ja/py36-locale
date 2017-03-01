@@ -19,6 +19,7 @@ script:
 - git config user.name "Autobuild bot on Travis-CI"
 - git pull origin master
 - git add .
+- if [ $(git status -s | wc -l) -eq 0 ]; then echo "nothing to commit"; exit 0; fi
 - git commit -a -m "update html"
 - git push --quiet "https://${GH_TOKEN}@github.com/python-doc-ja/py36.git" master:master
 
