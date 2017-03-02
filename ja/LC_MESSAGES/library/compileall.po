@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -128,6 +128,8 @@ msgid ""
 "Use *N* workers to compile the files within the given directory. If ``0`` is"
 " used, then the result of :func:`os.cpu_count()` will be used."
 msgstr ""
+"与えられたディレクトリ内のファイルを *N* ワーカでコンパイルします。``0`` の場合 :func:`os.cpu_count()` "
+"の結果が使用されます。"
 
 #: ../../library/compileall.rst:86
 msgid "Added the ``-i``, ``-b`` and ``-h`` options."
@@ -139,6 +141,8 @@ msgid ""
 "to a multilevel value.  ``-b`` will always produce a byte-code file ending "
 "in ``.pyc``, never ``.pyo``."
 msgstr ""
+"``-j``, ``-r``, ``-qq`` オプションが追加されました。``-q`` オプションが複数のレベルの値に変更されました。``-b`` "
+"は常に拡張子 ``.pyc`` のバイトエンコーディングファイルを生成し、``.pyo`` を作りません。"
 
 #: ../../library/compileall.rst:95
 msgid ""
@@ -159,12 +163,14 @@ msgid ""
 ":file:`.py` files along the way. Return a true value if all the files "
 "compiled successfully, and a false value otherwise."
 msgstr ""
+"*dir* という名前のディレクトリーツリーをたどり、途中で見つけた全ての :file:`.py` "
+"をコンパイルします。全ファイルのコンパイルが成功した場合は真を、それ以外の場合は偽を返します。"
 
 #: ../../library/compileall.rst:108
 msgid ""
 "The *maxlevels* parameter is used to limit the depth of the recursion; it "
 "defaults to ``10``."
-msgstr "*maxlevels* パラメタは、再帰する深さの限度に使われ、デフォルトは ``10`` です。"
+msgstr "*maxlevels* 引数で最大再帰深度を制限します。デフォルトは ``10`` です。"
 
 #: ../../library/compileall.rst:111
 msgid ""
@@ -175,13 +181,13 @@ msgid ""
 "executed."
 msgstr ""
 "*ddir* "
-"が与えられれば、コンパイルされるそれぞれのファイルへのパスの先頭に、そのディレクトリを追加します。これはコンパイル時トレースバックに使われ、バイトコードファイルが実行される時点でソースファイルが存在しない場合に、トレースバックやその他のメッセージに使われるバイトコードファイルにもコンパイルされます。"
+"が与えられた場合、コンパイルされるそれぞれのファイルへのパスの先頭に、そのディレクトリを追加します。これはコンパイル時トレースバックに使われ、バイトコードファイルが実行される時点でソースファイルが存在しない場合に、トレースバックやその他のメッセージに使われるバイトコードファイルにもコンパイルされます。"
 
 #: ../../library/compileall.rst:117
 msgid ""
 "If *force* is true, modules are re-compiled even if the timestamps are up to"
 " date."
-msgstr "*force* が真の場合、モジュールはファイルの更新日付に関わりなく再コンパイルされます。"
+msgstr "*force* が真の場合、タイムスタンプが最新のであってもモジュールは再コンパイルされます。"
 
 #: ../../library/compileall.rst:120
 msgid ""
@@ -190,7 +196,7 @@ msgid ""
 " skipped."
 msgstr ""
 "*rx* "
-"が与えられれば、コンパイル候補のそれぞれのファイルのフルパスに対して検索メソッドが呼び出され、それが真値を返したら、そのファイルは除外されます。"
+"が与えられた場合、コンパイル候補のそれぞれのファイルのフルパスに対して検索メソッドが呼び出され、それが真値を返したら、そのファイルは除外されます。"
 
 #: ../../library/compileall.rst:124 ../../library/compileall.rst:174
 msgid ""
@@ -218,7 +224,7 @@ msgstr ""
 msgid ""
 "*optimize* specifies the optimization level for the compiler.  It is passed "
 "to the built-in :func:`compile` function."
-msgstr "*optimize* はコンパイラの最適化レベルを定義します。これは組み込みの :func:`compile` 関数に渡されます。"
+msgstr "*optimize* でコンパイラの最適化レベルを指定します。これは組み込みの :func:`compile` 関数に渡されます。"
 
 #: ../../library/compileall.rst:137
 msgid ""
@@ -228,10 +234,12 @@ msgid ""
 "compilation will be used as a fallback.  If *workers* is lower than ``0``, a"
 " :exc:`ValueError` will be raised."
 msgstr ""
+"引数 *workers* でファイルを並列でコンパイルするワーカの数を指定します。デフォルトでは複数のワーカを使いません。\n"
+"複数のワーカを使えないプラットフォームで *workers* が与えられた場合、逐次コンパイルにフォールバックします。*workers* が ``0`` 未満の場合 :exc:`ValueError` を送出します。"
 
 #: ../../library/compileall.rst:143 ../../library/compileall.rst:206
 msgid "Added the *legacy* and *optimize* parameter."
-msgstr "*legacy* と *optimize* 引数を追加しました。"
+msgstr "*legacy* と *optimize* 引数が追加されました。"
 
 #: ../../library/compileall.rst:146
 msgid "Added the *workers* parameter."
@@ -240,7 +248,7 @@ msgstr "``workers`` パラメータが追加されました。"
 #: ../../library/compileall.rst:149 ../../library/compileall.rst:189
 #: ../../library/compileall.rst:209
 msgid "*quiet* parameter was changed to a multilevel value."
-msgstr ""
+msgstr "*quiet* 引数が複数のレベルの値に変更されました。"
 
 #: ../../library/compileall.rst:152 ../../library/compileall.rst:192
 #: ../../library/compileall.rst:212
@@ -248,16 +256,18 @@ msgid ""
 "The *legacy* parameter only writes out ``.pyc`` files, not ``.pyo`` files no"
 " matter what the value of *optimize* is."
 msgstr ""
+"*optimize* の値に関わらず、*legacy* 引数は ``.pyc`` ファイルのみを書き出し、``.pyo`` "
+"ファイルを書き出さないようになりました。"
 
 #: ../../library/compileall.rst:156
 msgid "Accepts a :term:`path-like object`."
-msgstr ":term:`path-like object` を受け入れるようになりました。"
+msgstr ":term:`path-like object` を受け取るようになりました。"
 
 #: ../../library/compileall.rst:161
 msgid ""
 "Compile the file with path *fullname*. Return a true value if the file "
 "compiled successfully, and a false value otherwise."
-msgstr ""
+msgstr "パス *fullname* のファイルをコンパイルします。コンパイルが成功すれば真を、そうでなければ偽を返します。"
 
 #: ../../library/compileall.rst:164
 msgid ""
@@ -268,7 +278,7 @@ msgid ""
 "executed."
 msgstr ""
 "*ddir* "
-"が与えられれば、コンパイルされるファイルへのパスの先頭に、そのディレクトリを追加します。これはコンパイル時トレースバックに使われ、バイトコードファイルが実行される時点でソースファイルが存在しない場合に、トレースバックやその他のメッセージに使われるバイトコードファイルにもコンパイルされます。"
+"が与えられた場合、コンパイルされるファイルのパスの先頭にそのディレクトリを追加します。これはコンパイル時トレースバックに使われ、バイトコードファイルが実行される時点でソースファイルが存在しない場合に、トレースバックやその他のメッセージに使われるバイトコードファイルにもコンパイルされます。"
 
 #: ../../library/compileall.rst:170
 msgid ""
@@ -277,8 +287,8 @@ msgid ""
 "and ``True`` is returned."
 msgstr ""
 "*rx* "
-"が与えられれば、コンパイル候補のファイルのフルパスに対して検索メソッドが呼び出され、それが真値を返したら、ファイルはコンパイルされず、``True`` "
-"が返されます。"
+"が与えられた場合、コンパイル候補のファイルのフルパスに対して検索メソッドが呼び出され、それが真値を返したら、ファイルはコンパイルされず、``True``"
+" が返されます。"
 
 #: ../../library/compileall.rst:198
 msgid ""

@@ -37,7 +37,7 @@ msgid ""
 "introduction to Python command-line parsing, have a look at the "
 ":ref:`argparse tutorial <argparse-tutorial>`."
 msgstr ""
-"このページでは API のリファレンス情報が記載されています。:ref:`argparse チュートリアル <argparse-tutorial>` "
+"このページは API のリファレンス情報が記載しています。:ref:`argparse チュートリアル <argparse-tutorial>` "
 "では、コマンドラインの解析についてより優しく説明しています。"
 
 #: ../../library/argparse.rst:22
@@ -50,7 +50,7 @@ msgid ""
 msgstr ""
 ":mod:`argparse` "
 "モジュールはユーザーフレンドリなコマンドラインインターフェースの作成を簡単にします。プログラムがどんな引数を必要としているのかを定義すると、:mod:`argparse`"
-" が :data:`sys.argv` からそのオプションを解析する部分の面倒を見ます。:mod:`argparse` "
+" が :data:`sys.argv` からそのオプションを解析する方法を見つけ出します。:mod:`argparse` "
 "モジュールは自動的にヘルプと使用方法メッセージを生成し、ユーザーが不正な引数をプログラムに指定したときにエラーを発生させます。"
 
 #: ../../library/argparse.rst:30

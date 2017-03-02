@@ -430,9 +430,9 @@ msgid ""
 "can be modeled by supplying the initial value in the iterable and using only"
 " the accumulated total in *func* argument::"
 msgstr ""
-"*func* 引数の利用法はたくさんあります。最小値で走らせるために :func:`min` を使ったり、最大値で走らせるために :func:`max`"
-" や積で走査するために :func:`operator.mul` "
-"を使うこともできます。金利を累積し支払いを適用して償還表を作成することもできます。初期値を iterable に与えて *func* "
+"*func* 引数の利用法はたくさんあります。最小値にするために :func:`min` を、最大値にするために :func:`max` "
+"を、積にするために :func:`operator.mul` "
+"を使うことができます。金利を累積し支払いを適用して償還表を作成することもできます。初期値をイテラブルに与えて *func* "
 "引数で累積和を利用するだけで一階の `漸化式 "
 "<https://ja.wikipedia.org/wiki/%E6%BC%B8%E5%8C%96%E5%BC%8F>`_ をモデル化できます::"
 
@@ -453,14 +453,16 @@ msgid ""
 "are exhausted.  Used for treating consecutive sequences as a single "
 "sequence. Roughly equivalent to::"
 msgstr ""
+"先頭の iterable の全要素を返し、次に2番目の iterable の全要素を返し、と全 iterable "
+"の要素を返すイテレータを作成します。連続したシーケンスを一つのシーケンスとして扱う場合に使用します。およそ次と等価です::"
 
 #: ../../library/itertools.rst:171
 msgid ""
 "Alternate constructor for :func:`chain`.  Gets chained inputs from a single "
 "iterable argument that is evaluated lazily.  Roughly equivalent to::"
 msgstr ""
-":func:`chain` "
-"のためのもう一つのコンストラクタです。遅延評価される唯一のイテラブル引数から連鎖した入力を受け取ります。この関数は、以下のコードとほぼ等価です::"
+":func:`chain` のためのもう一つのコンストラクタです。遅延評価される iterable "
+"引数一つから連鎖した入力を受け取ります。この関数は、以下のコードとほぼ等価です::"
 
 #: ../../library/itertools.rst:183
 msgid "Return *r* length subsequences of elements from the input *iterable*."
@@ -472,15 +474,14 @@ msgid ""
 "*iterable* is sorted, the combination tuples will be produced in sorted "
 "order."
 msgstr ""
-"組合せ(combination)は辞書式順序で出力されます。したがって、入力 *iterable* "
-"がソートされていれば、組合せのタプルは整列された形で生成されます。"
+"組合せは辞書式順序で出力されます。したがって、入力 *iterable* がソートされていれば、組合せのタプルはソートされた順番で生成されます。"
 
 #: ../../library/itertools.rst:189
 msgid ""
 "Elements are treated as unique based on their position, not on their value."
 "  So if the input elements are unique, there will be no repeat values in "
 "each combination."
-msgstr "各要素は場所に基づいて一意に取り扱われ、値には依りません。入力された要素がバラバラならば、各組合せの中に重複した値は現れません。"
+msgstr "各要素は場所に基づいて一意に取り扱われ、値にはよりません。入力された要素がバラバラなら各組合せの中に重複した値は現れません。"
 
 #: ../../library/itertools.rst:215
 msgid ""
@@ -540,6 +541,8 @@ msgid ""
 "data points. Also, used with :func:`zip` to add sequence numbers.  Roughly "
 "equivalent to::"
 msgstr ""
+"数 *start* で始まる等間隔の値を返すイテレータを作成します。:func:`map` に渡して連続したデータを生成するのによく使われます。 また、"
+" :func:`zip` に連続した番号を追加するのにも使われます。 およそ次と等価です::"
 
 #: ../../library/itertools.rst:305
 msgid ""
@@ -552,7 +555,7 @@ msgstr ""
 
 #: ../../library/itertools.rst:309
 msgid "Added *step* argument and allowed non-integer arguments."
-msgstr "*step* 引数が追加され、非整数の引数が可能になりました。"
+msgstr "*step* 引数が追加され、非整数の引数が許されるようになりました。"
 
 #: ../../library/itertools.rst:314
 msgid ""
@@ -560,6 +563,8 @@ msgid ""
 "each. When the iterable is exhausted, return elements from the saved copy.  "
 "Repeats indefinitely.  Roughly equivalent to::"
 msgstr ""
+"iterable から要素を取得し、そのコピーを保存するイテレータを作成します。iterable "
+"の全要素を返すと、セーブされたコピーから要素を返します。これを無限に繰り返します。およそ次と等価です::"
 
 #: ../../library/itertools.rst:328
 msgid ""
@@ -574,6 +579,8 @@ msgid ""
 "does not produce *any* output until the predicate first becomes false, so it"
 " may have a lengthy start-up time.  Roughly equivalent to::"
 msgstr ""
+"predicate (述語) が真である間は要素を飛ばし、その後は全ての要素を返すイテレータを作成します。このイテレータは、predicate "
+"が最初に偽になるまで *全く* 要素を返さないため、要素を返し始めるまでに長い時間がかかる場合があります。およそ次と等価です::"
 
 #: ../../library/itertools.rst:351
 msgid ""
@@ -581,6 +588,8 @@ msgid ""
 "for which the predicate is ``False``. If *predicate* is ``None``, return the"
 " items that are false. Roughly equivalent to::"
 msgstr ""
+"iteable から predicate が ``False`` となる要素だけを返すイテレータを作成します。*predicate* が "
+"``None`` の場合、偽の要素だけを返します。およそ次と等価です::"
 
 #: ../../library/itertools.rst:366
 msgid ""
@@ -592,7 +601,7 @@ msgid ""
 msgstr ""
 "同じキーをもつような要素からなる *iterable* 中のグループに対して、キーとグループを返すようなイテレータを作成します。*key* "
 "は各要素に対するキー値を計算する関数です。キーを指定しない場合や ``None`` にした場合、*key* "
-"関数のデフォルトは恒等関数になり要素をそのまま返します。通常、*iterable* は同じキー関数で並べ替え済みである必要があります。"
+"関数のデフォルトは恒等関数になり要素をそのまま返します。通常、*iterable* は同じキー関数でソート済みである必要があります。"
 
 #: ../../library/itertools.rst:372
 msgid ""
@@ -604,7 +613,7 @@ msgid ""
 msgstr ""
 ":func:`groupby` の操作は Unix の ``uniq`` フィルターと似ています。 key "
 "関数の値が変わるたびに休止または新しいグループを生成します (このために通常同じ key 関数でソートしておく必要があるのです)。この動作は SQL "
-"の入力順に関係なく共通の要素を集約する GROUP BY とは違ます。"
+"の入力順に関係なく共通の要素を集約する GROUP BY とは違います。"
 
 #: ../../library/itertools.rst:378
 msgid ""
@@ -619,7 +628,7 @@ msgstr ""
 
 #: ../../library/itertools.rst:390
 msgid ":func:`groupby` is roughly equivalent to::"
-msgstr ""
+msgstr ":func:`groupby` はおよそ次と等価です::"
 
 #: ../../library/itertools.rst:422
 msgid ""
@@ -634,13 +643,21 @@ msgid ""
 "structure has been flattened (for example, a multi-line report may list a "
 "name field on every third line).  Roughly equivalent to::"
 msgstr ""
+"iterable から要素を選択して返すイテレータを作成します。 *start* が0でない場合、iterable の要素は start に達するまでスキップされます。その後、\n"
+"要素が順に返されます。\n"
+" *step* が1以下なら連続した要素を返し、 1以上なら指定された値分の要素をスキップします。\n"
+"\n"
+"*stop* が ``None`` の場合、iterable が尽きるまでイテレーションは続きます。\n"
+"それ以外の場合、指定された位置でイテレーションは停止します。\n"
+"通常のスライスとは異なり、:func:`islice` は負の *start*、*stop*、*step* をサポートしません。内部構造が平滑化されたデータから関連するフィールドを抽出するのにに使用できます (たとえば、三行ごとに名前フィールドを列挙している複数行のレポート)。およそ次と等価です::"
 
 #: ../../library/itertools.rst:448
 msgid ""
 "If *start* is ``None``, then iteration starts at zero. If *step* is "
 "``None``, then the step defaults to one."
 msgstr ""
-"*start* が ``None`` ならば、繰返しは0から始まります。*step* が ``None`` ならば、ステップは1となります。"
+"*start* が ``None`` の場合、イテレーションは0から始まります。*step* が ``None`` "
+"の場合、ステップはデフォルトの1になります。"
 
 #: ../../library/itertools.rst:454
 msgid ""
@@ -661,7 +678,7 @@ msgid ""
 "*iterable* is sorted, the permutation tuples will be produced in sorted "
 "order."
 msgstr ""
-"順列は辞書ソートの順番で出力されます。したがって入力の *iterable* がソートされていたならば、置換のタプルはソートされた状態で出力されます。"
+"順列は辞書ソートの順番で出力されます。したがって入力の *iterable* がソートされていた場合、順列のタプルはソートされた状態で出力されます。"
 
 #: ../../library/itertools.rst:464
 msgid ""
@@ -669,7 +686,7 @@ msgid ""
 "  So if the input elements are unique, there will be no repeat values in "
 "each permutation."
 msgstr ""
-"要素は位置に基づいて一意的に扱われ、値に基づいてではありません。したがって入力された要素が全て異なっているならば、それぞれの置換に重複した要素が現れないことになります。"
+"要素は値ではなく位置に基づいて一意的に扱われます。したがって入力された要素が全て異なっている場合、それぞれの順列に重複した要素が現れないことになります。"
 
 #: ../../library/itertools.rst:495
 msgid ""
@@ -677,8 +694,8 @@ msgid ""
 ":func:`product`, filtered to exclude entries with repeated elements (those "
 "from the same position in the input pool)::"
 msgstr ""
-":func:`permutations` のコードは :func:`product` の列から重複のあるもの "
-"(それらは入力プールの同じ位置から取られたものです) を除外するようにフィルタを掛けたものとしても表現できます::"
+":func:`permutations` のコードは :func:`product` の列から重複 (それらは入力プールの同じ位置から取られたものです)"
+" を除くようフィルタしたものとしても表現できます::"
 
 #: ../../library/itertools.rst:507
 msgid ""
@@ -696,6 +713,8 @@ msgid ""
 "example, ``product(A, B)`` returns the same as ``((x,y) for x in A for y in "
 "B)``."
 msgstr ""
+"ジェネレータ式の入れ子になった for ループとおよそ等価です。たとえば ``product(A, B)`` は ``((x,y) for x in A"
+" for y in B)`` と同じものを返します。"
 
 #: ../../library/itertools.rst:517
 msgid ""
@@ -704,7 +723,7 @@ msgid ""
 "if the input's iterables are sorted, the product tuples are emitted in "
 "sorted order."
 msgstr ""
-"入れ子ループは走行距離計と同じように右端の要素がイテレーションごとに更新されていきます。このパターンは辞書式順序を作り出し、入力のイテレート可能オブジェクトたちがソートされていれば、直積タプルもソートされた順に吐き出されます。"
+"入れ子ループは走行距離計と同じように右端の要素がイテレーションごとに更新されていきます。このパターンは辞書式順序を作り出し、入力のイテレート可能オブジェクトたちがソートされていれば、直積タプルもソートされた順に出てきます。"
 
 #: ../../library/itertools.rst:522
 msgid ""
@@ -719,7 +738,7 @@ msgstr ""
 msgid ""
 "This function is roughly equivalent to the following code, except that the "
 "actual implementation does not build up intermediate results in memory::"
-msgstr ""
+msgstr "この関数は以下のコードとおよそ等価ですが、実際の実装ではメモリ中に中間結果を作りません::"
 
 #: ../../library/itertools.rst:542
 msgid ""

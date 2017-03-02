@@ -167,8 +167,8 @@ msgid ""
 msgstr ""
 "これに対し、 ``NewType`` はある型をもう一方の型の *サブタイプ* として宣言します。 ``Derived = "
 "NewType('Derived', Original)`` とすると静的型検査器は ``Derived`` を ``Original`` の "
-"*サブクラス* として扱います。これは ``Original`` 型の値は ``Derived`` "
-"型の値が期待される場所で使うことが出来ないと言うことを意味します。これは論理的な誤りを最小の実行時のコストで防ぎたい時に有用です。"
+"*サブクラス* として扱います。つまり ``Original`` 型の値は ``Derived`` "
+"型の値が期待される場所で使うことが出来ないということです。これは論理的な誤りを最小の実行時のコストで防ぎたい時に有用です。"
 
 #: ../../library/typing.rst:144
 msgid "Callable"
@@ -763,7 +763,7 @@ msgstr "フィールドにデフォルト値を与えるにはクラス本体で
 #: ../../library/typing.rst:782
 msgid ""
 "Fields with a default value must come after any fields without a default."
-msgstr ""
+msgstr "デフォルト値のあるフィールドはデフォルト値のないフィールドの後でなければなりません。"
 
 #: ../../library/typing.rst:784
 msgid ""
@@ -772,6 +772,9 @@ msgid ""
 "field names to default values.  (The field names are in the ``_fields`` "
 "attribute, which is part of the namedtuple API.)"
 msgstr ""
+"結果としてできるクラスは二つの追加の属性を持ちます。一つは ``_field_types`` で、フィールド名を型に結びつける辞書です。もう一つは "
+"``field_defaults`` で、フィールド名をデフォルト値に結びつける辞書です。 (フィールド名は namedtuple API の一つである"
+" ``_fields`` 属性にあります。)"
 
 #: ../../library/typing.rst:789
 msgid "Backward-compatible usage::"
@@ -779,7 +782,7 @@ msgstr "後方互換な使用法::"
 
 #: ../../library/typing.rst:793
 msgid "Added support for :pep:`526` variable annotation syntax."
-msgstr ":pep:`526` 変数アノテーションシンタックスが追加されました。"
+msgstr ":pep:`526` 変数アノテーションのシンタックスが追加されました。"
 
 #: ../../library/typing.rst:796
 msgid "Added support for default values."
@@ -898,28 +901,28 @@ msgstr "直和型を定義します、例えば ``Union[int, str]`` のように
 
 #: ../../library/typing.rst:888
 msgid "The arguments must be types and there must be at least one."
-msgstr "実引数は型でなければならず、少なくとも一つ必要です。"
+msgstr "引数は型でなければならず、少なくとも一つ必要です。"
 
 #: ../../library/typing.rst:890
 msgid "Unions of unions are flattened, e.g.::"
-msgstr "直和型の直和型は flatten されます、例えば::"
+msgstr "直和型の直和型は平滑化されます。例えば::"
 
 #: ../../library/typing.rst:894
 msgid "Unions of a single argument vanish, e.g.::"
-msgstr "単一の実引数の直和型は消滅します、例えば::"
+msgstr "引数が一つの直和型は消えます。例えば::"
 
 #: ../../library/typing.rst:898
 msgid "Redundant arguments are skipped, e.g.::"
-msgstr "冗長な実引数は飛ばされます、例えば::"
+msgstr "冗長な実引数は飛ばされます。例えば::"
 
 #: ../../library/typing.rst:902
 msgid "When comparing unions, the argument order is ignored, e.g.::"
-msgstr "直和型を比較するとき、実引数の順序は無視されます、例えば::"
+msgstr "直和型を比較するとき引数の順序は無視されます。例えば::"
 
 #: ../../library/typing.rst:906
 msgid ""
 "When a class and its subclass are present, the former is skipped, e.g.::"
-msgstr "あるクラスとそのサブクラスが存在するとき、前者は飛ばされます、例えば::"
+msgstr "あるクラスとそのサブクラスが存在するとき、前者は飛ばされます。例えば::"
 
 #: ../../library/typing.rst:910
 msgid "You cannot subclass or instantiate a union."
@@ -975,6 +978,8 @@ msgid ""
 "ellipsis, e.g. ``Tuple[int, ...]``. A plain :data:`Tuple` is equivalent to "
 "``Tuple[Any, ...]``, and in turn to :class:`tuple`."
 msgstr ""
+"同じ型の任意の長さのタプルを指定するには ellipsis リテラルを用います。例:  ``Tuple[int, ...]``。ただの "
+":data:`Tuple` は ``Tuple[Any, ...]`` と等価で、さらに :class:`tuple` と等価です。."
 
 #: ../../library/typing.rst:944
 msgid "Callable type; ``Callable[[int], str]`` is a function of (int) -> str."
@@ -999,7 +1004,7 @@ msgstr ""
 
 #: ../../library/typing.rst:961
 msgid "Special type construct to mark class variables."
-msgstr "クラス変数であることを示す特別な型構築子。"
+msgstr "クラス変数であることを示す特別な型構築子です。"
 
 #: ../../library/typing.rst:963
 msgid ""
@@ -1021,6 +1026,9 @@ msgid ""
 "not change Python runtime behavior; it can be used by 3rd party type "
 "checkers, so that the following code might flagged as an error by those::"
 msgstr ""
+"ClassVar はクラスそのものではなく、:func:`isinstance` や :func:`issubclass` "
+"で使うべきではありません。:data:`ClassVar`は Python "
+"の実行時の挙動を変えないことに注意してください。サードパーティの型検査器が使うことができるため、次のコードはそれらによってエラーとされるかもしれません::"
 
 #: ../../library/typing.rst:987
 msgid ""
@@ -1039,4 +1047,4 @@ msgstr "他の種類の文字列を混ぜることなく、任意の種類の文
 msgid ""
 "A special constant that is assumed to be ``True`` by 3rd party static type "
 "checkers. It is ``False`` at runtime. Usage::"
-msgstr "サードパーティーの静的型検査器が ``True`` と仮定する特別な定数。 実行時には ``False`` になります。使用例::"
+msgstr "サードパーティーの静的型検査器が ``True`` と仮定する特別な定数です。 実行時には ``False`` になります。使用例::"
