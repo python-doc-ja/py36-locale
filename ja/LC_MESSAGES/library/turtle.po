@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: E. Kawashima <e.kawaschima+transifex@gmail.com>, 2017\n"
+"Last-Translator: cocoatomo <cocoatomo77@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -838,6 +838,8 @@ msgid ""
 " all stamps, if *n* > 0 delete first *n* stamps, else if *n* < 0 delete last"
 " *n* stamps."
 msgstr ""
+"全ての、または最初の/最後の *n* 個のハンコを消します。 *n* が ``None`` の場合、全てのハンコを消します。 *n* "
+"が正の場合には最初の *n* 個、 *n* が負の場合には最後の *n* 個を消します。"
 
 #: ../../library/turtle.rst:575
 msgid ""
@@ -2038,13 +2040,13 @@ msgstr "整数ならばピクセル単位の高さ、浮動小数点数ならば
 msgid ""
 "if positive, starting position in pixels from the left edge of the screen, "
 "if negative from the right edge, if ``None``, center window horizontally"
-msgstr ""
+msgstr "正の数ならばスクリーンの左端からピクセル単位で測った開始位置、 負の数ならば右端から、``None`` ならば水平方向に真ん中"
 
 #: ../../library/turtle.rst:1989
 msgid ""
 "if positive, starting position in pixels from the top edge of the screen, if"
 " negative from the bottom edge, if ``None``, center window vertically"
-msgstr ""
+msgstr "正の数ならばスクリーンの上端からピクセル単位で測った開始位置、 負の数ならば下端から、``None`` ならば垂直方向に真ん中"
 
 #: ../../library/turtle.rst:2003
 msgid "a string that is shown in the titlebar of the turtle graphics window"
