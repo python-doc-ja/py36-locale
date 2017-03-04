@@ -196,7 +196,7 @@ msgid ""
 "indicates this is a bottleneck for a given application, implementing all six"
 " rich comparison methods instead is likely to provide an easy speed boost."
 msgstr ""
-"このデコレータにより、行儀の良い完全に順序の付いた型を簡単に作成することができますが、実行速度は遅くなり、派生した比較メソッドのスタックトレースは複雑になります。性能ベンチマークにより、これがアプリケーションのボトルネックになっていることがわかった場合、代わりに"
+"このデコレータにより、完全に順序の付いた振る舞いの良い型を簡単に作ることができますが、実行速度は遅くなり、派生した比較メソッドのスタックトレースは複雑になります。性能ベンチマークにより、これがアプリケーションのボトルネックになっていることがわかった場合は、代わりに"
 " 6 つの拡張比較メソッドをすべて実装すれば、簡単にスピードアップを図れるでしょう。"
 
 #: ../../library/functools.rst:164
