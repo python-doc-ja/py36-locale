@@ -99,6 +99,8 @@ msgid ""
 "SHA3 (Keccak) and SHAKE constructors :func:`sha3_224`, :func:`sha3_256`, "
 ":func:`sha3_384`, :func:`sha3_512`, :func:`shake_128`, :func:`shake_256`."
 msgstr ""
+"SHA3 (Keccak) ならびに SHAKE コンストラクタ :func:`sha3_224`, :func:`sha3_256`, "
+":func:`sha3_384`, :func:`sha3_512`, :func:`shake_128`, :func:`shake_256`。"
 
 #: ../../library/hashlib.rst:80
 msgid ":func:`blake2b` and :func:`blake2s` were added."
@@ -240,7 +242,7 @@ msgstr ""
 
 #: ../../library/hashlib.rst:199
 msgid "SHAKE variable length digests"
-msgstr ""
+msgstr "SHAKE 可変長ダイジェスト"
 
 #: ../../library/hashlib.rst:201
 msgid ""
@@ -341,11 +343,11 @@ msgstr ""
 
 #: ../../library/hashlib.rst:273
 msgid "Availability: OpenSSL 1.1+"
-msgstr ""
+msgstr "利用可能性: OpenSSL 1.1+"
 
 #: ../../library/hashlib.rst:279
 msgid "BLAKE2"
-msgstr ""
+msgstr "BLAKE2"
 
 #: ../../library/hashlib.rst:286
 msgid ""
@@ -375,11 +377,11 @@ msgstr ""
 msgid ""
 "Hash objects from this module follow the API of standard library's "
 ":mod:`hashlib` objects."
-msgstr ""
+msgstr "このモジュールのハッシュオブジェクトは標準ライブラリーの :mod:`hashlib` オブジェクトの API に従います。"
 
 #: ../../library/hashlib.rst:303
 msgid "Creating hash objects"
-msgstr ""
+msgstr "ハッシュオブジェクトの作成"
 
 #: ../../library/hashlib.rst:305
 msgid "New hash objects are created by calling constructor functions:"
@@ -421,47 +423,47 @@ msgstr ""
 
 #: ../../library/hashlib.rst:334
 msgid "The following table shows limits for general parameters (in bytes):"
-msgstr ""
+msgstr "下の表は一般的なパラメータの上限 (バイト単位) です:"
 
 #: ../../library/hashlib.rst:337
 msgid "Hash"
-msgstr ""
+msgstr "Hash"
 
 #: ../../library/hashlib.rst:337
 msgid "digest_size"
-msgstr ""
+msgstr "digest_size"
 
 #: ../../library/hashlib.rst:337
 msgid "len(key)"
-msgstr ""
+msgstr "len(key)"
 
 #: ../../library/hashlib.rst:337
 msgid "len(salt)"
-msgstr ""
+msgstr "len(salt)"
 
 #: ../../library/hashlib.rst:337
 msgid "len(person)"
-msgstr ""
+msgstr "len(person)"
 
 #: ../../library/hashlib.rst:339
 msgid "BLAKE2b"
-msgstr ""
+msgstr "BLAKE2b"
 
 #: ../../library/hashlib.rst:339 ../../library/hashlib.rst:339
 msgid "64"
-msgstr ""
+msgstr "64"
 
 #: ../../library/hashlib.rst:339 ../../library/hashlib.rst:339
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: ../../library/hashlib.rst:340
 msgid "BLAKE2s"
-msgstr ""
+msgstr "BLAKE2s"
 
 #: ../../library/hashlib.rst:340 ../../library/hashlib.rst:340
 msgid "32"
-msgstr ""
+msgstr "32"
 
 #: ../../library/hashlib.rst:340 ../../library/hashlib.rst:340
 msgid "8"
@@ -479,7 +481,7 @@ msgstr ""
 
 #: ../../library/hashlib.rst:352
 msgid "These sizes are available as module `constants`_ described below."
-msgstr ""
+msgstr "これらのサイズは以下に述べるモジュール `constants`_ で利用できます。"
 
 #: ../../library/hashlib.rst:354
 msgid ""
@@ -559,7 +561,7 @@ msgstr "使用例"
 
 #: ../../library/hashlib.rst:414
 msgid "Simple hashing"
-msgstr ""
+msgstr "簡単なハッシュ化"
 
 #: ../../library/hashlib.rst:416
 msgid ""
@@ -792,7 +794,7 @@ msgstr ""
 
 #: ../../library/hashlib.rst:703
 msgid "*Alexandr Sokolovskiy*"
-msgstr ""
+msgstr "*Alexandr Sokolovskiy*"
 
 #: ../../library/hashlib.rst:718
 msgid "Module :mod:`hmac`"
@@ -812,11 +814,11 @@ msgstr "バイナリハッシュを非バイナリ環境用にエンコードす
 
 #: ../../library/hashlib.rst:724
 msgid "https://blake2.net"
-msgstr ""
+msgstr "https://blake2.net"
 
 #: ../../library/hashlib.rst:724
 msgid "Official BLAKE2 website."
-msgstr ""
+msgstr "BLAKE2 の公式ウェブサイト"
 
 #: ../../library/hashlib.rst:727
 msgid "http://csrc.nist.gov/publications/fips/fips180-2/fips180-2.pdf"
@@ -831,8 +833,7 @@ msgid ""
 "https://en.wikipedia.org/wiki/Cryptographic_hash_function#Cryptographic_hash_algorithms"
 msgstr ""
 "https://en.wikipedia.org/wiki/Cryptographic_hash_function#Cryptographic_hash_algorithms"
-" (日本語版: "
-"https://ja.wikipedia.org/wiki/%E6%9A%97%E5%8F%B7%E5%AD%A6%E7%9A%84%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E9%96%A2%E6%95%B0)"
+" (日本語版: https://暗号学的ハッシュ関数)"
 
 #: ../../library/hashlib.rst:730
 msgid ""

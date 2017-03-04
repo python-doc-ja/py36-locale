@@ -343,7 +343,7 @@ msgstr "p, r"
 
 #: ../../library/itertools.rst:71
 msgid "r-length tuples, in sorted order, no repeated elements"
-msgstr "長さrのタプル列、ソート済みで重複なし"
+msgstr "長さrのタプル列、ソートされた順で重複なし"
 
 #: ../../library/itertools.rst:72
 msgid ":func:`combinations_with_replacement`"
@@ -351,7 +351,7 @@ msgstr ":func:`combinations_with_replacement`"
 
 #: ../../library/itertools.rst:72
 msgid "r-length tuples, in sorted order, with repeated elements"
-msgstr "長さrのタプル列、ソート済みで重複あり"
+msgstr "長さrのタプル列、ソートされた順で重複あり"
 
 #: ../../library/itertools.rst:73
 msgid "``product('ABCD', repeat=2)``"
