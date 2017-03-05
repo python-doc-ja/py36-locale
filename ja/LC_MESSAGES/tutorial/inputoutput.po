@@ -185,7 +185,7 @@ msgid ""
 "instead of by position.  This can be done by simply passing the dict and "
 "using square brackets ``'[]'`` to access the keys ::"
 msgstr ""
-"もしも長い書式化文字列があり、それを分割したくない場合には、変数を引数の位置ではなく変数の名前で参照できるとよいでしょう。これは、辞書を引数に渡して、角括弧"
+"もしも長い書式文字列があり、それを分割したくない場合には、変数を引数の位置ではなく変数の名前で参照できるとよいでしょう。これは、辞書を引数に渡して、角括弧"
 " ``'[]'`` を使って辞書のキーを参照することで可能です ::"
 
 #: ../../tutorial/inputoutput.rst:191

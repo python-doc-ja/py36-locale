@@ -112,9 +112,9 @@ msgid ""
 "contains exactly one item.  The buffer's size in bytes must match the size "
 "required by the format, as reflected by :func:`calcsize`."
 msgstr ""
-"(``pack(fmt, ...)`` でパックされたであろう) バッファ *buffer* を、書式化文字列 *fmt* に従ってアンパックします。\n"
+"(``pack(fmt, ...)`` でパックされたであろう) バッファ *buffer* を、書式文字列 *fmt* に従ってアンパックします。\n"
 "値が一つしかない場合を含め、結果はタプルで返されます。\n"
-"バッファのバイトサイズは、 :func:`calcsize` の返り値である書式化文字列が要求するサイズと一致しなければなりません。"
+"バッファのバイトサイズは、 :func:`calcsize` の返り値である書式文字列が要求するサイズと一致しなければなりません。"
 
 #: ../../library/struct.rst:75
 msgid ""
@@ -123,9 +123,9 @@ msgid ""
 "The buffer's size in bytes, minus *offset*, must be at least the size "
 "required by the format, as reflected by :func:`calcsize`."
 msgstr ""
-"バッファ *buffer* を、 *offset* の位置から書式化文字列 *fmt* に従ってアンパックします。\n"
+"バッファ *buffer* を、 *offset* の位置から書式文字列 *fmt* に従ってアンパックします。\n"
 "値が一つしかない場合を含め、結果はタプルで返されます。\n"
-"バッファのバイトサイズから *offset* を引いたものは、少なくとも :func:`calcsize` の返り値である書式化文字列が要求するサイズでなければなりません。"
+"バッファのバイトサイズから *offset* を引いたものは、少なくとも :func:`calcsize` の返り値である書式文字列が要求するサイズでなければなりません。"
 
 #: ../../library/struct.rst:83
 msgid ""
@@ -135,25 +135,24 @@ msgid ""
 "buffer's size in bytes must be a multiple of the size required by the "
 "format, as reflected by :func:`calcsize`."
 msgstr ""
-"バッファ *buffer* を、書式化文字列 *fmt* に従ってイテレータ形式でアンパックします。\n"
+"バッファ *buffer* を、書式文字列 *fmt* に従ってイテレータ形式でアンパックします。\n"
 "この関数が返すイテレータは、すべての内容を読み終わるまでバッファから一定の大きさのチャンクを読み取ります。\n"
-"バッファのバイトサイズは、 :func:`calcsize` の返り値である書式化文字列が要求するサイズの倍数でなければなりません。"
+"バッファのバイトサイズは、 :func:`calcsize` の返り値である書式文字列が要求するサイズの倍数でなければなりません。"
 
 #: ../../library/struct.rst:89
 msgid "Each iteration yields a tuple as specified by the format string."
-msgstr "イテレーション毎に書式化文字列で指定されたタプルを yield します。"
+msgstr "イテレーション毎に書式文字列で指定されたタプルを yield します。"
 
 #: ../../library/struct.rst:96
 msgid ""
 "Return the size of the struct (and hence of the bytes object produced by "
 "``pack(fmt, ...)``) corresponding to the format string *fmt*."
 msgstr ""
-"書式化文字列 *fmt* に従って、構造体 (それと ``pack(fmt, ...)`` によって作成されるバイト列オブジェクト) "
-"のサイズを返します。"
+"書式文字列 *fmt* に従って、構造体 (それと ``pack(fmt, ...)`` によって作成されるバイト列オブジェクト) のサイズを返します。"
 
 #: ../../library/struct.rst:102
 msgid "Format Strings"
-msgstr "書式化文字列"
+msgstr "書式文字列"
 
 #: ../../library/struct.rst:104
 msgid ""
@@ -163,7 +162,7 @@ msgid ""
 "addition, there are special characters for controlling the :ref:`struct-"
 "alignment`."
 msgstr ""
-"書式化文字列はデータをパックしたりアンパックしたりするときの期待されるレイアウトを指定するためのメカニズムです。文字列はパック/アンパックされるデータの型を指定する"
+"書式文字列はデータをパックしたりアンパックしたりするときの期待されるレイアウトを指定するためのメカニズムです。文字列はパック/アンパックされるデータの型を指定する"
 " :ref:`format-characters` から組み立てられます。さらに、 :ref:`struct-alignment` "
 "を制御するための特殊文字もあります。"
 

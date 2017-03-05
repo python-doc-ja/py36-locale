@@ -1804,7 +1804,7 @@ msgid ""
 "format string.  For a complete list of formatting directives, see :ref"
 ":`strftime-strptime-behavior`."
 msgstr ""
-"明示的な書式化文字列で制御された、日付および時刻を表現する文字列を返します。完全な書式化ディレクティブのリストについては :ref:`strftime-"
+"明示的な書式文字列で制御された、日付および時刻を表現する文字列を返します。完全な書式化ディレクティブのリストについては :ref:`strftime-"
 "strptime-behavior` を参照してください。"
 
 #: ../../library/datetime.rst:1258

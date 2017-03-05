@@ -2346,7 +2346,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1584
 msgid "Both of these support two format strings:"
-msgstr "以下はいずれも書式化文字列をサポートします:"
+msgstr "以下はいずれも書式文字列をサポートします:"
 
 #: ../../howto/clinic.rst:1587
 msgid "``{block comment start}``"

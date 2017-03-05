@@ -366,7 +366,7 @@ msgid ""
 "address and current date and time are prefixed to every message logged."
 msgstr ""
 "任意のメッセージを ``sys.stderr`` にログ記録します。このメソッドは通常、カスタムのエラーログ記録機構を作成するために上書きされます。 "
-"*format* 引数は標準の printf 形式の書式化文字列で、 :meth:`log_message` "
+"*format* 引数は標準の printf 形式の書式文字列で、 :meth:`log_message` "
 "に渡された追加の引数は書式化の入力として適用されます。ログ記録される全てのメッセージには、クライアントの IP "
 "アドレスおよび現在の日付、時刻が先頭に付けられます。"
 

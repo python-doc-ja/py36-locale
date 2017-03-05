@@ -46,8 +46,8 @@ msgid ""
 "Construct :class:`PrettyPrinter` objects explicitly if you need to adjust "
 "the width constraint."
 msgstr ""
-"可能であればオブジェクトを書式化して1行に出力しますが、与えられた幅に合わないなら複数行に分けて出力します。無理に幅を設定したいなら、 "
-":class:`PrettyPrinter` オブジェクトを作成して明示してください。"
+"可能であればオブジェクトを1行で整形しますが、与えられた幅に合わないなら複数行に分けて整形します。\n"
+"出力幅を指定したい場合は、 :class:`PrettyPrinter` オブジェクトを作成して明示してください。"
 
 #: ../../library/pprint.rst:26
 msgid "Dictionaries are sorted by key before the display is computed."

@@ -352,28 +352,28 @@ msgid ""
 "Get a string that can be used as a format string for :func:`time.strftime` "
 "to represent date and time in a locale-specific way."
 msgstr ""
-"日付と時刻をロケール特有の方法で表現するために、 :func:`time.strftime` の書式化文字列として用いることのできる文字列を取得します。"
+"日付と時刻をロケール特有の方法で表現するために、 :func:`time.strftime` の書式文字列として用いることのできる文字列を取得します。"
 
 #: ../../library/locale.rst:174
 msgid ""
 "Get a string that can be used as a format string for :func:`time.strftime` "
 "to represent a date in a locale-specific way."
 msgstr ""
-"日付をロケール特有の方法で表現するために、 :func:`time.strftime` の書式化文字列として用いることのできる文字列を取得します。"
+"日付をロケール特有の方法で表現するために、 :func:`time.strftime` の書式文字列として用いることのできる文字列を取得します。"
 
 #: ../../library/locale.rst:179
 msgid ""
 "Get a string that can be used as a format string for :func:`time.strftime` "
 "to represent a time in a locale-specific way."
 msgstr ""
-"時刻をロケール特有の方法で表現するために、 :func:`time.strftime` の書式化文字列として用いることのできる文字列を取得します。"
+"時刻をロケール特有の方法で表現するために、 :func:`time.strftime` の書式文字列として用いることのできる文字列を取得します。"
 
 #: ../../library/locale.rst:184
 msgid ""
 "Get a format string for :func:`time.strftime` to represent time in the am/pm"
 " format."
 msgstr ""
-"時刻を午前／午後の書式で表現するために、 :func:`time.strftime` の書式化文字列として用いることのできる文字列を取得します。"
+"時刻を午前／午後の書式で表現するために、 :func:`time.strftime` の書式文字列として用いることのできる文字列を取得します。"
 
 #: ../../library/locale.rst:189
 msgid "Get the name of the n-th day of the week."
@@ -459,7 +459,7 @@ msgid ""
 "specified, and therefore you should not assume knowledge of it on different "
 "systems."
 msgstr ""
-"通常この値を直接指定する必要はありません。 ``E`` を書式化文字列に指定することで、関数 :func:`time.strftime` "
+"通常この値を直接指定する必要はありません。 ``E`` を書式文字列に指定することで、関数 :func:`time.strftime` "
 "がこの情報を使うようになります。返される文字列の様式は決められていないので、異なるシステム間で様式に関する同じ知識が使えると期待してはいけません。"
 
 #: ../../library/locale.rst:255
@@ -468,7 +468,7 @@ msgid ""
 "a locale-specific era-based way."
 msgstr ""
 "日付および時間をロケール固有の年代に基づいた方法で表現するために、 :func:`time.strftime` "
-"の書式化文字列として用いることのできる文字列を取得します。"
+"の書式文字列として用いることのできる文字列を取得します。"
 
 #: ../../library/locale.rst:260
 msgid ""
@@ -476,7 +476,7 @@ msgid ""
 "locale-specific era-based way."
 msgstr ""
 "日付をロケール固有の年代に基づいた方法で表現するために、 :func:`time.strftime` "
-"の書式化文字列として用いることのできる文字列を取得します。"
+"の書式文字列として用いることのできる文字列を取得します。"
 
 #: ../../library/locale.rst:265
 msgid ""
@@ -484,7 +484,7 @@ msgid ""
 "locale-specific era-based way."
 msgstr ""
 "時刻をロケール固有の年代に基づいた方法で表現するために、 :func:`time.strftime` "
-"の書式化文字列として用いることのできる文字列を取得します。"
+"の書式文字列として用いることのできる文字列を取得します。"
 
 #: ../../library/locale.rst:270
 msgid ""

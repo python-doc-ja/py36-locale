@@ -3825,11 +3825,11 @@ msgstr "``PyArg_Parse*()`` 系関数:"
 
 #: ../../whatsnew/3.2.rst:2647
 msgid "\"t#\" format has been removed: use \"s#\" or \"s*\" instead"
-msgstr "書式化文字列 \"t#\" の削除: 代わりに \"s#\" もしくは \"s*\" を使ってください。"
+msgstr "書式文字列 \"t#\" の削除: 代わりに \"s#\" もしくは \"s*\" を使ってください。"
 
 #: ../../whatsnew/3.2.rst:2648
 msgid "\"w\" and \"w#\" formats has been removed: use \"w*\" instead"
-msgstr "書式化文字列 \"w\" および \"w#\" の削除: 代わりに \"w*\" を使ってください。"
+msgstr "書式文字列 \"w\" および \"w#\" の削除: 代わりに \"w*\" を使ってください。"
 
 #: ../../whatsnew/3.2.rst:2650
 msgid ""
