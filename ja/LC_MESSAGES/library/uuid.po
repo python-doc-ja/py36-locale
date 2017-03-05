@@ -196,6 +196,9 @@ msgid ""
 "will be one of the constants :const:`RESERVED_NCS`, :const:`RFC_4122`, "
 ":const:`RESERVED_MICROSOFT`, or :const:`RESERVED_FUTURE`."
 msgstr ""
+"UUID の内部レイアウトを決定する UUID の variant。これは定数 :const:`RESERVED_NCS`, "
+":const:`RFC_4122`, :const:`RESERVED_MICROSOFT`, :const:`RESERVED_FUTURE` "
+"のいずれかです。"
 
 #: ../../library/uuid.rst:120
 msgid ""
