@@ -127,6 +127,13 @@ msgid ""
 ":file:`{prefix}/include`, where :envvar:`prefix` is the installation "
 "directory specified to the installer."
 msgstr ""
+"ヘッダファイル群は通常 Python と共にインストールされます。 Unixでは "
+":file:`{prefix}/include/pythonversion/` および "
+":file:`{exec_prefix}/include/pythonversion/` に置かれます。 :envvar:`prefix` と "
+":envvar:`exec_prefix` は Python をビルドする際の :program:`configure` "
+"スクリプトに与えたパラメタに対応し、 *version* は ``'%d.%d' % sys.version_info[:2]`` に対応します。 "
+"Windows では、ヘッダは :file:`{prefix}/include` に置かれます。 :envvar:`prefix` "
+"はインストーラに指定したインストールディレクトリです。"
 
 #: ../../c-api/intro.rst:72
 msgid ""
