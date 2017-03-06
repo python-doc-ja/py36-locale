@@ -27,11 +27,13 @@ msgid ""
 "printed in a human-readable form, or written to a file for future use. This "
 "chapter will discuss some of the possibilities."
 msgstr ""
-"プログラムから出力を行う方法がいくつかあります。データは人間が読める形で出力することも、将来使うためにファイルに書くこともできます。この章では、こうした幾つかの出力の方法について話します。"
+"プログラムの出力方法にはいくつかの種類があります。\n"
+"データを人間が読める形で出力することもあれば、将来使うためにファイルに書くこともあります。\n"
+"この章では、こうした幾つかの出力の方法について話します。"
 
 #: ../../tutorial/inputoutput.rst:15
 msgid "Fancier Output Formatting"
-msgstr "ファンシーな出力の書式化"
+msgstr "出力を見やすくフォーマットする"
 
 #: ../../tutorial/inputoutput.rst:17
 msgid ""
@@ -40,8 +42,8 @@ msgid ""
 "method of file objects; the standard output file can be referenced as "
 "``sys.stdout``. See the Library Reference for more information on this.)"
 msgstr ""
-"これまでのところ、値を出力する二つの方法: *式文 (expression statement)* と :func:`print` 関数が出てきました。"
-" (第三はファイルオブジェクトの :meth:`write` メソッドを使う方法です。標準出力を表すファイルは ``sys.stdout`` "
+"これまでに、値を出力する二つの方法: *式文 (expression statement)* と :func:`print` 関数が出てきました。 "
+"(第三はファイルオブジェクトの :meth:`write` メソッドを使う方法です。標準出力を表すファイルは ``sys.stdout`` "
 "で参照できます。詳細はライブラリリファレンスを参照してください。)"
 
 #: ../../tutorial/inputoutput.rst:22
@@ -55,13 +57,17 @@ msgid ""
 "discussed shortly.  The second way is to use :ref:`formatted string literals"
 " <f-strings>`, or the :meth:`str.format` method."
 msgstr ""
+"出力をフォーマットする際に、単に値をスペースで区切って出力するよりももっときめ細かな制御をしたい場合があります。\n"
+"出力をフォーマットするのには大きく分けて二つの方法があります。\n"
+"第一の方法は、全ての文字列を自分で処理するというものです。文字列のスライスや結合といった操作を使えば、思い通りのレイアウトを作成することができます。文字列オブジェクトは、文字列を指定されたカラム幅に揃えるための幾つかの便利なメソッドを提供しています。これらのメソッドについてはすぐ後で簡単に説明します。\n"
+"もうひとつの方法は :ref:`フォーマット済み文字列リテラル <f-strings>` や :meth:`str.format` メソッドを利用することです。"
 
 #: ../../tutorial/inputoutput.rst:31
 msgid ""
 "The :mod:`string` module contains a :class:`~string.Template` class which "
 "offers yet another way to substitute values into strings."
 msgstr ""
-":mod:`string` モジュールの :class:`~string.Template` クラスは文字列中の値を置換する別の方法を提供しています。"
+":mod:`string` モジュールの :class:`~string.Template` クラスも、文字列中の値を置換する別の方法を提供しています。"
 
 #: ../../tutorial/inputoutput.rst:34
 msgid ""
@@ -90,7 +96,7 @@ msgstr ""
 
 #: ../../tutorial/inputoutput.rst:47
 msgid "Some examples::"
-msgstr "いくつかの例です::"
+msgstr "例::"
 
 #: ../../tutorial/inputoutput.rst:70
 msgid "Here are two ways to write a table of squares and cubes::"
@@ -101,7 +107,7 @@ msgid ""
 "(Note that in the first example, one space between each column was added by "
 "the way :func:`print` works: it always adds spaces between its arguments.)"
 msgstr ""
-"(最初の例で、各カラムの間のスペース一個は :func:`print` の働きで追加されていることに注意してください。 :func:`print` "
+"(最初の例で、各カラムの間のスペース一個は :func:`print` により追加されていることに注意してください。 :func:`print` "
 "は引数間に常に空白を追加します。)"
 
 #: ../../tutorial/inputoutput.rst:105
@@ -119,7 +125,7 @@ msgstr ""
 "この例では、文字列の :meth:`str.rjust` メソッドの使い方を示しています。 :meth:`str.rjust` "
 "は文字列を指定された幅のフィールド内に右詰めで入るように、左に空白を追加します。同様のメソッドとして、 :meth:`str.ljust` と "
 ":meth:`str.center` "
-"があります。これらのメソッドは何か出力を行うわけではなく、ただ新しい文字列を返します。入力文字列が長すぎる場合、文字列を切り詰めることはせず、ただ値をそのまま返します。この仕様のためにカラムのレイアウトが滅茶苦茶になるかもしれませんが、嘘の値が代わりに書き出されるよりはましです。(本当に切り詰めを行いたいのなら、全てのカラムに"
+"があります。これらのメソッドは何か出力を行うわけではなく、ただ新しい文字列を返します。入力文字列が長すぎる場合、文字列を切り詰めることはせずに値をそのまま返します。この仕様のためにカラムのレイアウトが滅茶苦茶になるかもしれませんが、嘘の値が代わりに書き出されるよりはましです。(本当に切り詰めを行いたいのなら、全てのカラムに"
 " ``x.ljust(n)[:n]`` のようにスライス表記を加えることもできます。)"
 
 #: ../../tutorial/inputoutput.rst:115
