@@ -1417,6 +1417,8 @@ msgid ""
 " ``len(s) + i`` or ``len(s) + j`` is substituted.  But note that ``-0`` is "
 "still ``0``."
 msgstr ""
+"*i* または *j* が負の数の場合、インデクスはシーケンスの末端からの相対インデクスになります: ``len(s) + i`` または ``len(s) + j`` が代わりに使われます。\n"
+"ただし ``-0`` はやはり ``0`` であることに注意してください。"
 
 #: ../../library/stdtypes.rst:935
 msgid ""
