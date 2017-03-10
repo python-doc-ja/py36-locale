@@ -1822,6 +1822,7 @@ msgid ""
 "Socket objects also have these (read-only) attributes that correspond to the"
 " values given to the :class:`~socket.socket` constructor."
 msgstr ""
+"ソケットオブジェクトには以下の :class:`~socket.socket` コンストラクタに渡された値に対応した (読み出し専用) 属性があります。"
 
 #: ../../library/socket.rst:1437
 msgid "The socket family."
