@@ -1543,6 +1543,9 @@ msgid ""
 "like object; it's used as-is by the :meth:`enqueue` method, which needs to "
 "know how to send messages to it."
 msgstr ""
+":class:`QueueHandler` "
+"クラスの新しいインスタンスを返します。インスタンスは、キューにメッセージを送るように初期化されます。キューは任意のキューのようなオブジェクトが可能です;"
+" それはそのまま :meth:`enqueue` メソッドによって使用されます。そのメソッドはメッセージを送る方法を知っている必要があります。"
 
 #: ../../library/logging.handlers.rst:956
 msgid "Enqueues the result of preparing the LogRecord."
@@ -1625,6 +1628,12 @@ msgid ""
 "is as in previous Python versions - to always pass each message to each "
 "handler."
 msgstr ""
+":class:`QueueListener` "
+"クラスの新しいインスタンスを返します。インスタンスは、メッセージの送信先キューと、キュー上に配置されたエントリーを扱うハンドラのリストとともに初期化されます。キューには、任意のキューのようなオブジェクトを使用できます。キューのようなオブジェクトは、そのまま"
+" :meth:`dequeue` メソッドに渡されます。そのメソッドはメッセージをキューから取得する方法を知っている必要があります。 "
+"``respect_handler_level`` が ``True`` "
+"の場合、メッセージをそのハンドラーに渡すかどうかを判断する際、(メッセージに対するレベルと比較して)ハンドラのレベルは尊重されます。``False`` "
+"の場合、以前の Python のバージョンと同様に動作し、各メッセージを各ハンドラに常に渡します。"
 
 #: ../../library/logging.handlers.rst:1013
 msgid "The ``respect_handler_levels`` argument was added."
