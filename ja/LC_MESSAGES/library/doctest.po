@@ -587,6 +587,10 @@ msgid ""
 "and may be passed to the doctest command line interface via the ``-o`` "
 "option."
 msgstr ""
+"doctest の振る舞いは、数多くのオプションフラグによって様々な側面から制御されています。フラグのシンボル名はモジュールの定数として提供され、 "
+":ref:`ビット単位論理和 <bitwise>` でつないで様々な関数に渡すことができます。シンボル名は :ref:`doctest "
+"directives <doctest-directives>` でも使用でき、doctest コマンドラインインタフェースに ``-o`` "
+"を通して与えることができます。"
 
 #: ../../library/doctest.rst:517
 msgid "The ``-o`` command line option."
@@ -1095,6 +1099,8 @@ msgid ""
 "Optional argument *optionflags* (default value 0) takes the :ref:`bitwise OR"
 " <bitwise>` of option flags. See section :ref:`doctest-options`."
 msgstr ""
+"オプション引数 *optionflags* (デフォルト値 0) は、各オプションフラグの :ref:`ビット単位論理和 <bitwise>` "
+"を取ります。 :ref:`doctest-options` 節を参照してください。"
 
 #: ../../library/doctest.rst:884
 msgid ""
@@ -1506,6 +1512,8 @@ msgid ""
 "Argument *flags* takes the :ref:`bitwise OR <bitwise>` of option flags.  See"
 " section :ref:`doctest-options`.  Only \"reporting flags\" can be used."
 msgstr ""
+"引数 *flags* はオプションフラグの :ref:`ビット単位論理和 <bitwise>` を取ります。 :ref:`doctest-"
+"options` 節を参照してください。「レポートフラグ」しか使えません。"
 
 #: ../../library/doctest.rst:1105
 msgid ""
