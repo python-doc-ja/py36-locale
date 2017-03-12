@@ -2,6 +2,8 @@ dist: trusty
 sudo: false
 language: python
 python: '3.6'
+before_install:
+- export TZ=Asia/Tokyo
 install:
 - pip install sphinx==1.4.9
 - cd ..
