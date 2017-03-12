@@ -2249,7 +2249,7 @@ msgid ""
 "sections.  In addition, see the :ref:`stringservices` section."
 msgstr ""
 "``str`` クラスとそのメソッドについて詳しくは、 :ref:`テキストシーケンス型 — str <textseq>` や :ref"
-":`string-methods` の節を参照してください。書式化された文字列を出力するには、 :ref:`f-strings` と :ref"
+":`string-methods` の節を参照してください。フォーマットされた文字列を出力するには、 :ref:`f-strings` と :ref"
 ":`string-formatting` の節を参照してください。加えて、 :ref:`stringservices` の節も参照してください。"
 
 #: ../../library/stdtypes.rst:1473
@@ -3028,6 +3028,9 @@ msgid ""
 "These alternatives also provide more powerful, flexible and extensible "
 "approaches to formatting text."
 msgstr ""
+"ここで述べる書式化演算には様々な癖があり、よく間違いの元になっています (タプルや辞書を正しく表示できないなど)。新しい "
+":ref:`フォーマット文字列リテラル <f-strings>` や :meth:`str.format` "
+"インタフェースの方が間違いにくく、より強力で、柔軟で、さらに拡張可能です。"
 
 #: ../../library/stdtypes.rst:2084
 msgid ""
@@ -4455,7 +4458,7 @@ msgstr ""
 msgid ""
 "A :class:`memoryview` supports slicing and indexing to expose its data. One-"
 "dimensional slicing will result in a subview::"
-msgstr ""
+msgstr ":class:`memoryview` はスライスおよびインデックス指定で内容を取得できます。一次元のスライスは部分ビューになります::"
 
 #: ../../library/stdtypes.rst:3388
 msgid ""

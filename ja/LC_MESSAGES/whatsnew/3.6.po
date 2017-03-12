@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Hano <hanohrs@gmail.com>, 2017\n"
+"Last-Translator: Suguru YAMAMOTO <sgryjp@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -58,7 +58,7 @@ msgstr "新たな文法機能:"
 
 #: ../../whatsnew/3.6.rst:64
 msgid ":ref:`PEP 498 <whatsnew36-pep498>`, formatted string literals."
-msgstr ":ref:`PEP 498 <whatsnew36-pep498>`、書式化済み文字列リテラル。"
+msgstr ":ref:`PEP 498 <whatsnew36-pep498>`、フォーマット済み文字列リテラル。"
 
 #: ../../whatsnew/3.6.rst:66
 msgid ":ref:`PEP 515 <whatsnew36-pep515>`, underscores in numeric literals."
@@ -255,15 +255,15 @@ msgstr "新しい機能"
 
 #: ../../whatsnew/3.6.rst:183
 msgid "PEP 498: Formatted string literals"
-msgstr "PEP 498: 書式化済み文字列リテラル"
+msgstr "PEP 498: フォーマット済み文字列リテラル"
 
 #: ../../whatsnew/3.6.rst:185
 msgid ""
 ":pep:`498` introduces a new kind of string literals: *f-strings*, or "
 ":ref:`formatted string literals <f-strings>`."
 msgstr ""
-":pep:`498` は新たな種類の文字列リテラル、すなわち *f-strings*、 :ref:`書式化済み文字列リテラル <f-strings>` "
-"を導入しました。"
+":pep:`498` は新たな種類の文字列リテラル、すなわち *f-strings*、 :ref:`フォーマット済み文字列リテラル "
+"<f-strings>` を導入しました。"
 
 #: ../../whatsnew/3.6.rst:188
 msgid ""
