@@ -85,6 +85,9 @@ msgid ""
 "attack (see https://xkcd.com/327/ for humorous example of what can go "
 "wrong)."
 msgstr ""
+"たいてい、SQL 操作では Python 変数の値を使う必要があります。この時、クエリーを Python "
+"の文字列操作を使って構築することは安全とは言えないので、すべきではありません。そのようなことをするとプログラムが SQL "
+"インジェクション攻撃に対し脆弱になります (https://xkcd.com/327/ ではどうなってしまうかをユーモラスに描いています)。"
 
 #: ../../library/sqlite3.rst:62
 msgid ""
@@ -403,6 +406,8 @@ msgid ""
 "supplied, this must be a callable returning an instance of :class:`Cursor` "
 "or its subclasses."
 msgstr ""
+"cursor メソッドはオション引数 *factory* を 1 つだけ受け付けます。\n"
+"渡された場合は、 :class:`Cursor` またはそのサブクラスのインスタンスを返す呼び出し可能オブジェクトでなければなりません。"
 
 #: ../../library/sqlite3.rst:296
 msgid ""
@@ -519,7 +524,7 @@ msgstr "以下の例は「間違った方法で」ソートする自作の照合
 #: ../../library/sqlite3.rst:381
 msgid ""
 "To remove a collation, call ``create_collation`` with ``None`` as callable::"
-msgstr ""
+msgstr "照合順序を取り除くには callable に ``None`` を指定して ``create_collation`` を呼び出します::"
 
 #: ../../library/sqlite3.rst:388
 msgid ""
@@ -1269,7 +1274,7 @@ msgstr ""
 msgid ""
 "If you want **autocommit mode**, then set :attr:`isolation_level` to "
 "``None``."
-msgstr ""
+msgstr "**自動コミットモード** を使いたい場合は、 :attr:`isolation_level` は ``None`` にしてください。"
 
 #: ../../library/sqlite3.rst:944
 msgid ""
