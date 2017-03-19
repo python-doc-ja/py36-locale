@@ -4436,9 +4436,9 @@ msgid ""
 "such as :class:`bytes` and :class:`bytearray`, an element is a single byte, "
 "but other types such as :class:`array.array` may have bigger elements."
 msgstr ""
-":class:`memoryview` には *要素* の概念があり、それが起源のオブジェクト *obj* "
-"によって扱われる原子的なメモリの単位になります。多くの単純なオブジェクト、例えば :class:`bytes` や :class:`bytearray`"
-" では、要素は単バイトになりますが、他の :class:`array.array` 等の型では、要素はより大きくなりえます。"
+":class:`memoryview` は元となるオブジェクト *obj* が扱うメモリーの最小単位を *要素* "
+"として扱います。多くの単純なオブジェクト、例えば :class:`bytes` や :class:`bytearray` "
+"では、要素は単バイトになりますが、他の :class:`array.array` 等の型では、要素はより大きくなりえます。"
 
 #: ../../library/stdtypes.rst:3368
 msgid ""
@@ -4449,10 +4449,10 @@ msgid ""
 " The :class:`~memoryview.itemsize` attribute will give you the number of "
 "bytes in a single element."
 msgstr ""
-"``len(view)`` は、:class:`~memoryview.tolist` の長さと等しいです。``view.ndim = 0`` "
-"なら、長さは 1 です。``view.ndim = 1`` "
-"なら、長さはビューの要素数と等しいです。より高次元では、長さはビューのネストされたリスト表現の長さと等しいです。:class:`~memoryview.itemsize`"
-" 属性は、要素一つごとのバイト数を与えます。"
+"メモリビューの長さ ``len(view)`` は、 :class:`~memoryview.tolist` "
+"で得られるリストの長さとなります。``view.ndim = 0`` なら、長さは 1 です。``view.ndim = 1`` "
+"なら、長さはビューの要素数と等しいです。より高次元では、長さはビューのネストされたリスト表現の長さと等しいです。要素一つあたりのバイト数は "
+":class:`~memoryview.itemsize` 属性から取得できます。"
 
 #: ../../library/stdtypes.rst:3375
 msgid ""
@@ -4478,13 +4478,13 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:3397
 msgid "Here is an example with a non-byte format::"
-msgstr ""
+msgstr "`~memoryview.format` が単バイト単位ではない例を示します::"
 
 #: ../../library/stdtypes.rst:3409
 msgid ""
 "If the underlying object is writable, the memoryview supports one-"
 "dimensional slice assignment. Resizing is not allowed::"
-msgstr ""
+msgstr "メモリビューの参照しているオブジェクトが書き込み可能であれば、一次元スライスでの代入が可能です。ただしサイズの変更はできません::"
 
 #: ../../library/stdtypes.rst:3430
 msgid ""
@@ -4509,7 +4509,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:3450
 msgid "memoryviews can now be indexed with tuple of integers."
-msgstr ""
+msgstr "メモリビューは整数のタプルでインデックス指定できるようになりました。"
 
 #: ../../library/stdtypes.rst:3453
 msgid ":class:`memoryview` has several methods:"
@@ -4626,6 +4626,10 @@ msgid ""
 " is not copied. Supported casts are 1D -> C-:term:`contiguous` and "
 "C-contiguous -> 1D."
 msgstr ""
+"memoryview を新しいフォーマットか shape にキャストします。 *shape* はデフォルトで "
+"``[byte_length//new_itemsize]`` で、 1次元配列になります。戻り値は memoryview "
+"ですが、バッファー自体はコピーされません。サポートされている変換は 1次元配列 -> C言語型の連続配列 と C言語型の連続配列 -> 1次元配列 "
+"です（参考: :term:`contiguous`）。"
 
 #: ../../library/stdtypes.rst:3588
 msgid ""
@@ -4633,6 +4637,8 @@ msgid ""
 ":mod:`struct` syntax. One of the formats must be a byte format ('B', 'b' or "
 "'c'). The byte length of the result must be the same as the original length."
 msgstr ""
+"キャスト後のフォーマットは :mod:`struct` 文法の単一要素ネイティブフォーマットに制限されます。フォーマットのうちの一つはバイトフォーマット"
+" ('B', 'b', 'c') でなければなりません。結果のバイト長はオリジナルの長さと同じでなければなりません。"
 
 #: ../../library/stdtypes.rst:3593
 msgid "Cast 1D/long to 1D/unsigned bytes::"
