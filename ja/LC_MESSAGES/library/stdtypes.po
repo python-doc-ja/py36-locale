@@ -4470,6 +4470,11 @@ msgid ""
 "*ndim* integers where *ndim* is the number of dimensions.  Zero-dimensional "
 "memoryviews can be indexed with the empty tuple."
 msgstr ""
+"もしメモリビューの :class:`~memoryview.format` が :mod:`struct` "
+"モジュールによって定義されているネイティブのフォーマット指定子であれば、整数または整数のタプルでのインデックス指定により適切な型の *要素1つ* "
+"を得ることができます。一次元のメモリビューでは、整数または整数 1 つのタプルでインデックス指定できます。多次元のメモリビューでは、その次元数を "
+"*ndim* としたとき、ちょうど *ndim* "
+"個の整数からなるタプルでインデックス指定できます。ゼロ次元のメモリビューでは、空のタプルでインデックス指定できます。"
 
 #: ../../library/stdtypes.rst:3397
 msgid "Here is an example with a non-byte format::"
