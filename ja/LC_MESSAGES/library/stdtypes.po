@@ -1417,7 +1417,7 @@ msgid ""
 " ``len(s) + i`` or ``len(s) + j`` is substituted.  But note that ``-0`` is "
 "still ``0``."
 msgstr ""
-"*i* または *j* が負の数の場合、インデクスはシーケンスの末端からの相対インデクスになります: ``len(s) + i`` または ``len(s) + j`` が代わりに使われます。\n"
+"*i* または *j* が負の数の場合、インデックスはシーケンスの末端からの相対インデックスになります: ``len(s) + i`` または ``len(s) + j`` が代わりに使われます。\n"
 "ただし ``-0`` はやはり ``0`` であることに注意してください。"
 
 #: ../../library/stdtypes.rst:935
@@ -1428,7 +1428,7 @@ msgid ""
 "*j* is omitted or ``None``, use ``len(s)``.  If *i* is greater than or equal"
 " to *j*, the slice is empty."
 msgstr ""
-"*s* の *i* から *j* へのスライスは ``i <= k < j`` となるようなインデクス *k* "
+"*s* の *i* から *j* へのスライスは ``i <= k < j`` となるようなインデックス *k* "
 "を持つ要素からなるシーケンスとして定義されます。 *i* または *j* が ``len(s)`` よりも大きい場合、 ``len(s)`` "
 "を使います。 *i* が省略されるか ``None`` だった場合、 ``0`` を使います。 *j* が省略されるか ``None`` だった場合、 "
 "``len(s)`` を使います。 *i* が *j* 以上の場合、スライスは空のシーケンスになります。"
@@ -1445,6 +1445,14 @@ msgid ""
 "(which end depends on the sign of *k*).  Note, *k* cannot be zero. If *k* is"
 " ``None``, it is treated like ``1``."
 msgstr ""
+"*s* の「 *i* から *j* まででステップが *k* のスライス」は、インデックス ``x = i + n*k`` （ただし n は ``0 "
+"<= n < (j-i)/k`` を満たす任意の整数）を持つ要素からなるシーケンスとして定義されます。言い換えるとインデックスは ``i``, "
+"``i+k``, ``i+2*k``, ``i+3*k`` と続き、 *j* に達したところでストップします (ただし *j* は含みません)。 *k*"
+" が正の数である場合、 *i* または *j* が ``len(s)`` より大きければ ``len(s)`` を代わりに使用します。 *k* "
+"が負の数である場合、 *i* または *j* が ``len(s) - 1`` より大きければ ``len(s) - 1`` を代わりに使用します。 "
+"*i* または *j* を省略または ``None`` を指定すると、 \"端\" (どちらの端かは *k* の符号に依存) "
+"の値を代わりに使用します。なお *k* はゼロにできないので注意してください。また *k* に ``None`` を指定すると、 ``1`` "
+"が指定されたものとして扱われます。"
 
 #: ../../library/stdtypes.rst:953
 msgid ""
@@ -1505,7 +1513,7 @@ msgstr ""
 "``index`` は *x* が *s* 中に見つからないとき :exc:`ValueError` を送出します。index "
 "メソッドへの追加の引数は、サポートされていれば、シーケンスの一部の効率のいい探索ができます。追加の引数を渡すのははおおよそ "
 "``s[i:j].index(x)`` "
-"を使うのと等価ですが、データをコピーしなくて済むし、返されるのはスライスの最初ではなくシーケンスの最初からの相対インデクスです。"
+"を使うのと等価ですが、データをコピーしなくて済むし、返されるのはスライスの最初ではなくシーケンスの最初からの相対インデックスです。"
 
 #: ../../library/stdtypes.rst:989
 msgid "Immutable Sequence Types"
@@ -1650,7 +1658,7 @@ msgstr "``s.insert(i, x)``"
 #: ../../library/stdtypes.rst:1079
 msgid ""
 "inserts *x* into *s* at the index given by *i* (same as ``s[i:i] = [x]``)"
-msgstr "*s* の *i* で与えられたインデクスに *x* を挿入します。 (``s[i:i] = [x]`` と同じ)"
+msgstr "*s* の *i* で与えられたインデックスに *x* を挿入します。 (``s[i:i] = [x]`` と同じ)"
 
 #: ../../library/stdtypes.rst:1083
 msgid "``s.pop([i])``"
@@ -2058,7 +2066,8 @@ msgid ""
 "and support for negative indices (see :ref:`typesseq`):"
 msgstr ""
 "range オブジェクトは :class:`collections.abc.Sequence` ABC "
-"を実装し、包含判定、要素インデクス検索、スライシングのような機能を提供し、負のインデクスをサポートします (:ref:`typesseq` を参照):"
+"を実装し、包含判定、要素インデックス検索、スライシングのような機能を提供し、負のインデックスをサポートします (:ref:`typesseq` "
+"を参照):"
 
 #: ../../library/stdtypes.rst:1346
 msgid ""
@@ -2104,6 +2113,8 @@ msgid ""
 "how to implement a lazy version of range that suitable for floating point "
 "applications."
 msgstr ""
+"遅延評価される浮動小数点版の range の作り方は `linspace レシピ "
+"<http://code.activestate.com/recipes/579000/>`_ で示されています。"
 
 #: ../../library/stdtypes.rst:1382
 msgid "Text Sequence Type --- :class:`str`"
@@ -2665,8 +2676,8 @@ msgid ""
 "that *sub* is contained within ``s[start:end]``.  Optional arguments *start*"
 " and *end* are interpreted as in slice notation.  Return ``-1`` on failure."
 msgstr ""
-"文字列中の領域 ``s[start:end]`` に *sub* が含まれる場合、その最大のインデクスを返します。オプション引数 *start* および"
-" *end* はスライス表記と同様に解釈されます。 *sub* が見つからなかった場合 ``-1``  を返します。"
+"文字列中の領域 ``s[start:end]`` に *sub* が含まれる場合、その最大のインデックスを返します。オプション引数 *start* "
+"および *end* はスライス表記と同様に解釈されます。 *sub* が見つからなかった場合 ``-1``  を返します。"
 
 #: ../../library/stdtypes.rst:1796
 msgid ""
@@ -3880,7 +3891,7 @@ msgid ""
 "arguments *start* and *end* are interpreted as in slice notation. Return "
 "``-1`` on failure."
 msgstr ""
-"シーケンス中の領域 ``s[start:end]`` に *sub* が含まれる場合、その最大のインデクスを返します。オプション引数 *start* "
+"シーケンス中の領域 ``s[start:end]`` に *sub* が含まれる場合、その最大のインデックスを返します。オプション引数 *start* "
 "および *end* はスライス表記と同様に解釈されます。 *sub* が見つからなかった場合 ``-1``  を返します。"
 
 #: ../../library/stdtypes.rst:2606
@@ -4500,12 +4511,14 @@ msgid ""
 "One-dimensional memoryviews can now be sliced. One-dimensional memoryviews "
 "with formats 'B', 'b' or 'c' are now hashable."
 msgstr ""
+"1 次元のメモリビューがスライス可能になりました。 'B', 'b', 'c' いずれかのフォーマットの 1 "
+"次元のメモリビューがハッシュ可能になりました。"
 
 #: ../../library/stdtypes.rst:3446
 msgid ""
 "memoryview is now registered automatically with "
 ":class:`collections.abc.Sequence`"
-msgstr ""
+msgstr "memoryview は自動的に :class:`collections.abc.Sequence` へ登録されるようになりました。"
 
 #: ../../library/stdtypes.rst:3450
 msgid "memoryviews can now be indexed with tuple of integers."
@@ -4658,7 +4671,7 @@ msgstr "1D/unsigned char から 2D/unsigned long へのキャスト::"
 
 #: ../../library/stdtypes.rst:3669
 msgid "The source format is no longer restricted when casting to a byte view."
-msgstr ""
+msgstr "単バイトのビューへキャストする場合、キャスト元のフォーマットについて制約は無くなりました。"
 
 #: ../../library/stdtypes.rst:3672
 msgid "There are also several readonly attributes available:"
