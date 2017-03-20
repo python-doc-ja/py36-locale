@@ -4478,7 +4478,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:3397
 msgid "Here is an example with a non-byte format::"
-msgstr "`~memoryview.format` が単バイト単位ではない例を示します::"
+msgstr ":class:`~memoryview.format` が単バイト単位ではない例を示します::"
 
 #: ../../library/stdtypes.rst:3409
 msgid ""
@@ -4666,7 +4666,7 @@ msgstr "読み込み専用の属性もいくつか使えます:"
 
 #: ../../library/stdtypes.rst:3676
 msgid "The underlying object of the memoryview::"
-msgstr "memoryview の裏側にあるオブジェクト::"
+msgstr "memoryview が参照しているオブジェクト::"
 
 #: ../../library/stdtypes.rst:3687
 msgid ""
@@ -4683,7 +4683,7 @@ msgstr "多次元配列::"
 
 #: ../../library/stdtypes.rst:3723
 msgid "A bool indicating whether the memory is read only."
-msgstr "メモリが読み込み専用かを表すブールです。"
+msgstr "メモリが読み込み専用かどうかを示す真偽値です。"
 
 #: ../../library/stdtypes.rst:3727
 msgid ""
@@ -4718,11 +4718,11 @@ msgstr "メモリが表す多次元配列が何次元かを示す整数です。
 msgid ""
 "A tuple of integers the length of :attr:`ndim` giving the shape of the "
 "memory as an N-dimensional array."
-msgstr "メモリの形状を N 次元配列として与える、長さ :attr:`ndim` の整数のタプルです。"
+msgstr "メモリが表している N 次元配列の形状を表す、長さ :attr:`ndim` の整数のタプルです。"
 
 #: ../../library/stdtypes.rst:3759 ../../library/stdtypes.rst:3767
 msgid "An empty tuple instead of ``None`` when ndim = 0."
-msgstr ""
+msgstr "ndim = 0 の場合は ``None`` ではなく空のタプルとなるよう変更されました。"
 
 #: ../../library/stdtypes.rst:3764
 msgid ""
@@ -4736,15 +4736,15 @@ msgstr "PILスタイルの配列の内部で利用している値。この値は
 
 #: ../../library/stdtypes.rst:3776
 msgid "A bool indicating whether the memory is C-:term:`contiguous`."
-msgstr ""
+msgstr "メモリーが C 形式の順序で連続しているかどうかを示す真偽値（参考: :term:`contiguous` ）。"
 
 #: ../../library/stdtypes.rst:3782
 msgid "A bool indicating whether the memory is Fortran :term:`contiguous`."
-msgstr ""
+msgstr "メモリーがFortran形式の順序で連続しているかどうかを示す真偽値（参考: :term:`contiguous` ）。"
 
 #: ../../library/stdtypes.rst:3788
 msgid "A bool indicating whether the memory is :term:`contiguous`."
-msgstr ""
+msgstr "メモリーが連続しているかどうかを示す真偽値（参考: :term:`contiguous` ）。"
 
 #: ../../library/stdtypes.rst:3796
 msgid "Set Types --- :class:`set`, :class:`frozenset`"
@@ -5803,13 +5803,13 @@ msgstr "クラスオブジェクトの基底クラスのタプルです。"
 #: ../../library/stdtypes.rst:4587
 msgid ""
 "The name of the class, function, method, descriptor, or generator instance."
-msgstr ""
+msgstr "クラス、関数、メソッド、デスクリプタ、ジェネレータインスタンスの名前です。"
 
 #: ../../library/stdtypes.rst:4593
 msgid ""
 "The :term:`qualified name` of the class, function, method, descriptor, or "
 "generator instance."
-msgstr ""
+msgstr "クラス、関数、メソッド、デスクリプタ、ジェネレータインスタンスの :term:`修飾名 <qualified name>` です。"
 
 #: ../../library/stdtypes.rst:4601
 msgid ""
