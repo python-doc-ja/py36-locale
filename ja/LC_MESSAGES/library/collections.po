@@ -965,7 +965,7 @@ msgstr ""
 msgid ""
 "If *module* is defined, the ``__module__`` attribute of the named tuple is "
 "set to that value."
-msgstr ""
+msgstr "もし *module* が指定されていれば、名前付きタプルの ``__module__`` 属性は、指定された値に設定されます"
 
 #: ../../library/collections.rst:796
 msgid ""
@@ -1013,7 +1013,7 @@ msgstr "既存の sequence や Iterable から新しいインスタンスを作�
 msgid ""
 "Return a new :class:`OrderedDict` which maps field names to their "
 "corresponding values:"
-msgstr ""
+msgstr "フィールド名を対応する値にマッピングする新しい:class:`OrderedDict` を返します::"
 
 #: ../../library/collections.rst:866
 msgid "Returns an :class:`OrderedDict` instead of a regular :class:`dict`."
@@ -1122,7 +1122,7 @@ msgstr ""
 #: ../../library/collections.rst:978
 msgid ""
 "See :meth:`typing.NamedTuple` for a way to add type hints for named tuples."
-msgstr ""
+msgstr "名前付きタプルに型ヒントを追加する方法については、 :meth:`typing.NamedTuple` を参照してください。"
 
 #: ../../library/collections.rst:982
 msgid ":class:`OrderedDict` objects"
@@ -1155,6 +1155,9 @@ msgid ""
 "out)` order if *last* is true or :abbr:`FIFO (first-in, first-out)` order if"
 " false."
 msgstr ""
+"順序付き辞書の :meth:`popitem` メソッドは、(key, value) 対を返して消去します。この対は *last* "
+"が真なら:abbr:`LIFO(last-in, first-out 後入先出)`で、偽なら:abbr:`FIFO` (first-in, first-"
+"out 先入先出)` で返されます。"
 
 #: ../../library/collections.rst:1007
 msgid ""
@@ -1199,6 +1202,8 @@ msgid ""
 "passed to the :class:`OrderedDict` constructor and its :meth:`update` "
 "method."
 msgstr ""
+":pep:`468` の受理によって、:class:`OrderedDict` のコンストラクタと、:meth:`update` "
+"メソッドに渡したキーワード引数の順序は保持されます。"
 
 #: ../../library/collections.rst:1042
 msgid ":class:`OrderedDict` Examples and Recipes"
