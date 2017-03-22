@@ -76,7 +76,7 @@ msgid "ncalls"
 msgstr ""
 
 #: ../../library/profile.rst:88
-msgid "for the number of calls,"
+msgid "for the number of calls."
 msgstr ""
 
 #: ../../library/profile.rst:92
