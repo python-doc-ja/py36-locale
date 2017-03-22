@@ -959,16 +959,12 @@ msgstr "呼び出しヒント (Calltips)"
 
 #: ../../library/idle.rst:449
 msgid ""
-"A calltip is shown when one types :kbd:`(` after the name of an "
-"*acccessible* function.  A name expression may include dots and subscripts."
-"  A calltip remains until it is clicked, the cursor is moved out of the "
-"argument area, or :kbd:`)` is typed.  When the cursor is in the argument "
-"part of a definition, the menu or shortcut display a calltip."
+"A calltip is shown when one types :kbd:`(` after the name of an *accessible*"
+" function.  A name expression may include dots and subscripts.  A calltip "
+"remains until it is clicked, the cursor is moved out of the argument area, "
+"or :kbd:`)` is typed.  When the cursor is in the argument part of a "
+"definition, the menu or shortcut display a calltip."
 msgstr ""
-"calltip は、 *アクセス可能な* 関数名に続けて :kbd:`(` "
-"をタイプすると表示されます。名前の式ではドットや添え字を含んでいても構いません。calltip "
-"は、それをクリックするか、カーソルが引数のエリアから外れるか、 :kbd:`)` "
-"をタイプするまでは表示されたままとなります。カーソルが引数部分にあれば、メニューやショートカットで calltip を表示できます。"
 
 #: ../../library/idle.rst:455
 msgid ""

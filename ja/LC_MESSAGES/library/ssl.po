@@ -967,17 +967,16 @@ msgstr ""
 
 #: ../../library/ssl.rst:619
 msgid ""
-"Auto-negotiate the the highest protocol version like "
-":data:`PROTOCOL_SSLv23`, but only support client-side :class:`SSLSocket` "
-"connections. The protocol enables :data:`CERT_REQUIRED` and "
-":attr:`~SSLContext.check_hostname` by default."
+"Auto-negotiate the highest protocol version like :data:`PROTOCOL_SSLv23`, "
+"but only support client-side :class:`SSLSocket` connections. The protocol "
+"enables :data:`CERT_REQUIRED` and :attr:`~SSLContext.check_hostname` by "
+"default."
 msgstr ""
 
 #: ../../library/ssl.rst:628
 msgid ""
-"Auto-negotiate the the highest protocol version like "
-":data:`PROTOCOL_SSLv23`, but only support server-side :class:`SSLSocket` "
-"connections."
+"Auto-negotiate the highest protocol version like :data:`PROTOCOL_SSLv23`, "
+"but only support server-side :class:`SSLSocket` connections."
 msgstr ""
 
 #: ../../library/ssl.rst:635
@@ -1350,7 +1349,7 @@ msgstr ""
 
 #: ../../library/ssl.rst:950
 msgid ""
-"Usually, :class:`SSLSocket` are not created directly, but using the the "
+"Usually, :class:`SSLSocket` are not created directly, but using the "
 ":meth:`SSLContext.wrap_socket` method."
 msgstr ""
 

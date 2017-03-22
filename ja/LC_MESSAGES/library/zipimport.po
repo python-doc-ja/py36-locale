@@ -24,15 +24,11 @@ msgstr ":mod:`zipimport` --- Zip アーカイブからモジュールを import 
 #: ../../library/zipimport.rst:11
 msgid ""
 "This module adds the ability to import Python modules (:file:`\\*.py`, "
-":file:`\\*.py[co]`) and packages from ZIP-format archives. It is usually not"
-" needed to use the :mod:`zipimport` module explicitly; it is automatically "
+":file:`\\*.pyc`) and packages from ZIP-format archives. It is usually not "
+"needed to use the :mod:`zipimport` module explicitly; it is automatically "
 "used by the built-in :keyword:`import` mechanism for :data:`sys.path` items "
 "that are paths to ZIP archives."
 msgstr ""
-"このモジュールは、 Python モジュール (:file:`\\*.py`, :file:`\\*.py[co]`) やパッケージを ZIP "
-"形式のアーカイブから import できるようにします。通常、 :mod:`zipimport` を明示的に使う必要はありません; 組み込みの "
-":keyword:`import` は、 :data:`sys.path` の要素が ZIP "
-"アーカイブへのパスを指している場合にこのモジュールを自動的に使います。"
 
 #: ../../library/zipimport.rst:17
 msgid ""

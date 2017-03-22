@@ -65,9 +65,9 @@ msgstr "Python オブジェクト *value* を *file* へ整列化します。*ve
 
 #: ../../c-api/marshal.rst:37
 msgid ""
-"Return a string object containing the marshalled representation of *value*. "
+"Return a bytes object containing the marshalled representation of *value*. "
 "*version* indicates the file format."
-msgstr "*value* の整列化表現が入った文字列オブジェクトを返します。*version* はファイルフォーマットを示します。"
+msgstr ""
 
 #: ../../c-api/marshal.rst:41
 msgid "The following functions allow marshalled values to be read back in."
@@ -136,6 +136,6 @@ msgstr ""
 
 #: ../../c-api/marshal.rst:93
 msgid ""
-"Return a Python object from the data stream in a character buffer containing"
-" *len* bytes pointed to by *string*."
-msgstr "*string* が指す *len* バイトの文字列バッファ内のデータストリームから Python オブジェクトを返します。"
+"Return a Python object from the data stream in a byte buffer containing "
+"*len* bytes pointed to by *data*."
+msgstr ""

@@ -634,11 +634,9 @@ msgstr ""
 #: ../../c-api/memory.rst:393
 msgid ""
 "*pymalloc* is the default allocator of the :c:data:`PYMEM_DOMAIN_MEM` (ex: "
-":c:func:`PyObject_Malloc`) and :c:data:`PYMEM_DOMAIN_OBJ` (ex: "
+":c:func:`PyMem_Malloc`) and :c:data:`PYMEM_DOMAIN_OBJ` (ex: "
 ":c:func:`PyObject_Malloc`) domains."
 msgstr ""
-"*pymalloc* は、:c:data:`PYMEM_DOMAIN_MEM` (ex: :c:func:`PyObject_Malloc`) と "
-":c:data:`PYMEM_DOMAIN_OBJ` (ex: :c:func:`PyObject_Malloc`) ドメインの既定のアロケータです。"
 
 #: ../../c-api/memory.rst:397
 msgid "The arena allocator uses the following functions:"

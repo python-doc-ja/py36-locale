@@ -414,18 +414,14 @@ msgid ""
 "for temporary files returned by :func:`gettempdir`.  It can be set directly "
 "to override the selection process, but this is discouraged. All functions in"
 " this module take a *dir* argument which can be used to specify the "
-"directory and this is the recommend approach."
+"directory and this is the recommended approach."
 msgstr ""
-"モジュールはグローバル変数を使用して、 :func:`gettempdir` が返す、一時ファイルに用いられるディレクトリ名を記憶します。\n"
-"直接設定して選考過程を上書き出来ますが、推奨されません。\n"
-"このモジュールの全ての関数はディレクトリを指定する *dir* 引数を受け取ります。\n"
-"この方法が推奨されます。"
 
 #: ../../library/tempfile.rst:252
 msgid ""
 "When set to a value other than ``None``, this variable defines the default "
-"value for the *dir* argument to all the functions defined in this module."
-msgstr "``None`` 以外の値に設定された場合、このモジュールで定義されている全ての関数の *dir* 引数のデフォルト値として定義されます。"
+"value for the *dir* argument to the functions defined in this module."
+msgstr ""
 
 #: ../../library/tempfile.rst:256
 msgid ""

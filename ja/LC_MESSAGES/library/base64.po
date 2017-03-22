@@ -352,16 +352,17 @@ msgstr ""
 "ともに :term:`file objects <file object>` でなければなりません。 *input* は "
 "``input.readline()`` が空バイト列を返すまで読まれます。"
 
-#: ../../library/base64.rst:242
+#: ../../library/base64.rst:241
 msgid ""
 "Decode the :term:`bytes-like object` *s*, which must contain one or more "
-"lines of base64 encoded data, and return the decoded :class:`bytes`. "
-"``decodestring`` is a deprecated alias."
+"lines of base64 encoded data, and return the decoded :class:`bytes`."
 msgstr ""
-":term:`bytes-like object` の *s* をデコードし、デコードされた :class:`bytes` を返します。 *s* "
-"には一行以上の base64 形式でエンコードされたデータが含まれている必要があります。 ``decodestring`` は廃止されたエイリアスです。"
 
-#: ../../library/base64.rst:251
+#: ../../library/base64.rst:248
+msgid "Deprecated alias of :func:`decodebytes`."
+msgstr ""
+
+#: ../../library/base64.rst:255
 msgid ""
 "Encode the contents of the binary *input* file and write the resulting "
 "base64 encoded data to the *output* file. *input* and *output* must be "
@@ -372,7 +373,7 @@ msgid ""
 "(MIME)."
 msgstr ""
 
-#: ../../library/base64.rst:262
+#: ../../library/base64.rst:265
 msgid ""
 "Encode the :term:`bytes-like object` *s*, which can contain arbitrary binary"
 " data, and return :class:`bytes` containing the base64-encoded data, with "
@@ -380,24 +381,24 @@ msgid ""
 "that there is a trailing newline, as per :rfc:`2045` (MIME)."
 msgstr ""
 
-#: ../../library/base64.rst:267
-msgid "``encodestring`` is a deprecated alias."
-msgstr "``encodestring`` は廃止されたエイリアスです。"
+#: ../../library/base64.rst:274
+msgid "Deprecated alias of :func:`encodebytes`."
+msgstr ""
 
-#: ../../library/base64.rst:270
+#: ../../library/base64.rst:279
 msgid "An example usage of the module:"
 msgstr "モジュールの使用例:"
 
-#: ../../library/base64.rst:284
+#: ../../library/base64.rst:293
 msgid "Module :mod:`binascii`"
 msgstr "モジュール :mod:`binascii`"
 
-#: ../../library/base64.rst:284
+#: ../../library/base64.rst:293
 msgid ""
 "Support module containing ASCII-to-binary and binary-to-ASCII conversions."
 msgstr "ASCII からバイナリへ、バイナリから ASCII への変換をサポートするモジュール。"
 
-#: ../../library/base64.rst:287
+#: ../../library/base64.rst:296
 msgid ""
 ":rfc:`1521` - MIME (Multipurpose Internet Mail Extensions) Part One: "
 "Mechanisms for Specifying and Describing the Format of Internet Message "
@@ -407,7 +408,7 @@ msgstr ""
 "Mechanisms for Specifying and Describing the Format of Internet Message "
 "Bodies"
 
-#: ../../library/base64.rst:287
+#: ../../library/base64.rst:296
 msgid ""
 "Section 5.2, \"Base64 Content-Transfer-Encoding,\" provides the definition "
 "of the base64 encoding."

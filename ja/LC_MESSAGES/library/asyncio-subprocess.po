@@ -135,11 +135,9 @@ msgstr ""
 #: ../../library/asyncio-subprocess.rst:83
 #: ../../library/asyncio-subprocess.rst:126
 msgid ""
-"The *protocol_factory* must instanciate a subclass of the "
+"The *protocol_factory* must instantiate a subclass of the "
 ":class:`asyncio.SubprocessProtocol` class."
 msgstr ""
-"*protocol_factory* はクラス :class:`asyncio.SubprocessProtocol` "
-"のサブクラスを作成しなくてはなりません。"
 
 #: ../../library/asyncio-subprocess.rst:86
 msgid "Other parameters:"

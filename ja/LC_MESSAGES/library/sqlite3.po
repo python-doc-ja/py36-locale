@@ -1243,24 +1243,6 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:930
 msgid ""
-"So if you are within a transaction and issue a command like ``CREATE TABLE "
-"...``, ``VACUUM``, ``PRAGMA``, the :mod:`sqlite3` module will commit "
-"implicitly before executing that command. There are two reasons for doing "
-"that. The first is that some of these commands don't work within "
-"transactions. The other reason is that sqlite3 needs to keep track of the "
-"transaction state (if a transaction is active or not).  The current "
-"transaction state is exposed through the :attr:`Connection.in_transaction` "
-"attribute of the connection object."
-msgstr ""
-"そのため、トランザクション内で ``CREATE TABLE ...``, ``VACUUM``, ``PRAGMA``  "
-"のようなコマンドを発行した場合、 :mod:`sqlite3` "
-"モジュールはそのコマンドを実行する前に暗黙にコミットします。これには2つの理由があります。 "
-"1番目は、これらのコマンドのうちのいくつかがトランザクション内では動かないということです。 2番目の理由は、 sqlite3 がトランザクション状態 "
-"(トランザクションがアクティブかどうか) を追跡する必要があるためです。現在のトランザクション状態は、コネクションオブジェクトの "
-":attr:`Connection.in_transaction` 属性によって露出されます。"
-
-#: ../../library/sqlite3.rst:938
-msgid ""
 "You can control which kind of ``BEGIN`` statements sqlite3 implicitly "
 "executes (or none at all) via the *isolation_level* parameter to the "
 ":func:`connect` call, or via the :attr:`isolation_level` property of "
@@ -1270,13 +1252,13 @@ msgstr ""
 "*isolation_level* パラメータを通じて、または接続の :attr:`isolation_level` "
 "プロパティを通じて、制御することができます。"
 
-#: ../../library/sqlite3.rst:942
+#: ../../library/sqlite3.rst:934
 msgid ""
 "If you want **autocommit mode**, then set :attr:`isolation_level` to "
 "``None``."
 msgstr "**自動コミットモード** を使いたい場合は、 :attr:`isolation_level` は ``None`` にしてください。"
 
-#: ../../library/sqlite3.rst:944
+#: ../../library/sqlite3.rst:936
 msgid ""
 "Otherwise leave it at its default, which will result in a plain \"BEGIN\" "
 "statement, or set it to one of SQLite's supported isolation levels: "
@@ -1285,21 +1267,27 @@ msgstr ""
 "そうでなければデフォルトのまま ``BEGIN`` 文を使い続けるか、SQLite がサポートする分離レベル \"DEFERRED\", "
 "\"IMMEDIATE\" または \"EXCLUSIVE\" を設定してください。"
 
-#: ../../library/sqlite3.rst:948
+#: ../../library/sqlite3.rst:940
+msgid ""
+"The current transaction state is exposed through the "
+":attr:`Connection.in_transaction` attribute of the connection object."
+msgstr ""
+
+#: ../../library/sqlite3.rst:943
 msgid ""
 ":mod:`sqlite3` used to implicitly commit an open transaction before DDL "
 "statements.  This is no longer the case."
 msgstr ""
 
-#: ../../library/sqlite3.rst:954
+#: ../../library/sqlite3.rst:949
 msgid "Using :mod:`sqlite3` efficiently"
 msgstr ":mod:`sqlite3` の効率的な使い方"
 
-#: ../../library/sqlite3.rst:958
+#: ../../library/sqlite3.rst:953
 msgid "Using shortcut methods"
 msgstr "ショートカットメソッドを使う"
 
-#: ../../library/sqlite3.rst:960
+#: ../../library/sqlite3.rst:955
 msgid ""
 "Using the nonstandard :meth:`execute`, :meth:`executemany` and "
 ":meth:`executescript` methods of the :class:`Connection` object, your code "
@@ -1316,11 +1304,11 @@ msgstr ""
 "オブジェクトは暗黙裡に生成されショートカットメソッドの戻り値として受け取ることができます。この方法を使えば、 ``SELECT`` "
 "文を実行してその結果について反復することが、 :class:`Connection` オブジェクトに対する呼び出し一つで行なえます。"
 
-#: ../../library/sqlite3.rst:972
+#: ../../library/sqlite3.rst:967
 msgid "Accessing columns by name instead of by index"
 msgstr "位置ではなく名前でカラムにアクセスする"
 
-#: ../../library/sqlite3.rst:974
+#: ../../library/sqlite3.rst:969
 msgid ""
 "One useful feature of the :mod:`sqlite3` module is the built-in "
 ":class:`sqlite3.Row` class designed to be used as a row factory."
@@ -1328,17 +1316,17 @@ msgstr ""
 ":mod:`sqlite3` モジュールの有用な機能の一つに、行生成関数として使われるための :class:`sqlite3.Row` "
 "クラスがあります。"
 
-#: ../../library/sqlite3.rst:977
+#: ../../library/sqlite3.rst:972
 msgid ""
 "Rows wrapped with this class can be accessed both by index (like tuples) and"
 " case-insensitively by name:"
 msgstr "このクラスでラップされた行は、位置インデクス(タプルのような)でも大文字小文字を区別しない名前でもアクセスできます:"
 
-#: ../../library/sqlite3.rst:984
+#: ../../library/sqlite3.rst:979
 msgid "Using the connection as a context manager"
 msgstr "コネクションをコンテキストマネージャーとして利用する"
 
-#: ../../library/sqlite3.rst:986
+#: ../../library/sqlite3.rst:981
 msgid ""
 "Connection objects can be used as context managers that automatically commit"
 " or rollback transactions.  In the event of an exception, the transaction is"
@@ -1347,15 +1335,15 @@ msgstr ""
 "Connection "
 "オブジェクトはコンテキストマネージャーとして利用して、トランザクションを自動的にコミットしたりロールバックすることができます。例外が発生したときにトランザクションはロールバックされ、それ以外の場合、トランザクションはコミットされます:"
 
-#: ../../library/sqlite3.rst:995
+#: ../../library/sqlite3.rst:990
 msgid "Common issues"
 msgstr "既知の問題"
 
-#: ../../library/sqlite3.rst:998
+#: ../../library/sqlite3.rst:993
 msgid "Multithreading"
 msgstr "マルチスレッド"
 
-#: ../../library/sqlite3.rst:1000
+#: ../../library/sqlite3.rst:995
 msgid ""
 "Older SQLite versions had issues with sharing connections between threads. "
 "That's why the Python module disallows sharing connections and cursors "
@@ -1365,17 +1353,17 @@ msgstr ""
 "古いバージョンの SQLite はスレッド間でのコネクションの共有に問題がありました。その理由は、Python "
 "のモジュールではスレッド間のコネクションとカーソルの共有ができないためです。依然としてそのようなことをしようとすると、実行時に例外を受け取るでしょう。"
 
-#: ../../library/sqlite3.rst:1004
+#: ../../library/sqlite3.rst:999
 msgid ""
 "The only exception is calling the :meth:`~Connection.interrupt` method, "
 "which only makes sense to call from a different thread."
 msgstr "唯一の例外は :meth:`~Connection.interrupt` メソッドで、これだけが異なるスレッドから呼び出せます。"
 
-#: ../../library/sqlite3.rst:1008
+#: ../../library/sqlite3.rst:1003
 msgid "Footnotes"
 msgstr "脚注"
 
-#: ../../library/sqlite3.rst:1009
+#: ../../library/sqlite3.rst:1004
 msgid ""
 "The sqlite3 module is not built with loadable extension support by default, "
 "because some platforms (notably Mac OS X) have SQLite libraries which are "

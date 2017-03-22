@@ -377,11 +377,9 @@ msgstr ":ref:`old-string-formatting`"
 
 #: ../../tutorial/introduction.rst:362
 msgid ""
-"The old formatting operations invoked when strings and Unicode strings are "
-"the left operand of the ``%`` operator are described in more detail here."
+"The old formatting operations invoked when strings are the left operand of "
+"the ``%`` operator are described in more detail here."
 msgstr ""
-"(バイト)文字列や Unicode 文字列が ``%`` "
-"演算子の左オペランドである場合に呼び出される(古い)フォーマット操作については、ここで詳しく記述されています。"
 
 #: ../../tutorial/introduction.rst:369
 msgid "Lists"

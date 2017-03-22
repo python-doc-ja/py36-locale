@@ -708,16 +708,13 @@ msgid ""
 "significant entries.  Initially, the list is taken to be the complete set of"
 " profiled functions.  Each restriction is either an integer (to select a "
 "count of lines), or a decimal fraction between 0.0 and 1.0 inclusive (to "
-"select a percentage of lines), or a regular expression (to pattern match the"
-" standard name that is printed.  If several restrictions are provided, then "
-"they are applied sequentially.  For example::"
+"select a percentage of lines), or a string that will interpreted as a "
+"regular expression (to pattern match the standard name that is printed). If "
+"several restrictions are provided, then they are applied sequentially. For "
+"example::"
 msgstr ""
-"引数は (もし与えられると) "
-"リストを重要なエントリのみに制限するために使われます。初期段階でリストはプロファイルした関数の完全な情報を持っています。制限の指定は、 "
-"(行数を指定する) 整数、 (行のパーセンテージを指定する) 0.0 から 1.0 までの割合を指定する小数、 (出力する standard name "
-"にマッチする) 正規表現のいずれかを使って行います。複数の制限が指定された場合、指定の順に適用されます。たとえば次のようになります::"
 
-#: ../../library/profile.rst:453
+#: ../../library/profile.rst:454
 msgid ""
 "would first limit the printing to first 10% of list, and then only print "
 "functions that were part of filename :file:`.\\*foo:`.  In contrast, the "
@@ -725,14 +722,14 @@ msgid ""
 msgstr ""
 "上記の場合まず出力するリストは全体の10%に制限され、さらにファイル名の一部に文字列 :file:`.\\*foo:` を持つ関数だけが出力されます::"
 
-#: ../../library/profile.rst:459
+#: ../../library/profile.rst:460
 msgid ""
 "would limit the list to all functions having file names :file:`.\\*foo:`, "
 "and then proceed to only print the first 10% of them."
 msgstr ""
 "こちらの例の場合、リストはまずファイル名に :file:`.\\*foo:` を持つ関数だけに制限され、その中の最初の 10% だけが出力されます。"
 
-#: ../../library/profile.rst:465
+#: ../../library/profile.rst:466
 msgid ""
 "This method for the :class:`Stats` class prints a list of all functions that"
 " called each function in the profiled database.  The ordering is identical "
@@ -745,7 +742,7 @@ msgstr ""
 " :meth:`~pstats.Stats.print_stats` "
 "によって与えられるものと同じです。出力を制限する引数も同じです。各呼び出し側関数についてそれぞれ一行ずつ表示されます。フォーマットは統計を作り出したプロファイラごとに微妙に異なります:"
 
-#: ../../library/profile.rst:472
+#: ../../library/profile.rst:473
 msgid ""
 "With :mod:`profile`, a number is shown in parentheses after each caller to "
 "show how many times this specific call was made.  For convenience, a second "
@@ -755,7 +752,7 @@ msgstr ""
 ":mod:`profile` の場合、呼び出し側関数の後に括弧で囲まれて表示される数値はその呼び出しが何回行われたかを示しています。利便性のため、 "
 "2番目の括弧なしで表示される数値によって、関数が消費した累積時間を表しています。"
 
-#: ../../library/profile.rst:477
+#: ../../library/profile.rst:478
 msgid ""
 "With :mod:`cProfile`, each caller is preceded by three numbers: the number "
 "of times this specific call was made, and the total and cumulative times "
@@ -764,7 +761,7 @@ msgstr ""
 ":mod:`cProfile` "
 "の場合、各呼び出し側関数の後に3つの数字が付きます。呼び出しが何回行われたかと、この呼び出し側関数からの呼び出しによって現在の関数内で消費された合計時間および累積時間です。"
 
-#: ../../library/profile.rst:485
+#: ../../library/profile.rst:486
 msgid ""
 "This method for the :class:`Stats` class prints a list of all function that "
 "were called by the indicated function.  Aside from this reversal of "
@@ -775,11 +772,11 @@ msgstr ""
 "クラスのこのメソッドは、指定した関数から呼び出された関数のリストを出力します。呼び出し側、呼び出される側の方向は逆ですが、引数と出力の順序に関しては "
 ":meth:`~pstats.Stats.print_callers` と同じです。"
 
-#: ../../library/profile.rst:494
+#: ../../library/profile.rst:495
 msgid "What Is Deterministic Profiling?"
 msgstr "決定論的プロファイリングとは"
 
-#: ../../library/profile.rst:496
+#: ../../library/profile.rst:497
 msgid ""
 ":dfn:`Deterministic profiling` is meant to reflect the fact that all "
 "*function call*, *function return*, and *exception* events are monitored, "
@@ -796,7 +793,7 @@ msgstr ""
 ":dfn:`統計的プロファイリング` (このモジュールでこの方法は採用していません) "
 "とは、有効なインストラクションポインタからランダムにサンプリングを行い、プログラムのどこで時間が使われているかを推定する方法です。後者の方法は、オーバヘッドが少ないものの、プログラムのどこで多くの時間が使われているか、その相対的な示唆に留まります。"
 
-#: ../../library/profile.rst:505
+#: ../../library/profile.rst:506
 msgid ""
 "In Python, since there is an interpreter active during execution, the "
 "presence of instrumented code is not required to do deterministic profiling."
@@ -812,7 +809,7 @@ msgstr ""
 "のインタプリタという性質によって、実行時に大きなオーバーヘッドを伴う傾向がありますが、それに比べると一般的なアプリケーションでは決定論的プロファイリングで追加される処理のオーバーヘッドは少ない傾向にあります。結果的に、決定論的プロファイリングは少ないコストで"
 " Python プログラムの実行時間に関する詳細な統計を得られる方法となっているのです。"
 
-#: ../../library/profile.rst:514
+#: ../../library/profile.rst:515
 msgid ""
 "Call count statistics can be used to identify bugs in code (surprising "
 "counts), and to identify possible inline-expansion points (high call "
@@ -827,11 +824,11 @@ msgstr ""
 "(とんでもない数の呼び出しが行われている部分)。インライン拡張の対象とすべき部分を見つけるためにも使えます "
 "(呼び出し頻度の高い部分)。内部時間の統計は、注意深く最適化すべき\"ホットループ\"の発見にも役立ちます。累積時間の統計は、アルゴリズム選択に関連した高レベルのエラー検知に役立ちます。なお、このプロファイラは再帰的なアルゴリズム実装の累計時間を計ることが可能で、通常のループを使った実装と直接比較することもできるようになっています。"
 
-#: ../../library/profile.rst:527
+#: ../../library/profile.rst:528
 msgid "Limitations"
 msgstr "制限事項"
 
-#: ../../library/profile.rst:529
+#: ../../library/profile.rst:530
 msgid ""
 "One limitation has to do with accuracy of timing information. There is a "
 "fundamental problem with deterministic profilers involving accuracy.  The "
@@ -845,7 +842,7 @@ msgstr ""
 "\"クロック\"は .001 "
 "秒の精度しかないということです。これ以上の精度で計測することはできません。仮に充分な精度が得られたとしても、\"誤差\"が計測の平均値に影響を及ぼすことがあります。この最初の誤差を取り除いたとしても、それがまた別の誤差を引き起こす原因となります。"
 
-#: ../../library/profile.rst:537
+#: ../../library/profile.rst:538
 msgid ""
 "The second problem is that it \"takes a while\" from when an event is "
 "dispatched until the profiler's call to get the time actually *gets* the "
@@ -862,7 +859,7 @@ msgstr ""
 "から、ユーザコードが処理を再開するまでの間に遅延が発生します。結果的に多く呼び出される関数または多数の関数から呼び出される関数の情報にはこの種の誤差が蓄積する傾向にあります。このようにして蓄積される誤差は、典型的にはクロックの精度を下回ります"
 " (1クロック以下) が、一方でこの時間が累計して非常に大きな値になることも *あり得ます* 。"
 
-#: ../../library/profile.rst:547
+#: ../../library/profile.rst:548
 msgid ""
 "The problem is more important with :mod:`profile` than with the lower-"
 "overhead :mod:`cProfile`.  For this reason, :mod:`profile` provides a means "
@@ -881,11 +878,11 @@ msgstr ""
 "(呼び出し回数が極めて少なく、確率の神があなたに意地悪をしたとき :-) )。プロファイルの結果に負の値が出力されても *驚かないでください* "
 "。これは補正を行った場合にのみ生じることで、補正を行わない場合に比べて計測結果は実際にはより正確になっているはずだからです。"
 
-#: ../../library/profile.rst:561
+#: ../../library/profile.rst:562
 msgid "Calibration"
 msgstr "キャリブレーション (補正)"
 
-#: ../../library/profile.rst:563
+#: ../../library/profile.rst:564
 msgid ""
 "The profiler of the :mod:`profile` module subtracts a constant from each "
 "event handling time to compensate for the overhead of calling the time "
@@ -897,7 +894,7 @@ msgstr ""
 "関数呼び出しおよびその値を保存するためのオーバーヘッドを補正するために、各イベントの処理時間から定数を引きます。デフォルトでこの定数の値は 0 "
 "です。以下の手順で、プラットフォームに合った、より適切な定数が得られます (:ref:`profile-limitations` 参照)。 ::"
 
-#: ../../library/profile.rst:574
+#: ../../library/profile.rst:575
 msgid ""
 "The method executes the number of Python calls given by the argument, "
 "directly and again under the profiler, measuring the time for both. It then "
@@ -910,7 +907,7 @@ msgstr ""
 " 1.8 GHz の Intel Core i5 で Mac OS X を使用、 Python の time.clock() "
 "をタイマとして使った場合、値はおよそ 4.04e-6 となります。"
 
-#: ../../library/profile.rst:580
+#: ../../library/profile.rst:581
 msgid ""
 "The object of this exercise is to get a fairly consistent result. If your "
 "computer is *very* fast, or your timer function has poor resolution, you "
@@ -920,23 +917,23 @@ msgstr ""
 "早いコンピュータを使う場合、もしくはタイマの性能が貧弱な場合は、一定の結果を得るために引数に 100000 や 1000000 "
 "といった大きな値を指定する必要があるかもしれません。"
 
-#: ../../library/profile.rst:584
+#: ../../library/profile.rst:585
 msgid ""
 "When you have a consistent answer, there are three ways you can use it::"
 msgstr "一定の結果が得られたら、それを使う方法には3通りあります::"
 
-#: ../../library/profile.rst:598
+#: ../../library/profile.rst:599
 msgid ""
 "If you have a choice, you are better off choosing a smaller constant, and "
 "then your results will \"less often\" show up as negative in profile "
 "statistics."
 msgstr "選択肢がある場合は、補正値は小さめに設定した方が良いでしょう。プロファイルの結果に負の値が表われる\"頻度が低く\"なるはずです。"
 
-#: ../../library/profile.rst:604
+#: ../../library/profile.rst:605
 msgid "Using a custom timer"
 msgstr "カスタムな時刻取得用関数を使う"
 
-#: ../../library/profile.rst:606
+#: ../../library/profile.rst:607
 msgid ""
 "If you want to change how current time is determined (for example, to force "
 "use of wall-clock time or elapsed process time), pass the timing function "
@@ -945,7 +942,7 @@ msgstr ""
 "プロファイラが時刻を取得する方法を変更したいなら (たとえば、実測時間やプロセスの経過時間を使いたい場合)、時刻取得用の関数を "
 ":class:`Profile` クラスのコンストラクタに指定することができます::"
 
-#: ../../library/profile.rst:612
+#: ../../library/profile.rst:613
 msgid ""
 "The resulting profiler will then call ``your_time_func``. Depending on "
 "whether you are using :class:`profile.Profile` or :class:`cProfile.Profile`,"
@@ -955,11 +952,11 @@ msgstr ""
 ":class:`profile.Profile` と :class:`cProfile.Profile` のどちらを使っているかにより、 "
 "``your_time_func`` の戻り値は異なって解釈されます:"
 
-#: ../../library/profile.rst:630
+#: ../../library/profile.rst:631
 msgid ":class:`profile.Profile`"
 msgstr ":class:`profile.Profile`"
 
-#: ../../library/profile.rst:617
+#: ../../library/profile.rst:618
 msgid ""
 "``your_time_func`` should return a single number, or a list of numbers whose"
 " sum is the current time (like what :func:`os.times` returns).  If the "
@@ -970,7 +967,7 @@ msgstr ""
 ":func:`your_time_func` は単一の数値、あるいは (:func:`os.times` と同じように) "
 "その合計が累計時間を示すリストを返すようになっていなければなりません。関数が1つの数値、あるいは長さ2の数値のリストを返すようになっていれば、ディスパッチルーチンには特別な高速化バージョンが使われます。"
 
-#: ../../library/profile.rst:623
+#: ../../library/profile.rst:624
 msgid ""
 "Be warned that you should calibrate the profiler class for the timer "
 "function that you choose (see :ref:`profile-calibration`).  For most "
@@ -987,11 +984,11 @@ msgstr ""
 "(:func:`os.times` は浮動小数点数のタプルを返すので *かなり悪い* です。) "
 "綺麗な手段でより良い時刻取得関数に置き換えたいと望むなら、クラスを派生して、ディスパッチメソッドを置き換えてあなたの関数を一番いいように処理するように固定化してしまってください。補正定数の調整もお忘れなく。"
 
-#: ../../library/profile.rst:644
+#: ../../library/profile.rst:645
 msgid ":class:`cProfile.Profile`"
 msgstr ":class:`cProfile.Profile`"
 
-#: ../../library/profile.rst:633
+#: ../../library/profile.rst:634
 msgid ""
 "``your_time_func`` should return a single number.  If it returns integers, "
 "you can also invoke the class constructor with a second argument specifying "
@@ -1004,7 +1001,7 @@ msgstr ""
 " ``your_integer_time_func`` が 1000 分の 1 秒単位で計測した時間を返すとすると、 :class:`Profile` "
 "インスタンスを以下のように構築出来ます::"
 
-#: ../../library/profile.rst:641
+#: ../../library/profile.rst:642
 msgid ""
 "As the :class:`cProfile.Profile` class cannot be calibrated, custom timer "
 "functions should be used with care and should be as fast as possible.  For "
@@ -1015,7 +1012,7 @@ msgstr ""
 "クラスはキャリブレーションができないので、自前のタイマ関数は注意を払って使う必要があり、またそれは可能な限り速くなければなりません。自前のタイマ関数で最高の結果を得るには、"
 " :mod:`_lsprof` 内部モジュールの C ソースファイルにハードコードする必要があるかもしれません。"
 
-#: ../../library/profile.rst:646
+#: ../../library/profile.rst:647
 msgid ""
 "Python 3.3 adds several new functions in :mod:`time` that can be used to "
 "make precise measurements of process or wall-clock time. For example, see "

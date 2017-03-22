@@ -509,29 +509,25 @@ msgstr ""
 "の形式をとる、仮引数のリストを超えた位置指定引数の入ったタプルを受け取る引数 (次の節で述べます) と組み合わせることができます。 (``*name``"
 " は ``**name`` より前になければなりません)。例えば、ある関数の定義を以下のようにすると::"
 
-#: ../../tutorial/controlflow.rst:499
+#: ../../tutorial/controlflow.rst:498
 msgid "It could be called like this::"
 msgstr "呼び出しは以下のようになり::"
 
-#: ../../tutorial/controlflow.rst:507
+#: ../../tutorial/controlflow.rst:506
 msgid "and of course it would print:"
 msgstr "もちろん以下のように出力されます:"
 
-#: ../../tutorial/controlflow.rst:520
+#: ../../tutorial/controlflow.rst:519
 msgid ""
-"Note that the list of keyword argument names is created by sorting the "
-"result of the keywords dictionary's ``keys()`` method before printing its "
-"contents; if this is not done, the order in which the arguments are printed "
-"is undefined."
+"Note that the order in which the keyword arguments are printed is guaranteed"
+" to match the order in which they were provided in the function call."
 msgstr ""
-"キーワード引数名のリストを、キーワード辞書の ``keys()`` "
-"メソッドの結果をソートして作成していることに注目してください。:meth:`sort` が呼び出されていないと、引数が出力される順番は不確定となります。"
 
-#: ../../tutorial/controlflow.rst:527
+#: ../../tutorial/controlflow.rst:526
 msgid "Arbitrary Argument Lists"
 msgstr "任意引数リスト"
 
-#: ../../tutorial/controlflow.rst:532
+#: ../../tutorial/controlflow.rst:531
 msgid ""
 "Finally, the least frequently used option is to specify that a function can "
 "be called with an arbitrary number of arguments.  These arguments will be "
@@ -541,7 +537,7 @@ msgstr ""
 "最後に、最も使うことの少ない選択肢として、関数が任意の個数の引数で呼び出せるよう指定する方法があります。これらの引数はタプル (:ref:`tut-"
 "tuples` を参照) に格納されます。可変個の引数の前に、ゼロ個かそれ以上の引数があっても構いません。 ::"
 
-#: ../../tutorial/controlflow.rst:541
+#: ../../tutorial/controlflow.rst:540
 msgid ""
 "Normally, these ``variadic`` arguments will be last in the list of formal "
 "parameters, because they scoop up all remaining input arguments that are "
@@ -552,11 +548,11 @@ msgstr ""
 "通常このような ``可変`` 引数は、関数に渡される入力引数の残りを全て掬い取るために、仮引数リストの最後に置かれます。``*args`` "
 "引数の後にある仮引数は 'キーワード専用' 引数で、位置指定引数ではなくキーワード引数としてのみ使えます。 ::"
 
-#: ../../tutorial/controlflow.rst:558
+#: ../../tutorial/controlflow.rst:557
 msgid "Unpacking Argument Lists"
 msgstr "引数リストのアンパック"
 
-#: ../../tutorial/controlflow.rst:560
+#: ../../tutorial/controlflow.rst:559
 msgid ""
 "The reverse situation occurs when the arguments are already in a list or "
 "tuple but need to be unpacked for a function call requiring separate "
@@ -569,17 +565,17 @@ msgstr ""
 " :func:`range` は引数 *start* と *stop* を別に与える必要があります。個別に引数を与えることができない場合、関数呼び出しを"
 " ``*`` 演算子を使って書き、リストやタプルから引数をアンパックします::"
 
-#: ../../tutorial/controlflow.rst:576
+#: ../../tutorial/controlflow.rst:575
 msgid ""
 "In the same fashion, dictionaries can deliver keyword arguments with the "
 "``**``\\ -operator::"
 msgstr "同じやりかたで、``**`` オペレータを使って辞書でもキーワード引数を渡すことができます::"
 
-#: ../../tutorial/controlflow.rst:592
+#: ../../tutorial/controlflow.rst:591
 msgid "Lambda Expressions"
 msgstr "ラムダ式"
 
-#: ../../tutorial/controlflow.rst:594
+#: ../../tutorial/controlflow.rst:593
 msgid ""
 "Small anonymous functions can be created with the :keyword:`lambda` keyword."
 " This function returns the sum of its two arguments: ``lambda a, b: a+b``. "
@@ -592,23 +588,23 @@ msgstr ""
 "キーワード :keyword:`lambda` を使うと、名前のない小さな関数を生成できます。例えば ``lambda a, b: a+b`` "
 "は、二つの引数の和を返す関数です。ラムダ式の関数は、関数オブジェクトが要求されている場所にならどこでも使うことができます。ラムダ式は、構文上単一の式に制限されています。意味付け的には、ラムダ形式は単に通常の関数定義に構文的な糖衣をかぶせたものに過ぎません。入れ子構造になった関数定義と同様、ラムダ式もそれを取り囲むスコープから変数を参照することができます::"
 
-#: ../../tutorial/controlflow.rst:611
+#: ../../tutorial/controlflow.rst:610
 msgid ""
 "The above example uses a lambda expression to return a function.  Another "
 "use is to pass a small function as an argument::"
 msgstr "上記の例は、関数を返すところでラムダ式を使っています。もう1つの例では、ちょっとした関数を引数として渡すのに使っています::"
 
-#: ../../tutorial/controlflow.rst:623
+#: ../../tutorial/controlflow.rst:622
 msgid "Documentation Strings"
 msgstr "ドキュメンテーション文字列"
 
-#: ../../tutorial/controlflow.rst:630
+#: ../../tutorial/controlflow.rst:629
 msgid ""
 "Here are some conventions about the content and formatting of documentation "
 "strings."
 msgstr "ドキュメンテーション文字列については、その内容と書式に関する慣習をいくつか挙げます。"
 
-#: ../../tutorial/controlflow.rst:633
+#: ../../tutorial/controlflow.rst:632
 msgid ""
 "The first line should always be a short, concise summary of the object's "
 "purpose.  For brevity, it should not explicitly state the object's name or "
@@ -619,7 +615,7 @@ msgstr ""
 "最初の行は、常に対象物の目的を短く簡潔にまとめたものでなくてはなりません。簡潔に書くために、対象物の名前や型を明示する必要はありません。名前や型は他の方法でも得られるからです"
 " (名前がたまたま関数の演算内容を記述する動詞である場合は例外です)。最初の行は大文字で始まり、ピリオドで終わっていなければなりません。"
 
-#: ../../tutorial/controlflow.rst:639
+#: ../../tutorial/controlflow.rst:638
 msgid ""
 "If there are more lines in the documentation string, the second line should "
 "be blank, visually separating the summary from the rest of the description."
@@ -628,7 +624,7 @@ msgid ""
 msgstr ""
 "ドキュメンテーション文字列中にさらに記述すべき行がある場合、二行目は空行にし、まとめの行と残りの記述部分を視覚的に分離します。つづく行は一つまたはそれ以上の段落で、対象物の呼び出し規約や副作用について記述します。"
 
-#: ../../tutorial/controlflow.rst:644
+#: ../../tutorial/controlflow.rst:643
 msgid ""
 "The Python parser does not strip indentation from multi-line string literals"
 " in Python, so tools that process documentation have to strip indentation if"
@@ -650,15 +646,15 @@ msgstr ""
 "空白が、文字列のすべての行頭から剥ぎ取られます。インデントの量が少ない行を書いてはならないのですが、もしそういう行があると、先頭の空白すべてが剥ぎ取られます。インデントの空白の大きさが等しいかどうかは、タブ文字を"
 " (通常は 8 文字のスペースとして) 展開した後に調べられます。"
 
-#: ../../tutorial/controlflow.rst:656
+#: ../../tutorial/controlflow.rst:655
 msgid "Here is an example of a multi-line docstring::"
 msgstr "以下に複数行のドキュメンテーション文字列の例を示します::"
 
-#: ../../tutorial/controlflow.rst:674
+#: ../../tutorial/controlflow.rst:673
 msgid "Function Annotations"
 msgstr "関数のアノテーション"
 
-#: ../../tutorial/controlflow.rst:681
+#: ../../tutorial/controlflow.rst:680
 msgid ""
 ":ref:`Function annotations <function>` are completely optional metadata "
 "information about the types used by user-defined functions (see :pep:`484` "
@@ -667,7 +663,7 @@ msgstr ""
 ":ref:`関数のアノテーション <function>` はユーザ定義関数で使用される型についての完全にオプションなメタデータ情報です (詳細は "
 ":pep:`484` を参照してください)。"
 
-#: ../../tutorial/controlflow.rst:685
+#: ../../tutorial/controlflow.rst:684
 msgid ""
 "Annotations are stored in the :attr:`__annotations__` attribute of the "
 "function as a dictionary and have no effect on any other part of the "
@@ -683,11 +679,11 @@ msgstr ""
 " :keyword:`def` ステートメントの終わりを表すコロンの間に置かれたリテラル ``->`` "
 "によって定義され、その後に式が続きます。次の例は位置引数とキーワード引数、そして戻り値アノテーションを持っています::"
 
-#: ../../tutorial/controlflow.rst:707
+#: ../../tutorial/controlflow.rst:706
 msgid "Intermezzo: Coding Style"
 msgstr "間奏曲: コーディングスタイル"
 
-#: ../../tutorial/controlflow.rst:712
+#: ../../tutorial/controlflow.rst:711
 msgid ""
 "Now that you are about to write longer, more complex pieces of Python, it is"
 " a good time to talk about *coding style*.  Most languages can be written "
@@ -699,7 +695,7 @@ msgstr ""
 "について語っても良い頃です。ほとんどの言語は様々なスタイルで書け (もっと簡潔に言えば "
 "*フォーマットでき*)、スタイルによって読み易さが異なります。他人にとって読み易いコードにしようとするのはどんなときでも良い考えであり、良いコーディングスタイルを採用することが非常に強力な助けになります。"
 
-#: ../../tutorial/controlflow.rst:718
+#: ../../tutorial/controlflow.rst:717
 msgid ""
 "For Python, :pep:`8` has emerged as the style guide that most projects "
 "adhere to; it promotes a very readable and eye-pleasing coding style.  Every"
@@ -710,11 +706,11 @@ msgstr ""
 "があります。それは非常に読み易く目に優しいコーディングスタイルを推奨しています。全ての Python "
 "開発者はある時点でそれを読むべきです。ここに最も重要な点を抜き出しておきます:"
 
-#: ../../tutorial/controlflow.rst:723
+#: ../../tutorial/controlflow.rst:722
 msgid "Use 4-space indentation, and no tabs."
 msgstr "インデントには空白 4 つを使い、タブは使わないこと。"
 
-#: ../../tutorial/controlflow.rst:725
+#: ../../tutorial/controlflow.rst:724
 msgid ""
 "4 spaces are a good compromise between small indentation (allows greater "
 "nesting depth) and large indentation (easier to read).  Tabs introduce "
@@ -723,38 +719,38 @@ msgstr ""
 "空白 4 つは (深くネストできる) 小さいインデントと (読み易い) "
 "大きいインデントのちょうど中間に当たります。タブは混乱させるので、使わずにおくのが良いです。"
 
-#: ../../tutorial/controlflow.rst:729
+#: ../../tutorial/controlflow.rst:728
 msgid "Wrap lines so that they don't exceed 79 characters."
 msgstr "ソースコードの幅が 79 文字を越えないように行を折り返すこと。"
 
-#: ../../tutorial/controlflow.rst:731
+#: ../../tutorial/controlflow.rst:730
 msgid ""
 "This helps users with small displays and makes it possible to have several "
 "code files side-by-side on larger displays."
 msgstr ""
 "こうすることで小さいディスプレイを使っているユーザも読み易くなり、大きなディスプレイではソースコードファイルを並べることもできるようになります。"
 
-#: ../../tutorial/controlflow.rst:734
+#: ../../tutorial/controlflow.rst:733
 msgid ""
 "Use blank lines to separate functions and classes, and larger blocks of code"
 " inside functions."
 msgstr "関数やクラスや関数内の大きめのコードブロックの区切りに空行を使うこと。"
 
-#: ../../tutorial/controlflow.rst:737
+#: ../../tutorial/controlflow.rst:736
 msgid "When possible, put comments on a line of their own."
 msgstr "可能なら、コメントは行に独立で書くこと。"
 
-#: ../../tutorial/controlflow.rst:739
+#: ../../tutorial/controlflow.rst:738
 msgid "Use docstrings."
 msgstr "docstring を使うこと。"
 
-#: ../../tutorial/controlflow.rst:741
+#: ../../tutorial/controlflow.rst:740
 msgid ""
 "Use spaces around operators and after commas, but not directly inside "
 "bracketing constructs: ``a = f(1, 2) + g(3, 4)``."
 msgstr "演算子の前後とコンマの後には空白を入れ、括弧類のすぐ内側には空白を入れないこと: ``a = f(1, 2) + g(3, 4)``。"
 
-#: ../../tutorial/controlflow.rst:744
+#: ../../tutorial/controlflow.rst:743
 msgid ""
 "Name your classes and functions consistently; the convention is to use "
 "``CamelCase`` for classes and ``lower_case_with_underscores`` for functions "
@@ -765,7 +761,7 @@ msgstr ""
 "``lower_case_with_underscores`` を関数名やメソッド名に使います。常に ``self`` をメソッドの第 1 引数の名前 "
 "(クラスやメソッドについては :ref:`tut-firstclasses` を見よ) として使うこと。"
 
-#: ../../tutorial/controlflow.rst:749
+#: ../../tutorial/controlflow.rst:748
 msgid ""
 "Don't use fancy encodings if your code is meant to be used in international "
 "environments.  Python's default, UTF-8, or even plain ASCII work best in any"
@@ -774,7 +770,7 @@ msgstr ""
 "あなたのコードを世界中で使ってもらうつもりなら、風変りなエンコーディングは使わないこと。どんな場合でも、Python のデフォルト UTF-8 "
 "またはプレーン ASCII が最も上手くいきます。"
 
-#: ../../tutorial/controlflow.rst:753
+#: ../../tutorial/controlflow.rst:752
 msgid ""
 "Likewise, don't use non-ASCII characters in identifiers if there is only the"
 " slightest chance people speaking a different language will read or maintain"
@@ -782,11 +778,11 @@ msgid ""
 msgstr ""
 "同様に、ほんの少しでも他の言語を話す人がコードを読んだりメンテナンスする可能性があるのであれば、非 ASCII 文字も識別子に使うべきではありません。"
 
-#: ../../tutorial/controlflow.rst:759
+#: ../../tutorial/controlflow.rst:758
 msgid "Footnotes"
 msgstr "脚注"
 
-#: ../../tutorial/controlflow.rst:760
+#: ../../tutorial/controlflow.rst:759
 msgid ""
 "Actually, *call by object reference* would be a better description, since if"
 " a mutable object is passed, the caller will see any changes the callee "

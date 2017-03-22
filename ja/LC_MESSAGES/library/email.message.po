@@ -441,7 +441,7 @@ msgstr ""
 #: ../../library/email.message.rst:366
 msgid ""
 "If the value contains non-ASCII characters, the charset and language may be "
-"explicity specified using the optional *charset* and *language* parameters."
+"explicitly specified using the optional *charset* and *language* parameters."
 "  Optional *language* specifies the :rfc:`2231` language, defaulting to the "
 "empty string.  Both *charset* and *language* should be strings.  The default"
 " is to use the ``utf8`` *charset* and ``None`` for the *language*."

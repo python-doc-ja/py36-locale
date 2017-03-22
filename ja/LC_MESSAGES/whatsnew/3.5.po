@@ -3411,19 +3411,18 @@ msgstr ""
 #: ../../whatsnew/3.5.rst:2329
 msgid ""
 "The :mod:`inspect` :func:`~inspect.getfullargspec`, "
-":func:`~inspect.getargvalues`, :func:`~inspect.getcallargs`, "
-":func:`~inspect.getargvalues`, :func:`~inspect.formatargspec`, and "
-":func:`~inspect.formatargvalues` functions are deprecated in favor of the "
-":func:`inspect.signature` API. (Contributed by Yury Selivanov in "
-":issue:`20438`.)"
+":func:`~inspect.getcallargs`, and :func:`~inspect.formatargspec` functions "
+"are deprecated in favor of the :func:`inspect.signature` API. (Contributed "
+"by Yury Selivanov in :issue:`20438`.)"
 msgstr ""
-":func:`inspect.signature` API の採用により、 :mod:`inspect` の "
-":func:`~inspect.getfullargspec`, :func:`~inspect.getargvalues`, "
-":func:`~inspect.getcallargs`, :func:`~inspect.getargvalues`, "
-":func:`~inspect.formatargspec`, :func:`~inspect.formatargvalues` は非推奨となりました。"
-" (Contributed by Yury Selivanov in :issue:`20438`.)"
 
-#: ../../whatsnew/3.5.rst:2336
+#: ../../whatsnew/3.5.rst:2334
+msgid ""
+":func:`~inspect.getargvalues` and :func:`~inspect.formatargvalues` functions"
+" were inadvertently marked as deprecated with the release of Python 3.5.0."
+msgstr ""
+
+#: ../../whatsnew/3.5.rst:2337
 msgid ""
 "Use of :const:`re.LOCALE` flag with str patterns or :const:`re.ASCII` is now"
 " deprecated.  (Contributed by Serhiy Storchaka in :issue:`22407`.)"
@@ -3431,7 +3430,7 @@ msgstr ""
 "str のパターンとともに :const:`re.LOCALE` や :const:`re.ASCII` フラグを使用することは非推奨となりました。  "
 "(Contributed by Serhiy Storchaka in :issue:`22407`.)"
 
-#: ../../whatsnew/3.5.rst:2339
+#: ../../whatsnew/3.5.rst:2340
 msgid ""
 "Use of unrecognized special sequences consisting of ``'\\'`` and an ASCII "
 "letter in regular expression patterns and replacement patterns now raises a "
@@ -3442,7 +3441,7 @@ msgstr ""
 "文字からなる認識出来ない特殊シーケンスが正規表現内と置き換えパターン内で使われた場合に、非推奨警告を出すようになりました。Python 3.6 "
 "では禁止されるようになります。 (Contributed by Serhiy Storchaka in :issue:`23622`.)"
 
-#: ../../whatsnew/3.5.rst:2344
+#: ../../whatsnew/3.5.rst:2345
 msgid ""
 "The undocumented and unofficial *use_load_tests* default argument of the "
 ":meth:`unittest.TestLoader.loadTestsFromModule` method now is deprecated and"
@@ -3453,21 +3452,21 @@ msgstr ""
 "*use_load_tests* デフォルト引数は非推奨となり、無視されます。 (Contributed by Robert Collins and "
 "Barry A. Warsaw in :issue:`16662`.)"
 
-#: ../../whatsnew/3.5.rst:2351
+#: ../../whatsnew/3.5.rst:2352
 msgid "Removed"
 msgstr "削除"
 
-#: ../../whatsnew/3.5.rst:2354
+#: ../../whatsnew/3.5.rst:2355
 msgid "API and Feature Removals"
 msgstr "API と機能の削除"
 
-#: ../../whatsnew/3.5.rst:2356
+#: ../../whatsnew/3.5.rst:2357
 msgid ""
 "The following obsolete and previously deprecated APIs and features have been"
 " removed:"
 msgstr "時代遅れとなり、以前に既に非推奨となった以下の API と機能が削除されました:"
 
-#: ../../whatsnew/3.5.rst:2359
+#: ../../whatsnew/3.5.rst:2360
 msgid ""
 "The ``__version__`` attribute has been dropped from the email package.  The "
 "email code hasn't been shipped separately from the stdlib for a long time, "
@@ -3477,7 +3476,7 @@ msgstr ""
 "パッケージが標準ライブラリとは別々にリリースされていたのは遥か昔の話であり、ここのところ何回かのリリースにいたっては ``__version__`` "
 "文字列が更新されていませんでした。"
 
-#: ../../whatsnew/3.5.rst:2363
+#: ../../whatsnew/3.5.rst:2364
 msgid ""
 "The internal ``Netrc`` class in the :mod:`ftplib` module was deprecated in "
 "3.4, and has now been removed. (Contributed by Matt Chaput in "
@@ -3486,11 +3485,11 @@ msgstr ""
 "3.4 で非推奨となっていた :mod:`ftplib` モジュール内の内部クラス ``Netrc`` が削除されました。 (Contributed "
 "by Matt Chaput in :issue:`6623`.)"
 
-#: ../../whatsnew/3.5.rst:2367
+#: ../../whatsnew/3.5.rst:2368
 msgid "The concept of ``.pyo`` files has been removed."
 msgstr "``.pyo`` ファイルのコンセプトは削除されました。"
 
-#: ../../whatsnew/3.5.rst:2369
+#: ../../whatsnew/3.5.rst:2370
 msgid ""
 "The JoinableQueue class in the provisional :mod:`asyncio` module was "
 "deprecated in 3.4.4 and is now removed. (Contributed by A. Jesse Jiryu Davis"
@@ -3499,27 +3498,27 @@ msgstr ""
 "暫定 :mod:`asyncio` モジュールで 3.4.4 で非推奨となった JoinableQueue は削除されました。 (Contributed"
 " by A. Jesse Jiryu Davis in :issue:`23464`.)"
 
-#: ../../whatsnew/3.5.rst:2375
+#: ../../whatsnew/3.5.rst:2376
 msgid "Porting to Python 3.5"
 msgstr "Python 3.5 への移植"
 
-#: ../../whatsnew/3.5.rst:2377
+#: ../../whatsnew/3.5.rst:2378
 msgid ""
 "This section lists previously described changes and other bugfixes that may "
 "require changes to your code."
 msgstr "このセクションでは前述の変更とバグフィックスにより必要となるかもしれないコードの変更を列挙します:"
 
-#: ../../whatsnew/3.5.rst:2382
+#: ../../whatsnew/3.5.rst:2383
 msgid "Changes in Python behavior"
 msgstr "Python の挙動の変更"
 
-#: ../../whatsnew/3.5.rst:2384
+#: ../../whatsnew/3.5.rst:2385
 msgid ""
 "Due to an oversight, earlier Python versions erroneously accepted the "
 "following syntax::"
 msgstr "以前のバージョンの Python で、誤って以下の構文を許容してしまっていました::"
 
-#: ../../whatsnew/3.5.rst:2390
+#: ../../whatsnew/3.5.rst:2391
 msgid ""
 "Python 3.5 now correctly raises a :exc:`SyntaxError`, as generator "
 "expressions must be put in parentheses if not a sole argument to a function."
@@ -3530,11 +3529,11 @@ msgstr ""
 "for i in range(5), *[\"1\", \"2\"])`` や ``hh(str(i) for i in range(5), "
 "**{\"k1\": \"1\", \"k2\": \"2\"})`` が SytaxError ではなかった、という話です。---)"
 
-#: ../../whatsnew/3.5.rst:2395
+#: ../../whatsnew/3.5.rst:2396
 msgid "Changes in the Python API"
 msgstr "Python API の変更"
 
-#: ../../whatsnew/3.5.rst:2397
+#: ../../whatsnew/3.5.rst:2398
 msgid ""
 ":pep:`475`: System calls are now retried when interrupted by a signal "
 "instead of raising :exc:`InterruptedError` if the Python signal handler does"
@@ -3543,7 +3542,7 @@ msgstr ""
 ":pep:`475`: Python シグナルハンドラが例外を送出しなければ、システムコールがシグナルに中断された場合に、 "
 ":exc:`InterruptedError` を送出せずにシステムコールを再試行するようになりました。"
 
-#: ../../whatsnew/3.5.rst:2401
+#: ../../whatsnew/3.5.rst:2402
 msgid ""
 "Before Python 3.5, a :class:`datetime.time` object was considered to be "
 "false if it represented midnight in UTC.  This behavior was considered "
@@ -3554,7 +3553,7 @@ msgstr ""
 "この挙動は分かりにくく、エラーの元となると考えられ、Python 3.5 で削除されました。\n"
 "全詳細については :issue:`13936` を参照してください。"
 
-#: ../../whatsnew/3.5.rst:2406
+#: ../../whatsnew/3.5.rst:2407
 msgid ""
 "The :meth:`ssl.SSLSocket.send()` method now raises either "
 ":exc:`ssl.SSLWantReadError` or :exc:`ssl.SSLWantWriteError` on a non-"
@@ -3566,7 +3565,7 @@ msgstr ""
 "のどちらかを送出するようになりました。以前は ``0`` を返していました。 (Contributed by Nikolaus Rath in "
 ":issue:`20951`.)"
 
-#: ../../whatsnew/3.5.rst:2411
+#: ../../whatsnew/3.5.rst:2412
 msgid ""
 "The ``__name__`` attribute of generators is now set from the function name, "
 "instead of being set from the code name. Use ``gen.gi_code.co_name`` to "
@@ -3581,7 +3580,7 @@ msgstr ""
 "属性も持つようになりました。これはジェネレータの正規名であり、ジェネレータの表現をする際 (``repr(gen)``) "
 "にこれを用いるようになりました。 (Contributed by Victor Stinner in :issue:`21205`.)"
 
-#: ../../whatsnew/3.5.rst:2418
+#: ../../whatsnew/3.5.rst:2419
 msgid ""
 "The deprecated \"strict\" mode and argument of "
 ":class:`~html.parser.HTMLParser`, :meth:`HTMLParser.error`, and the "
@@ -3597,7 +3596,7 @@ msgstr ""
 ":class:`~html.parser.HTMLParser` の *convert_charrefs* 引数のデフォルトが ``True`` "
 "となりました。 (Contributed by Berker Peksag in :issue:`21047`.)"
 
-#: ../../whatsnew/3.5.rst:2424
+#: ../../whatsnew/3.5.rst:2425
 msgid ""
 "Although it is not formally part of the API, it is worth noting for porting "
 "purposes (ie: fixing tests) that error messages that were previously of the "
@@ -3610,7 +3609,7 @@ msgstr ""
 ":`bytes-like object` is required, not 'sometype'\" の形になっています。 (Contributed "
 "by Ezio Melotti in :issue:`16518`.)"
 
-#: ../../whatsnew/3.5.rst:2430
+#: ../../whatsnew/3.5.rst:2431
 msgid ""
 "If the current directory is set to a directory that no longer exists then "
 ":exc:`FileNotFoundError` will no longer be raised and instead "
@@ -3625,7 +3624,7 @@ msgstr ""
 "。これは典型的なケースとは違います(訳注: `msg231477 "
 "<https://bugs.python.org/issue22834#msg231477>`_)。 (:issue:`22834`)"
 
-#: ../../whatsnew/3.5.rst:2436
+#: ../../whatsnew/3.5.rst:2437
 msgid ""
 "HTTP status code and messages from :mod:`http.client` and :mod:`http.server`"
 " were refactored into a common :class:`~http.HTTPStatus` enum.  The values "
@@ -3637,7 +3636,7 @@ msgstr ""
 "としてまとめ直しました。:mod:`http.client` 、 :mod:`http.server` "
 "にあったもとの値も後方互換性のために残してあります。 (Contributed by Demian Brecht in :issue:`21793`.)"
 
-#: ../../whatsnew/3.5.rst:2441
+#: ../../whatsnew/3.5.rst:2442
 msgid ""
 "When an import loader defines :meth:`importlib.machinery.Loader.exec_module`"
 " it is now expected to also define "
@@ -3654,7 +3653,7 @@ msgstr ""
 "``None`` を返すだけの :meth:`~importlib.machinery.Loader.create_module` を定義してください。"
 " (Contributed by Brett Cannon in :issue:`23014`.)"
 
-#: ../../whatsnew/3.5.rst:2449
+#: ../../whatsnew/3.5.rst:2450
 msgid ""
 "The :func:`re.split` function always ignored empty pattern matches, so the "
 "``\"x*\"`` pattern worked the same as ``\"x+\"``, and the ``\"\\b\"`` "
@@ -3670,7 +3669,7 @@ msgstr ""
 " ではなく ``\"x+\"`` を使ってください)。空文字列としかマッチしえないパターン(例えば ``\"\\b\"``)はエラーとなります。 "
 "(Contributed by Serhiy Storchaka in :issue:`22818`.)"
 
-#: ../../whatsnew/3.5.rst:2457
+#: ../../whatsnew/3.5.rst:2458
 msgid ""
 "The :class:`http.cookies.Morsel` dict-like interface has been made self "
 "consistent:  morsel comparison now takes the "
@@ -3693,7 +3692,7 @@ msgstr ""
 ":func:`~http.cookies.Morsel.set` の *LegalChars* パラメータは非推奨となり、また指定しても無視されます。 "
 "(Contributed by Demian Brecht in :issue:`2211`.)"
 
-#: ../../whatsnew/3.5.rst:2467
+#: ../../whatsnew/3.5.rst:2468
 msgid ""
 ":pep:`488` has removed ``.pyo`` files from Python and introduced the "
 "optional ``opt-`` tag in ``.pyc`` file names. The "
@@ -3713,7 +3712,7 @@ msgstr ""
 "従って `.pyo` ファイルのみでの配布 (要するにソースコード抜きの配布) は意味をなしません。\n"
 "バイトコードのためのマジックナンバーが Python 3.5 で変更されたことにより、以前のバージョンの Python で作られた全ての古い `.pyo` は、この PEP に関係無く使えません。"
 
-#: ../../whatsnew/3.5.rst:2478
+#: ../../whatsnew/3.5.rst:2479
 msgid ""
 "The :mod:`socket` module now exports the :data:`~socket.CAN_RAW_FD_FRAMES` "
 "constant on linux 3.6 and greater."
@@ -3721,7 +3720,7 @@ msgstr ""
 ":mod:`socket` モジュールが、linux 3.6 以降で :data:`~socket.CAN_RAW_FD_FRAMES` "
 "定数をエクスポートするようになりました。"
 
-#: ../../whatsnew/3.5.rst:2481
+#: ../../whatsnew/3.5.rst:2482
 msgid ""
 "The :func:`ssl.cert_time_to_seconds` function now interprets the input time "
 "as UTC and not as local time, per :rfc:`5280`.  Additionally, the return "
@@ -3732,7 +3731,7 @@ msgstr ""
 "として解釈するようになりました。また、戻り値は常に :class:`int` となります。 (Contributed by Akira Li in "
 ":issue:`19940`.)"
 
-#: ../../whatsnew/3.5.rst:2485
+#: ../../whatsnew/3.5.rst:2486
 msgid ""
 "The ``pygettext.py`` Tool now uses the standard +NNNN format for timezones "
 "in the POT-Creation-Date header."
@@ -3740,7 +3739,7 @@ msgstr ""
 "``pygettext.py`` ツールが POT-Creation-Date ヘッダ内のタイムゾーン形式として、標準の +NNNN "
 "形式を使うようになりました。"
 
-#: ../../whatsnew/3.5.rst:2488
+#: ../../whatsnew/3.5.rst:2489
 msgid ""
 "The :mod:`smtplib` module now uses :data:`sys.stderr` instead of the "
 "previous module-level :data:`stderr` variable for debug output.  If your "
@@ -3752,7 +3751,7 @@ msgstr ""
 "を使うようになりました。もしもあなたの(テスト)プログラムが、そのデバッグ出力をキャプチャするためにこのモジュールレベル変数に依存してたのであれば、今後は"
 " sys.stderr をキャプチャするようにする必要があります。"
 
-#: ../../whatsnew/3.5.rst:2493
+#: ../../whatsnew/3.5.rst:2494
 msgid ""
 "The :meth:`str.startswith` and :meth:`str.endswith` methods no longer return"
 " ``True`` when finding the empty string and the indexes are completely out "
@@ -3762,7 +3761,7 @@ msgstr ""
 "メソッドは空文字列を見つけた場合と完全に範囲外のインデクスが渡された場合に ``True`` を返すことはしなくなりました。  (Contributed"
 " by Serhiy Storchaka in :issue:`24284`.)"
 
-#: ../../whatsnew/3.5.rst:2497
+#: ../../whatsnew/3.5.rst:2498
 msgid ""
 "The :func:`inspect.getdoc` function now returns documentation strings "
 "inherited from base classes.  Documentation strings no longer need to be "
@@ -3777,7 +3776,7 @@ msgstr ""
 " :mod:`pydoc` モジュールと :func:`help` 関数の出力に影響します。 (Contributed by Serhiy "
 "Storchaka in :issue:`15582`.)"
 
-#: ../../whatsnew/3.5.rst:2505
+#: ../../whatsnew/3.5.rst:2506
 msgid ""
 "Nested :func:`functools.partial` calls are now flattened.  If you were "
 "relying on the previous behavior, you can now either add an attribute to a "
@@ -3793,11 +3792,11 @@ msgstr ""
 "オブジェクトに別の属性を付ければりゃいんじゃね?」程度の無責任な代替案を言ってるだけのような気がします。そもそも後者の「サブクラス化」は出来ないと思いますし。"
 " --)  (Contributed by Alexander Belopolsky in :issue:`7830`.)"
 
-#: ../../whatsnew/3.5.rst:2512
+#: ../../whatsnew/3.5.rst:2513
 msgid "Changes in the C API"
 msgstr "C API の変更"
 
-#: ../../whatsnew/3.5.rst:2514
+#: ../../whatsnew/3.5.rst:2515
 msgid ""
 "The undocumented :c:member:`~PyMemoryViewObject.format` member of the (non-"
 "public) :c:type:`PyMemoryViewObject` structure has been removed. All "
@@ -3808,7 +3807,7 @@ msgstr ""
 ":c:member:`~PyMemoryViewObject.format` メンバが削除されました。 ``memoryobject.h`` "
 "内のこの構造体に関係する部分に依存している全ての拡張は再ビルドしなければなりません。"
 
-#: ../../whatsnew/3.5.rst:2519
+#: ../../whatsnew/3.5.rst:2520
 msgid ""
 "The :c:type:`PyMemAllocator` structure was renamed to "
 ":c:type:`PyMemAllocatorEx` and a new ``calloc`` field was added."
@@ -3816,7 +3815,7 @@ msgstr ""
 ":c:type:`PyMemAllocator` 構造体が :c:type:`PyMemAllocatorEx` にリネームされた上で "
 "``calloc`` フィールドが追加されました。"
 
-#: ../../whatsnew/3.5.rst:2522
+#: ../../whatsnew/3.5.rst:2523
 msgid ""
 "Removed non-documented macro :c:macro:`PyObject_REPR` which leaked "
 "references. Use format character ``%R`` in "
@@ -3827,7 +3826,7 @@ msgstr ""
 ":func:`repr` をフォーマットするには :c:func:`PyUnicode_FromFormat` 的な関数でフォーマット文字 ``%R``"
 " を使ってください。(Contributed by Serhiy Storchaka in :issue:`22453`.)"
 
-#: ../../whatsnew/3.5.rst:2527
+#: ../../whatsnew/3.5.rst:2528
 msgid ""
 "Because the lack of the :attr:`__module__` attribute breaks pickling and "
 "introspection, a deprecation warning is now raised for builtin types without"
@@ -3839,7 +3838,7 @@ msgstr ""
 ":exc:`AttributeError` にするかもしれません。(Contributed by Serhiy Storchaka in "
 ":issue:`20204`.)"
 
-#: ../../whatsnew/3.5.rst:2533
+#: ../../whatsnew/3.5.rst:2534
 msgid ""
 "As part of the :pep:`492` implementation, the ``tp_reserved`` slot of "
 ":c:type:`PyTypeObject` was replaced with a :c:member:`tp_as_async` slot.  "

@@ -2335,8 +2335,8 @@ msgid "``KEY_SEXIT``"
 msgstr "``KEY_SEXIT``"
 
 #: ../../library/curses.rst:1446
-msgid "Shifted Dxit"
-msgstr "シフト付き Dxit"
+msgid "Shifted Exit"
+msgstr ""
 
 #: ../../library/curses.rst:1448
 msgid "``KEY_SFIND``"

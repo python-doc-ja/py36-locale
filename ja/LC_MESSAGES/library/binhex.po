@@ -97,7 +97,3 @@ msgid ""
 msgstr ""
 "非 Macintosh プラットフォームでテキストファイルをエンコードしたりデコードしたりする場合でも、古い Macintosh の改行文字変換 "
 "(行末をキャリッジリターンとする) が行われます。"
-
-#: ../../library/binhex.rst:58
-msgid "As of this writing, :func:`hexbin` appears to not work in all cases."
-msgstr "このドキュメントを書いている時点では、 :func:`hexbin` はいつも正しく動作するわけではないようです。"
