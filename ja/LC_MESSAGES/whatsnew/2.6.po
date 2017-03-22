@@ -197,6 +197,14 @@ msgid ""
 "an open-source project that requires volunteers to administer it and a "
 "server to host it."
 msgstr ""
+"そのようなわけで、Python Software Foundation "
+"のインフラ委員会はボランティアたちに課題トラッカーについて、異なるプロダクトのセットアップをし、SourceForge "
+"からバグ報告とパッチのインポートをする依頼の呼び掛けをしました。4 つのトラッカーが試されました: `Jira "
+"<https://www.atlassian.com/software/jira/>`__, `Launchpad "
+"<https://launchpad.net>`__, `Roundup <http://roundup.sourceforge.net/>`__, "
+"`Trac <https://trac.edgewall.org/>`__ です。委員会は結果として Jira と Roundup の 2 "
+"つを候補に据えました。Jira はフリーソフトウェアプロジェクトの無償でのホストが可能な商用製品です; Roundup "
+"はそれを運営するボランティアとそれをホストするサーバが必要なオープンソースプロダクトです。"
 
 #: ../../whatsnew/2.6.rst:166
 msgid ""
@@ -301,6 +309,8 @@ msgid ""
 "building a new toolchain for processing the documentation.  The resulting "
 "package is called Sphinx, and is available from http://sphinx-doc.org/."
 msgstr ""
+"2.6 の開発サイクルの期間に、Georg Brandl はドキュメンテーションの処理のための新たなツールチェインの構築に多大な労力を払いました。\n"
+"その成果であるパッケージは Sphinx と呼ばれ、 http://sphinx-doc.org/ で入手出来ます。"
 
 #: ../../whatsnew/2.6.rst:222
 msgid ""
@@ -429,6 +439,8 @@ msgid ""
 "automatically closed, even if the :keyword:`for` loop raised an exception "
 "part-way through the block."
 msgstr ""
+"このステートメントが実行し終わったあかつきには、 *f* のファイルオブジェクトは、たとえ :keyword:`for` "
+"ループが道半ばにして例外と成り果てても、自動的にクローズされます。"
 
 #: ../../whatsnew/2.6.rst:298
 msgid ""
@@ -1906,6 +1918,9 @@ msgid ""
 "<https://www.gnu.org/software/guile/manual/html_node/Numerical-Tower.html"
 "#Numerical-Tower>`__, from the Guile manual."
 msgstr ""
+"Guile マニュアルの `Scheme's numerical tower "
+"<https://www.gnu.org/software/guile/manual/html_node/Numerical-Tower.html"
+"#Numerical-Tower>`__ 。"
 
 #: ../../whatsnew/2.6.rst:1436
 msgid ""
@@ -2624,6 +2639,9 @@ msgid ""
 "New features include some methods for some basic mathematical functions such"
 " as :meth:`exp` and :meth:`log10`::"
 msgstr ""
+":mod:`decimal` モジュールが `the General Decimal Specification "
+"<http://speleotrove.com/decimal/decarith.html>`__ のバージョン 1.55 "
+"に更新されました。新しい機能には :meth:`exp` や :meth:`log10` のようないくつかの基礎的な数学関数が含まれます::"
 
 #: ../../whatsnew/2.6.rst:1940
 msgid ""
@@ -2957,6 +2975,9 @@ msgid ""
 "  The :meth:`find` method also gained an *end* parameter giving an index at "
 "which to stop searching. (Contributed by John Lenton.)"
 msgstr ""
+":class:`~mmap.mmap` オブジェクトに :meth:`rfind` "
+"メソッドが追加されています。部分文字列の検索を、末尾から後ろ向きに検索します。 :meth:`find` には新しい引数 *end* "
+"パラメータが追加されていて、検索対象の終了位置を指定することが出来ます。 (Contributed by John Lenton.)"
 
 #: ../../whatsnew/2.6.rst:2140
 msgid ""
