@@ -445,6 +445,8 @@ msgid ""
 "Much like :c:func:`PyErr_SetImportError` but this function allows for "
 "specifying a subclass of :exc:`ImportError` to raise."
 msgstr ""
+":c:func:`PyErr_SetImportError` とよく似ていますが、この関数は送出する例外として、 :exc:`ImportError` "
+"のサブクラスを指定できます。"
 
 #: ../../c-api/exceptions.rst:319
 msgid ""
@@ -482,6 +484,8 @@ msgid ""
 "Function similar to :c:func:`PyErr_WarnFormat`, but *category* is "
 ":exc:`ResourceWarning` and pass *source* to :func:`warnings.WarningMessage`."
 msgstr ""
+":c:func:`PyErr_WarnFormat` に似た関数で、*category* は :exc:`ResourceWarning` であり、 "
+"*source* は :func:`warnings.WarningMessage` に渡されます。"
 
 #: ../../c-api/exceptions.rst:353
 msgid "Querying the error indicator"

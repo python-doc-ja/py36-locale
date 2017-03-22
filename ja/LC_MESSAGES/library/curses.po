@@ -2336,7 +2336,7 @@ msgstr "``KEY_SEXIT``"
 
 #: ../../library/curses.rst:1446
 msgid "Shifted Exit"
-msgstr ""
+msgstr "シフト付き Exit"
 
 #: ../../library/curses.rst:1448
 msgid "``KEY_SFIND``"

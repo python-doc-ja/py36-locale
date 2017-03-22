@@ -1118,6 +1118,7 @@ msgid ""
 "See :meth:`types.SimpleNamespace` for a mutable namespace based on an "
 "underlying dictionary instead of a tuple."
 msgstr ""
+"タプルではなく、辞書をもとにした変更可能な名前空間を作成するには :meth:`types.SimpleNamespace` を参照してください。"
 
 #: ../../library/collections.rst:978
 msgid ""

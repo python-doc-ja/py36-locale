@@ -89,6 +89,8 @@ msgid ""
 " has an API compatible with the standard library :mod:`re` module, but "
 "offers additional functionality and a more thorough Unicode support."
 msgstr ""
+"サードパーティの `regex <https://pypi.python.org/pypi/regex/>`_ モジュールは、標準ライブラリの "
+":mod:`re` モジュールと互換な API を持ち、追加の機能とより徹底した Unicode サポートを提供します。"
 
 #: ../../library/re.rst:55
 msgid "Regular Expression Syntax"

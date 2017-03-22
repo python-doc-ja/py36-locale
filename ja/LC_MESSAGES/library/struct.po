@@ -623,7 +623,7 @@ msgstr "``'n'`` および ``'N'`` フォーマットのサポートが追加さ�
 
 #: ../../library/struct.rst:235
 msgid "Added support for the ``'e'`` format."
-msgstr ""
+msgstr "``'e'`` フォーマットのサポートが追加されました。"
 
 #: ../../library/struct.rst:242
 msgid ""

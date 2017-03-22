@@ -198,13 +198,13 @@ msgstr "注釈:"
 msgid ""
 "This is a short-circuit operator, so it only evaluates the second argument "
 "if the first one is false."
-msgstr ""
+msgstr "この演算子は短絡評価されます。つまり第一引数が偽のときにのみ、第二引数が評価されます。"
 
 #: ../../library/stdtypes.rst:114
 msgid ""
 "This is a short-circuit operator, so it only evaluates the second argument "
 "if the first one is true."
-msgstr ""
+msgstr "この演算子は短絡評価されます。つまり第一引数が真のときにのみ、第二引数が評価されます。"
 
 #: ../../library/stdtypes.rst:118
 msgid ""

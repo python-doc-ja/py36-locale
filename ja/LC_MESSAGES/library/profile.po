@@ -129,8 +129,8 @@ msgid "ncalls"
 msgstr "ncalls"
 
 #: ../../library/profile.rst:88
-msgid "for the number of calls,"
-msgstr "呼び出し回数、"
+msgid "for the number of calls."
+msgstr "呼び出し回数"
 
 #: ../../library/profile.rst:92
 msgid "tottime"
@@ -713,6 +713,11 @@ msgid ""
 "several restrictions are provided, then they are applied sequentially. For "
 "example::"
 msgstr ""
+"引数は (もし与えられると) "
+"リストを重要なエントリのみに制限するために使われます。初期段階でリストはプロファイルした関数の完全な情報を持っています。制限の指定は、 "
+"(行数を指定する) 整数、 (行のパーセンテージを指定する) 0.0 から 1.0 までの割合を指定する小数、 (出力する standard name "
+"にマッチする) "
+"正規表現として解釈される文字列のいずれかを使って行います。複数の制限が指定された場合、指定の順に適用されます。たとえば次のようになります::"
 
 #: ../../library/profile.rst:454
 msgid ""

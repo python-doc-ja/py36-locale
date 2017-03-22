@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>, 2017\n"
+"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -177,10 +177,12 @@ msgid ""
 "Pure path objects implement the :class:`os.PathLike` interface, allowing "
 "them to be used anywhere the interface is accepted."
 msgstr ""
+"純粋パスオブジェクトは :class:`os.PathLike` "
+"インターフェースを実装しており、そのインタフェースを受理する箇所ならどこでも使用することができます。"
 
 #: ../../library/pathlib.rst:153
 msgid "Added support for the :class:`os.PathLike` interface."
-msgstr ""
+msgstr ":class:`os.PathLike` インターフェースがサポートされました。"
 
 #: ../../library/pathlib.rst:158
 msgid ""
@@ -238,7 +240,7 @@ msgstr "演算子スラッシュ \"/\" はパスの追加を行います。:func
 msgid ""
 "A path object can be used anywhere an object implementing "
 ":class:`os.PathLike` is accepted::"
-msgstr ""
+msgstr ":class:`os.PathLike` を実装したオブジェクトが受理できる箇所ならどこでも、パスオブジェクトが使用できます::"
 
 #: ../../library/pathlib.rst:228
 msgid ""
@@ -780,7 +782,7 @@ msgstr ""
 
 #: ../../library/pathlib.rst:945
 msgid "The *strict* argument."
-msgstr ""
+msgstr "*strict* 引数"
 
 #: ../../library/pathlib.rst:950
 msgid ""
