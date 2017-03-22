@@ -48,7 +48,7 @@ msgid "See :ref:`implementing-the-arithmetic-operations` for examples."
 msgstr ""
 
 #: ../../library/constants.rst:49
-msgid "``NotImplentedError`` and ``NotImplemented`` are not interchangeable, even though they have similar names and purposes. See :exc:`NotImplementedError` for details on when to use it."
+msgid "``NotImplementedError`` and ``NotImplemented`` are not interchangeable, even though they have similar names and purposes. See :exc:`NotImplementedError` for details on when to use it."
 msgstr ""
 
 #: ../../library/constants.rst:56

@@ -1181,227 +1181,222 @@ msgid "Character Map Codecs"
 msgstr ""
 
 #: ../../c-api/unicode.rst:1393
-msgid "This codec is special in that it can be used to implement many different codecs (and this is in fact what was done to obtain most of the standard codecs included in the :mod:`encodings` package). The codec uses mapping to encode and decode characters."
+msgid "This codec is special in that it can be used to implement many different codecs (and this is in fact what was done to obtain most of the standard codecs included in the :mod:`encodings` package). The codec uses mapping to encode and decode characters.  The mapping objects provided must support the :meth:`__getitem__` mapping interface; dictionaries and sequences work well."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1398
-msgid "Decoding mappings must map single string characters to single Unicode characters, integers (which are then interpreted as Unicode ordinals) or ``None`` (meaning \"undefined mapping\" and causing an error)."
-msgstr ""
-
-#: ../../c-api/unicode.rst:1402
-msgid "Encoding mappings must map single Unicode characters to single string characters, integers (which are then interpreted as Latin-1 ordinals) or ``None`` (meaning \"undefined mapping\" and causing an error)."
-msgstr ""
-
-#: ../../c-api/unicode.rst:1406
-msgid "The mapping objects provided must only support the __getitem__ mapping interface."
-msgstr ""
-
-#: ../../c-api/unicode.rst:1409
-msgid "If a character lookup fails with a LookupError, the character is copied as-is meaning that its ordinal value will be interpreted as Unicode or Latin-1 ordinal resp. Because of this, mappings only need to contain those mappings which map characters to different code points."
-msgstr ""
-
-#: ../../c-api/unicode.rst:1414
+#: ../../c-api/unicode.rst:1399
 msgid "These are the mapping codec APIs:"
 msgstr ""
 
+#: ../../c-api/unicode.rst:1404
+msgid "Create a Unicode object by decoding *size* bytes of the encoded string *s* using the given *mapping* object.  Return *NULL* if an exception was raised by the codec."
+msgstr ""
+
+#: ../../c-api/unicode.rst:1408
+msgid "If *mapping* is *NULL*, Latin-1 decoding will be applied.  Else *mapping* must map bytes ordinals (integers in the range from 0 to 255) to Unicode strings, integers (which are then interpreted as Unicode ordinals) or ``None``.  Unmapped data bytes -- ones which cause a :exc:`LookupError`, as well as ones which get mapped to ``None``, ``0xFFFE`` or ``'\\ufffe'``, are treated as undefined mappings and cause an error."
+msgstr ""
+
 #: ../../c-api/unicode.rst:1419
-msgid "Create a Unicode object by decoding *size* bytes of the encoded string *s* using the given *mapping* object.  Return *NULL* if an exception was raised by the codec. If *mapping* is *NULL* latin-1 decoding will be done. Else it can be a dictionary mapping byte or a unicode string, which is treated as a lookup table. Byte values greater that the length of the string and U+FFFE \"characters\" are treated as \"undefined mapping\"."
+msgid "Encode a Unicode object using the given *mapping* object and return the result as a bytes object.  Error handling is \"strict\".  Return *NULL* if an exception was raised by the codec."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1429
-msgid "Encode a Unicode object using the given *mapping* object and return the result as Python string object.  Error handling is \"strict\".  Return *NULL* if an exception was raised by the codec."
+#: ../../c-api/unicode.rst:1423
+msgid "The *mapping* object must map Unicode ordinal integers to bytes objects, integers in the range from 0 to 255 or ``None``.  Unmapped character ordinals (ones which cause a :exc:`LookupError`) as well as mapped to ``None`` are treated as \"undefined mapping\" and cause an error."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1433
-msgid "The following codec API is special in that maps Unicode to Unicode."
+#: ../../c-api/unicode.rst:1432
+msgid "Encode the :c:type:`Py_UNICODE` buffer of the given *size* using the given *mapping* object and return the result as a bytes object.  Return *NULL* if an exception was raised by the codec."
 msgstr ""
 
 #: ../../c-api/unicode.rst:1439
-msgid "Translate a :c:type:`Py_UNICODE` buffer of the given *size* by applying a character mapping *table* to it and return the resulting Unicode object.  Return *NULL* when an exception was raised by the codec."
-msgstr ""
-
-#: ../../c-api/unicode.rst:1443
-msgid "The *mapping* table must map Unicode ordinal integers to Unicode ordinal integers or ``None`` (causing deletion of the character)."
-msgstr ""
-
-#: ../../c-api/unicode.rst:1446
-#: ../../c-api/unicode.rst:1565
-msgid "Mapping tables need only provide the :meth:`__getitem__` interface; dictionaries and sequences work well.  Unmapped character ordinals (ones which cause a :exc:`LookupError`) are left untouched and are copied as-is."
-msgstr ""
-
-#: ../../c-api/unicode.rst:1453
-msgid "Deprecated since version 3.3, will be removed in version 4.0: Part of the old-style Py_UNICODE API; please migrate to using PyUnicode_Translate(). or generic codec based API"
-msgstr ""
-
-#: ../../c-api/unicode.rst:1453
-msgid "Part of the old-style :c:type:`Py_UNICODE` API; please migrate to using :c:func:`PyUnicode_Translate`. or :ref:`generic codec based API <codec-registry>`"
-msgstr ""
-
-#: ../../c-api/unicode.rst:1459
-msgid "Encode the :c:type:`Py_UNICODE` buffer of the given *size* using the given *mapping* object and return a Python string object. Return *NULL* if an exception was raised by the codec."
-msgstr ""
-
-#: ../../c-api/unicode.rst:1466
 msgid "Deprecated since version 3.3, will be removed in version 4.0: Part of the old-style Py_UNICODE API; please migrate to using PyUnicode_AsCharmapString() or PyUnicode_AsEncodedString()."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1466
+#: ../../c-api/unicode.rst:1439
 msgid "Part of the old-style :c:type:`Py_UNICODE` API; please migrate to using :c:func:`PyUnicode_AsCharmapString` or :c:func:`PyUnicode_AsEncodedString`."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1470
+#: ../../c-api/unicode.rst:1442
+msgid "The following codec API is special in that maps Unicode to Unicode."
+msgstr ""
+
+#: ../../c-api/unicode.rst:1447
+msgid "Translate a Unicode object using the given *mapping* object and return the resulting Unicode object.  Return *NULL* if an exception was raised by the codec."
+msgstr ""
+
+#: ../../c-api/unicode.rst:1451
+msgid "The *mapping* object must map Unicode ordinal integers to Unicode strings, integers (which are then interpreted as Unicode ordinals) or ``None`` (causing deletion of the character).  Unmapped character ordinals (ones which cause a :exc:`LookupError`) are left untouched and are copied as-is."
+msgstr ""
+
+#: ../../c-api/unicode.rst:1460
+msgid "Translate a :c:type:`Py_UNICODE` buffer of the given *size* by applying a character *mapping* table to it and return the resulting Unicode object. Return *NULL* when an exception was raised by the codec."
+msgstr ""
+
+#: ../../c-api/unicode.rst:1467
+msgid "Deprecated since version 3.3, will be removed in version 4.0: Part of the old-style Py_UNICODE API; please migrate to using PyUnicode_Translate(). or generic codec based API"
+msgstr ""
+
+#: ../../c-api/unicode.rst:1467
+msgid "Part of the old-style :c:type:`Py_UNICODE` API; please migrate to using :c:func:`PyUnicode_Translate`. or :ref:`generic codec based API <codec-registry>`"
+msgstr ""
+
+#: ../../c-api/unicode.rst:1471
 msgid "MBCS codecs for Windows"
 msgstr ""
 
-#: ../../c-api/unicode.rst:1472
+#: ../../c-api/unicode.rst:1473
 msgid "These are the MBCS codec APIs. They are currently only available on Windows and use the Win32 MBCS converters to implement the conversions.  Note that MBCS (or DBCS) is a class of encodings, not just one.  The target encoding is defined by the user settings on the machine running the codec."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1479
+#: ../../c-api/unicode.rst:1480
 msgid "Create a Unicode object by decoding *size* bytes of the MBCS encoded string *s*. Return *NULL* if an exception was raised by the codec."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1486
+#: ../../c-api/unicode.rst:1487
 msgid "If *consumed* is *NULL*, behave like :c:func:`PyUnicode_DecodeMBCS`. If *consumed* is not *NULL*, :c:func:`PyUnicode_DecodeMBCSStateful` will not decode trailing lead byte and the number of bytes that have been decoded will be stored in *consumed*."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1494
+#: ../../c-api/unicode.rst:1495
 msgid "Encode a Unicode object using MBCS and return the result as Python bytes object.  Error handling is \"strict\".  Return *NULL* if an exception was raised by the codec."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1501
+#: ../../c-api/unicode.rst:1502
 msgid "Encode the Unicode object using the specified code page and return a Python bytes object.  Return *NULL* if an exception was raised by the codec. Use :c:data:`CP_ACP` code page to get the MBCS encoder."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1510
+#: ../../c-api/unicode.rst:1511
 msgid "Encode the :c:type:`Py_UNICODE` buffer of the given *size* using MBCS and return a Python bytes object.  Return *NULL* if an exception was raised by the codec."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1517
+#: ../../c-api/unicode.rst:1518
 msgid "Deprecated since version 3.3, will be removed in version 4.0: Part of the old-style Py_UNICODE API; please migrate to using PyUnicode_AsMBCSString(), PyUnicode_EncodeCodePage() or PyUnicode_AsEncodedString()."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1517
+#: ../../c-api/unicode.rst:1518
 msgid "Part of the old-style :c:type:`Py_UNICODE` API; please migrate to using :c:func:`PyUnicode_AsMBCSString`, :c:func:`PyUnicode_EncodeCodePage` or :c:func:`PyUnicode_AsEncodedString`."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1521
+#: ../../c-api/unicode.rst:1522
 msgid "Methods & Slots"
 msgstr ""
 
-#: ../../c-api/unicode.rst:1527
+#: ../../c-api/unicode.rst:1528
 msgid "Methods and Slot Functions"
 msgstr ""
 
-#: ../../c-api/unicode.rst:1529
+#: ../../c-api/unicode.rst:1530
 msgid "The following APIs are capable of handling Unicode objects and strings on input (we refer to them as strings in the descriptions) and return Unicode objects or integers as appropriate."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1533
+#: ../../c-api/unicode.rst:1534
 msgid "They all return *NULL* or ``-1`` if an exception occurs."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1538
+#: ../../c-api/unicode.rst:1539
 msgid "Concat two strings giving a new Unicode string."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1543
+#: ../../c-api/unicode.rst:1544
 msgid "Split a string giving a list of Unicode strings.  If *sep* is *NULL*, splitting will be done at all whitespace substrings.  Otherwise, splits occur at the given separator.  At most *maxsplit* splits will be done.  If negative, no limit is set.  Separators are not included in the resulting list."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1551
+#: ../../c-api/unicode.rst:1552
 msgid "Split a Unicode string at line breaks, returning a list of Unicode strings. CRLF is considered to be one line break.  If *keepend* is ``0``, the Line break characters are not included in the resulting strings."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1559
+#: ../../c-api/unicode.rst:1560
 msgid "Translate a string by applying a character mapping table to it and return the resulting Unicode object."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1562
+#: ../../c-api/unicode.rst:1563
 msgid "The mapping table must map Unicode ordinal integers to Unicode ordinal integers or ``None`` (causing deletion of the character)."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1569
+#: ../../c-api/unicode.rst:1566
+msgid "Mapping tables need only provide the :meth:`__getitem__` interface; dictionaries and sequences work well.  Unmapped character ordinals (ones which cause a :exc:`LookupError`) are left untouched and are copied as-is."
+msgstr ""
+
+#: ../../c-api/unicode.rst:1570
 msgid "*errors* has the usual meaning for codecs. It may be *NULL* which indicates to use the default error handling."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1575
+#: ../../c-api/unicode.rst:1576
 msgid "Join a sequence of strings using the given *separator* and return the resulting Unicode string."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1582
+#: ../../c-api/unicode.rst:1583
 msgid "Return ``1`` if *substr* matches ``str[start:end]`` at the given tail end (*direction* == ``-1`` means to do a prefix match, *direction* == ``1`` a suffix match), ``0`` otherwise. Return ``-1`` if an error occurred."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1590
+#: ../../c-api/unicode.rst:1591
 msgid "Return the first position of *substr* in ``str[start:end]`` using the given *direction* (*direction* == ``1`` means to do a forward search, *direction* == ``-1`` a backward search).  The return value is the index of the first match; a value of ``-1`` indicates that no match was found, and ``-2`` indicates that an error occurred and an exception has been set."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1600
+#: ../../c-api/unicode.rst:1601
 msgid "Return the first position of the character *ch* in ``str[start:end]`` using the given *direction* (*direction* == ``1`` means to do a forward search, *direction* == ``-1`` a backward search).  The return value is the index of the first match; a value of ``-1`` indicates that no match was found, and ``-2`` indicates that an error occurred and an exception has been set."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1612
+#: ../../c-api/unicode.rst:1613
 msgid "Return the number of non-overlapping occurrences of *substr* in ``str[start:end]``.  Return ``-1`` if an error occurred."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1619
+#: ../../c-api/unicode.rst:1620
 msgid "Replace at most *maxcount* occurrences of *substr* in *str* with *replstr* and return the resulting Unicode object. *maxcount* == ``-1`` means replace all occurrences."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1626
+#: ../../c-api/unicode.rst:1627
 msgid "Compare two strings and return ``-1``, ``0``, ``1`` for less than, equal, and greater than, respectively."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1629
+#: ../../c-api/unicode.rst:1630
 msgid "This function returns ``-1`` upon failure, so one should call :c:func:`PyErr_Occurred` to check for errors."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1635
+#: ../../c-api/unicode.rst:1636
 msgid "Compare a unicode object, *uni*, with *string* and return ``-1``, ``0``, ``1`` for less than, equal, and greater than, respectively. It is best to pass only ASCII-encoded strings, but the function interprets the input string as ISO-8859-1 if it contains non-ASCII characters."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1640
+#: ../../c-api/unicode.rst:1641
 msgid "This function does not raise exceptions."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1645
+#: ../../c-api/unicode.rst:1646
 msgid "Rich compare two unicode strings and return one of the following:"
 msgstr ""
 
-#: ../../c-api/unicode.rst:1647
+#: ../../c-api/unicode.rst:1648
 msgid "``NULL`` in case an exception was raised"
 msgstr ""
 
-#: ../../c-api/unicode.rst:1648
+#: ../../c-api/unicode.rst:1649
 msgid ":const:`Py_True` or :const:`Py_False` for successful comparisons"
 msgstr ""
 
-#: ../../c-api/unicode.rst:1649
+#: ../../c-api/unicode.rst:1650
 msgid ":const:`Py_NotImplemented` in case the type combination is unknown"
 msgstr ""
 
-#: ../../c-api/unicode.rst:1651
+#: ../../c-api/unicode.rst:1652
 msgid "Possible values for *op* are :const:`Py_GT`, :const:`Py_GE`, :const:`Py_EQ`, :const:`Py_NE`, :const:`Py_LT`, and :const:`Py_LE`."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1657
+#: ../../c-api/unicode.rst:1658
 msgid "Return a new string object from *format* and *args*; this is analogous to ``format % args``."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1663
+#: ../../c-api/unicode.rst:1664
 msgid "Check whether *element* is contained in *container* and return true or false accordingly."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1666
+#: ../../c-api/unicode.rst:1667
 msgid "*element* has to coerce to a one element Unicode string. ``-1`` is returned if there was an error."
 msgstr ""
 
-#: ../../c-api/unicode.rst:1672
+#: ../../c-api/unicode.rst:1673
 msgid "Intern the argument *\\*string* in place.  The argument must be the address of a pointer variable pointing to a Python unicode string object.  If there is an existing interned string that is the same as *\\*string*, it sets *\\*string* to it (decrementing the reference count of the old string object and incrementing the reference count of the interned string object), otherwise it leaves *\\*string* alone and interns it (incrementing its reference count). (Clarification: even though there is a lot of talk about reference counts, think of this function as reference-count-neutral; you own the object after the call if and only if you owned it before the call.)"
 msgstr ""
 
-#: ../../c-api/unicode.rst:1685
+#: ../../c-api/unicode.rst:1686
 msgid "A combination of :c:func:`PyUnicode_FromString` and :c:func:`PyUnicode_InternInPlace`, returning either a new unicode string object that has been interned, or a new (\"owned\") reference to an earlier interned string object with the same value."
 msgstr ""
 

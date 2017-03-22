@@ -36,7 +36,7 @@ msgid "Add an item to the end of the list.  Equivalent to ``a[len(a):] = [x]``."
 msgstr ""
 
 #: ../../tutorial/datastructures.rst:28
-msgid "Extend the list by appending all the items in the given list.  Equivalent to ``a[len(a):] = L``."
+msgid "Extend the list by appending all the items from the iterable.  Equivalent to ``a[len(a):] = iterable``."
 msgstr ""
 
 #: ../../tutorial/datastructures.rst:35
@@ -60,7 +60,7 @@ msgid "Return zero-based index in the list of the first item whose value is *x*.
 msgstr ""
 
 #: ../../tutorial/datastructures.rst:69
-msgid "The optional arguments *start* and *end* are interpreted as in the slice notation and are used to limit the search to a particular subsequence of *x*.  The returned index is computed relative to the beginning of the full sequence rather than the *start* argument."
+msgid "The optional arguments *start* and *end* are interpreted as in the slice notation and are used to limit the search to a particular subsequence of the list.  The returned index is computed relative to the beginning of the full sequence rather than the *start* argument."
 msgstr ""
 
 #: ../../tutorial/datastructures.rst:78

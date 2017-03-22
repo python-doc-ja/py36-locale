@@ -220,7 +220,7 @@ msgid ":ref:`old-string-formatting`"
 msgstr ""
 
 #: ../../tutorial/introduction.rst:362
-msgid "The old formatting operations invoked when strings and Unicode strings are the left operand of the ``%`` operator are described in more detail here."
+msgid "The old formatting operations invoked when strings are the left operand of the ``%`` operator are described in more detail here."
 msgstr ""
 
 #: ../../tutorial/introduction.rst:369

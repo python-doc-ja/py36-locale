@@ -182,11 +182,11 @@ msgid "Notes:"
 msgstr ""
 
 #: ../../library/stdtypes.rst:110
-msgid "This is a short-circuit operator, so it only evaluates the second argument if the first one is :const:`False`."
+msgid "This is a short-circuit operator, so it only evaluates the second argument if the first one is false."
 msgstr ""
 
 #: ../../library/stdtypes.rst:114
-msgid "This is a short-circuit operator, so it only evaluates the second argument if the first one is :const:`True`."
+msgid "This is a short-circuit operator, so it only evaluates the second argument if the first one is true."
 msgstr ""
 
 #: ../../library/stdtypes.rst:118

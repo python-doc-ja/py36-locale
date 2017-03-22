@@ -724,78 +724,78 @@ msgid "By default, the :mod:`sqlite3` module opens transactions implicitly befor
 msgstr ""
 
 #: ../../library/sqlite3.rst:930
-msgid "So if you are within a transaction and issue a command like ``CREATE TABLE ...``, ``VACUUM``, ``PRAGMA``, the :mod:`sqlite3` module will commit implicitly before executing that command. There are two reasons for doing that. The first is that some of these commands don't work within transactions. The other reason is that sqlite3 needs to keep track of the transaction state (if a transaction is active or not).  The current transaction state is exposed through the :attr:`Connection.in_transaction` attribute of the connection object."
-msgstr ""
-
-#: ../../library/sqlite3.rst:938
 msgid "You can control which kind of ``BEGIN`` statements sqlite3 implicitly executes (or none at all) via the *isolation_level* parameter to the :func:`connect` call, or via the :attr:`isolation_level` property of connections."
 msgstr ""
 
-#: ../../library/sqlite3.rst:942
+#: ../../library/sqlite3.rst:934
 msgid "If you want **autocommit mode**, then set :attr:`isolation_level` to ``None``."
 msgstr ""
 
-#: ../../library/sqlite3.rst:944
+#: ../../library/sqlite3.rst:936
 msgid "Otherwise leave it at its default, which will result in a plain \"BEGIN\" statement, or set it to one of SQLite's supported isolation levels: \"DEFERRED\", \"IMMEDIATE\" or \"EXCLUSIVE\"."
 msgstr ""
 
-#: ../../library/sqlite3.rst:948
+#: ../../library/sqlite3.rst:940
+msgid "The current transaction state is exposed through the :attr:`Connection.in_transaction` attribute of the connection object."
+msgstr ""
+
+#: ../../library/sqlite3.rst:943
 msgid ":mod:`sqlite3` used to implicitly commit an open transaction before DDL statements.  This is no longer the case."
 msgstr ""
 
-#: ../../library/sqlite3.rst:954
+#: ../../library/sqlite3.rst:949
 msgid "Using :mod:`sqlite3` efficiently"
 msgstr ""
 
-#: ../../library/sqlite3.rst:958
+#: ../../library/sqlite3.rst:953
 msgid "Using shortcut methods"
 msgstr ""
 
-#: ../../library/sqlite3.rst:960
+#: ../../library/sqlite3.rst:955
 msgid "Using the nonstandard :meth:`execute`, :meth:`executemany` and :meth:`executescript` methods of the :class:`Connection` object, your code can be written more concisely because you don't have to create the (often superfluous) :class:`Cursor` objects explicitly. Instead, the :class:`Cursor` objects are created implicitly and these shortcut methods return the cursor objects. This way, you can execute a ``SELECT`` statement and iterate over it directly using only a single call on the :class:`Connection` object."
 msgstr ""
 
-#: ../../library/sqlite3.rst:972
+#: ../../library/sqlite3.rst:967
 msgid "Accessing columns by name instead of by index"
 msgstr ""
 
-#: ../../library/sqlite3.rst:974
+#: ../../library/sqlite3.rst:969
 msgid "One useful feature of the :mod:`sqlite3` module is the built-in :class:`sqlite3.Row` class designed to be used as a row factory."
 msgstr ""
 
-#: ../../library/sqlite3.rst:977
+#: ../../library/sqlite3.rst:972
 msgid "Rows wrapped with this class can be accessed both by index (like tuples) and case-insensitively by name:"
 msgstr ""
 
-#: ../../library/sqlite3.rst:984
+#: ../../library/sqlite3.rst:979
 msgid "Using the connection as a context manager"
 msgstr ""
 
-#: ../../library/sqlite3.rst:986
+#: ../../library/sqlite3.rst:981
 msgid "Connection objects can be used as context managers that automatically commit or rollback transactions.  In the event of an exception, the transaction is rolled back; otherwise, the transaction is committed:"
 msgstr ""
 
-#: ../../library/sqlite3.rst:995
+#: ../../library/sqlite3.rst:990
 msgid "Common issues"
 msgstr ""
 
-#: ../../library/sqlite3.rst:998
+#: ../../library/sqlite3.rst:993
 msgid "Multithreading"
 msgstr ""
 
-#: ../../library/sqlite3.rst:1000
+#: ../../library/sqlite3.rst:995
 msgid "Older SQLite versions had issues with sharing connections between threads. That's why the Python module disallows sharing connections and cursors between threads. If you still try to do so, you will get an exception at runtime."
 msgstr ""
 
-#: ../../library/sqlite3.rst:1004
+#: ../../library/sqlite3.rst:999
 msgid "The only exception is calling the :meth:`~Connection.interrupt` method, which only makes sense to call from a different thread."
 msgstr ""
 
-#: ../../library/sqlite3.rst:1008
+#: ../../library/sqlite3.rst:1003
 msgid "Footnotes"
 msgstr ""
 
-#: ../../library/sqlite3.rst:1009
+#: ../../library/sqlite3.rst:1004
 msgid "The sqlite3 module is not built with loadable extension support by default, because some platforms (notably Mac OS X) have SQLite libraries which are compiled without this feature. To get loadable extension support, you must pass --enable-loadable-sqlite-extensions to configure."
 msgstr ""
 

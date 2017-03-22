@@ -36,7 +36,7 @@ msgid "Not all Python object types are supported; in general, only objects whose
 msgstr ""
 
 #: ../../library/marshal.rst:51
-msgid "There are functions that read/write files as well as functions operating on strings."
+msgid "There are functions that read/write files as well as functions operating on bytes-like objects."
 msgstr ""
 
 #: ../../library/marshal.rst:54
@@ -44,50 +44,50 @@ msgid "The module defines these functions:"
 msgstr ""
 
 #: ../../library/marshal.rst:59
-msgid "Write the value on the open file.  The value must be a supported type.  The file must be an open file object such as ``sys.stdout`` or returned by :func:`open` or :func:`os.popen`.  It must be opened in binary mode (``'wb'`` or ``'w+b'``)."
+msgid "Write the value on the open file.  The value must be a supported type.  The file must be a writeable :term:`binary file`."
 msgstr ""
 
-#: ../../library/marshal.rst:64
+#: ../../library/marshal.rst:62
 msgid "If the value has (or contains an object that has) an unsupported type, a :exc:`ValueError` exception is raised --- but garbage data will also be written to the file.  The object will not be properly read back by :func:`load`."
 msgstr ""
 
-#: ../../library/marshal.rst:68
+#: ../../library/marshal.rst:66
 msgid "The *version* argument indicates the data format that ``dump`` should use (see below)."
 msgstr ""
 
-#: ../../library/marshal.rst:74
-msgid "Read one value from the open file and return it.  If no valid value is read (e.g. because the data has a different Python version's incompatible marshal format), raise :exc:`EOFError`, :exc:`ValueError` or :exc:`TypeError`.  The file must be an open file object opened in binary mode (``'rb'`` or ``'r+b'``)."
+#: ../../library/marshal.rst:72
+msgid "Read one value from the open file and return it.  If no valid value is read (e.g. because the data has a different Python version's incompatible marshal format), raise :exc:`EOFError`, :exc:`ValueError` or :exc:`TypeError`.  The file must be a readable :term:`binary file`."
 msgstr ""
 
-#: ../../library/marshal.rst:82
+#: ../../library/marshal.rst:79
 msgid "If an object containing an unsupported type was marshalled with :func:`dump`, :func:`load` will substitute ``None`` for the unmarshallable type."
 msgstr ""
 
-#: ../../library/marshal.rst:88
-msgid "Return the string that would be written to a file by ``dump(value, file)``.  The value must be a supported type.  Raise a :exc:`ValueError` exception if value has (or contains an object that has) an unsupported type."
+#: ../../library/marshal.rst:85
+msgid "Return the bytes object that would be written to a file by ``dump(value, file)``.  The value must be a supported type.  Raise a :exc:`ValueError` exception if value has (or contains an object that has) an unsupported type."
 msgstr ""
 
-#: ../../library/marshal.rst:92
+#: ../../library/marshal.rst:89
 msgid "The *version* argument indicates the data format that ``dumps`` should use (see below)."
 msgstr ""
 
-#: ../../library/marshal.rst:98
-msgid "Convert the string to a value.  If no valid value is found, raise :exc:`EOFError`, :exc:`ValueError` or :exc:`TypeError`.  Extra characters in the string are ignored."
+#: ../../library/marshal.rst:95
+msgid "Convert the :term:`bytes-like object` to a value.  If no valid value is found, raise :exc:`EOFError`, :exc:`ValueError` or :exc:`TypeError`.  Extra bytes in the input are ignored."
 msgstr ""
 
-#: ../../library/marshal.rst:103
+#: ../../library/marshal.rst:100
 msgid "In addition, the following constants are defined:"
 msgstr ""
 
-#: ../../library/marshal.rst:107
+#: ../../library/marshal.rst:104
 msgid "Indicates the format that the module uses. Version 0 is the historical format, version 1 shares interned strings and version 2 uses a binary format for floating point numbers. Version 3 adds support for object instancing and recursion. The current version is 4."
 msgstr ""
 
-#: ../../library/marshal.rst:115
+#: ../../library/marshal.rst:112
 msgid "Footnotes"
 msgstr ""
 
-#: ../../library/marshal.rst:116
+#: ../../library/marshal.rst:113
 msgid "The name of this module stems from a bit of terminology used by the designers of Modula-3 (amongst others), who use the term \"marshalling\" for shipping of data around in a self-contained form. Strictly speaking, \"to marshal\" means to convert some data from internal to external form (in an RPC buffer for instance) and \"unmarshalling\" for the reverse process."
 msgstr ""
 

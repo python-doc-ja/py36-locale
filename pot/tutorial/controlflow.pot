@@ -255,151 +255,151 @@ msgstr ""
 msgid "When a final formal parameter of the form ``**name`` is present, it receives a dictionary (see :ref:`typesmapping`) containing all keyword arguments except for those corresponding to a formal parameter.  This may be combined with a formal parameter of the form ``*name`` (described in the next subsection) which receives a tuple containing the positional arguments beyond the formal parameter list.  (``*name`` must occur before ``**name``.) For example, if we define a function like this::"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:499
+#: ../../tutorial/controlflow.rst:498
 msgid "It could be called like this::"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:507
+#: ../../tutorial/controlflow.rst:506
 msgid "and of course it would print:"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:520
-msgid "Note that the list of keyword argument names is created by sorting the result of the keywords dictionary's ``keys()`` method before printing its contents; if this is not done, the order in which the arguments are printed is undefined."
+#: ../../tutorial/controlflow.rst:519
+msgid "Note that the order in which the keyword arguments are printed is guaranteed to match the order in which they were provided in the function call."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:527
+#: ../../tutorial/controlflow.rst:526
 msgid "Arbitrary Argument Lists"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:532
+#: ../../tutorial/controlflow.rst:531
 msgid "Finally, the least frequently used option is to specify that a function can be called with an arbitrary number of arguments.  These arguments will be wrapped up in a tuple (see :ref:`tut-tuples`).  Before the variable number of arguments, zero or more normal arguments may occur. ::"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:541
+#: ../../tutorial/controlflow.rst:540
 msgid "Normally, these ``variadic`` arguments will be last in the list of formal parameters, because they scoop up all remaining input arguments that are passed to the function. Any formal parameters which occur after the ``*args`` parameter are 'keyword-only' arguments, meaning that they can only be used as keywords rather than positional arguments. ::"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:558
+#: ../../tutorial/controlflow.rst:557
 msgid "Unpacking Argument Lists"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:560
+#: ../../tutorial/controlflow.rst:559
 msgid "The reverse situation occurs when the arguments are already in a list or tuple but need to be unpacked for a function call requiring separate positional arguments.  For instance, the built-in :func:`range` function expects separate *start* and *stop* arguments.  If they are not available separately, write the function call with the  ``*``\\ -operator to unpack the arguments out of a list or tuple::"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:576
+#: ../../tutorial/controlflow.rst:575
 msgid "In the same fashion, dictionaries can deliver keyword arguments with the ``**``\\ -operator::"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:592
+#: ../../tutorial/controlflow.rst:591
 msgid "Lambda Expressions"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:594
+#: ../../tutorial/controlflow.rst:593
 msgid "Small anonymous functions can be created with the :keyword:`lambda` keyword. This function returns the sum of its two arguments: ``lambda a, b: a+b``. Lambda functions can be used wherever function objects are required.  They are syntactically restricted to a single expression.  Semantically, they are just syntactic sugar for a normal function definition.  Like nested function definitions, lambda functions can reference variables from the containing scope::"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:611
+#: ../../tutorial/controlflow.rst:610
 msgid "The above example uses a lambda expression to return a function.  Another use is to pass a small function as an argument::"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:623
+#: ../../tutorial/controlflow.rst:622
 msgid "Documentation Strings"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:630
+#: ../../tutorial/controlflow.rst:629
 msgid "Here are some conventions about the content and formatting of documentation strings."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:633
+#: ../../tutorial/controlflow.rst:632
 msgid "The first line should always be a short, concise summary of the object's purpose.  For brevity, it should not explicitly state the object's name or type, since these are available by other means (except if the name happens to be a verb describing a function's operation).  This line should begin with a capital letter and end with a period."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:639
+#: ../../tutorial/controlflow.rst:638
 msgid "If there are more lines in the documentation string, the second line should be blank, visually separating the summary from the rest of the description.  The following lines should be one or more paragraphs describing the object's calling conventions, its side effects, etc."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:644
+#: ../../tutorial/controlflow.rst:643
 msgid "The Python parser does not strip indentation from multi-line string literals in Python, so tools that process documentation have to strip indentation if desired.  This is done using the following convention. The first non-blank line *after* the first line of the string determines the amount of indentation for the entire documentation string.  (We can't use the first line since it is generally adjacent to the string's opening quotes so its indentation is not apparent in the string literal.)  Whitespace \"equivalent\" to this indentation is then stripped from the start of all lines of the string.  Lines that are indented less should not occur, but if they occur all their leading whitespace should be stripped.  Equivalence of whitespace should be tested after expansion of tabs (to 8 spaces, normally)."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:656
+#: ../../tutorial/controlflow.rst:655
 msgid "Here is an example of a multi-line docstring::"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:674
+#: ../../tutorial/controlflow.rst:673
 msgid "Function Annotations"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:681
+#: ../../tutorial/controlflow.rst:680
 msgid ":ref:`Function annotations <function>` are completely optional metadata information about the types used by user-defined functions (see :pep:`484` for more information)."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:685
+#: ../../tutorial/controlflow.rst:684
 msgid "Annotations are stored in the :attr:`__annotations__` attribute of the function as a dictionary and have no effect on any other part of the function.  Parameter annotations are defined by a colon after the parameter name, followed by an expression evaluating to the value of the annotation.  Return annotations are defined by a literal ``->``, followed by an expression, between the parameter list and the colon denoting the end of the :keyword:`def` statement.  The following example has a positional argument, a keyword argument, and the return value annotated::"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:707
+#: ../../tutorial/controlflow.rst:706
 msgid "Intermezzo: Coding Style"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:712
+#: ../../tutorial/controlflow.rst:711
 msgid "Now that you are about to write longer, more complex pieces of Python, it is a good time to talk about *coding style*.  Most languages can be written (or more concise, *formatted*) in different styles; some are more readable than others. Making it easy for others to read your code is always a good idea, and adopting a nice coding style helps tremendously for that."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:718
+#: ../../tutorial/controlflow.rst:717
 msgid "For Python, :pep:`8` has emerged as the style guide that most projects adhere to; it promotes a very readable and eye-pleasing coding style.  Every Python developer should read it at some point; here are the most important points extracted for you:"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:723
+#: ../../tutorial/controlflow.rst:722
 msgid "Use 4-space indentation, and no tabs."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:725
+#: ../../tutorial/controlflow.rst:724
 msgid "4 spaces are a good compromise between small indentation (allows greater nesting depth) and large indentation (easier to read).  Tabs introduce confusion, and are best left out."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:729
+#: ../../tutorial/controlflow.rst:728
 msgid "Wrap lines so that they don't exceed 79 characters."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:731
+#: ../../tutorial/controlflow.rst:730
 msgid "This helps users with small displays and makes it possible to have several code files side-by-side on larger displays."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:734
+#: ../../tutorial/controlflow.rst:733
 msgid "Use blank lines to separate functions and classes, and larger blocks of code inside functions."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:737
+#: ../../tutorial/controlflow.rst:736
 msgid "When possible, put comments on a line of their own."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:739
+#: ../../tutorial/controlflow.rst:738
 msgid "Use docstrings."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:741
+#: ../../tutorial/controlflow.rst:740
 msgid "Use spaces around operators and after commas, but not directly inside bracketing constructs: ``a = f(1, 2) + g(3, 4)``."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:744
+#: ../../tutorial/controlflow.rst:743
 msgid "Name your classes and functions consistently; the convention is to use ``CamelCase`` for classes and ``lower_case_with_underscores`` for functions and methods.  Always use ``self`` as the name for the first method argument (see :ref:`tut-firstclasses` for more on classes and methods)."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:749
+#: ../../tutorial/controlflow.rst:748
 msgid "Don't use fancy encodings if your code is meant to be used in international environments.  Python's default, UTF-8, or even plain ASCII work best in any case."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:753
+#: ../../tutorial/controlflow.rst:752
 msgid "Likewise, don't use non-ASCII characters in identifiers if there is only the slightest chance people speaking a different language will read or maintain the code."
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:759
+#: ../../tutorial/controlflow.rst:758
 msgid "Footnotes"
 msgstr ""
 
-#: ../../tutorial/controlflow.rst:760
+#: ../../tutorial/controlflow.rst:759
 msgid "Actually, *call by object reference* would be a better description, since if a mutable object is passed, the caller will see any changes the callee makes to it (items inserted into a list)."
 msgstr ""
 

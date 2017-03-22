@@ -1971,170 +1971,174 @@ msgid "The :func:`inspect.getargspec` function is deprecated and scheduled to be
 msgstr ""
 
 #: ../../whatsnew/3.5.rst:2329
-msgid "The :mod:`inspect` :func:`~inspect.getfullargspec`, :func:`~inspect.getargvalues`, :func:`~inspect.getcallargs`, :func:`~inspect.getargvalues`, :func:`~inspect.formatargspec`, and :func:`~inspect.formatargvalues` functions are deprecated in favor of the :func:`inspect.signature` API. (Contributed by Yury Selivanov in :issue:`20438`.)"
+msgid "The :mod:`inspect` :func:`~inspect.getfullargspec`, :func:`~inspect.getcallargs`, and :func:`~inspect.formatargspec` functions are deprecated in favor of the :func:`inspect.signature` API. (Contributed by Yury Selivanov in :issue:`20438`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2336
+#: ../../whatsnew/3.5.rst:2334
+msgid ":func:`~inspect.getargvalues` and :func:`~inspect.formatargvalues` functions were inadvertently marked as deprecated with the release of Python 3.5.0."
+msgstr ""
+
+#: ../../whatsnew/3.5.rst:2337
 msgid "Use of :const:`re.LOCALE` flag with str patterns or :const:`re.ASCII` is now deprecated.  (Contributed by Serhiy Storchaka in :issue:`22407`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2339
+#: ../../whatsnew/3.5.rst:2340
 msgid "Use of unrecognized special sequences consisting of ``'\\'`` and an ASCII letter in regular expression patterns and replacement patterns now raises a deprecation warning and will be forbidden in Python 3.6. (Contributed by Serhiy Storchaka in :issue:`23622`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2344
+#: ../../whatsnew/3.5.rst:2345
 msgid "The undocumented and unofficial *use_load_tests* default argument of the :meth:`unittest.TestLoader.loadTestsFromModule` method now is deprecated and ignored. (Contributed by Robert Collins and Barry A. Warsaw in :issue:`16662`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2351
+#: ../../whatsnew/3.5.rst:2352
 msgid "Removed"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2354
+#: ../../whatsnew/3.5.rst:2355
 msgid "API and Feature Removals"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2356
+#: ../../whatsnew/3.5.rst:2357
 msgid "The following obsolete and previously deprecated APIs and features have been removed:"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2359
+#: ../../whatsnew/3.5.rst:2360
 msgid "The ``__version__`` attribute has been dropped from the email package.  The email code hasn't been shipped separately from the stdlib for a long time, and the ``__version__`` string was not updated in the last few releases."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2363
+#: ../../whatsnew/3.5.rst:2364
 msgid "The internal ``Netrc`` class in the :mod:`ftplib` module was deprecated in 3.4, and has now been removed. (Contributed by Matt Chaput in :issue:`6623`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2367
+#: ../../whatsnew/3.5.rst:2368
 msgid "The concept of ``.pyo`` files has been removed."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2369
+#: ../../whatsnew/3.5.rst:2370
 msgid "The JoinableQueue class in the provisional :mod:`asyncio` module was deprecated in 3.4.4 and is now removed. (Contributed by A. Jesse Jiryu Davis in :issue:`23464`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2375
+#: ../../whatsnew/3.5.rst:2376
 msgid "Porting to Python 3.5"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2377
+#: ../../whatsnew/3.5.rst:2378
 msgid "This section lists previously described changes and other bugfixes that may require changes to your code."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2382
+#: ../../whatsnew/3.5.rst:2383
 msgid "Changes in Python behavior"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2384
+#: ../../whatsnew/3.5.rst:2385
 msgid "Due to an oversight, earlier Python versions erroneously accepted the following syntax::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2390
+#: ../../whatsnew/3.5.rst:2391
 msgid "Python 3.5 now correctly raises a :exc:`SyntaxError`, as generator expressions must be put in parentheses if not a sole argument to a function."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2395
+#: ../../whatsnew/3.5.rst:2396
 msgid "Changes in the Python API"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2397
+#: ../../whatsnew/3.5.rst:2398
 msgid ":pep:`475`: System calls are now retried when interrupted by a signal instead of raising :exc:`InterruptedError` if the Python signal handler does not raise an exception."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2401
+#: ../../whatsnew/3.5.rst:2402
 msgid "Before Python 3.5, a :class:`datetime.time` object was considered to be false if it represented midnight in UTC.  This behavior was considered obscure and error-prone and has been removed in Python 3.5.  See :issue:`13936` for full details."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2406
+#: ../../whatsnew/3.5.rst:2407
 msgid "The :meth:`ssl.SSLSocket.send()` method now raises either :exc:`ssl.SSLWantReadError` or :exc:`ssl.SSLWantWriteError` on a non-blocking socket if the operation would block.  Previously, it would return ``0``.  (Contributed by Nikolaus Rath in :issue:`20951`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2411
+#: ../../whatsnew/3.5.rst:2412
 msgid "The ``__name__`` attribute of generators is now set from the function name, instead of being set from the code name. Use ``gen.gi_code.co_name`` to retrieve the code name. Generators also have a new ``__qualname__`` attribute, the qualified name, which is now used for the representation of a generator (``repr(gen)``). (Contributed by Victor Stinner in :issue:`21205`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2418
+#: ../../whatsnew/3.5.rst:2419
 msgid "The deprecated \"strict\" mode and argument of :class:`~html.parser.HTMLParser`, :meth:`HTMLParser.error`, and the :exc:`HTMLParserError` exception have been removed.  (Contributed by Ezio Melotti in :issue:`15114`.) The *convert_charrefs* argument of :class:`~html.parser.HTMLParser` is now ``True`` by default.  (Contributed by Berker Peksag in :issue:`21047`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2424
+#: ../../whatsnew/3.5.rst:2425
 msgid "Although it is not formally part of the API, it is worth noting for porting purposes (ie: fixing tests) that error messages that were previously of the form \"'sometype' does not support the buffer protocol\" are now of the form \"a :term:`bytes-like object` is required, not 'sometype'\". (Contributed by Ezio Melotti in :issue:`16518`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2430
+#: ../../whatsnew/3.5.rst:2431
 msgid "If the current directory is set to a directory that no longer exists then :exc:`FileNotFoundError` will no longer be raised and instead :meth:`~importlib.machinery.FileFinder.find_spec` will return ``None`` **without** caching ``None`` in :data:`sys.path_importer_cache`, which is different than the typical case (:issue:`22834`)."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2436
+#: ../../whatsnew/3.5.rst:2437
 msgid "HTTP status code and messages from :mod:`http.client` and :mod:`http.server` were refactored into a common :class:`~http.HTTPStatus` enum.  The values in :mod:`http.client` and :mod:`http.server` remain available for backwards compatibility.  (Contributed by Demian Brecht in :issue:`21793`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2441
+#: ../../whatsnew/3.5.rst:2442
 msgid "When an import loader defines :meth:`importlib.machinery.Loader.exec_module` it is now expected to also define :meth:`~importlib.machinery.Loader.create_module` (raises a :exc:`DeprecationWarning` now, will be an error in Python 3.6). If the loader inherits from :class:`importlib.abc.Loader` then there is nothing to do, else simply define :meth:`~importlib.machinery.Loader.create_module` to return ``None``.  (Contributed by Brett Cannon in :issue:`23014`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2449
+#: ../../whatsnew/3.5.rst:2450
 msgid "The :func:`re.split` function always ignored empty pattern matches, so the ``\"x*\"`` pattern worked the same as ``\"x+\"``, and the ``\"\\b\"`` pattern never worked.  Now :func:`re.split` raises a warning if the pattern could match an empty string.  For compatibility, use patterns that never match an empty string (e.g. ``\"x+\"`` instead of ``\"x*\"``).  Patterns that could only match an empty string (such as ``\"\\b\"``) now raise an error. (Contributed by Serhiy Storchaka in :issue:`22818`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2457
+#: ../../whatsnew/3.5.rst:2458
 msgid "The :class:`http.cookies.Morsel` dict-like interface has been made self consistent:  morsel comparison now takes the :attr:`~http.cookies.Morsel.key` and :attr:`~http.cookies.Morsel.value` into account, :meth:`~http.cookies.Morsel.copy` now results in a :class:`~http.cookies.Morsel` instance rather than a :class:`dict`, and :meth:`~http.cookies.Morsel.update` will now raise an exception if any of the keys in the update dictionary are invalid.  In addition, the undocumented *LegalChars* parameter of :func:`~http.cookies.Morsel.set` is deprecated and is now ignored.  (Contributed by Demian Brecht in :issue:`2211`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2467
+#: ../../whatsnew/3.5.rst:2468
 msgid ":pep:`488` has removed ``.pyo`` files from Python and introduced the optional ``opt-`` tag in ``.pyc`` file names. The :func:`importlib.util.cache_from_source` has gained an *optimization* parameter to help control the ``opt-`` tag. Because of this, the *debug_override* parameter of the function is now deprecated. `.pyo` files are also no longer supported as a file argument to the Python interpreter and thus serve no purpose when distributed on their own (i.e. sourcless code distribution). Due to the fact that the magic number for bytecode has changed in Python 3.5, all old `.pyo` files from previous versions of Python are invalid regardless of this PEP."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2478
+#: ../../whatsnew/3.5.rst:2479
 msgid "The :mod:`socket` module now exports the :data:`~socket.CAN_RAW_FD_FRAMES` constant on linux 3.6 and greater."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2481
+#: ../../whatsnew/3.5.rst:2482
 msgid "The :func:`ssl.cert_time_to_seconds` function now interprets the input time as UTC and not as local time, per :rfc:`5280`.  Additionally, the return value is always an :class:`int`. (Contributed by Akira Li in :issue:`19940`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2485
+#: ../../whatsnew/3.5.rst:2486
 msgid "The ``pygettext.py`` Tool now uses the standard +NNNN format for timezones in the POT-Creation-Date header."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2488
+#: ../../whatsnew/3.5.rst:2489
 msgid "The :mod:`smtplib` module now uses :data:`sys.stderr` instead of the previous module-level :data:`stderr` variable for debug output.  If your (test) program depends on patching the module-level variable to capture the debug output, you will need to update it to capture sys.stderr instead."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2493
+#: ../../whatsnew/3.5.rst:2494
 msgid "The :meth:`str.startswith` and :meth:`str.endswith` methods no longer return ``True`` when finding the empty string and the indexes are completely out of range.  (Contributed by Serhiy Storchaka in :issue:`24284`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2497
+#: ../../whatsnew/3.5.rst:2498
 msgid "The :func:`inspect.getdoc` function now returns documentation strings inherited from base classes.  Documentation strings no longer need to be duplicated if the inherited documentation is appropriate.  To suppress an inherited string, an empty string must be specified (or the documentation may be filled in).  This change affects the output of the :mod:`pydoc` module and the :func:`help` function. (Contributed by Serhiy Storchaka in :issue:`15582`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2505
+#: ../../whatsnew/3.5.rst:2506
 msgid "Nested :func:`functools.partial` calls are now flattened.  If you were relying on the previous behavior, you can now either add an attribute to a :func:`functools.partial` object or you can create a subclass of :func:`functools.partial`. (Contributed by Alexander Belopolsky in :issue:`7830`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2512
+#: ../../whatsnew/3.5.rst:2513
 msgid "Changes in the C API"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2514
+#: ../../whatsnew/3.5.rst:2515
 msgid "The undocumented :c:member:`~PyMemoryViewObject.format` member of the (non-public) :c:type:`PyMemoryViewObject` structure has been removed. All extensions relying on the relevant parts in ``memoryobject.h`` must be rebuilt."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2519
+#: ../../whatsnew/3.5.rst:2520
 msgid "The :c:type:`PyMemAllocator` structure was renamed to :c:type:`PyMemAllocatorEx` and a new ``calloc`` field was added."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2522
+#: ../../whatsnew/3.5.rst:2523
 msgid "Removed non-documented macro :c:macro:`PyObject_REPR` which leaked references. Use format character ``%R`` in :c:func:`PyUnicode_FromFormat`-like functions to format the :func:`repr` of the object. (Contributed by Serhiy Storchaka in :issue:`22453`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2527
+#: ../../whatsnew/3.5.rst:2528
 msgid "Because the lack of the :attr:`__module__` attribute breaks pickling and introspection, a deprecation warning is now raised for builtin types without the :attr:`__module__` attribute.  This would be an AttributeError in the future. (Contributed by Serhiy Storchaka in :issue:`20204`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:2533
+#: ../../whatsnew/3.5.rst:2534
 msgid "As part of the :pep:`492` implementation, the ``tp_reserved`` slot of :c:type:`PyTypeObject` was replaced with a :c:member:`tp_as_async` slot.  Refer to :ref:`coro-objects` for new types, structures and functions."
 msgstr ""
 

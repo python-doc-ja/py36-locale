@@ -120,7 +120,7 @@ msgid "If *follow_symlinks* is false, and *src* is a symbolic link, *dst* will b
 msgstr ""
 
 #: ../../library/shutil.rst:156
-msgid ":func:`copy` copies the file data and the file's permission mode (see :func:`os.chmod`).  Other metadata, like the file's creation and modification times, is not preserved. To preserve all file metadata from the original, use :func:`~shutil.copy2` instead."
+msgid ":func:`~shutil.copy` copies the file data and the file's permission mode (see :func:`os.chmod`).  Other metadata, like the file's creation and modification times, is not preserved. To preserve all file metadata from the original, use :func:`~shutil.copy2` instead."
 msgstr ""
 
 #: ../../library/shutil.rst:162
@@ -216,7 +216,7 @@ msgid "If the destination is on the current filesystem, then :func:`os.rename` i
 msgstr ""
 
 #: ../../library/shutil.rst:301
-msgid "If *copy_function* is given, it must be a callable that takes two arguments *src* and *dst*, and will be used to copy *src* to *dest* if :func:`os.rename` cannot be used.  If the source is a directory, :func:`copytree` is called, passing it the :func:`copy_function`. The default *copy_function* is :func:`copy2`.  Using :func:`copy` as the *copy_function* allows the move to succeed when it is not possible to also copy the metadata, at the expense of not copying any of the metadata."
+msgid "If *copy_function* is given, it must be a callable that takes two arguments *src* and *dst*, and will be used to copy *src* to *dest* if :func:`os.rename` cannot be used.  If the source is a directory, :func:`copytree` is called, passing it the :func:`copy_function`. The default *copy_function* is :func:`copy2`.  Using :func:`~shutil.copy` as the *copy_function* allows the move to succeed when it is not possible to also copy the metadata, at the expense of not copying any of the metadata."
 msgstr ""
 
 #: ../../library/shutil.rst:309

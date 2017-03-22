@@ -542,11 +542,11 @@ msgid "Selects the highest protocol version that both the client and server supp
 msgstr ""
 
 #: ../../library/ssl.rst:619
-msgid "Auto-negotiate the the highest protocol version like :data:`PROTOCOL_SSLv23`, but only support client-side :class:`SSLSocket` connections. The protocol enables :data:`CERT_REQUIRED` and :attr:`~SSLContext.check_hostname` by default."
+msgid "Auto-negotiate the highest protocol version like :data:`PROTOCOL_SSLv23`, but only support client-side :class:`SSLSocket` connections. The protocol enables :data:`CERT_REQUIRED` and :attr:`~SSLContext.check_hostname` by default."
 msgstr ""
 
 #: ../../library/ssl.rst:628
-msgid "Auto-negotiate the the highest protocol version like :data:`PROTOCOL_SSLv23`, but only support server-side :class:`SSLSocket` connections."
+msgid "Auto-negotiate the highest protocol version like :data:`PROTOCOL_SSLv23`, but only support server-side :class:`SSLSocket` connections."
 msgstr ""
 
 #: ../../library/ssl.rst:635
@@ -793,7 +793,7 @@ msgid "However, since the SSL (and TLS) protocol has its own framing atop of TCP
 msgstr ""
 
 #: ../../library/ssl.rst:950
-msgid "Usually, :class:`SSLSocket` are not created directly, but using the the :meth:`SSLContext.wrap_socket` method."
+msgid "Usually, :class:`SSLSocket` are not created directly, but using the :meth:`SSLContext.wrap_socket` method."
 msgstr ""
 
 #: ../../library/ssl.rst:953

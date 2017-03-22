@@ -487,7 +487,7 @@ msgid "If this is set, Python ignores case in :keyword:`import` statements.  Thi
 msgstr ""
 
 #: ../../using/cmdline.rst:535
-msgid "If this is set to a non-empty string, Python won't try to write ``.pyc`` or ``.pyo`` files on the import of source modules.  This is equivalent to specifying the :option:`-B` option."
+msgid "If this is set to a non-empty string, Python won't try to write ``.pyc`` files on the import of source modules.  This is equivalent to specifying the :option:`-B` option."
 msgstr ""
 
 #: ../../using/cmdline.rst:542

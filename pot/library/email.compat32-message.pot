@@ -36,11 +36,11 @@ msgid "An email message consists of *headers* and a *payload*.  Headers must be 
 msgstr ""
 
 #: ../../library/email.compat32-message.rst:33
-msgid "The conceptual model provided by a :class:`Message` object is that of an ordered dictionary of headers with additional methods for accessing both specialized information from the headers, for accessing the payload, for generating a serialized version of the mssage, and for recursively walking over the object tree.  Note that duplicate headers are supported but special methods must be used to access them."
+msgid "The conceptual model provided by a :class:`Message` object is that of an ordered dictionary of headers with additional methods for accessing both specialized information from the headers, for accessing the payload, for generating a serialized version of the message, and for recursively walking over the object tree.  Note that duplicate headers are supported but special methods must be used to access them."
 msgstr ""
 
 #: ../../library/email.compat32-message.rst:40
-msgid "The :class:`Message` psuedo-dictionary is indexed by the header names, which must be ASCII values.  The values of the dictionary are strings that are supposed to contain only ASCII characters; there is some special handling for non-ASCII input, but it doesn't always produce the correct results.  Headers are stored and returned in case-preserving form, but field names are matched case-insensitively.  There may also be a single envelope header, also known as the *Unix-From* header or the ``From_`` header.  The *payload* is either a string or bytes, in the case of simple message objects, or a list of :class:`Message` objects, for MIME container documents (e.g. :mimetype:`multipart/\\*` and :mimetype:`message/rfc822`)."
+msgid "The :class:`Message` pseudo-dictionary is indexed by the header names, which must be ASCII values.  The values of the dictionary are strings that are supposed to contain only ASCII characters; there is some special handling for non-ASCII input, but it doesn't always produce the correct results.  Headers are stored and returned in case-preserving form, but field names are matched case-insensitively.  There may also be a single envelope header, also known as the *Unix-From* header or the ``From_`` header.  The *payload* is either a string or bytes, in the case of simple message objects, or a list of :class:`Message` objects, for MIME container documents (e.g. :mimetype:`multipart/\\*` and :mimetype:`message/rfc822`)."
 msgstr ""
 
 #: ../../library/email.compat32-message.rst:51
@@ -109,7 +109,7 @@ msgid "Add the given *payload* to the current payload, which must be ``None`` or
 msgstr ""
 
 #: ../../library/email.compat32-message.rst:181
-msgid "This is a legacy method.  On the :class:`~email.emailmessage.EmailMessage` class its functionality is replaced by :meth:`~email.message.EmailMessage.set_content` and the realted ``make`` and ``add`` methods."
+msgid "This is a legacy method.  On the :class:`~email.emailmessage.EmailMessage` class its functionality is replaced by :meth:`~email.message.EmailMessage.set_content` and the related ``make`` and ``add`` methods."
 msgstr ""
 
 #: ../../library/email.compat32-message.rst:189

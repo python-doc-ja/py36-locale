@@ -1540,7 +1540,7 @@ msgid "``KEY_SEXIT``"
 msgstr ""
 
 #: ../../library/curses.rst:1446
-msgid "Shifted Dxit"
+msgid "Shifted Exit"
 msgstr ""
 
 #: ../../library/curses.rst:1448

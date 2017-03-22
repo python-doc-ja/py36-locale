@@ -465,218 +465,230 @@ msgid "If the given *section* exists, and contains the given *option*, return :c
 msgstr ""
 
 #: ../../library/configparser.rst:985
-msgid "Attempt to read and parse a list of filenames, returning a list of filenames which were successfully parsed.  If *filenames* is a string, it is treated as a single filename.  If a file named in *filenames* cannot be opened, that file will be ignored.  This is designed so that you can specify a list of potential configuration file locations (for example, the current directory, the user's home directory, and some system-wide directory), and all existing configuration files in the list will be read.  If none of the named files exist, the :class:`ConfigParser` instance will contain an empty dataset.  An application which requires initial values to be loaded from a file should load the required file or files using :meth:`read_file` before calling :meth:`read` for any optional files::"
+msgid "Attempt to read and parse a list of filenames, returning a list of filenames which were successfully parsed."
 msgstr ""
 
-#: ../../library/configparser.rst:1005
+#: ../../library/configparser.rst:988
+msgid "If *filenames* is a string or :term:`path-like object`, it is treated as a single filename.  If a file named in *filenames* cannot be opened, that file will be ignored.  This is designed so that you can specify a list of potential configuration file locations (for example, the current directory, the user's home directory, and some system-wide directory), and all existing configuration files in the list will be read."
+msgstr ""
+
+#: ../../library/configparser.rst:995
+msgid "If none of the named files exist, the :class:`ConfigParser` instance will contain an empty dataset.  An application which requires initial values to be loaded from a file should load the required file or files using :meth:`read_file` before calling :meth:`read` for any optional files::"
+msgstr ""
+
+#: ../../library/configparser.rst:1008
 msgid "The *encoding* parameter.  Previously, all files were read using the default encoding for :func:`open`."
 msgstr ""
 
 #: ../../library/configparser.rst:1012
+msgid "The *filenames* parameter accepts a :term:`path-like object`."
+msgstr ""
+
+#: ../../library/configparser.rst:1018
 msgid "Read and parse configuration data from *f* which must be an iterable yielding Unicode strings (for example files opened in text mode)."
 msgstr ""
 
-#: ../../library/configparser.rst:1015
+#: ../../library/configparser.rst:1021
 msgid "Optional argument *source* specifies the name of the file being read.  If not given and *f* has a :attr:`name` attribute, that is used for *source*; the default is ``'<???>'``."
 msgstr ""
 
-#: ../../library/configparser.rst:1019
+#: ../../library/configparser.rst:1025
 msgid "Replaces :meth:`readfp`."
 msgstr ""
 
-#: ../../library/configparser.rst:1024
+#: ../../library/configparser.rst:1030
 msgid "Parse configuration data from a string."
 msgstr ""
 
-#: ../../library/configparser.rst:1026
+#: ../../library/configparser.rst:1032
 msgid "Optional argument *source* specifies a context-specific name of the string passed.  If not given, ``'<string>'`` is used.  This should commonly be a filesystem path or a URL."
 msgstr ""
 
-#: ../../library/configparser.rst:1035
+#: ../../library/configparser.rst:1041
 msgid "Load configuration from any object that provides a dict-like ``items()`` method.  Keys are section names, values are dictionaries with keys and values that should be present in the section.  If the used dictionary type preserves order, sections and their keys will be added in order. Values are automatically converted to strings."
 msgstr ""
 
-#: ../../library/configparser.rst:1041
+#: ../../library/configparser.rst:1047
 msgid "Optional argument *source* specifies a context-specific name of the dictionary passed.  If not given, ``<dict>`` is used."
 msgstr ""
 
-#: ../../library/configparser.rst:1044
+#: ../../library/configparser.rst:1050
 msgid "This method can be used to copy state between parsers."
 msgstr ""
 
-#: ../../library/configparser.rst:1051
+#: ../../library/configparser.rst:1057
 msgid "Get an *option* value for the named *section*.  If *vars* is provided, it must be a dictionary.  The *option* is looked up in *vars* (if provided), *section*, and in *DEFAULTSECT* in that order.  If the key is not found and *fallback* is provided, it is used as a fallback value.  ``None`` can be provided as a *fallback* value."
 msgstr ""
 
-#: ../../library/configparser.rst:1057
+#: ../../library/configparser.rst:1063
 msgid "All the ``'%'`` interpolations are expanded in the return values, unless the *raw* argument is true.  Values for interpolation keys are looked up in the same manner as the option."
 msgstr ""
 
-#: ../../library/configparser.rst:1061
+#: ../../library/configparser.rst:1067
 msgid "Arguments *raw*, *vars* and *fallback* are keyword only to protect users from trying to use the third argument as the *fallback* fallback (especially when using the mapping protocol)."
 msgstr ""
 
-#: ../../library/configparser.rst:1069
+#: ../../library/configparser.rst:1075
 msgid "A convenience method which coerces the *option* in the specified *section* to an integer.  See :meth:`get` for explanation of *raw*, *vars* and *fallback*."
 msgstr ""
 
-#: ../../library/configparser.rst:1076
+#: ../../library/configparser.rst:1082
 msgid "A convenience method which coerces the *option* in the specified *section* to a floating point number.  See :meth:`get` for explanation of *raw*, *vars* and *fallback*."
 msgstr ""
 
-#: ../../library/configparser.rst:1083
+#: ../../library/configparser.rst:1089
 msgid "A convenience method which coerces the *option* in the specified *section* to a Boolean value.  Note that the accepted values for the option are ``'1'``, ``'yes'``, ``'true'``, and ``'on'``, which cause this method to return ``True``, and ``'0'``, ``'no'``, ``'false'``, and ``'off'``, which cause it to return ``False``.  These string values are checked in a case-insensitive manner.  Any other value will cause it to raise :exc:`ValueError`.  See :meth:`get` for explanation of *raw*, *vars* and *fallback*."
 msgstr ""
 
-#: ../../library/configparser.rst:1096
+#: ../../library/configparser.rst:1102
 msgid "When *section* is not given, return a list of *section_name*, *section_proxy* pairs, including DEFAULTSECT."
 msgstr ""
 
-#: ../../library/configparser.rst:1099
+#: ../../library/configparser.rst:1105
 msgid "Otherwise, return a list of *name*, *value* pairs for the options in the given *section*.  Optional arguments have the same meaning as for the :meth:`get` method."
 msgstr ""
 
-#: ../../library/configparser.rst:1103
+#: ../../library/configparser.rst:1109
 msgid "Items present in *vars* no longer appear in the result.  The previous behaviour mixed actual parser options with variables provided for interpolation."
 msgstr ""
 
-#: ../../library/configparser.rst:1110
+#: ../../library/configparser.rst:1116
 msgid "If the given section exists, set the given option to the specified value; otherwise raise :exc:`NoSectionError`.  *option* and *value* must be strings; if not, :exc:`TypeError` is raised."
 msgstr ""
 
-#: ../../library/configparser.rst:1117
+#: ../../library/configparser.rst:1123
 msgid "Write a representation of the configuration to the specified :term:`file object`, which must be opened in text mode (accepting strings).  This representation can be parsed by a future :meth:`read` call.  If *space_around_delimiters* is true, delimiters between keys and values are surrounded by spaces."
 msgstr ""
 
-#: ../../library/configparser.rst:1126
+#: ../../library/configparser.rst:1132
 msgid "Remove the specified *option* from the specified *section*.  If the section does not exist, raise :exc:`NoSectionError`.  If the option existed to be removed, return :const:`True`; otherwise return :const:`False`."
 msgstr ""
 
-#: ../../library/configparser.rst:1134
+#: ../../library/configparser.rst:1140
 msgid "Remove the specified *section* from the configuration.  If the section in fact existed, return ``True``.  Otherwise return ``False``."
 msgstr ""
 
-#: ../../library/configparser.rst:1140
+#: ../../library/configparser.rst:1146
 msgid "Transforms the option name *option* as found in an input file or as passed in by client code to the form that should be used in the internal structures.  The default implementation returns a lower-case version of *option*; subclasses may override this or client code can set an attribute of this name on instances to affect this behavior."
 msgstr ""
 
-#: ../../library/configparser.rst:1146
+#: ../../library/configparser.rst:1152
 msgid "You don't need to subclass the parser to use this method, you can also set it on an instance, to a function that takes a string argument and returns a string.  Setting it to ``str``, for example, would make option names case sensitive::"
 msgstr ""
 
-#: ../../library/configparser.rst:1154
+#: ../../library/configparser.rst:1160
 msgid "Note that when reading configuration files, whitespace around the option names is stripped before :meth:`optionxform` is called."
 msgstr ""
 
-#: ../../library/configparser.rst:1160
+#: ../../library/configparser.rst:1166
 msgid "Use :meth:`read_file` instead."
 msgstr ""
 
-#: ../../library/configparser.rst:1163
+#: ../../library/configparser.rst:1169
 msgid ":meth:`readfp` now iterates on *fp* instead of calling ``fp.readline()``."
 msgstr ""
 
-#: ../../library/configparser.rst:1166
+#: ../../library/configparser.rst:1172
 msgid "For existing code calling :meth:`readfp` with arguments which don't support iteration, the following generator may be used as a wrapper around the file-like object::"
 msgstr ""
 
-#: ../../library/configparser.rst:1176
+#: ../../library/configparser.rst:1182
 msgid "Instead of ``parser.readfp(fp)`` use ``parser.read_file(readline_generator(fp))``."
 msgstr ""
 
-#: ../../library/configparser.rst:1182
+#: ../../library/configparser.rst:1188
 msgid "The maximum depth for recursive interpolation for :meth:`get` when the *raw* parameter is false.  This is relevant only when the default *interpolation* is used."
 msgstr ""
 
-#: ../../library/configparser.rst:1190
+#: ../../library/configparser.rst:1196
 msgid "RawConfigParser Objects"
 msgstr ""
 
-#: ../../library/configparser.rst:1200
+#: ../../library/configparser.rst:1206
 msgid "Legacy variant of the :class:`ConfigParser` with interpolation disabled by default and unsafe ``add_section`` and ``set`` methods."
 msgstr ""
 
-#: ../../library/configparser.rst:1204
+#: ../../library/configparser.rst:1210
 msgid "Consider using :class:`ConfigParser` instead which checks types of the values to be stored internally.  If you don't want interpolation, you can use ``ConfigParser(interpolation=None)``."
 msgstr ""
 
-#: ../../library/configparser.rst:1211
+#: ../../library/configparser.rst:1217
 msgid "Add a section named *section* to the instance.  If a section by the given name already exists, :exc:`DuplicateSectionError` is raised.  If the *default section* name is passed, :exc:`ValueError` is raised."
 msgstr ""
 
-#: ../../library/configparser.rst:1215
+#: ../../library/configparser.rst:1221
 msgid "Type of *section* is not checked which lets users create non-string named sections.  This behaviour is unsupported and may cause internal errors."
 msgstr ""
 
-#: ../../library/configparser.rst:1221
+#: ../../library/configparser.rst:1227
 msgid "If the given section exists, set the given option to the specified value; otherwise raise :exc:`NoSectionError`.  While it is possible to use :class:`RawConfigParser` (or :class:`ConfigParser` with *raw* parameters set to true) for *internal* storage of non-string values, full functionality (including interpolation and output to files) can only be achieved using string values."
 msgstr ""
 
-#: ../../library/configparser.rst:1228
+#: ../../library/configparser.rst:1234
 msgid "This method lets users assign non-string values to keys internally.  This behaviour is unsupported and will cause errors when attempting to write to a file or get it in non-raw mode.  **Use the mapping protocol API** which does not allow such assignments to take place."
 msgstr ""
 
-#: ../../library/configparser.rst:1235
+#: ../../library/configparser.rst:1241
 msgid "Exceptions"
 msgstr ""
 
-#: ../../library/configparser.rst:1239
+#: ../../library/configparser.rst:1245
 msgid "Base class for all other :mod:`configparser` exceptions."
 msgstr ""
 
-#: ../../library/configparser.rst:1244
+#: ../../library/configparser.rst:1250
 msgid "Exception raised when a specified section is not found."
 msgstr ""
 
-#: ../../library/configparser.rst:1249
+#: ../../library/configparser.rst:1255
 msgid "Exception raised if :meth:`add_section` is called with the name of a section that is already present or in strict parsers when a section if found more than once in a single input file, string or dictionary."
 msgstr ""
 
-#: ../../library/configparser.rst:1253
+#: ../../library/configparser.rst:1259
 msgid "Optional ``source`` and ``lineno`` attributes and arguments to :meth:`__init__` were added."
 msgstr ""
 
-#: ../../library/configparser.rst:1260
+#: ../../library/configparser.rst:1266
 msgid "Exception raised by strict parsers if a single option appears twice during reading from a single file, string or dictionary. This catches misspellings and case sensitivity-related errors, e.g. a dictionary may have two keys representing the same case-insensitive configuration key."
 msgstr ""
 
-#: ../../library/configparser.rst:1268
+#: ../../library/configparser.rst:1274
 msgid "Exception raised when a specified option is not found in the specified section."
 msgstr ""
 
-#: ../../library/configparser.rst:1274
+#: ../../library/configparser.rst:1280
 msgid "Base class for exceptions raised when problems occur performing string interpolation."
 msgstr ""
 
-#: ../../library/configparser.rst:1280
+#: ../../library/configparser.rst:1286
 msgid "Exception raised when string interpolation cannot be completed because the number of iterations exceeds :const:`MAX_INTERPOLATION_DEPTH`.  Subclass of :exc:`InterpolationError`."
 msgstr ""
 
-#: ../../library/configparser.rst:1287
+#: ../../library/configparser.rst:1293
 msgid "Exception raised when an option referenced from a value does not exist. Subclass of :exc:`InterpolationError`."
 msgstr ""
 
-#: ../../library/configparser.rst:1293
+#: ../../library/configparser.rst:1299
 msgid "Exception raised when the source text into which substitutions are made does not conform to the required syntax.  Subclass of :exc:`InterpolationError`."
 msgstr ""
 
-#: ../../library/configparser.rst:1299
+#: ../../library/configparser.rst:1305
 msgid "Exception raised when attempting to parse a file which has no section headers."
 msgstr ""
 
-#: ../../library/configparser.rst:1305
+#: ../../library/configparser.rst:1311
 msgid "Exception raised when errors occur attempting to parse a file."
 msgstr ""
 
-#: ../../library/configparser.rst:1307
+#: ../../library/configparser.rst:1313
 msgid "The ``filename`` attribute and :meth:`__init__` argument were renamed to ``source`` for consistency."
 msgstr ""
 
-#: ../../library/configparser.rst:1313
+#: ../../library/configparser.rst:1319
 msgid "Footnotes"
 msgstr ""
 
-#: ../../library/configparser.rst:1314
+#: ../../library/configparser.rst:1320
 msgid "Config parsers allow for heavy customization.  If you are interested in changing the behaviour outlined by the footnote reference, consult the `Customizing Parser Behaviour`_ section."
 msgstr ""
 
