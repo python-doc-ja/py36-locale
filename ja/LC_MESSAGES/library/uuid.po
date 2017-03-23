@@ -83,6 +83,8 @@ msgid ""
 ":attr:`UUID.int` attributes.  Comparison with a non-UUID object raises a "
 ":exc:`TypeError`."
 msgstr ""
+"2つのUUIDオブジェクトの比較は、:attr:`UUID.int` 属性の比較によって行われます。UUIDではないオブジェクトとの比較は、 "
+":exc:`TypeError` を送出します。"
 
 #: ../../library/uuid.rst:52
 msgid ""
@@ -90,6 +92,8 @@ msgid ""
 "``12345678-1234-5678-1234-567812345678`` where the 32 hexadecimal digits "
 "represent the UUID."
 msgstr ""
+"``str(uuid)`` は 32桁の16進でUUIDを表す``12345678-1234-5678-1234-567812345678`` "
+"形式の文字列を返します。"
 
 #: ../../library/uuid.rst:56
 msgid ":class:`UUID` instances have these read-only attributes:"
@@ -251,7 +255,7 @@ msgstr "ランダムな UUID を生成します。"
 msgid ""
 "Generate a UUID based on the SHA-1 hash of a namespace identifier (which is "
 "a UUID) and a name (which is a string)."
-msgstr "名前空間識別子（これは UUID です）と名前（文字列です）の SHA-1 ハッシュから生成します。"
+msgstr "名前空間識別子(これは UUID です)と名前(文字列です)の SHA-1 ハッシュからUUIDを生成します。"
 
 #: ../../library/uuid.rst:170
 msgid ""

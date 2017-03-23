@@ -941,7 +941,7 @@ msgstr ""
 msgid ""
 "Attempt to read and parse a list of filenames, returning a list of filenames"
 " which were successfully parsed."
-msgstr ""
+msgstr "ファイル名のリストを読み込んでパースしようと試みます。正常にパースできたファイル名のリストを返します。"
 
 #: ../../library/configparser.rst:988
 msgid ""
@@ -952,6 +952,10 @@ msgid ""
 "the user's home directory, and some system-wide directory), and all existing"
 " configuration files in the list will be read."
 msgstr ""
+"もし *filenames* が文字列か :term:`path-like object` なら、この引数は1つのファイル名として扱われます。 "
+"*filenames* 中に開けないファイルがある場合、そのファイルは無視されます。この挙動は、設定ファイルが置かれる可能性のある場所(例えば、 "
+"カレントディレクトリ、ホームディレクトリ、システム全体の設定を行うディレクトリ)のリストを指定して、リストの中で存在する全ての設定ファイルを読むことを想定して設計されています。"
+" "
 
 #: ../../library/configparser.rst:995
 msgid ""
@@ -960,6 +964,9 @@ msgid ""
 "be loaded from a file should load the required file or files using "
 ":meth:`read_file` before calling :meth:`read` for any optional files::"
 msgstr ""
+"どの設定ファイルも存在しなかった場合、 :class:`ConfigParser` のインスタンスは "
+"空のデータセットを持ちます。初期値の設定ファイルを先に読み込んでおく必要があるアプリケーションでは、 オプションのファイルを読み込むために "
+":meth:`read` を呼ぶ前に 、まず :meth:`read_file` を用いて必要なファイルを読み込んでください::"
 
 #: ../../library/configparser.rst:1008
 msgid ""
@@ -969,7 +976,7 @@ msgstr "*encoding* 引数。以前は、すべてのファイルが :func:`open`
 
 #: ../../library/configparser.rst:1012
 msgid "The *filenames* parameter accepts a :term:`path-like object`."
-msgstr ""
+msgstr "*filenames* 引数が :term:`path-like object` を受け入れるようになりました。"
 
 #: ../../library/configparser.rst:1018
 msgid ""

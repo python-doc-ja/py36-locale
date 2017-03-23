@@ -112,7 +112,7 @@ msgstr ""
 
 #: ../../tools/templates/indexcontent.html:8
 msgid "Welcome! This is the documentation for Python %(release)s."
-msgstr ""
+msgstr "ようこそ! Python  %(release)s ドキュメントへ。"
 
 #: ../../tools/templates/indexcontent.html:10
 msgid "Parts of the documentation:"
