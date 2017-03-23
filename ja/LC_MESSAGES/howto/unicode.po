@@ -959,7 +959,7 @@ msgstr ""
 
 #: ../../howto/unicode.rst:616
 msgid "will produce the following output:"
-msgstr ""
+msgstr "以下の出力結果が生成されます:"
 
 #: ../../howto/unicode.rst:624
 msgid ""
