@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: E. Kawashima <e.kawaschima+transifex@gmail.com>, 2017\n"
+"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -466,7 +466,7 @@ msgstr ""
 #: ../../library/http.cookiejar.rst:278
 msgid ""
 ":exc:`IOError` used to be raised, it is now an alias of :exc:`OSError`."
-msgstr ""
+msgstr "以前は :exc:`IOError` が送出されました; それは現在 :exc:`OSError` のエイリアスです。"
 
 #: ../../library/http.cookiejar.rst:284
 msgid "Clear all cookies and reload cookies from a saved file."
