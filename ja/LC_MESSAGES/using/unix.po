@@ -248,7 +248,7 @@ msgstr "シェルコマンドを Python スクリプトから使うには、 :mo
 
 #: ../../using/unix.rst:136
 msgid "Editors and IDEs"
-msgstr ""
+msgstr "エディタと IDE"
 
 #: ../../using/unix.rst:138
 msgid ""
@@ -256,6 +256,8 @@ msgid ""
 "editors and IDEs provide syntax highlighting, debugging tools, and PEP-8 "
 "checks."
 msgstr ""
+"Python プログラミング言語をサポートする IDE はたくさんあります。\n"
+"多くのエディタや IDE にはシンタックスハイライト機能、デバッグツール、 PEP-8 チェック機能があります。"
 
 #: ../../using/unix.rst:141
 msgid ""
@@ -264,3 +266,6 @@ msgid ""
 "<https://wiki.python.org/moin/IntegratedDevelopmentEnvironments>`_ for a "
 "comprehensive list."
 msgstr ""
+"包括的な一覧を見るには、 `Python Editors <https://wiki.python.org/moin/PythonEditors>`_ "
+"や `Integrated Development Environments "
+"<https://wiki.python.org/moin/IntegratedDevelopmentEnvironments>`_ を訪れてください。"
