@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>, 2017\n"
+"Last-Translator: Naoki INADA <songofacandy@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -195,6 +195,10 @@ msgid ""
 " unless they or their ancestors are explicitly named in the logging "
 "configuration."
 msgstr ""
+"``False`` "
+"が指定された場合は、この呼び出しが行われたときに存在するロガーは有効のまま残されます。後方互換性のあるやり方で古い振る舞いを保つので、デフォルト値は "
+"``True`` "
+"になっています。そのような振る舞いでは、既存のロガーまたはそれらのロガーの先祖がロギング設定の中で明示的に名付けられていない限り、既存のロガーを無効にします。"
 
 #: ../../library/logging.config.rst:114
 msgid ""
@@ -427,7 +431,7 @@ msgstr "``filters`` (任意)。このハンドラへのフィルタの id のリ
 msgid ""
 "All *other* keys are passed through as keyword arguments to the handler's "
 "constructor.  For example, given the snippet:"
-msgstr ""
+msgstr "その他の *すべての* キーは、ハンドラのコンストラクタにキーワード引数として渡されます。例えば、以下のコード片が与えられたとすると:"
 
 #: ../../library/logging.config.rst:273
 msgid ""
@@ -589,7 +593,7 @@ msgstr ""
 
 #: ../../library/logging.config.rst:366
 msgid "So, for example, consider the following YAML snippet:"
-msgstr ""
+msgstr "ですから、例えば、以下の YAML のコード片を例にとると:"
 
 #: ../../library/logging.config.rst:387
 msgid ""
@@ -647,6 +651,10 @@ msgid ""
 "object. This is signalled by an absolute import path to the factory being "
 "made available under the special key ``'()'``.  Here's a concrete example:"
 msgstr ""
+"設定されるオブジェクトは、それらの設定を詳述する辞書によって記述されます。場所によっては、あるオブジェクトがどのようにインスタンス化されるかというコンテキストを、ロギングシステムが推測できます。しかし、ユーザ定義オブジェクトがインスタンス化されるとき、システムはどのようにこれを行うかを知りません。ユーザ定義オブジェクトのインスタンス化を完全に柔軟なものにするため、ユーザは"
+" 'ファクトリ' - 設定辞書を引数として呼ばれ、インスタンス化されたオブジェクトを返す呼び出し可能オブジェクト - "
+"を提供する必要があります。これは特殊キー ``'()'`` "
+"で利用できる、ファクトリへの絶対インポートパスによって合図されます。ここに具体的な例を挙げます:"
 
 #: ../../library/logging.config.rst:441
 msgid ""
@@ -920,13 +928,13 @@ msgstr ""
 
 #: ../../library/logging.config.rst:644
 msgid "Examples of these sections in the file are given below."
-msgstr ""
+msgstr "ファイルにおけるこれらのセクションの例を以下に示します。"
 
 #: ../../library/logging.config.rst:657
 msgid ""
 "The root logger must specify a level and a list of handlers. An example of a"
 " root logger section is given below."
-msgstr ""
+msgstr "ルートロガーでは、レベルとハンドラのリストを指定しなければなりません。ルートロガーのセクションの例を以下に示します。"
 
 #: ../../library/logging.config.rst:666
 msgid ""
@@ -953,7 +961,7 @@ msgstr ""
 msgid ""
 "For loggers other than the root logger, some additional information is "
 "required. This is illustrated by the following example."
-msgstr ""
+msgstr "ルートロガー以外のロガーでは、いくつか追加の情報が必要になります。これは以下の例のように表されます。"
 
 #: ../../library/logging.config.rst:687
 msgid ""
@@ -978,7 +986,7 @@ msgstr ""
 msgid ""
 "Sections which specify handler configuration are exemplified by the "
 "following."
-msgstr ""
+msgstr "ハンドラの環境設定を指定しているセクションは以下の例のようになります。"
 
 #: ../../library/logging.config.rst:706
 msgid ""
@@ -1009,12 +1017,14 @@ msgid ""
 " for the handler class. Refer to the constructors for the relevant handlers,"
 " or to the examples below, to see how typical entries are constructed."
 msgstr ""
+"``args`` エントリは、 ``logging`` パッケージの名前空間のコンテキストで :func:`eval` "
+"される際、ハンドラクラスのコンストラクタに対する引数からなるリストになります。典型的なエントリがどうやって作成されるかについては、対応するハンドラのコンストラクタか、以下の例を参照してください。"
 
 #: ../../library/logging.config.rst:771
 msgid ""
 "Sections which specify formatter configuration are typified by the "
 "following."
-msgstr ""
+msgstr "フォーマッタの環境設定を指定しているセクションは以下のような形式です。"
 
 #: ../../library/logging.config.rst:780
 msgid ""

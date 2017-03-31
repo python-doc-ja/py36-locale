@@ -132,6 +132,8 @@ msgid ""
 "the :command:`sdist` command, which you can use to select the types of built"
 " distribution to generate: for example, ::"
 msgstr ""
+":command:`bdist` コマンドには、 :option:`!--formats` オプションがあります。これは "
+":command:`sdist` コマンドの場合に似ていて、生成したいビルド済み配布物の形式を選択できます: 例えば、 ::"
 
 #: ../../distutils/builtdist.rst:66
 msgid ""
@@ -388,7 +390,7 @@ msgstr "通常、モジュール配布物の RPM を作成するには、 :comma
 
 #: ../../distutils/builtdist.rst:177
 msgid "or the :command:`bdist` command with the :option:`!--format` option::"
-msgstr ""
+msgstr "あるいは、 :command:`bdist` コマンドを :option:`!--format` オプション付きで使います::"
 
 #: ../../distutils/builtdist.rst:181
 msgid ""
@@ -658,6 +660,11 @@ msgid ""
 ":file:`.spec` file winds up deep in the \"build tree,\" in a temporary "
 "directory created by :command:`bdist_rpm`.)"
 msgstr ""
+"望むなら、これらの三つのステップを分割できます。 :command:`bdist_rpm`  コマンドに :option:`!--spec-only` "
+"を指定すれば、単に :file:`.spec` を作成して終了します; この場合、 :file:`.spec` ファイルは \"配布物ディレクトリ "
+"(distribution directory)\"--- 通常は :file:`dist/` に作成されますが、 :option:`!--dist-"
+"dir` オプションで変更することもできます。(通常、 :file:`.spec` ファイルは \"ビルドツリー (build tree)\"、すなわち"
+" :command:`bdist_rpm` が作成する一時ディレクトリの中から引き揚げられます。)"
 
 #: ../../distutils/builtdist.rst:297
 msgid "Creating Windows Installers"
@@ -684,7 +691,7 @@ msgstr "メタデータは setup スクリプトから取り出されるので�
 
 #: ../../distutils/builtdist.rst:310
 msgid "or the :command:`bdist` command with the :option:`!--formats` option::"
-msgstr ""
+msgstr "あるいは、 :command:`bdist` コマンドを :option:`!--formats` オプション付きで実行します::"
 
 #: ../../distutils/builtdist.rst:314
 msgid ""
@@ -718,6 +725,11 @@ msgid ""
 ":command:`bdist_wininst` command with the :option:`!--no-target-compile` "
 "and/or the :option:`!--no-target-optimize` option."
 msgstr ""
+"インストーラは、ターゲットとなるシステムにインストールを実行した後、 pure モジュールを通常 (normal) モードと最適化 "
+"(optimizing) "
+"モードでバイトコード(:term:`bytecode`)にコンパイルしようと試みます。何らかの理由があってコンパイルさせたくなければ、 "
+":command:`bdist_wininst` コマンドを :option:`!--no-target-compile` かつ/または :option"
+":`!--no-target-optimize` オプション付きで実行します。"
 
 #: ../../distutils/builtdist.rst:331
 msgid ""
@@ -725,6 +737,9 @@ msgid ""
 "it is run, but you can also supply your own 152x261 bitmap which must be a "
 "Windows :file:`.bmp` file with the :option:`!--bitmap` option."
 msgstr ""
+"デフォルトでは、インストーラは実行時にクールな \"Python Powered\" "
+"ロゴを表示しますが、自作の152x261ビットマップ画像も指定できます。画像は Windows の :file:`.bmp` "
+"ファイル形式でなくてはならず、 :option:`!--bitmap` オプションで指定します。"
 
 #: ../../distutils/builtdist.rst:335
 msgid ""
@@ -733,6 +748,8 @@ msgid ""
 "distribution and the version number.  This can be changed to another text by"
 " using the :option:`!--title` option."
 msgstr ""
+"インストーラを起動すると、デスクトップの背景ウィンドウ上にでっかいタイトルも表示します。タイトルは配布物の名前とバージョン番号から作成します。 "
+":option:`!--title` オプションを使えば、タイトルを別のテキストに変更できます。"
 
 #: ../../distutils/builtdist.rst:340
 msgid ""
@@ -740,6 +757,8 @@ msgid ""
 "normally :file:`dist/`, but customizable with the :option:`!--dist-dir` "
 "option."
 msgstr ""
+"インストーラファイルは \"配布物ディレクトリ (distribution directory)\" --- 通常は :file:`dist/` "
+"に作成されますが、 :option:`!--dist-dir` オプションで指定することもできます。"
 
 #: ../../distutils/builtdist.rst:346
 msgid "Cross-compiling on Windows"
@@ -763,6 +782,9 @@ msgid ""
 "amd64' and 'win-ia64'.  For example, on a 32bit version of Windows, you "
 "could execute::"
 msgstr ""
+"別のプラットフォーム用にビルドするには、 build コマンドの :option:`!--plat-name` "
+"オプションを指定します。有効な値は、現在のところ、 'win32', 'win-amd64', 'win-ia64' です。例えば、次のようにして "
+"32bit 版の Windows で 64bit 版の拡張をビルドできます::"
 
 #: ../../distutils/builtdist.rst:359
 msgid ""
@@ -816,6 +838,9 @@ msgid ""
 "specified, and the script filename must also be listed in the scripts "
 "argument to the setup function."
 msgstr ""
+"Python 2.3 からは、インストール実行後スクリプトを :option:`!--install-script` "
+"オプションで指定できるようになりました。スクリプトはディレクトリを含まないベースネーム (basename) "
+"で指定しなければならず、スクリプトファイル名は setup 関数の scripts 引数中に挙げられていなければなりません。"
 
 #: ../../distutils/builtdist.rst:390
 msgid ""
@@ -824,6 +849,9 @@ msgid ""
 " again at uninstallation time before the files are removed with ``argv[1]`` "
 "set to :option:`!-remove`."
 msgstr ""
+"指定したスクリプトは、インストール時、ターゲットとなるシステム上で全てのファイルがコピーされた後に実行されます。このとき ``argv[1]`` を "
+":option:`!-install` に設定します。また、アンインストール時には、ファイルを削除する前に ``argv[1]`` を "
+":option:`!-remove` に設定して実行します。"
 
 #: ../../distutils/builtdist.rst:395
 msgid ""
@@ -904,3 +932,6 @@ msgid ""
 "Python was installed for all users) and 'force' (meaning always prompt for "
 "elevation)."
 msgstr ""
+"Python 2.6 から、 bdist_wininst は :option:`!--user-access-control` "
+"オプションをサポートしています。デフォルトは 'none' (UAC制御をしないことを意味します) で、それ以外の有効な値は 'auto' "
+"(Python が全ユーザー用にインストールされていれば UAC 昇格を行う)、 'force' (常に昇格を行う) です。"

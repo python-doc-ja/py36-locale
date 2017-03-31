@@ -259,6 +259,9 @@ msgid ""
 "provided for the menu option is a partially applied version of the "
 ":meth:`open_item` method, where the first argument has been provided. ::"
 msgstr ""
+"もうひとつ、PyGTK "
+"を使うプログラムからの例をみてみましょう。いま、「コンテキスト依存」のポップアップメニューを動的に構築しようとしています。そのメニューオプションから提供されるコールバックは、"
+" :meth:`open_item` メソッドの部分適用版で、その最初の引数が適用済みです::"
 
 #: ../../whatsnew/2.5.rst:173
 msgid ""
@@ -268,6 +271,9 @@ msgid ""
 "docstring attribute to a wrapper function so that tracebacks inside the "
 "wrapped function are easier to understand.  For example, you might write::"
 msgstr ""
+":mod:`functools` モジュールのもう一つの関数は ``update_wrapper(wrapper, wrapped)`` "
+"で、より良く振舞うデコレータを書くのに役立ちます。 :func:`update_wrapper` "
+"は包まれるほうの名前、モジュール、ドキュメンテーション文字列属性をラッパー関数にコピーすることで、トレースバックを理解しやすくします。たとえばこう書けます::"
 
 #: ../../whatsnew/2.5.rst:186
 msgid ""
@@ -338,6 +344,10 @@ msgid ""
 "Optionally you can GPG-sign the package by supplying the :option:`!--sign` "
 "and :option:`!--identity` options."
 msgstr ""
+"パッケージがアップロードされる前には、Distutils :command:`sdist` "
+"コマンドを使って配布物をビルド可能でなければなりません。それさえ出来ていれば、 ``python setup.py upload`` がパッケージを "
+"PyPI アーカイブに追加してくれます。追加で、パッケージに GPG 署名出来ます。これには :option:`!--sign` オプションと "
+":option:`!--identity` オプションを使います。"
 
 #: ../../whatsnew/2.5.rst:242
 msgid ""
@@ -447,6 +457,13 @@ msgid ""
 "that users should begin using absolute imports as much as possible, so it's "
 "preferable to begin writing ``from pkg import string`` in your code."
 msgstr ""
+"Python 2.5 では :keyword:`import` の振る舞いを、 ``from __future__ import "
+"absolute_import`` ディレクティブを使うことによって絶対インポートに切り替えられます。この絶対インポートの振る舞いは将来バージョンの "
+"Python でデフォルトになります(おそらく Python 2.7 で)。(訳注: ご承知のとおり Python 2.7 "
+"でもこれはデフォルトとはなっていません。Python 3.x への移行のためにも 2.5 - 2.7 では ``from __future__ "
+"import absolute_import`` を使うべきです。) 絶対インポートをデフォルトにしてしまえば、 ``import string`` "
+"はいつでも標準ライブラリ版を見つけます。ユーザは可能な限り絶対インポートを使い始めるべきで、あなたのコードでは ``from pkg import "
+"string`` と書き始めることが望まれます。"
 
 #: ../../whatsnew/2.5.rst:307
 msgid ""
@@ -485,7 +502,7 @@ msgstr "PEP 著 Aahz; 実装 Thomas Wouters。"
 
 #: ../../whatsnew/2.5.rst:333
 msgid "https://pylib.readthedocs.org/"
-msgstr ""
+msgstr "https://pylib.readthedocs.org/"
 
 #: ../../whatsnew/2.5.rst:334
 msgid ""
@@ -805,7 +822,7 @@ msgstr ""
 
 #: ../../whatsnew/2.5.rst:551
 msgid "https://en.wikipedia.org/wiki/Coroutine"
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/Coroutine"
 
 #: ../../whatsnew/2.5.rst:551
 msgid "The Wikipedia entry for  coroutines."
@@ -1601,6 +1618,12 @@ msgid ""
 "option when running the Python executable to display the warning message. "
 "(Implemented by Thomas Wouters.)"
 msgstr ""
+"Python プログラマがよくしでかす間違いとして、パッケージディレクトリに :file:`__init__.py` "
+"を入れ忘れる、というものがあります。この間違いのデバッグはややこしく、大抵 Python を :option:`-v` "
+"スイッチ付きで起動して、パス検索全てをログ出力するハメになります。Python 2.5 ではパッケージディレクトリに "
+":file:`__init__.py` がないことが検出されると新たに :exc:`ImportWarning` "
+"警告を出すようになりました。デフォルトではこの警告は黙って無視されます; これを出したければ、 :option:`-Wd <-W>` スイッチをつけて "
+"Python を起動してください。(Implemented by Thomas Wouters.)"
 
 #: ../../whatsnew/2.5.rst:1101
 msgid ""
@@ -1646,6 +1669,9 @@ msgid ""
 ":option:`/? <-?>` option for displaying a help message. (Implemented by "
 "Georg Brandl.)"
 msgstr ""
+"Python 実行形式ファイルが標準的な長い形式の :option:`--help` と :option:`--version` "
+"を受け付けるようになりました。Windows の場合はヘルプメッセージを出力するのに :option:`/? <-?>` "
+"オプションも受け付けます。(Implemented by Georg Brandl.)"
 
 #: ../../whatsnew/2.5.rst:1138
 msgid "Optimizations"
