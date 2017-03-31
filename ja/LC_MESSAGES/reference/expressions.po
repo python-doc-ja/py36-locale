@@ -1697,7 +1697,7 @@ msgstr ""
 msgid ""
 "User-defined classes that customize their comparison behavior should follow "
 "some consistency rules, if possible:"
-msgstr ""
+msgstr "比較の振る舞いをカスタマイズしたユーザ定義クラスは、可能なら次の一貫性の規則に従う必要があります:"
 
 #: ../../reference/expressions.rst:1382
 msgid ""
@@ -1785,6 +1785,8 @@ msgid ""
 "The :func:`hash` result should be consistent with equality. Objects that are"
 " equal should either have the same hash value, or be marked as unhashable."
 msgstr ""
+":func:`hash` の結果は等価性と一貫している必要があります。\n"
+"等価なオブジェクトどうしは同じハッシュ値を持つか、ハッシュ値が計算できないものとされる必要があります。"
 
 #: ../../reference/expressions.rst:1422
 msgid ""
