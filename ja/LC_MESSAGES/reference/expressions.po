@@ -1553,12 +1553,14 @@ msgid ""
 "equality.  Such types will need to customize their comparison behavior, and "
 "in fact, a number of built-in types have done that."
 msgstr ""
+"同一でないインスタンスは常に等価でないとする等価性比較のデフォルトの振る舞いは、型が必要とするオブジェクトの値や値に基づいた等価性の実用的な定義とは対照的に思えるでしょう。\n"
+"そのような型では比較の振る舞いをカスタマイズする必要が出てきて、実際にたくさんの組み込み型でそれが行われています。"
 
 #: ../../reference/expressions.rst:1290
 msgid ""
 "The following list describes the comparison behavior of the most important "
 "built-in types."
-msgstr ""
+msgstr "次のリストでは、最重要の組み込み型の比較の振る舞いを解説しています。"
 
 #: ../../reference/expressions.rst:1293
 msgid ""
@@ -1569,6 +1571,8 @@ msgid ""
 "involved, they compare mathematically (algorithmically) correct without loss"
 " of precision."
 msgstr ""
+"いくつかの組み込みの数値型 (:ref:`typesnumeric`) と標準ライブラリの型 :class:`fractions.Fraction` および :class:`decimal.Decimal` は、同じ型や別の型どうしで比較できますが、複素数では順序比較がサポートされていないという制限があります。\n"
+"関わる型の制限の範囲内では、精度のロス無しに数学的に (アルゴリズム的に) 正しい比較が行われます。"
 
 #: ../../reference/expressions.rst:1300
 msgid ""
@@ -1628,7 +1632,7 @@ msgstr ""
 #: ../../reference/expressions.rst:1344
 msgid ""
 "Lexicographical comparison between built-in collections works as follows:"
-msgstr ""
+msgstr "組み込みのコレクションどうしの辞書式比較は次のように動作します:"
 
 #: ../../reference/expressions.rst:1346
 msgid ""
@@ -1636,6 +1640,8 @@ msgid ""
 "the same length, and each pair of corresponding elements must compare equal "
 "(for example, ``[1,2] == (1,2)`` is false because the type is not the same)."
 msgstr ""
+"比較の結果が等価となる2つのコレクションは、同じ型、同じ長さ、対応する要素どうしの比較の結果が等価でなければなりません (例えば、 ``[1,2] =="
+" (1,2)`` は型が同じでないので偽です)。"
 
 #: ../../reference/expressions.rst:1351
 msgid ""
@@ -1652,6 +1658,8 @@ msgid ""
 " equal `(key, value)` pairs. Equality comparison of the keys and elements "
 "enforces reflexivity."
 msgstr ""
+"マッピング (:class:`dict` のインスタンス) の比較の結果が等価となるのは、同じ `(key, value)` を持っているときかつそのときに限ります。\n"
+"キーと値の等価性比較では反射性が強制されます。"
 
 #: ../../reference/expressions.rst:1361
 msgid ""
