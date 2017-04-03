@@ -675,6 +675,9 @@ msgid ""
 "``'f'``, ``'d'`` or ``'e'`` respectively), regardless of the floating-point "
 "format used by the platform."
 msgstr ""
+"``'f'``、 ``'d'`` および ``'e'`` 変換コードについて、パックされた表現は IEEE 754 binary32 (``'f'`` "
+"の場合) 、 binary64 (``'d'`` の場合) 、またはbinary16(``'e'``の場合) "
+"フォーマットが、プラットフォームにおける浮動小数点数のフォーマットに関係なく使われます。"
 
 #: ../Doc/library/struct.rst:272
 msgid ""

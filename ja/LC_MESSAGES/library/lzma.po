@@ -73,6 +73,9 @@ msgid ""
 "object), in which case the named file is opened, or it can be an existing "
 "file object to read from or write to."
 msgstr ""
+"*filename* 引数には、ファイルをオープンする際には実際のファイル名 (:class:`str`、 :class:`bytes`、または "
+":term:`path-like <path-like object>` "
+"オブジェクトとして指定します)か、読み込みまたは書き込むためであれば、すでに存在するファイルオブジェクトを指定できます。"
 
 #: ../Doc/library/lzma.rst:46
 msgid ""
@@ -142,6 +145,11 @@ msgid ""
 "wrapping an existing file object, the wrapped file will not be closed when "
 "the :class:`LZMAFile` is closed."
 msgstr ""
+":class:`LZMAFile` はすでにオープンしている :term:`file object` "
+"をラップ、または名前付きファイルを直接操作できます。引数 *filename* にはラップするファイルオブジェクトかオープンするファイル名 "
+"(:class:`str` オブジェクトま、:class:`bytes` オブジェクト、または :term:`path-like <path-like "
+"object>` オブジェクト) を指定します。既存のファイルオブジェクトをラップした場合、:class:`LZMAFile` "
+"をクローズしてもラップしたファイルはクローズされません。"
 
 #: ../Doc/library/lzma.rst:83
 msgid ""

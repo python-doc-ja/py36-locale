@@ -419,7 +419,7 @@ msgstr ""
 msgid ""
 "Underscores are allowed for grouping, as with integral and floating-point "
 "literals in code."
-msgstr ""
+msgstr "コード中の整数リテラルや浮動小数点リテラルと同様に、アンダースコアを用いて桁をグルーピングできます。"
 
 #: ../Doc/library/decimal.rst:401
 msgid ""
@@ -504,6 +504,7 @@ msgid ""
 ":class:`Decimal` instance as a fraction, in lowest terms and with a positive"
 " denominator::"
 msgstr ""
+"与えられた :class:`Decimal` インスタンスを、既約分数で分母が正数の分数として表現した整数のペア ``(n, d)`` を返します。"
 
 #: ../Doc/library/decimal.rst:463
 msgid ""
