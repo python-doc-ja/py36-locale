@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Arihiro TAKASE <artakase@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -17,11 +18,11 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../c-api/index.rst:5
+#: ../Doc/c-api/index.rst:5
 msgid "Python/C API Reference Manual"
 msgstr "Python/C API リファレンスマニュアル"
 
-#: ../../c-api/index.rst:7
+#: ../Doc/c-api/index.rst:7
 msgid ""
 "This manual documents the API used by C and C++ programmers who want to "
 "write extension modules or embed Python.  It is a companion to :ref"

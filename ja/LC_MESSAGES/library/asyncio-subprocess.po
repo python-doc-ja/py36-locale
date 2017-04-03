@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: 秘湯 <xwhhsprings@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -17,15 +18,15 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../library/asyncio-subprocess.rst:6
+#: ../Doc/library/asyncio-subprocess.rst:6
 msgid "Subprocess"
 msgstr "サブプロセス"
 
-#: ../../library/asyncio-subprocess.rst:9
+#: ../Doc/library/asyncio-subprocess.rst:9
 msgid "Windows event loop"
 msgstr "Windows でのイベントループ"
 
-#: ../../library/asyncio-subprocess.rst:11
+#: ../Doc/library/asyncio-subprocess.rst:11
 msgid ""
 "On Windows, the default event loop is :class:`SelectorEventLoop` which does "
 "not support subprocesses. :class:`ProactorEventLoop` should be used instead."
@@ -35,7 +36,7 @@ msgstr ""
 "になりますが、これはサブプロセスをサポートしていません。代わりに :class:`ProactorEventLoop` を使用します。Windows "
 "で使用する例::"
 
-#: ../../library/asyncio-subprocess.rst:23
+#: ../Doc/library/asyncio-subprocess.rst:23
 msgid ""
 ":ref:`Available event loops <asyncio-event-loops>` and :ref:`Platform "
 "support <asyncio-platform-support>`."
@@ -43,15 +44,15 @@ msgstr ""
 ":ref:`利用可能なイベントループ <asyncio-event-loops>` および :ref:`プラットフォームでのサポート <asyncio-"
 "platform-support>`。"
 
-#: ../../library/asyncio-subprocess.rst:28
+#: ../Doc/library/asyncio-subprocess.rst:28
 msgid "Create a subprocess: high-level API using Process"
 msgstr "サブプロセスの作成: Process を使用した高水準 API"
 
-#: ../../library/asyncio-subprocess.rst:32
+#: ../Doc/library/asyncio-subprocess.rst:32
 msgid "Create a subprocess."
 msgstr "サブプロセスを作成します。"
 
-#: ../../library/asyncio-subprocess.rst:34
+#: ../Doc/library/asyncio-subprocess.rst:34
 msgid ""
 "The *limit* parameter sets the buffer limit passed to the "
 ":class:`StreamReader`. See :meth:`AbstractEventLoop.subprocess_exec` for "
@@ -60,21 +61,21 @@ msgstr ""
 "*limit* 引数で :class:`StreamReader` に渡すバッファリミットを設定します。他の引数については "
 ":meth:`AbstractEventLoop.subprocess_exec` を参照してください。"
 
-#: ../../library/asyncio-subprocess.rst:38
-#: ../../library/asyncio-subprocess.rst:50
+#: ../Doc/library/asyncio-subprocess.rst:38
+#: ../Doc/library/asyncio-subprocess.rst:50
 msgid "Return a :class:`~asyncio.subprocess.Process` instance."
 msgstr ":class:`~asyncio.subprocess.Process` のインスタンスを返します。"
 
-#: ../../library/asyncio-subprocess.rst:40
-#: ../../library/asyncio-subprocess.rst:59
+#: ../Doc/library/asyncio-subprocess.rst:40
+#: ../Doc/library/asyncio-subprocess.rst:59
 msgid "This function is a :ref:`coroutine <coroutine>`."
 msgstr "この関数は :ref:`コルーチン <coroutine>` です。"
 
-#: ../../library/asyncio-subprocess.rst:44
+#: ../Doc/library/asyncio-subprocess.rst:44
 msgid "Run the shell command *cmd*."
 msgstr "シェルコマンド *cmd* を実行します。"
 
-#: ../../library/asyncio-subprocess.rst:46
+#: ../Doc/library/asyncio-subprocess.rst:46
 msgid ""
 "The *limit* parameter sets the buffer limit passed to the "
 ":class:`StreamReader`. See :meth:`AbstractEventLoop.subprocess_shell` for "
@@ -83,8 +84,8 @@ msgstr ""
 "*limit* 引数で :class:`StreamReader` に渡すバッファリミットを設定します。他の引数については "
 ":meth:`AbstractEventLoop.subprocess_shell` を参照してください。"
 
-#: ../../library/asyncio-subprocess.rst:52
-#: ../../library/asyncio-subprocess.rst:135
+#: ../Doc/library/asyncio-subprocess.rst:52
+#: ../Doc/library/asyncio-subprocess.rst:135
 msgid ""
 "It is the application's responsibility to ensure that all whitespace and "
 "metacharacters are quoted appropriately to avoid `shell injection "
@@ -96,7 +97,7 @@ msgstr ""
 "`シェルインジェクション <https://en.wikipedia.org/wiki/Shell_injection#Shell_injection>`_ の脆弱性を回避するために、すべての空白文字およびメタ文字を適切にクオートすることはアプリケーション側の責任です。\n"
 ":func:`shlex.quote` 関数は、シェルコマンドで使用される文字列内の、空白文字とシェルのメタ文字の適切なエスケープに使用できます。"
 
-#: ../../library/asyncio-subprocess.rst:61
+#: ../Doc/library/asyncio-subprocess.rst:61
 msgid ""
 "Use the :meth:`AbstractEventLoop.connect_read_pipe` and "
 ":meth:`AbstractEventLoop.connect_write_pipe` methods to connect pipes."
@@ -104,15 +105,15 @@ msgstr ""
 "パイプに接続するには :meth:`AbstractEventLoop.connect_read_pipe` および "
 ":meth:`AbstractEventLoop.connect_write_pipe` メソッドを使用します。"
 
-#: ../../library/asyncio-subprocess.rst:66
+#: ../Doc/library/asyncio-subprocess.rst:66
 msgid "Create a subprocess: low-level API using subprocess.Popen"
 msgstr "サブプロセスの作成: subprocess.Popen を使用した低水準 API"
 
-#: ../../library/asyncio-subprocess.rst:68
+#: ../Doc/library/asyncio-subprocess.rst:68
 msgid "Run subprocesses asynchronously using the :mod:`subprocess` module."
 msgstr ":mod:`subprocess` モジュールを使用して非同期にサブプロセスを実行します。"
 
-#: ../../library/asyncio-subprocess.rst:72
+#: ../Doc/library/asyncio-subprocess.rst:72
 msgid ""
 "Create a subprocess from one or more string arguments (character strings or "
 "bytes strings encoded to the :ref:`filesystem encoding <filesystem-"
@@ -132,18 +133,18 @@ msgstr ""
 "shell=False で呼び出され、文字列のリストが第 1 引数として渡されたときと似ていますが、:class:`~subprocess.Popen`"
 " が引数として文字列のリストを 1 個取るのに対し、:func:`subprocess_exec` 引数として複数の文字列を取ります。"
 
-#: ../../library/asyncio-subprocess.rst:83
-#: ../../library/asyncio-subprocess.rst:126
+#: ../Doc/library/asyncio-subprocess.rst:83
+#: ../Doc/library/asyncio-subprocess.rst:126
 msgid ""
 "The *protocol_factory* must instantiate a subclass of the "
 ":class:`asyncio.SubprocessProtocol` class."
 msgstr ""
 
-#: ../../library/asyncio-subprocess.rst:86
+#: ../Doc/library/asyncio-subprocess.rst:86
 msgid "Other parameters:"
 msgstr "その他の引数:"
 
-#: ../../library/asyncio-subprocess.rst:88
+#: ../Doc/library/asyncio-subprocess.rst:88
 msgid ""
 "*stdin*: Either a file-like object representing the pipe to be connected to "
 "the subprocess's standard input stream using "
@@ -154,7 +155,7 @@ msgstr ""
 "*stdin*: :meth:`~AbstractEventLoop.connect_write_pipe` を使用してサブプロセスの標準入力ストリームに接続されたパイプを表すファイルライクオブジェクト、もしくは定数 :const:`subprocess.PIPE` (デフォルト) のどちらかになります。\n"
 "デフォルトでは、パイプが新しく作成され、接続されます。"
 
-#: ../../library/asyncio-subprocess.rst:94
+#: ../Doc/library/asyncio-subprocess.rst:94
 msgid ""
 "*stdout*: Either a file-like object representing the pipe to be connected to"
 " the subprocess's standard output stream using "
@@ -165,7 +166,7 @@ msgstr ""
 "*stdout*: :meth:`~AbstractEventLoop.connect_read_pipe`, を使用してサブプロセスの標準出力ストリームに接続されたパイプを表すファイルライクオブジェクト、もしくは定数 :const:`subprocess.PIPE` (デフォルト) のどちらかになります。\n"
 "デフォルトでは、パイプが新しく作成され、接続されます。"
 
-#: ../../library/asyncio-subprocess.rst:100
+#: ../Doc/library/asyncio-subprocess.rst:100
 msgid ""
 "*stderr*: Either a file-like object representing the pipe to be connected to"
 " the subprocess's standard error stream using "
@@ -179,7 +180,7 @@ msgstr ""
 "デフォルトでは、パイプが新しく作成され、接続されます。\n"
 ":const:`subprocess.STDOUT` が指定された場合、サブプロセスの標準エラー出力ストリームは標準出力ストリームと同じパイプに接続されます。"
 
-#: ../../library/asyncio-subprocess.rst:108
+#: ../Doc/library/asyncio-subprocess.rst:108
 msgid ""
 "All other keyword arguments are passed to :class:`subprocess.Popen` without "
 "interpretation, except for *bufsize*, *universal_newlines* and *shell*, "
@@ -188,8 +189,8 @@ msgstr ""
 "その他のキーワード引数は、指定してはならない *bufsize*、*universal_newlines* および *shell* "
 "を除き、すべて解釈されずに :class:`subprocess.Popen` に渡されます。"
 
-#: ../../library/asyncio-subprocess.rst:112
-#: ../../library/asyncio-subprocess.rst:132
+#: ../Doc/library/asyncio-subprocess.rst:112
+#: ../Doc/library/asyncio-subprocess.rst:132
 msgid ""
 "Returns a pair of ``(transport, protocol)``, where *transport* is an "
 "instance of :class:`BaseSubprocessTransport`."
@@ -197,19 +198,19 @@ msgstr ""
 "``(transport, protocol)`` のペアを返します。*transport* は "
 ":class:`BaseSubprocessTransport` のインスタンスです。"
 
-#: ../../library/asyncio-subprocess.rst:115
-#: ../../library/asyncio-subprocess.rst:142
-#: ../../library/asyncio-subprocess.rst:204
-#: ../../library/asyncio-subprocess.rst:232
+#: ../Doc/library/asyncio-subprocess.rst:115
+#: ../Doc/library/asyncio-subprocess.rst:142
+#: ../Doc/library/asyncio-subprocess.rst:204
+#: ../Doc/library/asyncio-subprocess.rst:232
 msgid "This method is a :ref:`coroutine <coroutine>`."
 msgstr "このメソッドは :ref:`コルーチン <coroutine>` です。"
 
-#: ../../library/asyncio-subprocess.rst:117
+#: ../Doc/library/asyncio-subprocess.rst:117
 msgid ""
 "See the constructor of the :class:`subprocess.Popen` class for parameters."
 msgstr "引数については :class:`subprocess.Popen` クラスのコンストラクタを参照してください。"
 
-#: ../../library/asyncio-subprocess.rst:121
+#: ../Doc/library/asyncio-subprocess.rst:121
 msgid ""
 "Create a subprocess from *cmd*, which is a character string or a bytes "
 "string encoded to the :ref:`filesystem encoding <filesystem-encoding>`, "
@@ -220,13 +221,13 @@ msgstr ""
 "encoding>` にエンコードされた文字列またはバイト列) からサブプロセスを作成します。これは標準ライブラリ "
 ":class:`subprocess.Popen` クラスを ``shell=True`` で呼び出したときと似ています。"
 
-#: ../../library/asyncio-subprocess.rst:129
+#: ../Doc/library/asyncio-subprocess.rst:129
 msgid ""
 "See :meth:`~AbstractEventLoop.subprocess_exec` for more details about the "
 "remaining arguments."
 msgstr "その他の引数についての詳細は :meth:`~AbstractEventLoop.subprocess_exec` を参照してください。"
 
-#: ../../library/asyncio-subprocess.rst:146
+#: ../Doc/library/asyncio-subprocess.rst:146
 msgid ""
 "The :meth:`AbstractEventLoop.connect_read_pipe` and "
 ":meth:`AbstractEventLoop.connect_write_pipe` methods."
@@ -234,11 +235,11 @@ msgstr ""
 ":meth:`AbstractEventLoop.connect_read_pipe` および "
 ":meth:`AbstractEventLoop.connect_write_pipe` メソッド。"
 
-#: ../../library/asyncio-subprocess.rst:151
+#: ../Doc/library/asyncio-subprocess.rst:151
 msgid "Constants"
 msgstr "定数"
 
-#: ../../library/asyncio-subprocess.rst:155
+#: ../Doc/library/asyncio-subprocess.rst:155
 msgid ""
 "Special value that can be used as the *stdin*, *stdout* or *stderr* argument"
 " to :func:`create_subprocess_shell` and :func:`create_subprocess_exec` and "
@@ -247,7 +248,7 @@ msgstr ""
 ":func:`create_subprocess_shell` および :func:`create_subprocess_exec` の引数 "
 "*stdin*、*stdout* あるいは *stderr* で使用できる特殊な値です。オープンすべき標準ストリームへのパイプを示します。"
 
-#: ../../library/asyncio-subprocess.rst:161
+#: ../Doc/library/asyncio-subprocess.rst:161
 msgid ""
 "Special value that can be used as the *stderr* argument to "
 ":func:`create_subprocess_shell` and :func:`create_subprocess_exec` and "
@@ -257,7 +258,7 @@ msgstr ""
 ":func:`create_subprocess_shell` および :func:`create_subprocess_exec` の引数 "
 "*stderr* で使用できる特殊な値です。標準エラー出力を標準出力と同様に扱うための標準出力へのパイプを示します。"
 
-#: ../../library/asyncio-subprocess.rst:168
+#: ../Doc/library/asyncio-subprocess.rst:168
 msgid ""
 "Special value that can be used as the *stdin*, *stdout* or *stderr* argument"
 " to :func:`create_subprocess_shell` and :func:`create_subprocess_exec` and "
@@ -267,11 +268,11 @@ msgstr ""
 "*stdin*、*stdout* あるいは *stderr* で使用できる特殊な値です。特殊ファイル :data:`os.devnull` "
 "を使用するよう示します。"
 
-#: ../../library/asyncio-subprocess.rst:174
+#: ../Doc/library/asyncio-subprocess.rst:174
 msgid "Process"
 msgstr "Process"
 
-#: ../../library/asyncio-subprocess.rst:178
+#: ../Doc/library/asyncio-subprocess.rst:178
 msgid ""
 "A subprocess created by the :func:`create_subprocess_exec` or the "
 ":func:`create_subprocess_shell` function."
@@ -279,7 +280,7 @@ msgstr ""
 "関数 :func:`create_subprocess_exec` あるいは :func:`create_subprocess_shell` "
 "によって作成されたサブプロセスです。"
 
-#: ../../library/asyncio-subprocess.rst:181
+#: ../Doc/library/asyncio-subprocess.rst:181
 msgid ""
 "The API of the :class:`~asyncio.subprocess.Process` class was designed to be"
 " close to the API of the :class:`subprocess.Popen` class, but there are some"
@@ -288,11 +289,11 @@ msgstr ""
 ":class:`~asyncio.subprocess.Process` クラスの API は :class:`subprocess.Popen` "
 "クラスの API に似せて設計されましたが、一部異なります:"
 
-#: ../../library/asyncio-subprocess.rst:185
+#: ../Doc/library/asyncio-subprocess.rst:185
 msgid "There is no explicit :meth:`~subprocess.Popen.poll` method"
 msgstr "明示的な :meth:`~subprocess.Popen.poll` メソッドはありません"
 
-#: ../../library/asyncio-subprocess.rst:186
+#: ../Doc/library/asyncio-subprocess.rst:186
 msgid ""
 "The :meth:`~subprocess.Popen.communicate` and :meth:`~subprocess.Popen.wait`"
 " methods don't take a *timeout* parameter: use the :func:`wait_for` function"
@@ -300,13 +301,13 @@ msgstr ""
 ":meth:`~subprocess.Popen.communicate` および :meth:`~subprocess.Popen.wait` "
 "メソッドは *timeout* 引数を取りません: :func:`wait_for` 関数を使用してください"
 
-#: ../../library/asyncio-subprocess.rst:189
+#: ../Doc/library/asyncio-subprocess.rst:189
 msgid ""
 "The *universal_newlines* parameter is not supported (only bytes strings are "
 "supported)"
 msgstr "*universal_newlines* 引数はサポートされません (バイト文字列のみサポートします)"
 
-#: ../../library/asyncio-subprocess.rst:191
+#: ../Doc/library/asyncio-subprocess.rst:191
 msgid ""
 "The :meth:`~asyncio.subprocess.Process.wait` method of the "
 ":class:`~asyncio.subprocess.Process` class is asynchronous whereas the "
@@ -318,7 +319,7 @@ msgstr ""
 "メソッドは非同期であるのに対し、:class:`~subprocess.Popen` クラスの "
 ":meth:`~subprocess.Popen.wait` メソッドはビジーループとして実装されています。"
 
-#: ../../library/asyncio-subprocess.rst:196
+#: ../Doc/library/asyncio-subprocess.rst:196
 msgid ""
 "This class is :ref:`not thread safe <asyncio-multithreading>`. See also the "
 ":ref:`Subprocess and threads <asyncio-subprocess-threads>` section."
@@ -326,13 +327,13 @@ msgstr ""
 "このクラスは :ref:`スレッド安全ではありません <asyncio-multithreading>`。 :ref:`asyncio-"
 "subprocess-threads` 節を参照してください。"
 
-#: ../../library/asyncio-subprocess.rst:201
+#: ../Doc/library/asyncio-subprocess.rst:201
 msgid ""
 "Wait for child process to terminate.  Set and return :attr:`returncode` "
 "attribute."
 msgstr "プロセスの終了を待ちます。リターンコードが :attr:`returncode` 属性に設定され、返されます。"
 
-#: ../../library/asyncio-subprocess.rst:208
+#: ../Doc/library/asyncio-subprocess.rst:208
 msgid ""
 "This will deadlock when using ``stdout=PIPE`` or ``stderr=PIPE`` and the "
 "child process generates enough output to a pipe such that it blocks waiting "
@@ -342,7 +343,7 @@ msgstr ""
 "``stdout=PIPE`` または ``stderr=PIPE`` を使用しており、OS パイプバッファのそれ以上のデータを受け取りの待機をブロックするほど子プロセスがパイプに出力した場合、このメソッドはデッドロックします。\n"
 "これを回避するには :meth:`communicate` メソッドを使用してください。"
 
-#: ../../library/asyncio-subprocess.rst:215
+#: ../Doc/library/asyncio-subprocess.rst:215
 msgid ""
 "Interact with process: Send data to stdin.  Read data from stdout and "
 "stderr, until end-of-file is reached.  Wait for process to terminate. The "
@@ -355,11 +356,11 @@ msgstr ""
 "は子プロセスに送信するデータを設定します。送信するデータがない場合は ``None`` を設定します (デフォルト)。*input* "
 "はバイト列でなければなりません。"
 
-#: ../../library/asyncio-subprocess.rst:221
+#: ../Doc/library/asyncio-subprocess.rst:221
 msgid ":meth:`communicate` returns a tuple ``(stdout_data, stderr_data)``."
 msgstr ":meth:`communicate` は ``(stdout_data, stderr_data)`` のタプルを返します。"
 
-#: ../../library/asyncio-subprocess.rst:223
+#: ../Doc/library/asyncio-subprocess.rst:223
 msgid ""
 "If a :exc:`BrokenPipeError` or :exc:`ConnectionResetError` exception is "
 "raised when writing *input* into stdin, the exception is ignored. It occurs "
@@ -369,7 +370,7 @@ msgstr ""
 ":exc:`ConnectionResetError` "
 "例外が送出された場合、例外は無視されます。これは全データが標準入力に書き込まれる前にプロセスが終了したときに発生します。"
 
-#: ../../library/asyncio-subprocess.rst:227
+#: ../Doc/library/asyncio-subprocess.rst:227
 msgid ""
 "Note that if you want to send data to the process's stdin, you need to "
 "create the Process object with ``stdin=PIPE``.  Similarly, to get anything "
@@ -380,14 +381,14 @@ msgstr ""
 " ``None`` 以外のものを受け取りたい場合には ``stdout=PIPE`` および/または ``stderr=PIPE`` "
 "を指定する必要があります。"
 
-#: ../../library/asyncio-subprocess.rst:236
+#: ../Doc/library/asyncio-subprocess.rst:236
 msgid ""
 "The data read is buffered in memory, so do not use this method if the data "
 "size is large or unlimited."
 msgstr ""
 "受信したデータはメモリにバッファーされます。そのため、返されるデータが大きいかあるいは制限がないような場合はこのメソッドを使うべきではありません。"
 
-#: ../../library/asyncio-subprocess.rst:239
+#: ../Doc/library/asyncio-subprocess.rst:239
 msgid ""
 "The method now ignores :exc:`BrokenPipeError` and "
 ":exc:`ConnectionResetError`."
@@ -395,11 +396,11 @@ msgstr ""
 "このメソッドは :exc:`BrokenPipeError` および :exc:`ConnectionResetError` "
 "を無視するようになりました。"
 
-#: ../../library/asyncio-subprocess.rst:245
+#: ../Doc/library/asyncio-subprocess.rst:245
 msgid "Sends the signal *signal* to the child process."
 msgstr "子プロセスにシグナル *signal* を送信します。"
 
-#: ../../library/asyncio-subprocess.rst:249
+#: ../Doc/library/asyncio-subprocess.rst:249
 msgid ""
 "On Windows, :py:data:`SIGTERM` is an alias for :meth:`terminate`. "
 "``CTRL_C_EVENT`` and ``CTRL_BREAK_EVENT`` can be sent to processes started "
@@ -410,7 +411,7 @@ msgstr ""
 "および ``CTRL_BREAK_EVENT`` で、*creationflags* で始まり、``CREATE_NEW_PROCESS_GROUP``"
 " を含むパラメーターをプロセスに送信することができます。"
 
-#: ../../library/asyncio-subprocess.rst:256
+#: ../Doc/library/asyncio-subprocess.rst:256
 msgid ""
 "Stop the child. On Posix OSs the method sends :py:data:`signal.SIGTERM` to "
 "the child. On Windows the Win32 API function :c:func:`TerminateProcess` is "
@@ -419,7 +420,7 @@ msgstr ""
 "子プロセスを停止します。POSIX システムでは、子プロセスに :py:data:`signal.SIGTERM` を送信します。Windows "
 "では、Win32 API 関数 :c:func:`TerminateProcess` が呼び出されます。"
 
-#: ../../library/asyncio-subprocess.rst:262
+#: ../Doc/library/asyncio-subprocess.rst:262
 msgid ""
 "Kills the child. On Posix OSs the function sends :py:data:`SIGKILL` to the "
 "child.  On Windows :meth:`kill` is an alias for :meth:`terminate`."
@@ -427,7 +428,7 @@ msgstr ""
 "子プロセスを kill します。POSIX システムでは :py:data:`SIGKILL` を子プロセスに送信します。Windows では "
 ":meth:`kill` は :meth:`terminate` の別名になります。"
 
-#: ../../library/asyncio-subprocess.rst:267
+#: ../Doc/library/asyncio-subprocess.rst:267
 msgid ""
 "Standard input stream (:class:`StreamWriter`), ``None`` if the process was "
 "created with ``stdin=None``."
@@ -435,7 +436,7 @@ msgstr ""
 "標準入力ストリーム (:class:`StreamWriter`) になります。プロセスが ``stdin=None`` で作成されていた場合 "
 "``None`` になります。"
 
-#: ../../library/asyncio-subprocess.rst:272
+#: ../Doc/library/asyncio-subprocess.rst:272
 msgid ""
 "Standard output stream (:class:`StreamReader`), ``None`` if the process was "
 "created with ``stdout=None``."
@@ -443,7 +444,7 @@ msgstr ""
 "標準出力ストリーム (:class:`StreamReader`) になります。プロセスが ``stdout=None`` で作成されていた場合 "
 "``None`` になります。"
 
-#: ../../library/asyncio-subprocess.rst:277
+#: ../Doc/library/asyncio-subprocess.rst:277
 msgid ""
 "Standard error stream (:class:`StreamReader`), ``None`` if the process was "
 "created with ``stderr=None``."
@@ -451,7 +452,7 @@ msgstr ""
 "標準エラー出力ストリーム (:class:`StreamReader`) になります。プロセスが ``stderr=None`` で作成されていた場合 "
 "``None`` になります。"
 
-#: ../../library/asyncio-subprocess.rst:282
+#: ../Doc/library/asyncio-subprocess.rst:282
 msgid ""
 "Use the :meth:`communicate` method rather than :attr:`.stdin.write <stdin>`,"
 " :attr:`.stdout.read <stdout>` or :attr:`.stderr.read <stderr>` to avoid "
@@ -462,11 +463,11 @@ msgstr ""
 "<stdin>`、:attr:`.stdout.read <stdout>` あるいは :attr:`.stderr.read <stderr>` "
 "ではなく、:meth:`communicate` メソッドを使用してください。"
 
-#: ../../library/asyncio-subprocess.rst:289
+#: ../Doc/library/asyncio-subprocess.rst:289
 msgid "The identifier of the process."
 msgstr "プロセスの識別子です。"
 
-#: ../../library/asyncio-subprocess.rst:291
+#: ../Doc/library/asyncio-subprocess.rst:291
 msgid ""
 "Note that for processes created by the :func:`create_subprocess_shell` "
 "function, this attribute is the process identifier of the spawned shell."
@@ -474,33 +475,33 @@ msgstr ""
 ":func:`create_subprocess_shell` "
 "関数によって作成されたプロセスでは、この属性は生成したシェルのプロセス識別子になる点に注意してください。"
 
-#: ../../library/asyncio-subprocess.rst:296
+#: ../Doc/library/asyncio-subprocess.rst:296
 msgid ""
 "Return code of the process when it exited.  A ``None`` value indicates that "
 "the process has not terminated yet."
 msgstr "プロセスが終了したときのリターンコードです。``None`` 値はプロセスがまだ終了していないことを示します。"
 
-#: ../../library/asyncio-subprocess.rst:299
+#: ../Doc/library/asyncio-subprocess.rst:299
 msgid ""
 "A negative value ``-N`` indicates that the child was terminated by signal "
 "``N`` (Unix only)."
 msgstr "負の値 ``-N`` は子プロセスがシグナル ``N`` により中止させられたことを示します (Unix のみ)。"
 
-#: ../../library/asyncio-subprocess.rst:306
+#: ../Doc/library/asyncio-subprocess.rst:306
 msgid "Subprocess and threads"
 msgstr "サブプロセスとスレッド"
 
-#: ../../library/asyncio-subprocess.rst:308
+#: ../Doc/library/asyncio-subprocess.rst:308
 msgid ""
 "asyncio supports running subprocesses from different threads, but there are "
 "limits:"
 msgstr "asyncio はサブプロセスを異なるスレッドから実行するのをサポートしていますが、制限があります:"
 
-#: ../../library/asyncio-subprocess.rst:311
+#: ../Doc/library/asyncio-subprocess.rst:311
 msgid "An event loop must run in the main thread"
 msgstr "イベントループはメインスレッド内で実行されなければなりません"
 
-#: ../../library/asyncio-subprocess.rst:312
+#: ../Doc/library/asyncio-subprocess.rst:312
 msgid ""
 "The child watcher must be instantiated in the main thread, before executing "
 "subprocesses from other threads. Call the :func:`get_child_watcher` function"
@@ -509,25 +510,25 @@ msgstr ""
 "子ウォッチャーは、他のスレッドからサブプロセスが実行される前に、メインスレッドで作成されなければなりません。\n"
 "メインスレッドで :func:`get_child_watcher` を呼んで子ウォッチャーをインスタンス化してください。"
 
-#: ../../library/asyncio-subprocess.rst:316
+#: ../Doc/library/asyncio-subprocess.rst:316
 msgid "The :class:`asyncio.subprocess.Process` class is not thread safe."
 msgstr ":class:`asyncio.subprocess.Process` クラスはスレッド安全ではありません。"
 
-#: ../../library/asyncio-subprocess.rst:320
+#: ../Doc/library/asyncio-subprocess.rst:320
 msgid ""
 "The :ref:`Concurrency and multithreading in asyncio <asyncio-"
 "multithreading>` section."
 msgstr ":ref:`asyncio-multithreading`"
 
-#: ../../library/asyncio-subprocess.rst:325
+#: ../Doc/library/asyncio-subprocess.rst:325
 msgid "Subprocess examples"
 msgstr "サブプロセスの例"
 
-#: ../../library/asyncio-subprocess.rst:328
+#: ../Doc/library/asyncio-subprocess.rst:328
 msgid "Subprocess using transport and protocol"
 msgstr "トランスポートおよびプロトコルを使用したサブプロセス"
 
-#: ../../library/asyncio-subprocess.rst:330
+#: ../Doc/library/asyncio-subprocess.rst:330
 msgid ""
 "Example of a subprocess protocol using to get the output of a subprocess and"
 " to wait for the subprocess exit. The subprocess is created by the "
@@ -536,11 +537,11 @@ msgstr ""
 "サブプロセスの出力を取得しサブプロセスの終了を待機するサブプロセスプロトコルの例です。サブプロセスは "
 ":meth:`AbstractEventLoop.subprocess_exec` メソッドで作成されます::"
 
-#: ../../library/asyncio-subprocess.rst:384
+#: ../Doc/library/asyncio-subprocess.rst:384
 msgid "Subprocess using streams"
 msgstr "ストリームを使用したサブプロセス"
 
-#: ../../library/asyncio-subprocess.rst:386
+#: ../Doc/library/asyncio-subprocess.rst:386
 msgid ""
 "Example using the :class:`~asyncio.subprocess.Process` class to control the "
 "subprocess and the :class:`StreamReader` class to read from the standard "

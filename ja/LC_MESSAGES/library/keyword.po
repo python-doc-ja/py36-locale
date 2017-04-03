@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Arihiro TAKASE <artakase@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -17,24 +18,24 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../library/keyword.rst:2
+#: ../Doc/library/keyword.rst:2
 msgid ":mod:`keyword` --- Testing for Python keywords"
 msgstr ":mod:`keyword` --- Python キーワードチェック"
 
-#: ../../library/keyword.rst:7
+#: ../Doc/library/keyword.rst:7
 msgid "**Source code:** :source:`Lib/keyword.py`"
 msgstr "**ソースコード:** :source:`Lib/keyword.py`"
 
-#: ../../library/keyword.rst:11
+#: ../Doc/library/keyword.rst:11
 msgid ""
 "This module allows a Python program to determine if a string is a keyword."
 msgstr "このモジュールでは、Python プログラムで文字列がキーワードか否かをチェックする機能を提供します。"
 
-#: ../../library/keyword.rst:16
+#: ../Doc/library/keyword.rst:16
 msgid "Return true if *s* is a Python keyword."
 msgstr "*s* が Python のキーワードであれば真を返します。"
 
-#: ../../library/keyword.rst:21
+#: ../Doc/library/keyword.rst:21
 msgid ""
 "Sequence containing all the keywords defined for the interpreter.  If any "
 "keywords are defined to only be active when particular :mod:`__future__` "

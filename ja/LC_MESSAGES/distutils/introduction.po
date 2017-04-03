@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -17,11 +18,11 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../distutils/introduction.rst:5
+#: ../Doc/distutils/introduction.rst:5
 msgid "An Introduction to Distutils"
 msgstr "Distutilsの紹介"
 
-#: ../../distutils/introduction.rst:7
+#: ../Doc/distutils/introduction.rst:7
 msgid ""
 "This document covers using the Distutils to distribute your Python modules, "
 "concentrating on the role of developer/distributor: if you're looking for "
@@ -31,11 +32,11 @@ msgstr ""
 "このドキュメントで扱っている内容は、 Distutils を使った Python モジュールの配布で、とりわけ開発者/配布者の役割に重点を置いています:"
 " Python モジュールのインストールに関する情報を探しているのなら、 :ref:`install-index` を参照してください。"
 
-#: ../../distutils/introduction.rst:16
+#: ../Doc/distutils/introduction.rst:16
 msgid "Concepts & Terminology"
 msgstr "概念と用語"
 
-#: ../../distutils/introduction.rst:18
+#: ../Doc/distutils/introduction.rst:18
 msgid ""
 "Using the Distutils is quite simple, both for module developers and for "
 "users/administrators installing third-party modules.  As a developer, your "
@@ -46,27 +47,27 @@ msgstr ""
 "の使い方は、モジュール開発者とサードパーティ製のモジュールをインストールするユーザ/管理者のどちらにとってもきわめて単純です。開発者側のやるべきことは "
 "(もちろん、しっかりした実装で、詳しく文書化され、よくテストされたコードを書くことは別として！) 以下の項目になります:"
 
-#: ../../distutils/introduction.rst:23
+#: ../Doc/distutils/introduction.rst:23
 msgid "write a setup script (:file:`setup.py` by convention)"
 msgstr "setup スクリプト (:file:`setup.py` という名前にするのがならわし) を書く"
 
-#: ../../distutils/introduction.rst:25
+#: ../Doc/distutils/introduction.rst:25
 msgid "(optional) write a setup configuration file"
 msgstr "(必要があれば) setup 設定ファイルを書く"
 
-#: ../../distutils/introduction.rst:27
+#: ../Doc/distutils/introduction.rst:27
 msgid "create a source distribution"
 msgstr "ソースコード配布物を作成する"
 
-#: ../../distutils/introduction.rst:29
+#: ../Doc/distutils/introduction.rst:29
 msgid "(optional) create one or more built (binary) distributions"
 msgstr "(必要があれば) 一つまたはそれ以上のビルド済み (バイナリ) 形式の配布物を作成する"
 
-#: ../../distutils/introduction.rst:31
+#: ../Doc/distutils/introduction.rst:31
 msgid "Each of these tasks is covered in this document."
 msgstr "これらの作業については、いずれもこのドキュメントで扱っています。"
 
-#: ../../distutils/introduction.rst:33
+#: ../Doc/distutils/introduction.rst:33
 msgid ""
 "Not all module developers have access to a multitude of platforms, so it's "
 "not always feasible to expect them to create a multitude of built "
@@ -84,11 +85,11 @@ msgstr ""
 " スクリプト一つ実行せず、コードを一行たりともコンパイルしなくても、使っているプラットフォーム向けのきわめて普通の方法でほとんどの一般的な Python"
 " モジュール配布物をインストールできるでしょう。"
 
-#: ../../distutils/introduction.rst:47
+#: ../Doc/distutils/introduction.rst:47
 msgid "A Simple Example"
 msgstr "簡単な例"
 
-#: ../../distutils/introduction.rst:49
+#: ../Doc/distutils/introduction.rst:49
 msgid ""
 "The setup script is usually quite simple, although since it's written in "
 "Python, there are no arbitrary limits to what you can do with it, though you"
@@ -102,7 +103,7 @@ msgstr ""
 "スクリプト中に何かコストの大きな処理を行うときは十分注意してください。autoconf 形式の設定スクリプトとは違い、setup "
 "スクリプトはモジュール配布物をビルドしてインストールする中で複数回実行されることがあります。"
 
-#: ../../distutils/introduction.rst:56
+#: ../Doc/distutils/introduction.rst:56
 msgid ""
 "If all you want to do is distribute a module called :mod:`foo`, contained in"
 " a file :file:`foo.py`, then your setup script can be as simple as this::"
@@ -110,17 +111,17 @@ msgstr ""
 ":file:`foo.py` という名前のファイルに収められている :mod:`foo` という名前のモジュールを配布したいだけなら、setup "
 "スクリプトは以下のような単純なものになります::"
 
-#: ../../distutils/introduction.rst:65
+#: ../Doc/distutils/introduction.rst:65
 msgid "Some observations:"
 msgstr "以下のことに注意してください:"
 
-#: ../../distutils/introduction.rst:67
+#: ../Doc/distutils/introduction.rst:67
 msgid ""
 "most information that you supply to the Distutils is supplied as keyword "
 "arguments to the :func:`setup` function"
 msgstr "Distutils に与えなければならない情報のほとんどは、 :func:`setup` 関数のキーワード引数として与えます"
 
-#: ../../distutils/introduction.rst:70
+#: ../Doc/distutils/introduction.rst:70
 msgid ""
 "those keyword arguments fall into two categories: package metadata (name, "
 "version number) and information about what's in the package (a list of pure "
@@ -129,13 +130,13 @@ msgstr ""
 "キーワード引数は二つのカテゴリ: パッケージのメタデータ (パッケージ名、バージョン番号)、パッケージに何が収められているかの情報 (上の場合は "
 "pure Python モジュールのリスト)、に行き着きます"
 
-#: ../../distutils/introduction.rst:74
+#: ../Doc/distutils/introduction.rst:74
 msgid ""
 "modules are specified by module name, not filename (the same will hold true "
 "for packages and extensions)"
 msgstr "モジュールはファイル名ではなく、モジュール名で指定します (パッケージと拡張モジュールについても同じです)"
 
-#: ../../distutils/introduction.rst:77
+#: ../Doc/distutils/introduction.rst:77
 msgid ""
 "it's recommended that you supply a little more metadata, in particular your "
 "name, email address and a URL for the project (see section :ref:`setup-"
@@ -144,7 +145,7 @@ msgstr ""
 "作者名、電子メールアドレス、プロジェクトの URL といった追加のメタデータを入れておくよう奨めます (:ref:`setup-script` "
 "の例を参照してください)"
 
-#: ../../distutils/introduction.rst:81
+#: ../Doc/distutils/introduction.rst:81
 msgid ""
 "To create a source distribution for this module, you would create a setup "
 "script, :file:`setup.py`, containing the above code, and run this command "
@@ -153,7 +154,7 @@ msgstr ""
 "このモジュールのソース配布物を作成するには、上記のコードが書かれた setup スクリプト :file:`setup.py` "
 "を作成し、端末からこのコマンドを実行してください::"
 
-#: ../../distutils/introduction.rst:87
+#: ../Doc/distutils/introduction.rst:87
 msgid ""
 "For Windows, open a command prompt window (:menuselection:`Start --> "
 "Accessories`) and change the command to::"
@@ -161,7 +162,7 @@ msgstr ""
 "Windows では、コマンドプロンプトのウィンドウを開き (:menuselection:`スタート --> アクセサリ`) "
 "、次のようにコマンドを変えてください::"
 
-#: ../../distutils/introduction.rst:92
+#: ../Doc/distutils/introduction.rst:92
 msgid ""
 ":command:`sdist` will create an archive file (e.g., tarball on Unix, ZIP "
 "file on Windows) containing your setup script :file:`setup.py`, and your "
@@ -173,7 +174,7 @@ msgstr ""
 ":file:`foo-1.0.tar.gz` (あるいは :file:`.zip`) という名前になり、 :file:`foo-1.0` "
 "というディレクトリに展開されます。"
 
-#: ../../distutils/introduction.rst:97
+#: ../Doc/distutils/introduction.rst:97
 msgid ""
 "If an end-user wishes to install your :mod:`foo` module, all she has to do "
 "is download :file:`foo-1.0.tar.gz` (or :file:`.zip`), unpack it, and---from "
@@ -183,7 +184,7 @@ msgstr ""
 ":file:`.zip`) をダウンロードし、パッケージを展開して、以下のスクリプトを --- :file:`foo-1.0` ディレクトリ中で ---"
 " 実行します ::"
 
-#: ../../distutils/introduction.rst:103
+#: ../Doc/distutils/introduction.rst:103
 msgid ""
 "which will ultimately copy :file:`foo.py` to the appropriate directory for "
 "third-party modules in their Python installation."
@@ -191,7 +192,7 @@ msgstr ""
 "この操作を行うと、インストールされている Python での適切なサードパーティ製モジュール置き場に :file:`foo.py` "
 "を完璧にコピーします。"
 
-#: ../../distutils/introduction.rst:106
+#: ../Doc/distutils/introduction.rst:106
 msgid ""
 "This simple example demonstrates some fundamental concepts of the Distutils."
 " First, both developers and installers have the same basic user interface, "
@@ -206,7 +207,7 @@ msgstr ""
 ":command:`sdist` コマンドは、ほぼ完全に開発者だけが対象となる一方、 :command:`install` "
 "はどちらかというとインストール作業者向けです (とはいえ、ほとんどの開発者は自分のコードをインストールしたくなることがあるでしょう)。"
 
-#: ../../distutils/introduction.rst:113
+#: ../Doc/distutils/introduction.rst:113
 msgid ""
 "If you want to make things really easy for your users, you can create one or"
 " more built distributions for them.  For instance, if you are running on a "
@@ -220,13 +221,13 @@ msgstr ""
 "(このプラットフォーム向けのビルド済み配布物としてはもっとも適切な) インストーラを作成できます。これには "
 ":command:`bdist_wininst` を使います。例えば::"
 
-#: ../../distutils/introduction.rst:121
+#: ../Doc/distutils/introduction.rst:121
 msgid ""
 "will create an executable installer, :file:`foo-1.0.win32.exe`, in the "
 "current directory."
 msgstr "とすると、実行可能なインストーラ形式、 :file:`foo-1.0.win32.exe` が現在のディレクトリに作成されます。"
 
-#: ../../distutils/introduction.rst:124
+#: ../Doc/distutils/introduction.rst:124
 msgid ""
 "Other useful built distribution formats are RPM, implemented by the "
 ":command:`bdist_rpm` command, Solaris :program:`pkgtool` "
@@ -239,7 +240,7 @@ msgstr ""
 "(:command:`bdist_sdux`) があります。例えば、以下のコマンドを実行すると、 :file:`foo-1.0.noarch.rpm` "
 "という名前の RPM ファイルを作成します::"
 
-#: ../../distutils/introduction.rst:132
+#: ../Doc/distutils/introduction.rst:132
 msgid ""
 "(The :command:`bdist_rpm` command uses the :command:`rpm` executable, "
 "therefore this has to be run on an RPM-based system such as Red Hat Linux, "
@@ -248,17 +249,17 @@ msgstr ""
 "(:command:`bdist_rpm` コマンドは :command:`rpm` コマンドを使うため、 Red Hat Linux や SuSE "
 "Linux、 Mandrake Linux といった RPM ベースのシステムで実行しなければなりません)"
 
-#: ../../distutils/introduction.rst:136
+#: ../Doc/distutils/introduction.rst:136
 msgid ""
 "You can find out what distribution formats are available at any time by "
 "running ::"
 msgstr "どの配布形式が利用できるかは、これを実行すれば分かります ::"
 
-#: ../../distutils/introduction.rst:145
+#: ../Doc/distutils/introduction.rst:145
 msgid "General Python terminology"
 msgstr "Python 一般の用語"
 
-#: ../../distutils/introduction.rst:147
+#: ../Doc/distutils/introduction.rst:147
 msgid ""
 "If you're reading this document, you probably have a good idea of what "
 "modules, extensions, and so forth are.  Nevertheless, just to be sure that "
@@ -269,11 +270,11 @@ msgstr ""
 "などが何を表すのかをよく知っているかもしれません。とはいえ、読者がみな共通のスタートポイントに立って Distutils "
 "の操作を始められるように、ここで一般的な Python 用語について以下のような用語集を示しておきます:"
 
-#: ../../distutils/introduction.rst:155
+#: ../Doc/distutils/introduction.rst:155
 msgid "module"
 msgstr "module"
 
-#: ../../distutils/introduction.rst:153
+#: ../Doc/distutils/introduction.rst:153
 msgid ""
 "the basic unit of code reusability in Python: a block of code imported by "
 "some other code.  Three types of modules concern us here: pure Python "
@@ -282,11 +283,11 @@ msgstr ""
 "Python においてコードを再利用する際の基本単位: すなわち、他のコードから import "
 "されるひとかたまりのコードです。ここでは、三種類のモジュール: pure Python モジュール、拡張モジュール、パッケージが関わってきます。"
 
-#: ../../distutils/introduction.rst:160
+#: ../Doc/distutils/introduction.rst:160
 msgid "pure Python module"
 msgstr "pure Python モジュール"
 
-#: ../../distutils/introduction.rst:158
+#: ../Doc/distutils/introduction.rst:158
 msgid ""
 "a module written in Python and contained in a single :file:`.py` file (and "
 "possibly associated :file:`.pyc` files).  Sometimes referred to as a \"pure "
@@ -295,11 +296,11 @@ msgstr ""
 "Python で書かれ、単一の :file:`.py`  ファイル内に収められたモジュールです (:file:`.pyc` ファイルと関連があります) "
 "。 \"pure モジュール  (pure module)\" と呼ばれることもあります。"
 
-#: ../../distutils/introduction.rst:168
+#: ../Doc/distutils/introduction.rst:168
 msgid "extension module"
 msgstr "extension module"
 
-#: ../../distutils/introduction.rst:163
+#: ../Doc/distutils/introduction.rst:163
 msgid ""
 "a module written in the low-level language of the Python implementation: "
 "C/C++ for Python, Java for Jython. Typically contained in a single "
@@ -315,11 +316,11 @@ msgstr ""
 "という拡張子が与えられています)、 Jython 拡張のための Java クラスといった具合です。 (現状では、 Distutils は Python "
 "向けの C/C++ 拡張モジュールしか扱わないので注意してください。)"
 
-#: ../../distutils/introduction.rst:173
+#: ../Doc/distutils/introduction.rst:173
 msgid "package"
 msgstr "package"
 
-#: ../../distutils/introduction.rst:171
+#: ../Doc/distutils/introduction.rst:171
 msgid ""
 "a module that contains other modules; typically contained in a directory in "
 "the filesystem and distinguished from other directories by the presence of a"
@@ -328,11 +329,11 @@ msgstr ""
 "他のモジュールが入っているモジュールです; 通常、ファイルシステム内のあるディレクトリに収められ、 :file:`__init__.py` "
 "が入っていることで通常のディレクトリと区別できます。"
 
-#: ../../distutils/introduction.rst:183
+#: ../Doc/distutils/introduction.rst:183
 msgid "root package"
 msgstr "ルートパッケージ"
 
-#: ../../distutils/introduction.rst:176
+#: ../Doc/distutils/introduction.rst:176
 msgid ""
 "the root of the hierarchy of packages.  (This isn't really a package, since "
 "it doesn't have an :file:`__init__.py` file.  But we have to call it "
@@ -347,21 +348,21 @@ msgstr ""
 "標準ライブラリの大部分はルートパッケージに入っています、また、多くの小規模な単体のサードパーティモジュールで、他の大規模なモジュールコレクションに属していないものもここに入ります。正規のパッケージと違い、ルートパッケージ上のモジュールの実体は様々なディレクトリにあります:"
 " 実際は、 ``sys.path`` に列挙されているディレクトリ全てが、ルートパッケージに配置されるモジュールの内容に影響します。"
 
-#: ../../distutils/introduction.rst:188
+#: ../Doc/distutils/introduction.rst:188
 msgid "Distutils-specific terminology"
 msgstr "Distutils 固有の用語"
 
-#: ../../distutils/introduction.rst:190
+#: ../Doc/distutils/introduction.rst:190
 msgid ""
 "The following terms apply more specifically to the domain of distributing "
 "Python modules using the Distutils:"
 msgstr "以下は Distutils を使って Python モジュールを配布する際に使われる特有の用語です:"
 
-#: ../../distutils/introduction.rst:199
+#: ../Doc/distutils/introduction.rst:199
 msgid "module distribution"
 msgstr "モジュール配布物"
 
-#: ../../distutils/introduction.rst:194
+#: ../Doc/distutils/introduction.rst:194
 msgid ""
 "a collection of Python modules distributed together as a single downloadable"
 " resource and meant to be installed *en masse*.  Examples of some well-known"
@@ -375,11 +376,11 @@ msgstr ""
 "Library)、mxBase です。(Python の文脈で既に使われてるとき以外は、これは *パッケージ* と呼ばれます: 1 "
 "つのモジュール配布物は 0 個か 1 個かもっと多くの Python パッケージを含みます。)"
 
-#: ../../distutils/introduction.rst:203
+#: ../Doc/distutils/introduction.rst:203
 msgid "pure module distribution"
 msgstr "pure module distribution"
 
-#: ../../distutils/introduction.rst:202
+#: ../Doc/distutils/introduction.rst:202
 msgid ""
 "a module distribution that contains only pure Python modules and packages. "
 "Sometimes referred to as a \"pure distribution.\""
@@ -387,21 +388,21 @@ msgstr ""
 "pure Python モジュールやパッケージだけが入ったモジュール配布物です。\"pure 配布物 (pure distribution)\" "
 "とも呼ばれます。"
 
-#: ../../distutils/introduction.rst:207
+#: ../Doc/distutils/introduction.rst:207
 msgid "non-pure module distribution"
 msgstr "non-pure module distribution"
 
-#: ../../distutils/introduction.rst:206
+#: ../Doc/distutils/introduction.rst:206
 msgid ""
 "a module distribution that contains at least one extension module.  "
 "Sometimes referred to as a \"non-pure distribution.\""
 msgstr "少なくとも一つの拡張モジュールが入ったモジュール配布物です。\"非 pure 配布物\"とも呼びます。"
 
-#: ../../distutils/introduction.rst:211
+#: ../Doc/distutils/introduction.rst:211
 msgid "distribution root"
 msgstr "配布物ルート"
 
-#: ../../distutils/introduction.rst:210
+#: ../Doc/distutils/introduction.rst:210
 msgid ""
 "the top-level directory of your source tree (or  source distribution); the "
 "directory where :file:`setup.py` exists.  Generally  :file:`setup.py` will "

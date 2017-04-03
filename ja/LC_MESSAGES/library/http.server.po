@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: 秘湯 <xwhhsprings@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -17,20 +18,20 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../library/http.server.rst:2
+#: ../Doc/library/http.server.rst:2
 msgid ":mod:`http.server` --- HTTP servers"
 msgstr ":mod:`http.server` --- HTTP サーバ"
 
-#: ../../library/http.server.rst:7
+#: ../Doc/library/http.server.rst:7
 msgid "**Source code:** :source:`Lib/http/server.py`"
 msgstr "**ソースコード:** :source:`Lib/http/server.py`"
 
-#: ../../library/http.server.rst:17
+#: ../Doc/library/http.server.rst:17
 msgid ""
 "This module defines classes for implementing HTTP servers (Web servers)."
 msgstr "このモジュールは HTTP (web) サーバを実装するためのクラスを提供しています。"
 
-#: ../../library/http.server.rst:19
+#: ../Doc/library/http.server.rst:19
 msgid ""
 "One class, :class:`HTTPServer`, is a :class:`socketserver.TCPServer` "
 "subclass. It creates and listens at the HTTP socket, dispatching the "
@@ -40,7 +41,7 @@ msgstr ""
 ":class:`HTTPServer` は HTTP ソケットを生成してリクエスト待ち (listen) を行い、リクエストをハンドラに渡します。\n"
 "サーバを作成して動作させるためのコードは以下のようになります::"
 
-#: ../../library/http.server.rst:31
+#: ../Doc/library/http.server.rst:31
 msgid ""
 "This class builds on the :class:`~socketserver.TCPServer` class by storing "
 "the server address as instance variables named :attr:`server_name` and "
@@ -50,7 +51,7 @@ msgstr ""
 "このクラスは :class:`~socketserver.TCPServer` クラスの上に構築されており、サーバのアドレスをインスタンス変数 :attr:`server_name` および :attr:`server_port` に記憶します。\n"
 "サーバはハンドラからアクセス可能で、通常ハンドラの :attr:`server` インスタンス変数からアクセスします。"
 
-#: ../../library/http.server.rst:37
+#: ../Doc/library/http.server.rst:37
 msgid ""
 "The :class:`HTTPServer` must be given a *RequestHandlerClass* on "
 "instantiation, of which this module provides three different variants:"
@@ -58,7 +59,7 @@ msgstr ""
 ":class:`HTTPServer` は *RequestHandlerClass* "
 "の初期化のときに与えられなければならず、このモジュールはこのクラスの3つの変種を提供しています:"
 
-#: ../../library/http.server.rst:42
+#: ../Doc/library/http.server.rst:42
 msgid ""
 "This class is used to handle the HTTP requests that arrive at the server.  "
 "By itself, it cannot respond to any actual HTTP requests; it must be "
@@ -70,7 +71,7 @@ msgstr ""
 "このメソッド自体では、実際のリクエストに応答することはできません; (GET や POST のような) 各リクエストメソッドを処理するためにはサブクラス化しなければなりません。\n"
 ":class:`BaseHTTPRequestHandler` では、サブクラスで使うためのクラスやインスタンス変数、メソッド群を数多く提供しています。"
 
-#: ../../library/http.server.rst:48
+#: ../Doc/library/http.server.rst:48
 msgid ""
 "The handler will parse the request and the headers, then call a method "
 "specific to the request type. The method name is constructed from the "
@@ -84,21 +85,21 @@ msgstr ""
 "メソッドが引数なしで呼び出されます。リクエストに関連する情報は全て、ハンドラのインスタンス変数に記憶されています。サブクラスでは "
 ":meth:`__init__` メソッドを上書きしたり拡張したりする必要はありません。"
 
-#: ../../library/http.server.rst:55
+#: ../Doc/library/http.server.rst:55
 msgid ":class:`BaseHTTPRequestHandler` has the following instance variables:"
 msgstr ":class:`BaseHTTPRequestHandler` は以下のインスタンス変数を持っています:"
 
-#: ../../library/http.server.rst:59
+#: ../Doc/library/http.server.rst:59
 msgid ""
 "Contains a tuple of the form ``(host, port)`` referring to the client's "
 "address."
 msgstr "HTTP クライアントのアドレスを参照している、``(host, port)`` の形式をとるタプルが入っています。"
 
-#: ../../library/http.server.rst:64
+#: ../Doc/library/http.server.rst:64
 msgid "Contains the server instance."
 msgstr "server インスタンスが入っています。"
 
-#: ../../library/http.server.rst:68
+#: ../Doc/library/http.server.rst:68
 msgid ""
 "Boolean that should be set before :meth:`handle_one_request` returns, "
 "indicating if another request may be expected, or if the connection should "
@@ -107,7 +108,7 @@ msgstr ""
 ":meth:`handle_one_request` "
 "が返る前に設定すべき真偽値で、別のリクエストが期待されているかどうか、もしくはコネクションを切断すべきかどうかを指し示しています。"
 
-#: ../../library/http.server.rst:74
+#: ../Doc/library/http.server.rst:74
 msgid ""
 "Contains the string representation of the HTTP request line. The terminating"
 " CRLF is stripped. This attribute should be set by "
@@ -119,20 +120,20 @@ msgstr ""
 "この属性は :meth:`handle_one_request` によって設定されるべきです。\n"
 "妥当なリクエスト行が1行も処理されなかった場合は、空文字列に設定されるべきです。"
 
-#: ../../library/http.server.rst:81
+#: ../Doc/library/http.server.rst:81
 msgid "Contains the command (request type). For example, ``'GET'``."
 msgstr "HTTP 命令 (リクエスト形式) が入っています。例えば ``'GET'`` です。"
 
-#: ../../library/http.server.rst:85
+#: ../Doc/library/http.server.rst:85
 msgid "Contains the request path."
 msgstr "リクエストされたパスが入っています。"
 
-#: ../../library/http.server.rst:89
+#: ../Doc/library/http.server.rst:89
 msgid ""
 "Contains the version string from the request. For example, ``'HTTP/1.0'``."
 msgstr "リクエストのバージョン文字列が入っています。例えば ``'HTTP/1.0'`` です。"
 
-#: ../../library/http.server.rst:93
+#: ../Doc/library/http.server.rst:93
 msgid ""
 "Holds an instance of the class specified by the :attr:`MessageClass` class "
 "variable. This instance parses and manages the headers in the HTTP request. "
@@ -144,13 +145,13 @@ msgstr ""
 "このインスタンスは HTTP リクエストのヘッダを解釈し、管理しています。\n"
 ":mod:`http.client` の :func:`~http.client.parse_headers` 関数がヘッダを解釈するために使われ、 HTTP リクエストが妥当な :rfc:`2822` スタイルのヘッダを提供することを要求します。"
 
-#: ../../library/http.server.rst:101
+#: ../Doc/library/http.server.rst:101
 msgid ""
 "An :class:`io.BufferedIOBase` input stream, ready to read from the start of "
 "the optional input data."
 msgstr ""
 
-#: ../../library/http.server.rst:106
+#: ../Doc/library/http.server.rst:106
 msgid ""
 "Contains the output stream for writing a response back to the client. Proper"
 " adherence to the HTTP protocol must be used when writing to this stream."
@@ -158,15 +159,15 @@ msgstr ""
 "クライアントに返送する応答を書き込むための出力ストリームが入っています。このストリームに書き込む際には、HTTP "
 "プロトコルに従った形式をとらなければなりません。"
 
-#: ../../library/http.server.rst:110
+#: ../Doc/library/http.server.rst:110
 msgid "This is an :class:`io.BufferedIOBase` stream."
 msgstr ""
 
-#: ../../library/http.server.rst:113
+#: ../Doc/library/http.server.rst:113
 msgid ":class:`BaseHTTPRequestHandler` has the following attributes:"
 msgstr ""
 
-#: ../../library/http.server.rst:117
+#: ../Doc/library/http.server.rst:117
 msgid ""
 "Specifies the server software version.  You may want to override this. The "
 "format is multiple whitespace-separated strings, where each string is of the"
@@ -175,7 +176,7 @@ msgstr ""
 "サーバのソフトウェアバージョンを指定します。この値は上書きする必要が生じるかもしれません。書式は複数の文字列を空白で分割したもので、各文字列はソフトウェア名[/バージョン]"
 " の形式をとります。例えば、``'BaseHTTP/0.2'`` です。"
 
-#: ../../library/http.server.rst:123
+#: ../Doc/library/http.server.rst:123
 msgid ""
 "Contains the Python system version, in a form usable by the "
 ":attr:`version_string` method and the :attr:`server_version` class variable."
@@ -184,7 +185,7 @@ msgstr ""
 "Python 処理系のバージョンが, :attr:`version_string` メソッドや :attr:`server_version` "
 "クラス変数で利用可能な形式で入っています。例えば ``'Python/1.4'`` です。"
 
-#: ../../library/http.server.rst:129
+#: ../Doc/library/http.server.rst:129
 msgid ""
 "Specifies a format string that should be used by :meth:`send_error` method "
 "for building an error response to the client. The string is filled by "
@@ -192,7 +193,7 @@ msgid ""
 "passed to :meth:`send_error`."
 msgstr ""
 
-#: ../../library/http.server.rst:136
+#: ../Doc/library/http.server.rst:136
 msgid ""
 "Specifies the Content-Type HTTP header of error responses sent to the "
 "client.  The default value is ``'text/html'``."
@@ -200,7 +201,7 @@ msgstr ""
 "エラーレスポンスをクライアントに送信する時に使う Content-Type HTTP ヘッダを指定します。デフォルトでは ``'text/html'``"
 " です。"
 
-#: ../../library/http.server.rst:141
+#: ../Doc/library/http.server.rst:141
 msgid ""
 "This specifies the HTTP protocol version used in responses.  If set to "
 "``'HTTP/1.1'``, the server will permit HTTP persistent connections; however,"
@@ -213,7 +214,7 @@ msgstr ""
 "(:meth:`send_header` を使って) 含め *なければなりません* 。以前のバージョンとの互換性を保つため、標準の設定値は "
 "``'HTTP/1.0'`` です。"
 
-#: ../../library/http.server.rst:149
+#: ../Doc/library/http.server.rst:149
 msgid ""
 "Specifies an :class:`email.message.Message`\\ -like class to parse HTTP "
 "headers.  Typically, this is not overridden, and it defaults to "
@@ -222,7 +223,7 @@ msgstr ""
 "HTTP ヘッダを解釈するための :class:`email.message.Message` 類似のクラスを指定します。\n"
 "通常この値が上書きされることはなく、デフォルトの :class:`http.client.HTTPMessage` になっています。"
 
-#: ../../library/http.server.rst:155
+#: ../Doc/library/http.server.rst:155
 msgid ""
 "This attribute contains a mapping of error code integers to two-element "
 "tuples containing a short and long message. For example, ``{code: "
@@ -231,11 +232,11 @@ msgid ""
 "  It is used by :meth:`send_response_only` and :meth:`send_error` methods."
 msgstr ""
 
-#: ../../library/http.server.rst:161
+#: ../Doc/library/http.server.rst:161
 msgid "A :class:`BaseHTTPRequestHandler` instance has the following methods:"
 msgstr ":class:`BaseHTTPRequestHandler` インスタンスは以下のメソッドを持っています:"
 
-#: ../../library/http.server.rst:165
+#: ../Doc/library/http.server.rst:165
 msgid ""
 "Calls :meth:`handle_one_request` once (or, if persistent connections are "
 "enabled, multiple times) to handle incoming HTTP requests. You should never "
@@ -245,14 +246,14 @@ msgstr ""
 "呼び出して、HTTPリクエストを処理します。このメソッドを上書きする必要はまったくありません; そうする代わりに適切な :meth:`do_\\*` "
 "を実装してください。"
 
-#: ../../library/http.server.rst:172
+#: ../Doc/library/http.server.rst:172
 msgid ""
 "This method will parse and dispatch the request to the appropriate "
 ":meth:`do_\\*` method.  You should never need to override it."
 msgstr ""
 "このメソッドはリクエストを解釈し、適切な :meth:`do_\\*` メソッドに転送します。このメソッドを上書きする必要はまったくありません。"
 
-#: ../../library/http.server.rst:177
+#: ../Doc/library/http.server.rst:177
 msgid ""
 "When a HTTP/1.1 compliant server receives an ``Expect: 100-continue`` "
 "request header it responds back with a ``100 Continue`` followed by ``200 "
@@ -264,7 +265,7 @@ msgstr ""
 "このメソッドは、サーバがクライアントに継続を要求しない場合、エラーを送出するようにオーバーライドできます。\n"
 "例えば、サーバはレスポンスヘッダとして ``417 Expectation Failed`` を送る選択をし、 ``return False`` とできます。"
 
-#: ../../library/http.server.rst:188
+#: ../Doc/library/http.server.rst:188
 msgid ""
 "Sends and logs a complete error reply to the client. The numeric *code* "
 "specifies the HTTP error code, with *message* as an optional, short, human "
@@ -279,13 +280,13 @@ msgid ""
 "Reset Content``, ``304 Not Modified``."
 msgstr ""
 
-#: ../../library/http.server.rst:200
+#: ../Doc/library/http.server.rst:200
 msgid ""
 "The error response includes a Content-Length header. Added the *explain* "
 "argument."
 msgstr ""
 
-#: ../../library/http.server.rst:206
+#: ../Doc/library/http.server.rst:206
 msgid ""
 "Adds a response header to the headers buffer and logs the accepted request. "
 "The HTTP response line is written to the internal buffer, followed by "
@@ -296,13 +297,13 @@ msgid ""
 "followed by an :meth:`end_headers` call."
 msgstr ""
 
-#: ../../library/http.server.rst:215
+#: ../Doc/library/http.server.rst:215
 msgid ""
 "Headers are stored to an internal buffer and :meth:`end_headers` needs to be"
 " called explicitly."
 msgstr ""
 
-#: ../../library/http.server.rst:221
+#: ../Doc/library/http.server.rst:221
 msgid ""
 "Adds the HTTP header to an internal buffer which will be written to the "
 "output stream when either :meth:`end_headers` or :meth:`flush_headers` is "
@@ -311,11 +312,11 @@ msgid ""
 ":meth:`end_headers` MUST BE called in order to complete the operation."
 msgstr ""
 
-#: ../../library/http.server.rst:227
+#: ../Doc/library/http.server.rst:227
 msgid "Headers are stored in an internal buffer."
 msgstr "ヘッダは内部バッファに保存されます。"
 
-#: ../../library/http.server.rst:232
+#: ../Doc/library/http.server.rst:232
 msgid ""
 "Sends the response header only, used for the purposes when ``100 Continue`` "
 "response is sent by the server to the client. The headers not buffered and "
@@ -323,23 +324,23 @@ msgid ""
 "message corresponding the response *code*  is sent."
 msgstr ""
 
-#: ../../library/http.server.rst:241
+#: ../Doc/library/http.server.rst:241
 msgid ""
 "Adds a blank line (indicating the end of the HTTP headers in the response) "
 "to the headers buffer and calls :meth:`flush_headers()`."
 msgstr ""
 
-#: ../../library/http.server.rst:245
+#: ../Doc/library/http.server.rst:245
 msgid "The buffered headers are written to the output stream."
 msgstr "バッファされたヘッダは出力ストリームに書き出されます。"
 
-#: ../../library/http.server.rst:250
+#: ../Doc/library/http.server.rst:250
 msgid ""
 "Finally send the headers to the output stream and flush the internal headers"
 " buffer."
 msgstr "最終的にヘッダを出力ストリームに送り、内部ヘッダバッファをフラッシュします。"
 
-#: ../../library/http.server.rst:257
+#: ../Doc/library/http.server.rst:257
 msgid ""
 "Logs an accepted (successful) request. *code* should specify the numeric "
 "HTTP code associated with the response. If a size of the response is "
@@ -348,7 +349,7 @@ msgstr ""
 "受理された (成功した) リクエストをログに記録します。*code* にはこの応答に関連付けられた HTTP "
 "コード番号を指定します。応答メッセージの大きさを知ることができる場合、*size* パラメタに渡すとよいでしょう。"
 
-#: ../../library/http.server.rst:263
+#: ../Doc/library/http.server.rst:263
 msgid ""
 "Logs an error when a request cannot be fulfilled. By default, it passes the "
 "message to :meth:`log_message`, so it takes the same arguments (*format* and"
@@ -357,7 +358,7 @@ msgstr ""
 "リクエストを遂行できなかった際に、エラーをログに記録します。標準では、メッセージを :meth:`log_message` に渡します。従って同じ引数 "
 "(*format* と追加の値) を取ります。"
 
-#: ../../library/http.server.rst:270
+#: ../Doc/library/http.server.rst:270
 msgid ""
 "Logs an arbitrary message to ``sys.stderr``. This is typically overridden to"
 " create custom error logging mechanisms. The *format* argument is a standard"
@@ -370,57 +371,57 @@ msgstr ""
 "に渡された追加の引数は書式化の入力として適用されます。ログ記録される全てのメッセージには、クライアントの IP "
 "アドレスおよび現在の日付、時刻が先頭に付けられます。"
 
-#: ../../library/http.server.rst:278
+#: ../Doc/library/http.server.rst:278
 msgid ""
 "Returns the server software's version string. This is a combination of the "
 ":attr:`server_version` and :attr:`sys_version` attributes."
 msgstr ""
 
-#: ../../library/http.server.rst:283
+#: ../Doc/library/http.server.rst:283
 msgid ""
 "Returns the date and time given by *timestamp* (which must be ``None`` or in"
 " the format returned by :func:`time.time`), formatted for a message header. "
 "If *timestamp* is omitted, it uses the current date and time."
 msgstr ""
 
-#: ../../library/http.server.rst:287
+#: ../Doc/library/http.server.rst:287
 msgid "The result looks like ``'Sun, 06 Nov 1994 08:49:37 GMT'``."
 msgstr "出力は ``'Sun, 06 Nov 1994 08:49:37 GMT'`` のようになります。"
 
-#: ../../library/http.server.rst:291
+#: ../Doc/library/http.server.rst:291
 msgid "Returns the current date and time, formatted for logging."
 msgstr "ログ記録向けに書式化された、現在の日付および時刻を返します。"
 
-#: ../../library/http.server.rst:295
+#: ../Doc/library/http.server.rst:295
 msgid "Returns the client address."
 msgstr "クライアントのアドレスを返します。"
 
-#: ../../library/http.server.rst:297
+#: ../Doc/library/http.server.rst:297
 msgid ""
 "Previously, a name lookup was performed. To avoid name resolution delays, it"
 " now always returns the IP address."
 msgstr ""
 
-#: ../../library/http.server.rst:304
+#: ../Doc/library/http.server.rst:304
 msgid ""
 "This class serves files from the current directory and below, directly "
 "mapping the directory structure to HTTP requests."
 msgstr "このクラスは、現在のディレクトリ以下にあるファイルを、HTTP リクエストにおけるディレクトリ構造に直接対応付けて提供します。"
 
-#: ../../library/http.server.rst:307
+#: ../Doc/library/http.server.rst:307
 msgid ""
 "A lot of the work, such as parsing the request, is done by the base class "
 ":class:`BaseHTTPRequestHandler`.  This class implements the :func:`do_GET` "
 "and :func:`do_HEAD` functions."
 msgstr ""
 
-#: ../../library/http.server.rst:311
+#: ../Doc/library/http.server.rst:311
 msgid ""
 "The following are defined as class-level attributes of "
 ":class:`SimpleHTTPRequestHandler`:"
 msgstr ":class:`SimpleHTTPRequestHandler` では以下のメンバ変数を定義しています:"
 
-#: ../../library/http.server.rst:316
+#: ../Doc/library/http.server.rst:316
 msgid ""
 "This will be ``\"SimpleHTTP/\" + __version__``, where ``__version__`` is "
 "defined at the module level."
@@ -428,7 +429,7 @@ msgstr ""
 "この値は ``\"SimpleHTTP/\" + __version__`` になります。``__version__`` "
 "はこのモジュールで定義されている値です。"
 
-#: ../../library/http.server.rst:321
+#: ../Doc/library/http.server.rst:321
 msgid ""
 "A dictionary mapping suffixes into MIME types. The default is signified by "
 "an empty string, and is considered to be ``application/octet-stream``. The "
@@ -438,12 +439,12 @@ msgstr ""
 "拡張子を MIME 型指定子に対応付ける辞書です。標準の型指定は空文字列で表され、この値は ``application/octet-stream`` "
 "と見なされます。対応付けは大小文字の区別をするので、小文字のキーのみを入れるべきです。"
 
-#: ../../library/http.server.rst:326
+#: ../Doc/library/http.server.rst:326
 msgid ""
 "The :class:`SimpleHTTPRequestHandler` class defines the following methods:"
 msgstr ":class:`SimpleHTTPRequestHandler` では以下のメソッドを定義しています:"
 
-#: ../../library/http.server.rst:330
+#: ../Doc/library/http.server.rst:330
 msgid ""
 "This method serves the ``'HEAD'`` request type: it sends the headers it "
 "would send for the equivalent ``GET`` request. See the :meth:`do_GET` method"
@@ -453,13 +454,13 @@ msgstr ""
 "リクエストの時に送信されるものと同じヘッダを送信します。送信される可能性のあるヘッダについての完全な説明は :meth:`do_GET` "
 "メソッドを参照してください。"
 
-#: ../../library/http.server.rst:336
+#: ../Doc/library/http.server.rst:336
 msgid ""
 "The request is mapped to a local file by interpreting the request as a path "
 "relative to the current working directory."
 msgstr "リクエストを現在の作業ディレクトリからの相対的なパスとして解釈することで、リクエストをローカルシステム上のファイルと対応付けます。"
 
-#: ../../library/http.server.rst:339
+#: ../Doc/library/http.server.rst:339
 msgid ""
 "If the request was mapped to a directory, the directory is checked for a "
 "file named ``index.html`` or ``index.htm`` (in that order). If found, the "
@@ -469,7 +470,7 @@ msgid ""
 "response if the :func:`~os.listdir` fails."
 msgstr ""
 
-#: ../../library/http.server.rst:346
+#: ../Doc/library/http.server.rst:346
 msgid ""
 "If the request was mapped to a file, it is opened and the contents are "
 "returned.  Any :exc:`OSError` exception in opening the requested file is "
@@ -478,7 +479,7 @@ msgid ""
 " *extensions_map* variable."
 msgstr ""
 
-#: ../../library/http.server.rst:352
+#: ../Doc/library/http.server.rst:352
 msgid ""
 "A ``'Content-type:'`` header with the guessed content type is output, "
 "followed by a ``'Content-Length:'`` header with the file's size and a "
@@ -487,7 +488,7 @@ msgstr ""
 "出力は ``'Content-type:'`` と推測されたコンテントタイプで、その後にファイルサイズを示す ``'Content-Length;'``"
 " ヘッダと、ファイルの更新日時を示す ``'Last-Modified:'`` ヘッダが続きます。"
 
-#: ../../library/http.server.rst:356
+#: ../Doc/library/http.server.rst:356
 msgid ""
 "Then follows a blank line signifying the end of the headers, and then the "
 "contents of the file are output. If the file's MIME type starts with "
@@ -496,38 +497,38 @@ msgstr ""
 "そしてヘッダの終了を示す空白行が続き、さらにその後にファイルの内容が続きます。このファイルはコンテントタイプが ``text/`` "
 "で始まっている場合はテキストモードで、そうでなければバイナリモードで開かれます。"
 
-#: ../../library/http.server.rst:360
+#: ../Doc/library/http.server.rst:360
 msgid ""
 "For example usage, see the implementation of the :func:`test` function "
 "invocation in the :mod:`http.server` module."
 msgstr ""
 
-#: ../../library/http.server.rst:364
+#: ../Doc/library/http.server.rst:364
 msgid ""
 "The :class:`SimpleHTTPRequestHandler` class can be used in the following "
 "manner in order to create a very basic webserver serving files relative to "
 "the current directory::"
 msgstr ""
 
-#: ../../library/http.server.rst:381
+#: ../Doc/library/http.server.rst:381
 msgid ""
 ":mod:`http.server` can also be invoked directly using the :option:`-m` "
 "switch of the interpreter with a ``port number`` argument.  Similar to the "
 "previous example, this serves files relative to the current directory::"
 msgstr ""
 
-#: ../../library/http.server.rst:387
+#: ../Doc/library/http.server.rst:387
 msgid ""
 "By default, server binds itself to all interfaces.  The option ``-b/--bind``"
 " specifies a specific address to which it should bind.  For example, the "
 "following command causes the server to bind to localhost only::"
 msgstr ""
 
-#: ../../library/http.server.rst:393
+#: ../Doc/library/http.server.rst:393
 msgid "``--bind`` argument was introduced."
 msgstr "``--bind`` 引数が導入されました。"
 
-#: ../../library/http.server.rst:399
+#: ../Doc/library/http.server.rst:399
 msgid ""
 "This class is used to serve either files or output of CGI scripts from the "
 "current directory and below. Note that mapping HTTP hierarchic structure to "
@@ -535,7 +536,7 @@ msgid ""
 ":class:`SimpleHTTPRequestHandler`."
 msgstr ""
 
-#: ../../library/http.server.rst:405
+#: ../Doc/library/http.server.rst:405
 msgid ""
 "CGI scripts run by the :class:`CGIHTTPRequestHandler` class cannot execute "
 "redirects (HTTP code 302), because code 200 (script output follows) is sent "
@@ -545,7 +546,7 @@ msgstr ""
 "(スクリプトの出力が後に続く) を実行に先立って出力される (これがステータスコードになります) ため、リダイレクト(コード302) "
 "を行なうことができません。"
 
-#: ../../library/http.server.rst:410
+#: ../Doc/library/http.server.rst:410
 msgid ""
 "The class will however, run the CGI script, instead of serving it as a file,"
 " if it guesses it to be a CGI script.  Only directory-based CGI are used ---"
@@ -553,7 +554,7 @@ msgid ""
 "denoting CGI scripts."
 msgstr ""
 
-#: ../../library/http.server.rst:415
+#: ../Doc/library/http.server.rst:415
 msgid ""
 "The :func:`do_GET` and :func:`do_HEAD` functions are modified to run CGI "
 "scripts and serve the output, instead of serving files, if the request leads"
@@ -562,22 +563,22 @@ msgstr ""
 ":func:`do_GET` および :func:`do_HEAD` 関数は、HTTP 要求が ``cgi_directories`` "
 "パス以下のどこかを指している場合、ファイルを提供するのではなく、CGI スクリプトを実行してその出力を提供するように変更されています。"
 
-#: ../../library/http.server.rst:419
+#: ../Doc/library/http.server.rst:419
 msgid "The :class:`CGIHTTPRequestHandler` defines the following data member:"
 msgstr ":class:`CGIHTTPRequestHandler` では以下のデータメンバを定義しています:"
 
-#: ../../library/http.server.rst:423
+#: ../Doc/library/http.server.rst:423
 msgid ""
 "This defaults to ``['/cgi-bin', '/htbin']`` and describes directories to "
 "treat as containing CGI scripts."
 msgstr ""
 "この値は標準で ``['/cgi-bin', '/htbin']`` であり、CGI スクリプトを含んでいることを示すディレクトリを記述します。"
 
-#: ../../library/http.server.rst:426
+#: ../Doc/library/http.server.rst:426
 msgid "The :class:`CGIHTTPRequestHandler` defines the following method:"
 msgstr ":class:`CGIHTTPRequestHandler` は以下のメソッドを定義しています:"
 
-#: ../../library/http.server.rst:430
+#: ../Doc/library/http.server.rst:430
 msgid ""
 "This method serves the ``'POST'`` request type, only allowed for CGI "
 "scripts.  Error 501, \"Can only POST to CGI scripts\", is output when trying"
@@ -586,13 +587,13 @@ msgstr ""
 "このメソッドは、CGI スクリプトでのみ許されている ``'POST'`` 型の HTTP 要求に対するサービスを行います。CGI でない url "
 "に対して POST を試みた場合、出力は Error 501, \"Can only POST to CGI scripts\" になります。"
 
-#: ../../library/http.server.rst:434
+#: ../Doc/library/http.server.rst:434
 msgid ""
 "Note that CGI scripts will be run with UID of user nobody, for security "
 "reasons.  Problems with the CGI script will be translated to error 403."
 msgstr ""
 
-#: ../../library/http.server.rst:437
+#: ../Doc/library/http.server.rst:437
 msgid ""
 ":class:`CGIHTTPRequestHandler` can be enabled in the command line by passing"
 " the ``--cgi`` option::"

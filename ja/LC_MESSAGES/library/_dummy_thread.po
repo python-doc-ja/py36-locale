@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Arihiro TAKASE <artakase@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -17,16 +18,16 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../library/_dummy_thread.rst:2
+#: ../Doc/library/_dummy_thread.rst:2
 msgid ""
 ":mod:`_dummy_thread` --- Drop-in replacement for the :mod:`_thread` module"
 msgstr ":mod:`_dummy_thread` --- :mod:`_thread` の代替モジュール"
 
-#: ../../library/_dummy_thread.rst:7
+#: ../Doc/library/_dummy_thread.rst:7
 msgid "**Source code:** :source:`Lib/_dummy_thread.py`"
 msgstr "**ソースコード:** :source:`Lib/_dummy_thread.py`"
 
-#: ../../library/_dummy_thread.rst:11
+#: ../Doc/library/_dummy_thread.rst:11
 msgid ""
 "This module provides a duplicate interface to the :mod:`_thread` module.  It"
 " is meant to be imported when the :mod:`_thread` module is not provided on a"
@@ -35,11 +36,11 @@ msgstr ""
 "このモジュールは :mod:`_thread` モジュールのインターフェースをそっくりまねるものです。 :mod:`_thread` "
 "モジュールがサポートされていないプラットフォームで import することを意図して作られたものです。"
 
-#: ../../library/_dummy_thread.rst:15
+#: ../Doc/library/_dummy_thread.rst:15
 msgid "Suggested usage is::"
 msgstr "おすすめの使い道は::"
 
-#: ../../library/_dummy_thread.rst:22
+#: ../Doc/library/_dummy_thread.rst:22
 msgid ""
 "Be careful to not use this module where deadlock might occur from a thread "
 "being created that blocks waiting for another thread to be created.  This "

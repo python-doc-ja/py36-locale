@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>, 2017\n"
+"Last-Translator: Naoki INADA <songofacandy@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,11 +18,11 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../library/internet.rst:5
+#: ../Doc/library/internet.rst:5
 msgid "Internet Protocols and Support"
 msgstr "インターネットプロトコルとサポート"
 
-#: ../../library/internet.rst:14
+#: ../Doc/library/internet.rst:14
 msgid ""
 "The modules described in this chapter implement Internet protocols and  "
 "support for related technology.  They are all implemented in Python. Most of"

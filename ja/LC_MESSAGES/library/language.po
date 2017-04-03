@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Arihiro TAKASE <artakase@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -17,11 +18,11 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../library/language.rst:5
+#: ../Doc/library/language.rst:5
 msgid "Python Language Services"
 msgstr "Python言語サービス"
 
-#: ../../library/language.rst:7
+#: ../Doc/library/language.rst:7
 msgid ""
 "Python provides a number of modules to assist in working with the Python "
 "language.  These modules support tokenizing, parsing, syntax analysis, "
@@ -29,6 +30,6 @@ msgid ""
 msgstr ""
 "PythonにはPython言語を使って作業するときに役に立つモジュールがたくさん提供されています。これらのモジュールはトークンの切り出し、パース、構文解析、バイトコードのディスアセンブリおよびその他のさまざまな機能をサポートしています。"
 
-#: ../../library/language.rst:11
+#: ../Doc/library/language.rst:11
 msgid "These modules include:"
 msgstr "これらのモジュールには、次のものが含まれています:"

@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Yoshikazu KARASAWA <gymnopedien@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -17,11 +18,11 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../whatsnew/index.rst:5
+#: ../Doc/whatsnew/index.rst:5
 msgid "What's New in Python"
 msgstr "What's New in Python"
 
-#: ../../whatsnew/index.rst:7
+#: ../Doc/whatsnew/index.rst:7
 msgid ""
 "The \"What's New in Python\" series of essays takes tours through the most "
 "important changes between major Python versions.  They are a \"must read\" "
@@ -30,7 +31,7 @@ msgstr ""
 "この\"What's New in "
 "Python\"という一連の文書はPythonのメジャーバージョンにおける最も重要な変更点を紹介します。新しくリリースされた後でも最新の状態であり続けたい人にとって必読のものです。"
 
-#: ../../whatsnew/index.rst:30
+#: ../Doc/whatsnew/index.rst:30
 msgid ""
 "The \"Changelog\" is a HTML version of the file :source:`Misc/NEWS` which "
 "contains *all* nontrivial changes to Python for the current version."

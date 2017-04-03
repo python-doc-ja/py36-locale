@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Yusuke Miyazaki <miyazaki.dev@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -17,15 +18,15 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../library/zipfile.rst:2
+#: ../Doc/library/zipfile.rst:2
 msgid ":mod:`zipfile` --- Work with ZIP archives"
 msgstr ":mod:`zipfile` --- ZIP アーカイブの処理"
 
-#: ../../library/zipfile.rst:10
+#: ../Doc/library/zipfile.rst:10
 msgid "**Source code:** :source:`Lib/zipfile.py`"
 msgstr "**ソースコード:** :source:`Lib/zipfile.py`"
 
-#: ../../library/zipfile.rst:14
+#: ../Doc/library/zipfile.rst:14
 msgid ""
 "The ZIP file format is a common archive and compression standard. This "
 "module provides tools to create, read, write, append, and list a ZIP file.  "
@@ -36,7 +37,7 @@ msgstr ""
 "形式のファイルの作成、読み書き、追記、書庫内のファイル一覧の作成を行うためのツールを提供します。より高度な使い方でこのモジュールを利用したいのであれば、"
 " `PKZIP Application Note`_ に定義されている ZIP ファイルフォーマットの理解が必要になるでしょう。"
 
-#: ../../library/zipfile.rst:19
+#: ../Doc/library/zipfile.rst:19
 msgid ""
 "This module does not currently handle multi-disk ZIP files. It can handle "
 "ZIP files that use the ZIP64 extensions (that is ZIP files that are more "
@@ -49,37 +50,37 @@ msgstr ""
 "は扱えます。このモジュールは暗号化されたアーカイブの復号をサポートしますが、現在暗号化ファイルを作成することはできません。C 言語ではなく、Python"
 " で実装されているため、復号は非常に遅くなっています。"
 
-#: ../../library/zipfile.rst:26
+#: ../Doc/library/zipfile.rst:26
 msgid "The module defines the following items:"
 msgstr "このモジュールは以下の項目を定義しています:"
 
-#: ../../library/zipfile.rst:30
+#: ../Doc/library/zipfile.rst:30
 msgid "The error raised for bad ZIP files."
 msgstr "正常ではない ZIP ファイルに対して送出されるエラーです。"
 
-#: ../../library/zipfile.rst:37
+#: ../Doc/library/zipfile.rst:37
 msgid ""
 "Alias of :exc:`BadZipFile`, for compatibility with older Python versions."
 msgstr ":exc:`BadZipFile` の別名です。過去のバージョンの Python との互換性のために用意されています。"
 
-#: ../../library/zipfile.rst:44
+#: ../Doc/library/zipfile.rst:44
 msgid ""
 "The error raised when a ZIP file would require ZIP64 functionality but that "
 "has not been enabled."
 msgstr "ZIP ファイルが ZIP64 の機能を必要としているが、その機能が有効化されていない場合に送出されるエラーです。"
 
-#: ../../library/zipfile.rst:51
+#: ../Doc/library/zipfile.rst:51
 msgid ""
 "The class for reading and writing ZIP files.  See section :ref:`zipfile-"
 "objects` for constructor details."
 msgstr ""
 "ZIP ファイルの読み書きのためのクラスです。コンストラクタの詳細については、:ref:`zipfile-objects` 節を参照してください。"
 
-#: ../../library/zipfile.rst:58
+#: ../Doc/library/zipfile.rst:58
 msgid "Class for creating ZIP archives containing Python libraries."
 msgstr "Python ライブラリを含む、ZIP アーカイブを作成するためのクラスです。"
 
-#: ../../library/zipfile.rst:63
+#: ../Doc/library/zipfile.rst:63
 msgid ""
 "Class used to represent information about a member of an archive. Instances "
 "of this class are returned by the :meth:`.getinfo` and :meth:`.infolist` "
@@ -96,7 +97,7 @@ msgstr ""
 "はアーカイブメンバのフルネームでなければならず、*date_time* はファイルが最後に変更された日時を表す 6 "
 "個のフィールドのタプルでなければなりません; フィールドは :ref:`zipinfo-objects` 節で説明されています。"
 
-#: ../../library/zipfile.rst:75
+#: ../Doc/library/zipfile.rst:75
 msgid ""
 "Returns ``True`` if *filename* is a valid ZIP file based on its magic "
 "number, otherwise returns ``False``.  *filename* may be a file or file-like "
@@ -105,33 +106,33 @@ msgstr ""
 "*filename* が正しいマジックナンバをもつ ZIP ファイルの時に ``True`` を返し、そうでない場合 ``False`` "
 "を返します。*filename* にはファイルやファイルライクオブジェクトを渡すこともできます。"
 
-#: ../../library/zipfile.rst:78
+#: ../Doc/library/zipfile.rst:78
 msgid "Support for file and file-like objects."
 msgstr "ファイルおよびファイルライクオブジェクトをサポートしました。"
 
-#: ../../library/zipfile.rst:84
+#: ../Doc/library/zipfile.rst:84
 msgid "The numeric constant for an uncompressed archive member."
 msgstr "アーカイブメンバを圧縮しない (複数ファイルを一つにまとめるだけ) ことを表す数値定数です。"
 
-#: ../../library/zipfile.rst:89
+#: ../Doc/library/zipfile.rst:89
 msgid ""
 "The numeric constant for the usual ZIP compression method.  This requires "
 "the :mod:`zlib` module."
 msgstr "通常の ZIP 圧縮方法を表す数値定数です。これには :mod:`zlib` モジュールが必要です。"
 
-#: ../../library/zipfile.rst:95
+#: ../Doc/library/zipfile.rst:95
 msgid ""
 "The numeric constant for the BZIP2 compression method.  This requires the "
 ":mod:`bz2` module."
 msgstr "BZIP2 圧縮方法を表す数値定数です。これには :mod:`bz2` モジュールが必要です。"
 
-#: ../../library/zipfile.rst:102
+#: ../Doc/library/zipfile.rst:102
 msgid ""
 "The numeric constant for the LZMA compression method.  This requires the "
 ":mod:`lzma` module."
 msgstr "LZMA 圧縮方法を表す数値定数です。これには :mod:`lzma` モジュールが必要です。"
 
-#: ../../library/zipfile.rst:109
+#: ../Doc/library/zipfile.rst:109
 msgid ""
 "The ZIP file format specification has included support for bzip2 compression"
 " since 2001, and for LZMA compression since 2006. However, some tools "
@@ -143,31 +144,31 @@ msgstr ""
 " リリースを含む) 一部のツールはこれら圧縮方式をサポートしていないため、ZIP "
 "ファイルの処理を全く受け付けないか、あるいは個々のファイルの抽出に失敗する場合があります。"
 
-#: ../../library/zipfile.rst:120
+#: ../Doc/library/zipfile.rst:120
 msgid "`PKZIP Application Note`_"
 msgstr "`PKZIP Application Note`_"
 
-#: ../../library/zipfile.rst:119
+#: ../Doc/library/zipfile.rst:119
 msgid ""
 "Documentation on the ZIP file format by Phil Katz, the creator of the format"
 " and algorithms used."
 msgstr "ZIP ファイルフォーマットおよびアルゴリズムを作成した Phil Katz によるドキュメント。"
 
-#: ../../library/zipfile.rst:123
+#: ../Doc/library/zipfile.rst:123
 msgid "`Info-ZIP Home Page <http://www.info-zip.org/>`_"
 msgstr "`Info-ZIP Home Page <http://www.info-zip.org/>`_"
 
-#: ../../library/zipfile.rst:123
+#: ../Doc/library/zipfile.rst:123
 msgid ""
 "Information about the Info-ZIP project's ZIP archive programs and "
 "development libraries."
 msgstr "Info-ZIP プロジェクトによる ZIP アーカイブプログラムおよびプログラム開発ライブラリに関する情報。"
 
-#: ../../library/zipfile.rst:130
+#: ../Doc/library/zipfile.rst:130
 msgid "ZipFile Objects"
 msgstr "ZipFile オブジェクト"
 
-#: ../../library/zipfile.rst:135
+#: ../Doc/library/zipfile.rst:135
 msgid ""
 "Open a ZIP file, where *file* can be a path to a file (a string), a file-"
 "like object or a :term:`path-like object`. The *mode* parameter should be "
@@ -193,7 +194,7 @@ msgid ""
 "ZIP file would require ZIP64 extensions."
 msgstr ""
 
-#: ../../library/zipfile.rst:159
+#: ../Doc/library/zipfile.rst:159
 msgid ""
 "If the file is created with mode ``'w'``, ``'x'`` or ``'a'`` and then "
 ":meth:`closed <close>` without adding any files to the archive, the "
@@ -202,7 +203,7 @@ msgstr ""
 "ファイルがモード ``'w'``、 ``'x'`` または ``'a'`` で作成され、その後そのアーカイブにファイルを追加することなく "
 ":meth:`クローズ <close>` された場合、空のアーカイブのための適切な ZIP 構造がファイルに書き込まれます。"
 
-#: ../../library/zipfile.rst:163
+#: ../Doc/library/zipfile.rst:163
 msgid ""
 "ZipFile is also a context manager and therefore supports the :keyword:`with`"
 " statement.  In the example, *myzip* is closed after the :keyword:`with` "
@@ -211,35 +212,35 @@ msgstr ""
 "ZipFile はコンテキストマネージャにもなっているので、:keyword:`with` 文をサポートしています。次の例では、*myzip* は "
 ":keyword:`with` 文のブロックが終了したときに、(たとえ例外が発生したとしても) クローズされます::"
 
-#: ../../library/zipfile.rst:170
+#: ../Doc/library/zipfile.rst:170
 msgid "Added the ability to use :class:`ZipFile` as a context manager."
 msgstr ":class:`ZipFile` をコンテキストマネージャとして使用できるようになりました。"
 
-#: ../../library/zipfile.rst:173
+#: ../Doc/library/zipfile.rst:173
 msgid "Added support for :mod:`bzip2 <bz2>` and :mod:`lzma` compression."
 msgstr ":mod:`bzip2 <bz2>` および :mod:`lzma` 圧縮をサポートしました。"
 
-#: ../../library/zipfile.rst:176 ../../library/zipfile.rst:449
+#: ../Doc/library/zipfile.rst:176 ../Doc/library/zipfile.rst:449
 msgid "ZIP64 extensions are enabled by default."
 msgstr "ZIP64 拡張がデフォルトで有効になりました。"
 
-#: ../../library/zipfile.rst:179
+#: ../Doc/library/zipfile.rst:179
 msgid ""
 "Added support for writing to unseekable streams. Added support for the "
 "``'x'`` mode."
 msgstr "seek 出来ないストリームのサポートが追加されました。``'x'`` モードのサポートが追加されました。"
 
-#: ../../library/zipfile.rst:183
+#: ../Doc/library/zipfile.rst:183
 msgid ""
 "Previously, a plain :exc:`RuntimeError` was raised for unrecognized "
 "compression values."
 msgstr ""
 
-#: ../../library/zipfile.rst:187
+#: ../Doc/library/zipfile.rst:187
 msgid "The *file* parameter accepts a :term:`path-like object`."
 msgstr ""
 
-#: ../../library/zipfile.rst:193
+#: ../Doc/library/zipfile.rst:193
 msgid ""
 "Close the archive file.  You must call :meth:`close` before exiting your "
 "program or essential records will not be written."
@@ -247,7 +248,7 @@ msgstr ""
 "アーカイブファイルをクローズします。:meth:`close` "
 "はプログラムを終了する前に必ず呼び出さなければなりません。さもないとアーカイブ上の重要なレコードが書き込まれません。"
 
-#: ../../library/zipfile.rst:199
+#: ../Doc/library/zipfile.rst:199
 msgid ""
 "Return a :class:`ZipInfo` object with information about the archive member "
 "*name*.  Calling :meth:`getinfo` for a name not currently contained in the "
@@ -256,7 +257,7 @@ msgstr ""
 "アーカイブメンバ *name* に関する情報を持つ :class:`ZipInfo` オブジェクトを返します。アーカイブに含まれないファイル名に対して "
 ":meth:`getinfo` を呼び出すと、:exc:`KeyError` が送出されます。"
 
-#: ../../library/zipfile.rst:206
+#: ../Doc/library/zipfile.rst:206
 msgid ""
 "Return a list containing a :class:`ZipInfo` object for each member of the "
 "archive.  The objects are in the same order as their entries in the actual "
@@ -265,11 +266,11 @@ msgstr ""
 "アーカイブに含まれる各メンバの :class:`ZipInfo` "
 "オブジェクトからなるリストを返します。既存のアーカイブファイルを開いている場合、リストの順番は実際の ZIP ファイル中のメンバの順番と同じになります。"
 
-#: ../../library/zipfile.rst:213
+#: ../Doc/library/zipfile.rst:213
 msgid "Return a list of archive members by name."
 msgstr "アーカイブメンバの名前のリストを返します。"
 
-#: ../../library/zipfile.rst:218
+#: ../Doc/library/zipfile.rst:218
 msgid ""
 "Access a member of the archive as a binary file-like object.  *name* can be "
 "either the name of a file within the archive or a :class:`ZipInfo` object.  "
@@ -277,14 +278,14 @@ msgid ""
 "  *pwd* is the password used to decrypt encrypted ZIP files."
 msgstr ""
 
-#: ../../library/zipfile.rst:223
+#: ../Doc/library/zipfile.rst:223
 msgid ""
 ":meth:`~ZipFile.open` is also a context manager and therefore supports the "
 ":keyword:`with` statement::"
 msgstr ""
 ":meth:`~ZipFile.open` はコンテクストマネージャでもあるので :keyword:`with` 文をサポートしています::"
 
-#: ../../library/zipfile.rst:230
+#: ../Doc/library/zipfile.rst:230
 msgid ""
 "With *mode* ``'r'`` the file-like object (``ZipExtFile``) is read-only and "
 "provides the following methods: :meth:`~io.BufferedIOBase.read`, "
@@ -293,7 +294,7 @@ msgid ""
 " ZipFile."
 msgstr ""
 
-#: ../../library/zipfile.rst:237
+#: ../Doc/library/zipfile.rst:237
 msgid ""
 "With ``mode='w'``, a writable file handle is returned, which supports the "
 ":meth:`~io.BufferedIOBase.write` method.  While a writable file handle is "
@@ -301,7 +302,7 @@ msgid ""
 ":exc:`ValueError`."
 msgstr ""
 
-#: ../../library/zipfile.rst:242
+#: ../Doc/library/zipfile.rst:242
 msgid ""
 "When writing a file, if the file size is not known in advance but may exceed"
 " 2 GiB, pass ``force_zip64=True`` to ensure that the header format is "
@@ -310,7 +311,7 @@ msgid ""
 " use that as the *name* parameter."
 msgstr ""
 
-#: ../../library/zipfile.rst:250
+#: ../Doc/library/zipfile.rst:250
 msgid ""
 "The :meth:`.open`, :meth:`read` and :meth:`extract` methods can take a "
 "filename or a :class:`ZipInfo` object.  You will appreciate this when trying"
@@ -320,25 +321,25 @@ msgstr ""
 ":class:`ZipInfo` オブジェクトを指定できます。これは重複する名前のメンバを含む ZIP "
 "ファイルを読み込むときにそのメリットを享受できるでしょう。"
 
-#: ../../library/zipfile.rst:254
+#: ../Doc/library/zipfile.rst:254
 msgid ""
 "Removed support of ``mode='U'``.  Use :class:`io.TextIOWrapper` for reading "
 "compressed text files in :term:`universal newlines` mode."
 msgstr ""
 
-#: ../../library/zipfile.rst:258
+#: ../Doc/library/zipfile.rst:258
 msgid ""
 ":meth:`open` can now be used to write files into the archive with the "
 "``mode='w'`` option."
 msgstr ""
 
-#: ../../library/zipfile.rst:262
+#: ../Doc/library/zipfile.rst:262
 msgid ""
 "Calling :meth:`.open` on a closed ZipFile will raise a :exc:`ValueError`. "
 "Previously, a :exc:`RuntimeError` was raised."
 msgstr ""
 
-#: ../../library/zipfile.rst:269
+#: ../Doc/library/zipfile.rst:269
 msgid ""
 "Extract a member from the archive to the current working directory; *member*"
 " must be its full name or a :class:`ZipInfo` object.  Its file information "
@@ -350,11 +351,11 @@ msgstr ""
 "オブジェクトでなければなりません。ファイル情報は可能な限り正確に展開されます。*path* は展開先のディレクトリを指定します。*member* "
 "はファイル名または :class:`ZipInfo` オブジェクトです。*pwd* は暗号化ファイルに使われるパスワードです。"
 
-#: ../../library/zipfile.rst:275
+#: ../Doc/library/zipfile.rst:275
 msgid "Returns the normalized path created (a directory or new file)."
 msgstr "作成された (ディレクトリか新ファイルの) 正規化されたパスを返します。"
 
-#: ../../library/zipfile.rst:279
+#: ../Doc/library/zipfile.rst:279
 msgid ""
 "If a member filename is an absolute path, a drive/UNC sharepoint and leading"
 " (back)slashes will be stripped, e.g.: ``///foo/bar`` becomes ``foo/bar`` on"
@@ -370,17 +371,17 @@ msgstr ""
 "は ``foo../ba..r`` となります。Windows では、不正な文字 (``:``, ``<``, ``>``, ``|``, "
 "``\"``, ``?``, および ``*``) はアンダースコア (``_``) で置き換えられます。"
 
-#: ../../library/zipfile.rst:287
+#: ../Doc/library/zipfile.rst:287
 msgid ""
 "Calling :meth:`extract` on a closed ZipFile will raise a :exc:`ValueError`."
 "  Previously, a :exc:`RuntimeError` was raised."
 msgstr ""
 
-#: ../../library/zipfile.rst:291 ../../library/zipfile.rst:314
+#: ../Doc/library/zipfile.rst:291 ../Doc/library/zipfile.rst:314
 msgid "The *path* parameter accepts a :term:`path-like object`."
 msgstr ""
 
-#: ../../library/zipfile.rst:297
+#: ../Doc/library/zipfile.rst:297
 msgid ""
 "Extract all members from the archive to the current working directory.  "
 "*path* specifies a different directory to extract to.  *members* is optional"
@@ -391,7 +392,7 @@ msgstr ""
 "は、オプションで、:meth:`namelist` で返されるリストの部分集合でなければなりません。*pwd* "
 "は、暗号化ファイルに使われるパスワードです。"
 
-#: ../../library/zipfile.rst:304
+#: ../Doc/library/zipfile.rst:304
 msgid ""
 "Never extract archives from untrusted sources without prior inspection. It "
 "is possible that files are created outside of *path*, e.g. members that have"
@@ -402,21 +403,21 @@ msgstr ""
 "の外側に作成することができるからです。例えば、 ``\"/\"``  で始まる絶対パスを持ったメンバーや、 2 つのドット ``\"..\"`` "
 "を持つファイル名などの場合です。このモジュールはそれを避けようとします。 :meth:`extract` の注釈を参照してください。"
 
-#: ../../library/zipfile.rst:310
+#: ../Doc/library/zipfile.rst:310
 msgid ""
 "Calling :meth:`extractall` on a closed ZipFile will raise a "
 ":exc:`ValueError`.  Previously, a :exc:`RuntimeError` was raised."
 msgstr ""
 
-#: ../../library/zipfile.rst:320
+#: ../Doc/library/zipfile.rst:320
 msgid "Print a table of contents for the archive to ``sys.stdout``."
 msgstr "アーカイブの内容の一覧を ``sys.stdout`` に出力します。"
 
-#: ../../library/zipfile.rst:325
+#: ../Doc/library/zipfile.rst:325
 msgid "Set *pwd* as default password to extract encrypted files."
 msgstr "*pwd* を展開する圧縮ファイルのデフォルトパスワードとして指定します。"
 
-#: ../../library/zipfile.rst:330
+#: ../Doc/library/zipfile.rst:330
 msgid ""
 "Return the bytes of the file *name* in the archive.  *name* is the name of "
 "the file in the archive, or a :class:`ZipInfo` object.  The archive must be "
@@ -429,25 +430,25 @@ msgid ""
 "corresponding compression module is not available."
 msgstr ""
 
-#: ../../library/zipfile.rst:339
+#: ../Doc/library/zipfile.rst:339
 msgid ""
 "Calling :meth:`read` on a closed ZipFile will raise a :exc:`ValueError`. "
 "Previously, a :exc:`RuntimeError` was raised."
 msgstr ""
 
-#: ../../library/zipfile.rst:346
+#: ../Doc/library/zipfile.rst:346
 msgid ""
 "Read all the files in the archive and check their CRC's and file headers. "
 "Return the name of the first bad file, or else return ``None``."
 msgstr ""
 
-#: ../../library/zipfile.rst:349
+#: ../Doc/library/zipfile.rst:349
 msgid ""
 "Calling :meth:`testfile` on a closed ZipFile will raise a :exc:`ValueError`."
 "  Previously, a :exc:`RuntimeError` was raised."
 msgstr ""
 
-#: ../../library/zipfile.rst:356
+#: ../Doc/library/zipfile.rst:356
 msgid ""
 "Write the file named *filename* to the archive, giving it the archive name "
 "*arcname* (by default, this will be the same as *filename*, but without a "
@@ -457,7 +458,7 @@ msgid ""
 "``'w'``, ``'x'`` or ``'a'``."
 msgstr ""
 
-#: ../../library/zipfile.rst:365
+#: ../Doc/library/zipfile.rst:365
 msgid ""
 "There is no official file name encoding for ZIP files. If you have unicode "
 "file names, you must convert them to byte strings in your desired encoding "
@@ -468,13 +469,13 @@ msgstr ""
 ":meth:`write` に渡す前に望ましいエンコーディングでバイト列に変換しなければなりません。WinZip はすべてのファイル名を DOS "
 "Latin としても知られる CP437 で解釈します。"
 
-#: ../../library/zipfile.rst:372
+#: ../Doc/library/zipfile.rst:372
 msgid ""
 "Archive names should be relative to the archive root, that is, they should "
 "not start with a path separator."
 msgstr "アーカイブ名はアーカイブルートに対する相対パスでなければなりません。言い換えると、アーカイブ名はパスセパレータで始まってはいけません。"
 
-#: ../../library/zipfile.rst:377
+#: ../Doc/library/zipfile.rst:377
 msgid ""
 "If ``arcname`` (or ``filename``, if ``arcname`` is  not given) contains a "
 "null byte, the name of the file in the archive will be truncated at the null"
@@ -483,14 +484,14 @@ msgstr ""
 "もし、``arcname`` (``arcname`` が与えられない場合は、``filename``) が null byte "
 "を含むなら、アーカイブ中のファイルのファイル名は、null byte までで切り詰められます。"
 
-#: ../../library/zipfile.rst:380
+#: ../Doc/library/zipfile.rst:380
 msgid ""
 "Calling :meth:`write` on a ZipFile created with mode ``'r'`` or a closed "
 "ZipFile will raise a :exc:`ValueError`.  Previously, a :exc:`RuntimeError` "
 "was raised."
 msgstr ""
 
-#: ../../library/zipfile.rst:388
+#: ../Doc/library/zipfile.rst:388
 msgid ""
 "Write the string *data* to the archive; *zinfo_or_arcname* is either the "
 "file name it will be given in the archive, or a :class:`ZipInfo` instance.  "
@@ -499,7 +500,7 @@ msgid ""
 "archive must be opened with mode ``'w'``, ``'x'`` or ``'a'``."
 msgstr ""
 
-#: ../../library/zipfile.rst:394
+#: ../Doc/library/zipfile.rst:394
 msgid ""
 "If given, *compress_type* overrides the value given for the *compression* "
 "parameter to the constructor for the new entry, or in the *zinfo_or_arcname*"
@@ -508,7 +509,7 @@ msgstr ""
 "*compress_type* が指定された場合、その値はコンストラクタに与えられた *compression* "
 "の値か、*zinfo_or_arcname* が :class:`ZipInfo` のインスタンスだったときはその値をオーバーライドします。"
 
-#: ../../library/zipfile.rst:400
+#: ../Doc/library/zipfile.rst:400
 msgid ""
 "When passing a :class:`ZipInfo` instance as the *zinfo_or_arcname* "
 "parameter, the compression method used will be that specified in the "
@@ -520,26 +521,26 @@ msgstr ""
 "で指定された圧縮方法が使われます。デフォルトでは、:class:`ZipInfo` コンストラクターが、このメンバーを "
 ":const:`ZIP_STORED` に設定します。"
 
-#: ../../library/zipfile.rst:405
+#: ../Doc/library/zipfile.rst:405
 msgid "The *compress_type* argument."
 msgstr "引数 *compress_type* を追加しました。"
 
-#: ../../library/zipfile.rst:408
+#: ../Doc/library/zipfile.rst:408
 msgid ""
 "Calling :meth:`writestr` on a ZipFile created with mode ``'r'`` or a closed "
 "ZipFile will raise a :exc:`ValueError`.  Previously, a :exc:`RuntimeError` "
 "was raised."
 msgstr ""
 
-#: ../../library/zipfile.rst:414
+#: ../Doc/library/zipfile.rst:414
 msgid "The following data attributes are also available:"
 msgstr "以下のデータ属性も利用することができます:"
 
-#: ../../library/zipfile.rst:418
+#: ../Doc/library/zipfile.rst:418
 msgid "Name of the ZIP file."
 msgstr ""
 
-#: ../../library/zipfile.rst:422
+#: ../Doc/library/zipfile.rst:422
 msgid ""
 "The level of debug output to use.  This may be set from ``0`` (the default, "
 "no output) to ``3`` (the most output).  Debugging information is written to "
@@ -548,7 +549,7 @@ msgstr ""
 "使用するデバッグ出力レベルです。この属性は ``0`` (デフォルト、何も出力しない) から ``3`` (最も多く出力する) "
 "までの値に設定することができます。デバッグ情報は ``sys.stdout`` に出力されます。"
 
-#: ../../library/zipfile.rst:428
+#: ../Doc/library/zipfile.rst:428
 msgid ""
 "The comment text associated with the ZIP file.  If assigning a comment to a "
 ":class:`ZipFile` instance created with mode ``'w'``, ``'x'`` or ``'a'``, "
@@ -559,11 +560,11 @@ msgstr ""
 ":class:`ZipFile` インスタンスへコメントを割り当てる場合、文字列長は 65535 バイトまででにしてください。それを超えた場合は "
 ":meth:`close` が呼び出されてアーカイブへ書き込む際に切り捨てられます。"
 
-#: ../../library/zipfile.rst:438
+#: ../Doc/library/zipfile.rst:438
 msgid "PyZipFile Objects"
 msgstr "PyZipFile オブジェクト"
 
-#: ../../library/zipfile.rst:440
+#: ../Doc/library/zipfile.rst:440
 msgid ""
 "The :class:`PyZipFile` constructor takes the same parameters as the "
 ":class:`ZipFile` constructor, and one additional parameter, *optimize*."
@@ -571,22 +572,22 @@ msgstr ""
 ":class:`PyZipFile` コンストラクタは :class:`ZipFile` コンストラクタと同じパラメータに加え、*optimize* "
 "パラメータをとります。"
 
-#: ../../library/zipfile.rst:446
+#: ../Doc/library/zipfile.rst:446
 msgid "The *optimize* parameter."
 msgstr "パラメータに *optimize* を追加しました。"
 
-#: ../../library/zipfile.rst:452
+#: ../Doc/library/zipfile.rst:452
 msgid ""
 "Instances have one method in addition to those of :class:`ZipFile` objects:"
 msgstr "インスタンスは :class:`ZipFile` オブジェクトのメソッドの他に、追加のメソッドを 1 個持ちます:"
 
-#: ../../library/zipfile.rst:456
+#: ../Doc/library/zipfile.rst:456
 msgid ""
 "Search for files :file:`\\*.py` and add the corresponding file to the "
 "archive."
 msgstr ":file:`\\*.py` ファイルを探し、一致するファイルをアーカイブに追加します。"
 
-#: ../../library/zipfile.rst:459
+#: ../Doc/library/zipfile.rst:459
 msgid ""
 "If the *optimize* parameter to :class:`PyZipFile` was not given or ``-1``, "
 "the corresponding file is a :file:`\\*.pyc` file, compiling if necessary."
@@ -594,7 +595,7 @@ msgstr ""
 ":class:`PyZipFile` に *optimize* 引数が与えられない場合、あるいは ``-1`` が指定された場合、対応するファイルは "
 ":file:`\\*.pyc` ファイルで、必要に応じてコンパイルします。"
 
-#: ../../library/zipfile.rst:462
+#: ../Doc/library/zipfile.rst:462
 msgid ""
 "If the *optimize* parameter to :class:`PyZipFile` was ``0``, ``1`` or ``2``,"
 " only files with that optimization level (see :func:`compile`) are added to "
@@ -603,7 +604,7 @@ msgstr ""
 ":class:`PyZipFile` の *optimize* パラメータが ``0``、``1``、あるいは ``2`` の場合、それを最適化レベル "
 "(:func:`compile` 参照) とするファイルのみが、必要に応じてコンパイルされアーカイブに追加されます。"
 
-#: ../../library/zipfile.rst:466
+#: ../Doc/library/zipfile.rst:466
 msgid ""
 "If *pathname* is a file, the filename must end with :file:`.py`, and just "
 "the (corresponding :file:`\\*.pyc`) file is added at the top level (no path "
@@ -615,11 +616,11 @@ msgid ""
 "subdirectories are package directories, all of these are added recursively."
 msgstr ""
 
-#: ../../library/zipfile.rst:476
+#: ../Doc/library/zipfile.rst:476
 msgid "*basename* is intended for internal use only."
 msgstr "*basename* は内部が使用するためだけのものです。"
 
-#: ../../library/zipfile.rst:478
+#: ../Doc/library/zipfile.rst:478
 msgid ""
 "*filterfunc*, if given, must be a function taking a single string argument."
 "  It will be passed each path (including each individual full file path) "
@@ -635,23 +636,23 @@ msgstr ""
 "が偽を返せば、そのパスはアーカイブに追加されず、ディレクトリだった場合はその中身が無視されます。例として、私たちのテストファイルが全て ``test``"
 " ディレクトリの中にあるか、 ``test`` 文字列で始まるとしましょう。 *filterfunc* を使ってそれらを除外出来ます::"
 
-#: ../../library/zipfile.rst:492
+#: ../Doc/library/zipfile.rst:492
 msgid "The :meth:`writepy` method makes archives with file names like this::"
 msgstr ":meth:`writepy` メソッドは以下のようなファイル名でアーカイブを作成します::"
 
-#: ../../library/zipfile.rst:501
+#: ../Doc/library/zipfile.rst:501
 msgid "The *filterfunc* parameter."
 msgstr "*filterfunc* パラメータ。"
 
-#: ../../library/zipfile.rst:504
+#: ../Doc/library/zipfile.rst:504
 msgid "The *pathname* parameter accepts a :term:`path-like object`."
 msgstr ""
 
-#: ../../library/zipfile.rst:511
+#: ../Doc/library/zipfile.rst:511
 msgid "ZipInfo Objects"
 msgstr "ZipInfo オブジェクト"
 
-#: ../../library/zipfile.rst:513
+#: ../Doc/library/zipfile.rst:513
 msgid ""
 "Instances of the :class:`ZipInfo` class are returned by the :meth:`.getinfo`"
 " and :meth:`.infolist` methods of :class:`ZipFile` objects.  Each object "
@@ -660,225 +661,225 @@ msgstr ""
 ":class:`ZipInfo` クラスのインスタンスは、:class:`ZipFile` オブジェクトの :meth:`.getinfo` および "
 ":meth:`.infolist` メソッドによって返されます。各オブジェクトは ZIP アーカイブ内の 1 個のメンバに関する情報を格納します。"
 
-#: ../../library/zipfile.rst:517
+#: ../Doc/library/zipfile.rst:517
 msgid ""
 "There is one classmethod to make a :class:`ZipInfo` instance for a "
 "filesystem file:"
 msgstr ""
 
-#: ../../library/zipfile.rst:522
+#: ../Doc/library/zipfile.rst:522
 msgid ""
 "Construct a :class:`ZipInfo` instance for a file on the filesystem, in "
 "preparation for adding it to a zip file."
 msgstr ""
 
-#: ../../library/zipfile.rst:525
+#: ../Doc/library/zipfile.rst:525
 msgid ""
 "*filename* should be the path to a file or directory on the filesystem."
 msgstr ""
 
-#: ../../library/zipfile.rst:527
+#: ../Doc/library/zipfile.rst:527
 msgid ""
 "If *arcname* is specified, it is used as the name within the archive. If "
 "*arcname* is not specified, the name will be the same as *filename*, but "
 "with any drive letter and leading path separators removed."
 msgstr ""
 
-#: ../../library/zipfile.rst:533
+#: ../Doc/library/zipfile.rst:533
 msgid "The *filename* parameter accepts a :term:`path-like object`."
 msgstr ""
 
-#: ../../library/zipfile.rst:537
+#: ../Doc/library/zipfile.rst:537
 msgid "Instances have the following methods and attributes:"
 msgstr ""
 
-#: ../../library/zipfile.rst:541
+#: ../Doc/library/zipfile.rst:541
 msgid "Return ``True`` if this archive member is a directory."
 msgstr ""
 
-#: ../../library/zipfile.rst:543
+#: ../Doc/library/zipfile.rst:543
 msgid "This uses the entry's name: directories should always end with ``/``."
 msgstr ""
 
-#: ../../library/zipfile.rst:550
+#: ../Doc/library/zipfile.rst:550
 msgid "Name of the file in the archive."
 msgstr "アーカイブ中のファイル名。"
 
-#: ../../library/zipfile.rst:555
+#: ../Doc/library/zipfile.rst:555
 msgid ""
 "The time and date of the last modification to the archive member.  This is a"
 " tuple of six values:"
 msgstr "アーカイブメンバの最終更新日時。6 つの値からなるタプルになります:"
 
-#: ../../library/zipfile.rst:559
+#: ../Doc/library/zipfile.rst:559
 msgid "Index"
 msgstr "インデックス"
 
-#: ../../library/zipfile.rst:559
+#: ../Doc/library/zipfile.rst:559
 msgid "Value"
 msgstr "値"
 
-#: ../../library/zipfile.rst:561
+#: ../Doc/library/zipfile.rst:561
 msgid "``0``"
 msgstr "``0``"
 
-#: ../../library/zipfile.rst:561
+#: ../Doc/library/zipfile.rst:561
 msgid "Year (>= 1980)"
 msgstr "西暦年 (>= 1980)"
 
-#: ../../library/zipfile.rst:563
+#: ../Doc/library/zipfile.rst:563
 msgid "``1``"
 msgstr "``1``"
 
-#: ../../library/zipfile.rst:563
+#: ../Doc/library/zipfile.rst:563
 msgid "Month (one-based)"
 msgstr "月 (1 から始まる)"
 
-#: ../../library/zipfile.rst:565
+#: ../Doc/library/zipfile.rst:565
 msgid "``2``"
 msgstr "``2``"
 
-#: ../../library/zipfile.rst:565
+#: ../Doc/library/zipfile.rst:565
 msgid "Day of month (one-based)"
 msgstr "日 (1 から始まる)"
 
-#: ../../library/zipfile.rst:567
+#: ../Doc/library/zipfile.rst:567
 msgid "``3``"
 msgstr "``3``"
 
-#: ../../library/zipfile.rst:567
+#: ../Doc/library/zipfile.rst:567
 msgid "Hours (zero-based)"
 msgstr "時 (0 から始まる)"
 
-#: ../../library/zipfile.rst:569
+#: ../Doc/library/zipfile.rst:569
 msgid "``4``"
 msgstr "``4``"
 
-#: ../../library/zipfile.rst:569
+#: ../Doc/library/zipfile.rst:569
 msgid "Minutes (zero-based)"
 msgstr "分 (0 から始まる)"
 
-#: ../../library/zipfile.rst:571
+#: ../Doc/library/zipfile.rst:571
 msgid "``5``"
 msgstr "``5``"
 
-#: ../../library/zipfile.rst:571
+#: ../Doc/library/zipfile.rst:571
 msgid "Seconds (zero-based)"
 msgstr "秒 (0 から始まる)"
 
-#: ../../library/zipfile.rst:576
+#: ../Doc/library/zipfile.rst:576
 msgid "The ZIP file format does not support timestamps before 1980."
 msgstr "ZIP ファイルフォーマットは 1980 年より前のタイムスタンプをサポートしていません。"
 
-#: ../../library/zipfile.rst:581
+#: ../Doc/library/zipfile.rst:581
 msgid "Type of compression for the archive member."
 msgstr "アーカイブメンバの圧縮形式。"
 
-#: ../../library/zipfile.rst:586
+#: ../Doc/library/zipfile.rst:586
 msgid "Comment for the individual archive member."
 msgstr "各アーカイブメンバに対するコメント。"
 
-#: ../../library/zipfile.rst:591
+#: ../Doc/library/zipfile.rst:591
 msgid ""
 "Expansion field data.  The `PKZIP Application Note`_ contains some comments "
 "on the internal structure of the data contained in this string."
 msgstr ""
 "拡張フィールドデータ。この文字列に含まれているデータの内部構成については、`PKZIP Application Note`_ でコメントされています。"
 
-#: ../../library/zipfile.rst:597
+#: ../Doc/library/zipfile.rst:597
 msgid "System which created ZIP archive."
 msgstr "ZIP アーカイブを作成したシステムを記述する文字列。"
 
-#: ../../library/zipfile.rst:602
+#: ../Doc/library/zipfile.rst:602
 msgid "PKZIP version which created ZIP archive."
 msgstr "このアーカイブを作成した PKZIP のバージョン。"
 
-#: ../../library/zipfile.rst:607
+#: ../Doc/library/zipfile.rst:607
 msgid "PKZIP version needed to extract archive."
 msgstr "このアーカイブを展開する際に必要な PKZIP のバージョン。"
 
-#: ../../library/zipfile.rst:612
+#: ../Doc/library/zipfile.rst:612
 msgid "Must be zero."
 msgstr "予約領域。ゼロでなくてはなりません。"
 
-#: ../../library/zipfile.rst:617
+#: ../Doc/library/zipfile.rst:617
 msgid "ZIP flag bits."
 msgstr "ZIP フラグビット列。"
 
-#: ../../library/zipfile.rst:622
+#: ../Doc/library/zipfile.rst:622
 msgid "Volume number of file header."
 msgstr "ファイルヘッダのボリューム番号。"
 
-#: ../../library/zipfile.rst:627
+#: ../Doc/library/zipfile.rst:627
 msgid "Internal attributes."
 msgstr "内部属性。"
 
-#: ../../library/zipfile.rst:632
+#: ../Doc/library/zipfile.rst:632
 msgid "External file attributes."
 msgstr "外部ファイル属性。"
 
-#: ../../library/zipfile.rst:637
+#: ../Doc/library/zipfile.rst:637
 msgid "Byte offset to the file header."
 msgstr "ファイルヘッダへのバイトオフセット。"
 
-#: ../../library/zipfile.rst:642
+#: ../Doc/library/zipfile.rst:642
 msgid "CRC-32 of the uncompressed file."
 msgstr "圧縮前のファイルの CRC-32 チェックサム。"
 
-#: ../../library/zipfile.rst:647
+#: ../Doc/library/zipfile.rst:647
 msgid "Size of the compressed data."
 msgstr "圧縮後のデータのサイズ。"
 
-#: ../../library/zipfile.rst:652
+#: ../Doc/library/zipfile.rst:652
 msgid "Size of the uncompressed file."
 msgstr "圧縮前のファイルのサイズ。"
 
-#: ../../library/zipfile.rst:659
+#: ../Doc/library/zipfile.rst:659
 msgid "Command-Line Interface"
 msgstr "コマンドラインインターフェイス"
 
-#: ../../library/zipfile.rst:661
+#: ../Doc/library/zipfile.rst:661
 msgid ""
 "The :mod:`zipfile` module provides a simple command-line interface to "
 "interact with ZIP archives."
 msgstr ":mod:`zipfile` モジュールは、 ZIP アーカイブを操作するための簡単なコマンドラインインターフェースを提供しています。"
 
-#: ../../library/zipfile.rst:664
+#: ../Doc/library/zipfile.rst:664
 msgid ""
 "If you want to create a new ZIP archive, specify its name after the "
 ":option:`-c` option and then list the filename(s) that should be included:"
 msgstr "ZIP アーカイブを新規に作成したい場合、:option:`-c` オプションの後にまとめたいファイルを列挙してください:"
 
-#: ../../library/zipfile.rst:671
+#: ../Doc/library/zipfile.rst:671
 msgid "Passing a directory is also acceptable:"
 msgstr "ディレクトリを渡すこともできます:"
 
-#: ../../library/zipfile.rst:677
+#: ../Doc/library/zipfile.rst:677
 msgid ""
 "If you want to extract a ZIP archive into the specified directory, use the "
 ":option:`-e` option:"
 msgstr "ZIP アーカイブを特定のディレクトリに展開したい場合、:option:`-e` オプションを使用してください:"
 
-#: ../../library/zipfile.rst:684
+#: ../Doc/library/zipfile.rst:684
 msgid "For a list of the files in a ZIP archive, use the :option:`-l` option:"
 msgstr "ZIP アーカイブ内のファイル一覧を表示するには :option:`-l` を使用してください:"
 
-#: ../../library/zipfile.rst:692
+#: ../Doc/library/zipfile.rst:692
 msgid "Command-line options"
 msgstr "コマンドラインオプション"
 
-#: ../../library/zipfile.rst:696
+#: ../Doc/library/zipfile.rst:696
 msgid "List files in a zipfile."
 msgstr "zipfile 内のファイル一覧を表示します。"
 
-#: ../../library/zipfile.rst:700
+#: ../Doc/library/zipfile.rst:700
 msgid "Create zipfile from source files."
 msgstr "ソースファイルから zipfile を作成します。"
 
-#: ../../library/zipfile.rst:704
+#: ../Doc/library/zipfile.rst:704
 msgid "Extract zipfile into target directory."
 msgstr "zipfile を対象となるディレクトリに展開します。"
 
-#: ../../library/zipfile.rst:708
+#: ../Doc/library/zipfile.rst:708
 msgid "Test whether the zipfile is valid or not."
 msgstr "zipfile が有効かどうか調べます。"

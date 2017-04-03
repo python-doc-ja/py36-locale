@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -17,11 +18,11 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../library/persistence.rst:5
+#: ../Doc/library/persistence.rst:5
 msgid "Data Persistence"
 msgstr "データの永続化"
 
-#: ../../library/persistence.rst:7
+#: ../Doc/library/persistence.rst:7
 msgid ""
 "The modules described in this chapter support storing Python data in a "
 "persistent form on disk.  The :mod:`pickle` and :mod:`marshal` modules can "
@@ -33,6 +34,6 @@ msgstr ""
 ":mod:`marshal` は多くの Python データ型をバイト列に変換し、バイト列から再生成します。様々な DBM "
 "関連モジュールはハッシュを基にした、文字列から他の文字列へのマップを保存するファイルフォーマット群をサポートします。"
 
-#: ../../library/persistence.rst:13
+#: ../Doc/library/persistence.rst:13
 msgid "The list of modules described in this chapter is:"
 msgstr "この章で解説されるモジュールのリスト:"
