@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Naoki INADA <songofacandy@gmail.com>, 2017\n"
+"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -370,7 +370,7 @@ msgstr "``'x'`` (排他的作成) モードが追加されました。"
 #: ../Doc/library/tarfile.rst:149 ../Doc/library/tarfile.rst:327
 #: ../Doc/library/tarfile.rst:498
 msgid "The *name* parameter accepts a :term:`path-like object`."
-msgstr ""
+msgstr "*name* パラメタが :term:`path-like object` を受け付けるようになりました。"
 
 #: ../Doc/library/tarfile.rst:155
 msgid ""
@@ -540,6 +540,8 @@ msgid ""
 "object`. It can be omitted if *fileobj* is given. In this case, the file "
 "object's :attr:`name` attribute is used if it exists."
 msgstr ""
+"*name* はアーカイブのパス名です。*name* は :term:`path-like object` でも構いません。*fileobj* "
+"が渡された場合は省略可能です。その場合、ファイルオブジェクトに :attr:`name` 属性があれば、それを利用します。"
 
 #: ../Doc/library/tarfile.rst:277
 msgid ""
@@ -745,7 +747,7 @@ msgstr "*numeric_owner* 引数が追加されました。"
 
 #: ../Doc/library/tarfile.rst:402 ../Doc/library/tarfile.rst:433
 msgid "The *path* parameter accepts a :term:`path-like object`."
-msgstr ""
+msgstr "*path* パラメタが :term:`path-like object` を受け付けるようになりました。"
 
 #: ../Doc/library/tarfile.rst:408
 msgid ""
@@ -755,6 +757,10 @@ msgid ""
 "different directory using *path*. *path* may be a :term:`path-like object`. "
 "File attributes (owner, mtime, mode) are set unless *set_attrs* is false."
 msgstr ""
+"アーカイブからメンバーの完全な名前を使って、現在のディレクトリに展開します。ファイル情報はできる限り正確に展開されます。 *member* "
+"はファイル名もしくは :class:`TarInfo` オブジェクトです。 *path* を使って別のディレクトリを指定することもできます。 "
+"*path* は　:term:`path-like object` でも構いません。*set_attrs* が false でない限り、ファイルの属性 "
+"(所有者、最終更新時刻、モード) は設定されます。"
 
 #: ../Doc/library/tarfile.rst:420
 msgid ""
@@ -845,6 +851,11 @@ msgid ""
 "from *fileobj*’s :attr:`~io.FileIO.name` attribute, or the *name* argument."
 "  The name should be a text string."
 msgstr ""
+":func:`os.stat` の結果か、既存のファイルに相当するものから、:class:`TarInfo` "
+"オブジェクトを作成します。このファイルは、*name* で名付けられるか、ファイル記述子を持つ :term:`file object` "
+"*fileobj* として指定されます。*name* は:term:`path-like object` でも構いません。 *arcname* "
+"が与えられた場合、アーカイブ内のファイルに対して代替名を指定します。与えられない場合、名前は *fileobj* の "
+":attr:`~io.FileIO.name` 属性 *name* 属性から取られます。名前はテキスト文字列にしてください。"
 
 #: ../Doc/library/tarfile.rst:490
 msgid ""

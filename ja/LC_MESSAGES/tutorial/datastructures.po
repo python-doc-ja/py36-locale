@@ -47,7 +47,7 @@ msgstr "リストの末尾に要素を一つ追加します。``a[len(a):] = [x]
 msgid ""
 "Extend the list by appending all the items from the iterable.  Equivalent to"
 " ``a[len(a):] = iterable``."
-msgstr ""
+msgstr "イテラブルのすべての要素を対象のリストに追加し、リストを拡張します。``a[len(a):] = iterable`` と等価です。"
 
 #: ../Doc/tutorial/datastructures.rst:35
 msgid ""
@@ -98,6 +98,8 @@ msgid ""
 " list.  The returned index is computed relative to the beginning of the full"
 " sequence rather than the *start* argument."
 msgstr ""
+"任意の引数である *start* と *end* はスライス記法として解釈され、リストの探索範囲を指定できます。返される添字は、*start* "
+"引数からの相対位置ではなく、リスト全体の先頭からの位置になります。"
 
 #: ../Doc/tutorial/datastructures.rst:78
 msgid "Return the number of times *x* appears in the list."

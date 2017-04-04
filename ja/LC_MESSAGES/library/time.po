@@ -1075,6 +1075,9 @@ msgid ""
 "lower value than a previous call if the system clock has been set back "
 "between the two calls."
 msgstr ""
+"時刻は常に浮動小数点で返されますが、すべてのシステムが 1 "
+"秒より高い精度で時刻を提供するとは限らないので注意してください。この関数が返す値は通常減少していくことはありませんが、この関数を 2 "
+"回呼び出し、呼び出しの間にシステムクロックの時刻を巻き戻して設定した場合には、以前の呼び出しよりも低い値が返ることがあります。"
 
 #: ../Doc/library/time.rst:603
 msgid ""
