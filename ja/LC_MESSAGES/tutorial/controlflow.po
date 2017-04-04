@@ -522,7 +522,7 @@ msgstr "もちろん以下のように出力されます:"
 msgid ""
 "Note that the order in which the keyword arguments are printed is guaranteed"
 " to match the order in which they were provided in the function call."
-msgstr ""
+msgstr "なお、複数のキーワード引数を与えた場合に、それらが出力される順序は、関数呼び出しで与えられた順序と同じになります。"
 
 #: ../Doc/tutorial/controlflow.rst:526
 msgid "Arbitrary Argument Lists"

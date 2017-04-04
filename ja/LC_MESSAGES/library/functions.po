@@ -1875,6 +1875,7 @@ msgid ""
 ":exc:`FileExistsError` is now raised if the file opened in exclusive "
 "creation mode (``'x'``) already exists."
 msgstr ""
+"既存のファイルを 排他的生成モード(``'x'``)で開いた場合、 :exc:`FileExistsError` を送出するようになりました。"
 
 #: ../Doc/library/functions.rst:1080
 msgid "The file is now non-inheritable."
@@ -1904,13 +1905,15 @@ msgstr "``'namereplace'`` エラーハンドラが追加されました。"
 
 #: ../Doc/library/functions.rst:1097
 msgid "Support added to accept objects implementing :class:`os.PathLike`."
-msgstr ""
+msgstr ":class:`os.PathLike` を実装したオブジェクトを受け入れるようになりました。"
 
 #: ../Doc/library/functions.rst:1098
 msgid ""
 "On Windows, opening a console buffer may return a subclass of "
 ":class:`io.RawIOBase` other than :class:`io.FileIO`."
 msgstr ""
+"Windowsでは、コンソールバッファのオープンは、:class:`io.FileIO`ではなく、:class:`io.RawIOBase` "
+"のサブクラスを返すでしょう。"
 
 #: ../Doc/library/functions.rst:1103
 msgid ""
@@ -2108,6 +2111,8 @@ msgid ""
 "*ndigits* is omitted or is ``None``, it returns the nearest integer to its "
 "input."
 msgstr ""
+"*number* の小数部を *ndigists* 桁に丸めた値を返します。*ndigits* が省略されたり、``None`` "
+"だった場合、入力値に最も近い整数を返します。"
 
 #: ../Doc/library/functions.rst:1261
 msgid ""
@@ -2125,6 +2130,8 @@ msgid ""
 "For a general Python object ``number``, ``round(number, ndigits)`` delegates"
 " to ``number.__round__(ndigits)``."
 msgstr ""
+"一般の Python オブジェクト ``number`` に対して、``round(number, ndigits)`` は "
+"``number.__round__(ndigits)`` に移譲します。"
 
 #: ../Doc/library/functions.rst:1274
 msgid ""

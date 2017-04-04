@@ -380,7 +380,7 @@ msgstr ":ref:`old-string-formatting`"
 msgid ""
 "The old formatting operations invoked when strings are the left operand of "
 "the ``%`` operator are described in more detail here."
-msgstr ""
+msgstr "文字列が ``%`` 演算子の左オペランドである場合に呼び出される古いフォーマット操作について、詳しく記述されています。"
 
 #: ../Doc/tutorial/introduction.rst:369
 msgid "Lists"

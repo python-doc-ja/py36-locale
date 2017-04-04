@@ -219,7 +219,7 @@ msgstr ""
 msgid ""
 "All optional parameters are now :ref:`keyword-only <keyword-"
 "only_parameter>`."
-msgstr ""
+msgstr "すべてのオプション引数は、 :ref:`キーワード専用引数 <keyword-only_parameter>` になりました。 "
 
 #: ../Doc/library/json.rst:199
 msgid ""
@@ -364,6 +364,8 @@ msgid ""
 "*s* can now be of type :class:`bytes` or :class:`bytearray`. The input "
 "encoding should be UTF-8, UTF-16 or UTF-32."
 msgstr ""
+"*s* は :class:`bytes`  型か、 :class:`bytearray` 型になりました。入力エンコーディングは、UTF-8 か "
+"UTF-16、または UTF-32でなければなりません。"
 
 #: ../Doc/library/json.rst:287
 msgid "Encoders and Decoders"
@@ -497,7 +499,7 @@ msgstr ""
 
 #: ../Doc/library/json.rst:359 ../Doc/library/json.rst:461
 msgid "All parameters are now :ref:`keyword-only <keyword-only_parameter>`."
-msgstr ""
+msgstr "すべての引数は、 :ref:`キーワード専用引数 <keyword-only_parameter>` になりました。 "
 
 #: ../Doc/library/json.rst:364
 msgid ""
