@@ -1129,6 +1129,8 @@ msgid ""
 "They can be used to group digits for enhanced readability.  One underscore "
 "can occur between digits, and after base specifiers like ``0x``."
 msgstr ""
+"アンダースコアはリテラルの値を判断するにあたって無視されます。そのためアンダースコアを使って数字をグループ化することで読みやすくできます。アンダースコアは数字と数字の間に"
+" 1 つだけ、あるいは ``0x`` のような基数指定の直後に 1 つだけ挿入できます。"
 
 #: ../Doc/reference/lexical_analysis.rst:758
 msgid ""
@@ -1146,7 +1148,7 @@ msgstr "整数リテラルの例をいくつか示します::"
 #: ../Doc/reference/lexical_analysis.rst:768
 #: ../Doc/reference/lexical_analysis.rst:800
 msgid "Underscores are now allowed for grouping purposes in literals."
-msgstr ""
+msgstr "グループ化を目的としたリテラル中のアンダースコアが許されるようになりました。"
 
 #: ../Doc/reference/lexical_analysis.rst:775
 msgid "Floating point literals"
@@ -1165,10 +1167,12 @@ msgid ""
 "dependent.  As in integer literals, underscores are supported for digit "
 "grouping."
 msgstr ""
+"なお、整数部と指数部は常に 10 を基数として解釈されます。例えば、``077e010`` は正しい表記であり、``77e10`` "
+"と同じ数を表します。浮動小数点数リテラルの取りうる値の範囲は実装に依存します。整数リテラルと同じように、アンダースコアで数字をグループ分けできます。"
 
 #: ../Doc/reference/lexical_analysis.rst:792
 msgid "Some examples of floating point literals::"
-msgstr ""
+msgstr "浮動小数点数リテラルの例をいくつか示します::"
 
 #: ../Doc/reference/lexical_analysis.rst:796
 msgid ""
