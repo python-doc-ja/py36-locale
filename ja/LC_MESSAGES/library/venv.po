@@ -78,17 +78,21 @@ msgid ""
 "Python 3.3 and 3.4, and is `deprecated in Python 3.6 "
 "<https://docs.python.org/dev/whatsnew/3.6.html#deprecated-features>`_."
 msgstr ""
+"Python 3.3 と 3.4 では、仮想環境の作成に推奨していたツールは``pyvenv``でしたが、`Python 3.6では非推奨です "
+"<https://docs.python.org/dev/whatsnew/3.6.html#deprecated-features>`_。"
 
 #: ../Doc/using/venv-create.inc:19
 msgid ""
 "The use of ``venv`` is now recommended for creating virtual environments."
-msgstr ""
+msgstr "仮想環境の作成には、``venv``の使用をお勧めします。"
 
 #: ../Doc/using/venv-create.inc:24
 msgid ""
 "`Python Packaging User Guide: Creating and using virtual environments "
 "<https://packaging.python.org/installing/#creating-virtual-environments>`__"
 msgstr ""
+"`Python Packaging User Guide: Creating and using virtual environments "
+"<https://packaging.python.org/installing/#creating-virtual-environments>`__"
 
 #: ../Doc/using/venv-create.inc:29
 msgid "On Windows, invoke the ``venv`` command as follows::"
