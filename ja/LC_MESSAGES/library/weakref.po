@@ -541,6 +541,8 @@ msgid ""
 " other data structures without forcing the objects to remain alive, but the "
 "objects can still be retrieved by ID if they do."
 msgstr ""
+"この簡単な例では、アプリケーションが以前に参照したオブジェクトを取り出すためにオブジェクトIDを利用する方法を示します。オブジェクトに生きたままであることを強制することなく、オブジェクトの"
+" IDを他のデータ構造の中で使うことができ、必要に応じてIDからオブジェクトを取り出せます。"
 
 #: ../Doc/library/weakref.rst:442
 msgid "Finalizer Objects"

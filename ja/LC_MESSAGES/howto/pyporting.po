@@ -203,6 +203,11 @@ msgid ""
 "will simply be easier for you if you only support the versions of Python "
 "that you have to support."
 msgstr ""
+"ですが、Python 2.6 以上と言わず Python 2.7 を目標にしてください。Python 2.6 "
+"はもう積極的にはサポートされていません。これは **あなたが** Python 2.6 "
+"に関係するあらゆる問題に取り組まなければならないことを意味します。この HOWTO で言及しているいくつかのツールも Python 2.6 "
+"をサポートしていません (Pylint_ など)し、時につれこのようなことはもっと当たり前になってくるでしょう。2.7 "
+"以上だけをサポートするということは、話をより簡単にしてくれます。"
 
 #: ../Doc/howto/pyporting.rst:92
 msgid ""
@@ -383,6 +388,10 @@ msgid ""
 "it does mean you might have to now care about when you are using text "
 "compared to binary data, which is why this cannot be entirely automated."
 msgstr ""
+"テキストとバイナリデータの区別をより明快に、よりはっきり宣言するために、 Python 3 "
+"はインターネット時代に作られたほとんどの言語がしたこと、すなわちテキストとバイナリデータを区別できる別々の型とし、無分別にお互い混ぜこぜには出来ないようにしました"
+" (Python "
+"はインターネットが広く普及する前からありました)。テキストのみを取り扱うコード、バイナリデータのみを扱うコードのいずれにとっても、この分離は問題を引き起こしません。ですが両方を処理するコードにとっては、それはテキストとバイナリデータの比較をする際に新たな注意点が増えたことを意味していて、これが完全には移行の自動化が出来ない理由なのです。"
 
 #: ../Doc/howto/pyporting.rst:203
 msgid ""
