@@ -1809,6 +1809,12 @@ msgid ""
 "types such as list, tuple, set, frozenset, dict, or collections.deque, the "
 "expression ``x in y`` is equivalent to ``any(x is e or x == e for e in y)``."
 msgstr ""
+"演算子 :keyword:`in` および :keyword:`not in` は、帰属 (membership) を調べます。 ``x in s`` "
+"の評価は、 *x* が *s* の要素であれば ``True`` となり、そうでなければ ``False`` となります。 ``x not in s``"
+" は ``x in s`` の否定 (negation) を返します。すべての組み込みのシーケンスと集合型に加えて、辞書も、 :keyword:`in`"
+" を辞書が与えられたキーを持っているかを調べるものとしてサポートしています。リスト、タプル、集合、凍結集合、辞書、あるいは "
+"collection.deque のようなコンテナ型について、式 ``x in y`` は ``any(x is e or x == e for e "
+"in y)`` と等価です。"
 
 #: ../Doc/reference/expressions.rst:1441
 msgid ""
@@ -1817,6 +1823,9 @@ msgid ""
 "strings are always considered to be a substring of any other string, so "
 "``\"\" in \"abc\"`` will return ``True``."
 msgstr ""
+"文字列やバイト列型については、 ``x in y`` は *x* が *y* の部分文字列であるとき、かつそのときに限り ``True`` "
+"になります。これは ``y.find(x) != -1`` と等価です。空文字列は、他の任意の文字列の部分文字列とみなされます。従って ``\"\" "
+"in \"abc\"`` は ``True`` を返すことになります。"
 
 #: ../Doc/reference/expressions.rst:1446
 msgid ""
@@ -1824,6 +1833,8 @@ msgid ""
 "in y`` returns ``True`` if ``y.__contains__(x)`` returns a true value, and "
 "``False`` otherwise."
 msgstr ""
+":meth:`__contains__` メソッドを実装したユーザ定義クラスでは、 ``y.__contains__(x)`` の返り値が真となる場合に"
+" ``x in y`` の返り値は ``True`` となり、そうでない場合は ``False`` となります。"
 
 #: ../Doc/reference/expressions.rst:1450
 msgid ""
@@ -1832,6 +1843,9 @@ msgid ""
 " == z`` is produced while iterating over ``y``.  If an exception is raised "
 "during the iteration, it is as if :keyword:`in` raised that exception."
 msgstr ""
+":meth:`__contains__` を定義していないが :meth:`__iter__` は定義しているユーザ定義クラスでは、 ``x in "
+"y`` は ``x == z`` となるようなある値 `z` が ``y`` 内にわたる反復で生成された場合、 ``True`` "
+"となります。もし、反復の間に例外が発生すれば、 :keyword:`in` が例外を発生させたようにみえます。"
 
 #: ../Doc/reference/expressions.rst:1455
 msgid ""
