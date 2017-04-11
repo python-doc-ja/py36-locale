@@ -1659,6 +1659,8 @@ msgid ""
 " equal `(key, value)` pairs. Equality comparison of the keys and values "
 "enforces reflexivity."
 msgstr ""
+"マッピング (:class:`dict` のインスタンス) の比較の結果が等価となるのは、同じ `(key, value)` を持っているときかつそのときに限ります。\n"
+"キーと値の等価性比較では反射性が強制されます。"
 
 #: ../Doc/reference/expressions.rst:1361
 msgid ""
