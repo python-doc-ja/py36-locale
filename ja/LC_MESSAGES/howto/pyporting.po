@@ -243,6 +243,10 @@ msgid ""
 " get better than 90% coverage). If you don't already have a tool to measure "
 "test coverage then coverage.py_ is recommended."
 msgstr ""
+"そうしたい一番古いバージョンの Python 2 "
+"をサポート出来ているならば、あなたのテストスイートが十分な網羅性かを確認したいでしょう。あなたのコードをツールで書き換えた後に現れるあらゆる失敗が実際にはツールのバグで、あなたのコードのバグではないとするのに十分なだけの確信をあなたのテストスイートに持ちたいならば、良い経験則がこれです。目標とする数値で言えば、80%"
+" 以上の網羅性を目指してみてください (そしてカバレッジ 90% "
+"を越えるのが難しかったとしても気に病む必要はありません)。テストカバレッジの計測ツールを手持ちでないならば、 coverage.py_ がお奨めです。"
 
 #: ../Doc/howto/pyporting.rst:118
 msgid ""
@@ -278,6 +282,12 @@ msgid ""
 "future, it might be best to consider Futurize to begin adjusting to any new "
 "practices that Python 3 introduces which you are not accustomed to yet."
 msgstr ""
+"Python 2 と比較した Python 3 の違いがわかってきたら、いよいよあなたのコードを更新するそのときです!\n"
+"あなたのコードの移植の自動化ツールとしては 2 つの選択肢があります: Futurize_ と Modernize_ です。\n"
+"どちらのツールが良いかはあなたのコードをどのくらい Python 3 寄りに近付けたいかによります。\n"
+"Futurize_ は、例えば Python のメジャーバージョン間の意味論的な等価性を持つように Python 3 からバックポートされた ``bytes`` 型のように、Python 2 に取り込まれた Python 3 のイディオムと慣例を積極的に使います。\n"
+"他方 Modernize_ はより保守的で、互換性保持を six_ によって提供することで、 Python 2/3 のサブセットであることを目標にします。\n"
+"Python 3 は確実にやってくる未来なので、 Python 3 で導入された、まだ慣れていない新しい慣例に合わせ始めるためには Futurize を検討するのが最良かもしれません。"
 
 #: ../Doc/howto/pyporting.rst:142
 msgid ""
