@@ -561,6 +561,9 @@ msgid ""
 " without waiting for its natural timeout to expire. If not specified will "
 "automatically be set to ``True`` on UNIX."
 msgstr ""
+"*reuse_address* は、 TIME_WAIT "
+"状態にあるローカルソケットを、その状態が自然にタイムアウトするのを待つことなく再利用するようカーネルに指示します（訳註: ソケットのオプション "
+"SO_REUSEADDR を使用します）。指定しない場合、UNIX では自動的に ``True`` が設定されます。"
 
 #: ../Doc/library/asyncio-eventloop.rst:371
 msgid ""
@@ -570,6 +573,11 @@ msgid ""
 "UNIX's. If the :py:data:`~socket.SO_REUSEPORT` constant is not defined then "
 "this capability is unsupported."
 msgstr ""
+"*reuse_port* "
+"は、同じポートにバインドされた既存の端点すべてがこのフラグを設定して生成されている場合に限り、この端点を既存の端点と同じポートにバインドすることをカーネルに許可します（訳註:"
+" ソケットのオプション SO_REUSEPORT を使用します）。このオプションは、Windows やいくつかの UNIX "
+"システムではサポートされません。もし定数 :py:data:`~socket.SO_REUSEPORT` "
+"が定義されていなければ、この機能はサポートされません。"
 
 #: ../Doc/library/asyncio-eventloop.rst:377
 msgid ""
@@ -615,6 +623,8 @@ msgid ""
 "parameter is specified.  Abstract UNIX sockets, :class:`str`, and "
 ":class:`bytes` paths are supported."
 msgstr ""
+"*path* は UNIX ドメインソケットの名前で、 *sock* パラメータが指定されない限り指定する必要があります。抽象化された UNIX "
+"ソケット、 :class:`str` 、そして :class:`bytes` のパスを指定できます。"
 
 #: ../Doc/library/asyncio-eventloop.rst:406
 msgid ""
