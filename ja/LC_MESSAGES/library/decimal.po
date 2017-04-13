@@ -340,6 +340,9 @@ msgid ""
 "syntax after leading and trailing whitespace characters, as well as "
 "underscores throughout, are removed::"
 msgstr ""
+"*value* は整数、文字列、タプル、 :class:`float` および他の :class:`Decimal` オブジェクトにできます。 "
+"*value* を指定しない場合、 ``Decimal('0')`` を返します。 *value* "
+"が文字列の場合、先頭と末尾の空白および全てのアンダースコアを取り除いた後には以下の 10進数文字列の文法に従わなければなりません::"
 
 #: ../Doc/library/decimal.rst:361
 msgid ""
