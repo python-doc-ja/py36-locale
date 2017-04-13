@@ -1357,6 +1357,8 @@ msgid ""
 "the argument is a string, no leading or trailing whitespace or underscores "
 "are permitted."
 msgstr ""
+"このメソッドは IBM 仕様の to-number "
+"演算を実装したものです。引数が文字列の場合、前や後ろに余計な空白を付けたり、アンダースコアを含めたりすることは許されません。"
 
 #: ../Doc/library/decimal.rst:1087
 msgid ""
