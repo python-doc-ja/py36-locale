@@ -2124,6 +2124,10 @@ msgid ""
 "negative).  The return value is an integer if called with one argument, "
 "otherwise of the same type as *number*."
 msgstr ""
+":func:`round` をサポートする組み込み型では、値は 10 のマイナス *ndigits* 乗の倍数の中で最も近いものに丸められます; "
+"二つの倍数が同じだけ近いなら、偶数を選ぶ方に (ですから例えば、 ``round(0.5)`` と ``round(-0.5)`` は両方とも "
+"``0`` に、 ``round(1.5)`` は ``2`` に) 丸められます。 *ndigits* には任意の整数値が有効となります "
+"(正の整数、ゼロ、負の整数)。返り値は 1 引数で呼ばれたなら整数、そうでなければ *number* と同じ型です。"
 
 #: ../Doc/library/functions.rst:1269
 msgid ""
