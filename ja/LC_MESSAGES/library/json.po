@@ -352,6 +352,8 @@ msgid ""
 "instance containing a JSON document) to a Python object using this "
 ":ref:`conversion table <json-to-py-table>`."
 msgstr ""
+"この :ref:`変換表 <json-to-py-table>` を使い、 *s* (JSON ドキュメントを含んでいる :class:`str`, "
+":class:`bytes`, :class:`bytearray` のいずれかのインスタンス) を Python オブジェクトへ脱直列化します。"
 
 #: ../Doc/library/json.rst:275
 msgid ""
