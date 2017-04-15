@@ -588,7 +588,7 @@ msgstr ""
 msgid ""
 "*source*, if supplied, is the destroyed object which emitted a "
 ":exc:`ResourceWarning`."
-msgstr ""
+msgstr "*source* 引数が与えられた場合、これは :exc:`ResourceWarning` を発生させた破壊されたオブジェクトです。"
 
 #: ../Doc/library/warnings.rst:325
 msgid "Added *source* parameter."

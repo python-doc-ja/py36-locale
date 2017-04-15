@@ -31,6 +31,8 @@ msgid ""
 "This Tk extension is unmaintained and should not be used in new code.  Use "
 ":mod:`tkinter.ttk` instead."
 msgstr ""
+"この Tk 拡張は保守されておらず、新しいコードでは使うべきではありません。\n"
+"その代わりに :mod:`tkinter.ttk` を使ってください。"
 
 #: ../Doc/library/tkinter.tix.rst:19
 msgid ""
