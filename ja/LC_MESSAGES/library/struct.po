@@ -703,6 +703,10 @@ msgid ""
 " operations. See the Wikipedia page on the `half-precision floating-point "
 "format <half precision format_>`_ for more information."
 msgstr ""
+"IEEE 754 の binary16 \"半精度\" 型は、 `IEEE 754 standard <ieee 754 standard_>`_ の2008 年の改訂で導入されました。\n"
+"半精度型は、符号 bit 、5 bit の指数部、 11 bit の精度 (明示的には 10 bit が保存される) を持ち、おおよそ ``6.1e-05`` から ``6.5e+04`` までの数を完全な精度で表現できます。\n"
+"この型は C コンパイラでは広くはサポートされていません: たいていのマシンでは、保存するのに unsigned short が使えますが、数学の演算には使えません。\n"
+"詳しいことは Wikipedia の `half-precision floating-point format <half precision format_>`_ のページを参照してください。"
 
 #: ../Doc/library/struct.rst:289
 msgid ""

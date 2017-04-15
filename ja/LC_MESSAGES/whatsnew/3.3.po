@@ -163,6 +163,8 @@ msgid ""
 "interpreter checks for a ``pyvenv.cfg``, file whose existence signals the "
 "base of a virtual environment's directory tree."
 msgstr ""
+"この PEP はプログラムからのアクセス用の :mod:`venv` モジュールと、コマンドラインからのアクセスと管理向けの ``pyvenv`` "
+"スクリプトを追加します。Pythonインタプリタは仮想環境のディレクトリツリーの存在を示す ``pyvenv.cfg`` をチェックします。"
 
 #: ../Doc/whatsnew/3.3.rst:118
 msgid ":pep:`405` - Python Virtual Environments"
