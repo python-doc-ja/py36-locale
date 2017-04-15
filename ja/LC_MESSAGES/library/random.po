@@ -131,7 +131,7 @@ msgstr ""
 
 #: ../Doc/library/random.rst:66
 msgid "Bookkeeping functions"
-msgstr ""
+msgstr "保守 (bookkeeping) 関数"
 
 #: ../Doc/library/random.rst:70
 msgid "Initialize the random number generator."
