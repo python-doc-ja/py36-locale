@@ -227,7 +227,7 @@ msgstr ""
 msgid ""
 "The *readrc* argument defaults to true and controls whether Pdb will load "
 ".pdbrc files from the filesystem."
-msgstr ""
+msgstr "*readrc* 引数はデフォルトでは真で、 Pdb が .pdbrc ファイルをファイルシステムから読み込むかどうかを制御します。"
 
 #: ../Doc/library/pdb.rst:166
 msgid "Example call to enable tracing with *skip*::"
@@ -244,7 +244,7 @@ msgstr "*nosigint* 引数が追加されました。以前は Pdb が SIGINT ハ
 
 #: ../Doc/library/pdb.rst:177
 msgid "The *readrc* argument."
-msgstr ""
+msgstr "*readrc* 引数。"
 
 #: ../Doc/library/pdb.rst:185
 msgid "See the documentation for the functions explained above."

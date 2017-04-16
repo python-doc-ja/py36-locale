@@ -182,7 +182,7 @@ msgstr "与えられたユーザ名に対応するシャドーパスワードデ
 msgid ""
 "Raises a :exc:`PermissionError` instead of :exc:`KeyError` if the user "
 "doesn't have privileges."
-msgstr ""
+msgstr "ユーザが権限を持っていない場合、 :exc:`KeyError` の代わりに :exc:`PermissionError` を送出します。"
 
 #: ../Doc/library/spwd.rst:64
 msgid ""
