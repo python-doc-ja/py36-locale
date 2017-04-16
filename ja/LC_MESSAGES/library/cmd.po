@@ -373,6 +373,8 @@ msgid ""
 ":meth:`do_playback` method reads the file and adds the recorded commands to "
 "the :attr:`cmdqueue` for immediate playback::"
 msgstr ""
+"この例には、基本的な記録機能と再実行機能が含まれていて、入力を小文字に変換しコマンドをファイルに書き込む責務を持たせた :meth:`~Cmd.precmd` メソッドに実装されています。\n"
+":meth:`do_playback` メソッドはファイルを読み込み、そこに記録されているコマンドをすぐに再実行するために :attr:`cmdqueue` に追加します::"
 
 #: ../Doc/library/cmd.rst:316
 msgid ""

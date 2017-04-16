@@ -783,6 +783,11 @@ msgid ""
 ":meth:`~queue.Queue.join` methods introduced into Python 2.5's "
 ":class:`queue.Queue` class."
 msgstr ""
+":class:`Queue`, :class:`SimpleQueue` と :class:`JoinableQueue` "
+"型は複数プロセスから生成/消費を行う :abbr:`FIFO (first-in, first-out, 先入れ先出し)` "
+"キューです。これらのキューは標準ライブラリの :class:`queue.Queue` を模倣しています。 :class:`Queue` には "
+"Python 2.5 の :class:`queue.Queue` クラスで導入された :meth:`~queue.Queue.task_done` と"
+" :meth:`~queue.Queue.join` メソッドがないことが違う点です。"
 
 #: ../Doc/library/multiprocessing.rst:660
 msgid ""
@@ -1155,7 +1160,7 @@ msgstr "これを呼び出すと \"join\" してすでに終了しているプ�
 
 #: ../Doc/library/multiprocessing.rst:893
 msgid "Return the number of CPUs in the system."
-msgstr ""
+msgstr "システムの CPU 数を返します。"
 
 #: ../Doc/library/multiprocessing.rst:895
 msgid ""
@@ -1163,10 +1168,12 @@ msgid ""
 "use.  The number of usable CPUs can be obtained with "
 "``len(os.sched_getaffinity(0))``"
 msgstr ""
+"この数は現在のプロセスが使える CPU 数と同じものではありません。\n"
+"使用可能な CPU 数は ``len(os.sched_getaffinity(0))`` で取得できます。"
 
 #: ../Doc/library/multiprocessing.rst:899
 msgid "May raise :exc:`NotImplementedError`."
-msgstr ""
+msgstr ":exc:`NotImplementedError` を送出するかもしれません。"
 
 #: ../Doc/library/multiprocessing.rst:902
 msgid ":func:`os.cpu_count`"
@@ -2426,11 +2433,11 @@ msgstr "書き込み可能な ``value`` 属性を作成して、そのプロキ�
 
 #: ../Doc/library/multiprocessing.rst:1753
 msgid "Create a shared :class:`dict` object and return a proxy for it."
-msgstr ""
+msgstr "共有 :class:`dict` オブジェクトを作成して、そのプロキシを返します。"
 
 #: ../Doc/library/multiprocessing.rst:1758
 msgid "Create a shared :class:`list` object and return a proxy for it."
-msgstr ""
+msgstr "共有 :class:`list` オブジェクトを作成して、そのプロキシを返します。"
 
 #: ../Doc/library/multiprocessing.rst:1760
 msgid ""
@@ -2438,6 +2445,8 @@ msgid ""
 " object such as a shared list can contain other shared objects which will "
 "all be managed and synchronized by the :class:`SyncManager`."
 msgstr ""
+"共有オブジェクトは入れ子もできます。\n"
+"例えば、共有リストのような共有コンテナオブジェクトは、 :class:`SyncManager` がまとめて管理し同期を取っている他の共有オブジェクトを保持できます。"
 
 #: ../Doc/library/multiprocessing.rst:1767
 msgid "A type that can register with :class:`SyncManager`."
