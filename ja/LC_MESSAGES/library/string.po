@@ -290,6 +290,8 @@ msgid ""
 "related to that of :ref:`formatted string literals <f-strings>`, but there "
 "are differences."
 msgstr ""
+":meth:`str.format` メソッドと :class:`Formatter` クラスは、文字列の書式指定に同じ文法を共有します (ただし、 :class:`Formatter` サブクラスでは、独自の書式指定文法を定義することが可能です)。\n"
+"この文法は :ref:`フォーマット済み文字列リテラル <f-strings>` の文法と関係してはいますが、異なるものです。"
 
 #: ../Doc/library/string.rst:195
 msgid ""
@@ -431,6 +433,9 @@ msgid ""
 " to the built-in :func:`format` function.  Each formattable type may define "
 "how the format specification is to be interpreted."
 msgstr ""
+"書式指定 (\"Format specifications\") は書式指定文字列の個々の値を表現する方法を指定するための、置換フィールドで使用されます (:ref:`formatstrings` および :ref:`f-strings` を参照してください) 。\n"
+"それらは、組み込み関数の :func:`format` 関数に直接渡されます。\n"
+"それぞれの書式指定可能な型について、書式指定がどのように解釈されるかが規定されます。"
 
 #: ../Doc/library/string.rst:293
 msgid ""
@@ -463,6 +468,11 @@ msgid ""
 "curly brace with a nested replacement field.  This limitation doesn't affect"
 " the :func:`format` function."
 msgstr ""
+"有効な *align* 値を指定する場合、その前に *fill* 文字を付けることができます。\n"
+"この文字には任意の文字を指定でき、省略された場合はデフォルトの空白文字となります。\n"
+":ref:`formatted string literal <f-strings>` の中や :meth:`str.format` メソッドを使う場合はリテラルの波括弧 (\"``{``\" と \"``}``\") を *fill* 文字として使えないことに注意してください。\n"
+"ただし、波括弧を入れ子になった置換フィールド内に挿入することはできます。\n"
+"この制限は :func:`format` 関数には影響しません。"
 
 #: ../Doc/library/string.rst:321
 msgid "The meaning of the various alignment options is as follows:"
@@ -608,7 +618,7 @@ msgstr ""
 
 #: ../Doc/library/string.rst:389
 msgid "Added the ``'_'`` option (see also :pep:`515`)."
-msgstr ""
+msgstr "``'_'`` オプションが追加されました (:pep:`515` も参照)。"
 
 #: ../Doc/library/string.rst:392
 msgid ""
