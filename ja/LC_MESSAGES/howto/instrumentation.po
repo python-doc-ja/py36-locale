@@ -114,10 +114,12 @@ msgid ""
 "If you've built Python as a shared library (with --enable-shared), you need "
 "to look instead within the shared library.  For example::"
 msgstr ""
+"Python を (--enable-shared を指定して) 共有ライブラリとしてビルドした場合は、代わりにその共有ライブラリの中を覗く必要があります。\n"
+"例えば次のようにします::"
 
 #: ../Doc/howto/instrumentation.rst:86
 msgid "Sufficiently modern readelf can print the metadata::"
-msgstr ""
+msgstr "十分に新しい readelf ではメタデータを出力できます::"
 
 #: ../Doc/howto/instrumentation.rst:123
 msgid ""
