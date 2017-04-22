@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../Doc/howto/instrumentation.rst:7
 msgid "Instrumenting CPython with DTrace and SystemTap"
-msgstr ""
+msgstr "DTrace と SystemTap で CPython を測定する"
 
 #: ../Doc/howto/instrumentation.rst:9
 msgid "David Malcolm"
@@ -36,18 +36,20 @@ msgid ""
 "what the processes on a computer system are doing.  They both use domain-"
 "specific languages allowing a user to write scripts which:"
 msgstr ""
+"Dtrace と SystemTap はモニタリングツールで、コンピュータシステムのプロセスが何をしているかを調べる方法を提供します。\n"
+"どちらもドメイン固有言語 (domain-specific language) を使用して、次のことができるスクリプトをユーザが書けます:"
 
 #: ../Doc/howto/instrumentation.rst:16
 msgid "filter which processes are to be observed"
-msgstr ""
+msgstr "観測対象のプロセスを絞り込む"
 
 #: ../Doc/howto/instrumentation.rst:17
 msgid "gather data from the processes of interest"
-msgstr ""
+msgstr "関心のあるプロセスからデータを収集する"
 
 #: ../Doc/howto/instrumentation.rst:18
 msgid "generate reports on the data"
-msgstr ""
+msgstr "収集したデータからレポートを生成する"
 
 #: ../Doc/howto/instrumentation.rst:20
 msgid ""
@@ -55,6 +57,8 @@ msgid ""
 " as \"probes\", that can be observed by a DTrace or SystemTap script, making"
 " it easier to monitor what the CPython processes on a system are doing."
 msgstr ""
+"Python 3.6 では、 CPython は \"プローブ\" としても知られる \"マーカー\" を埋め込んだビルドが行えます。\n"
+"マーカーは DTrace や SystemTap のスクリプトから観測でき、システムの CPython プロセスが何をしているかを観察するのが簡単になります。"
 
 #: ../Doc/howto/instrumentation.rst:27
 msgid ""
@@ -63,10 +67,13 @@ msgid ""
 "DTrace scripts can stop working or work incorrectly without warning when "
 "changing CPython versions."
 msgstr ""
+"DTrace マーカーは CPython インタプリタの実装詳細です。\n"
+"CPython のバージョン間でプローブの互換性があるという保証はありません。\n"
+"CPython のバージョンを変えると、 DTrace スクリプトは警告無しに動作しなくなったり、おかしな動作をする可能性があります。"
 
 #: ../Doc/howto/instrumentation.rst:34
 msgid "Enabling the static markers"
-msgstr ""
+msgstr "静的マーカーの有効化"
 
 #: ../Doc/howto/instrumentation.rst:36
 msgid ""
@@ -74,10 +81,12 @@ msgid ""
 "CPython with the embedded markers for SystemTap, the SystemTap development "
 "tools must be installed."
 msgstr ""
+"macOS には組み込みの DTrace サポートが備わっています。\n"
+"Linux では SystemTap 用のマーカーを埋め込んで CPython をビルドするためには、 SystemTap 開発ツールをインストールしなければなりません。"
 
 #: ../Doc/howto/instrumentation.rst:40
 msgid "On a Linux machine, this can be done via::"
-msgstr ""
+msgstr "Linux マシンでは、 SystemTap 開発ツールのインストールは次のように行えます::"
 
 #: ../Doc/howto/instrumentation.rst:44
 msgid "or::"
@@ -85,7 +94,7 @@ msgstr "もしくは::"
 
 #: ../Doc/howto/instrumentation.rst:49
 msgid "CPython must then be configured ``--with-dtrace``:"
-msgstr ""
+msgstr "次に CPython のビルドでは ``--with-dtrace`` を設定しなければなりません:"
 
 #: ../Doc/howto/instrumentation.rst:55
 msgid ""
