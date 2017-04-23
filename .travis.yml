@@ -17,12 +17,7 @@ install:
 - sphinx-build -j4 -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1 -E -d build/doctrees . ../../py36
 script:
 - cd ../../py36
-- git config user.email "travis-build-bot@example.com"
-- git config user.name "Autobuild bot on Travis-CI"
-- git pull origin master
-- git add .
-- if [ $(git status -s | wc -l) -eq 0 ]; then echo "nothing to commit"; exit 0; fi
-- git commit -a -m "update html"
+- ../py36-locale/update_github_pages.sh
 - git push --quiet "https://${GH_TOKEN}@github.com/python-doc-ja/py36.git" master:master
 
 env:
