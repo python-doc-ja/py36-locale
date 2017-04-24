@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Yusuke Miyazaki <miyazaki.dev@gmail.com>, 2017\n"
+"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -712,10 +712,12 @@ msgid ""
 "(`The Skein Hash Function Family <http://www.skein-"
 "hash.info/sites/default/files/skein1.3.pdf>`_, p. 21)"
 msgstr ""
+"(`The Skein Hash Function Family <http://www.skein-"
+"hash.info/sites/default/files/skein1.3.pdf>`_, p. 21)"
 
 #: ../Doc/library/hashlib.rst:607
 msgid "BLAKE2 can be personalized by passing bytes to the *person* argument::"
-msgstr ""
+msgstr "BLAKE2は *person* 引数にバイト列を渡すことでパーソナライズできます::"
 
 #: ../Doc/library/hashlib.rst:621
 msgid ""
@@ -725,21 +727,21 @@ msgstr ""
 
 #: ../Doc/library/hashlib.rst:635
 msgid "Tree mode"
-msgstr ""
+msgstr "ツリーモード"
 
 #: ../Doc/library/hashlib.rst:637
 msgid "Here's an example of hashing a minimal tree with two leaf nodes::"
-msgstr ""
+msgstr "これが二つの葉ノードからなる最小の木をハッシュする例です::"
 
 #: ../Doc/library/hashlib.rst:643
 msgid ""
 "This example uses 64-byte internal digests, and returns the 32-byte final "
 "digest::"
-msgstr ""
+msgstr "次の例では、64バイトの内部桁が使われ、32バイトの最終的なダイジェストを返しています::"
 
 #: ../Doc/library/hashlib.rst:673
 msgid "Credits"
-msgstr ""
+msgstr "クレジット::"
 
 #: ../Doc/library/hashlib.rst:675
 msgid ""
@@ -748,12 +750,16 @@ msgid ""
 "created by *Jean-Philippe Aumasson*, *Luca Henzen*, *Willi Meier*, and "
 "*Raphael C.-W. Phan*."
 msgstr ""
+"BLAKE2_ は*Jean-Philippe Aumasson*、 *Luca Henzen*、 *Willi Meier* そして *Raphael"
+" C.-W. Phan* によって作成された SHA-3_ の最終候補である BLAKE_  を元に、*Jean-Philippe Aumasson*、"
+" *Samuel Neves*、 *Zooko Wilcox-O'Hearn*, そして *Christian Winnerlein* "
+"によって設計されました。"
 
 #: ../Doc/library/hashlib.rst:680
 msgid ""
 "It uses core algorithm from ChaCha_ cipher designed by *Daniel J.  "
 "Bernstein*."
-msgstr ""
+msgstr "それは、 *Daniel J.  Bernstein* によって設計されたChaCha_ 暗号由来のアルゴリズムを用いています。"
 
 #: ../Doc/library/hashlib.rst:682
 msgid ""
@@ -761,16 +767,19 @@ msgid ""
 "*Dmitry Chestnykh* based on C implementation written by *Samuel Neves*. The "
 "documentation was copied from pyblake2_ and written by *Dmitry Chestnykh*."
 msgstr ""
+"標準ライブラリはpyblake2_ モジュールを基礎として実装されています。\n"
+"このモジュールは *Dmitry Chestnykh* によって、*Samuel Neves* が作成した C実装を元に書かれました。\n"
+"このドキュメントは、pyblake2_ からコピーされ、*Dmitry Chestnykh* によって書かれました。"
 
 #: ../Doc/library/hashlib.rst:686
 msgid "The C code was partly rewritten for Python by *Christian Heimes*."
-msgstr ""
+msgstr "*Christian Heimes* によって、一部のCコードがPython向けに書き直されました。"
 
 #: ../Doc/library/hashlib.rst:688
 msgid ""
 "The following public domain dedication applies for both C hash function "
 "implementation, extension code, and this documentation:"
-msgstr ""
+msgstr "以下の public domain dedicationが、Cのハッシュ関数実装と、拡張コードと、このドキュメントに適用されます:"
 
 #: ../Doc/library/hashlib.rst:691
 msgid ""
