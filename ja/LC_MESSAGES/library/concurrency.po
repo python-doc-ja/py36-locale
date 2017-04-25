@@ -8,7 +8,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -18,11 +17,11 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../Doc/library/concurrency.rst:5
+#: ../../library/concurrency.rst:5
 msgid "Concurrent Execution"
 msgstr "並行実行"
 
-#: ../Doc/library/concurrency.rst:7
+#: ../../library/concurrency.rst:7
 msgid ""
 "The modules described in this chapter provide support for concurrent "
 "execution of code. The appropriate choice of tool will depend on the task to"
@@ -34,6 +33,6 @@ msgstr ""
 "bound) や推奨される開発スタイル (イベントドリブンな協調的マルチタスク vs プリエンプティブマルチタスク) "
 "に依存します。ここに概観を示します:"
 
-#: ../Doc/library/concurrency.rst:25
+#: ../../library/concurrency.rst:25
 msgid "The following are support modules for some of the above services:"
 msgstr "以下のモジュールは上記のサービスの一部で使われるサポートモジュールです:"

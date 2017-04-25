@@ -8,7 +8,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Arihiro TAKASE <artakase@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -18,11 +17,11 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../Doc/distutils/extending.rst:5
+#: ../../distutils/extending.rst:5
 msgid "Extending Distutils"
 msgstr "Distutilsの拡張"
 
-#: ../Doc/distutils/extending.rst:7
+#: ../../distutils/extending.rst:7
 msgid ""
 "Distutils can be extended in various ways.  Most extensions take the form of"
 " new commands or replacements for existing commands.  New commands may be "
@@ -32,7 +31,7 @@ msgid ""
 msgstr ""
 "Distutilsは様々な方法で拡張できます。ほとんどの拡張は存在するコマンドを新しいコマンドで置換する形でおこなわれます。新しいコマンドはたとえば存在するコマンドを置換して、そのコマンドでパッケージをどう処理するかの細部を変更することでプラットフォーム特有のパッケージ形式をサポートするために書かれているかもしれません。"
 
-#: ../Doc/distutils/extending.rst:13
+#: ../../distutils/extending.rst:13
 msgid ""
 "Most extensions of the distutils are made within :file:`setup.py` scripts "
 "that want to modify existing commands; many simply add a few file extensions"
@@ -42,7 +41,7 @@ msgstr ""
 "ほとんどのdistutilsの拡張は存在するコマンドを変更したい :file:`setup.py` "
 "スクリプト中で行われます。ほとんどはパッケージにコピーされるファイル拡張子を :file:`.py` の他に、いくつか追加するものです。"
 
-#: ../Doc/distutils/extending.rst:18
+#: ../../distutils/extending.rst:18
 msgid ""
 "Most distutils command implementations are subclasses of the "
 ":class:`distutils.cmd.Command` class.  New commands may directly inherit "
@@ -55,11 +54,11 @@ msgstr ""
 "を直接継承し、置換するコマンドでは置換対象のコマンドのサブクラスにすることで :class:`Command` を間接的に継承します。コマンドは "
 ":class:`Command` から派生したものである必要があります。"
 
-#: ../Doc/distutils/extending.rst:33
+#: ../../distutils/extending.rst:33
 msgid "Integrating new commands"
 msgstr "新しいコマンドの統合"
 
-#: ../Doc/distutils/extending.rst:35
+#: ../../distutils/extending.rst:35
 msgid ""
 "There are different ways to integrate new command implementations into "
 "distutils.  The most difficult is to lobby for the inclusion of the new "
@@ -68,7 +67,7 @@ msgid ""
 msgstr ""
 "新しいコマンド実装を統合するにはいくつかの方法があります。一番難しいものは新機能をdistutils本体に取り込み、それのサポートを提供するPythonのバージョンが出ることを待つ(そして使う)ことです。これは様々な理由で本当に難しいことです。"
 
-#: ../Doc/distutils/extending.rst:40
+#: ../../distutils/extending.rst:40
 msgid ""
 "The most common, and possibly the most reasonable for most needs, is to "
 "include the new implementations with your :file:`setup.py` script, and cause"
@@ -77,7 +76,7 @@ msgstr ""
 "もっとも一般的な、そしておそらくほとんどの場合にもっとも妥当な方法は、新しい実装をあなたの :file:`setup.py` スクリプトに取り込み、 "
 ":func:`distutils.core.setup` 関数でそれらを使うようにすることです::"
 
-#: ../Doc/distutils/extending.rst:55
+#: ../../distutils/extending.rst:55
 msgid ""
 "This approach is most valuable if the new implementations must be used to "
 "use a particular package, as everyone interested in the package will need to"
@@ -85,7 +84,7 @@ msgid ""
 msgstr ""
 "このアプローチは新実装をある特定のパッケージで利用したい時、そのパッケージに興味をもつ人全員がコマンドの新実装を必要とする時にもっとも価値があります。"
 
-#: ../Doc/distutils/extending.rst:59
+#: ../../distutils/extending.rst:59
 msgid ""
 "Beginning with Python 2.4, a third option is available, intended to allow "
 "new commands to be added which can support existing :file:`setup.py` scripts"
@@ -104,7 +103,7 @@ msgid ""
 "package."
 msgstr ""
 
-#: ../Doc/distutils/extending.rst:74
+#: ../../distutils/extending.rst:74
 msgid ""
 "This new option can be used to add any number of packages to the list of "
 "packages searched for command implementations; multiple package names should"
@@ -127,11 +126,11 @@ msgstr ""
 " :command:`bdist_openpkg` は、 :class:`distcmds.bdist_openpkg.bdist_openpkg` "
 "か、 :class:`buildcmds.bdist_openpkg.bdist_openpkg` で実装されるかもしれません。"
 
-#: ../Doc/distutils/extending.rst:88
+#: ../../distutils/extending.rst:88
 msgid "Adding new distribution types"
 msgstr "配布物の種類を追加する"
 
-#: ../Doc/distutils/extending.rst:90
+#: ../../distutils/extending.rst:90
 msgid ""
 "Commands that create distributions (files in the :file:`dist/` directory) "
 "need to add ``(command, filename)`` pairs to "

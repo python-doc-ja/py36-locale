@@ -8,7 +8,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Arihiro TAKASE <artakase@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -18,11 +17,11 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../Doc/c-api/objimpl.rst:7
+#: ../../c-api/objimpl.rst:7
 msgid "Object Implementation Support"
 msgstr "オブジェクト実装サポート (object implementation support)"
 
-#: ../Doc/c-api/objimpl.rst:9
+#: ../../c-api/objimpl.rst:9
 msgid ""
 "This chapter describes the functions, types, and macros used when defining "
 "new object types."

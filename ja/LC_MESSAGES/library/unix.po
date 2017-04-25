@@ -8,7 +8,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Arihiro TAKASE <artakase@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -18,11 +17,11 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../Doc/library/unix.rst:5
+#: ../../library/unix.rst:5
 msgid "Unix Specific Services"
 msgstr "Unix 固有のサービス"
 
-#: ../Doc/library/unix.rst:7
+#: ../../library/unix.rst:7
 msgid ""
 "The modules described in this chapter provide interfaces to features that "
 "are unique to the Unix operating system, or in some cases to some or many "

@@ -8,7 +8,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Arihiro TAKASE <artakase@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -18,11 +17,11 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../Doc/c-api/bool.rst:6
+#: ../../c-api/bool.rst:6
 msgid "Boolean Objects"
 msgstr "Boolean オブジェクト"
 
-#: ../Doc/c-api/bool.rst:8
+#: ../../c-api/bool.rst:8
 msgid ""
 "Booleans in Python are implemented as a subclass of integers.  There are "
 "only two booleans, :const:`Py_False` and :const:`Py_True`.  As such, the "
@@ -33,11 +32,11 @@ msgstr ""
 ":const:`Py_True` の 2 "
 "つしかありません。従って、通常の生成／削除関数はブール型にはあてはまりません。とはいえ、以下のマクロが利用できます。"
 
-#: ../Doc/c-api/bool.rst:16
+#: ../../c-api/bool.rst:16
 msgid "Return true if *o* is of type :c:data:`PyBool_Type`."
 msgstr "*o* が :c:data:`PyBool_Type` の場合に真を返します。"
 
-#: ../Doc/c-api/bool.rst:21
+#: ../../c-api/bool.rst:21
 msgid ""
 "The Python ``False`` object.  This object has no methods.  It needs to be "
 "treated just like any other object with respect to reference counts."
@@ -45,7 +44,7 @@ msgstr ""
 "Python における ``False`` "
 "オブジェクトです。このオブジェクトはメソッドを持ちません。参照カウントの点では、他のオブジェクトと同様に扱う必要があります。"
 
-#: ../Doc/c-api/bool.rst:27
+#: ../../c-api/bool.rst:27
 msgid ""
 "The Python ``True`` object.  This object has no methods.  It needs to be "
 "treated just like any other object with respect to reference counts."
@@ -53,19 +52,19 @@ msgstr ""
 "Python における ``True`` "
 "オブジェクトです。このオブジェクトはメソッドを持ちません。参照カウントの点では、他のオブジェクトと同様に扱う必要があります。"
 
-#: ../Doc/c-api/bool.rst:33
+#: ../../c-api/bool.rst:33
 msgid ""
 "Return :const:`Py_False` from a function, properly incrementing its "
 "reference count."
 msgstr ":const:`Py_False` に適切な参照カウントのインクリメントを行って、関数から返すためのマクロです。"
 
-#: ../Doc/c-api/bool.rst:39
+#: ../../c-api/bool.rst:39
 msgid ""
 "Return :const:`Py_True` from a function, properly incrementing its reference"
 " count."
 msgstr ":const:`Py_True` に適切な参照カウントのインクリメントを行って、関数から返すためのマクロです。"
 
-#: ../Doc/c-api/bool.rst:45
+#: ../../c-api/bool.rst:45
 msgid ""
 "Return a new reference to :const:`Py_True` or :const:`Py_False` depending on"
 " the truth value of *v*."

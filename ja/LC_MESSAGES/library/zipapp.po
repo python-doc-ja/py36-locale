@@ -8,7 +8,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Naoki INADA <songofacandy@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -18,15 +17,15 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../Doc/library/zipapp.rst:2
+#: ../../library/zipapp.rst:2
 msgid ":mod:`zipapp` --- Manage executable python zip archives"
 msgstr ":mod:`zipapp` --- 実行可能な python zip 書庫を管理する"
 
-#: ../Doc/library/zipapp.rst:9
+#: ../../library/zipapp.rst:9
 msgid "**Source code:** :source:`Lib/zipapp.py`"
 msgstr "**ソースコード:** :source:`Lib/zipapp.py`"
 
-#: ../Doc/library/zipapp.rst:16
+#: ../../library/zipapp.rst:16
 msgid ""
 "This module provides tools to manage the creation of zip files containing "
 "Python code, which can be  :ref:`executed directly by the Python interpreter"
@@ -37,11 +36,11 @@ msgstr ""
 "zip ファイルは :ref:`Python インタープリタで直接実行することが出来ます <using-on-interface-options>`。\n"
 "このモジュールは :ref:`zipapp-command-line-interface` と :ref:`zipapp-python-api` の両方を提供します。"
 
-#: ../Doc/library/zipapp.rst:23
+#: ../../library/zipapp.rst:23
 msgid "Basic Example"
 msgstr "基本的な例"
 
-#: ../Doc/library/zipapp.rst:25
+#: ../../library/zipapp.rst:25
 msgid ""
 "The following example shows how the :ref:`zipapp-command-line-interface` can"
 " be used to create an executable archive from a directory containing Python "
@@ -49,16 +48,16 @@ msgid ""
 "module ``myapp`` in the archive."
 msgstr ""
 
-#: ../Doc/library/zipapp.rst:40
+#: ../../library/zipapp.rst:40
 msgid "Command-Line Interface"
 msgstr "コマンドラインインターフェイス"
 
-#: ../Doc/library/zipapp.rst:42
+#: ../../library/zipapp.rst:42
 msgid ""
 "When called as a program from the command line, the following form is used:"
 msgstr "コマンドラインからプログラムとして呼び出す場合は、次の形式を使用います:"
 
-#: ../Doc/library/zipapp.rst:48
+#: ../../library/zipapp.rst:48
 msgid ""
 "If *source* is a directory, this will create an archive from the contents of"
 " *source*.  If *source* is a file, it should be an archive, and it will be "
@@ -68,11 +67,11 @@ msgstr ""
 "*source* がディレクトリである場合、 *source* ディレクトリの内容からアーカイブを作成します。\n"
 "*source* がファイルである場合、 *source* ファイル自身をアーカイブ化し、保存先アーカイブへコピーします。(または --info オプションが指定されている場合はファイルのシェバン行が表示されます。)"
 
-#: ../Doc/library/zipapp.rst:53
+#: ../../library/zipapp.rst:53
 msgid "The following options are understood:"
 msgstr "以下のオプションが解釈されます:"
 
-#: ../Doc/library/zipapp.rst:59
+#: ../../library/zipapp.rst:59
 msgid ""
 "Write the output to a file named *output*.  If this option is not specified,"
 " the output filename will be the same as the input *source*, with the "
@@ -82,7 +81,7 @@ msgstr ""
 "出力を *output* に指定した名前のファイルへ書込みます。このオプションが指定されていない場合、出力先ファイル名は入力元 *source* と同じになり、 ``.pyz`` 拡張子が付与されます。\n"
 "ファイル名が明示的に指定されている場合は、指定されたファイル名を使用します。(必要であれば ``.pyz`` 拡張子が含まれます。)"
 
-#: ../Doc/library/zipapp.rst:64
+#: ../../library/zipapp.rst:64
 msgid ""
 "An output filename must be specified if the *source* is an archive (and in "
 "that case, *output* must not be the same as *source*)."
@@ -90,7 +89,7 @@ msgstr ""
 "*source* がアーカイブである場合は、出力先ファイル名を必ず指定しなければなりません。\n"
 "(*source* がアーカイブである場合は *output* を必ず *source* とは別の名前にしてください。)"
 
-#: ../Doc/library/zipapp.rst:69
+#: ../../library/zipapp.rst:69
 msgid ""
 "Add a ``#!`` line to the archive specifying *interpreter* as the command to "
 "run.  Also, on POSIX, make the archive executable.  The default is to write "
@@ -100,7 +99,7 @@ msgstr ""
 "また、POSIX では書庫を実行可能にします。\n"
 "デフォルトでは ``#!`` 行を書かず、ファイルを実行可能にはしません。"
 
-#: ../Doc/library/zipapp.rst:75
+#: ../../library/zipapp.rst:75
 msgid ""
 "Write a ``__main__.py`` file to the archive that executes *mainfn*.  The "
 "*mainfn* argument should have the form \"pkg.mod:fn\", where \"pkg.mod\" is "
@@ -113,11 +112,11 @@ msgstr ""
 "\"fn\" は指定した module から呼出すことのできる関数です。\n"
 "``__main__.py`` ファイルが module から呼出すことのできる関数を実行します。"
 
-#: ../Doc/library/zipapp.rst:80
+#: ../../library/zipapp.rst:80
 msgid ":option:`--main` cannot be specified when copying an archive."
 msgstr "書庫をコピーする際、 :option:`--main` を指定することは出来ません。"
 
-#: ../Doc/library/zipapp.rst:84
+#: ../../library/zipapp.rst:84
 msgid ""
 "Display the interpreter embedded in the archive, for diagnostic purposes.  "
 "In this case, any other options are ignored and SOURCE must be an archive, "
@@ -126,19 +125,19 @@ msgstr ""
 "診断するために書庫に埋め込まれたインタープリタを表示します。\n"
 "この場合、他の全てのオプションは無視され、SOURCE はディレクトリではなく書庫でなければなりません。"
 
-#: ../Doc/library/zipapp.rst:90
+#: ../../library/zipapp.rst:90
 msgid "Print a short usage message and exit."
 msgstr "簡単な使用法を表示して終了します。"
 
-#: ../Doc/library/zipapp.rst:96
+#: ../../library/zipapp.rst:96
 msgid "Python API"
 msgstr "Python API"
 
-#: ../Doc/library/zipapp.rst:98
+#: ../../library/zipapp.rst:98
 msgid "The module defines two convenience functions:"
 msgstr "このモジュールは 2 つの簡便関数を定義しています:"
 
-#: ../Doc/library/zipapp.rst:103
+#: ../../library/zipapp.rst:103
 msgid ""
 "Create an application archive from *source*.  The source can be any of the "
 "following:"
@@ -146,7 +145,7 @@ msgstr ""
 "*source* からアプリケーション書庫を作成します。\n"
 "ソースは以下のいずれかです:"
 
-#: ../Doc/library/zipapp.rst:106
+#: ../../library/zipapp.rst:106
 msgid ""
 "The name of a directory, or a :class:`pathlib.Path` object referring to a "
 "directory, in which case a new application archive will be created from the "
@@ -156,7 +155,7 @@ msgstr ""
 "新しいアプリケーションアーカイブがディレクトリのコンテンツから作成される場合に\n"
 ":class:`pathlib.Path` オブジェクトが参照するディレクトリ。"
 
-#: ../Doc/library/zipapp.rst:109
+#: ../../library/zipapp.rst:109
 msgid ""
 "The name of an existing application archive file, or a :class:`pathlib.Path`"
 " object referring to such a file, in which case the file is copied to the "
@@ -168,7 +167,7 @@ msgstr ""
 "または(*interpreter* 引数に指定した値を反映し、修正する)アーカイブへ\n"
 "ファイルがコピーされる場合に :class:`pathlib.Path` オブジェクトが参照するファイル。"
 
-#: ../Doc/library/zipapp.rst:113
+#: ../../library/zipapp.rst:113
 msgid ""
 "A file object open for reading in bytes mode.  The content of the file "
 "should be an application archive, and the file object is assumed to be "
@@ -178,19 +177,19 @@ msgstr ""
 "ファイルの内容がアプリケーションアーカイブとなり、\n"
 "ファイルオブジェクトがアーカイブの起点となります。"
 
-#: ../Doc/library/zipapp.rst:117
+#: ../../library/zipapp.rst:117
 msgid ""
 "The *target* argument determines where the resulting archive will be "
 "written:"
 msgstr "*target* 引数は作成される書庫が書き込まれる場所を決めます:"
 
-#: ../Doc/library/zipapp.rst:120
+#: ../../library/zipapp.rst:120
 msgid ""
 "If it is the name of a file, or a :class:`pathlb.Path` object, the archive "
 "will be written to that file."
 msgstr "ファイル名、または :class:`pathlb.Path` オブジェクトを指定した場合、アーカイブは指定したファイルへ書込まれます。"
 
-#: ../Doc/library/zipapp.rst:122
+#: ../../library/zipapp.rst:122
 msgid ""
 "If it is an open file object, the archive will be written to that file "
 "object, which must be open for writing in bytes mode."
@@ -199,14 +198,14 @@ msgstr ""
 "アーカイブはそのファイルオブジェクトへ書込みを行ないます。 \n"
 "ファイルオブジェクトは必ずバイトモードの書込みで開いてください。"
 
-#: ../Doc/library/zipapp.rst:124
+#: ../../library/zipapp.rst:124
 msgid ""
 "If the target is omitted (or ``None``), the source must be a directory and "
 "the target will be a file with the same name as the source, with a ``.pyz`` "
 "extension added."
 msgstr ""
 
-#: ../Doc/library/zipapp.rst:128
+#: ../../library/zipapp.rst:128
 msgid ""
 "The *interpreter* argument specifies the name of the Python interpreter with"
 " which the archive will be executed.  It is written as a \"shebang\" line at"
@@ -224,7 +223,7 @@ msgstr ""
 "interpreter が指定されており、 target がファイル名である場合、\n"
 "target ファイルの実行可能ビットが設定されます。"
 
-#: ../Doc/library/zipapp.rst:136
+#: ../../library/zipapp.rst:136
 msgid ""
 "The *main* argument specifies the name of a callable which will be used as "
 "the main program for the archive.  It can only be specified if the source is"
@@ -244,7 +243,7 @@ msgstr ""
 "*main* は無視すべきエラーとなり、\n"
 "作成されたアーカイブには実行可能ビットが設定されません。"
 
-#: ../Doc/library/zipapp.rst:146
+#: ../../library/zipapp.rst:146
 msgid ""
 "If a file object is specified for *source* or *target*, it is the caller's "
 "responsibility to close it after calling create_archive."
@@ -252,7 +251,7 @@ msgstr ""
 "*source* または *target* へファイルオブジェクトを指定した場合、\n"
 "caller が create_archive の呼出し後にオブジェクトを閉じます。"
 
-#: ../Doc/library/zipapp.rst:149
+#: ../../library/zipapp.rst:149
 msgid ""
 "When copying an existing archive, file objects supplied only need ``read`` "
 "and ``readline``, or ``write`` methods.  When creating an archive from a "
@@ -263,7 +262,7 @@ msgstr ""
 "アーカイブをディレクトリから作成する際、 target がファイルオブジェクトである場合は、\n"
 "``zipfile.ZipFile`` クラスへ渡されます。必ずクラスが必要とするメソッドを提供してください。"
 
-#: ../Doc/library/zipapp.rst:157
+#: ../../library/zipapp.rst:157
 msgid ""
 "Return the interpreter specified in the ``#!`` line at the start of the "
 "archive.  If there is no ``#!`` line, return :const:`None`. The *archive* "
@@ -275,32 +274,32 @@ msgstr ""
 "*archive* 引数は、ファイル名またはバイトモードの読込みで開いた\n"
 "ファイルに準じるオブジェクトを指定することができ、アーカイブの起点で決定されます。"
 
-#: ../Doc/library/zipapp.rst:166
+#: ../../library/zipapp.rst:166
 msgid "Examples"
 msgstr "使用例"
 
-#: ../Doc/library/zipapp.rst:168
+#: ../../library/zipapp.rst:168
 msgid "Pack up a directory into an archive, and run it."
 msgstr "ディレクトリを書庫に圧縮し、実行します。"
 
-#: ../Doc/library/zipapp.rst:176
+#: ../../library/zipapp.rst:176
 msgid "The same can be done using the :func:`create_archive` functon::"
 msgstr "同じことを :func:`create_archive` 関数を使用して行うことが出来ます::"
 
-#: ../Doc/library/zipapp.rst:181
+#: ../../library/zipapp.rst:181
 msgid ""
 "To make the application directly executable on POSIX, specify an interpreter"
 " to use."
 msgstr "POSIX でアプリケーションを直接実行可能にするには使用するインタープリタを指定します。"
 
-#: ../Doc/library/zipapp.rst:190
+#: ../../library/zipapp.rst:190
 msgid ""
 "To replace the shebang line on an existing archive, create a modified "
 "archive using the :func:`create_archive` function::"
 msgstr ""
 "シバン行を既存の書庫で置換するには、 :func:`create_archive` function: を使用して変更された書庫を作成します:"
 
-#: ../Doc/library/zipapp.rst:196
+#: ../../library/zipapp.rst:196
 msgid ""
 "To update the file in place, do the replacement in memory using a "
 ":class:`BytesIO` object, and then overwrite the source afterwards.  Note "
@@ -315,7 +314,7 @@ msgstr ""
 "このコードは上記のようなエラーからファイルを保護しませんが、プロダクションコードは保護するべきです。\n"
 "この方法はアーカイブがメモリーに収まる場合にのみ動作します::"
 
-#: ../Doc/library/zipapp.rst:210
+#: ../../library/zipapp.rst:210
 msgid ""
 "Note that if you specify an interpreter and then distribute your application"
 " archive, you need to ensure that the interpreter used is portable.  The "
@@ -323,7 +322,7 @@ msgid ""
 " but there are other issues to consider:"
 msgstr ""
 
-#: ../Doc/library/zipapp.rst:215
+#: ../../library/zipapp.rst:215
 msgid ""
 "If you use \"/usr/bin/env python\" (or other forms of the \"python\" "
 "command, such as \"/usr/bin/python\"), you need to consider that your users "
@@ -331,25 +330,25 @@ msgid ""
 "to work under both versions."
 msgstr ""
 
-#: ../Doc/library/zipapp.rst:219
+#: ../../library/zipapp.rst:219
 msgid ""
 "If you use an explicit version, for example \"/usr/bin/env python3\" your "
 "application will not work for users who do not have that version.  (This may"
 " be what you want if you have not made your code Python 2 compatible)."
 msgstr ""
 
-#: ../Doc/library/zipapp.rst:222
+#: ../../library/zipapp.rst:222
 msgid ""
 "There is no way to say \"python X.Y or later\", so be careful of using an "
 "exact version like \"/usr/bin/env python3.4\" as you will need to change "
 "your shebang line for users of Python 3.5, for example."
 msgstr ""
 
-#: ../Doc/library/zipapp.rst:227
+#: ../../library/zipapp.rst:227
 msgid "The Python Zip Application Archive Format"
 msgstr ""
 
-#: ../Doc/library/zipapp.rst:229
+#: ../../library/zipapp.rst:229
 msgid ""
 "Python has been able to execute zip files which contain a ``__main__.py`` "
 "file since version 2.6.  In order to be executed by Python, an application "
@@ -360,18 +359,18 @@ msgid ""
 "from the zip file."
 msgstr ""
 
-#: ../Doc/library/zipapp.rst:236
+#: ../../library/zipapp.rst:236
 msgid ""
 "The zip file format allows arbitrary data to be prepended to a zip file.  "
 "The zip application format uses this ability to prepend a standard POSIX "
 "\"shebang\" line to the file (``#!/path/to/interpreter``)."
 msgstr ""
 
-#: ../Doc/library/zipapp.rst:240
+#: ../../library/zipapp.rst:240
 msgid "Formally, the Python zip application format is therefore:"
 msgstr ""
 
-#: ../Doc/library/zipapp.rst:242
+#: ../../library/zipapp.rst:242
 msgid ""
 "An optional shebang line, containing the characters ``b'#!'`` followed by an"
 " interpreter name, and then a newline (``b'\\n'``) character.  The "
@@ -381,7 +380,7 @@ msgid ""
 "POSIX."
 msgstr ""
 
-#: ../Doc/library/zipapp.rst:247
+#: ../../library/zipapp.rst:247
 msgid ""
 "Standard zipfile data, as generated by the :mod:`zipfile` module.  The "
 "zipfile content *must* include a file called ``__main__.py`` (which must be "
@@ -389,13 +388,13 @@ msgid ""
 " zipfile data can be compressed or uncompressed."
 msgstr ""
 
-#: ../Doc/library/zipapp.rst:252
+#: ../../library/zipapp.rst:252
 msgid ""
 "If an application archive has a shebang line, it may have the executable bit"
 " set on POSIX systems, to allow it to be executed directly."
 msgstr ""
 
-#: ../Doc/library/zipapp.rst:255
+#: ../../library/zipapp.rst:255
 msgid ""
 "There is no requirement that the tools in this module are used to create "
 "application archives - the module is a convenience, but archives in the "

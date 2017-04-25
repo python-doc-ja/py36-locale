@@ -8,7 +8,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -18,15 +17,15 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../Doc/library/macpath.rst:2
+#: ../../library/macpath.rst:2
 msgid ":mod:`macpath` --- Mac OS 9 path manipulation functions"
 msgstr ":mod:`macpath` --- Mac OS 9 のパス操作関数"
 
-#: ../Doc/library/macpath.rst:7
+#: ../../library/macpath.rst:7
 msgid "**Source code:** :source:`Lib/macpath.py`"
 msgstr "**ソースコード:** :source:`Lib/macpath.py`"
 
-#: ../Doc/library/macpath.rst:11
+#: ../../library/macpath.rst:11
 msgid ""
 "This module is the Mac OS 9 (and earlier) implementation of the "
 ":mod:`os.path` module. It can be used to manipulate old-style Macintosh "
@@ -35,7 +34,7 @@ msgstr ""
 "このモジュールは :mod:`os.path` モジュールの Macintosh 9 (およびそれ以前) 用の実装です。これを使用すると、古い形式の "
 "Macintosh のパス名を Mac OS X (あるいはその他の任意のプラットフォーム) 上で扱うことができます。"
 
-#: ../Doc/library/macpath.rst:15
+#: ../../library/macpath.rst:15
 msgid ""
 "The following functions are available in this module: :func:`normcase`, "
 ":func:`normpath`, :func:`isabs`, :func:`join`, :func:`split`, :func:`isdir`,"

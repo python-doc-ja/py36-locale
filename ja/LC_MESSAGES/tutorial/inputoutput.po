@@ -8,7 +8,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Hano <hanohrs@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -18,11 +17,11 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../Doc/tutorial/inputoutput.rst:5
+#: ../../tutorial/inputoutput.rst:5
 msgid "Input and Output"
 msgstr "入力と出力"
 
-#: ../Doc/tutorial/inputoutput.rst:7
+#: ../../tutorial/inputoutput.rst:7
 msgid ""
 "There are several ways to present the output of a program; data can be "
 "printed in a human-readable form, or written to a file for future use. This "
@@ -32,11 +31,11 @@ msgstr ""
 "データを人間が読める形で出力することもあれば、将来使うためにファイルに書くこともあります。\n"
 "この章では、こうした幾つかの出力の方法について話します。"
 
-#: ../Doc/tutorial/inputoutput.rst:15
+#: ../../tutorial/inputoutput.rst:15
 msgid "Fancier Output Formatting"
 msgstr "出力を見やすくフォーマットする"
 
-#: ../Doc/tutorial/inputoutput.rst:17
+#: ../../tutorial/inputoutput.rst:17
 msgid ""
 "So far we've encountered two ways of writing values: *expression statements*"
 " and the :func:`print` function.  (A third way is using the :meth:`write` "
@@ -47,7 +46,7 @@ msgstr ""
 "(第三はファイルオブジェクトの :meth:`write` メソッドを使う方法です。標準出力を表すファイルは ``sys.stdout`` "
 "で参照できます。詳細はライブラリリファレンスを参照してください。)"
 
-#: ../Doc/tutorial/inputoutput.rst:22
+#: ../../tutorial/inputoutput.rst:22
 msgid ""
 "Often you'll want more control over the formatting of your output than "
 "simply printing space-separated values.  There are two ways to format your "
@@ -63,14 +62,14 @@ msgstr ""
 "第一の方法は、全ての文字列を自分で処理するというものです。文字列のスライスや結合といった操作を使えば、思い通りのレイアウトを作成することができます。文字列オブジェクトは、文字列を指定されたカラム幅に揃えるための幾つかの便利なメソッドを提供しています。これらのメソッドについてはすぐ後で簡単に説明します。\n"
 "もうひとつの方法は :ref:`フォーマット済み文字列リテラル <f-strings>` や :meth:`str.format` メソッドを利用することです。"
 
-#: ../Doc/tutorial/inputoutput.rst:31
+#: ../../tutorial/inputoutput.rst:31
 msgid ""
 "The :mod:`string` module contains a :class:`~string.Template` class which "
 "offers yet another way to substitute values into strings."
 msgstr ""
 ":mod:`string` モジュールの :class:`~string.Template` クラスも、文字列中の値を置換する別の方法を提供しています。"
 
-#: ../Doc/tutorial/inputoutput.rst:34
+#: ../../tutorial/inputoutput.rst:34
 msgid ""
 "One question remains, of course: how do you convert values to strings? "
 "Luckily, Python has ways to convert any value to a string: pass it to the "
@@ -79,7 +78,7 @@ msgstr ""
 "もちろん、一つ問題があります。値をどうやって文字列に変換したらいいのでしょうか？幸運なことに、Python には値を文字列に変換する方法があります。値を"
 " :func:`repr` か :func:`str` 関数に渡してください。"
 
-#: ../Doc/tutorial/inputoutput.rst:38
+#: ../../tutorial/inputoutput.rst:38
 msgid ""
 "The :func:`str` function is meant to return representations of values which "
 "are fairly human-readable, while :func:`repr` is meant to generate "
@@ -95,15 +94,15 @@ msgstr ""
 "表現を返すためのものです。人間が読むのに適した特定の表現を持たないオブジェクトにおいては、 :func:`str` は :func:`repr` "
 "と同じ値を返します。数値や、リストや辞書を始めとするデータ構造など、多くの値がどちらの関数に対しても同じ表現を返します。一方、文字列は、2つの異なる表現を持っています。"
 
-#: ../Doc/tutorial/inputoutput.rst:47
+#: ../../tutorial/inputoutput.rst:47
 msgid "Some examples::"
 msgstr "例::"
 
-#: ../Doc/tutorial/inputoutput.rst:70
+#: ../../tutorial/inputoutput.rst:70
 msgid "Here are two ways to write a table of squares and cubes::"
 msgstr "以下に 2 乗と 3 乗の値からなる表を書く二つの方法を示します::"
 
-#: ../Doc/tutorial/inputoutput.rst:102
+#: ../../tutorial/inputoutput.rst:102
 msgid ""
 "(Note that in the first example, one space between each column was added by "
 "the way :func:`print` works: it always adds spaces between its arguments.)"
@@ -111,7 +110,7 @@ msgstr ""
 "(最初の例で、各カラムの間のスペース一個は :func:`print` により追加されていることに注意してください。 :func:`print` "
 "は引数間に常に空白を追加します。)"
 
-#: ../Doc/tutorial/inputoutput.rst:105
+#: ../../tutorial/inputoutput.rst:105
 msgid ""
 "This example demonstrates the :meth:`str.rjust` method of string objects, "
 "which right-justifies a string in a field of a given width by padding it "
@@ -129,18 +128,18 @@ msgstr ""
 "があります。これらのメソッドは何か出力を行うわけではなく、ただ新しい文字列を返します。入力文字列が長すぎる場合、文字列を切り詰めることはせずに値をそのまま返します。この仕様のためにカラムのレイアウトが滅茶苦茶になるかもしれませんが、嘘の値が代わりに書き出されるよりはましです。(本当に切り詰めを行いたいのなら、全てのカラムに"
 " ``x.ljust(n)[:n]`` のようにスライス表記を加えることもできます。)"
 
-#: ../Doc/tutorial/inputoutput.rst:115
+#: ../../tutorial/inputoutput.rst:115
 msgid ""
 "There is another method, :meth:`str.zfill`, which pads a numeric string on "
 "the left with zeros.  It understands about plus and minus signs::"
 msgstr ""
 "もう一つのメソッド、 :meth:`str.zfill` は、数値文字列の左側をゼロ詰めします。このメソッドは正と負の符号を正しく扱います::"
 
-#: ../Doc/tutorial/inputoutput.rst:125
+#: ../../tutorial/inputoutput.rst:125
 msgid "Basic usage of the :meth:`str.format` method looks like this::"
 msgstr ":meth:`str.format` メソッドの基本的な使い方は次のようなものです::"
 
-#: ../Doc/tutorial/inputoutput.rst:130
+#: ../../tutorial/inputoutput.rst:130
 msgid ""
 "The brackets and characters within them (called format fields) are replaced "
 "with the objects passed into the :meth:`str.format` method.  A number in the"
@@ -151,17 +150,17 @@ msgstr ""
 "メソッドに渡されたオブジェクトに置換されます。括弧の中の数字は :meth:`str.format` "
 "メソッドに渡されたオブジェクトの位置を表すのに使えます。 ::"
 
-#: ../Doc/tutorial/inputoutput.rst:140
+#: ../../tutorial/inputoutput.rst:140
 msgid ""
 "If keyword arguments are used in the :meth:`str.format` method, their values"
 " are referred to by using the name of the argument. ::"
 msgstr ":meth:`str.format` メソッドにキーワード引数が渡された場合、その値はキーワード引数の名前によって参照されます。 ::"
 
-#: ../Doc/tutorial/inputoutput.rst:147
+#: ../../tutorial/inputoutput.rst:147
 msgid "Positional and keyword arguments can be arbitrarily combined::"
 msgstr "順序引数とキーワード引数を組み合わせて使うこともできます::"
 
-#: ../Doc/tutorial/inputoutput.rst:153
+#: ../../tutorial/inputoutput.rst:153
 msgid ""
 "``'!a'`` (apply :func:`ascii`), ``'!s'`` (apply :func:`str`) and ``'!r'`` "
 "(apply :func:`repr`) can be used to convert the value before it is "
@@ -170,7 +169,7 @@ msgstr ""
 ":func:`ascii` を適応する ``'!a'`` や :func:`str` を適応する ``'!s'`` や :func:`repr` "
 "を適応する ``'!r'`` を使って、値をフォーマットする前に変換することができます::"
 
-#: ../Doc/tutorial/inputoutput.rst:162
+#: ../../tutorial/inputoutput.rst:162
 msgid ""
 "An optional ``':'`` and format specifier can follow the field name. This "
 "allows greater control over how the value is formatted.  The following "
@@ -179,13 +178,13 @@ msgstr ""
 "オプションの ``':'`` "
 "とフォーマット指定子を、フィールド名の後ろに付けることができます。フォーマット指定子によって値がどうフォーマットされるかを制御することができます。次の例では、円周率πを、小数点以下3桁で丸めてフォーマットしています。"
 
-#: ../Doc/tutorial/inputoutput.rst:170
+#: ../../tutorial/inputoutput.rst:170
 msgid ""
 "Passing an integer after the ``':'`` will cause that field to be a minimum "
 "number of characters wide.  This is useful for making tables pretty. ::"
 msgstr "``':'`` の後ろに整数をつけると、そのフィールドの最低の文字幅を指定できます。この機能は綺麗なテーブルを作るのに便利です。 ::"
 
-#: ../Doc/tutorial/inputoutput.rst:181
+#: ../../tutorial/inputoutput.rst:181
 msgid ""
 "If you have a really long format string that you don't want to split up, it "
 "would be nice if you could reference the variables to be formatted by name "
@@ -195,29 +194,29 @@ msgstr ""
 "もしも長い書式文字列があり、それを分割したくない場合には、変数を引数の位置ではなく変数の名前で参照できるとよいでしょう。これは、辞書を引数に渡して、角括弧"
 " ``'[]'`` を使って辞書のキーを参照することで可能です ::"
 
-#: ../Doc/tutorial/inputoutput.rst:191
+#: ../../tutorial/inputoutput.rst:191
 msgid ""
 "This could also be done by passing the table as keyword arguments with the "
 "'**' notation. ::"
 msgstr "table を '**' 記法を使ってキーワード引数として渡す方法もあります。 ::"
 
-#: ../Doc/tutorial/inputoutput.rst:198
+#: ../../tutorial/inputoutput.rst:198
 msgid ""
 "This is particularly useful in combination with the built-in function "
 ":func:`vars`, which returns a dictionary containing all local variables."
 msgstr "全てのローカルな変数が入った辞書を返す組み込み関数 :func:`vars` と組み合わせると特に便利です。"
 
-#: ../Doc/tutorial/inputoutput.rst:201
+#: ../../tutorial/inputoutput.rst:201
 msgid ""
 "For a complete overview of string formatting with :meth:`str.format`, see "
 ":ref:`formatstrings`."
 msgstr ":meth:`str.format` による文字列書式設定の完全な解説は、 :ref:`formatstrings` を参照してください。"
 
-#: ../Doc/tutorial/inputoutput.rst:206
+#: ../../tutorial/inputoutput.rst:206
 msgid "Old string formatting"
 msgstr "古い文字列書式設定方法"
 
-#: ../Doc/tutorial/inputoutput.rst:208
+#: ../../tutorial/inputoutput.rst:208
 msgid ""
 "The ``%`` operator can also be used for string formatting. It interprets the"
 " left argument much like a :c:func:`sprintf`\\ -style format string to be "
@@ -227,16 +226,16 @@ msgstr ""
 "``%`` 演算子を使って文字列書式設定をする方法もあります。これは、演算子の左側の :c:func:`sprintf` "
 "スタイルのフォーマット文字列に、演算子の右側の値を適用し、その結果の文字列を返します。例えば::"
 
-#: ../Doc/tutorial/inputoutput.rst:217
+#: ../../tutorial/inputoutput.rst:217
 msgid ""
 "More information can be found in the :ref:`old-string-formatting` section."
 msgstr "より詳しい情報は :ref:`old-string-formatting` にあります。"
 
-#: ../Doc/tutorial/inputoutput.rst:223
+#: ../../tutorial/inputoutput.rst:223
 msgid "Reading and Writing Files"
 msgstr "ファイルを読み書きする"
 
-#: ../Doc/tutorial/inputoutput.rst:229
+#: ../../tutorial/inputoutput.rst:229
 msgid ""
 ":func:`open` returns a :term:`file object`, and is most commonly used with "
 "two arguments: ``open(filename, mode)``."
@@ -244,7 +243,7 @@ msgstr ""
 ":func:`open` は :term:`file object` を返します。大抵、 ``open(filename, mode)`` "
 "のように二つの引数を伴って呼び出されます。"
 
-#: ../Doc/tutorial/inputoutput.rst:241
+#: ../../tutorial/inputoutput.rst:241
 msgid ""
 "The first argument is a string containing the filename.  The second argument"
 " is another string containing a few characters describing the way in which "
@@ -260,7 +259,7 @@ msgstr ""
 "``'a'`` はファイルを追記用に開きます。ファイルに書き込まれた内容は自動的にファイルの終端に追加されます。 ``'r+'`` "
 "はファイルを読み書き両用に開きます。 *mode* 引数は省略可能で、省略された場合には ``'r'`` であると仮定します。"
 
-#: ../Doc/tutorial/inputoutput.rst:250
+#: ../../tutorial/inputoutput.rst:250
 msgid ""
 "Normally, files are opened in :dfn:`text mode`, that means, you read and "
 "write strings from and to the file, which are encoded in a specific "
@@ -274,7 +273,7 @@ msgstr ""
 " (:func:`open` を参照してください) 。モードに ``'b'`` をつけるとファイルをバイナリモード (:dfn:`binary "
 "mode`) で開き、 byte オブジェクトを読み書きします。テキストファイル以外のすべてのファイルはバイナリモードを利用するべきです。"
 
-#: ../Doc/tutorial/inputoutput.rst:257
+#: ../../tutorial/inputoutput.rst:257
 msgid ""
 "In text mode, the default when reading is to convert platform-specific line "
 "endings (``\\n`` on Unix, ``\\r\\n`` on Windows) to just ``\\n``.  When "
@@ -290,17 +289,17 @@ msgstr ""
 " :file:`JPEG` ファイルや :file:`EXE` "
 "ファイルのようなバイナリデータを破壊する恐れがあります。そのようなファイルを読み書きする場合には注意して、バイナリモードを使うようにしてください。"
 
-#: ../Doc/tutorial/inputoutput.rst:269
+#: ../../tutorial/inputoutput.rst:269
 msgid "Methods of File Objects"
 msgstr "ファイルオブジェクトのメソッド"
 
-#: ../Doc/tutorial/inputoutput.rst:271
+#: ../../tutorial/inputoutput.rst:271
 msgid ""
 "The rest of the examples in this section will assume that a file object "
 "called ``f`` has already been created."
 msgstr "この節の以降の例は、 ``f`` というファイルオブジェクトが既に生成されているものと仮定します。"
 
-#: ../Doc/tutorial/inputoutput.rst:274
+#: ../../tutorial/inputoutput.rst:274
 msgid ""
 "To read a file's contents, call ``f.read(size)``, which reads some quantity "
 "of data and returns it as a string (in text mode) or bytes object (in binary"
@@ -318,7 +317,7 @@ msgstr ""
 " *size* が負でない数ならば、最大で *size* バイトを読み出して返します。ファイルの終端にすでに達していた場合、 ``f.read()`` "
 "は空の文字列 (``''``) を返します。"
 
-#: ../Doc/tutorial/inputoutput.rst:288
+#: ../../tutorial/inputoutput.rst:288
 msgid ""
 "``f.readline()`` reads a single line from the file; a newline character "
 "(``\\n``) is left at the end of the string, and is only omitted on the last "
@@ -332,26 +331,26 @@ msgstr ""
 " ``f.readline()`` が空の文字列を返したら、ファイルの終端に達したことが分かります。一方、空行は ``'\\n'``、すなわち改行 1 "
 "文字だけからなる文字列で表現されます。 ::"
 
-#: ../Doc/tutorial/inputoutput.rst:302
+#: ../../tutorial/inputoutput.rst:302
 msgid ""
 "For reading lines from a file, you can loop over the file object. This is "
 "memory efficient, fast, and leads to simple code::"
 msgstr ""
 "ファイルから複数行を読み取るには、ファイルオブジェクトに対してループを書く方法があります。この方法はメモリを効率的に使え、高速で、簡潔なコードになります::"
 
-#: ../Doc/tutorial/inputoutput.rst:311
+#: ../../tutorial/inputoutput.rst:311
 msgid ""
 "If you want to read all the lines of a file in a list you can also use "
 "``list(f)`` or ``f.readlines()``."
 msgstr "ファイルのすべての行をリスト形式で読み取りたいなら、``list(f)`` や ``f.readlines()`` を使うこともできます。"
 
-#: ../Doc/tutorial/inputoutput.rst:314
+#: ../../tutorial/inputoutput.rst:314
 msgid ""
 "``f.write(string)`` writes the contents of *string* to the file, returning "
 "the number of characters written. ::"
 msgstr "``f.write(string)`` は、*string* の内容をファイルに書き込み、書き込まれた文字数を返します。 ::"
 
-#: ../Doc/tutorial/inputoutput.rst:320
+#: ../../tutorial/inputoutput.rst:320
 msgid ""
 "Other types of objects need to be converted -- either to a string (in text "
 "mode) or a bytes object (in binary mode) -- before writing them::"
@@ -359,7 +358,7 @@ msgstr ""
 "オブジェクトの他の型は、書き込む前に変換しなければなりません -- 文字列 (テキストモード) と bytes オブジェクト (バイナリーモード) "
 "のいずれかです::"
 
-#: ../Doc/tutorial/inputoutput.rst:328
+#: ../../tutorial/inputoutput.rst:328
 msgid ""
 "``f.tell()`` returns an integer giving the file object's current position in"
 " the file represented as number of bytes from the beginning of the file when"
@@ -368,7 +367,7 @@ msgstr ""
 "``f.tell()`` "
 "は、ファイルオブジェクトのファイル中における現在の位置を示す整数を返します。ファイル中の現在の位置は、バイナリモードではファイルの先頭からのバイト数で、テキストモードでは不明瞭な値で表されます。"
 
-#: ../Doc/tutorial/inputoutput.rst:332
+#: ../../tutorial/inputoutput.rst:332
 msgid ""
 "To change the file object's position, use ``f.seek(offset, from_what)``.  "
 "The position is computed from adding *offset* to a reference point; the "
@@ -384,7 +383,7 @@ msgstr ""
 "ならばファイルの終端を参照点として使います。*from_what* は省略することができ、デフォルトの値は "
 "0、すなわち参照点としてファイルの先頭を使います。 ::"
 
-#: ../Doc/tutorial/inputoutput.rst:351
+#: ../../tutorial/inputoutput.rst:351
 msgid ""
 "In text files (those opened without a ``b`` in the mode string), only seeks "
 "relative to the beginning of the file are allowed (the exception being "
@@ -396,7 +395,7 @@ msgstr ""
 "(例外として、``seek(0, 2)`` でファイルの末尾へのシークは可能です)。また、唯一の有効な *offset* 値は ``f.tell()``"
 " から返された値か、0 のいずれかです。それ以外の *offset* 値は未定義の振る舞いを引き起こします。"
 
-#: ../Doc/tutorial/inputoutput.rst:358
+#: ../../tutorial/inputoutput.rst:358
 msgid ""
 "When you're done with a file, call ``f.close()`` to close it and free up any"
 " system resources taken up by the open file.  After calling ``f.close()``, "
@@ -405,7 +404,7 @@ msgstr ""
 "ファイルが用済みになったら、 ``f.close()`` を呼び出してファイルを閉じ、ファイルを開くために確保されていたシステム資源を解放します。 "
 "``f.close()`` を呼び出した後、そのファイルオブジェクトを使おうとすると自動的に失敗します::"
 
-#: ../Doc/tutorial/inputoutput.rst:368
+#: ../../tutorial/inputoutput.rst:368
 msgid ""
 "It is good practice to use the :keyword:`with` keyword when dealing with "
 "file objects.  This has the advantage that the file is properly closed after"
@@ -417,7 +416,7 @@ msgstr ""
 "を使うと、処理中に例外が発生しても必ず最後にファイルを閉じることができます。同じことを "
 ":keyword:`try`-:keyword:`finally` を使って書くよりずっと簡潔に書けます::"
 
-#: ../Doc/tutorial/inputoutput.rst:378
+#: ../../tutorial/inputoutput.rst:378
 msgid ""
 "File objects have some additional methods, such as :meth:`~file.isatty` and "
 ":meth:`~file.truncate` which are less frequently used; consult the Library "
@@ -426,11 +425,11 @@ msgstr ""
 "ファイルオブジェクトには、他にも :meth:`~file.isatty` や :meth:`~file.truncate` "
 "といった、あまり使われないメソッドがあります。ファイルオブジェクトについての完全なガイドは、ライブラリリファレンスを参照してください。"
 
-#: ../Doc/tutorial/inputoutput.rst:386
+#: ../../tutorial/inputoutput.rst:386
 msgid "Saving structured data with :mod:`json`"
 msgstr ":mod:`json` による構造化されたデータの保存"
 
-#: ../Doc/tutorial/inputoutput.rst:390
+#: ../../tutorial/inputoutput.rst:390
 msgid ""
 "Strings can easily be written to and read from a file.  Numbers take a bit "
 "more effort, since the :meth:`read` method only returns strings, which will "
@@ -444,7 +443,7 @@ msgstr ""
 " 123 "
 "に変換しなくてはならないからです。もっと複雑なデータ型、例えば入れ子になったリストや辞書の場合、手作業でのパースやシリアライズは困難になります。"
 
-#: ../Doc/tutorial/inputoutput.rst:397
+#: ../../tutorial/inputoutput.rst:397
 msgid ""
 "Rather than having users constantly writing and debugging code to save "
 "complicated data types to files, Python allows you to use the popular data "
@@ -462,7 +461,7 @@ msgstr ""
 "(serializing)` と呼ばれます。文字列表現からデータを再構築することは、:dfn:`デシリアライズ (deserializing)` "
 "と呼ばれます。シリアライズされてからデシリアライズされるまでの間に、オブジェクトの文字列表現はファイルやデータの形で保存したり、ネットワークを通じて離れたマシンに送ったりすることができます。"
 
-#: ../Doc/tutorial/inputoutput.rst:408
+#: ../../tutorial/inputoutput.rst:408
 msgid ""
 "The JSON format is commonly used by modern applications to allow for data "
 "exchange.  Many programmers are already familiar with it, which makes it a "
@@ -471,13 +470,13 @@ msgstr ""
 "JSON 形式は現代的なアプリケーションでデータをやりとりする際によく使われます。多くのプログラマーが既に JSON に詳しいため、JSON "
 "はデータの相互交換をする場合の良い選択肢です。"
 
-#: ../Doc/tutorial/inputoutput.rst:412
+#: ../../tutorial/inputoutput.rst:412
 msgid ""
 "If you have an object ``x``, you can view its JSON string representation "
 "with a simple line of code::"
 msgstr "オブジェクト ``x`` があり、その JSON 形式の文字列表現を見るには、単純な1行のコードを書くだけです::"
 
-#: ../Doc/tutorial/inputoutput.rst:418
+#: ../../tutorial/inputoutput.rst:418
 msgid ""
 "Another variant of the :func:`~json.dumps` function, called "
 ":func:`~json.dump`, simply serializes the object to a :term:`text file`.  So"
@@ -486,13 +485,13 @@ msgstr ""
 ":func:`~json.dumps` に似た関数に、:func:`~json.dump` があり、こちらは単純にオブジェクトを :term:`text"
 " file` にシリアライズします。``f`` が書き込み用に開かれた :term:`text file` だとすると、次のように書くことができます::"
 
-#: ../Doc/tutorial/inputoutput.rst:424
+#: ../../tutorial/inputoutput.rst:424
 msgid ""
 "To decode the object again, if ``f`` is a :term:`text file` object which has"
 " been opened for reading::"
 msgstr "逆にデシリアライズするには、``f`` が読み込み用に開かれた :term:`text file` だとすると、次のようになります::"
 
-#: ../Doc/tutorial/inputoutput.rst:429
+#: ../../tutorial/inputoutput.rst:429
 msgid ""
 "This simple serialization technique can handle lists and dictionaries, but "
 "serializing arbitrary class instances in JSON requires a bit of extra "
@@ -502,11 +501,11 @@ msgstr ""
 "このような単純なシリアライズをする手法は、リストや辞書を扱うことはできますが、任意のクラス・インスタンスを JSON "
 "にシリアライズするにはもう少し努力しなくてはなりません。:mod:`json` モジュールのリファレンスにこれについての解説があります。"
 
-#: ../Doc/tutorial/inputoutput.rst:435
+#: ../../tutorial/inputoutput.rst:435
 msgid ":mod:`pickle` - the pickle module"
 msgstr ":mod:`pickle` - pickle モジュール"
 
-#: ../Doc/tutorial/inputoutput.rst:437
+#: ../../tutorial/inputoutput.rst:437
 msgid ""
 "Contrary to :ref:`JSON <tut-json>`, *pickle* is a protocol which allows the "
 "serialization of arbitrarily complex Python objects.  As such, it is "

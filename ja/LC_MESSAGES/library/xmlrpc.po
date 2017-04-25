@@ -8,7 +8,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Naoki INADA <songofacandy@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -18,11 +17,11 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../Doc/library/xmlrpc.rst:2
+#: ../../library/xmlrpc.rst:2
 msgid ":mod:`xmlrpc` --- XMLRPC server and client modules"
 msgstr ":mod:`xmlrpc` --- XMLRPC サーバーとクライアントモジュール"
 
-#: ../Doc/library/xmlrpc.rst:4
+#: ../../library/xmlrpc.rst:4
 msgid ""
 "XML-RPC is a Remote Procedure Call method that uses XML passed via HTTP as a"
 " transport.  With it, a client can call methods with parameters on a remote "
@@ -32,16 +31,16 @@ msgstr ""
 "RPC を使うと、クライアントはリモートサーバー (サーバーは URI で名前付けられます) "
 "上のメソッドを引数付きで呼び出して、構造化されたデータを受け取る事ができます。"
 
-#: ../Doc/library/xmlrpc.rst:8
+#: ../../library/xmlrpc.rst:8
 msgid ""
 "``xmlrpc`` is a package that collects server and client modules implementing"
 " XML-RPC.  The modules are:"
 msgstr "``xmlrpc`` パッケージは XML-RPC のサーバーとクライアントを実装したモジュールを持っています。モジュール一覧:"
 
-#: ../Doc/library/xmlrpc.rst:11
+#: ../../library/xmlrpc.rst:11
 msgid ":mod:`xmlrpc.client`"
 msgstr ":mod:`xmlrpc.client`"
 
-#: ../Doc/library/xmlrpc.rst:12
+#: ../../library/xmlrpc.rst:12
 msgid ":mod:`xmlrpc.server`"
 msgstr ":mod:`xmlrpc.server`"

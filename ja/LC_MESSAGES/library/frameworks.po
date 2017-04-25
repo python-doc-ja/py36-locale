@@ -8,7 +8,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-02 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Arihiro TAKASE <artakase@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -18,11 +17,11 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../Doc/library/frameworks.rst:5
+#: ../../library/frameworks.rst:5
 msgid "Program Frameworks"
 msgstr "プログラムのフレームワーク"
 
-#: ../Doc/library/frameworks.rst:7
+#: ../../library/frameworks.rst:7
 msgid ""
 "The modules described in this chapter are frameworks that will largely "
 "dictate the structure of your program.  Currently the modules described  "
@@ -30,6 +29,6 @@ msgid ""
 msgstr ""
 "この章で解説されるモジュールはあなたのプログラムの大枠を規定するフレームワークです。現状では、ここで解説されるモジュールは全てコマンドラインインタフェースを書くためのものです。"
 
-#: ../Doc/library/frameworks.rst:11
+#: ../../library/frameworks.rst:11
 msgid "The full list of modules described in this chapter is:"
 msgstr "この章で解説されるモジュールの完全な一覧は:"
