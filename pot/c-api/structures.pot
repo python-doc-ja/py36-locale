@@ -207,7 +207,7 @@ msgid "name of the member"
 msgstr ""
 
 #: ../../c-api/structures.rst:244
-msgid ":attr:`type`"
+msgid ":attr:`!type`"
 msgstr ""
 
 #: ../../c-api/structures.rst:244
@@ -240,7 +240,7 @@ msgid ":attr:`doc`"
 msgstr ""
 
 #: ../../c-api/structures.rst:259
-msgid ":attr:`type` can be one of many ``T_`` macros corresponding to various C types.  When the member is accessed in Python, it will be converted to the equivalent Python type."
+msgid ":attr:`!type` can be one of many ``T_`` macros corresponding to various C types.  When the member is accessed in Python, it will be converted to the equivalent Python type."
 msgstr ""
 
 #: ../../c-api/structures.rst:264

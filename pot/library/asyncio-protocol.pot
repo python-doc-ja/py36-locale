@@ -375,7 +375,7 @@ msgid "Whether the data is buffered, chunked or reassembled depends on the trans
 msgstr ""
 
 #: ../../library/asyncio-protocol.rst:387
-msgid "Calls when the other end signals it won't send any more data (for example by calling :meth:`write_eof`, if the other end also uses asyncio)."
+msgid "Called when the other end signals it won't send any more data (for example by calling :meth:`write_eof`, if the other end also uses asyncio)."
 msgstr ""
 
 #: ../../library/asyncio-protocol.rst:391

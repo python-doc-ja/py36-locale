@@ -148,7 +148,7 @@ msgid "Introducing Optional arguments"
 msgstr ""
 
 #: ../../howto/argparse.rst:224
-msgid "So far we, have been playing with positional arguments. Let us have a look on how to add optional ones::"
+msgid "So far we have been playing with positional arguments. Let us have a look on how to add optional ones::"
 msgstr ""
 
 #: ../../howto/argparse.rst:234

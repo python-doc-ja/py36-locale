@@ -104,7 +104,7 @@ msgid "The build process consists in the usual ::"
 msgstr ""
 
 #: ../../using/unix.rst:79
-msgid "invocations. Configuration options and caveats for specific Unix platforms are extensively documented in the :source:`README` file in the root of the Python source tree."
+msgid "invocations. Configuration options and caveats for specific Unix platforms are extensively documented in the :source:`README.rst` file in the root of the Python source tree."
 msgstr ""
 
 #: ../../using/unix.rst:85

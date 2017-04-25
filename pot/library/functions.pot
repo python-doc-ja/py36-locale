@@ -655,7 +655,7 @@ msgid "Return the hash value of the object (if it has one).  Hash values are int
 msgstr ""
 
 #: ../../library/functions.rst:613
-msgid "For object's with custom :meth:`__hash__` methods, note that :func:`hash` truncates the return value based on the bit width of the host machine. See :meth:`__hash__` for details."
+msgid "For objects with custom :meth:`__hash__` methods, note that :func:`hash` truncates the return value based on the bit width of the host machine. See :meth:`__hash__` for details."
 msgstr ""
 
 #: ../../library/functions.rst:619
@@ -1001,11 +1001,7 @@ msgid ":exc:`IOError` used to be raised, it is now an alias of :exc:`OSError`."
 msgstr ""
 
 #: ../../library/functions.rst:1074
-msgid ":exc:`FileExistsError` is now raised if the file opened in exclusive"
-msgstr ""
-
-#: ../../library/functions.rst:1075
-msgid "creation mode (``'x'``) already exists."
+msgid ":exc:`FileExistsError` is now raised if the file opened in exclusive creation mode (``'x'``) already exists."
 msgstr ""
 
 #: ../../library/functions.rst:1080
@@ -1049,7 +1045,7 @@ msgid "The arguments must have numeric types.  With mixed operand types, the coe
 msgstr ""
 
 #: ../../library/functions.rst:1127
-msgid "Print *objects* to the text stream *file*, separated by *sep* and followed by *end*.  *sep*, *end* and *file*, if present, must be given as keyword arguments."
+msgid "Print *objects* to the text stream *file*, separated by *sep* and followed by *end*.  *sep*, *end*, *file* and *flush*, if present, must be given as keyword arguments."
 msgstr ""
 
 #: ../../library/functions.rst:1131
@@ -1121,246 +1117,250 @@ msgid "Return a reverse :term:`iterator`.  *seq* must be an object which has a :
 msgstr ""
 
 #: ../../library/functions.rst:1257
-msgid "Return the floating point value *number* rounded to *ndigits* digits after the decimal point.  If *ndigits* is omitted or is ``None``, it returns the nearest integer to its input.  Delegates to ``number.__round__(ndigits)``."
+msgid "Return *number* rounded to *ndigits* precision after the decimal point.  If *ndigits* is omitted or is ``None``, it returns the nearest integer to its input."
 msgstr ""
 
 #: ../../library/functions.rst:1261
-msgid "For the built-in types supporting :func:`round`, values are rounded to the closest multiple of 10 to the power minus *ndigits*; if two multiples are equally close, rounding is done toward the even choice (so, for example, both ``round(0.5)`` and ``round(-0.5)`` are ``0``, and ``round(1.5)`` is ``2``).  The return value is an integer if called with one argument, otherwise of the same type as *number*."
+msgid "For the built-in types supporting :func:`round`, values are rounded to the closest multiple of 10 to the power minus *ndigits*; if two multiples are equally close, rounding is done toward the even choice (so, for example, both ``round(0.5)`` and ``round(-0.5)`` are ``0``, and ``round(1.5)`` is ``2``).  Any integer value is valid for *ndigits* (positive, zero, or negative).  The return value is an integer if called with one argument, otherwise of the same type as *number*."
 msgstr ""
 
-#: ../../library/functions.rst:1270
+#: ../../library/functions.rst:1269
+msgid "For a general Python object ``number``, ``round(number, ndigits)`` delegates to ``number.__round__(ndigits)``."
+msgstr ""
+
+#: ../../library/functions.rst:1274
 msgid "The behavior of :func:`round` for floats can be surprising: for example, ``round(2.675, 2)`` gives ``2.67`` instead of the expected ``2.68``. This is not a bug: it's a result of the fact that most decimal fractions can't be represented exactly as a float.  See :ref:`tut-fp-issues` for more information."
 msgstr ""
 
-#: ../../library/functions.rst:1281
+#: ../../library/functions.rst:1285
 msgid "Return a new :class:`set` object, optionally with elements taken from *iterable*.  ``set`` is a built-in class.  See :class:`set` and :ref:`types-set` for documentation about this class."
 msgstr ""
 
-#: ../../library/functions.rst:1285
+#: ../../library/functions.rst:1289
 msgid "For other containers see the built-in :class:`frozenset`, :class:`list`, :class:`tuple`, and :class:`dict` classes, as well as the :mod:`collections` module."
 msgstr ""
 
-#: ../../library/functions.rst:1292
+#: ../../library/functions.rst:1296
 msgid "This is the counterpart of :func:`getattr`.  The arguments are an object, a string and an arbitrary value.  The string may name an existing attribute or a new attribute.  The function assigns the value to the attribute, provided the object allows it.  For example, ``setattr(x, 'foobar', 123)`` is equivalent to ``x.foobar = 123``."
 msgstr ""
 
-#: ../../library/functions.rst:1304
+#: ../../library/functions.rst:1308
 msgid "Return a :term:`slice` object representing the set of indices specified by ``range(start, stop, step)``.  The *start* and *step* arguments default to ``None``.  Slice objects have read-only data attributes :attr:`~slice.start`, :attr:`~slice.stop` and :attr:`~slice.step` which merely return the argument values (or their default).  They have no other explicit functionality; however they are used by Numerical Python and other third party extensions. Slice objects are also generated when extended indexing syntax is used.  For example: ``a[start:stop:step]`` or ``a[start:stop, i]``.  See :func:`itertools.islice` for an alternate version that returns an iterator."
 msgstr ""
 
-#: ../../library/functions.rst:1317
+#: ../../library/functions.rst:1321
 msgid "Return a new sorted list from the items in *iterable*."
 msgstr ""
 
-#: ../../library/functions.rst:1319
+#: ../../library/functions.rst:1323
 msgid "Has two optional arguments which must be specified as keyword arguments."
 msgstr ""
 
-#: ../../library/functions.rst:1321
+#: ../../library/functions.rst:1325
 msgid "*key* specifies a function of one argument that is used to extract a comparison key from each list element: ``key=str.lower``.  The default value is ``None`` (compare the elements directly)."
 msgstr ""
 
-#: ../../library/functions.rst:1325
+#: ../../library/functions.rst:1329
 msgid "*reverse* is a boolean value.  If set to ``True``, then the list elements are sorted as if each comparison were reversed."
 msgstr ""
 
-#: ../../library/functions.rst:1328
+#: ../../library/functions.rst:1332
 msgid "Use :func:`functools.cmp_to_key` to convert an old-style *cmp* function to a *key* function."
 msgstr ""
 
-#: ../../library/functions.rst:1331
+#: ../../library/functions.rst:1335
 msgid "The built-in :func:`sorted` function is guaranteed to be stable. A sort is stable if it guarantees not to change the relative order of elements that compare equal --- this is helpful for sorting in multiple passes (for example, sort by department, then by salary grade)."
 msgstr ""
 
-#: ../../library/functions.rst:1336
+#: ../../library/functions.rst:1340
 msgid "For sorting examples and a brief sorting tutorial, see :ref:`sortinghowto`."
 msgstr ""
 
-#: ../../library/functions.rst:1340
+#: ../../library/functions.rst:1344
 msgid "Return a static method for *function*."
 msgstr ""
 
-#: ../../library/functions.rst:1342
+#: ../../library/functions.rst:1346
 msgid "A static method does not receive an implicit first argument. To declare a static method, use this idiom::"
 msgstr ""
 
-#: ../../library/functions.rst:1349
+#: ../../library/functions.rst:1353
 msgid "The ``@staticmethod`` form is a function :term:`decorator` -- see the description of function definitions in :ref:`function` for details."
 msgstr ""
 
-#: ../../library/functions.rst:1352
+#: ../../library/functions.rst:1356
 msgid "It can be called either on the class (such as ``C.f()``) or on an instance (such as ``C().f()``).  The instance is ignored except for its class."
 msgstr ""
 
-#: ../../library/functions.rst:1355
+#: ../../library/functions.rst:1359
 msgid "Static methods in Python are similar to those found in Java or C++. Also see :func:`classmethod` for a variant that is useful for creating alternate class constructors."
 msgstr ""
 
-#: ../../library/functions.rst:1359
+#: ../../library/functions.rst:1363
 msgid "For more information on static methods, consult the documentation on the standard type hierarchy in :ref:`types`."
 msgstr ""
 
-#: ../../library/functions.rst:1371
+#: ../../library/functions.rst:1375
 msgid "Return a :class:`str` version of *object*.  See :func:`str` for details."
 msgstr ""
 
-#: ../../library/functions.rst:1373
+#: ../../library/functions.rst:1377
 msgid "``str`` is the built-in string :term:`class`.  For general information about strings, see :ref:`textseq`."
 msgstr ""
 
-#: ../../library/functions.rst:1379
+#: ../../library/functions.rst:1383
 msgid "Sums *start* and the items of an *iterable* from left to right and returns the total.  *start* defaults to ``0``. The *iterable*'s items are normally numbers, and the start value is not allowed to be a string."
 msgstr ""
 
-#: ../../library/functions.rst:1383
+#: ../../library/functions.rst:1387
 msgid "For some use cases, there are good alternatives to :func:`sum`. The preferred, fast way to concatenate a sequence of strings is by calling ``''.join(sequence)``.  To add floating point values with extended precision, see :func:`math.fsum`\\.  To concatenate a series of iterables, consider using :func:`itertools.chain`."
 msgstr ""
 
-#: ../../library/functions.rst:1391
+#: ../../library/functions.rst:1395
 msgid "Return a proxy object that delegates method calls to a parent or sibling class of *type*.  This is useful for accessing inherited methods that have been overridden in a class. The search order is same as that used by :func:`getattr` except that the *type* itself is skipped."
 msgstr ""
 
-#: ../../library/functions.rst:1396
+#: ../../library/functions.rst:1400
 msgid "The :attr:`~class.__mro__` attribute of the *type* lists the method resolution search order used by both :func:`getattr` and :func:`super`.  The attribute is dynamic and can change whenever the inheritance hierarchy is updated."
 msgstr ""
 
-#: ../../library/functions.rst:1401
+#: ../../library/functions.rst:1405
 msgid "If the second argument is omitted, the super object returned is unbound.  If the second argument is an object, ``isinstance(obj, type)`` must be true.  If the second argument is a type, ``issubclass(type2, type)`` must be true (this is useful for classmethods)."
 msgstr ""
 
-#: ../../library/functions.rst:1406
+#: ../../library/functions.rst:1410
 msgid "There are two typical use cases for *super*.  In a class hierarchy with single inheritance, *super* can be used to refer to parent classes without naming them explicitly, thus making the code more maintainable.  This use closely parallels the use of *super* in other programming languages."
 msgstr ""
 
-#: ../../library/functions.rst:1411
+#: ../../library/functions.rst:1415
 msgid "The second use case is to support cooperative multiple inheritance in a dynamic execution environment.  This use case is unique to Python and is not found in statically compiled languages or languages that only support single inheritance.  This makes it possible to implement \"diamond diagrams\" where multiple base classes implement the same method.  Good design dictates that this method have the same calling signature in every case (because the order of calls is determined at runtime, because that order adapts to changes in the class hierarchy, and because that order can include sibling classes that are unknown prior to runtime)."
 msgstr ""
 
-#: ../../library/functions.rst:1421
+#: ../../library/functions.rst:1425
 msgid "For both use cases, a typical superclass call looks like this::"
 msgstr ""
 
-#: ../../library/functions.rst:1428
+#: ../../library/functions.rst:1432
 msgid "Note that :func:`super` is implemented as part of the binding process for explicit dotted attribute lookups such as ``super().__getitem__(name)``. It does so by implementing its own :meth:`__getattribute__` method for searching classes in a predictable order that supports cooperative multiple inheritance. Accordingly, :func:`super` is undefined for implicit lookups using statements or operators such as ``super()[name]``."
 msgstr ""
 
-#: ../../library/functions.rst:1435
+#: ../../library/functions.rst:1439
 msgid "Also note that, aside from the zero argument form, :func:`super` is not limited to use inside methods.  The two argument form specifies the arguments exactly and makes the appropriate references.  The zero argument form only works inside a class definition, as the compiler fills in the necessary details to correctly retrieve the class being defined, as well as accessing the current instance for ordinary methods."
 msgstr ""
 
-#: ../../library/functions.rst:1442
+#: ../../library/functions.rst:1446
 msgid "For practical suggestions on how to design cooperative classes using :func:`super`, see `guide to using super() <https://rhettinger.wordpress.com/2011/05/26/super-considered-super/>`_."
 msgstr ""
 
-#: ../../library/functions.rst:1451
+#: ../../library/functions.rst:1455
 msgid "Rather than being a function, :class:`tuple` is actually an immutable sequence type, as documented in :ref:`typesseq-tuple` and :ref:`typesseq`."
 msgstr ""
 
-#: ../../library/functions.rst:1460
+#: ../../library/functions.rst:1464
 msgid "With one argument, return the type of an *object*.  The return value is a type object and generally the same object as returned by :attr:`object.__class__ <instance.__class__>`."
 msgstr ""
 
-#: ../../library/functions.rst:1464
+#: ../../library/functions.rst:1468
 msgid "The :func:`isinstance` built-in function is recommended for testing the type of an object, because it takes subclasses into account."
 msgstr ""
 
-#: ../../library/functions.rst:1468
+#: ../../library/functions.rst:1472
 msgid "With three arguments, return a new type object.  This is essentially a dynamic form of the :keyword:`class` statement. The *name* string is the class name and becomes the :attr:`~definition.__name__` attribute; the *bases* tuple itemizes the base classes and becomes the :attr:`~class.__bases__` attribute; and the *dict* dictionary is the namespace containing definitions for class body and is copied to a standard dictionary to become the :attr:`~object.__dict__` attribute.  For example, the following two statements create identical :class:`type` objects:"
 msgstr ""
 
-#: ../../library/functions.rst:1482
+#: ../../library/functions.rst:1486
 msgid "See also :ref:`bltin-type-objects`."
 msgstr ""
 
-#: ../../library/functions.rst:1484
+#: ../../library/functions.rst:1488
 msgid "Subclasses of :class:`type` which don't override ``type.__new__`` may no longer use the one-argument form to get the type of an object."
 msgstr ""
 
-#: ../../library/functions.rst:1490
+#: ../../library/functions.rst:1494
 msgid "Return the :attr:`~object.__dict__` attribute for a module, class, instance, or any other object with a :attr:`~object.__dict__` attribute."
 msgstr ""
 
-#: ../../library/functions.rst:1493
+#: ../../library/functions.rst:1497
 msgid "Objects such as modules and instances have an updateable :attr:`~object.__dict__` attribute; however, other objects may have write restrictions on their :attr:`~object.__dict__` attributes (for example, classes use a :class:`types.MappingProxyType` to prevent direct dictionary updates)."
 msgstr ""
 
-#: ../../library/functions.rst:1498
+#: ../../library/functions.rst:1502
 msgid "Without an argument, :func:`vars` acts like :func:`locals`.  Note, the locals dictionary is only useful for reads since updates to the locals dictionary are ignored."
 msgstr ""
 
-#: ../../library/functions.rst:1505
+#: ../../library/functions.rst:1509
 msgid "Make an iterator that aggregates elements from each of the iterables."
 msgstr ""
 
-#: ../../library/functions.rst:1507
+#: ../../library/functions.rst:1511
 msgid "Returns an iterator of tuples, where the *i*-th tuple contains the *i*-th element from each of the argument sequences or iterables.  The iterator stops when the shortest input iterable is exhausted. With a single iterable argument, it returns an iterator of 1-tuples.  With no arguments, it returns an empty iterator.  Equivalent to::"
 msgstr ""
 
-#: ../../library/functions.rst:1526
+#: ../../library/functions.rst:1530
 msgid "The left-to-right evaluation order of the iterables is guaranteed. This makes possible an idiom for clustering a data series into n-length groups using ``zip(*[iter(s)]*n)``.  This repeats the *same* iterator ``n`` times so that each output tuple has the result of ``n`` calls to the iterator. This has the effect of dividing the input into n-length chunks."
 msgstr ""
 
-#: ../../library/functions.rst:1532
+#: ../../library/functions.rst:1536
 msgid ":func:`zip` should only be used with unequal length inputs when you don't care about trailing, unmatched values from the longer iterables.  If those values are important, use :func:`itertools.zip_longest` instead."
 msgstr ""
 
-#: ../../library/functions.rst:1536
+#: ../../library/functions.rst:1540
 msgid ":func:`zip` in conjunction with the ``*`` operator can be used to unzip a list::"
 msgstr ""
 
-#: ../../library/functions.rst:1557
+#: ../../library/functions.rst:1561
 msgid "This is an advanced function that is not needed in everyday Python programming, unlike :func:`importlib.import_module`."
 msgstr ""
 
-#: ../../library/functions.rst:1560
+#: ../../library/functions.rst:1564
 msgid "This function is invoked by the :keyword:`import` statement.  It can be replaced (by importing the :mod:`builtins` module and assigning to ``builtins.__import__``) in order to change semantics of the :keyword:`import` statement, but doing so is **strongly** discouraged as it is usually simpler to use import hooks (see :pep:`302`) to attain the same goals and does not cause issues with code which assumes the default import implementation is in use.  Direct use of :func:`__import__` is also discouraged in favor of :func:`importlib.import_module`."
 msgstr ""
 
-#: ../../library/functions.rst:1569
+#: ../../library/functions.rst:1573
 msgid "The function imports the module *name*, potentially using the given *globals* and *locals* to determine how to interpret the name in a package context. The *fromlist* gives the names of objects or submodules that should be imported from the module given by *name*.  The standard implementation does not use its *locals* argument at all, and uses its *globals* only to determine the package context of the :keyword:`import` statement."
 msgstr ""
 
-#: ../../library/functions.rst:1576
+#: ../../library/functions.rst:1580
 msgid "*level* specifies whether to use absolute or relative imports. ``0`` (the default) means only perform absolute imports.  Positive values for *level* indicate the number of parent directories to search relative to the directory of the module calling :func:`__import__` (see :pep:`328` for the details)."
 msgstr ""
 
-#: ../../library/functions.rst:1582
+#: ../../library/functions.rst:1586
 msgid "When the *name* variable is of the form ``package.module``, normally, the top-level package (the name up till the first dot) is returned, *not* the module named by *name*.  However, when a non-empty *fromlist* argument is given, the module named by *name* is returned."
 msgstr ""
 
-#: ../../library/functions.rst:1587
+#: ../../library/functions.rst:1591
 msgid "For example, the statement ``import spam`` results in bytecode resembling the following code::"
 msgstr ""
 
-#: ../../library/functions.rst:1592
+#: ../../library/functions.rst:1596
 msgid "The statement ``import spam.ham`` results in this call::"
 msgstr ""
 
-#: ../../library/functions.rst:1596
+#: ../../library/functions.rst:1600
 msgid "Note how :func:`__import__` returns the toplevel module here because this is the object that is bound to a name by the :keyword:`import` statement."
 msgstr ""
 
-#: ../../library/functions.rst:1599
+#: ../../library/functions.rst:1603
 msgid "On the other hand, the statement ``from spam.ham import eggs, sausage as saus`` results in ::"
 msgstr ""
 
-#: ../../library/functions.rst:1606
+#: ../../library/functions.rst:1610
 msgid "Here, the ``spam.ham`` module is returned from :func:`__import__`.  From this object, the names to import are retrieved and assigned to their respective names."
 msgstr ""
 
-#: ../../library/functions.rst:1610
+#: ../../library/functions.rst:1614
 msgid "If you simply want to import a module (potentially within a package) by name, use :func:`importlib.import_module`."
 msgstr ""
 
-#: ../../library/functions.rst:1613
+#: ../../library/functions.rst:1617
 msgid "Negative values for *level* are no longer supported (which also changes the default value to 0)."
 msgstr ""
 
-#: ../../library/functions.rst:1619
+#: ../../library/functions.rst:1623
 msgid "Footnotes"
 msgstr ""
 
-#: ../../library/functions.rst:1620
+#: ../../library/functions.rst:1624
 msgid "Note that the parser only accepts the Unix-style end of line convention. If you are reading the code from a file, make sure to use newline conversion mode to convert Windows or Mac-style newlines."
 msgstr ""
 

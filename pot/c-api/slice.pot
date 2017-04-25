@@ -56,3 +56,11 @@ msgstr ""
 msgid "Returns ``0`` on success and ``-1`` on error with exception set."
 msgstr ""
 
+#: ../../c-api/slice.rst:62
+msgid "Ellipsis Object"
+msgstr ""
+
+#: ../../c-api/slice.rst:67
+msgid "The Python ``Ellipsis`` object.  This object has no methods.  It needs to be treated just like any other object with respect to reference counts.  Like :c:data:`Py_None` it is a singleton object."
+msgstr ""
+

@@ -36,7 +36,7 @@ msgid "Module :mod:`shlex`"
 msgstr ""
 
 #: ../../library/configparser.rst:37
-msgid "Support for a creating Unix shell-like mini-languages which can be used as an alternate format for application configuration files."
+msgid "Support for creating Unix shell-like mini-languages which can be used as an alternate format for application configuration files."
 msgstr ""
 
 #: ../../library/configparser.rst:41

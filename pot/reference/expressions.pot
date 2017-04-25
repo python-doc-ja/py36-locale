@@ -568,7 +568,7 @@ msgid "The class must define a :meth:`__call__` method; the effect is then the s
 msgstr ""
 
 #: ../../reference/expressions.rst:996
-#: ../../reference/expressions.rst:1701
+#: ../../reference/expressions.rst:1702
 msgid "Await expression"
 msgstr ""
 
@@ -809,7 +809,7 @@ msgid "Collections that support order comparison are ordered the same as their f
 msgstr ""
 
 #: ../../reference/expressions.rst:1357
-msgid "Mappings (instances of :class:`dict`) compare equal if and only if they have equal `(key, value)` pairs. Equality comparison of the keys and elements enforces reflexivity."
+msgid "Mappings (instances of :class:`dict`) compare equal if and only if they have equal `(key, value)` pairs. Equality comparison of the keys and values enforces reflexivity."
 msgstr ""
 
 #: ../../reference/expressions.rst:1361
@@ -909,306 +909,306 @@ msgid "Membership test operations"
 msgstr ""
 
 #: ../../reference/expressions.rst:1433
-msgid "The operators :keyword:`in` and :keyword:`not in` test for membership.  ``x in s`` evaluates to true if *x* is a member of *s*, and false otherwise.  ``x not in s`` returns the negation of ``x in s``.  All built-in sequences and set types support this as well as dictionary, for which :keyword:`in` tests whether the dictionary has a given key. For container types such as list, tuple, set, frozenset, dict, or collections.deque, the expression ``x in y`` is equivalent to ``any(x is e or x == e for e in y)``."
+msgid "The operators :keyword:`in` and :keyword:`not in` test for membership.  ``x in s`` evaluates to ``True`` if *x* is a member of *s*, and ``False`` otherwise. ``x not in s`` returns the negation of ``x in s``.  All built-in sequences and set types support this as well as dictionary, for which :keyword:`in` tests whether the dictionary has a given key. For container types such as list, tuple, set, frozenset, dict, or collections.deque, the expression ``x in y`` is equivalent to ``any(x is e or x == e for e in y)``."
 msgstr ""
 
 #: ../../reference/expressions.rst:1441
-msgid "For the string and bytes types, ``x in y`` is true if and only if *x* is a substring of *y*.  An equivalent test is ``y.find(x) != -1``.  Empty strings are always considered to be a substring of any other string, so ``\"\" in \"abc\"`` will return ``True``."
+msgid "For the string and bytes types, ``x in y`` is ``True`` if and only if *x* is a substring of *y*.  An equivalent test is ``y.find(x) != -1``.  Empty strings are always considered to be a substring of any other string, so ``\"\" in \"abc\"`` will return ``True``."
 msgstr ""
 
 #: ../../reference/expressions.rst:1446
-msgid "For user-defined classes which define the :meth:`__contains__` method, ``x in y`` is true if and only if ``y.__contains__(x)`` is true."
+msgid "For user-defined classes which define the :meth:`__contains__` method, ``x in y`` returns ``True`` if ``y.__contains__(x)`` returns a true value, and ``False`` otherwise."
 msgstr ""
 
-#: ../../reference/expressions.rst:1449
-msgid "For user-defined classes which do not define :meth:`__contains__` but do define :meth:`__iter__`, ``x in y`` is true if some value ``z`` with ``x == z`` is produced while iterating over ``y``.  If an exception is raised during the iteration, it is as if :keyword:`in` raised that exception."
+#: ../../reference/expressions.rst:1450
+msgid "For user-defined classes which do not define :meth:`__contains__` but do define :meth:`__iter__`, ``x in y`` is ``True`` if some value ``z`` with ``x == z`` is produced while iterating over ``y``.  If an exception is raised during the iteration, it is as if :keyword:`in` raised that exception."
 msgstr ""
 
-#: ../../reference/expressions.rst:1454
-msgid "Lastly, the old-style iteration protocol is tried: if a class defines :meth:`__getitem__`, ``x in y`` is true if and only if there is a non-negative integer index *i* such that ``x == y[i]``, and all lower integer indices do not raise :exc:`IndexError` exception.  (If any other exception is raised, it is as if :keyword:`in` raised that exception)."
+#: ../../reference/expressions.rst:1455
+msgid "Lastly, the old-style iteration protocol is tried: if a class defines :meth:`__getitem__`, ``x in y`` is ``True`` if and only if there is a non-negative integer index *i* such that ``x == y[i]``, and all lower integer indices do not raise :exc:`IndexError` exception.  (If any other exception is raised, it is as if :keyword:`in` raised that exception)."
 msgstr ""
 
-#: ../../reference/expressions.rst:1466
+#: ../../reference/expressions.rst:1467
 msgid "The operator :keyword:`not in` is defined to have the inverse true value of :keyword:`in`."
 msgstr ""
 
-#: ../../reference/expressions.rst:1479
+#: ../../reference/expressions.rst:1480
 msgid "Identity comparisons"
 msgstr ""
 
-#: ../../reference/expressions.rst:1481
+#: ../../reference/expressions.rst:1482
 msgid "The operators :keyword:`is` and :keyword:`is not` test for object identity: ``x is y`` is true if and only if *x* and *y* are the same object.  Object identity is determined using the :meth:`id` function.  ``x is not y`` yields the inverse truth value. [#]_"
 msgstr ""
 
-#: ../../reference/expressions.rst:1493
+#: ../../reference/expressions.rst:1494
 msgid "Boolean operations"
 msgstr ""
 
-#: ../../reference/expressions.rst:1504
+#: ../../reference/expressions.rst:1505
 msgid "In the context of Boolean operations, and also when expressions are used by control flow statements, the following values are interpreted as false: ``False``, ``None``, numeric zero of all types, and empty strings and containers (including strings, tuples, lists, dictionaries, sets and frozensets).  All other values are interpreted as true.  User-defined objects can customize their truth value by providing a :meth:`__bool__` method."
 msgstr ""
 
-#: ../../reference/expressions.rst:1513
+#: ../../reference/expressions.rst:1514
 msgid "The operator :keyword:`not` yields ``True`` if its argument is false, ``False`` otherwise."
 msgstr ""
 
-#: ../../reference/expressions.rst:1518
+#: ../../reference/expressions.rst:1519
 msgid "The expression ``x and y`` first evaluates *x*; if *x* is false, its value is returned; otherwise, *y* is evaluated and the resulting value is returned."
 msgstr ""
 
-#: ../../reference/expressions.rst:1523
+#: ../../reference/expressions.rst:1524
 msgid "The expression ``x or y`` first evaluates *x*; if *x* is true, its value is returned; otherwise, *y* is evaluated and the resulting value is returned."
 msgstr ""
 
-#: ../../reference/expressions.rst:1526
+#: ../../reference/expressions.rst:1527
 msgid "(Note that neither :keyword:`and` nor :keyword:`or` restrict the value and type they return to ``False`` and ``True``, but rather return the last evaluated argument.  This is sometimes useful, e.g., if ``s`` is a string that should be replaced by a default value if it is empty, the expression ``s or 'foo'`` yields the desired value.  Because :keyword:`not` has to create a new value, it returns a boolean value regardless of the type of its argument (for example, ``not 'foo'`` produces ``False`` rather than ``''``.)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1536
+#: ../../reference/expressions.rst:1537
 msgid "Conditional expressions"
 msgstr ""
 
-#: ../../reference/expressions.rst:1547
+#: ../../reference/expressions.rst:1548
 msgid "Conditional expressions (sometimes called a \"ternary operator\") have the lowest priority of all Python operations."
 msgstr ""
 
-#: ../../reference/expressions.rst:1550
+#: ../../reference/expressions.rst:1551
 msgid "The expression ``x if C else y`` first evaluates the condition, *C* rather than *x*. If *C* is true, *x* is evaluated and its value is returned; otherwise, *y* is evaluated and its value is returned."
 msgstr ""
 
-#: ../../reference/expressions.rst:1554
+#: ../../reference/expressions.rst:1555
 msgid "See :pep:`308` for more details about conditional expressions."
 msgstr ""
 
-#: ../../reference/expressions.rst:1561
+#: ../../reference/expressions.rst:1562
 msgid "Lambdas"
 msgstr ""
 
-#: ../../reference/expressions.rst:1572
+#: ../../reference/expressions.rst:1573
 msgid "Lambda expressions (sometimes called lambda forms) are used to create anonymous functions. The expression ``lambda arguments: expression`` yields a function object.  The unnamed object behaves like a function object defined with:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1581
+#: ../../reference/expressions.rst:1582
 msgid "See section :ref:`function` for the syntax of parameter lists.  Note that functions created with lambda expressions cannot contain statements or annotations."
 msgstr ""
 
-#: ../../reference/expressions.rst:1589
+#: ../../reference/expressions.rst:1590
 msgid "Expression lists"
 msgstr ""
 
-#: ../../reference/expressions.rst:1601
+#: ../../reference/expressions.rst:1602
 msgid "Except when part of a list or set display, an expression list containing at least one comma yields a tuple.  The length of the tuple is the number of expressions in the list.  The expressions are evaluated from left to right."
 msgstr ""
 
-#: ../../reference/expressions.rst:1610
+#: ../../reference/expressions.rst:1611
 msgid "An asterisk ``*`` denotes :dfn:`iterable unpacking`.  Its operand must be an :term:`iterable`.  The iterable is expanded into a sequence of items, which are included in the new tuple, list, or set, at the site of the unpacking."
 msgstr ""
 
-#: ../../reference/expressions.rst:1615
+#: ../../reference/expressions.rst:1616
 msgid "Iterable unpacking in expression lists, originally proposed by :pep:`448`."
 msgstr ""
 
-#: ../../reference/expressions.rst:1620
+#: ../../reference/expressions.rst:1621
 msgid "The trailing comma is required only to create a single tuple (a.k.a. a *singleton*); it is optional in all other cases.  A single expression without a trailing comma doesn't create a tuple, but rather yields the value of that expression. (To create an empty tuple, use an empty pair of parentheses: ``()``.)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1630
+#: ../../reference/expressions.rst:1631
 msgid "Evaluation order"
 msgstr ""
 
-#: ../../reference/expressions.rst:1634
+#: ../../reference/expressions.rst:1635
 msgid "Python evaluates expressions from left to right.  Notice that while evaluating an assignment, the right-hand side is evaluated before the left-hand side."
 msgstr ""
 
-#: ../../reference/expressions.rst:1637
+#: ../../reference/expressions.rst:1638
 msgid "In the following lines, expressions will be evaluated in the arithmetic order of their suffixes::"
 msgstr ""
 
-#: ../../reference/expressions.rst:1651
+#: ../../reference/expressions.rst:1652
 msgid "Operator precedence"
 msgstr ""
 
-#: ../../reference/expressions.rst:1655
+#: ../../reference/expressions.rst:1656
 msgid "The following table summarizes the operator precedence in Python, from lowest precedence (least binding) to highest precedence (most binding).  Operators in the same box have the same precedence.  Unless the syntax is explicitly given, operators are binary.  Operators in the same box group left to right (except for exponentiation, which groups from right to left)."
 msgstr ""
 
-#: ../../reference/expressions.rst:1661
+#: ../../reference/expressions.rst:1662
 msgid "Note that comparisons, membership tests, and identity tests, all have the same precedence and have a left-to-right chaining feature as described in the :ref:`comparisons` section."
 msgstr ""
 
-#: ../../reference/expressions.rst:1667
+#: ../../reference/expressions.rst:1668
 msgid "Operator"
 msgstr ""
 
-#: ../../reference/expressions.rst:1667
+#: ../../reference/expressions.rst:1668
 msgid "Description"
 msgstr ""
 
-#: ../../reference/expressions.rst:1669
+#: ../../reference/expressions.rst:1670
 msgid ":keyword:`lambda`"
 msgstr ""
 
-#: ../../reference/expressions.rst:1669
+#: ../../reference/expressions.rst:1670
 msgid "Lambda expression"
 msgstr ""
 
-#: ../../reference/expressions.rst:1671
+#: ../../reference/expressions.rst:1672
 msgid ":keyword:`if` -- :keyword:`else`"
 msgstr ""
 
-#: ../../reference/expressions.rst:1671
+#: ../../reference/expressions.rst:1672
 msgid "Conditional expression"
 msgstr ""
 
-#: ../../reference/expressions.rst:1673
+#: ../../reference/expressions.rst:1674
 msgid ":keyword:`or`"
 msgstr ""
 
-#: ../../reference/expressions.rst:1673
+#: ../../reference/expressions.rst:1674
 msgid "Boolean OR"
 msgstr ""
 
-#: ../../reference/expressions.rst:1675
+#: ../../reference/expressions.rst:1676
 msgid ":keyword:`and`"
 msgstr ""
 
-#: ../../reference/expressions.rst:1675
+#: ../../reference/expressions.rst:1676
 msgid "Boolean AND"
 msgstr ""
 
-#: ../../reference/expressions.rst:1677
+#: ../../reference/expressions.rst:1678
 msgid ":keyword:`not` ``x``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1677
+#: ../../reference/expressions.rst:1678
 msgid "Boolean NOT"
 msgstr ""
 
-#: ../../reference/expressions.rst:1679
+#: ../../reference/expressions.rst:1680
 msgid ":keyword:`in`, :keyword:`not in`, :keyword:`is`, :keyword:`is not`, ``<``, ``<=``, ``>``, ``>=``, ``!=``, ``==``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1679
+#: ../../reference/expressions.rst:1680
 msgid "Comparisons, including membership tests and identity tests"
 msgstr ""
 
-#: ../../reference/expressions.rst:1683
+#: ../../reference/expressions.rst:1684
 msgid "``|``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1683
+#: ../../reference/expressions.rst:1684
 msgid "Bitwise OR"
 msgstr ""
 
-#: ../../reference/expressions.rst:1685
+#: ../../reference/expressions.rst:1686
 msgid "``^``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1685
+#: ../../reference/expressions.rst:1686
 msgid "Bitwise XOR"
 msgstr ""
 
-#: ../../reference/expressions.rst:1687
+#: ../../reference/expressions.rst:1688
 msgid "``&``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1687
+#: ../../reference/expressions.rst:1688
 msgid "Bitwise AND"
 msgstr ""
 
-#: ../../reference/expressions.rst:1689
+#: ../../reference/expressions.rst:1690
 msgid "``<<``, ``>>``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1689
+#: ../../reference/expressions.rst:1690
 msgid "Shifts"
 msgstr ""
 
-#: ../../reference/expressions.rst:1691
+#: ../../reference/expressions.rst:1692
 msgid "``+``, ``-``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1691
+#: ../../reference/expressions.rst:1692
 msgid "Addition and subtraction"
 msgstr ""
 
-#: ../../reference/expressions.rst:1693
+#: ../../reference/expressions.rst:1694
 msgid "``*``, ``@``, ``/``, ``//``, ``%``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1693
+#: ../../reference/expressions.rst:1694
 msgid "Multiplication, matrix multiplication division, remainder [#]_"
 msgstr ""
 
-#: ../../reference/expressions.rst:1697
+#: ../../reference/expressions.rst:1698
 msgid "``+x``, ``-x``, ``~x``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1697
+#: ../../reference/expressions.rst:1698
 msgid "Positive, negative, bitwise NOT"
 msgstr ""
 
-#: ../../reference/expressions.rst:1699
+#: ../../reference/expressions.rst:1700
 msgid "``**``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1699
+#: ../../reference/expressions.rst:1700
 msgid "Exponentiation [#]_"
 msgstr ""
 
-#: ../../reference/expressions.rst:1701
+#: ../../reference/expressions.rst:1702
 msgid "``await`` ``x``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1703
+#: ../../reference/expressions.rst:1704
 msgid "``x[index]``, ``x[index:index]``, ``x(arguments...)``, ``x.attribute``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1703
+#: ../../reference/expressions.rst:1704
 msgid "Subscription, slicing, call, attribute reference"
 msgstr ""
 
-#: ../../reference/expressions.rst:1706
+#: ../../reference/expressions.rst:1707
 msgid "``(expressions...)``, ``[expressions...]``, ``{key: value...}``, ``{expressions...}``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1706
+#: ../../reference/expressions.rst:1707
 msgid "Binding or tuple display, list display, dictionary display, set display"
 msgstr ""
 
-#: ../../reference/expressions.rst:1714
+#: ../../reference/expressions.rst:1715
 msgid "Footnotes"
 msgstr ""
 
-#: ../../reference/expressions.rst:1715
+#: ../../reference/expressions.rst:1716
 msgid "While ``abs(x%y) < abs(y)`` is true mathematically, for floats it may not be true numerically due to roundoff.  For example, and assuming a platform on which a Python float is an IEEE 754 double-precision number, in order that ``-1e-100 % 1e100`` have the same sign as ``1e100``, the computed result is ``-1e-100 + 1e100``, which is numerically exactly equal to ``1e100``.  The function :func:`math.fmod` returns a result whose sign matches the sign of the first argument instead, and so returns ``-1e-100`` in this case. Which approach is more appropriate depends on the application."
 msgstr ""
 
-#: ../../reference/expressions.rst:1724
+#: ../../reference/expressions.rst:1725
 msgid "If x is very close to an exact integer multiple of y, it's possible for ``x//y`` to be one larger than ``(x-x%y)//y`` due to rounding.  In such cases, Python returns the latter result, in order to preserve that ``divmod(x,y)[0] * y + x % y`` be very close to ``x``."
 msgstr ""
 
-#: ../../reference/expressions.rst:1729
+#: ../../reference/expressions.rst:1730
 msgid "The Unicode standard distinguishes between :dfn:`code points` (e.g. U+0041) and :dfn:`abstract characters` (e.g. \"LATIN CAPITAL LETTER A\"). While most abstract characters in Unicode are only represented using one code point, there is a number of abstract characters that can in addition be represented using a sequence of more than one code point.  For example, the abstract character \"LATIN CAPITAL LETTER C WITH CEDILLA\" can be represented as a single :dfn:`precomposed character` at code position U+00C7, or as a sequence of a :dfn:`base character` at code position U+0043 (LATIN CAPITAL LETTER C), followed by a :dfn:`combining character` at code position U+0327 (COMBINING CEDILLA)."
 msgstr ""
 
-#: ../../reference/expressions.rst:1740
+#: ../../reference/expressions.rst:1741
 msgid "The comparison operators on strings compare at the level of Unicode code points. This may be counter-intuitive to humans.  For example, ``\"\\u00C7\" == \"\\u0043\\u0327\"`` is ``False``, even though both strings represent the same abstract character \"LATIN CAPITAL LETTER C WITH CEDILLA\"."
 msgstr ""
 
-#: ../../reference/expressions.rst:1745
+#: ../../reference/expressions.rst:1746
 msgid "To compare strings at the level of abstract characters (that is, in a way intuitive to humans), use :func:`unicodedata.normalize`."
 msgstr ""
 
-#: ../../reference/expressions.rst:1748
+#: ../../reference/expressions.rst:1749
 msgid "Due to automatic garbage-collection, free lists, and the dynamic nature of descriptors, you may notice seemingly unusual behaviour in certain uses of the :keyword:`is` operator, like those involving comparisons between instance methods, or constants.  Check their documentation for more info."
 msgstr ""
 
-#: ../../reference/expressions.rst:1753
+#: ../../reference/expressions.rst:1754
 msgid "The ``%`` operator is also used for string formatting; the same precedence applies."
 msgstr ""
 
-#: ../../reference/expressions.rst:1756
+#: ../../reference/expressions.rst:1757
 msgid "The power operator ``**`` binds less tightly than an arithmetic or bitwise unary operator on its right, that is, ``2**-1`` is ``0.5``."
 msgstr ""
 

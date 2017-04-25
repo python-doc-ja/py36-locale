@@ -15,10 +15,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../tools/templates/dummy.html:6
-msgid "CPython implementation detail:"
-msgstr ""
-
 #: ../../tools/templates/indexsidebar.html:1
 msgid "Download"
 msgstr ""
@@ -67,41 +63,16 @@ msgstr ""
 msgid "Audio/Visual Talks"
 msgstr ""
 
-#: ../../tools/templates/layout.html:9
-msgid "Documentation "
+#: ../../tools/templates/customsourcelink.html:3
+msgid "This Page"
 msgstr ""
 
-#: ../../tools/templates/layout.html:20
-msgid "Quick search"
+#: ../../tools/templates/customsourcelink.html:5
+msgid "Report a Bug"
 msgstr ""
 
-#: ../../tools/templates/layout.html:21
-msgid "Go"
-msgstr ""
-
-#: ../../tools/templates/layout.html:119
-#: ../../tools/templates/indexcontent.html:63
-msgid "Copyright"
-msgstr ""
-
-#: ../../tools/templates/layout.html:121
-msgid "The Python Software Foundation is a non-profit corporation."
-msgstr ""
-
-#: ../../tools/templates/layout.html:122
-msgid "Please donate."
-msgstr ""
-
-#: ../../tools/templates/layout.html:124
-msgid "Last updated on %(last_updated)s."
-msgstr ""
-
-#: ../../tools/templates/layout.html:125
-msgid "<a href=\"%(pathto_bugs)s\">Found a bug</a>?"
-msgstr ""
-
-#: ../../tools/templates/layout.html:127
-msgid "Created using <a href=\"http://sphinx.pocoo.org/\">Sphinx</a> %(sphinx_version)s."
+#: ../../tools/templates/customsourcelink.html:8
+msgid "Show Source"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:8
@@ -260,15 +231,44 @@ msgstr ""
 msgid "History and License of Python"
 msgstr ""
 
-#: ../../tools/templates/customsourcelink.html:3
-msgid "This Page"
+#: ../../tools/templates/indexcontent.html:63
+#: ../../tools/templates/layout.html:119
+msgid "Copyright"
 msgstr ""
 
-#: ../../tools/templates/customsourcelink.html:5
-msgid "Report a Bug"
+#: ../../tools/templates/layout.html:9
+msgid "Documentation "
 msgstr ""
 
-#: ../../tools/templates/customsourcelink.html:8
-msgid "Show Source"
+#: ../../tools/templates/layout.html:20
+msgid "Quick search"
+msgstr ""
+
+#: ../../tools/templates/layout.html:21
+msgid "Go"
+msgstr ""
+
+#: ../../tools/templates/layout.html:121
+msgid "The Python Software Foundation is a non-profit corporation."
+msgstr ""
+
+#: ../../tools/templates/layout.html:122
+msgid "Please donate."
+msgstr ""
+
+#: ../../tools/templates/layout.html:124
+msgid "Last updated on %(last_updated)s."
+msgstr ""
+
+#: ../../tools/templates/layout.html:125
+msgid "<a href=\"%(pathto_bugs)s\">Found a bug</a>?"
+msgstr ""
+
+#: ../../tools/templates/layout.html:127
+msgid "Created using <a href=\"http://sphinx.pocoo.org/\">Sphinx</a> %(sphinx_version)s."
+msgstr ""
+
+#: ../../tools/templates/dummy.html:6
+msgid "CPython implementation detail:"
 msgstr ""
 
