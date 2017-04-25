@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>, 2017\n"
+"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -156,6 +156,9 @@ msgid ""
 "usage of the former case, see the :ref:`importlib-examples` section of the "
 ":mod:`importlib` documentation."
 msgstr ""
+"Python 3.3 との互換性が不要であれば、:func:`importlib.util.find_spec` を使用してください, "
+"互換性が必要な場合は :func:`importlib.find_loader` を使用してください。前者の使用例は、:mod:`importlib` "
+"ドキュメントの:ref:`importlib-examples` セクションを参照してください。"
 
 #: ../../library/imp.rst:95
 msgid ""
@@ -216,7 +219,7 @@ msgstr ""
 
 #: ../../library/imp.rst:130
 msgid "Use :func:`importlib.util.module_from_spec` instead."
-msgstr ""
+msgstr "代わりに:func:`importlib.util.module_from_spec` を使用してください。"
 
 #: ../../library/imp.rst:136
 msgid ""

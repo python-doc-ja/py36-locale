@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: cocoatomo <cocoatomo77@gmail.com>, 2017\n"
+"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -518,7 +518,7 @@ msgstr ""
 
 #: ../../library/re.rst:256
 msgid "``(?imsx-imsx:...)``"
-msgstr ""
+msgstr "``(?imsx-imsx:...)``"
 
 #: ../../library/re.rst:249
 msgid ""
@@ -967,7 +967,7 @@ msgstr "``'\\u'`` と ``'\\U'`` エスケープシーケンスが追加されま
 #: ../../library/re.rst:464
 msgid ""
 "Unknown escapes consisting of ``'\\'`` and an ASCII letter now are errors."
-msgstr ""
+msgstr "``'\\'``とASCII文字からなる未知のエスケープは、エラーになります。"
 
 #: ../../library/re.rst:472
 msgid "Mastering Regular Expressions"
@@ -1000,6 +1000,7 @@ msgid ""
 "Flag constants are now instances of :class:`RegexFlag`, which is a subclass "
 "of :class:`enum.IntFlag`."
 msgstr ""
+"フラグ定数は、:class:`enum.IntFlag` のサブクラスである :class:`RegexFlag` のインスタンスになりました、"
 
 #: ../../library/re.rst:493
 msgid ""
@@ -1093,7 +1094,7 @@ msgstr ""
 msgid ""
 ":const:`re.LOCALE` can be used only with bytes patterns and is not "
 "compatible with :const:`re.ASCII`."
-msgstr ""
+msgstr ":const:`re.LOCALE` バイト列のパターンにのみ利用できます。:const:`re.ASCII` とは同時に指定できません。"
 
 #: ../../library/re.rst:566
 msgid ""
@@ -1345,7 +1346,7 @@ msgstr "マッチしないグループは空文字列に置き換えられます
 msgid ""
 "Unknown escapes in *pattern* consisting of ``'\\'`` and an ASCII letter now "
 "are errors."
-msgstr ""
+msgstr "*pattern* 中に``'\\'``とASCII文字からなる未知のエスケープがあると、エラーになります。"
 
 #: ../../library/re.rst:772
 msgid ""
@@ -1353,6 +1354,8 @@ msgid ""
 "escapes in repl consisting of '\\' and an ASCII letter now raise a "
 "deprecation warning and will be forbidden in Python 3.7."
 msgstr ""
+"バージョン 3.5 で非推奨、バージョン 3.7 で削除予定。'\\' および ASCII "
+"文字からなる未知のエスケープは、非推奨の警告を送出し、Python 3.7 では禁止されます。"
 
 #: ../../library/re.rst:772
 msgid ""
