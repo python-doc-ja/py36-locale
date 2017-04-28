@@ -129,7 +129,7 @@ msgstr ""
 
 #: ../../howto/instrumentation.rst:129
 msgid "Static DTrace probes"
-msgstr ""
+msgstr "静的 DTrace プローブ"
 
 #: ../../howto/instrumentation.rst:131
 msgid ""
@@ -141,15 +141,15 @@ msgstr ""
 
 #: ../../howto/instrumentation.rst:170 ../../howto/instrumentation.rst:228
 msgid "It can be invoked like this::"
-msgstr ""
+msgstr "この例は次のように実行できます::"
 
 #: ../../howto/instrumentation.rst:174 ../../howto/instrumentation.rst:234
 msgid "The output looks like this:"
-msgstr ""
+msgstr "出力はこのようになります:"
 
 #: ../../howto/instrumentation.rst:199
 msgid "Static SystemTap markers"
-msgstr ""
+msgstr "静的 SystemTap マーカー"
 
 #: ../../howto/instrumentation.rst:201
 msgid ""
@@ -162,29 +162,29 @@ msgstr ""
 msgid ""
 "For example, this SystemTap script can be used to show the call/return "
 "hierarchy of a Python script:"
-msgstr ""
+msgstr "例えば、この SystemTap スクリプトは Python の呼び出し/返却 (call/return) 階層を表示するのに使えます:"
 
 #: ../../howto/instrumentation.rst:245
 msgid "where the columns are:"
-msgstr ""
+msgstr "それぞれの列の内容は次の通りです:"
 
 #: ../../howto/instrumentation.rst:247
 msgid "time in microseconds since start of script"
-msgstr ""
+msgstr "スクリプトを起動してからのマイクロ秒単位の時間"
 
 #: ../../howto/instrumentation.rst:249
 msgid "name of executable"
-msgstr ""
+msgstr "実行可能ファイルの名前"
 
 #: ../../howto/instrumentation.rst:251
 msgid "PID of process"
-msgstr ""
+msgstr "プロセスの PID"
 
 #: ../../howto/instrumentation.rst:253
 msgid ""
 "and the remainder indicates the call/return hierarchy as the script "
 "executes."
-msgstr ""
+msgstr "そして、残りの部分はスクリプトが実行していた呼び出し/返却階層を表示しています。"
 
 #: ../../howto/instrumentation.rst:255
 msgid ""
