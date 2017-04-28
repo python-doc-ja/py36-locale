@@ -1129,6 +1129,8 @@ msgid ""
 "truncates the return value based on the bit width of the host machine. See "
 ":meth:`__hash__` for details."
 msgstr ""
+"独自の :meth:`__hash__` メソッドを実装したオブジェクトを使う場合、:func:`hash` "
+"が実行するマシンのビット幅に合わせて戻り値を切り捨てることに注意してください。詳しくは :meth:`__hash__` を参照してください。"
 
 #: ../../library/functions.rst:619
 msgid ""
@@ -1955,6 +1957,8 @@ msgid ""
 "by *end*.  *sep*, *end*, *file* and *flush*, if present, must be given as "
 "keyword arguments."
 msgstr ""
+"*objects*を *sep* で区切りながらテキストストリーム *file* に表示し、最後に *end* "
+"を表示します。*sep*、*end*、*file*、*flush*を与える場合、キーワード引数として与える必要があります。"
 
 #: ../../library/functions.rst:1131
 msgid ""
@@ -2465,6 +2469,8 @@ msgid ""
 "Subclasses of :class:`type` which don't override ``type.__new__`` may no "
 "longer use the one-argument form to get the type of an object."
 msgstr ""
+"``type.__new__`` をオーバーライドしていない:class:`type` "
+"のサブクラスは、オブジェクトの型を得るのに１引数形式を利用することができません。"
 
 #: ../../library/functions.rst:1494
 msgid ""

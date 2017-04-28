@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>, 2017\n"
+"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -93,7 +93,7 @@ msgstr "再帰的なオブジェクト (直接、間接に関わらず、自分�
 msgid ""
 "Because deep copy copies everything it may copy too much, such as data which"
 " is intended to be shared between copies."
-msgstr ""
+msgstr "深いコピーは何もかもコピーしてしまうため、例えば複数のコピー間で共有するつもりだったデータも余分にコピーしてしまいます。"
 
 #: ../../library/copy.rst:53
 msgid "The :func:`deepcopy` function avoids these problems by:"

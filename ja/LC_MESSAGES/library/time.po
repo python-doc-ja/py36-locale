@@ -792,6 +792,8 @@ msgid ""
 "representing `leap seconds`_ and value ``61`` is supported for historical "
 "reasons."
 msgstr ""
+"値の幅は実際に ``0`` から ``61`` です; ``60`` は`うるう秒<leap seconds>`_を表し、``61`` "
+"は歴史的理由によりサポートされています。"
 
 #: ../../library/time.rst:486
 msgid ""

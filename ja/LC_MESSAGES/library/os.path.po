@@ -156,7 +156,7 @@ msgstr "利用できる環境 : Unix, Windows"
 
 #: ../../library/os.path.rst:92
 msgid "Accepts a sequence of :term:`path-like objects <path-like object>`."
-msgstr ""
+msgstr ":term:`path-like objects <path-like object>` のシーケンスを受け入れるようになりました。"
 
 #: ../../library/os.path.rst:98
 msgid ""
@@ -396,7 +396,7 @@ msgstr ""
 
 #: ../../library/os.path.rst:309
 msgid "Accepts a :term:`path-like object` for *path* and *paths*."
-msgstr ""
+msgstr "*path* と *paths* が :term:`path-like object` を受け付けるようになりました。"
 
 #: ../../library/os.path.rst:315
 msgid ""
