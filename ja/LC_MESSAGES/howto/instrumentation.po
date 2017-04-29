@@ -239,7 +239,7 @@ msgstr "``$arg2`` : ``(const char *)`` 関数名、 ``user_string($arg2)`` で�
 
 #: ../../howto/instrumentation.rst:287
 msgid "``$arg3`` : ``int`` line number"
-msgstr ""
+msgstr "``$arg3`` : ``int`` 行番号"
 
 #: ../../howto/instrumentation.rst:291
 msgid ""
@@ -247,10 +247,12 @@ msgid ""
 " execution of a Python function has ended (either via ``return``, or via an "
 "exception).  It is only triggered for pure-Python (bytecode) functions."
 msgstr ""
+"このマーカーは :c:func:`function__entry` の反対で、 Python 関数の実行が (``return`` もしくは例外によって) 終了したことを示しています。\n"
+"このマーカーは、ピュア Python (バイトコード) の関数でしか起動されません。"
 
 #: ../../howto/instrumentation.rst:295
 msgid "The arguments are the same as for :c:func:`function__entry`"
-msgstr ""
+msgstr "引数は :c:func:`function__entry` と同じです。"
 
 #: ../../howto/instrumentation.rst:299
 msgid ""
@@ -258,22 +260,29 @@ msgid ""
 "equivalent of line-by-line tracing with a Python profiler.  It is not "
 "triggered within C functions."
 msgstr ""
+"このマーカーは、これから実行される Python の行を示しています。\n"
+"これは Python プロファイラによる行ごとのトレースと同等です。\n"
+"このマーカーは C 関数の内部では起動されません。"
 
 #: ../../howto/instrumentation.rst:303
 msgid "The arguments are the same as for :c:func:`function__entry`."
-msgstr ""
+msgstr "引数は :c:func:`function__entry` と同じです。"
 
 #: ../../howto/instrumentation.rst:307
 msgid ""
 "Fires when the Python interpreter starts a garbage collection cycle. "
 "``arg0`` is the generation to scan, like :func:`gc.collect()`."
 msgstr ""
+"Python インタプリタによる循環参照のガベージコレクションが開始されたときに発火します。\n"
+":func:`gc.collect()` と同じように ``arg0`` は走査する対象の世代です。"
 
 #: ../../howto/instrumentation.rst:312
 msgid ""
 "Fires when the Python interpreter finishes a garbage collection cycle. "
 "``arg0`` is the number of collected objects."
 msgstr ""
+"Python インタプリタによる循環参照のガベージコレクションが完了したときに発火します。\n"
+"``arg0`` は回収したオブジェクトの数です。"
 
 #: ../../howto/instrumentation.rst:317
 msgid "SystemTap Tapsets"
