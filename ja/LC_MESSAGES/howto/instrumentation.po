@@ -192,24 +192,28 @@ msgid ""
 "the libpython shared library, and the probe's dotted path needs to reflect "
 "this. For example, this line from the above example::"
 msgstr ""
+"`--enable-shared` を付けてビルドした CPython ではマーカーは共有ライブラリ libpython に含まれていて、プローブを付けるパスはそれを反映する必要があります。\n"
+"例えば、上の例のこの行は::"
 
 #: ../../howto/instrumentation.rst:261
 msgid "should instead read::"
-msgstr ""
+msgstr "次のように読み替える必要があります::"
 
 #: ../../howto/instrumentation.rst:265
 msgid "(assuming a debug build of CPython 3.6)"
-msgstr ""
+msgstr "(CPython 3.6 のデバッグビルドと仮定しています)"
 
 #: ../../howto/instrumentation.rst:269
 msgid "Available static markers"
-msgstr ""
+msgstr "利用可能な静的マーカー"
 
 #: ../../howto/instrumentation.rst:275
 msgid ""
 "This marker indicates that execution of a Python function has begun. It is "
 "only triggered for pure-Python (bytecode) functions."
 msgstr ""
+"このマーカーは Python の関数の実行が開始されたことを示しています。\n"
+"このマーカーは、ピュア Python (バイトコード) の関数でしか起動されません。"
 
 #: ../../howto/instrumentation.rst:278
 msgid ""
@@ -217,18 +221,21 @@ msgid ""
 "tracing script as positional arguments, which must be accessed using "
 "``$arg1``, ``$arg2``, ``$arg3``:"
 msgstr ""
+"トレーススクリプトには位置引数として、ファイル名、関数名、行番号が渡され、必ず ``$arg1``, ``$arg2``, ``$arg3`` "
+"で渡されます:"
 
 #: ../../howto/instrumentation.rst:282
 msgid ""
 "``$arg1`` : ``(const char *)`` filename, accessible using "
 "``user_string($arg1)``"
 msgstr ""
+"``$arg1`` : ``(const char *)`` ファイル名、 ``user_string($arg1)`` でアクセスできます"
 
 #: ../../howto/instrumentation.rst:284
 msgid ""
 "``$arg2`` : ``(const char *)`` function name, accessible using "
 "``user_string($arg2)``"
-msgstr ""
+msgstr "``$arg2`` : ``(const char *)`` 関数名、 ``user_string($arg2)`` でアクセスできます"
 
 #: ../../howto/instrumentation.rst:287
 msgid "``$arg3`` : ``int`` line number"
