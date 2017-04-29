@@ -286,7 +286,7 @@ msgstr ""
 
 #: ../../howto/instrumentation.rst:317
 msgid "SystemTap Tapsets"
-msgstr ""
+msgstr "SystemTap Tapset"
 
 #: ../../howto/instrumentation.rst:319
 msgid ""
