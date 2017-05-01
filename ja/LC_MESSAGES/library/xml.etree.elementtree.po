@@ -677,8 +677,8 @@ msgid ""
 "arguments.  Returns an element instance."
 msgstr ""
 "要素名、属性名、および属性値はバイト文字列でも Unicode 文字列でも構いません。 *parent* には親要素を指定します。 *tag* "
-"には要素名を指定します。*attrib* はオプションで要素の属性を含む辞書を指定します。 *extra* "
-"は追加の属性で、キーワード引数として与えます。要素インスタンスを返します。"
+"には要素名を指定します。*attrib* はオプションで要素の属性を含む辞書を指定します。 *extra* は追加の属性で、名前付き引数 "
+"(キーワード引数) として与えます。要素インスタンスを返します。"
 
 #: ../../library/xml.etree.elementtree.rst:588
 msgid ""
@@ -765,7 +765,8 @@ msgid ""
 "additional attributes, given as keyword arguments."
 msgstr ""
 "要素名、属性名、および属性値はバイト文字列でも Unicode 文字列でも構いません。 *tag* には要素名を指定します。*attrib* "
-"はオプションで、要素と属性を含む辞書を指定します。*extra* は追加の属性で、キーワード引数として与えます。要素インスタンスを返します。"
+"はオプションで、要素と属性を含む辞書を指定します。*extra* は追加の属性で、名前付き引数 (キーワード引数) "
+"として与えます。要素インスタンスを返します。"
 
 #: ../../library/xml.etree.elementtree.rst:654
 msgid ""
@@ -1084,7 +1085,7 @@ msgstr ""
 "``True`` の場合は常に書かれ、 ``None`` の場合は US-ASCII 、 UTF-8 、 Unicode 以外の場合に書かれます "
 "(デフォルトは ``None`` です)。 *default_namespace* でデフォルトの XML 名前空間 (\"xmlns\" 用) "
 "を指定します。 *method* は ``\"xml\"``, ``\"html\"``, ``\"text\"`` のいずれかです (デフォルトは "
-"``\"xml\"`` です)。キーワード専用引数の *short_empty_elements* "
+"``\"xml\"`` です)。名前付き引数 (キーワード引数) の *short_empty_elements* "
 "は、内容がない属性のフォーマットを制御します。``True`` (既定) の場合、単一の空要素タグとして書かれ、``False`` "
 "の場合、開始タグと終了タグのペアとしてかかれます。"
 
@@ -1212,7 +1213,7 @@ msgstr ""
 msgid ""
 "The *html* argument.  The remaining arguments should be passed via keyword "
 "to prepare for the removal of the *html* argument."
-msgstr ""
+msgstr "*html* 引数。残りの引数は、名前付き引数 (キーワード引数) として渡し、 *html* 引数の削除に向けて備えるべきです。"
 
 #: ../../library/xml.etree.elementtree.rst:1065
 msgid ""
@@ -1220,6 +1221,8 @@ msgid ""
 "``close()`` method of the *target* passed during construction; by default, "
 "this is the toplevel document element."
 msgstr ""
+"パーザへのデータの提供を完了します。構築中に渡される *target* の ``close()`` "
+"メソッドを呼び出す結果を返します。既定では、これがトップレベルのドキュメント要素になります。"
 
 #: ../../library/xml.etree.elementtree.rst:1072
 msgid ""
@@ -1240,6 +1243,10 @@ msgid ""
 " building a tree structure. This is an example of counting the maximum depth"
 " of an XML file::"
 msgstr ""
+":meth:`XMLParser.feed` は *target* の ``start(tag, attrs_dict)`` "
+"メソッドをそれぞれの開始タグに対して呼び、また ``end(tag)`` メソッドを終了タグに対して呼び、そしてデータを ``data(data)`` "
+"メソッドで処理します。 :meth:`XMLParser.close` は *target* の ``close()`` メソッドを呼びます。 "
+":class:`XMLParser` は木構造を構築する以外にも使えます。以下の例では、XML ファイルの最高の深さを数えます。"
 
 #: ../../library/xml.etree.elementtree.rst:1124
 msgid "XMLPullParser Objects"
@@ -1256,10 +1263,16 @@ msgid ""
 " to get detailed namespace information).  If *events* is omitted, only "
 "``\"end\"`` events are reported."
 msgstr ""
+"非ブロックアプリケーションに適したプルパーザです。入力側の API は :class:`XMLParser` "
+"のものと似ていますが、コールバックターゲットに呼び出しをプッシュするのではなく、 :class:`XMLPullParser` "
+"はパースイベントの内部リストを収集し、ユーザーがそこから読み出すことができます。*events* "
+"は、呼び出し元に報告するイベントのシーケンスです。サポートされているイベントは、文字列の ``\"start\"``, ``\"end\"``, "
+"``\"start-ns\"``, ``\"end-ns\"`` (\"ns\" イベントは、名前空間の詳細情報の取得に使用) です。*events* "
+"が省略された場合、 ``\"end\"`` イベントのみが報告されます。"
 
 #: ../../library/xml.etree.elementtree.rst:1139
 msgid "Feed the given bytes data to the parser."
-msgstr ""
+msgstr "指定したバイトデータをパーザに与えます。"
 
 #: ../../library/xml.etree.elementtree.rst:1143
 msgid ""
@@ -1268,6 +1281,9 @@ msgid ""
 "events not yet retrieved when the parser is closed can still be read with "
 ":meth:`read_events`."
 msgstr ""
+"パーザに、データストリームが終了したことを伝えます。:meth:`XMLParser.close` とは異なり、このメソッドは常に "
+":const:`None` を返します。パーザがクローズした時にまだ帰って来ていないイベントは、まだ :meth:`read_events` "
+"で読むことができます。"
 
 #: ../../library/xml.etree.elementtree.rst:1150
 msgid ""
@@ -1276,6 +1292,9 @@ msgid ""
 "*event* is a string representing the type of event (e.g. ``\"end\"``) and "
 "*elem* is the encountered :class:`Element` object."
 msgstr ""
+"パーザに与えられたデータ中で見つかったイベントのイテレータを返します。このイテレータは、``(event, elem)`` ペアを順に返します。ここで、"
+" *event* はイベントの種類を表す文字列 (例: ``\"end\"``)、*elem* は見つかった :class:`Element` "
+"オブジェクトです。"
 
 #: ../../library/xml.etree.elementtree.rst:1156
 msgid ""
@@ -1285,6 +1304,9 @@ msgid ""
 "over iterators obtained from :meth:`read_events` will have unpredictable "
 "results."
 msgstr ""
+":meth:`read_events` の前の呼び出しで提供されたイベントは、再度 yield "
+"されることはありません。イベントは、イテレータから取得された場合にのみ内部キューから消費されるため、:meth:`read_events` "
+"から取得されたイテレータに対して複数の読み出しを並行して反復的に行うと、予期せぬ結果が引き起こされます。"
 
 #: ../../library/xml.etree.elementtree.rst:1164
 msgid ""
