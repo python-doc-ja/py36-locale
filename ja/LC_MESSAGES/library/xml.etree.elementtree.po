@@ -1202,6 +1202,11 @@ msgid ""
 " now deprecated.  If *encoding* [1]_ is given, the value overrides the "
 "encoding specified in the XML file."
 msgstr ""
+"このクラスは、このモジュールの構成要素のうち、低水準のものです。効率的でイベントベースのXMLパースのため、:mod:`xml.parsers.expat`"
+" を使用します。:meth:`feed` メソッドで XML データをインクリメンタルに受け取り、*target* "
+"オブジェクトのコールバックを呼び出すことで、パースイベントをプッシュ API に変換します。*target* が省略された場合、標準の "
+":class:`TreeBuilder` が使用されます。*html* 引数は、後方互換性のため使われてきましたが、廃止されました。*encoding*"
+" [1]_ が指定された場合、このあたいは XML ファイル内で指定されたエンコーディングを上書きします。"
 
 #: ../../library/xml.etree.elementtree.rst:1059
 msgid ""
