@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>, 2017\n"
+"Last-Translator: Shun Sakurai <justmyway.yui@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../library/html.parser.rst:20
 msgid "Create a parser instance able to parse invalid markup."
-msgstr "不正なマークアップをパースするパーサーインスタンスを作成します。"
+msgstr "不正なマークアップをパースできるパーサーインスタンスを作成します。"
 
 #: ../../library/html.parser.rst:22
 msgid ""
@@ -288,7 +288,7 @@ msgid ""
 "instructions.  An XHTML processing instruction using the trailing ``'?'`` "
 "will cause the ``'?'`` to be included in *data*."
 msgstr ""
-"The :class:`HTMLParser` クラスでは、処理指令に SGML の構文を使用します。末尾に ``'?'`` がある XHTML "
+":class:`HTMLParser` クラスでは、処理指令に SGML の構文を使用します。末尾に ``'?'`` がある XHTML "
 "の処理指令では、 ``'?'`` が *data* に含まれることになります。"
 
 #: ../../library/html.parser.rst:220
