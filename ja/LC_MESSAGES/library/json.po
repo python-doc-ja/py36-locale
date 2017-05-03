@@ -365,8 +365,8 @@ msgid ""
 "*s* can now be of type :class:`bytes` or :class:`bytearray`. The input "
 "encoding should be UTF-8, UTF-16 or UTF-32."
 msgstr ""
-"*s* は :class:`bytes`  型か、 :class:`bytearray` 型になりました。入力エンコーディングは、UTF-8 か "
-"UTF-16、または UTF-32でなければなりません。"
+"*s* には :class:`bytes`  型と :class:`bytearray` 型も使えるようになりました。\n"
+"入力エンコーディングは UTF-8, UTF-16, UTF-32 のいずれかでなければなりません。"
 
 #: ../../library/json.rst:287
 msgid "Encoders and Decoders"
