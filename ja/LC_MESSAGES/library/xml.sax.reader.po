@@ -49,10 +49,9 @@ msgid ""
 "interfaces should be used if the blocking behaviour of :meth:`parse` is not "
 "desirable."
 msgstr ""
-"入力ソースを一度にパースせずに、利用可能なように文書のチャンクを入力したい場合があります。 SAX "
-"リーダは、通常はファイル全体を読み込みませんが、チャンクで読み込むことに注意してください。それでも :meth:`parse` "
-"は文書全体が処理されるまで return しません。そのため、:meth:`parse` "
-"のブロックする挙動を望まない場合はこれらのインターフェイスを使用してください。"
+"入力ソースを一度にパースするのではなく、ドキュメントのチャンクが利用可能になるごとに取得したいことがあります。SAX "
+"リーダは通常、ファイル全体を一気に読み込まず、チャンク単位で処理するのですが、全体の処理が終わるまで :meth:`parse` "
+"は返りません。そのため、 :meth:`parse` の排他的挙動を望まないときにこれらのインタフェースを使用してください。"
 
 #: ../../library/xml.sax.reader.rst:33
 msgid ""
@@ -61,8 +60,9 @@ msgid ""
 "close the reset method must be called to make the parser ready to accept new"
 " data, either from feed or using the parse method."
 msgstr ""
-"パーサのインスタンスが作成されると、feed メソッドを通じてすぐに、データを受け入れられるようになります。close "
-"メソッドの呼出しでパースが終わると、パーサは新しいデータを受け入れられるように、reset メソッドを呼び出されなければなりません。"
+"パーサのインスタンスが作成されるとすぐに、feed "
+"メソッドを通じてデータを受け入れられるようになります。パースが完了して閉じるための呼び出しが行われた後、パーサがフィードからまたはパースメソッドを使用して新しいデータを受け入れられるように、reset"
+" メソッドが呼び出される必要があります。"
 
 #: ../../library/xml.sax.reader.rst:38
 msgid ""
@@ -382,14 +382,16 @@ msgstr "この :class:`InputSource` の文字エンコーディングを取得�
 
 #: ../../library/xml.sax.reader.rst:297
 msgid "Set the byte stream (a :term:`binary file`) for this input source."
-msgstr "この入力ソースのバイトストリーム (a :term:`binary file`) を設定します。"
+msgstr "この入力ソースのバイトストリーム (:term:`binary file`) を設定します。"
 
 #: ../../library/xml.sax.reader.rst:299
 msgid ""
 "The SAX parser will ignore this if there is also a character stream "
 "specified, but it will use a byte stream in preference to opening a URI "
 "connection itself."
-msgstr "指定された文字ストリームもあった場合 SAX パーサはこれを無視しますが、URI 接続開始自身に優先してバイトストリームを使います。"
+msgstr ""
+"文字ストリームも指定されている場合、SAX パーサはこのバイトストリームを無視しますが、URI "
+"接続自体を開くときには優先してバイトストリームを使います。"
 
 #: ../../library/xml.sax.reader.rst:302
 msgid ""

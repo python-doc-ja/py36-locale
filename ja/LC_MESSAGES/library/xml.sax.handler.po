@@ -35,8 +35,8 @@ msgid ""
 ":mod:`xml.sax.handler`, so that all methods get default implementations."
 msgstr ""
 "SAX API はコンテント・ハンドラ、DTD "
-"ハンドラ、エラー・ハンドラ、エンティティ・リゾルバという4つのハンドラを規定しています。通常アプリケーション側で実装する必要があるのは、これらのハンドラが発生させるイベントのうち、処理したいものへのインターフェースだけです。インターフェースは1つのオブジェクトにまとめることも、複数のオブジェクトに分けることも可能です。ハンドラはすべてのメソッドがデフォルトで実装されるように、"
-" :mod:`xml.sax.handler` で提供される基底クラスを継承しなくてはなりません。"
+"ハンドラ、エラー・ハンドラ、エンティティ・リゾルバという4種類のハンドラを定義しています。通常アプリケーション側で実装する必要があるインターフェースは、使用したいイベントを発生させるものだけです。インターフェースは1つのオブジェクトにまとめることも、複数のオブジェクトに分けることも可能です。ハンドラの実装は、"
+" :mod:`xml.sax.handler` で提供される基底クラスを継承して、すべてのメソッドがデフォルトで実装されるようにしてください。"
 
 #: ../../library/xml.sax.handler.rst:24
 msgid ""
@@ -139,7 +139,7 @@ msgstr "値: ``\"http://xml.org/sax/features/validation\"``"
 msgid ""
 "true: Report all validation errors (implies external-general-entities and "
 "external-parameter-entities)."
-msgstr "真: 全ての妥当性検査エラーを報告します (外部一般エンティティと外部変数エンティティが暗示します)。"
+msgstr "真: 全ての妥当性検査エラーを報告します (外部一般エンティティと外部変数エンティティが暗示されます)。"
 
 #: ../../library/xml.sax.handler.rst:87
 msgid "false: Do not report validation errors."
@@ -501,7 +501,7 @@ msgid ""
 "provides useful information."
 msgstr ""
 "SAX "
-"パーサは一連の空白文字を単一のチャンクとして返す場合と複数のチャンクに分けて返す場合がありますが、ロケータの情報が正しく保たれるように、一つのイベントの文字データは常に同じ外部エンティティのものでなければなりません。"
+"パーサは連続する複数の空白文字を単一のチャンクとして返す場合と複数のチャンクに分けて返す場合があります。しかし、ロケータが有用な情報を提供できるように、単一のイベント中のすべての文字は同じ外部エンティティからのものでなければなりません。"
 
 #: ../../library/xml.sax.handler.rst:327
 msgid "Receive notification of a processing instruction."
@@ -587,10 +587,10 @@ msgid ""
 "passed-in exception object."
 msgstr ""
 "このインターフェイスのあるオブジェクトを使って :class:`~xml.sax.xmlreader.XMLReader` からエラーと警告情報を受け取ります。\n"
-"このインターフェイスを実装しているオブジェクトを作った場合、それを :class:`~xml.sax.xmlreader.XMLReader` に登録して、パーサはオブジェクトのメソッドを呼んで全警告とエラーを報告します。\n"
-"エラーには利用可能な3つのレベルがあります: 警告、(おそらく) 回復可能なエラー、回復不能なエラーです。\n"
-"全てのメソッドは :exc:`SAXParseException` を引数としてのみ受け取ります。\n"
-"警告とエラーは渡された例外オブジェクトによって例外に変換されるかもしれません。"
+"このインターフェイスを実装しているオブジェクトを作った場合、それを :class:`~xml.sax.xmlreader.XMLReader` に登録します。そうすると、パーサはすべての警告とエラーを報告するためにオブジェクトのメソッドを呼びます。\n"
+"利用可能なエラーには、次の3つのレベルがあります: 警告、(おそらく) 回復可能なエラー、回復不能なエラーです。\n"
+"全てのメソッドは唯一の引数として :exc:`SAXParseException` を受け取ります。\n"
+"警告とエラーは、渡された例外オブジェクトを送出することにより、例外に変換される場合があります。"
 
 #: ../../library/xml.sax.handler.rst:397
 msgid ""
