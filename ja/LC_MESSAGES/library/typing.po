@@ -497,11 +497,11 @@ msgstr "抽象メソッド ``__float__`` を備えた ABC です。"
 
 #: ../../library/typing.rst:513
 msgid "An ABC with one abstract method ``__complex__``."
-msgstr ""
+msgstr "抽象メソッド ``__complex__`` を備えた ABC です。"
 
 #: ../../library/typing.rst:517
 msgid "An ABC with one abstract method ``__bytes__``."
-msgstr ""
+msgstr "抽象メソッド ``__bytes__`` を備えた ABC です。"
 
 #: ../../library/typing.rst:521
 msgid ""
@@ -643,15 +643,15 @@ msgstr ":class:`dict` のジェネリック版です。この型の使い方は�
 
 #: ../../library/typing.rst:669
 msgid "A generic version of :class:`collections.defaultdict`."
-msgstr ""
+msgstr ":class:`collections.defaultdict ` のジェネリック版です。"
 
 #: ../../library/typing.rst:673
 msgid "A generic version of :class:`collections.Counter`."
-msgstr ""
+msgstr ":class:`collections.Counter ` のジェネリック版です。"
 
 #: ../../library/typing.rst:679
 msgid "A generic version of :class:`collections.ChainMap`."
-msgstr ""
+msgstr ":class:`collections.ChainMap ` のジェネリック版です。"
 
 #: ../../library/typing.rst:685
 msgid ""
