@@ -255,6 +255,9 @@ msgid ""
 "depends on your OS; NetBSD and DragonFlyBSD expect a Bluetooth address while"
 " everything else expects an integer.)"
 msgstr ""
+":const:`BTPROTO_HCI` は ``(device_id,)`` を受け取ります。 ``device_id`` "
+"は、数値またはインターフェイスの Bluetooth アドレスを表す文字列です。(OS に依存します。NetBSD と DragonFlyBSD は "
+"Bluetooth アドレスを期待しますが、その他すべての OS は、数値を期待します。)"
 
 #: ../../library/socket.rst:128
 msgid "NetBSD and DragonFlyBSD support added."
