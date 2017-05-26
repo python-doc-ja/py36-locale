@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>, 2017\n"
+"Last-Translator: Ohashi Kyotaro <cagz00@live.jp>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -386,7 +386,7 @@ msgstr ""
 
 #: ../../library/random.rst:217
 msgid "Return the next random floating point number in the range [0.0, 1.0)."
-msgstr "範囲 [0.0, 1.0) の次のランダムな浮動小数点数を返します。"
+msgstr "次のランダムな浮動小数点数（範囲は [0.0, 1.0) ）を返します。"
 
 #: ../../library/random.rst:222
 msgid ""
