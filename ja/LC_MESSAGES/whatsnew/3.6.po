@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Suguru YAMAMOTO <sgryjp@gmail.com>, 2017\n"
+"Last-Translator: SHIMIZU Taku <shimizu.taku@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -156,7 +156,7 @@ msgstr ""
 msgid ""
 "The :mod:`typing` module received a number of :ref:`improvements "
 "<whatsnew36-typing>`."
-msgstr ""
+msgstr "The :mod:`typing` モジュールに数多くの :ref:`改善 <whatsnew36-typing>` がなされました。"
 
 #: ../../whatsnew/3.6.rst:123
 msgid ""
@@ -176,6 +176,9 @@ msgid ""
 "cryptographically strong pseudo-random numbers suitable for managing secrets"
 " such as account authentication, tokens, and similar."
 msgstr ""
+"The new :mod:`secrets` module has been added to simplify the generation of "
+"cryptographically strong pseudo-random numbers suitable for managing secrets"
+" such as account authentication, tokens, and similar."
 
 #: ../../whatsnew/3.6.rst:136 ../../whatsnew/3.6.rst:1231
 msgid ""
@@ -192,7 +195,7 @@ msgstr ":mod:`hashlib` および :mod:`ssl` モジュールは OpenSSL 1.1.0 を
 msgid ""
 "The default settings and feature set of the :mod:`ssl` module have been "
 "improved."
-msgstr ""
+msgstr ":mod:`ssl` モジュールのデフォルトの設定と機能群が改善されました。"
 
 #: ../../whatsnew/3.6.rst:145
 msgid ""
