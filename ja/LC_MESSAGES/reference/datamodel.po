@@ -2521,12 +2521,17 @@ msgid ""
 "``__init_subclass__``, one should take out the needed keyword arguments and "
 "pass the others over to the base class, as in::"
 msgstr ""
+"新しいクラスに与えられたキーワード引数は、親のクラスの ``__init_subclass__`` に渡されます。 "
+"``__init_subclass__`` "
+"を利用している他のクラスとの互換性のために、以下のコードのように必要なキーワード引数を取得したら、他の引数は基底クラスに引き渡すべきです::"
 
 #: ../../reference/datamodel.rst:1706
 msgid ""
 "The default implementation ``object.__init_subclass__`` does nothing, but "
 "raises an error if it is called with any arguments."
 msgstr ""
+"``object.__init_subclass__`` "
+"のデフォルト実装は何も行いませんが、何らかの引数とともに呼び出された場合は、エラーを送出します。"
 
 #: ../../reference/datamodel.rst:1711
 msgid ""
