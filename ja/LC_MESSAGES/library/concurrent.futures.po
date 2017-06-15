@@ -92,9 +92,8 @@ msgstr ""
 " の使用中にこのメソッドを使用すると、 *iterables* "
 "をいくつかのチャンクに分割し、それぞれのチャンクを別々のタスクとしてプールに送信します。これらのチャンクの (大まかな) サイズは、 "
 "*chunksize* を正の整数値に設定することで指定できます。 iterable "
-"が非常に長い場合、*chunksize*に大きな値を設定すると、デフォルトサイズの 1 "
-"を使用する場合に比べて性能が大幅に向上します。:class:`ThreadPoolExecutor` に対しては *chunksize* "
-"を指定しても意味がありません。"
+"が非常に長い場合、*chunksize*に大きな値を設定すると、デフォルトサイズの 1 を使用する場合に比べて性能が大幅に向上します。 "
+":class:`ThreadPoolExecutor` に対しては *chunksize* を指定しても意味がありません。"
 
 #: ../../library/concurrent.futures.rst:59
 msgid "Added the *chunksize* argument."
