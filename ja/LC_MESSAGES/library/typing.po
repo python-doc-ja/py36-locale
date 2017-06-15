@@ -643,15 +643,15 @@ msgstr ":class:`dict` のジェネリック版です。この型の使い方は�
 
 #: ../../library/typing.rst:669
 msgid "A generic version of :class:`collections.defaultdict`."
-msgstr ":class:`collections.defaultdict ` のジェネリック版です。"
+msgstr ":class:`collections.defaultdict` のジェネリック版です。"
 
 #: ../../library/typing.rst:673
 msgid "A generic version of :class:`collections.Counter`."
-msgstr ":class:`collections.Counter ` のジェネリック版です。"
+msgstr ":class:`collections.Counter` のジェネリック版です。"
 
 #: ../../library/typing.rst:679
 msgid "A generic version of :class:`collections.ChainMap`."
-msgstr ":class:`collections.ChainMap ` のジェネリック版です。"
+msgstr ":class:`collections.ChainMap` のジェネリック版です。"
 
 #: ../../library/typing.rst:685
 msgid ""
@@ -812,7 +812,7 @@ msgstr ":pep:`526` 変数アノテーションのシンタックスが追加さ�
 
 #: ../../library/typing.rst:832
 msgid "Added support for default values, methods, and docstrings."
-msgstr ""
+msgstr "デフォルト値、メソッド、ドキュメンテーション文字列への対応が追加されました。"
 
 #: ../../library/typing.rst:837
 msgid ""
