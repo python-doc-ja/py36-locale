@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../library/socket.rst:2
 msgid ":mod:`socket` --- Low-level networking interface"
-msgstr ":mod:`socket` --- 低水準ネットワークインターフェース"
+msgstr ":mod:`socket` --- 低水準ネットワークインターフェー"
 
 #: ../../library/socket.rst:7
 msgid "**Source code:** :source:`Lib/socket.py`"
@@ -269,6 +269,9 @@ msgid ""
 " object containing the Bluetooth address in a string format. (ex. "
 "``b'12:23:34:45:56:67'``) This protocol is not supported under FreeBSD."
 msgstr ""
+":const:`BTPROTO_SCO` は ``bdaddr`` を受け取ります。ここで、 ``bdaddr`` は Bluetooth "
+"アドレスを文字列形式で持つ :class:`bytes` オブジェクトです (例: "
+"``b'12:23:34:45:56:67'``)。このプロトコルは、  FreeBSD ではサポートされていません。"
 
 #: ../../library/socket.rst:136
 msgid ""
@@ -276,27 +279,32 @@ msgid ""
 "cryptography. An algorithm socket is configured with a tuple of two to four "
 "elements ``(type, name [, feat [, mask]])``, where:"
 msgstr ""
+":const:`AF_ALG` はカーネル暗号へのソケットベースのインターフェイスで、Linux でのみ使用できます。アルゴリズムソケットは、2 つから"
+" 4 つの要素を持つタプル ``(type, name [, feat [, mask]])`` で構成されます。各要素の意味は、以下の通りです。"
 
 #: ../../library/socket.rst:140
 msgid ""
 "*type* is the algorithm type as string, e.g. ``aead``, ``hash``, "
 "``skcipher`` or ``rng``."
 msgstr ""
+"*type* はアルゴリズムタイプを示す文字列です。例: ``aead``, ``hash``, ``skcipher`` または ``rng``。"
 
 #: ../../library/socket.rst:143
 msgid ""
 "*name* is the algorithm name and operation mode as string, e.g. ``sha256``, "
 "``hmac(sha256)``, ``cbc(aes)`` or ``drbg_nopr_ctr_aes256``."
 msgstr ""
+"*name* はアルゴリズム名及び操作モードを示す文字列です。例: ``sha256``, ``hmac(sha256)``, ``cbc(aes)``"
+" または ``drbg_nopr_ctr_aes256``。"
 
 #: ../../library/socket.rst:146
 msgid "*feat* and *mask* are unsigned 32bit integers."
-msgstr ""
+msgstr "*feat* と *mask* は、符号を持たない 32 ビットの整数です。"
 
 #: ../../library/socket.rst:148
 msgid ""
 "Availability Linux 2.6.38, some algorithm types require more recent Kernels."
-msgstr ""
+msgstr "利用できる環境: Linux 2.6.38 以降。一部のアルゴリズムタイプでは、さらに新しいカーネルが必要です。"
 
 #: ../../library/socket.rst:152
 msgid ""
@@ -493,6 +501,8 @@ msgid ""
 "``SO_DOMAIN``, ``SO_PROTOCOL``, ``SO_PEERSEC``, ``SO_PASSSEC``, "
 "``TCP_USER_TIMEOUT``, ``TCP_CONGESTION`` were added."
 msgstr ""
+"``SO_DOMAIN``, ``SO_PROTOCOL``, ``SO_PEERSEC``, ``SO_PASSSEC``, "
+"``TCP_USER_TIMEOUT``, ``TCP_CONGESTION`` が追加されました。"
 
 #: ../../library/socket.rst:311 ../../library/socket.rst:346
 msgid ""
@@ -518,6 +528,9 @@ msgid ""
 "This allows your application to send both CAN and CAN FD frames; however, "
 "you one must accept both CAN and CAN FD frames when reading from the socket."
 msgstr ""
+"CAN_RAW ソケットで CAN FD をサポートします。これはデフォルトで無効になっています。これにより、アプリケーションが CAN フレームと "
+"CAN FD フレームを送信できるようになります。ただし、ソケットからの読み出し時に、CAN と CAN FD "
+"の両方のフレームを受け入れなければなりません。"
 
 #: ../../library/socket.rst:335
 msgid "This constant is documented in the Linux documentation."
@@ -541,7 +554,7 @@ msgstr ""
 
 #: ../../library/socket.rst:362 ../../library/socket.rst:1039
 msgid "``SIO_LOOPBACK_FAST_PATH`` was added."
-msgstr ""
+msgstr "``SIO_LOOPBACK_FAST_PATH`` が追加されました。"
 
 #: ../../library/socket.rst:368
 msgid ""
@@ -551,15 +564,15 @@ msgstr "TIPC 関連の定数で、C のソケットAPIが公開しているも�
 
 #: ../../library/socket.rst:375
 msgid "Constants for Linux Kernel cryptography."
-msgstr ""
+msgstr "Linux カーネル暗号用の定数です。"
 
 #: ../../library/socket.rst:377
 msgid "Availability: Linux >= 2.6.38."
-msgstr ""
+msgstr "利用できる環境: Linux 2.6.38 以降。"
 
 #: ../../library/socket.rst:383
 msgid "Availability: BSD, OSX."
-msgstr "利用可能: BSD, OSX."
+msgstr "利用できる環境: BSD, OSX."
 
 #: ../../library/socket.rst:389
 msgid ""
@@ -573,6 +586,8 @@ msgid ""
 "meanings. For example, :const:`BDADDR_ANY` can be used to indicate any "
 "address when specifying the binding socket with :const:`BTPROTO_RFCOMM`."
 msgstr ""
+"これらは、特別な意味を持つ Bluetooth アドレスを含む文字列定数です。例えば、:const:`BDADDR_ANY` を使用すると、 "
+":const:`BTPROTO_RFCOMM` で束縛ソケットを指定する際に、任意のアドレスを指し示すことができます。"
 
 #: ../../library/socket.rst:404
 msgid ""
@@ -580,6 +595,9 @@ msgid ""
 "NetBSD or DragonFlyBSD. :const:`HCI_TIME_STAMP` and :const:`HCI_DATA_DIR` "
 "are not available for FreeBSD, NetBSD, or DragonFlyBSD."
 msgstr ""
+":const:`BTPROTO_HCI` で使用します。 :const:`HCI_FILTER` は NetBSD または DragonFlyBSD "
+"では使用できません。 :const:`HCI_TIME_STAMP` と :const:`HCI_DATA_DIR` は FreeBSD, "
+"NetBSD, DragonFlyBSD では使用できません。"
 
 #: ../../library/socket.rst:410
 msgid "Functions"
@@ -1054,7 +1072,7 @@ msgstr ""
 
 #: ../../library/socket.rst:732 ../../library/socket.rst:752
 msgid "Availability: Unix (maybe not all platforms), Windows."
-msgstr "利用可能: Unix (一部のプラットフォームを除く)、Windows。"
+msgstr "利用できる環境: Unix (一部のプラットフォームを除く)、Windows。"
 
 #: ../../library/socket.rst:734 ../../library/socket.rst:754
 msgid "Windows support added"
@@ -1202,6 +1220,8 @@ msgid ""
 "Support for the :term:`context manager` protocol was added.  Exiting the "
 "context manager is equivalent to calling :meth:`~socket.close`."
 msgstr ""
+":term:`context manager` プロトコルのサポートが追加されました。コンテキストマネージャを終了することは、 "
+":meth:`~socket.close` を呼ぶことと同一です。"
 
 #: ../../library/socket.rst:878
 msgid ""
@@ -1263,7 +1283,7 @@ msgstr ""
 msgid ""
 ":exc:`OSError` is now raised if an error occurs when the underlying "
 ":c:func:`close` call is made."
-msgstr ""
+msgstr "下層の :c:func:`close` が呼び出される時、:exc:`OSError` が送出されるようになりました。"
 
 #: ../../library/socket.rst:918
 msgid ""
@@ -1291,6 +1311,9 @@ msgid ""
 ":exc:`InterruptedError` exception if the connection is interrupted by a "
 "signal (or the exception raised by the signal handler)."
 msgstr ""
+"接続が信号によって中断された場合、このメソッドは接続が完了するまで待機するか、タイムアウト時に :exc:`socket.timeout` "
+"を送出します。タイムアウトは、信号ハンドラが例外を送出せず、ソケットがブロックするかタイムアウトが設定されている場合に起こります。非ブロックソケットでは、接続が信号によって中断された場合"
+" (あるいは信号ハンドラにより例外が送出された場合)、このメソッドは :exc:`InterruptedError` 例外を送出します。"
 
 #: ../../library/socket.rst:936
 msgid ""
@@ -1299,6 +1322,8 @@ msgid ""
 "signal, the signal handler doesn't raise an exception and the socket is "
 "blocking or has a timeout (see the :pep:`475` for the rationale)."
 msgstr ""
+"このメソッドは、接続が信号によって中断され、信号ハンドラが例外を送出せず、ソケットがブロックであるかタイムアウトが設定されている場合、:exc:`InterruptedError`"
+" 例外を送出する代わりに、接続を完了するまで待機するようになりました (論拠については :pep:`475`  を参照してください)。"
 
 #: ../../library/socket.rst:945
 msgid ""
@@ -1426,6 +1451,8 @@ msgid ""
 "Currently only the following control codes are supported: ``SIO_RCVALL``, "
 "``SIO_KEEPALIVE_VALS``, and ``SIO_LOOPBACK_FAST_PATH``."
 msgstr ""
+"現在、以下のコントロールコードのみがサポートされています。 ``SIO_RCVALL``, ``SIO_KEEPALIVE_VALS``, "
+"``SIO_LOOPBACK_FAST_PATH``。"
 
 #: ../../library/socket.rst:1044
 msgid ""
@@ -1434,6 +1461,9 @@ msgid ""
 "unaccepted connections that the system will allow before refusing new "
 "connections. If not specified, a default reasonable value is chosen."
 msgstr ""
+"サーバーを有効にして、接続を受け付けるようにします。*backlog* が指定されている場合、少なくとも 0 以上でなければなりません "
+"(それより低い場合、0 "
+"に設定されます)。システムが新しい接続を拒否するまでに許可する未受付の接続の数を指定します。指定しない場合、デフォルトの妥当な値が選択されます。"
 
 #: ../../library/socket.rst:1049
 msgid "The *backlog* parameter is now optional."
@@ -1522,6 +1552,11 @@ msgid ""
 " *flags* argument defaults to 0 and has the same meaning as for "
 ":meth:`recv`."
 msgstr ""
+"ソケットから通常のデータ (最大 *bufsize* バイト) と補助的なデータを受信します。*ancbufsize* "
+"引数により、補助的なデータの受信に使用される内部バッファのバイト数として、サイズが設定されます。このデフォルトは 0 "
+"で、補助的なデータを受信しないことを意味します。:func:`CMSG_SPACE` または :func:`CMSG_LEN` "
+"を使用して、補助的なデータの適切なサイズを計算することができ、バッファ内に収まらないアイテムは、短縮されるか破棄されます。*flags* "
+"引数はデフォルトでは 0 で、:meth:`recv` での意味と同じ意味を持ちます。"
 
 #: ../../library/socket.rst:1121
 msgid ""
@@ -1537,6 +1572,14 @@ msgid ""
 "receiving socket is unconnected, *address* is the address of the sending "
 "socket, if available; otherwise, its value is unspecified."
 msgstr ""
+"戻り値は 4 タプル ``(data, ancdata, msg_flags, address)` です。*data* "
+"アイテムは、受信した非付属的データを保持する :class:`bytes` オブジェクトです。*ancdata* アイテムは、ゼロ以上のタプル "
+"``(cmsg_level, cmsg_type, cmsg_data)`` からなるリストで、受信する付属的なデータ (制御メッセージ) "
+"を表します。*cmsg_level* と *cmsg_type* "
+"はそれぞれ、プロトコルレベルとプロトコル固有のタイプを指定する整数で、*cmsg_data* は関連するデータを保持する :class:`bytes` "
+"オブジェクトです。*msg_flags* アイテムは、受信したメッセージの条件を示す様々なフラグのビット OR "
+"です。詳細は、システムのドキュメントを参照してください。受信ソケットが接続されていない場合、*address* "
+"は、送信ソケットが利用できる場合にはそのアドレスで、利用できない場合、その値は未指定になります。"
 
 #: ../../library/socket.rst:1135
 msgid ""
@@ -1705,7 +1748,7 @@ msgstr ""
 
 #: ../../library/socket.rst:1330
 msgid "Availability: Linux >= 2.6.38"
-msgstr ""
+msgstr "利用できる環境: Linux 2.6.38 以降。"
 
 #: ../../library/socket.rst:1336
 msgid ""
@@ -1783,7 +1826,7 @@ msgstr ""
 
 #: ../../library/socket.rst:1402
 msgid "setsockopt(level, optname, None, optlen: int) form added."
-msgstr ""
+msgstr "setsockopt(level, optname, None, optlen: int) の形式が追加されました。"
 
 #: ../../library/socket.rst:1408
 msgid ""
