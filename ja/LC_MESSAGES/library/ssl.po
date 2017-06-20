@@ -290,6 +290,9 @@ msgid ""
 ":data:`PROTOCOL_TLS`; it provides the most compatibility with other "
 "versions."
 msgstr ""
+"``ssl_version`` "
+"引数は、使用するSSLプロトコルのバージョンを指定します。通常、サーバー側が特定のプロトコルバージョンを選択し、クライアント側はサーバーの選択したプロトコルを受け入れなければなりません。ほとんどのバージョンは他のバージョンと互換性がありません。この引数が指定されない場合、デフォルトは"
+" :data:`PROTOCOL_TLS` になります。これは、他のバージョンとの互換性が最も高いバージョンです。"
 
 #: ../../library/ssl.rst:190
 msgid ""
@@ -387,11 +390,13 @@ msgstr "脚注"
 msgid ""
 ":class:`SSLContext` disables SSLv2 with :data:`OP_NO_SSLv2` by default."
 msgstr ""
+":class:`SSLContext` では、デフォルトで :data:`OP_NO_SSLv2` によりSSLv2 が無効になっています。"
 
 #: ../../library/ssl.rst:208
 msgid ""
 ":class:`SSLContext` disables SSLv3 with :data:`OP_NO_SSLv3` by default."
 msgstr ""
+":class:`SSLContext` では、デフォルトで :data:`OP_NO_SSLv3` により SSLv3 が無効になっています。"
 
 #: ../../library/ssl.rst:212
 msgid ""
@@ -485,6 +490,12 @@ msgid ""
 " *cadata* is given) or uses :meth:`SSLContext.load_default_certs` to load "
 "default CA certificates."
 msgstr ""
+"設定は、 :data:`PROTOCOL_TLS`, :data:`OP_NO_SSLv2`, RC4 "
+"と非認証暗号化スイート以外の、高度暗号化スイートを利用した :data:`OP_NO_SSLv3` "
+"です。:data:`~Purpose.SERVER_AUTH` を *purpose* "
+"として渡すと、:data:`~SSLContext.verify_mode` を :data:`CERT_REQUIRED` に設定し、 CA "
+"証明書をロードする (*cafile*, *capath*, *cadata* の少なくとも1つが与えられている場合) "
+"か、:meth:`SSLContext.load_default_certs` を使用してデフォルトの CA 証明書をロードします。"
 
 #: ../../library/ssl.rst:265
 msgid ""
@@ -525,11 +536,11 @@ msgstr "デフォルトの暗号設定から RC4 が除かれました。"
 
 #: ../../library/ssl.rst:293
 msgid "ChaCha20/Poly1305 was added to the default cipher string."
-msgstr ""
+msgstr "デフォルトの暗号化文字列に ChaCha20/Poly1305 が追加されました。"
 
 #: ../../library/ssl.rst:295
 msgid "3DES was dropped from the default cipher string."
-msgstr ""
+msgstr "デフォルトの暗号化文字列から 3DES が除かれました。"
 
 #: ../../library/ssl.rst:299
 msgid "Random generation"
@@ -589,6 +600,8 @@ msgid ""
 "OpenSSL has deprecated :func:`ssl.RAND_pseudo_bytes`, use "
 ":func:`ssl.RAND_bytes` instead."
 msgstr ""
+"OpenSSL は :func:`ssl.RAND_pseudo_bytes` を廃止しました。代わりに :func:`ssl.RAND_bytes` "
+"を使用してください。"
 
 #: ../../library/ssl.rst:341
 msgid ""
@@ -623,7 +636,7 @@ msgstr ""
 
 #: ../../library/ssl.rst:357
 msgid "Availability: not available with LibreSSL and OpenSSL > 1.1.0"
-msgstr ""
+msgstr "利用出来る環境: LibreSSL および 1.1.0 を超えるバージョンの OpenSSL では利用できません。"
 
 #: ../../library/ssl.rst:361
 msgid ""
@@ -682,7 +695,7 @@ msgstr ""
 msgid ""
 "Matching of IP addresses, when present in the subjectAltName field of the "
 "certificate, is now supported."
-msgstr ""
+msgstr "認定書の subjectAltName フィールドで提示されている場合、IP アドレスの一致がサポートされるようになりました。"
 
 #: ../../library/ssl.rst:407
 msgid ""
@@ -736,6 +749,8 @@ msgid ""
 "The default *ssl_version* is changed from :data:`PROTOCOL_SSLv3` to "
 ":data:`PROTOCOL_TLS` for maximum compatibility with modern servers."
 msgstr ""
+"*ssl_version* のデフォルトが、最近のサーバへの最大限の互換性のために :data:`PROTOCOL_SSLv3` から "
+":data:`PROTOCOL_TLS` に変更されました。"
 
 #: ../../library/ssl.rst:452
 msgid ""
@@ -763,13 +778,13 @@ msgstr ""
 msgid ""
 ":attr:`cafile` - resolved path to cafile or ``None`` if the file doesn't "
 "exist,"
-msgstr ""
+msgstr ":attr:`cafile` - cafile の解決済みパス、またはファイルが存在しない場合は ``None``"
 
 #: ../../library/ssl.rst:468
 msgid ""
 ":attr:`capath` - resolved path to capath or ``None`` if the directory "
 "doesn't exist,"
-msgstr ""
+msgstr ":attr:`capath` - capath の解決済みパス、またはディレクトリが存在しない場合は ``None``"
 
 #: ../../library/ssl.rst:469
 msgid ""
@@ -796,6 +811,8 @@ msgid ""
 "Availability: LibreSSL ignores the environment vars "
 ":attr:`openssl_cafile_env` and :attr:`openssl_capath_env`"
 msgstr ""
+"利用出来る環境: LibreSSL では環境変数 :attr:`openssl_cafile_env` と "
+":attr:`openssl_capath_env` が無視されます"
 
 #: ../../library/ssl.rst:481
 msgid ""
@@ -856,6 +873,7 @@ msgid ""
 "All constants are now :class:`enum.IntEnum` or :class:`enum.IntFlag` "
 "collections."
 msgstr ""
+"すべての定数が :class:`enum.IntEnum` コレクションまたは :class:`enum.IntFlag` コレクションになりました。"
 
 #: ../../library/ssl.rst:527
 msgid ""
@@ -906,7 +924,7 @@ msgstr ""
 
 #: ../../library/ssl.rst:560
 msgid ":class:`enum.IntEnum` collection of CERT_* constants."
-msgstr ""
+msgstr "CERT_* 定数の :class:`enum.IntEnum` コレクションです。"
 
 #: ../../library/ssl.rst:566
 msgid ""
@@ -956,7 +974,7 @@ msgstr ""
 
 #: ../../library/ssl.rst:606
 msgid ":class:`enum.IntFlag` collection of VERIFY_* constants."
-msgstr ""
+msgstr "VERIFY_* 定数の :class:`enum.IntFlag` コレクションです。"
 
 #: ../../library/ssl.rst:612
 msgid ""
@@ -983,11 +1001,11 @@ msgstr ""
 
 #: ../../library/ssl.rst:635
 msgid "Alias for data:`PROTOCOL_TLS`."
-msgstr ""
+msgstr "data:`PROTOCOL_TLS` のエイリアスです。"
 
 #: ../../library/ssl.rst:639
 msgid "Use :data:`PROTOCOL_TLS` instead."
-msgstr ""
+msgstr "代わりに :data:`PROTOCOL_TLS` を使用してください。"
 
 #: ../../library/ssl.rst:643
 msgid "Selects SSL version 2 as the channel encryption protocol."
@@ -1006,7 +1024,7 @@ msgstr "SSL version 2 は非セキュアです。このプロトコルは強く�
 
 #: ../../library/ssl.rst:654
 msgid "OpenSSL has removed support for SSLv2."
-msgstr ""
+msgstr "OpenSSL は SSLv2 へのサポートを打切りました。"
 
 #: ../../library/ssl.rst:658
 msgid "Selects SSL version 3 as the channel encryption protocol."
@@ -1029,6 +1047,8 @@ msgid ""
 "OpenSSL has deprecated all version specific protocols. Use the default "
 "protocol :data:`PROTOCOL_TLS` with flags like :data:`OP_NO_SSLv3` instead."
 msgstr ""
+"OpenSSL は全てのバージョン固有のプロトコルを廃止しました。デフォルトプロトコルの :data:`PROTOCOL_TLS` に "
+":data:`OP_NO_SSLv3` などのフラグをつけて使用してください。"
 
 #: ../../library/ssl.rst:674
 msgid "Selects TLS version 1.0 as the channel encryption protocol."
@@ -1064,6 +1084,8 @@ msgid ""
 " with :const:`PROTOCOL_TLS`.  It prevents the peers from choosing SSLv2 as "
 "the protocol version."
 msgstr ""
+"SSLv2 接続が行われないようにします。このオプションは :const:`PROTOCOL_TLS` "
+"と組み合わされている場合にのみ適用されます。ピアがプロトコルバージョンとして SSLv2 を選択しないようにします。"
 
 #: ../../library/ssl.rst:724
 msgid "SSLv2 is deprecated"
@@ -1075,6 +1097,8 @@ msgid ""
 " with :const:`PROTOCOL_TLS`.  It prevents the peers from choosing SSLv3 as "
 "the protocol version."
 msgstr ""
+"SSLv3 接続が行われないようにします。このオプションは :const:`PROTOCOL_TLS` "
+"と組み合わされている場合にのみ適用されます。ピアがプロトコルバージョンとして SSLv3 を選択しないようにします。"
 
 #: ../../library/ssl.rst:737
 msgid "SSLv3 is deprecated"
@@ -1086,6 +1110,8 @@ msgid ""
 "with :const:`PROTOCOL_TLS`.  It prevents the peers from choosing TLSv1 as "
 "the protocol version."
 msgstr ""
+"TLSv1 接続が行われないようにします。このオプションは :const:`PROTOCOL_TLS` "
+"と組み合わされている場合にのみ適用されます。ピアがプロトコルバージョンとして TLSv1 を選択しないようにします。"
 
 #: ../../library/ssl.rst:749
 msgid ""
@@ -1093,6 +1119,9 @@ msgid ""
 " with :const:`PROTOCOL_TLS`. It prevents the peers from choosing TLSv1.1 as "
 "the protocol version. Available only with openssl version 1.0.1+."
 msgstr ""
+"TLSv1.1 接続が行われないようにします。このオプションは :const:`PROTOCOL_TLS` "
+"と組み合わされている場合にのみ適用されます。ピアがプロトコルバージョンとして TLSv1.1 を選択しないようにします。openssl バージョン "
+"1.0.1 以降でのみ利用できます。"
 
 #: ../../library/ssl.rst:757
 msgid ""
@@ -1100,6 +1129,9 @@ msgid ""
 " with :const:`PROTOCOL_TLS`. It prevents the peers from choosing TLSv1.2 as "
 "the protocol version. Available only with openssl version 1.0.1+."
 msgstr ""
+"TLSv1.2 接続が行われないようにします。このオプションは :const:`PROTOCOL_TLS` "
+"と組み合わされている場合にのみ適用されます。ピアがプロトコルバージョンとして TLSv1.2 を選択しないようにします。openssl バージョン "
+"1.0.1 以降でのみ利用できます。"
 
 #: ../../library/ssl.rst:765
 msgid ""
@@ -1139,11 +1171,11 @@ msgstr "このオプションは OpenSSL 1.0.0以降のみで使用できます�
 
 #: ../../library/ssl.rst:797
 msgid ":class:`enum.IntFlag` collection of OP_* constants."
-msgstr ""
+msgstr "OP_* 定数の :class:`enum.IntFlag` コレクションです。"
 
 #: ../../library/ssl.rst:801
 msgid "Prevent client side from requesting a session ticket."
-msgstr ""
+msgstr "クライアント側がセッションチケットをリクエストしないようにします。"
 
 #: ../../library/ssl.rst:807
 msgid ""
@@ -1224,7 +1256,7 @@ msgstr ":meth:`SSLContext.set_servername_callback` でのコールバック関�
 
 #: ../../library/ssl.rst:889
 msgid ":class:`enum.IntEnum` collection of ALERT_DESCRIPTION_* constants."
-msgstr ""
+msgstr "ALERT_DESCRIPTION_* 定数の :class:`enum.IntEnum` コレクションです。"
 
 #: ../../library/ssl.rst:895
 msgid ""
@@ -1250,7 +1282,7 @@ msgstr ""
 
 #: ../../library/ssl.rst:913
 msgid ":class:`enum.IntEnum` collection of SSL_ERROR_* constants."
-msgstr ""
+msgstr "SSL_ERROR_* 定数の :class:`enum.IntEnum` コレクションです。"
 
 #: ../../library/ssl.rst:919
 msgid "SSL Sockets"
@@ -1408,7 +1440,7 @@ msgstr ""
 
 #: ../../library/ssl.rst:985
 msgid "Use :meth:`~SSLSocket.recv` instead of :meth:`~SSLSocket.read`."
-msgstr ""
+msgstr ":meth:`~SSLSocket.read` の代わりに :meth:`~SSLSocket.recv` を使用してください。"
 
 #: ../../library/ssl.rst:990
 msgid ""
@@ -1440,7 +1472,7 @@ msgstr ""
 
 #: ../../library/ssl.rst:1003
 msgid "Use :meth:`~SSLSocket.send` instead of :meth:`~SSLSocket.write`."
-msgstr ""
+msgstr ":meth:`~SSLSocket.write` の代わりに :meth:`~SSLSocket.send` を使用してください。"
 
 #: ../../library/ssl.rst:1008
 msgid ""
@@ -1921,14 +1953,15 @@ msgid ""
 "Get a list of enabled ciphers. The list is in order of cipher priority. See "
 ":meth:`SSLContext.set_ciphers`."
 msgstr ""
+"有効な暗号化のリストを取得します。リストは暗号化優先度順に並びます。:meth:`SSLContext.set_ciphers` を参照してください。"
 
 #: ../../library/ssl.rst:1405
 msgid "On OpenSSL 1.1 and newer the cipher dict contains additional fields::"
-msgstr ""
+msgstr "OpenSSL 1.1 以降では、暗号化辞書に以下のフィールドが追加されました。"
 
 #: ../../library/ssl.rst:1407
 msgid "Availability: OpenSSL 1.0.2+"
-msgstr ""
+msgstr "利用可能な環境: OpenSSL 1.0.2+"
 
 #: ../../library/ssl.rst:1413
 msgid ""
@@ -2154,7 +2187,7 @@ msgstr ""
 
 #: ../../library/ssl.rst:1539
 msgid "This method is not available if :data:`HAS_ECDH` is ``False``."
-msgstr ""
+msgstr "このメソッドは :data:`HAS_ECDH` が ``False`` の場合は利用できません。"
 
 #: ../../library/ssl.rst:1544
 msgid ""
@@ -2202,7 +2235,7 @@ msgstr ""
 
 #: ../../library/ssl.rst:1566
 msgid "*session*, see :attr:`~SSLSocket.session`."
-msgstr ""
+msgstr "*session*, :attr:`~SSLSocket.session` を参照してください。"
 
 #: ../../library/ssl.rst:1568
 msgid ""
@@ -2212,7 +2245,7 @@ msgstr "OpenSSL が SNI をサポートしなくても server_hostname を許容
 
 #: ../../library/ssl.rst:1572 ../../library/ssl.rst:1585
 msgid "*session* argument was added."
-msgstr ""
+msgstr "*session* 引数が追加されました。"
 
 #: ../../library/ssl.rst:1578
 msgid ""
@@ -2277,7 +2310,7 @@ msgstr ""
 
 #: ../../library/ssl.rst:1638
 msgid ":attr:`SSLContext.options` returns :class:`Options` flags:"
-msgstr ""
+msgstr ":attr:`SSLContext.options` は次のように :class:`Options` のフラグを返します。"
 
 #: ../../library/ssl.rst:1646
 msgid ""
@@ -2299,6 +2332,7 @@ msgstr ""
 #: ../../library/ssl.rst:1658
 msgid ":attr:`SSLContext.verify_flags` returns :class:`VerifyFlags` flags:"
 msgstr ""
+":attr:`SSLContext.verify_flags` は次のように :class:`VerifyFlags` のフラグを返します。"
 
 #: ../../library/ssl.rst:1666
 msgid ""
@@ -2312,6 +2346,7 @@ msgstr ""
 #: ../../library/ssl.rst:1670
 msgid ":attr:`SSLContext.verify_mode` returns :class:`VerifyMode` enum:"
 msgstr ""
+":attr:`SSLContext.verify_mode` は次のように :class:`VerifyMode` enum (列挙) を返します。"
 
 #: ../../library/ssl.rst:1683
 msgid "Certificates"
@@ -2750,11 +2785,11 @@ msgstr ":attr:`~SSLSocket.server_hostname`"
 
 #: ../../library/ssl.rst:2093
 msgid ":attr:`~SSLSocket.session`"
-msgstr ""
+msgstr ":attr:`~SSLSocket.session`"
 
 #: ../../library/ssl.rst:2094
 msgid ":attr:`~SSLSocket.session_reused`"
-msgstr ""
+msgstr ":attr:`~SSLSocket.session_reused`"
 
 #: ../../library/ssl.rst:2095
 msgid ":meth:`~SSLSocket.read`"
@@ -2839,7 +2874,7 @@ msgstr ""
 
 #: ../../library/ssl.rst:2127
 msgid "Some notes related to the use of :class:`SSLObject`:"
-msgstr ""
+msgstr ":class:`SSLObject` の使用に関する注意:"
 
 #: ../../library/ssl.rst:2129
 msgid ""
@@ -2906,11 +2941,11 @@ msgstr ""
 
 #: ../../library/ssl.rst:2177
 msgid "SSL session"
-msgstr ""
+msgstr "SSL セッション"
 
 #: ../../library/ssl.rst:2183
 msgid "Session object used by :attr:`~SSLSocket.session`."
-msgstr ""
+msgstr ":attr:`~SSLSocket.session` が使用するセッションオブジェクトです。"
 
 #: ../../library/ssl.rst:2195
 msgid "Security considerations"
