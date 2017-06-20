@@ -65,8 +65,8 @@ msgid ""
 "more general information about TLS, SSL, and certificates, the reader is "
 "referred to the documents in the \"See Also\" section at the bottom."
 msgstr ""
-"このセクションでは、 ``ssl`` モジュールのオブジェクトと関数を解説します。 TLS, SSL, certificates "
-"に関するより一般的な情報は、末尾にある \"See Also\" のセクションを参照してください。"
+"このセクションでは、 ``ssl`` モジュールのオブジェクトと関数を解説します。 TLS, SSL, 証明書に関するより一般的な情報は、末尾にある "
+"\"See Also\" のセクションを参照してください。"
 
 #: ../../library/ssl.rst:41
 msgid ""
@@ -264,10 +264,10 @@ msgid ""
 "parameter must point to a file of CA certificates."
 msgstr ""
 "``cert_reqs`` "
-"引数は、接続の相手側からの証明書を必要とするかどうかと、それを検証(validate)するかどうかを指定します。これは次の3つの定数のどれかで無ければなりません:"
+"引数は、接続の相手側からの証明書を必要とするかどうかと、証明書が提供された場合にそれを検証(validate)するかどうかを指定します。これは次の3つの定数のどれかで無ければなりません:"
 " :const:`CERT_NONE` (証明書は無視されます), :const:`CERT_OPTIONAL` "
-"(必要としないが、提供された場合は検証する), :const:`CERT_REQUIRED` (証明書を必要とし、検証する)。もしこの引数が "
-":const:`CERT_NONE` 以外だった場合、 ``ca_certs`` 引数はCA証明書ファイルを指定していなければなりません。"
+"(必要としないが、提供された場合は検証します), :const:`CERT_REQUIRED` (証明書を必要とし、検証します)。この引数が "
+":const:`CERT_NONE` 以外だった場合、 ``ca_certs`` 引数は CA 証明書ファイルを指定していなければなりません。"
 
 #: ../../library/ssl.rst:177
 msgid ""
@@ -992,12 +992,17 @@ msgid ""
 "enables :data:`CERT_REQUIRED` and :attr:`~SSLContext.check_hostname` by "
 "default."
 msgstr ""
+":data:`PROTOCOL_SSLv23` のような最高のプロトコルバージョンを自動的にネゴシエートしますが、クライアント側の "
+":class:`SSLSocket` 接続しかサポートしません。このプロトコルでは、デフォルトで :data:`CERT_REQUIRED` と "
+":attr:`~SSLContext.check_hostname` が有効になっています。"
 
 #: ../../library/ssl.rst:628
 msgid ""
 "Auto-negotiate the highest protocol version like :data:`PROTOCOL_SSLv23`, "
 "but only support server-side :class:`SSLSocket` connections."
 msgstr ""
+":data:`PROTOCOL_SSLv23` のような最高のプロトコルバージョンを自動的にネゴシエートしますが、サーバ側の "
+":class:`SSLSocket` 接続しかサポートしません。"
 
 #: ../../library/ssl.rst:635
 msgid "Alias for data:`PROTOCOL_TLS`."
