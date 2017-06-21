@@ -1841,8 +1841,8 @@ msgid ""
 msgstr ""
 "秘密鍵と対応する証明書をロードします。 *certfile* は、証明書と、証明書認証で必要とされる任意の数の CA 証明書を含む、PEM "
 "フォーマットの単一ファイルへのパスでなければなりません。 *keyfile* "
-"を指定する場合は、秘密鍵が含まれるファイルを指さなければなりません。そうでなければ秘密鍵も *certfile* から取られます。 *certfile*"
-" に証明書をどのように格納すれば良いかについての詳しい情報は、 :ref:`ssl-certificates` の議論を参照してください。"
+"文字列を指定する場合、秘密鍵が含まれるファイルを指すものでなければなりません。指定しない場合、秘密鍵も *certfile* から取得されます。 "
+"*certfile* への証明書の格納についての詳細は、 :ref:`ssl-certificates` の議論を参照してください。"
 
 #: ../../library/ssl.rst:1277
 msgid ""
@@ -1970,9 +1970,9 @@ msgid ""
 "a SSL connection."
 msgstr ""
 "ロードされた \"認証局\" (CA=certification authority) 証明書のリストを取得します。 ``binary_form`` "
-"パラメータが :const:`False` であれば、リストのそれぞれのエントリは :meth:`SSLSocket.getpeercert` "
-"が出力するような辞書になります。そうでない場合このメソッドは、DER エンコード形式の証明書のリストで返します。返却されるリストには、 SSL "
-"接続によって要求されてロードされない限りは *capath* からの証明書は含みません。"
+"引数が :const:`False` である場合、リストのそれぞれのエントリは :meth:`SSLSocket.getpeercert` "
+"が出力するような辞書になります。True である場合、このメソッドは、DER エンコード形式の証明書のリストを返します。返却されるリストには、 SSL "
+"接続によって証明書がリクエストおよびロードされない限り、 *capath* からの証明書は含まれません。"
 
 #: ../../library/ssl.rst:1350
 msgid ""
@@ -2494,7 +2494,7 @@ msgstr ""
 
 #: ../../library/ssl.rst:1759
 msgid "Combined key and certificate"
-msgstr "秘密鍵と証明書を一緒にする"
+msgstr "秘密鍵と証明書の組み合わせ"
 
 #: ../../library/ssl.rst:1761
 msgid ""
@@ -2706,10 +2706,9 @@ msgid ""
 " potentially available data, and then only block on a :func:`~select.select`"
 " call if still necessary."
 msgstr ""
-"反対に、SSL レイヤーは自身で独自の枠組みを持っているために、読み出せるけれども :func:`~select.select` "
-"が気付くことのないデータを SSL ソケットが持っていることがあります。ですので、潜在的に入手可能なデータを飲み干すために最初に "
-":meth:`SSLSocket.recv` を呼び出すべきであり、そののちでそれでもまだ必要な場合にだけ :func:`~select.select`"
-" でブロックすべきです。"
+"反対に、SSL レイヤーは独自の枠組みを持っているため、:func:`~select.select` が気付かない読み出し可能なデータを SSL "
+"ソケットが持っている場合があります。したがって、入手可能な可能性のあるデータをすべて引き出すために最初に :meth:`SSLSocket.recv` "
+"を呼び出し、次にそれでもまだ必要な場合にだけ :func:`~select.select` 呼び出しでブロックすべきです。"
 
 #: ../../library/ssl.rst:2018
 msgid ""
