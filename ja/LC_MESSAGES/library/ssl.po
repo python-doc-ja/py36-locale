@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Ikuru K <kanumaiku@gmail.com>, 2017\n"
+"Last-Translator: Arihiro TAKASE <artakase@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -503,15 +503,14 @@ msgid ""
 "restrictive values anytime without prior deprecation.  The values represent "
 "a fair balance between compatibility and security."
 msgstr ""
-"プロトコル、オプション、暗号その他設定はもっと制限された、過去の廃れたものを含まない値にいつでもできるでしょう。この値は互換性と安全性の公平なバランスを表明しています。"
+"プロトコル、オプション、暗号方式その他の設定は、事前に非推奨の状態にすることなく、もっと制限の強い値に変更される場合があります。これらの値は、互換性と安全性との妥当なバランスをとって決められます。"
 
 #: ../../library/ssl.rst:269
 msgid ""
 "If your application needs specific settings, you should create a "
 ":class:`SSLContext` and apply the settings yourself."
 msgstr ""
-"もしもあなたのアプリケーションがそのような設定を必要とするのであれば、 :class:`SSLContext` "
-"を作ってあなた自身の設定を適用すべきです。"
+"もしもあなたのアプリケーションが特定の設定を必要とする場合、 :class:`SSLContext` を作って自分自身で設定を適用すべきです。"
 
 #: ../../library/ssl.rst:273
 msgid ""
@@ -742,7 +741,7 @@ msgstr ""
 
 #: ../../library/ssl.rst:443
 msgid "This function is now IPv6-compatible."
-msgstr "この関数は現在IPv6互換です。"
+msgstr "この関数はIPv6互換になりました。"
 
 #: ../../library/ssl.rst:446
 msgid ""
@@ -982,8 +981,8 @@ msgid ""
 "support. Despite the name, this option can select \"TLS\" protocols as well "
 "as \"SSL\"."
 msgstr ""
-"チャンネル暗号化プロトコルとして、クライアントとサーバの両方がサポートする中の、プロトコルバージョンが最も大きなものを選択します。その名前にも関わらず、このオプションは"
-" \"SSL\" とともに \"TLS\" プロトコルも選択できます。"
+"クライアントとサーバの両方がサポートするプロトコルバージョンのうち、最も大きなものを選択します。名前に反して、このオプションは \"SSL\" と "
+"\"TLS\" プロトコルのいずれも選択する場合があります。"
 
 #: ../../library/ssl.rst:619
 msgid ""
@@ -1370,6 +1369,8 @@ msgid ""
 ":meth:`~socket.socket.sendfile()` (but :mod:`os.sendfile` will be used for "
 "plain-text sockets only, else :meth:`~socket.socket.send()` will be used)"
 msgstr ""
+":meth:`~socket.socket.sendfile()` (ただし、 :mod:`os.sendfile` "
+"は平文ソケットにのみ使用されます。それ以外の場合には、 :meth:`~socket.socket.send()` が使用されます。)"
 
 #: ../../library/ssl.rst:943
 msgid ":meth:`~socket.socket.shutdown()`"
@@ -1391,6 +1392,8 @@ msgid ""
 "Usually, :class:`SSLSocket` are not created directly, but using the "
 ":meth:`SSLContext.wrap_socket` method."
 msgstr ""
+"通常、 :class:`SSLSocket` は直接作成されるのではなく、 :meth:`SSLContext.wrap_socket` "
+"メソッドを使用して作成されます。"
 
 #: ../../library/ssl.rst:953
 msgid "The :meth:`sendfile` method was added."
@@ -1402,12 +1405,16 @@ msgid ""
 "received or sent. The socket timeout is now to maximum total duration of the"
 " shutdown."
 msgstr ""
+":meth:`shutdown` "
+"は、バイトが送受信されるたびにソケットのタイムアウトをリセットしません。ソケットのタイムアウトは、シャットダウンの最大合計時間になりました。"
 
 #: ../../library/ssl.rst:961
 msgid ""
 "It is deprecated to create a :class:`SSLSocket` instance directly, use "
 ":meth:`SSLContext.wrap_socket` to wrap a socket."
 msgstr ""
+":class:`SSLSocket` インスタンスを直接作成することは非推奨です。ソケットをラップするために "
+":meth:`SSLContext.wrap_socket` を使用してください。"
 
 #: ../../library/ssl.rst:966
 msgid "SSL sockets also have the following additional methods and attributes:"
@@ -1442,6 +1449,8 @@ msgid ""
 "The socket timeout is now to maximum total duration to read up to *len* "
 "bytes."
 msgstr ""
+"ソケットのタイムアウトは、バイトが送受信されるたびにリセットされません。ソケットのタイムアウトは、最大 *len* "
+"バイトを読むのにかかる最大合計時間になりました。"
 
 #: ../../library/ssl.rst:985
 msgid "Use :meth:`~SSLSocket.recv` instead of :meth:`~SSLSocket.read`."
@@ -1474,6 +1483,8 @@ msgid ""
 "The socket timeout is no more reset each time bytes are received or sent. "
 "The socket timeout is now to maximum total duration to write *buf*."
 msgstr ""
+"ソケットのタイムアウトは、バイトが送受信されるたびにリセットされません。ソケットのタイムアウトは、*buf* "
+"を書き込むのにかかる最大合計時間になりました。"
 
 #: ../../library/ssl.rst:1003
 msgid "Use :meth:`~SSLSocket.send` instead of :meth:`~SSLSocket.write`."
@@ -1518,6 +1529,7 @@ msgid ""
 "The socket timeout is no more reset each time bytes are received or sent. "
 "The socket timeout is now to maximum total duration of the handshake."
 msgstr ""
+"ソケットのタイムアウトは、バイトが送受信されるたびにリセットされません。ソケットのタイムアウトは、ハンドシェイクにかかる最大合計時間になりました。"
 
 #: ../../library/ssl.rst:1033
 msgid ""
@@ -1766,6 +1778,8 @@ msgid ""
 "``PROTOCOL_*`` constants defined in this module. :data:`PROTOCOL_TLS` is "
 "currently recommended for maximum interoperability and default value."
 msgstr ""
+"新しい SSL コンテキストを作成します。 *protocol* にはこのモジュールで定義されている ``PROTOCOL_*`` "
+"定数のうち一つを指定しなければなりません。最大限の互換性とデフォルト値のためには、現時点での推奨は :data:`PROTOCOL_TLS` です。"
 
 #: ../../library/ssl.rst:1235
 msgid ""
@@ -2844,12 +2858,12 @@ msgstr ":meth:`~SSLSocket.get_channel_binding`"
 msgid ""
 "When compared to :class:`SSLSocket`, this object lacks the following "
 "features:"
-msgstr ""
+msgstr ":class:`SSLSocket` と比較すると、このオブジェクトでは以下の機能が不足しています。"
 
 #: ../../library/ssl.rst:2110
 msgid ""
 "Any form of network IO incluging methods such as ``recv()`` and ``send()``."
-msgstr ""
+msgstr "``recv()`` や ``send()`` などのメソッドを含む、あらゆるネットワーク IO。"
 
 #: ../../library/ssl.rst:2113
 msgid ""
@@ -2907,23 +2921,23 @@ msgstr ""
 msgid ""
 "A memory buffer that can be used to pass data between Python and an SSL "
 "protocol instance."
-msgstr ""
+msgstr "Python と SSL プロトコルインスタンス間でデータをやり取りするために使用できるメモリバッファ。"
 
 #: ../../library/ssl.rst:2149
 msgid "Return the number of bytes currently in the memory buffer."
-msgstr ""
+msgstr "現在メモリバッファ中にあるバイト数を返します。"
 
 #: ../../library/ssl.rst:2153
 msgid ""
 "A boolean indicating whether the memory BIO is current at the end-of-file "
 "position."
-msgstr ""
+msgstr "メモリ BIOが現在ファイルの末尾にあるかを表す真偽値です。"
 
 #: ../../library/ssl.rst:2158
 msgid ""
 "Read up to *n* bytes from the memory buffer. If *n* is not specified or "
 "negative, all bytes are returned."
-msgstr ""
+msgstr "メモリバッファから最大 *n* 読み取ります。*n* が指定されていないか、負値の場合、すべてのバイトが返されます。"
 
 #: ../../library/ssl.rst:2163
 msgid ""
@@ -3084,6 +3098,13 @@ msgid ""
 "given cipher list, use :meth:`SSLContext.get_ciphers` or the ``openssl "
 "ciphers`` command on your system."
 msgstr ""
+"高度なセキュリティが要求されている場合、SSL セッションのネゴシエーションで有効になる暗号の微調整が "
+":meth:`SSLContext.set_ciphers` によって可能です。Python 3.2.3 以降、 ssl "
+"モジュールではデフォルトで特定の弱い暗号化が無効になっていますが、暗号方式の選択をさらに厳しく制限したい場合もあるでしょう。OpenSSL "
+"ドキュメントの `cipher list format <https://www.openssl.org/docs/apps/ciphers.html"
+"#CIPHER-LIST-FORMAT>`_ "
+"を注意深く読んでください。与えられた暗号方式リストによって有効になる暗号方式をチェックするには、:meth:`SSLContext.get_ciphers`"
+" メソッドまたは ``openssl ciphers`` コマンドをシステム上で実行してください。"
 
 #: ../../library/ssl.rst:2287
 msgid "Multi-processing"
