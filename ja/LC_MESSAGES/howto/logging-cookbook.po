@@ -306,8 +306,8 @@ msgid ""
 "First run the server, and then the client. On the client side, nothing is "
 "printed on the console; on the server side, you should see something like::"
 msgstr ""
-"先にサーバを起動しておき、次にクライアントを起動します。クライアント側では、コンソールには何も出力されません; "
-"サーバ側では以下のようなメッセージを目にするはずです::"
+"先にサーバを起動しておき、次にクライアントを起動します。クライアントサイドでは、コンソールには何も出力されません; "
+"サーバサイドでは以下のようなメッセージを目にするはずです::"
 
 #: ../../howto/logging-cookbook.rst:527
 msgid ""

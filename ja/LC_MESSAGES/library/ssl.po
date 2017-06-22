@@ -36,7 +36,7 @@ msgid ""
 msgstr ""
 "このモジュールは Transport Layer Security ( \"Secure Sockets Layer\" "
 "という名前でよく知られています) "
-"暗号化と、クライアントサイド、サーバーサイド両方のネットワークソケットのためのピア認証の仕組みを提供しています。このモジュールは OpenSSL "
+"暗号化と、クライアントサイド、サーバサイド両方のネットワークソケットのためのピア認証の仕組みを提供しています。このモジュールは OpenSSL "
 "ライブラリを利用しています。 OpenSSL は、すべてのモダンな Unix システム、 Windows 、 Mac OS X 、その他幾つかの "
 "OpenSSL がインストールされているプラットフォームで利用できます。"
 
@@ -232,8 +232,8 @@ msgid ""
 " raise :exc:`SSLError`."
 msgstr ""
 "クライアントサイドソケットにおいて、コンテキストの生成は遅延されます。つまり、低レイヤのソケットがまだ接続されていない場合、コンテキストの生成はそのソケットの"
-" :meth:`connect` メソッドが呼ばれた後に行われます。サーバーサイドソケットの場合、そのソケットに接続先が居なければそれは listen "
-"用ソケットだと判断されます。 :meth:`accept` メソッドで生成されるクライアント接続に対してのサーバーサイド "
+" :meth:`connect` メソッドが呼ばれた後に行われます。サーバサイドソケットの場合、そのソケットに接続先が居なければそれは listen "
+"用ソケットだと判断されます。 :meth:`accept` メソッドで生成されるクライアント接続に対してのサーバサイド "
 "SSLラップは自動的に行われます。 :func:`wrap_socket` は :exc:`SSLError` を送出することがあります。"
 
 #: ../../library/ssl.rst:161
@@ -251,7 +251,7 @@ msgstr ""
 msgid ""
 "The parameter ``server_side`` is a boolean which identifies whether server-"
 "side or client-side behavior is desired from this socket."
-msgstr "``server_side`` 引数は真偽値で、このソケットがサーバーサイドとクライアントサイドのどちらの動作をするのかを指定します。"
+msgstr "``server_side`` 引数は真偽値で、このソケットがサーバサイドとクライアントサイドのどちらの動作をするのかを指定します。"
 
 #: ../../library/ssl.rst:169
 msgid ""
@@ -291,14 +291,14 @@ msgid ""
 "versions."
 msgstr ""
 "``ssl_version`` "
-"引数は、使用するSSLプロトコルのバージョンを指定します。通常、サーバー側が特定のプロトコルバージョンを選択し、クライアント側はサーバーの選択したプロトコルを受け入れなければなりません。ほとんどのバージョンは他のバージョンと互換性がありません。この引数が指定されない場合、デフォルトは"
+"引数は、使用するSSLプロトコルのバージョンを指定します。通常、サーバが特定のプロトコルバージョンを選択し、クライアントはサーバの選択したプロトコルを受け入れなければなりません。ほとんどのバージョンは他のバージョンと互換性がありません。この引数が指定されない場合、デフォルトは"
 " :data:`PROTOCOL_TLS` になります。これは、他のバージョンとの互換性が最も高いバージョンです。"
 
 #: ../../library/ssl.rst:190
 msgid ""
 "Here's a table showing which versions in a client (down the side) can "
 "connect to which versions in a server (along the top):"
-msgstr "次のテーブルは、どのクライアント側のバージョンがどのサーバー側のバージョンに接続できるかを示しています:"
+msgstr "次のテーブルは、どのクライアントのバージョンがどのサーバのバージョンに接続できるかを示しています:"
 
 #: ../../library/ssl.rst:196
 msgid "*client* / **server**"
@@ -991,7 +991,7 @@ msgid ""
 "enables :data:`CERT_REQUIRED` and :attr:`~SSLContext.check_hostname` by "
 "default."
 msgstr ""
-":data:`PROTOCOL_SSLv23` のような最高のプロトコルバージョンを自動的にネゴシエートしますが、クライアント側の "
+":data:`PROTOCOL_SSLv23` のような最高のプロトコルバージョンを自動的にネゴシエートしますが、クライアントサイドの "
 ":class:`SSLSocket` 接続しかサポートしません。このプロトコルでは、デフォルトで :data:`CERT_REQUIRED` と "
 ":attr:`~SSLContext.check_hostname` が有効になっています。"
 
@@ -1000,7 +1000,7 @@ msgid ""
 "Auto-negotiate the highest protocol version like :data:`PROTOCOL_SSLv23`, "
 "but only support server-side :class:`SSLSocket` connections."
 msgstr ""
-":data:`PROTOCOL_SSLv23` のような最高のプロトコルバージョンを自動的にネゴシエートしますが、サーバ側の "
+":data:`PROTOCOL_SSLv23` のような最高のプロトコルバージョンを自動的にネゴシエートしますが、サーバサイドの "
 ":class:`SSLSocket` 接続しかサポートしません。"
 
 #: ../../library/ssl.rst:635
@@ -1179,7 +1179,7 @@ msgstr "OP_* 定数の :class:`enum.IntFlag` コレクションです。"
 
 #: ../../library/ssl.rst:801
 msgid "Prevent client side from requesting a session ticket."
-msgstr "クライアント側がセッションチケットをリクエストしないようにします。"
+msgstr "クライアントサイドがセッションチケットをリクエストしないようにします。"
 
 #: ../../library/ssl.rst:807
 msgid ""
@@ -1590,7 +1590,7 @@ msgstr ""
 msgid ""
 "for a client SSL socket, the server will always provide a certificate, "
 "regardless of whether validation was required;"
-msgstr "クライアント側ソケットでは、認証が要求されているかどうかに関わらず、サーバは常に証明書を提供します;"
+msgstr "クライアント SSL ソケットでは、認証が要求されているかどうかに関わらず、サーバは常に証明書を提供します。"
 
 #: ../../library/ssl.rst:1084
 msgid ""
@@ -1599,9 +1599,9 @@ msgid ""
 ":const:`None` if you used :const:`CERT_NONE` (rather than "
 ":const:`CERT_OPTIONAL` or :const:`CERT_REQUIRED`)."
 msgstr ""
-"サーバ側ソケットでは、クライアントはサーバによって認証が要求されている場合にのみ証明書を提供します; ですので、 "
+"サーバ SSL ソケットでは、クライアントはサーバによって認証が要求されている場合にのみ証明書を提供します。したがって、 "
 "(:const:`CERT_OPTIONAL` や :const:`CERT_REQUIRED` ではなく) :const:`CERT_NONE` "
-"を使うと :meth:`getpeercert` は :const:`None` を返します。"
+"を使用した場合 :meth:`getpeercert` は :const:`None` を返します。"
 
 #: ../../library/ssl.rst:1089
 msgid ""
@@ -1761,7 +1761,7 @@ msgid ""
 ":meth:`~SSLSocket.do_handshake` has been called to reuse a session."
 msgstr ""
 "この SSL 接続に対する :class:`SSLSession` です。このセッションは、TLS "
-"ハンドシェイクの実行後、クライアント側とサーバ側のソケットで使用できます。クライアントソケットでは、このセッションを "
+"ハンドシェイクの実行後、クライアントサイドとサーバサイドのソケットで使用できます。クライアントソケットでは、このセッションを "
 ":meth:`~SSLSocket.do_handshake` が呼ばれる前に設定して、セッションを再利用できます。"
 
 #: ../../library/ssl.rst:1218
@@ -2040,9 +2040,9 @@ msgid ""
 "will return the agreed-upon protocol."
 msgstr ""
 "SSL/TLS ハンドシェイク時にソケットが提示すべきプロトコルを指定します。 ``['http/1.1', 'spdy/2']`` "
-"のような推奨順に並べた ASII 文字列のリストでなければなりません。プロトコルの選択は :rfc:`7301` "
-"に従いハンドシェイクの中で行われます。ハンドシェイクが正常に終了後、 :meth:`SSLSocket.selected_alpn_protocol` "
-"メソッドは合意されたプロトコルを返します。"
+"のような推奨順に並べた ASCII 文字列のリストでなければなりません。プロトコルの選択は :rfc:`7301` "
+"に従いハンドシェイク中に行われます。ハンドシェイクが正常に終了した後、 :meth:`SSLSocket.selected_alpn_protocol`"
+" メソッドは合意されたプロトコルを返します。"
 
 #: ../../library/ssl.rst:1442
 msgid ""
@@ -2071,8 +2071,8 @@ msgstr ""
 "SSL/TLS ハンドシェイク時にソケットが提示すべきプロトコルを指定します。 ``['http/1.1', 'spdy/2']`` "
 "のような推奨順に並べた文字列のリストでなければなりません。プロトコルの選択は `NPN draft specification "
 "<https://tools.ietf.org/html/draft-agl-tls-nextprotoneg>`_ "
-"に従いハンドシェイクの中で行われます。ハンドシェイクが正常に終了後、 :meth:`SSLSocket.selected_alpn_protocol` "
-"メソッドは合意されたプロトコルを返します。"
+"に従いハンドシェイク中に行われます。ハンドシェイクが正常に終了した後、 :meth:`SSLSocket.selected_alpn_protocol`"
+" メソッドは合意されたプロトコルを返します。"
 
 #: ../../library/ssl.rst:1460
 msgid ""
@@ -2263,9 +2263,9 @@ msgid ""
 "certificates, quite similarly to HTTP virtual hosts. Specifying "
 "*server_hostname* will raise a :exc:`ValueError` if *server_side* is true."
 msgstr ""
-"クライアントサイドから接続では、 *server_hostname* で接続しようとしているサービスのホスト名を指定できます。これは HTTP "
+"クライアントからの接続では、 *server_hostname* で接続先サービスのホスト名を指定できます。これは HTTP "
 "バーチャルホストにかなり似て、シングルサーバで複数の SSL ベースのサービスを別々の証明書でホストしているようなサーバに対して使えます。 "
-"*server_side* が true の場合に *server_hostname* を指定すると :exc:`ValueError` を送出します。"
+"*server_side* が True の場合に *server_hostname* を指定すると :exc:`ValueError` を送出します。"
 
 #: ../../library/ssl.rst:1566
 msgid "*session*, see :attr:`~SSLSocket.session`."
@@ -2308,7 +2308,7 @@ msgid ""
 msgstr ""
 "このコンテキストによって作られた、または管理されている SSL セッションについての統計情報を取得します。 `piece of information "
 "<https://www.openssl.org/docs/ssl/SSL_CTX_sess_number.html>`_ "
-"のそれぞれの名前にそれらが持つ数値をマッピングした辞書で返します。例えば、コンテキストが作られてからのセッションキャッシュのキャッシュヒットとキャッシュミスの総計を見るには::"
+"のそれぞれの名前にそれらが持つ数値をマッピングした辞書を返します。例えば、以下は、コンテキスト作成以降のセッションキャッシュのキャッシュヒットとキャッシュミスの総計です。"
 
 #: ../../library/ssl.rst:1602
 msgid ""
@@ -2603,7 +2603,7 @@ msgstr "SSL チャネルは今や確立されて証明書が検証されてい�
 
 #: ../../library/ssl.rst:1931
 msgid "Server-side operation"
-msgstr "サーバーサイドの処理"
+msgstr "サーバサイドの処理"
 
 #: ../../library/ssl.rst:1933
 msgid ""
@@ -2613,7 +2613,7 @@ msgid ""
 "you'll open a socket, bind it to a port, call :meth:`listen` on it, and "
 "start waiting for clients to connect::"
 msgstr ""
-"サーバーサイドの処理では、通常、サーバー証明書と秘密鍵がそれぞれファイルに格納された形で必要です。最初に秘密鍵と証明書が保持されたコンテキストを作成し、クライアントがあなたの信憑性をチェックできるようにします。そののちにソケットを開き、ポートにバインドし、そのソケットの"
+"サーバサイドの処理では、通常、サーバー証明書と秘密鍵がそれぞれファイルに格納された形で必要です。最初に秘密鍵と証明書が保持されたコンテキストを作成し、クライアントがあなたの信憑性をチェックできるようにします。そののちにソケットを開き、ポートにバインドし、そのソケットの"
 " :meth:`listen` を呼び、クライアントからの接続を待ちます。 ::"
 
 #: ../../library/ssl.rst:1948
@@ -2799,7 +2799,7 @@ msgid ""
 "for SSL through memory buffers."
 msgstr ""
 "ネットワーク IO メソッドを含まない SSL プロトコルインスタンスを表す、スコープを限定した :class:`SSLSocket` "
-"の変種です。このクラスは、一般的にはメモリバッファを通じた SSL のための非同期 IO を実装するフレームワーク作成者によって使用されます。"
+"の変種です。一般的にこ、のクラスを使用するのは、メモリバッファを通じて SSL のための非同期 IO を実装するフレームワーク作成者です。"
 
 #: ../../library/ssl.rst:2077
 msgid ""

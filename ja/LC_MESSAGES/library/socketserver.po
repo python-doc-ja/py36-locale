@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>, 2017\n"
+"Last-Translator: Shun Sakurai <justmyway.yui@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -512,7 +512,7 @@ msgstr ":class:`socketserver.TCPServer` の例"
 
 #: ../../library/socketserver.rst:428 ../../library/socketserver.rst:527
 msgid "This is the server side::"
-msgstr "サーバーサイドの例です::"
+msgstr "サーバサイドの例です::"
 
 #: ../../library/socketserver.rst:458
 msgid ""
@@ -530,7 +530,7 @@ msgid ""
 "has been sent from the client in one ``sendall()`` call."
 msgstr ""
 "先ほどとの違いは、``readline()`` の呼び出しが、改行を受け取るまで ``recv()`` を複数回呼び出すことです。1回の "
-"``recv()`` の呼び出しは、クライアント側から1回の ``sendall()`` 呼び出しで送信された分しか受け取りません。"
+"``recv()`` の呼び出しは、クライアントから1回の ``sendall()`` 呼び出しで送信された分しか受け取りません。"
 
 #: ../../library/socketserver.rst:479 ../../library/socketserver.rst:551
 msgid "This is the client side::"

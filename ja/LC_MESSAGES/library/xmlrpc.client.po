@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>, 2017\n"
+"Last-Translator: Shun Sakurai <justmyway.yui@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -397,12 +397,12 @@ msgstr ""
 
 #: ../../library/xmlrpc.client.rst:227 ../../library/xmlrpc.client.rst:273
 msgid "A working example follows. The server code::"
-msgstr "動作する例です。サーバー側::"
+msgstr "以下は、動作する例です。サーバ側のコード::"
 
 #: ../../library/xmlrpc.client.rst:239 ../../library/xmlrpc.client.rst:288
 #: ../../library/xmlrpc.client.rst:398 ../../library/xmlrpc.client.rst:504
 msgid "The client code for the preceding server::"
-msgstr "上記のサーバーに対するクライアント側::"
+msgstr "上記のサーバーに対するクライアントコード::"
 
 #: ../../library/xmlrpc.client.rst:250
 msgid "DateTime Objects"
@@ -493,7 +493,7 @@ msgstr "バイナリオブジェクトの使用例です。 XML-RPCごしに画�
 
 #: ../../library/xmlrpc.client.rst:354
 msgid "The client gets the image and saves it to a file::"
-msgstr "クライアント側は画像を取得して、ファイルに保存します。 ::"
+msgstr "クライアントは画像を取得して、ファイルに保存します。 ::"
 
 #: ../../library/xmlrpc.client.rst:365
 msgid "Fault Objects"
@@ -587,7 +587,7 @@ msgstr ""
 
 #: ../../library/xmlrpc.client.rst:478
 msgid "A usage example of this class follows.  The server code::"
-msgstr "このクラスの使用例です。サーバー側::"
+msgstr "以下は、このクラスの使用例です。サーバ側のコード::"
 
 #: ../../library/xmlrpc.client.rst:520
 msgid "Convenience Functions"

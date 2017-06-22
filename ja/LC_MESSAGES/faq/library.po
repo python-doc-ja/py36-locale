@@ -781,7 +781,7 @@ msgid ""
 "side and client-side web systems."
 msgstr ""
 "ライブラリリファレンスマニュアルの :ref:`internet` と :ref:`netdata` という章を参照してください。Python "
-"には、サーバーサイドとクライアントサイドの web システムを構築するのに便利な多くのモジュールがあります。"
+"には、サーバサイドとクライアントサイドの web システムを構築するのに便利な多くのモジュールがあります。"
 
 #: ../../faq/library.rst:667
 msgid ""

@@ -31,8 +31,9 @@ msgid ""
 "HTTPS protocols.  It is normally not used directly --- the module "
 ":mod:`urllib.request` uses it to handle URLs that use HTTP and HTTPS."
 msgstr ""
-"このモジュールでは HTTP および HTTPS プロトコルのクライアント側を実装しているクラスを定義しています。通常、このモジュールは直接使いません "
-"--- :mod:`urllib.request` モジュールが HTTP や HTTPS を使った URL を扱う上でこのモジュールを使います。"
+"このモジュールでは HTTP および HTTPS "
+"プロトコルのクライアントサイドを実装しているクラスを定義しています。通常、このモジュールは直接使いません --- "
+":mod:`urllib.request` モジュールが HTTP や HTTPS を使った URL を扱う上でこのモジュールを使います。"
 
 #: ../../library/http.client.rst:23
 msgid ""
