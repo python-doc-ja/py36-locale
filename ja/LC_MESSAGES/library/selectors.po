@@ -284,6 +284,8 @@ msgid ""
 "the rationale), instead of returning an empty list of events before the "
 "timeout."
 msgstr ""
+"このセレクタは、シグナルによって中断された時に、シグナルハンドラが例外を起こさなかった場合、空のイベントリストを返すのではなく、再計算されたタイムアウトによってリトライするようになりました"
+" (この論拠については :pep:`475` を参照してください)。"
 
 #: ../../library/selectors.rst:173
 msgid "Close the selector."
@@ -318,6 +320,8 @@ msgid ""
 "This returns a :class:`~collections.abc.Mapping` instance mapping registered"
 " file objects to their associated :class:`SelectorKey` instance."
 msgstr ""
+"これは、登録済みのファイルオブジェクトを、それらに関連づけられた :class:`SelectorKey` インスタンスにマッピングする "
+":class:`~collections.abc.Mapping` のインスタンスを返します。"
 
 #: ../../library/selectors.rst:196
 msgid ""
