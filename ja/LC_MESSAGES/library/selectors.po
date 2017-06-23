@@ -212,9 +212,9 @@ msgid ""
 ":exc:`ValueError` if *fileobj* is invalid (e.g. it has no ``fileno()`` "
 "method or its ``fileno()`` method has an invalid return value)."
 msgstr ""
-"関連付けられた :class:`SelectorKey` インスタンスを返します。\n"
-"*fileobj* が登録されていない場合 :exc:`KeyError` を送出します。\n"
-"*fileobj* が不正 (例えば *fileobj* に ``fileno()`` メソッドが無い場合や ``fileno()`` メソッドの戻り値が不正な場合) :exc:`ValueError` を送出します。"
+"関連付けられた :class:`SelectorKey` インスタンスを返します。*fileobj* が登録されていない場合 "
+":exc:`KeyError` を送出します。*fileobj* が不正な場合 (例えば *fileobj* に ``fileno()`` "
+"メソッドが無い場合や ``fileno()`` メソッドの戻り値が不正な場合) :exc:`ValueError` を送出します。"
 
 #: ../../library/selectors.rst:132
 msgid "Change a registered file object's monitored events or attached data."
@@ -267,7 +267,7 @@ msgid ""
 "object. *events* is a bitmask of events ready on this file object."
 msgstr ""
 "*key* は準備状態のファイルオブジェクトに対応する :class:`SelectorKey` インスタンスです。 *events* "
-"そのファイルオブジェクトで準備できたイベントのビットマスクです。"
+"はそのファイルオブジェクトで準備が完了したイベントのビットマスクです。"
 
 #: ../../library/selectors.rst:161
 msgid ""
@@ -295,9 +295,7 @@ msgstr "セレクタを閉じます。"
 msgid ""
 "This must be called to make sure that any underlying resource is freed. The "
 "selector shall not be used once it has been closed."
-msgstr ""
-"下層の資源が解放されたこと保証するために呼ばれなければなりません。\n"
-"セレクタは一旦閉じられると使ってはいけません。"
+msgstr "下層のリソースがすべて解放されたことを確かめるために呼ばれなければなりません。一旦閉じられたセレクタは使ってはいけません。"
 
 #: ../../library/selectors.rst:180
 msgid "Return the key associated with a registered file object."
