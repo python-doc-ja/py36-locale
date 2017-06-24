@@ -210,7 +210,7 @@ msgid ""
 "written.  Often this method will implement the necessary buffering for "
 "performance.  For example::"
 msgstr ""
-"非同期ループで、書き込み可能ソケットが実際に書き込み可能になった時に呼び出される。このメソッドは、パフォーマンスの向上のためバッファリングを行う場合などに利用できます。例::"
+"非同期ループで、書き込み可能ソケットが実際に書き込み可能になった時に呼び出されます。このメソッドでは、しばしばパフォーマンスの向上のために必要なバッファリングを実装します。例::"
 
 #: ../../library/asyncore.rst:133
 msgid ""
@@ -291,7 +291,8 @@ msgid ""
 "This is identical to the creation of a normal socket, and will use the same "
 "options for creation.  Refer to the :mod:`socket` documentation for "
 "information on creating sockets."
-msgstr "引数も含め、通常のソケット生成と同じ。 :mod:`socket` モジュールを参照のこと。"
+msgstr ""
+"引数も含め、通常のソケット生成と同一です。ソケットの生成については、 :mod:`socket` モジュールのドキュメントを参照してください。"
 
 #: ../../library/asyncore.rst:202
 msgid "*family* and *type* arguments can be omitted."
@@ -322,8 +323,8 @@ msgid ""
 ":func:`select.select` or :func:`select.poll` has reported the socket ready "
 "for reading."
 msgstr ""
-":func:`select.select` や :func:`select.poll` がソケットが読み込み出来る状態にあると報告したとしても、 "
-":meth:`recv` が :exc:`BlockingIOError` を送出するかもしれないことに注意してください。"
+":func:`select.select` や :func:`select.poll` がソケットが読み込みできる状態にあると報告したとしても、 "
+":meth:`recv` が :exc:`BlockingIOError` を送出する場合があります。"
 
 #: ../../library/asyncore.rst:230
 msgid ""
@@ -331,8 +332,8 @@ msgid ""
 " the maximum number of queued connections and should be at least 1; the "
 "maximum value is system-dependent (usually 5)."
 msgstr ""
-"ソケットへの接続を待つ。引数 *backlog* "
-"は、キューイングできるコネクションの最大数を指定します(1以上)。最大数はシステムに依存でします（通常は5)。"
+"ソケットへの接続を待ちます。引数 *backlog* は、キューに追加できるコネクションの最大数 (1 以上) "
+"を指定します。最大値はシステムに依存します（通常は5)。"
 
 #: ../../library/asyncore.rst:237
 msgid ""
