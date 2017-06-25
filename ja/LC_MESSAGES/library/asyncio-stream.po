@@ -31,6 +31,7 @@ msgid ""
 "only; there's really nothing special there, and if they don't do exactly "
 "what you want, feel free to copy their code."
 msgstr ""
+"このモジュール内のトップレベル関数は、便利なラッパーとしてのみ意図されています。特別なことは何もありませんし、それらが思い通りに動作しない場合は、ご自由にコードをコピーしてください。"
 
 #: ../../library/asyncio-stream.rst:21
 msgid ""
@@ -209,13 +210,14 @@ msgstr "``separator`` が見つかるまでストリームからデータを読�
 msgid ""
 "On success, the data and separator will be removed from the internal buffer "
 "(consumed). Returned data will include the separator at the end."
-msgstr ""
+msgstr "成功時には、データと区切り文字は内部バッファから削除されます (消費されます)。返されるデータの最後には区切り文字が含まれます。"
 
 #: ../../library/asyncio-stream.rst:153
 msgid ""
 "Configured stream limit is used to check result. Limit sets the maximal "
 "length of data that can be returned, not counting the separator."
 msgstr ""
+"設定したストリームの制限は、結果を検証するために使用されます。制限により、返すことのできるデータの最大長さ (区切り文字を含まず) が設定されます。"
 
 #: ../../library/asyncio-stream.rst:157
 msgid ""
@@ -224,6 +226,9 @@ msgid ""
 " will be reset.  The :attr:`IncompleteReadError.partial` attribute may "
 "contain the separator partially."
 msgstr ""
+"EOF が発生し、完全な区切り文字が見つからない場合には、:exc:`IncompleteReadError` "
+"例外が創出されるとともに、内部バッファはリセットされます。 :attr:`IncompleteReadError.partial` "
+"属性に、区切り文字が部分的に含まれる場合があります。"
 
 #: ../../library/asyncio-stream.rst:163
 msgid ""
@@ -231,6 +236,8 @@ msgid ""
 " exception  will be raised, and the data will be left in the internal "
 "buffer, so it can be read again."
 msgstr ""
+"制限超過のためにデータを読み取ることができない場合、:exc:`LimitOverrunError` "
+"例外が送出され、データは内部バッファ内に残ります。そのため、データを再度読み取ることができます。"
 
 #: ../../library/asyncio-stream.rst:171
 msgid ""
@@ -290,6 +297,9 @@ msgid ""
 "the low-water limit and the protocol is resumed. When there is nothing to "
 "wait for, the yield-from continues immediately."
 msgstr ""
+"転送バッファのサイズが高水位制限値に達した場合 "
+"(プロトコルが一時停止された場合)、バッファサイズが低水位制限まで引き出されて、プロトコルが再開されるまで、ブロックします。待機するものがなくなると、直ちに"
+" yield-from を続行します。"
 
 #: ../../library/asyncio-stream.rst:216
 msgid ""
@@ -298,6 +308,9 @@ msgid ""
 "a possibly large amount of data is written to the transport, and the "
 "coroutine does not yield-from between calls to :meth:`write`."
 msgstr ""
+":meth:`drain` から yield "
+"することにより、ループは書き込み操作をスケジュールし、バッファのフラッシュを行うことができます。このことは、転送に大量のデータが書き込まれる可能性がある場合に非常に有用で、コルーチンは"
+" :meth:`write` 呼び出しの間に yield-from を行いません。"
 
 #: ../../library/asyncio-stream.rst:225
 msgid ""
@@ -386,7 +399,7 @@ msgstr "区切り文字を探している間にバッファリミットに到達
 
 #: ../../library/asyncio-stream.rst:287
 msgid "Total number of to be consumed bytes."
-msgstr ""
+msgstr "未消費のバイトの合計数。"
 
 #: ../../library/asyncio-stream.rst:291
 msgid "Stream examples"

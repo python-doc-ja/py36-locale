@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Suguru YAMAMOTO <sgryjp@gmail.com>, 2017\n"
+"Last-Translator: Shun Sakurai <justmyway.yui@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -149,6 +149,9 @@ msgid ""
 "  Should be used to finalize all scheduled asynchronous generators reliably."
 "  Example::"
 msgstr ""
+"現在オープンの全ての :term:`asynchronous generator` "
+"オブジェクトをスケジュールし、:meth:`~agen.aclose()` "
+"呼び出しによりクローズするようにします。このメソッドの呼び出し後、イベントループは新しい非同期ジェネレータがイテレートされると毎回警告を発します。全てのスケジュールされた非同期ジェネレータの終了処理を確実に行うために使用すべきです。以下に例を示します。"
 
 #: ../../library/asyncio-eventloop.rst:112
 msgid "Calls"
@@ -298,7 +301,7 @@ msgstr "関数 :func:`asyncio.sleep`。"
 
 #: ../../library/asyncio-eventloop.rst:211
 msgid "Futures"
-msgstr ""
+msgstr "Future"
 
 #: ../../library/asyncio-eventloop.rst:215
 msgid "Create an :class:`asyncio.Future` object attached to the loop."
@@ -310,6 +313,8 @@ msgid ""
 "implementations can provide alternative implementations of the Future class "
 "(with better performance or instrumentation)."
 msgstr ""
+"asyncio で Futures を作成するために推奨される方法です。イベントループを実装することにより、Futures "
+"クラスの(パフォーマンスや計測方法が優れた) 代替実装 が提供される場合があるためです。"
 
 #: ../../library/asyncio-eventloop.rst:225
 msgid "Tasks"
@@ -537,6 +542,9 @@ msgid ""
 " the socket to locally.  The *local_host* and *local_port* are looked up "
 "using :meth:`getaddrinfo`."
 msgstr ""
+"*local_addr* が指定される場合、``(local_host, local_port)`` "
+"のタプルで、ソケットをローカルで束縛するために使用されます。*local_host* と *local_port* は "
+":meth:`getaddrinfo` を使用して検索されます。"
 
 #: ../../library/asyncio-eventloop.rst:357
 msgid ""
@@ -544,6 +552,9 @@ msgid ""
 "connect the socket to a remote address.  The *remote_host* and *remote_port*"
 " are looked up using :meth:`getaddrinfo`."
 msgstr ""
+"*remote_addr* が指定される場合、``(remote_host, remote_por)`` "
+"のタプルで、ソケットをリモートアドレスに束縛するために使用されます。*remote_host* と *remote_port* は "
+":meth:`getaddrinfo` を使用して検索されます。"
 
 #: ../../library/asyncio-eventloop.rst:361
 msgid ""
@@ -552,6 +563,9 @@ msgid ""
 "given, these should all be integers from the corresponding :mod:`socket` "
 "module constants."
 msgstr ""
+"*family*, *proto*, *flags* は任意のアドレスファミリです。これらのファミリ、プロトコル、フラグは、*host* 解決のため "
+":meth:`getaddrinfo` 経由でオプションで渡されます。これらのオプションを指定する場合、すべて :mod:`socket` "
+"モジュール定数に従った整数でなければなりません。"
 
 #: ../../library/asyncio-eventloop.rst:366
 #: ../../library/asyncio-eventloop.rst:448
@@ -583,6 +597,7 @@ msgid ""
 "*allow_broadcast* tells the kernel to allow this endpoint to send messages "
 "to the broadcast address."
 msgstr ""
+"*allow_broadcast* は、カーネルに、このエンドポイントがブロードキャストアドレスにメッセージを送信することを許可するように指示します。"
 
 #: ../../library/asyncio-eventloop.rst:380
 msgid ""
@@ -591,6 +606,9 @@ msgid ""
 "specified, *local_addr* and *remote_addr* should be omitted (must be "
 ":const:`None`)."
 msgstr ""
+"オプションの *sock* を指定することで、既存の、すでに接続されている :class:`socket.socket` "
+"を転送で使用することができます。このオプションを使用する場合、*local_addr* と *remote_addr* は省略してください "
+"(:const:`None` でなければなりません)。"
 
 #: ../../library/asyncio-eventloop.rst:385
 msgid ""
@@ -722,6 +740,9 @@ msgid ""
 " port as other existing endpoints are bound to, so long as they all set this"
 " flag when being created. This option is not supported on Windows."
 msgstr ""
+"*reuse_port* "
+"は、同じポートにバインドされた既存の端点すべてがこのフラグを設定して生成されている場合に限り、この端点を既存の端点と同じポートにバインドすることを許可するよう、カーネルに指示します（訳註:"
+" ソケットのオプション SO_REUSEPORT を使用します）。このオプションは、Windows ではサポートされていません。"
 
 #: ../../library/asyncio-eventloop.rst:458
 #: ../../library/asyncio-eventloop.rst:479
@@ -758,24 +779,26 @@ msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:485
 msgid "Handle an accepted connection."
-msgstr ""
+msgstr "受け付けられた接続を扱います。"
 
 #: ../../library/asyncio-eventloop.rst:487
 msgid ""
 "This is used by servers that accept connections outside of asyncio but that "
 "use asyncio to handle them."
-msgstr ""
+msgstr "asyncio の範囲外で接続を受け付けるが、asyncio を使用してそれらを扱うサーバにより使用されます。"
 
 #: ../../library/asyncio-eventloop.rst:492
 msgid ""
 "*sock* is a preexisting socket object returned from an ``accept`` call."
-msgstr ""
+msgstr "*sock* は、 ``accept`` 呼び出しが返す既存のソケットオブジェクトです。"
 
 #: ../../library/asyncio-eventloop.rst:498
 msgid ""
 "This method is a :ref:`coroutine <coroutine>`.  When completed, the "
 "coroutine returns a ``(transport, protocol)`` pair."
 msgstr ""
+"このメソッドは :ref:`coroutine <coroutine>` です。完了すると、このコルーチンは ``(transport, "
+"protocol)`` のペアを返します。"
 
 #: ../../library/asyncio-eventloop.rst:502
 msgid "Watch file descriptors"
@@ -913,6 +936,9 @@ msgid ""
 "object usable to send and receive data on the connection, and *address* is "
 "the address bound to the socket on the other end of the connection."
 msgstr ""
+"ソケットはアドレスに束縛済みで、接続を listen 中である必要があります。戻り値は ``(conn, address)`` のペアで、*conn* "
+"は接続を通じてデータの送受信を行うための *新しい* ソケットオブジェクト、*address* "
+"は接続先の端点でソケットに束縛されているアドレスを示します。"
 
 #: ../../library/asyncio-eventloop.rst:605
 msgid "The socket *sock* must be non-blocking."
@@ -920,7 +946,7 @@ msgstr "ソケット *sock* は非ブロックでなければなりません。"
 
 #: ../../library/asyncio-eventloop.rst:611
 msgid ":meth:`AbstractEventLoop.create_server` and :func:`start_server`."
-msgstr ""
+msgstr ":meth:`AbstractEventLoop.create_server` および :func:`start_server`。"
 
 #: ../../library/asyncio-eventloop.rst:615
 msgid "Resolve host name"
@@ -999,6 +1025,8 @@ msgid ""
 "The :meth:`AbstractEventLoop.subprocess_exec` and "
 ":meth:`AbstractEventLoop.subprocess_shell` methods."
 msgstr ""
+":meth:`AbstractEventLoop.subprocess_exec` メソッドおよび "
+":meth:`AbstractEventLoop.subprocess_shell` メソッド。"
 
 #: ../../library/asyncio-eventloop.rst:669
 msgid "UNIX signals"
@@ -1063,6 +1091,7 @@ msgid ""
 ":ref:`Use functools.partial to pass keywords to the *func* <asyncio-pass-"
 "keywords>`."
 msgstr ""
+":ref:`*func* にキーワードを渡すには、functools.partial を使用します <asyncio-pass-keywords>`。"
 
 #: ../../library/asyncio-eventloop.rst:713
 msgid ""
@@ -1071,6 +1100,9 @@ msgid ""
 "up to the thread pool executor "
 "(:class:`~concurrent.futures.ThreadPoolExecutor`) to set the default."
 msgstr ""
+":meth:`BaseEventLoop.run_in_executor` は、作成するスレッドプール実行者の ``max_workers`` "
+"を作成しなくなり、代わりにスレッドプール実行者 (:class:`~concurrent.futures.ThreadPoolExecutor`) "
+"にデフォルトを設定させるようになりました。"
 
 #: ../../library/asyncio-eventloop.rst:722
 msgid "Set the default executor used by :meth:`run_in_executor`."
@@ -1105,7 +1137,7 @@ msgstr ""
 #: ../../library/asyncio-eventloop.rst:745
 msgid ""
 "Return the exception handler, or ``None`` if the default one is in use."
-msgstr ""
+msgstr "例外ハンドラを返します。デフォルトのものが使用されている場合は ``None`` を返します。"
 
 #: ../../library/asyncio-eventloop.rst:752
 msgid "Default exception handler."
@@ -1210,6 +1242,8 @@ msgid ""
 "Object created by the :meth:`AbstractEventLoop.create_server` method and the"
 " :func:`start_server` function. Don't instantiate the class directly."
 msgstr ""
+":meth:`AbstractEventLoop.create_server` メソッドおよび :func:`start_server` "
+"関数によって作成されたオブジェクトです。クラスから直接インスタンスを作成しないでください。"
 
 #: ../../library/asyncio-eventloop.rst:817
 msgid ""
@@ -1297,6 +1331,8 @@ msgid ""
 "uses the :meth:`AbstractEventLoop.call_later` method to reschedule itself "
 "during 5 seconds, and then stops the event loop::"
 msgstr ""
+"現在の日時を毎秒表示するコールバックの例です。コールバックは :meth:`AbstractEventLoop.call_later` を使用して 5 "
+"秒間自身を再スケジュールし、イベントループを停止します。"
 
 #: ../../library/asyncio-eventloop.rst:917
 msgid ""
@@ -1315,6 +1351,8 @@ msgid ""
 "Wait until a file descriptor received some data using the "
 ":meth:`AbstractEventLoop.add_reader` method and then close the event loop::"
 msgstr ""
+"ファイル記述子が :meth:`AbstractEventLoop.add_reader` "
+"を使用してデータを受信するまで待機し、その後イベントループを閉じます。"
 
 #: ../../library/asyncio-eventloop.rst:964
 msgid ""
@@ -1343,6 +1381,8 @@ msgid ""
 "Register handlers for signals :py:data:`SIGINT` and :py:data:`SIGTERM` using"
 " the :meth:`AbstractEventLoop.add_signal_handler` method::"
 msgstr ""
+":meth:`AbstractEventLoop.add_signal_handler` メソッドを使用した、シグナル "
+":py:data:`SIGINT` および :py:data:`SIGTERM` 用のハンドラを登録します。"
 
 #: ../../library/asyncio-eventloop.rst:1000
 msgid "This example only works on UNIX."

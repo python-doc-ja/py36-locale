@@ -378,7 +378,7 @@ msgid ""
 ":class:`asynchat.async_chat`."
 msgstr ""
 ":class:`dispatcher` "
-"のサブクラスで、シンプルなバッファされた出力を持ちます。シンプルなクライアントプログラムに適しています。もっと高レベルな場合には "
+"のサブクラスで、シンプルなバッファされた出力機能を持ちます。シンプルなクライアントプログラムに適しています。もっと高レベルな場合には "
 ":class:`asynchat.async_chat` を利用してください。"
 
 #: ../../library/asyncore.rst:272

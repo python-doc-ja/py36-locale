@@ -33,6 +33,9 @@ msgid ""
 "method which will create the transport and try to initiate the underlying "
 "communication channel, calling you back when it succeeds."
 msgstr ""
+"トランスポートは、:mod:`asyncio` "
+"が提供する、さまざまな種類の通信チャンネルを抽象化するクラス群です。通常あなた自身が直接トランスポートのインスタンスを作成することはなく、:class:`AbstractEventLoop`"
+" のメソッドを呼び出すことでトランスポートとその下層の通信チャンネルのインスタンスが作成され、成功時にコールバックが返ります。"
 
 #: ../../library/asyncio-protocol.rst:18
 msgid ""
@@ -59,7 +62,7 @@ msgstr "トランスポートクラスは :ref:`スレッド安全ではあり�
 
 #: ../../library/asyncio-protocol.rst:28
 msgid "The socket option ``TCP_NODELAY`` is now set by default."
-msgstr ""
+msgstr "デフォルトでソケットオプションの ``TCP_NODELAY`` が設定されるようになりました。"
 
 #: ../../library/asyncio-protocol.rst:33
 msgid "BaseTransport"
@@ -181,11 +184,11 @@ msgstr "``'subprocess'``: :class:`subprocess.Popen` のインスタンスにな�
 msgid ""
 "Set a new protocol.  Switching protocol should only be done when both "
 "protocols are documented to support the switch."
-msgstr ""
+msgstr "新しいプロトコルを設定します。プロトコルの切り替えは、両方のプロトコルのドキュメントで切り替えがサポートされている場合にのみ行うべきです。"
 
 #: ../../library/asyncio-protocol.rst:102
 msgid "Return the current protocol."
-msgstr ""
+msgstr "現在のプロトコルを返します。"
 
 #: ../../library/asyncio-protocol.rst:106
 msgid "``'ssl_object'`` info was added to SSL sockets."
@@ -284,6 +287,10 @@ msgid ""
 "zero for either limit is generally sub-optimal as it reduces opportunities "
 "for doing I/O and computation concurrently."
 msgstr ""
+"デフォルト値は実装固有になります。最高水位点のみ与えられた場合、最低水位点は最高水位点以下の実装固有のデフォルト値になります。最高水位点にゼロが設定されると最低水位点も強制的にゼロになり、バッファが空でなくなるたびに"
+" :meth:`pause_writing` が呼び出されるようになります。最低水位点にゼロが設定されるとバッファは空になるとすぐに "
+":meth:`resume_writing` が呼び出されるようになります。どちらかにゼロを設定することは、並列の I/O "
+"処理や計算の機会を減らすことになるため、一般に最善とは言えません。"
 
 #: ../../library/asyncio-protocol.rst:182
 msgid "Use :meth:`get_write_buffer_limits` to get the limits."
@@ -388,7 +395,7 @@ msgstr ""
 
 #: ../../library/asyncio-protocol.rst:256
 msgid "Kill the subprocess, as in :meth:`subprocess.Popen.kill`."
-msgstr ""
+msgstr ":meth:`subprocess.Popen.kill` と同様に、サブプロセスを kill します。"
 
 #: ../../library/asyncio-protocol.rst:258
 msgid ""
@@ -589,6 +596,8 @@ msgid ""
 "Called when the other end signals it won't send any more data (for example "
 "by calling :meth:`write_eof`, if the other end also uses asyncio)."
 msgstr ""
+"相手方が送信するデータがないことを伝えてきたとき (例えば相手方が asyncio を使用しており :meth:`write_eof` "
+"を呼び出した場合) に呼び出されます。"
 
 #: ../../library/asyncio-protocol.rst:391
 msgid ""
@@ -597,6 +606,9 @@ msgid ""
 "value, closing the transport is up to the protocol.  Since the default "
 "implementation returns ``None``, it implicitly closes the connection."
 msgstr ""
+"このメソッドは偽値 (``None`` を含む) "
+"を返すことがあり、その場合トランスポートは自身をクローズします。真値を返す場合、トランスポートはプロトコルによってクローズされます。デフォルトの実装では"
+" ``None`` を返すため、コネクションは暗黙的にクローズされます。"
 
 #: ../../library/asyncio-protocol.rst:397
 msgid ""
@@ -618,7 +630,7 @@ msgstr ""
 
 #: ../../library/asyncio-protocol.rst:405
 msgid "State machine:"
-msgstr ""
+msgstr "ステートマシン:"
 
 #: ../../library/asyncio-protocol.rst:407
 msgid ""
