@@ -297,8 +297,8 @@ msgid ""
 "the low-water limit and the protocol is resumed. When there is nothing to "
 "wait for, the yield-from continues immediately."
 msgstr ""
-"転送バッファのサイズが高水位制限値に達した場合 "
-"(プロトコルが一時停止された場合)、バッファサイズが低水位制限まで引き出されて、プロトコルが再開されるまで、ブロックします。待機するものがなくなると、直ちに"
+"トランスポートバッファのサイズが最高水位点に達した場合 "
+"(プロトコルが一時停止された場合)、バッファサイズが最低水位点まで引き出されて、プロトコルが再開されるまで、ブロックします。待機するものがなくなると、直ちに"
 " yield-from を続行します。"
 
 #: ../../library/asyncio-stream.rst:216
@@ -309,7 +309,7 @@ msgid ""
 "coroutine does not yield-from between calls to :meth:`write`."
 msgstr ""
 ":meth:`drain` から yield "
-"することにより、ループは書き込み操作をスケジュールし、バッファのフラッシュを行うことができます。このことは、転送に大量のデータが書き込まれる可能性がある場合に非常に有用で、コルーチンは"
+"することにより、ループは書き込み操作をスケジュールし、バッファのフラッシュを行うことができます。このことは、トランスポートに大量のデータが書き込まれる可能性がある場合に非常に有用で、コルーチンは"
 " :meth:`write` 呼び出しの間に yield-from を行いません。"
 
 #: ../../library/asyncio-stream.rst:225

@@ -607,7 +607,7 @@ msgid ""
 ":const:`None`)."
 msgstr ""
 "オプションの *sock* を指定することで、既存の、すでに接続されている :class:`socket.socket` "
-"を転送で使用することができます。このオプションを使用する場合、*local_addr* と *remote_addr* は省略してください "
+"をトランスポートで使用することができます。このオプションを使用する場合、*local_addr* と *remote_addr* は省略してください "
 "(:const:`None` でなければなりません)。"
 
 #: ../../library/asyncio-eventloop.rst:385
