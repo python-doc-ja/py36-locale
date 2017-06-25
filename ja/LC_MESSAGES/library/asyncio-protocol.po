@@ -638,6 +638,9 @@ msgid ""
 ":meth:`~Protocol.data_received` \\*] [-> :meth:`~Protocol.eof_received` ?] "
 "-> :meth:`~BaseProtocol.connection_lost` -> end"
 msgstr ""
+"開始状態 -> :meth:`~BaseProtocol.connection_made` [-> "
+":meth:`~Protocol.data_received` \\*] [-> :meth:`~Protocol.eof_received` ?] "
+"-> :meth:`~BaseProtocol.connection_lost` -> 終了状態 "
 
 #: ../../library/asyncio-protocol.rst:414
 msgid "Datagram protocols"
@@ -736,6 +739,8 @@ msgid ""
 "order.  Protocols are not aware of coroutines created in protocol methods "
 "and so will not wait for them."
 msgstr ""
+"コルーチンはプロトコルメソッドで :func:`ensure_future` "
+"を使用してスケジュールされることがありますが、それは実行順を保証するものではありません。プロトコルはプロトコルメソッド内で作成されたコルーチンを検知しないため、それらを待機しません。"
 
 #: ../../library/asyncio-protocol.rst:481
 msgid ""
@@ -760,6 +765,8 @@ msgid ""
 "TCP echo client  using the :meth:`AbstractEventLoop.create_connection` "
 "method, send data and wait until the connection is closed::"
 msgstr ""
+":meth:`AbstractEventLoop.create_connection` メソッドを使用した TCP Echo "
+"クライアントで、データを送信しコネクションがクローズされるまで待機します。"
 
 #: ../../library/asyncio-protocol.rst:524
 msgid ""
@@ -771,6 +778,9 @@ msgid ""
 "loop is no longer running, so there is no need to stop the loop in case of "
 "an error."
 msgstr ""
+"この例ではイベントループを 2 個実行しています。:meth:`~AbstractEventLoop.run_until_complete` "
+"メソッドはサーバが待ち受け状態にないときに例外を送出するためのもので、通常作成しなければならない例外の送出やループの停止などを行うための短いコルーチンの代用になります。:meth:`~AbstractEventLoop.run_until_complete`"
+" の終了時、ループの実行は終了しているので、エラー発生時にループを停止する必要はありません。"
 
 #: ../../library/asyncio-protocol.rst:533
 msgid ""
@@ -789,6 +799,8 @@ msgid ""
 "TCP echo server using the :meth:`AbstractEventLoop.create_server` method, "
 "send back received data and close the connection::"
 msgstr ""
+":meth:`AbstractEventLoop.create_server` メソッドを使用した TCP Echo "
+"サーバーで、受信したデータを返信しコネクションをクローズします。"
 
 #: ../../library/asyncio-protocol.rst:580
 msgid ""
@@ -818,6 +830,8 @@ msgid ""
 "UDP echo client using the :meth:`AbstractEventLoop.create_datagram_endpoint`"
 " method, send data and close the transport when we received the answer::"
 msgstr ""
+":meth:`AbstractEventLoop.create_datagram_endpoint` メソッドを使用する UDP Echo "
+"クライアントで、データを送信し応答を受信するとトランスポートをクローズします。"
 
 #: ../../library/asyncio-protocol.rst:640
 msgid "UDP echo server protocol"
@@ -828,6 +842,8 @@ msgid ""
 "UDP echo server using the :meth:`AbstractEventLoop.create_datagram_endpoint`"
 " method, send back received data::"
 msgstr ""
+":meth:`AbstractEventLoop.create_datagram_endpoint` メソッドを使用しする UDP Echo "
+"サーバーで、受信したデータを返送します。"
 
 #: ../../library/asyncio-protocol.rst:676
 msgid "Register an open socket to wait for data using a protocol"
@@ -839,6 +855,8 @@ msgid ""
 ":meth:`AbstractEventLoop.create_connection` method with a protocol, and then"
 " close the event loop ::"
 msgstr ""
+"プロトコルと :meth:`AbstractEventLoop.create_connection` "
+"メソッドを使用してソケットがデータを受信するまで待機し、受信後イベントループをクローズします。"
 
 #: ../../library/asyncio-protocol.rst:725
 msgid ""
