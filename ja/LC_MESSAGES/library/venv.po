@@ -49,6 +49,8 @@ msgid ""
 " ``python3 -m venv`` to help prevent any potential confusion as to which "
 "Python interpreter a virtual environment will be based on."
 msgstr ""
+"``pyvenv`` スクリプトは Python 3.6 で非推奨となり、代わりに ``python3 -m venv`` を使い、仮想環境を動かす "
+"Python インタープリタを取り違える可能性を防ぎやすくします。"
 
 #: ../../library/venv.rst:33
 msgid "Creating virtual environments"
@@ -58,7 +60,7 @@ msgstr "仮想環境の作成"
 msgid ""
 "Creation of :ref:`virtual environments <venv-def>` is done by executing the "
 "command ``venv``::"
-msgstr ":ref:`仮想環境 <venv-def>` の作成は ``venv`` コマンドを実行して行います::"
+msgstr ":ref:`仮想環境 <venv-def>` を作成するには ``venv`` コマンドを実行します::"
 
 #: ../../using/venv-create.inc:6
 msgid ""
@@ -77,13 +79,13 @@ msgid ""
 "Python 3.3 and 3.4, and is `deprecated in Python 3.6 "
 "<https://docs.python.org/dev/whatsnew/3.6.html#deprecated-features>`_."
 msgstr ""
-"Python 3.3 と 3.4 では、仮想環境の作成に推奨していたツールは``pyvenv``でしたが、`Python 3.6では非推奨です "
+"Python 3.3 と 3.4 では、仮想環境の作成に推奨していたツールは ``pyvenv`` でしたが、`Python 3.6では非推奨です "
 "<https://docs.python.org/dev/whatsnew/3.6.html#deprecated-features>`_。"
 
 #: ../../using/venv-create.inc:19
 msgid ""
 "The use of ``venv`` is now recommended for creating virtual environments."
-msgstr "仮想環境の作成には、``venv``の使用をお勧めします。"
+msgstr "仮想環境の作成には、 ``venv`` の使用をお勧めします。"
 
 #: ../../using/venv-create.inc:24
 msgid ""
@@ -95,7 +97,7 @@ msgstr ""
 
 #: ../../using/venv-create.inc:29
 msgid "On Windows, invoke the ``venv`` command as follows::"
-msgstr ""
+msgstr "Windows では、 ``venv`` コマンドは次のように実行します::"
 
 #: ../../using/venv-create.inc:33
 msgid ""
