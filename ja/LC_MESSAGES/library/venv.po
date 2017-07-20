@@ -148,7 +148,7 @@ msgid ""
 "Multiple paths can be given to ``venv``, in which case an identical virtual "
 "environment will be created, according to the given options, at each "
 "provided path."
-msgstr ""
+msgstr "``venv`` には複数のパスを渡すことができ、その場合はそれぞれのパスに同一の仮想環境が作成されます。"
 
 #: ../../using/venv-create.inc:89
 msgid ""
