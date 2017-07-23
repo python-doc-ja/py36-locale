@@ -414,6 +414,9 @@ msgid ""
 ":meth:`create_configuration`, :meth:`setup_python`, :meth:`setup_scripts` "
 "and :meth:`post_setup` can be overridden."
 msgstr ""
+"メソッド :meth:`ensure_directories`, :meth:`create_configuration`, "
+":meth:`setup_python`, :meth:`setup_scripts`, :meth:`post_setup` "
+"はそれぞれオーバーライドできます。"
 
 #: ../../library/venv.rst:168
 msgid ""
