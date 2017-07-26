@@ -72,6 +72,10 @@ msgid ""
 " case of Windows).  It also creates an (initially empty) ``lib/pythonX.Y"
 "/site-packages`` subdirectory (on Windows, this is ``Lib\\site-packages``)."
 msgstr ""
+"このコマンドを実行すると、対象のディレクトリ (およびまだ作成されていない親ディレクトリ) が作成され、その中に ``pyvenv.cfg`` ファイルが置かれます。\n"
+"そのファイルの ``home`` キーはこのコマンドを実行した Python のインストール場所を指します。\n"
+"このコマンドは、``python`` バイナリ (Windows の場合はいくつかのバイナリ) のコピーを含む ``bin`` (Windows では ``Scripts``) サブディレクトリも作成します。\n"
+"さらに、``lib/pythonX.Y/site-packages`` (Windows では ``Lib\\site-packages``) サブディレクトリも (最初は空の状態で) 作成します。"
 
 #: ../../using/venv-create.inc:14
 msgid ""
@@ -373,6 +377,8 @@ msgid ""
 "(defaults to ``None`` which means directory name of the environment would be"
 " used)."
 msgstr ""
+"``prompt`` -- 仮想環境が有効になっているときに使われる文字列 (デフォルトは ``None`` "
+"で、その環境のディレクトリ名が使われることになります)。"
 
 #: ../../library/venv.rst:127 ../../library/venv.rst:235
 msgid "Added the ``with_pip`` parameter"
@@ -380,7 +386,7 @@ msgstr "``with_pip`` 引数が追加されました。"
 
 #: ../../library/venv.rst:130
 msgid "Added the ``prompt`` parameter"
-msgstr ""
+msgstr "``prompt`` 引数が追加されました。"
 
 #: ../../library/venv.rst:134
 msgid ""
@@ -532,6 +538,8 @@ msgid ""
 " a subclass which installs setuptools and pip into a created virtual "
 "environment::"
 msgstr ""
+"次のスクリプトで、作成された仮想環境に setuptools と pip をインストールするサブクラスを実装して :class:`EnvBuilder`"
+" を拡張する方法を示します::"
 
 #: ../../library/venv.rst:460
 msgid ""
