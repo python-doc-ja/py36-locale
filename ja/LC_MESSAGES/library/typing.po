@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: cocoatomo <cocoatomo77@gmail.com>, 2017\n"
+"Last-Translator: Shun Sakurai <justmyway.yui@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -464,7 +464,7 @@ msgid ""
 "The only legal parameters for :class:`Type` are classes, unions of classes, "
 "and :data:`Any`. For example::"
 msgstr ""
-":class:`Type` で許されているパラメータは、クラスかクラスの直和型か :data:`Any` です。\n"
+":class:`Type` で許されているパラメータは、クラスかクラスのユニオン型か :data:`Any` です。\n"
 "例えば次のようになります::"
 
 #: ../../library/typing.rst:488
@@ -873,7 +873,7 @@ msgstr ""
 "というのも、 ``@overload`` 付きの定義は ``@overload`` 無しの定義で上書きされるからです。\n"
 "後者は実行時に使われますが、型チェッカーからは無視されるべきなのです。\n"
 "実行時には、 ``@overload`` 付きの関数を直接呼び出すと ``NotImplementedError`` を送出します。\n"
-"次のコードはオーバーロードを使うことで直和型や型変数を使うよりもより正確な型が表現できる例です::"
+"次のコードはオーバーロードを使うことでユニオン型や型変数を使うよりもより正確な型が表現できる例です::"
 
 #: ../../library/typing.rst:892
 msgid "See :pep:`484` for details and comparison with other typing semantics."
@@ -919,11 +919,11 @@ msgstr ":data:`Any` は任意の型と互換です。"
 
 #: ../../library/typing.rst:920
 msgid "Union type; ``Union[X, Y]`` means either X or Y."
-msgstr "直和型; ``Union[X, Y]`` は X または Y を表します。"
+msgstr "ユニオン型; ``Union[X, Y]`` は X または Y を表します。"
 
 #: ../../library/typing.rst:922
 msgid "To define a union, use e.g. ``Union[int, str]``.  Details:"
-msgstr "直和型を定義します、例えば ``Union[int, str]`` のように使います。詳細:"
+msgstr "ユニオン型を定義します、例えば ``Union[int, str]`` のように使います。詳細:"
 
 #: ../../library/typing.rst:924
 msgid "The arguments must be types and there must be at least one."
@@ -931,11 +931,11 @@ msgstr "引数は型でなければならず、少なくとも一つ必要です
 
 #: ../../library/typing.rst:926
 msgid "Unions of unions are flattened, e.g.::"
-msgstr "直和型の直和型は平滑化されます。例えば::"
+msgstr "ユニオン型のユニオン型は平滑化されます。例えば::"
 
 #: ../../library/typing.rst:930
 msgid "Unions of a single argument vanish, e.g.::"
-msgstr "引数が一つの直和型は消えます。例えば::"
+msgstr "引数が一つのユニオン型は消えます。例えば::"
 
 #: ../../library/typing.rst:934
 msgid "Redundant arguments are skipped, e.g.::"
@@ -943,7 +943,7 @@ msgstr "冗長な実引数は飛ばされます。例えば::"
 
 #: ../../library/typing.rst:938
 msgid "When comparing unions, the argument order is ignored, e.g.::"
-msgstr "直和型を比較するとき引数の順序は無視されます。例えば::"
+msgstr "ユニオン型を比較するとき引数の順序は無視されます。例えば::"
 
 #: ../../library/typing.rst:942
 msgid ""
@@ -952,7 +952,7 @@ msgstr "あるクラスとそのサブクラスが存在するとき、前者は
 
 #: ../../library/typing.rst:946
 msgid "You cannot subclass or instantiate a union."
-msgstr "直和型のサブクラスを作成したり、インスタンスを作成することは出来ません。"
+msgstr "ユニオン型のサブクラスを作成したり、インスタンスを作成することは出来ません。"
 
 #: ../../library/typing.rst:948
 msgid "You cannot write ``Union[X][Y]``."
