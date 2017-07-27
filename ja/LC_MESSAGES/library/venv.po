@@ -108,6 +108,8 @@ msgid ""
 "Alternatively, if you configured the ``PATH`` and ``PATHEXT`` variables for "
 "your :ref:`Python installation <using-on-windows>`::"
 msgstr ""
+"あるいは、 :ref:`インストールされている Python <using-on-windows>` のために ``PATH`` 変数や "
+"``PATHEXT`` 変数が設定してある場合は次のコマンドでも実行できます::"
 
 #: ../../using/venv-create.inc:38
 msgid "The command, if run with ``-h``, will show the available options::"
@@ -160,6 +162,8 @@ msgid ""
 " script in the virtual environment's binary directory. The invocation of the"
 " script is platform-specific:"
 msgstr ""
+"仮想環境の作成が完了すれば、その仮想環境のバイナリディレクトリにあるスクリプトで \"有効化\" できます。\n"
+"スクリプトの呼び出し方はプラットフォーム固有です:"
 
 #: ../../using/venv-create.inc:94
 msgid "Platform"
