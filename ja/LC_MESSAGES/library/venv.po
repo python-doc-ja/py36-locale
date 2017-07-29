@@ -246,6 +246,9 @@ msgid ""
 "there are separate scripts called ``deactivate.bat`` and ``Deactivate.ps1`` "
 "which are installed when the virtual environment is created."
 msgstr ""
+"シェルで \"deactivate\" と入力することで仮想環境を無効化できます。\n"
+"厳密な仕組みはプラットフォーム固有です。\n"
+"例えば、Bash の有効化スクリプトは \"deactivate\" 関数を定義している一方、 Windows では、仮想環境が作成されるときにインストールされる ``deactivate.bat`` と ``Deactivate.ps1`` という個別のスクリプトがあります。"
 
 #: ../../using/venv-create.inc:120
 msgid "``fish`` and ``csh`` activation scripts."
@@ -259,6 +262,10 @@ msgid ""
 "installed in a \"system\" Python, i.e., one which is installed as part of "
 "your operating system."
 msgstr ""
+"仮想環境とは、その中にインストールされた Python "
+"インタープリタ、ライブラリ、そしてスクリプトが、他の仮想環境にインストールされたものから隔離されている Python 環境です。そして "
+"(デフォルトでは) 仮想環境は \"システム\" の Python、すなわち OS の一部としてインストールされた Python "
+"にインストールされている全てのライブラリからも隔離されています。"
 
 #: ../../library/venv.rst:46
 msgid ""
