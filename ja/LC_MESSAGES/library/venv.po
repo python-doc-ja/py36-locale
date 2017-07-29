@@ -234,6 +234,9 @@ msgid ""
 "scripts installed in a virtual environment should be runnable without "
 "activating it, and run with the virtual environment's Python automatically."
 msgstr ""
+"環境を有効化するのに特別な指定は *必要* ありません;\n"
+"有効化は仮想環境のバイナリディレクトリをパスの最初に加えて、 \"python\" で仮想環境の Python インタプリタが呼び出されるようにし、フルパスを入力せずにインストールされたスクリプトを実行できるようにするだけです。\n"
+"しかし、インストールされたすべてのスクリプトは有効化しなくても実行可能で、仮想環境の Python で自動的に実行されなければなりません。"
 
 #: ../../using/venv-create.inc:114
 msgid ""
