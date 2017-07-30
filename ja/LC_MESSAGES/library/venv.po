@@ -271,7 +271,7 @@ msgstr ""
 msgid ""
 "A virtual environment is a directory tree which contains Python executable "
 "files and other files which indicate that it is a virtual environment."
-msgstr ""
+msgstr "仮想環境は、 Python 実行ファイルと、それが仮想環境であることを示す幾つかのファイルを含んだディレクトリツリーです。"
 
 #: ../../library/venv.rst:49
 msgid ""
@@ -294,6 +294,9 @@ msgid ""
 ":attr:`sys.base_exec_prefix` (they all point to a non-virtual environment "
 "Python installation)."
 msgstr ""
+"仮想環境が有効な場合 (すなわち、仮想環境の Python インタープリタを実行しているとき)、 :attr:`sys.prefix` と :attr:`sys.exec_prefix` は仮想環境のベースディレクトリを示します。\n"
+"代わりに :attr:`sys.base_prefix` と :attr:`sys.base_exec_prefix` が仮想環境を作るときに使った、仮想環境ではない環境の Python がインストールされている場所を示します。\n"
+"仮想環境が無効の時は、 :attr:`sys.prefix` は :attr:`sys.base_prefix` と、 :attr:`sys.exec_prefix` は :attr:`sys.base_exec_prefix` と同じになります (全て仮想環境ではない環境の Python のインストール場所を示します)。"
 
 #: ../../library/venv.rst:65
 msgid ""
