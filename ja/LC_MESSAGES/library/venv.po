@@ -280,6 +280,8 @@ msgid ""
 "environment is active, they install Python packages into the virtual "
 "environment without needing to be told to do so explicitly."
 msgstr ""
+"``Setuptools`` や ``pip`` などの一般的なインストールツールは期待通りに仮想環境と連係します。\n"
+"言い換えると、仮想環境が有効なときには、 Python パッケージを仮想環境へインストールするのに、インストールツールへの明示的な指示は必要ありません。"
 
 #: ../../library/venv.rst:54
 msgid ""
