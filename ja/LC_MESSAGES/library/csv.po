@@ -213,6 +213,8 @@ msgid ""
 "information in each row to an :mod:`OrderedDict <collections.OrderedDict>` "
 "whose keys are given by the optional *fieldnames* parameter."
 msgstr ""
+"通常の reader のように動作しますが、個々の列の情報を :mod:`OrderedDict <collections.OrderedDict>` "
+"にマップするオブジェクトを生成します。マップのキーは省略可能な *fieldnames* パラメータで与えられます。"
 
 #: ../../library/csv.rst:156
 msgid ""
@@ -221,6 +223,9 @@ msgid ""
 "fieldnames.  Regardless of how the fieldnames are determined, the ordered "
 "dictionary preserves their original ordering."
 msgstr ""
+"*fieldnames* パラメータは :term:`sequence` です。 *fieldnames* が省略された場合、ファイル *f* "
+"の最初の列の値が fieldnames として使われます。 *fieldnames* がどのように決定されるかに関わらず、整列された (ordered)"
+" 辞書はそれらのオリジナルの順番を維持します。"
 
 #: ../../library/csv.rst:161
 msgid ""
@@ -229,16 +234,19 @@ msgid ""
 " ``None``).  If a non-blank row has fewer fields than fieldnames, the "
 "missing values are filled-in with ``None``."
 msgstr ""
+"列が fieldnames より多くのフィールドを持っていた場合、残りのデータはリストに入れられて、 *restkey* により指定されたフィールド名 "
+"(デフォルトでは ``None``) で保存されます。非ブランクの列が fieldnames よりも少ないフィールドしか持たない場合、不明の値は "
+"``None`` によって埋められます。"
 
 #: ../../library/csv.rst:166
 msgid ""
 "All other optional or keyword arguments are passed to the underlying "
 ":class:`reader` instance."
-msgstr ""
+msgstr "その他の省略可能またはキーワード形式のパラメータは、ベースになっている :class:`reader` インスタンスに渡されます。"
 
 #: ../../library/csv.rst:169
 msgid "Returned rows are now of type :class:`OrderedDict`."
-msgstr ""
+msgstr "返される列の型は :class:`OrderedDict` になりました。"
 
 #: ../../library/csv.rst:190
 msgid ""
@@ -255,6 +263,13 @@ msgid ""
 "other optional or keyword arguments are passed to the underlying "
 ":class:`writer` instance."
 msgstr ""
+"通常の writer のように動作しますが、辞書を出力行にマップするオブジェクトを生成します。 *fieldnames* "
+"パラメータは、:meth:`writerow` メソッドに渡された辞書の値がどのような順番でファイル *f* に書かれるかを指定するキーの "
+":mod:`sequence <collections.abc>` です。 :meth:`writerow` メソッドに渡された辞書に "
+"*fieldnames* には存在しないキーが含まれている場合、オプションの *extrasaction* "
+"パラメータによってどんな動作を行うかが指定されます。この値がデフォルト値である ``'raise'`` に設定されている場合、 "
+":exc:`ValueError` が送出されます。 ``'ignore'`` "
+"に設定されている場合、辞書の余分な値は無視されます。その他のパラメータはベースになっている :class:`writer` インスタンスに渡されます。"
 
 #: ../../library/csv.rst:205
 msgid ""
@@ -263,6 +278,9 @@ msgid ""
 "objects are not ordered, there is not enough information available to deduce"
 " the order in which the row should be written to file *f*."
 msgstr ""
+":class:`DictReader` クラスとは異なり、 :class:`DictWriter` の *fieldnames* "
+"パラメータは省略可能ではありません。 Pythonの :class:`dict` オブジェクトは整列されていないので、列をファイル *f* "
+"に書き込む際の順序を推定するために十分な情報が不足しているためです。"
 
 #: ../../library/csv.rst:226
 msgid ""
