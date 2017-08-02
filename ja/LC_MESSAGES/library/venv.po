@@ -307,6 +307,8 @@ msgid ""
 "prevent projects being inadvertently installed outside of the virtual "
 "environment."
 msgstr ""
+"仮想環境が有効なときに、不注意で仮想環境の外にプロジェクトがインストールされることを避けるために、インストールパスを変更するあらゆるオプションは "
+"distutils の全ての設定ファイルによって無視されます。"
 
 #: ../../library/venv.rst:70
 msgid ""
