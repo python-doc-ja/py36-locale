@@ -286,6 +286,10 @@ msgid ""
 " The outcome of parameterizing generics is cached, and most types in the "
 "typing module are hashable and comparable for equality."
 msgstr ""
+":class:`Generic` に用いられているメタクラスは :class:`abc.ABCMeta` のサブクラスです。\n"
+"ジェネリッククラスは抽象メソッドや抽象プロパティを含めることで抽象基底クラスになれ、ジェネリッククラスはメタクラスの衝突を起こすことなく基底クラスに抽象基底クラスをとれます。\n"
+"ジェネリックメタクラスはサポートされません。\n"
+"パラメータ化を行うジェネリクスの結果はキャッシュされていて、 typing モジュールのほとんどの型はハッシュ化でき、等価比較できます。"
 
 #: ../../library/typing.rst:309
 msgid "The :data:`Any` type"
