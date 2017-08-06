@@ -205,7 +205,7 @@ msgid ""
 " inferred in a generic way, abstract base classes have been extended to "
 "support subscription to denote expected types for container elements."
 msgstr ""
-"コンテナ内のオブジェクトについての型情報を一般的な方法では静的に推論出来ないため、抽象基底クラスがコンテナの要素について期待される型を示すために添字表記をサポートするように拡張されました。"
+"コンテナ内のオブジェクトについての型情報は一般的な方法では静的に推論出来ないため、抽象基底クラスが拡張され、コンテナの要素に対して期待される型を示すために添字表記をサポートするようになりました。"
 
 #: ../../library/typing.rst:178
 msgid ""
