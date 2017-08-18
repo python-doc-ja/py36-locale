@@ -558,6 +558,9 @@ msgid ""
 "by extension, integer enumerations of different types can also be compared "
 "to each other::"
 msgstr ""
+"提供されている 1 つ目の :class:`Enum` の派生型であり、 :class:`int` のサブクラスでもあります。\n"
+":class:`IntEnum` のメンバーは整数と比較できます;\n"
+"さらに言うと、異なる整数列挙型どうしでも比較できます::"
 
 #: ../../library/enum.rst:563
 msgid ""
