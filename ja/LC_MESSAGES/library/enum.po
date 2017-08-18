@@ -588,7 +588,7 @@ msgid ""
 "operations will lose the :class:`IntFlag` membership."
 msgstr ""
 "提供されている 2 つ目の :class:`Enum` の派生型 :class:`IntFlag` も :class:`int` を基底クラスとしています。\n"
-":class:`IntFlag` メンバーが  :class:`IntEnum` メンバーと異なるのは、ビット演算子 (&, \\|, ^, ~) を使って組み合わせられ、その結果も :class:`IntFlag` メンバーになることです。\n"
+":class:`IntFlag` メンバーが  :class:`Enum` メンバーと異なるのは、ビット演算子 (&, \\|, ^, ~) を使って組み合わせられ、その結果も :class:`IntFlag` メンバーになることです。\n"
 "しかし、名前が示すように、 :class:`IntFlag` は :class:`int` のサブクラスでもあり、 :class:`int` が使われるところでもどこでも使えます。\n"
 ":class:`IntFlag` メンバーに対してビット演算以外のどんな演算をしても、その結果は :class:`IntFlag` メンバーではなくなります。"
 
@@ -606,12 +606,14 @@ msgid ""
 "that if no flags are set (the value is 0), its boolean evaluation is "
 ":data:`False`::"
 msgstr ""
+":class:`IntFlag` と :class:`Enum` のもう 1 つの重要な違いは、フラグが設定されていない (値が0である) "
+"場合、その真偽値としての評価は :data:`False` になることです::"
 
 #: ../../library/enum.rst:635
 msgid ""
 "Because :class:`IntFlag` members are also subclasses of :class:`int` they "
 "can be combined with them::"
-msgstr ""
+msgstr ":class:`IntFlag` は :class:`int` のサブクラスでもあるので、その両者を組み合わせられます::"
 
 #: ../../library/enum.rst:643
 msgid "Flag"
