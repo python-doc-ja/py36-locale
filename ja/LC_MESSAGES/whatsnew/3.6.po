@@ -113,12 +113,14 @@ msgid ""
 "The order of elements in ``**kwargs`` now :ref:`corresponds to the order "
 "<whatsnew36-pep468>` in which keyword arguments were passed to the function."
 msgstr ""
+"``**kwargs`` の要素の順序が、キーワード引数が関数に渡された :ref:`順序に対応した <whatsnew36-pep468>` "
+"ものになりました。"
 
 #: ../../whatsnew/3.6.rst:97
 msgid ""
 "DTrace and SystemTap :ref:`probing support <whatsnew36-tracing>` has been "
 "added."
-msgstr ""
+msgstr "DTrace と SystemTap の :ref:`プローブのサポート <whatsnew36-tracing>` が追加されました。"
 
 #: ../../whatsnew/3.6.rst:100
 msgid ""
