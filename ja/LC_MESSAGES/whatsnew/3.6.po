@@ -93,12 +93,14 @@ msgid ""
 "implementation`_.  This resulted in dictionaries using 20% to 25% less "
 "memory when compared to Python 3.5."
 msgstr ""
+":ref:`dict <typesmapping>` 型は、 Raymond Hettinger <https://mail.python.org/pipermail/python-dev/2012-December/123028.html>`_ の提案に基づき、 `PyPy dict implementation`_ と同様の :ref:`よりコンパクトな表現 <whatsnew36-compactdict>` を使うように再実装されました。\n"
+"その結果、 Python 3.5 と比較して辞書が使うメモリ 20% から 25% 減少しました。"
 
 #: ../../whatsnew/3.6.rst:87
 msgid ""
 "Customization of class creation has been simplified with the :ref:`new "
 "protocol <whatsnew36-pep487>`."
-msgstr ""
+msgstr ":ref:`新しいプロトコル <whatsnew36-pep487>` により、クラス生成のカスタマイズがより簡単になりました。"
 
 #: ../../whatsnew/3.6.rst:90
 msgid ""

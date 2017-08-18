@@ -587,14 +587,18 @@ msgid ""
 " is used.  Any operation on an :class:`IntFlag` member besides the bit-wise "
 "operations will lose the :class:`IntFlag` membership."
 msgstr ""
+"提供されている 2 つ目の :class:`Enum` の派生型 :class:`IntFlag` も :class:`int` を基底クラスとしています。\n"
+":class:`IntFlag` メンバーが  :class:`IntEnum` メンバーと異なるのは、ビット演算子 (&, \\|, ^, ~) を使って組み合わせられ、その結果も :class:`IntFlag` メンバーになることです。\n"
+"しかし、名前が示すように、 :class:`IntFlag` は :class:`int` のサブクラスでもあり、 :class:`int` が使われるところでもどこでも使えます。\n"
+":class:`IntFlag` メンバーに対してビット演算以外のどんな演算をしても、その結果は :class:`IntFlag` メンバーではなくなります。"
 
 #: ../../library/enum.rst:599
 msgid "Sample :class:`IntFlag` class::"
-msgstr ""
+msgstr ":class:`IntFlag` クラスの例::"
 
 #: ../../library/enum.rst:615
 msgid "It is also possible to name the combinations::"
-msgstr ""
+msgstr "組み合わせにも名前を付けられます::"
 
 #: ../../library/enum.rst:627
 msgid ""
