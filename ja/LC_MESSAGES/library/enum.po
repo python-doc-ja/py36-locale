@@ -628,24 +628,30 @@ msgid ""
 "specify the values directly it is recommended to use :class:`auto` as the "
 "value and let :class:`Flag` select an appropriate value."
 msgstr ""
+"最後の派生型は :class:`Flag` です。\n"
+":class:`IntFlag` と同様に、 :class:`Flag` メンバーもビット演算子 (&, \\|, ^, ~) を使って組み合わせられます。\n"
+"しかし :class:`IntFlag` とは違い、他のどの :class:`Flag` 列挙型とも :class:`int` とも組み合わせたり、比較したりできません。\n"
+"値を直接指定することも可能ですが、値として :class:`auto` を使い、 :class:`Flag` に適切な値を選ばせることが推奨されています。"
 
 #: ../../library/enum.rst:654
 msgid ""
 "Like :class:`IntFlag`, if a combination of :class:`Flag` members results in "
 "no flags being set, the boolean evaluation is :data:`False`::"
 msgstr ""
+":class:`IntFlag` と同様に、 :class:`Flag` "
+"メンバーの組み合わせがどのフラグも設定されていない状態になった場合、その真偽値としての評価は :data:`False` となります::"
 
 #: ../../library/enum.rst:668
 msgid ""
 "Individual flags should have values that are powers of two (1, 2, 4, 8, "
 "...), while combinations of flags won't::"
-msgstr ""
+msgstr "個別のフラグは 2 のべき乗 (1, 2, 4, 8, ...) の値を持つべきですが、フラグの組み合わせはそうはなりません::"
 
 #: ../../library/enum.rst:680
 msgid ""
 "Giving a name to the \"no flags set\" condition does not change its boolean "
 "value::"
-msgstr ""
+msgstr "\"フラグが設定されていない\" 状態に名前を付けても、その真偽値は変わりません::"
 
 #: ../../library/enum.rst:696
 msgid ""
@@ -657,6 +663,10 @@ msgid ""
 ":class:`Flag` will not do; for example, when integer constants are replaced "
 "with enumerations, or for interoperability with other systems."
 msgstr ""
+"ほとんどの新しいコードでは、 :class:`Enum` と :class:`Flag` が強く推奨されます。\n"
+"というのは、 :class:`IntEnum` と :class:`IntFlag` は (整数と比較でき、従って推移的に他の無関係な列挙型と比較できてしまうことにより) 列挙型の意味論的な約束に反するからです。\n"
+":class:`IntEnum` と :class:`IntFlag` は、 :class:`Enum` や :class:`Flag` では上手くいかない場合のみに使うべきです;\n"
+"例えば、整数定数を列挙型で置き換えるときや、他のシステムとの相互運用性を持たせたいときです。"
 
 #: ../../library/enum.rst:706
 msgid "Others"
