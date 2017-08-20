@@ -708,9 +708,8 @@ msgid ""
 "add methods and don't specify another data type such as :class:`int` or "
 ":class:`str`."
 msgstr ""
-":class:`Enum` はあらゆるデータ型のメンバーを持てますが、いったん追加のデータ型 (:class:`int` や :class:`str` "
-"など) と複合させた後は、すべてのメンバーの値は、上記 :class:`int` "
-"のようにそのデータ型でなければならなくなります。この制限はメソッドの追加に対してのみ適用されません。"
+":class:`Enum` のメンバーはどんなデータ型でも構いませんが、追加のデータ型 (例えば、上の例の :class:`int`) と複合させてしまうと、すべてのメンバーの値はそのデータ型でなければならなくなります。\n"
+"この制限は、メソッドの追加するだけの、 :class:`int` や :class:`str` のような他のデータ型を指定しない複合には適用されません。"
 
 #: ../../library/enum.rst:727
 msgid ""
