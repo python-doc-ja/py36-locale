@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: cocoatomo <cocoatomo77@gmail.com>, 2017\n"
+"Last-Translator: Arihiro TAKASE <artakase@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -509,11 +509,11 @@ msgid ""
 "(values will start at 1 unless otherwise specified)::"
 msgstr ""
 "Enum のメンバーです。\n"
-"空白またはカンマで区切った文字列でも構いません (特記ない限り値は 1 から始まります)::"
+"空白またはカンマで区切った文字列でも構いません (特に指定がない限り、値は 1 から始まります)::"
 
 #: ../../library/enum.rst:512
 msgid "or an iterator of names::"
-msgstr "または名前のイテレータで::"
+msgstr "または名前のイテレータで指定もできます::"
 
 #: ../../library/enum.rst:516
 msgid "or an iterator of (name, value) pairs::"
@@ -525,15 +525,15 @@ msgstr "またはマッピングでも指定できます::"
 
 #: ../../library/enum.rst:524
 msgid "name of module where new Enum class can be found."
-msgstr "新しい Enum クラスが見つかるモジュールの名前です。"
+msgstr "新しい Enum クラスが属するモジュールの名前です。"
 
 #: ../../library/enum.rst:526
 msgid "where in module new Enum class can be found."
-msgstr "新しい Enum クラスが見つかるモジュールの場所です。"
+msgstr "新しい Enum クラスが属するモジュールの場所です。"
 
 #: ../../library/enum.rst:528
 msgid "type to mix in to new Enum class."
-msgstr "新しい Enum クラスに混ぜるデータ型です。"
+msgstr "新しい Enum クラスに複合されるデータ型です。"
 
 #: ../../library/enum.rst:530
 msgid "number to start counting at if only names are passed in."
@@ -717,8 +717,8 @@ msgid ""
 "same* as the enum member itself, although it is equivalent and will compare "
 "equal."
 msgstr ""
-"他のデータ型と複合させた場合、:attr:`value` 属性は、それが等価であり、等価であると比較が行えても、列挙型メンバー自身とは "
-"*同じではありません*。"
+"他のデータ型と複合された場合、 :attr:`value` 属性は、たとえ等価であり等価であると比較が行えても、列挙型メンバー自身としては "
+"*同じではありません* 。"
 
 #: ../../library/enum.rst:730
 msgid ""
@@ -726,9 +726,8 @@ msgid ""
 ":meth:`__str__` and :meth:`__repr__` respectively; other codes (such as `%i`"
 " or `%h` for IntEnum) treat the enum member as its mixed-in type."
 msgstr ""
-"%-方式の書式:  `%s` および `%r` はそれぞれ :class:`Enum` クラスの :meth:`__str__` および "
-":meth:`__repr__` を呼び出します。その他のコード (IntEnum の `%i` や `%h` など) "
-"は列挙型のメンバーを複合されたデータ型とみなします。"
+"%-方式の書式:  `%s` および `%r` はそれぞれ :class:`Enum` クラスの :meth:`__str__` および :meth:`__repr__` を呼び出します;\n"
+"その他のコード (IntEnum の `%i` や `%h` など) は列挙型のメンバーを複合されたデータ型として扱います。"
 
 #: ../../library/enum.rst:733
 msgid ""
@@ -737,6 +736,8 @@ msgid ""
 ":class:`Enum` class's :func:`str` or :func:`repr` is desired, use the `!s` "
 "or `!r` format codes."
 msgstr ""
+":ref:`フォーマット済み文字列リテラル <f-strings>` 、 :meth:`str.format` 、 :func:`format` では、複合されたデータ型の :meth:`__format__` が使われます。\n"
+":class:`Enum` クラスの :func:`str` や :func:`repr` を使って欲しいときは、フォーマットのコードで `!s` および `!r` を使ってください。"
 
 #: ../../library/enum.rst:740
 msgid "Interesting examples"
@@ -749,34 +750,38 @@ msgid ""
 "  Here are recipes for some different types of enumerations that can be used"
 " directly, or as examples for creating one's own."
 msgstr ""
+":class:`Enum`, :class:`IntEnum`, :class:`IntFlag`, :class:`Flag` は用途の大部分をカバーすると予想されますが、そのすべてをカバーできているわけではありません。\n"
+"ここでは、そのまま、あるいは独自の列挙型を作る例として使える、様々なタイプの列挙型を紹介します。"
 
 #: ../../library/enum.rst:749
 msgid "Omitting values"
-msgstr ""
+msgstr "値の省略"
 
 #: ../../library/enum.rst:751
 msgid ""
 "In many use-cases one doesn't care what the actual value of an enumeration "
 "is. There are several ways to define this type of simple enumeration:"
 msgstr ""
+"多くの用途では、列挙型の実際の値が何かは気にされません。\n"
+"このタイプの単純な列挙型を定義する方法はいくつかあります:"
 
 #: ../../library/enum.rst:754
 msgid "use instances of :class:`auto` for the value"
-msgstr ""
+msgstr "値に :class:`auto` インスタンスを使用する"
 
 #: ../../library/enum.rst:755
 msgid "use instances of :class:`object` as the value"
-msgstr ""
+msgstr "値として :class:`object` インスタンスを使用する"
 
 #: ../../library/enum.rst:756
 msgid "use a descriptive string as the value"
-msgstr ""
+msgstr "値として解説文字列を使用する"
 
 #: ../../library/enum.rst:757
 msgid ""
 "use a tuple as the value and a custom :meth:`__new__` to replace the tuple "
 "with an :class:`int` value"
-msgstr ""
+msgstr "値としてタプルを使用し、独自の :meth:`__new__` を使用してタプルを :class:`int` 値で置き換える"
 
 #: ../../library/enum.rst:760
 msgid ""
@@ -784,44 +789,45 @@ msgid ""
 "important, and also enables one to add, remove, or reorder members without "
 "having to renumber the remaining members."
 msgstr ""
+"これらのどの方法を使ってもユーザーに対して、値は重要ではなく、他のメンバーの番号の振り直しをする必要無しに、メンバーの追加、削除、並べ替えが行えるということを示せます。"
 
 #: ../../library/enum.rst:764
 msgid ""
 "Whichever method you choose, you should provide a :meth:`repr` that also "
 "hides the (unimportant) value::"
-msgstr ""
+msgstr "どの方法を選んでも、(重要でない) 値を隠す :meth:`repr` を提供すべきです::"
 
 #: ../../library/enum.rst:774
 msgid "Using :class:`auto`"
-msgstr ""
+msgstr ":class:`auto` を使う"
 
 #: ../../library/enum.rst:776
 msgid "Using :class:`auto` would look like::"
-msgstr ""
+msgstr ":class:`auto` を使うと次のようになります::"
 
 #: ../../library/enum.rst:788
 msgid "Using :class:`object`"
-msgstr ""
+msgstr ":class:`object` を使う"
 
 #: ../../library/enum.rst:790
 msgid "Using :class:`object` would look like::"
-msgstr ""
+msgstr ":class:`object` を使うと次のようになります::"
 
 #: ../../library/enum.rst:802
 msgid "Using a descriptive string"
-msgstr ""
+msgstr "解説文字列を使う"
 
 #: ../../library/enum.rst:804
 msgid "Using a string as the value would look like::"
-msgstr ""
+msgstr "値として文字列を使うと次のようになります::"
 
 #: ../../library/enum.rst:818
 msgid "Using a custom :meth:`__new__`"
-msgstr ""
+msgstr "独自の :meth:`__new__` を使う"
 
 #: ../../library/enum.rst:820
 msgid "Using an auto-numbering :meth:`__new__` would look like::"
-msgstr ""
+msgstr "自動で番号を振る :meth:`__new__` を使うと次のようになります::"
 
 #: ../../library/enum.rst:842
 msgid ""
@@ -928,13 +934,15 @@ msgstr "細かい点"
 
 #: ../../library/enum.rst:979
 msgid "Supported ``__dunder__`` names"
-msgstr ""
+msgstr "``__dunder__`` 名のサポート"
 
 #: ../../library/enum.rst:981
 msgid ""
 ":attr:`__members__` is an :class:`OrderedDict` of ``member_name``:``member``"
 " items.  It is only available on the class."
 msgstr ""
+":attr:`__members__` は ``member_name``:``member`` を要素とする :class:`OrderedDict` です。\n"
+"これはクラスでのみ利用可能です。"
 
 #: ../../library/enum.rst:984
 msgid ""
@@ -942,25 +950,28 @@ msgid ""
 "is also a very good idea to set the member's :attr:`_value_` appropriately."
 "  Once all the members are created it is no longer used."
 msgstr ""
+":meth:`__new__` が、もし指定されていた場合、列挙型のメンバーを作成し、返します;\n"
+"そのメンバー の :attr:`_value_` を適切に設定するのも非常によい考えです。\n"
+"いったん全てのメンバーが作成されると、それ以降 :meth:`__new__` は使われません。"
 
 #: ../../library/enum.rst:990
 msgid "Supported ``_sunder_`` names"
-msgstr ""
+msgstr "``_sunder_`` 名のサポート"
 
 #: ../../library/enum.rst:992
 msgid "``_name_`` -- name of the member"
-msgstr ""
+msgstr "``_name_`` -- メンバー名"
 
 #: ../../library/enum.rst:993
 msgid ""
 "``_value_`` -- value of the member; can be set / modified in ``__new__``"
-msgstr ""
+msgstr "``_value_`` -- メンバーの値; ``__new__`` で設定したり、変更したりできます"
 
 #: ../../library/enum.rst:995
 msgid ""
 "``_missing_`` -- a lookup function used when a value is not found; may be "
 "overridden"
-msgstr ""
+msgstr "``_missing_`` -- 値が見付からなかったときに使われるルックアップ関数; オーバーライドされていることがあります"
 
 #: ../../library/enum.rst:997
 msgid ""
