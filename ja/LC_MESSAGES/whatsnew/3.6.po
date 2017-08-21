@@ -113,7 +113,7 @@ msgid ""
 "The order of elements in ``**kwargs`` now :ref:`corresponds to the order "
 "<whatsnew36-pep468>` in which keyword arguments were passed to the function."
 msgstr ""
-"``**kwargs`` の要素の順序が、キーワード引数が関数に渡された :ref:`順序に対応した <whatsnew36-pep468>` "
+"``**kwargs`` の要素の順序が、キーワード引数が関数に渡されたときの :ref:`順序に一致した <whatsnew36-pep468>` "
 "ものになりました。"
 
 #: ../../whatsnew/3.6.rst:97
