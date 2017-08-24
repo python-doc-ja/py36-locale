@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: shirou - しろう <shirou.faw@gmail.com>, 2017\n"
+"Last-Translator: cocoatomo <cocoatomo77@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -951,6 +951,8 @@ msgid ""
 "started - it can be exited as normal, and any additional command-line "
 "arguments specified will be sent directly to Python."
 msgstr ""
+"インストールされている最新バージョンの Python が起動するはずです。\n"
+"通常どおりに終了することもできますし、追加のコマンドライン引数を指定して直接 Python に渡すこともできます。"
 
 #: ../../using/windows.rst:461
 msgid ""
@@ -958,16 +960,18 @@ msgid ""
 "you will have noticed that Python |version| was started - to launch Python "
 "2.7, try the command:"
 msgstr ""
+"複数のバージョンの Python (たとえば 2.7 と |version|) がインストールされている場合は、Python |version| "
+"が起動することになります。Python 2.7 を起動したいなら、次のコマンドを実行してみてください:"
 
 #: ../../using/windows.rst:469
 msgid ""
 "If you want the latest version of Python 2.x you have installed, try the "
 "command:"
-msgstr ""
+msgstr "インストールしてある Python 2.x の最新バージョンを起動したい場合は、次のコマンドを実行してみてください:"
 
 #: ../../using/windows.rst:476
 msgid "You should find the latest version of Python 2.x starts."
-msgstr ""
+msgstr "最新バージョンの Python 2.x が起動するはずです。"
 
 #: ../../using/windows.rst:478
 msgid ""
