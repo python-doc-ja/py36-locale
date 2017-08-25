@@ -1032,7 +1032,7 @@ msgid ""
 " first line to ``#! python2.6`` and you should find the 2.6 version "
 "information printed."
 msgstr ""
-"コマンドを再実行すると、今度は最新の Python 3.3 "
+"コマンドを再実行すると、今度は最新の Python 3.x "
 "の情報が表示されるはずです。これまでのコマンドラインの例と同様に、より細かいバージョン修飾子を指定することもできます。Python 2.6 "
 "がインストールされている場合、最初の行を ``#! python2.6`` に変更すると、2.6 のバージョン情報が表示されるはずです。"
 
