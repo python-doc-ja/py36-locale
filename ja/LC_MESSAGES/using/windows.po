@@ -549,6 +549,8 @@ msgid ""
 "name of your installer, and to create layouts in their own directories to "
 "avoid collisions between files with the same name."
 msgstr ""
+"コマンドプロンプトから以下のコマンドを実行して、必要なファイルをできる限り全てダウンロードします。\n"
+"``python-3.6.0.exe`` 部分は実際のインストーラの名前に置き換え、同名のファイルどうしの衝突が起こらないように、個別のディレクトリ内に配置場所を作るのを忘れないようにしてください。"
 
 #: ../../using/windows.rst:245
 msgid ""
