@@ -339,7 +339,7 @@ msgstr ":meth:`__iter__` メソッドを提供するクラスの ABC です。 :
 
 #: ../../library/collections.abc.rst:114
 msgid "ABC for sized iterable container classes."
-msgstr ""
+msgstr "サイズ付きのイテラブルなコンテナクラスの ABC です。"
 
 #: ../../library/collections.abc.rst:120
 msgid ""
@@ -353,7 +353,7 @@ msgstr ""
 #: ../../library/collections.abc.rst:126
 msgid ""
 "ABC for iterable classes that also provide the :meth:`__reversed__` method."
-msgstr ""
+msgstr ":meth:`__reversed__` メソッドを提供するイテラブルクラスの ABC です。"
 
 #: ../../library/collections.abc.rst:133
 msgid ""
