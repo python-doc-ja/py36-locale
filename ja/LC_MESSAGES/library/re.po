@@ -975,7 +975,7 @@ msgstr "``'\\u'`` と ``'\\U'`` エスケープシーケンスが追加されま
 #: ../../library/re.rst:464
 msgid ""
 "Unknown escapes consisting of ``'\\'`` and an ASCII letter now are errors."
-msgstr "``'\\'``とASCII文字からなる未知のエスケープは、エラーになります。"
+msgstr "``'\\'`` と ASCII 文字からなる未知のエスケープはエラーになります。"
 
 #: ../../library/re.rst:472
 msgid "Mastering Regular Expressions"
