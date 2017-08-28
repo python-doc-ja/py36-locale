@@ -1354,7 +1354,7 @@ msgstr "マッチしないグループは空文字列に置き換えられます
 msgid ""
 "Unknown escapes in *pattern* consisting of ``'\\'`` and an ASCII letter now "
 "are errors."
-msgstr "*pattern* 中に``'\\'``とASCII文字からなる未知のエスケープがあると、エラーになります。"
+msgstr "*pattern* 中に ``'\\'`` と ASCII 文字からなる未知のエスケープがあると、エラーになります。"
 
 #: ../../library/re.rst:772
 msgid ""
