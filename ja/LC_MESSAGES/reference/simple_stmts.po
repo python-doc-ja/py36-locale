@@ -392,19 +392,19 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:319
 msgid "Annotated assignment statements"
-msgstr "アノテート付き代入文 (annotated assignment statements)"
+msgstr "注釈付き代入文 (annotated assignment statements)"
 
 #: ../../reference/simple_stmts.rst:325
 msgid ""
 "Annotation assignment is the combination, in a single statement, of a "
 "variable or attribute annotation and an optional assignment statement:"
-msgstr ""
+msgstr "注釈代入は、1 つの文の中で、変数や属性の注釈とオプションの代入文を組み合わせたものです:"
 
 #: ../../reference/simple_stmts.rst:331
 msgid ""
 "The difference from normal :ref:`assignment` is that only single target and "
 "only single right hand side value is allowed."
-msgstr ":ref:`assignment` との違いは、代入先が一つに限定され右手側の値も１つに限定されることです。"
+msgstr ":ref:`assignment` との違いは、代入先が 1 つに限定され右辺の値も 1 つに限定されることです。"
 
 #: ../../reference/simple_stmts.rst:334
 msgid ""
