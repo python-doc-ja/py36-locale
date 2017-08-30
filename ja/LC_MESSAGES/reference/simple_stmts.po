@@ -387,7 +387,7 @@ msgid ""
 "class and instance attributes <attr-target-note>` applies as for regular "
 "assignments."
 msgstr ""
-"属性参照のターゲットの場合、 :ref:`クラスとインスタンスの属性についての注意 <attr-target-note>` "
+"属性参照のターゲットの場合、 :ref:`クラス属性とインスタンス属性についての注意 <attr-target-note>` "
 "と同様に通常の代入が適用されます。"
 
 #: ../../reference/simple_stmts.rst:319
@@ -415,6 +415,9 @@ msgid ""
 "and is automatically created at the start of class or module body execution,"
 " if annotations are found statically."
 msgstr ""
+"代入先として単純名を使うと、クラススコープもしくはモジュールスコープの場合、注釈は評価され、クラスもしくはモジュールの特殊属性 :attr:`__annotations__` に格納されます。\n"
+"この属性は、変数名 (プライベート変数の場合はマングリングされた名前) から評価後の注釈への対応付けを持つ辞書です。\n"
+"この属性は書き込み可能であり、注釈が静的に存在している場合、クラスもしくはモジュールの本体の実行の先頭で自動的に作成されます。"
 
 #: ../../reference/simple_stmts.rst:342
 msgid ""
