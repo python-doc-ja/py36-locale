@@ -423,13 +423,15 @@ msgstr ""
 msgid ""
 "For expressions as assignment targets, the annotations are evaluated if in "
 "class or module scope, but not stored."
-msgstr ""
+msgstr "代入先として式を使うと、クラススコープもしくはモジュールスコープの場合、注釈は評価されますが、格納されません。"
 
 #: ../../reference/simple_stmts.rst:345
 msgid ""
 "If a name is annotated in a function scope, then this name is local for that"
 " scope. Annotations are never evaluated and stored in function scopes."
 msgstr ""
+"関数スコープで名前に注釈が付いていた場合は、その名前はその関数スコープでローカルなものになります。\n"
+"注釈は絶対に評価されず、関数スコープにも格納されません。"
 
 #: ../../reference/simple_stmts.rst:348
 msgid ""
