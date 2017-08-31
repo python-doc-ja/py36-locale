@@ -599,6 +599,8 @@ msgid ""
 ":exc:`StopAsyncIteration` to be raised.  A non-empty :keyword:`return` "
 "statement is a syntax error in an asynchronous generator function."
 msgstr ""
+"非同期ジェネレータ関数では、引数無しの :keyword:`return` 文は非同期ジェネレータの終わりを示し、 :exc:`StopAsyncIteration` を送出させます。\n"
+"引数ありの :keyword:`return` 文は、非同期ジェネレータ関数では文法エラーです。"
 
 #: ../../reference/simple_stmts.rst:503
 msgid "The :keyword:`yield` statement"
@@ -1123,6 +1125,8 @@ msgid ""
 "definition, function definition, :keyword:`import` statement, or variable "
 "annotation."
 msgstr ""
+":keyword:`global` 文で列挙する名前は、 :keyword:`for` ループのループ制御ターゲットや、 "
+":keyword:`class` 定義、関数定義、 :keyword:`import` 文、変数注釈で仮引数として使ってはなりません。"
 
 #: ../../reference/simple_stmts.rst:916
 msgid ""
