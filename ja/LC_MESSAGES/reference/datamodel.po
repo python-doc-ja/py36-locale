@@ -980,6 +980,9 @@ msgid ""
 "object which can be used in an :keyword:`async for` statement to execute the"
 " body of the function."
 msgstr ""
+":keyword:`async def` を使って定義され、 :keyword:`yield` 文を使用している関数やメソッドを :dfn:`asynchronous generator function` と呼びます。\n"
+"そのような関数は、呼び出されたとき、非同期イテレータオブジェクトを返します。\n"
+"このオブジェクトは :keyword:`async for` 文で関数の本体を実行するのに使えます。"
 
 #: ../../reference/datamodel.rst:641
 msgid ""
