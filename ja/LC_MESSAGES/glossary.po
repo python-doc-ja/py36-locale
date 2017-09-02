@@ -209,6 +209,8 @@ msgid ""
 " the body of the asynchronous generator function until the next "
 ":keyword:`yield` expression."
 msgstr ""
+"これは、 :meth:`__anext__` メソッドを使って呼び出されたときに awaitable オブジェクトを返す :term:`asynchronous iterator` です。\n"
+"この awaitable オブジェクトは、次の :keyword:`yield` 式までの非同期ジェネレータ関数の本体を実行します。"
 
 #: ../../glossary.rst:99
 msgid ""
@@ -218,6 +220,9 @@ msgid ""
 " with another awaitable returned by :meth:`__anext__`, it picks-up where it "
 "left-off.  See :pep:`492` and :pep:`525`."
 msgstr ""
+":keyword:`yield` にくるたびに、その位置での実行状態 (ローカル変数と保留状態の try 文) 処理は一時停止されます。\n"
+":meth:`__anext__` で返された他の awaitable によって *非同期ジェネレータイテレータ* が実際に再開されたとき、中断した箇所を取得します。\n"
+":pep:`492` および :pep:`525` を参照してください。"
 
 #: ../../glossary.rst:104
 msgid "asynchronous iterable"
@@ -304,10 +309,13 @@ msgid ""
 ":data:`sys.stdout.buffer`, and instances of :class:`io.BytesIO` and "
 ":class:`gzip.GzipFile`."
 msgstr ""
+"(バイナリファイル)\n"
+":term:`bytes-like オブジェクト <bytes-like object>` の読み込みおよび書き込みができる :term:`<ファイルオブジェクト> file object` です。\n"
+"バイナリファイルの例は、バイナリモード (``'rb'``, ``'wb'`` or ``'rb+'``) で開かれたファイル、 :data:`sys.stdin.buffer` 、 :data:`sys.stdout.buffer` 、 :class:`io.BytesIO` や :class:`gzip.GzipFile`. のインスタンスです。"
 
 #: ../../glossary.rst:140
 msgid "A :term:`text file` reads and writes :class:`str` objects."
-msgstr ":term:`text file` は :class:`str` オブジェクトを読み書きする。"
+msgstr ":term:`text file` は :class:`str` オブジェクトを読み書きします。"
 
 #: ../../glossary.rst:141
 msgid "bytes-like object"
