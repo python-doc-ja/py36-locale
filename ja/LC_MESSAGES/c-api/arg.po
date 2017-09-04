@@ -632,7 +632,7 @@ msgstr "``L`` (:class:`int`) [long long]"
 
 #: ../../c-api/arg.rst:269
 msgid "Convert a Python integer to a C :c:type:`long long`."
-msgstr "PythonのintをC :c:type:`long long`へ変換する。"
+msgstr "PythonのintをC :c:type:`long long` へ変換する。"
 
 #: ../../c-api/arg.rst:273 ../../c-api/arg.rst:598
 msgid "``K`` (:class:`int`) [unsigned long long]"
@@ -642,7 +642,7 @@ msgstr "``K`` (:class:`int`) [unsigned long long]"
 msgid ""
 "Convert a Python integer to a C :c:type:`unsigned long long` without "
 "overflow checking."
-msgstr "PythonのintをC :c:type:`unsigned long long`へオーバーフローの確認をせず変換する"
+msgstr "PythonのintをC :c:type:`unsigned long long` へオーバーフローの確認をせず変換する"
 
 #: ../../c-api/arg.rst:276 ../../c-api/arg.rst:601
 msgid "``n`` (:class:`int`) [Py_ssize_t]"
