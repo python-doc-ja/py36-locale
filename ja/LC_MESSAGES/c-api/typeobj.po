@@ -149,7 +149,7 @@ msgid ""
 msgstr ""
 "上の操作は、該当する型のいかなるインスタンス生成よりも前にしておかなければなりません。 :c:func:`PyType_Ready` は "
 ":attr:`ob_type` が *NULL* かどうか調べ、 *NULL* の場合には基底クラスの :attr:`ob_type` "
-"フィールドに初期化します。 :attr:`ob_type` が非ゼロの場合、 :c:func:`PyType_Ready` "
+"フィールドで初期化します。 :attr:`ob_type` がゼロでない場合、 :c:func:`PyType_Ready` "
 "はこのフィールドを変更しません。"
 
 #: ../../c-api/typeobj.rst:86 ../../c-api/typeobj.rst:188
@@ -203,7 +203,7 @@ msgid ""
 ":attr:`__module__` attribute, and everything after the last dot is made "
 "accessible as the :attr:`~definition.__name__` attribute."
 msgstr ""
-"静的にメモリ確保される型オブジェクトの場合、 :attr:`tp_name` フィールドにはドットが含まれているはずです。\n"
+"静的にメモリ確保される型オブジェクトの場合、 tp_name フィールドにはドットが含まれているはずです。\n"
 "最後のドットよりも前にある部分文字列全体は :attr:`__module__` 属性として、またドットよりも後ろにある部分は :attr:`~definition.__name__` 属性としてアクセスできます。"
 
 #: ../../c-api/typeobj.rst:116
@@ -729,7 +729,7 @@ msgid ""
 msgstr ""
 "型オブジェクト自体がヒープにメモリ確保される場合にセットされるビットです。型オブジェクト自体がヒープにメモリ確保される場合、インスタンスの "
 ":attr:`ob_type` フィールドは型オブジェクトへの参照とみなされます。この場合、新たなインスタンスを生成する度に型オブジェクトを "
-"INCREF し、インスタンスを解放するたびに DECREF します (サブタイプのインスタンスには適当されません; インスタンスが "
+"INCREF し、インスタンスを解放するたびに DECREF します (サブタイプのインスタンスには適用されません; インスタンスが "
 ":attr:`ob_type` で参照している型だけが INCREF および DECREF されます)。"
 
 #: ../../c-api/typeobj.rst:419
