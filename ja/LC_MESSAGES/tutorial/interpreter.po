@@ -239,7 +239,7 @@ msgid ""
 " :ref:`UNIX \"shebang\" line <tut-scripts>`.  In this case, the encoding "
 "declaration should be added as the second line of the file.  For example::"
 msgstr ""
-"ソースコードが :ref:`UNIX \"shebang\" 行 <tut-script>` で始まる場合には、*先頭行* のルールは当てはまりません。\n"
+"ソースコードが :ref:`UNIX \"shebang\" 行 <tut-scripts>` で始まる場合には、*先頭行* のルールは当てはまりません。\n"
 "この場合には、エンコーディングの宣言はファイルの2行目に追加します。\n"
 "例えば以下のようになります::"
 

@@ -310,7 +310,7 @@ msgid ""
 ":class:`gzip.GzipFile`."
 msgstr ""
 "(バイナリファイル)\n"
-":term:`bytes-like オブジェクト <bytes-like object>` の読み込みおよび書き込みができる :term:`<ファイルオブジェクト> file object` です。\n"
+":term:`bytes-like オブジェクト <bytes-like object>` の読み込みおよび書き込みができる :term:`ファイルオブジェクト <file object>` です。\n"
 "バイナリファイルの例は、バイナリモード (``'rb'``, ``'wb'`` or ``'rb+'``) で開かれたファイル、 :data:`sys.stdin.buffer` 、 :data:`sys.stdout.buffer` 、 :class:`io.BytesIO` や :class:`gzip.GzipFile`. のインスタンスです。"
 
 #: ../../glossary.rst:140

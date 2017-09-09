@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../library/socket.rst:2
 msgid ":mod:`socket` --- Low-level networking interface"
-msgstr ":mod:`socket` --- 低水準ネットワークインターフェー"
+msgstr ":mod:`socket` --- 低水準ネットワークインターフェース"
 
 #: ../../library/socket.rst:7
 msgid "**Source code:** :source:`Lib/socket.py`"
@@ -1086,10 +1086,10 @@ msgid ""
 "library or network protocol returns an object of type :c:type:`struct "
 "in_addr` (similar to :func:`inet_ntoa`) or :c:type:`struct in6_addr`."
 msgstr ""
-"パックしたIPアドレス (数バイトからなる :term:`bytes-like オブジェクト` ) を、 ``'7.10.0.5'`` や "
-"``'5aef:2b::8'`` などの標準的な、アドレスファミリ固有の文字列形式に変換します。 :func:`inet_ntop` は "
-"(:func:`inet_ntoa` と同様に)、 :c:type:`struct in_addr` 型や :c:type:`struct "
-"in6_addr` 型のオブジェクトを返すライブラリやネットワークプロトコル等で使用することができます。"
+"パックしたIPアドレス (数バイトからなる :term:`bytes-like オブジェクト <bytes-like object>` ) を、 "
+"``'7.10.0.5'`` や ``'5aef:2b::8'`` などの標準的な、アドレスファミリ固有の文字列形式に変換します。 "
+":func:`inet_ntop` は (:func:`inet_ntoa` と同様に)、 :c:type:`struct in_addr` 型や "
+":c:type:`struct in6_addr` 型のオブジェクトを返すライブラリやネットワークプロトコル等で使用することができます。"
 
 #: ../../library/socket.rst:747
 msgid ""
@@ -1477,7 +1477,7 @@ msgid ""
 "except the only supported *mode* values are ``'r'`` (default), ``'w'`` and "
 "``'b'``."
 msgstr ""
-"ソケットに関連付けられた :term:`file object <ファイルオブジェクト>` を返します。戻り値の正確な型は、 "
+"ソケットに関連付けられた :term:`ファイルオブジェクト <file object>` を返します。戻り値の正確な型は、 "
 ":meth:`makefile` に指定した引数によります。これらの引数は、組み込み関数 :func:`open` "
 "の引数と同様に解釈されます。ただし、*mode* の値は  ``'r'`` (デフォルト), ``'w'``, ``'b'`` "
 "のみがサポートされています。"
@@ -1854,7 +1854,7 @@ msgstr ""
 msgid ""
 "For further information, please consult the :ref:`notes on socket timeouts "
 "<socket-timeouts>`."
-msgstr "詳しくは :ref:`ソケットタイムアウトの注意事項 <socket-timeout>` を参照してください。"
+msgstr "詳しくは :ref:`ソケットタイムアウトの注意事項 <socket-timeouts>` を参照してください。"
 
 #: ../../library/socket.rst:1388
 msgid ""
