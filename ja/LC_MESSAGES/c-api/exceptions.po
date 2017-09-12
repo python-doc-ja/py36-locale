@@ -80,7 +80,7 @@ msgid ""
 " (and has therefore stopped propagating)."
 msgstr ""
 "エラー識別子は :func:`sys.exc_info()` の結果 **ではありません**。エラー識別子はまだ捕捉されていない例外 "
-"(したがってまだ伝播します) に対応しているのに対し、 :func:`sys.exc_info()` の結果は捕捉された後の例外を返します "
+"(したがってまだ伝播します) に対応しているのに対し、 sys.exc_info() の結果は捕捉された後の例外を返します "
 "(したがってもう伝播しません)。"
 
 #: ../../c-api/exceptions.rst:44

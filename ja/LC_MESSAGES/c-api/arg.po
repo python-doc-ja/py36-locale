@@ -519,9 +519,8 @@ msgid ""
 msgstr ""
 "*\\*buffer* が非 *NULL* のポインタ (すでにメモリ確保済みのバッファ) を指している場合、 "
 ":c:func:`PyArg_ParseTuple` はこのメモリ位置をバッファとして用い、 *\\*buffer_length* "
-"の初期値をバッファサイズとして用います。 :c:func:`PyArg_ParseTuple` "
-"は次にエンコード済みのデータをバッファにコピーして、NUL で終端します。バッファの大きさが足りなければ :exc:`ValueError` "
-"がセットされます。"
+"の初期値をバッファサイズとして用います。 PyArg_ParseTuple は次にエンコード済みのデータをバッファにコピーして、NUL "
+"で終端します。バッファの大きさが足りなければ :exc:`ValueError` がセットされます。"
 
 #: ../../c-api/arg.rst:228
 msgid ""
