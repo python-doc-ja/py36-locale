@@ -143,8 +143,8 @@ msgid ""
 "reference."
 msgstr ""
 "ほとんどの Python の呼び出し可能オブジェクトを C で実装する際に用いられている関数の型です。この型の関数は 2 つの "
-":c:type:`PyObject\\*` 型のパラメータを取り、 :c:type:`PyObject\\*` 型の値を返します。戻り値を *NULL*"
-" にする場合、例外をセットしておかなければなりません。 *NULL* でない値を返す場合、戻り値は Python "
+":c:type:`PyObject\\*` 型のパラメータを取り、 PyObject\\* 型の値を返します。戻り値を *NULL* "
+"にする場合、例外をセットしておかなければなりません。 *NULL* でない値を返す場合、戻り値は Python "
 "に関数の戻り値として公開される値として解釈されます。この型の関数は新たな参照を返さなければなりません。"
 
 #: ../../c-api/structures.rst:117
@@ -155,8 +155,8 @@ msgid ""
 "the return value."
 msgstr ""
 "キーワード引数をとるPythonの呼び出し可能オブジェクトを C で実装する際に用いられている関数の型です: この型の関数は 3 つの "
-":c:type:`PyObject\\*` 型のパラメータをとり、:c:type:`PyObject\\*` "
-"型の値を返します。戻り値の意味については、上記の :c:type:`PyCFunction` を参照して下さい。"
+":c:type:`PyObject\\*` 型のパラメータをとり、 PyObject\\* 型の値を返します。戻り値の意味については、上記の "
+":c:type:`PyCFunction` を参照して下さい。"
 
 #: ../../c-api/structures.rst:125
 msgid ""
