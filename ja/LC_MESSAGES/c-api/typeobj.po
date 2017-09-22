@@ -149,8 +149,7 @@ msgid ""
 msgstr ""
 "上の操作は、該当する型のいかなるインスタンス生成よりも前にしておかなければなりません。 :c:func:`PyType_Ready` は "
 ":attr:`ob_type` が *NULL* かどうか調べ、 *NULL* の場合には基底クラスの :attr:`ob_type` "
-"フィールドで初期化します。 :attr:`ob_type` がゼロでない場合、 :c:func:`PyType_Ready` "
-"はこのフィールドを変更しません。"
+"フィールドで初期化します。 ob_type フィールドがゼロでない場合、 :c:func:`PyType_Ready` はこのフィールドを変更しません。"
 
 #: ../../c-api/typeobj.rst:86 ../../c-api/typeobj.rst:188
 #: ../../c-api/typeobj.rst:255 ../../c-api/typeobj.rst:322

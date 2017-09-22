@@ -75,7 +75,7 @@ msgid ""
 ":c:type:`void (\\*)(int)`."
 msgstr ""
 "シグナル *i* に対する現在のシグナルハンドラを返します。この関数は :c:func:`sigaction` または :c:func:`signal`"
-" のいずれかに対する薄いラッパです。 sigaction や signal を直接呼び出してはなりません! "
+" のいずれかに対する薄いラッパです。 :c:func:`sigaction` や :c:func:`signal` を直接呼び出してはなりません! "
 ":c:type:`PyOS_sighandler_t` は :c:type:`void (\\*)(int)` の typedef  による別名です。"
 
 #: ../../c-api/sys.rst:56
@@ -87,9 +87,9 @@ msgid ""
 "(\\*)(int)`."
 msgstr ""
 "シグナル *i* に対する現在のシグナルハンドラを *h* に設定します; 以前のシグナルハンドラを返します。この関数は "
-":c:func:`sigaction` または :c:func:`signal` のいずれかに対する薄いラッパーです。 sigaction や "
-"signal を直接呼び出してはなりません!  :c:type:`PyOS_sighandler_t` は :c:type:`void "
-"(\\*)(int)` の typedef  による別名です。"
+":c:func:`sigaction` または :c:func:`signal` のいずれかに対する薄いラッパーです。 "
+":c:func:`sigaction` や :c:func:`signal` を直接呼び出してはなりません!  "
+":c:type:`PyOS_sighandler_t` は :c:type:`void (\\*)(int)` の typedef  による別名です。"
 
 #: ../../c-api/sys.rst:63
 msgid ""
