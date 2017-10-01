@@ -63,9 +63,9 @@ msgid ""
 " files."
 msgstr ""
 ":func:`site.main` 関数の処理は、前部と後部からなる最大で四つまでのディレクトリを構築するところから始まります。\n"
-"前部には、 ``sys.prefix`` と ``sys.exec_prefix`` を使用します; 空の前部は使われません。\n"
-"後部には、まず空文字列を使い、次に :file:`lib/site-packages` (Windows) または :file:`lib/python{X.Y}/site-packages` (Unix と Macintosh)を使います。\n"
-"前部-後部の異なる組み合わせのそれぞれに対して、それが存在するディレクトリを参照しているかどうかを調べ、もしそうならば ``sys.path`` へ追加します。\n"
+"前部では ``sys.prefix`` と ``sys.exec_prefix`` を使用します; 空の前部は使われません。\n"
+"後部では、1つ目は空文字列を使い、2つ目は :file:`lib/site-packages` (Windows) または :file:`lib/python{X.Y}/site-packages` (Unix と Macintosh) を使います。\n"
+"前部-後部の異なる組み合わせごとに、それが存在しているディレクトリを参照しているかどうかを調べ、存在している場合は ``sys.path`` へ追加します。\n"
 "そして、新しく追加されたパスからパス設定ファイルを検索します。"
 
 #: ../../library/site.rst:40
@@ -83,6 +83,8 @@ msgid ""
 "insensitive), the system-level prefixes will still also be searched for "
 "site-packages; otherwise they won't."
 msgstr ""
+"\"pyvenv.cfg\" という名前のファイルが上で挙げたディレクトリの 1 つに存在していた場合、 sys.executable, sys.prefix, sys.exec_prefix にはそのディレクトリが設定され、 site-packages もチェックします (sys.base_prefix と sys.base_exec_prefix は常にインストールされているPythonの \"実際の\" プレフィックスです)。\n"
+"(ブートストラップの設定ファイルである) \"pyvenv.cfg\" で、キー \"include-system-site-packages\" に \"false\" (大文字小文字は区別しない) 以外が設定されている場合は、 site-packages を探しにシステムレベルのプレフィックスも見に行きます; そうでない場合は見に行きません。"
 
 #: ../../library/site.rst:52
 msgid ""
