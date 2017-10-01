@@ -62,6 +62,11 @@ msgid ""
 " it to ``sys.path`` and also inspects the newly added path for configuration"
 " files."
 msgstr ""
+":func:`site.main` 関数の処理は、前部と後部からなる最大で四つまでのディレクトリを構築するところから始まります。\n"
+"前部には、 ``sys.prefix`` と ``sys.exec_prefix`` を使用します; 空の前部は使われません。\n"
+"後部には、まず空文字列を使い、次に :file:`lib/site-packages` (Windows) または :file:`lib/python{X.Y}/site-packages` (Unix と Macintosh)を使います。\n"
+"前部-後部の異なる組み合わせのそれぞれに対して、それが存在するディレクトリを参照しているかどうかを調べ、もしそうならば ``sys.path`` へ追加します。\n"
+"そして、新しく追加されたパスからパス設定ファイルを検索します。"
 
 #: ../../library/site.rst:40
 msgid "Support for the \"site-python\" directory has been removed."
