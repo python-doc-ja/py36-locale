@@ -115,7 +115,7 @@ msgid ""
 "that deal with Unicode objects take and return :c:type:`PyObject` pointers."
 msgstr ""
 "これらの :c:type:`PyObject` のサブタイプは Python Unicode オブジェクトを表現します。\n"
-"Unicode オブジェクトを扱う全ての API 関数は :c:type:`PyObject` へのポインタを受け取って :c:type:`PyObject` へのポインタを返すので、ほとんどの場合、これらの型を直接使うべきではありません。"
+"Unicode オブジェクトを扱う全ての API 関数は :c:type:`PyObject` へのポインタを受け取って PyObject へのポインタを返すので、ほとんどの場合、これらの型を直接使うべきではありません。"
 
 #: ../../c-api/unicode.rst:79
 msgid ""
