@@ -14,7 +14,7 @@ install:
 - cd cpython/Doc
 - ln -s ../../py36-locale locale
 - ls -lF locale
-- sphinx-build -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1 -E -d build/doctrees . ../../py36
+- sphinx-build -j4 -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1 -E -d build/doctrees . ../../py36
 script:
 - cd ../../py36
 - git config user.email "travis-build-bot@example.com"
