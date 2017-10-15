@@ -2014,7 +2014,7 @@ msgid ""
 "function to \"munge\" text, or randomize the order of all the characters in "
 "each word of a sentence except for the first and last characters::"
 msgstr ""
-":func:`sub` はパターンにマッチした部分を文字列や関数の返り値で置き換えます。この例では、\"秘匿\" する文字列に、関数と共に "
+":func:`sub` はパターンにマッチした部分を文字列や関数の返り値で置き換えます。この例では、「秘匿」する文字列に、関数と共に "
 ":func:`sub` を適用する例を示します。言い換えると、最初と最後の文字を除く、単語中の文字の位置をランダム化します。 ::"
 
 #: ../../library/re.rst:1393
