@@ -19,6 +19,10 @@ msgstr ""
 msgid "Using Python on a Macintosh"
 msgstr ""
 
+#: ../../using/mac.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../using/mac.rst:8
 msgid "Bob Savage <bobsavage@mac.com>"
 msgstr ""

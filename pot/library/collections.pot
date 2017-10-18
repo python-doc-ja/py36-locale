@@ -520,7 +520,7 @@ msgid "Returns a new tuple subclass named *typename*.  The new subclass is used 
 msgstr ""
 
 #: ../../library/collections.rst:774
-msgid "The *field_names* are a single string with each fieldname separated by whitespace and/or commas, for example ``'x y'`` or ``'x, y'``.  Alternatively, *field_names* can be a sequence of strings such as ``['x', 'y']``."
+msgid "The *field_names* are a sequence of strings such as ``['x', 'y']``. Alternatively, *field_names* can be a single string with each fieldname separated by whitespace and/or commas, for example ``'x y'`` or ``'x, y'``."
 msgstr ""
 
 #: ../../library/collections.rst:778

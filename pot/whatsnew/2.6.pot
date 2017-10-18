@@ -19,6 +19,10 @@ msgstr ""
 msgid "What's New in Python 2.6"
 msgstr ""
 
+#: ../../whatsnew/2.6.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../whatsnew/2.6.rst:9
 msgid "A.M. Kuchling (amk at amk.ca)"
 msgstr ""
@@ -164,7 +168,7 @@ msgid "Sphinx is a standalone package that can be used for writing, and almost t
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:236
-msgid "`Documenting Python <https://docs.python.org/devguide/documenting.html>`__"
+msgid "`Documenting Python <https://devguide.python.org/documenting/>`__"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:236

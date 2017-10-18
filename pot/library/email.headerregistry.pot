@@ -212,8 +212,16 @@ msgstr ""
 msgid "The default mappings are:"
 msgstr ""
 
+#: ../../library/email.headerregistry.rst:0
+msgid "subject"
+msgstr ""
+
 #: ../../library/email.headerregistry.rst:324
 msgid "UniqueUnstructuredHeader"
+msgstr ""
+
+#: ../../library/email.headerregistry.rst:0
+msgid "date"
 msgstr ""
 
 #: ../../library/email.headerregistry.rst:325
@@ -221,16 +229,36 @@ msgstr ""
 msgid "UniqueDateHeader"
 msgstr ""
 
+#: ../../library/email.headerregistry.rst:0
+msgid "resent-date"
+msgstr ""
+
 #: ../../library/email.headerregistry.rst:326
 msgid "DateHeader"
+msgstr ""
+
+#: ../../library/email.headerregistry.rst:0
+msgid "orig-date"
+msgstr ""
+
+#: ../../library/email.headerregistry.rst:0
+msgid "sender"
 msgstr ""
 
 #: ../../library/email.headerregistry.rst:328
 msgid "UniqueSingleAddressHeader"
 msgstr ""
 
+#: ../../library/email.headerregistry.rst:0
+msgid "resent-sender"
+msgstr ""
+
 #: ../../library/email.headerregistry.rst:329
 msgid "SingleAddressHeader"
+msgstr ""
+
+#: ../../library/email.headerregistry.rst:0
+msgid "to"
 msgstr ""
 
 #: ../../library/email.headerregistry.rst:330
@@ -240,10 +268,34 @@ msgstr ""
 msgid "UniqueAddressHeader"
 msgstr ""
 
+#: ../../library/email.headerregistry.rst:0
+msgid "resent-to"
+msgstr ""
+
 #: ../../library/email.headerregistry.rst:331
 #: ../../library/email.headerregistry.rst:333
 #: ../../library/email.headerregistry.rst:335
 msgid "AddressHeader"
+msgstr ""
+
+#: ../../library/email.headerregistry.rst:0
+msgid "cc"
+msgstr ""
+
+#: ../../library/email.headerregistry.rst:0
+msgid "resent-cc"
+msgstr ""
+
+#: ../../library/email.headerregistry.rst:0
+msgid "from"
+msgstr ""
+
+#: ../../library/email.headerregistry.rst:0
+msgid "resent-from"
+msgstr ""
+
+#: ../../library/email.headerregistry.rst:0
+msgid "reply-to"
 msgstr ""
 
 #: ../../library/email.headerregistry.rst:338
@@ -331,6 +383,6 @@ msgid "Footnotes"
 msgstr ""
 
 #: ../../library/email.headerregistry.rst:454
-msgid "Oringally added in 3.3 as a :term:`provisional module <provisional package>`"
+msgid "Originally added in 3.3 as a :term:`provisional module <provisional package>`"
 msgstr ""
 

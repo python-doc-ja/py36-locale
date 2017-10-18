@@ -19,6 +19,10 @@ msgstr ""
 msgid "Unicode HOWTO"
 msgstr ""
 
+#: ../../howto/unicode.rst:0
+msgid "Release"
+msgstr ""
+
 #: ../../howto/unicode.rst:7
 msgid "1.12"
 msgstr ""
@@ -52,7 +56,7 @@ msgid "Those messages should contain accents (terminée, paramètre, enregistré
 msgstr ""
 
 #: ../../howto/unicode.rst:41
-msgid "In the 1980s, almost all personal computers were 8-bit, meaning that bytes could hold values ranging from 0 to 255.  ASCII codes only went up to 127, so some machines assigned values between 128 and 255 to accented characters.  Different machines had different codes, however, which led to problems exchanging files. Eventually various commonly used sets of values for the 128--255 range emerged. Some were true standards, defined by the International Standards Organization, and some were *de facto* conventions that were invented by one company or another and managed to catch on."
+msgid "In the 1980s, almost all personal computers were 8-bit, meaning that bytes could hold values ranging from 0 to 255.  ASCII codes only went up to 127, so some machines assigned values between 128 and 255 to accented characters.  Different machines had different codes, however, which led to problems exchanging files. Eventually various commonly used sets of values for the 128--255 range emerged. Some were true standards, defined by the International Organization for Standardization, and some were *de facto* conventions that were invented by one company or another and managed to catch on."
 msgstr ""
 
 #: ../../howto/unicode.rst:50

@@ -99,75 +99,67 @@ msgstr ""
 msgid "Python bindings for `the FLTK toolkit <http://www.fltk.org>`_, a simple yet powerful and mature cross-platform windowing system, are available from `the PyFLTK project <http://pyfltk.sourceforge.net>`_."
 msgstr ""
 
-#: ../../faq/gui.rst:99
-msgid "FOX"
-msgstr ""
-
-#: ../../faq/gui.rst:101
-msgid "A wrapper for `the FOX toolkit <http://www.fox-toolkit.org/>`_ called `FXpy <http://fxpy.sourceforge.net/>`_ is available.  FOX supports both Unix variants and Windows."
-msgstr ""
-
-#: ../../faq/gui.rst:107
+#: ../../faq/gui.rst:98
 msgid "OpenGL"
 msgstr ""
 
-#: ../../faq/gui.rst:109
+#: ../../faq/gui.rst:100
 msgid "For OpenGL bindings, see `PyOpenGL <http://pyopengl.sourceforge.net>`_."
 msgstr ""
 
-#: ../../faq/gui.rst:113
+#: ../../faq/gui.rst:104
 msgid "What platform-specific GUI toolkits exist for Python?"
 msgstr ""
 
-#: ../../faq/gui.rst:115
+#: ../../faq/gui.rst:106
 msgid "By installing the `PyObjc Objective-C bridge <https://pythonhosted.org/pyobjc/>`_, Python programs can use Mac OS X's Cocoa libraries."
 msgstr ""
 
-#: ../../faq/gui.rst:119
+#: ../../faq/gui.rst:110
 msgid ":ref:`Pythonwin <windows-faq>` by Mark Hammond includes an interface to the Microsoft Foundation Classes and a Python programming environment that's written mostly in Python using the MFC classes."
 msgstr ""
 
-#: ../../faq/gui.rst:125
+#: ../../faq/gui.rst:116
 msgid "Tkinter questions"
 msgstr ""
 
-#: ../../faq/gui.rst:128
+#: ../../faq/gui.rst:119
 msgid "How do I freeze Tkinter applications?"
 msgstr ""
 
-#: ../../faq/gui.rst:130
+#: ../../faq/gui.rst:121
 msgid "Freeze is a tool to create stand-alone applications.  When freezing Tkinter applications, the applications will not be truly stand-alone, as the application will still need the Tcl and Tk libraries."
 msgstr ""
 
-#: ../../faq/gui.rst:134
+#: ../../faq/gui.rst:125
 msgid "One solution is to ship the application with the Tcl and Tk libraries, and point to them at run-time using the :envvar:`TCL_LIBRARY` and :envvar:`TK_LIBRARY` environment variables."
 msgstr ""
 
-#: ../../faq/gui.rst:138
+#: ../../faq/gui.rst:129
 msgid "To get truly stand-alone applications, the Tcl scripts that form the library have to be integrated into the application as well. One tool supporting that is SAM (stand-alone modules), which is part of the Tix distribution (http://tix.sourceforge.net/)."
 msgstr ""
 
-#: ../../faq/gui.rst:143
+#: ../../faq/gui.rst:134
 msgid "Build Tix with SAM enabled, perform the appropriate call to :c:func:`Tclsam_init`, etc. inside Python's :file:`Modules/tkappinit.c`, and link with libtclsam and libtksam (you might include the Tix libraries as well)."
 msgstr ""
 
-#: ../../faq/gui.rst:150
+#: ../../faq/gui.rst:141
 msgid "Can I have Tk events handled while waiting for I/O?"
 msgstr ""
 
-#: ../../faq/gui.rst:152
+#: ../../faq/gui.rst:143
 msgid "On platforms other than Windows, yes, and you don't even need threads!  But you'll have to restructure your I/O code a bit.  Tk has the equivalent of Xt's :c:func:`XtAddInput()` call, which allows you to register a callback function which will be called from the Tk mainloop when I/O is possible on a file descriptor.  See :ref:`tkinter-file-handlers`."
 msgstr ""
 
-#: ../../faq/gui.rst:160
+#: ../../faq/gui.rst:151
 msgid "I can't get key bindings to work in Tkinter: why?"
 msgstr ""
 
-#: ../../faq/gui.rst:162
+#: ../../faq/gui.rst:153
 msgid "An often-heard complaint is that event handlers bound to events with the :meth:`bind` method don't get handled even when the appropriate key is pressed."
 msgstr ""
 
-#: ../../faq/gui.rst:165
+#: ../../faq/gui.rst:156
 msgid "The most common cause is that the widget to which the binding applies doesn't have \"keyboard focus\".  Check out the Tk documentation for the focus command. Usually a widget is given the keyboard focus by clicking in it (but not for labels; see the takefocus option)."
 msgstr ""
 

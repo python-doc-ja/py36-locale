@@ -19,16 +19,20 @@ msgstr ""
 msgid "Curses Programming with Python"
 msgstr ""
 
+#: ../../howto/curses.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../howto/curses.rst:7
 msgid "A.M. Kuchling, Eric S. Raymond"
 msgstr ""
 
-#: ../../howto/curses.rst:8
-msgid "2.04"
+#: ../../howto/curses.rst:0
+msgid "Release"
 msgstr ""
 
-#: ../../howto/curses.rst:0
-msgid "Abstract"
+#: ../../howto/curses.rst:8
+msgid "2.04"
 msgstr ""
 
 #: ../../howto/curses.rst:13
@@ -64,7 +68,7 @@ msgid "The Python curses module"
 msgstr ""
 
 #: ../../howto/curses.rst:68
-msgid "Thy Python module is a fairly simple wrapper over the C functions provided by curses; if you're already familiar with curses programming in C, it's really easy to transfer that knowledge to Python.  The biggest difference is that the Python interface makes things simpler by merging different C functions such as :c:func:`addstr`, :c:func:`mvaddstr`, and :c:func:`mvwaddstr` into a single :meth:`~curses.window.addstr` method.  You'll see this covered in more detail later."
+msgid "The Python module is a fairly simple wrapper over the C functions provided by curses; if you're already familiar with curses programming in C, it's really easy to transfer that knowledge to Python.  The biggest difference is that the Python interface makes things simpler by merging different C functions such as :c:func:`addstr`, :c:func:`mvaddstr`, and :c:func:`mvwaddstr` into a single :meth:`~curses.window.addstr` method.  You'll see this covered in more detail later."
 msgstr ""
 
 #: ../../howto/curses.rst:76
@@ -405,7 +409,7 @@ msgid "If you're in doubt about the detailed behavior of the curses functions, c
 msgstr ""
 
 #: ../../howto/curses.rst:536
-msgid "Because the curses API is so large, some functions aren't supported in the Python interface.  Often this isn't because they're difficult to implement, but because no one has needed them yet.  Also, Python doesn't yet support the menu library associated with ncurses. Patches adding support for these would be welcome; see `the Python Developer's Guide <https://docs.python.org/devguide/>`_ to learn more about submitting patches to Python."
+msgid "Because the curses API is so large, some functions aren't supported in the Python interface.  Often this isn't because they're difficult to implement, but because no one has needed them yet.  Also, Python doesn't yet support the menu library associated with ncurses. Patches adding support for these would be welcome; see `the Python Developer's Guide <https://devguide.python.org/>`_ to learn more about submitting patches to Python."
 msgstr ""
 
 #: ../../howto/curses.rst:544

@@ -145,7 +145,7 @@ msgid "Roughly equivalent to::"
 msgstr ""
 
 #: ../../library/functools.rst:269
-msgid "Transforms a function into a :term:`single-dispatch <single dispatch>` :term:`generic function`."
+msgid "Transform a function into a :term:`single-dispatch <single dispatch>` :term:`generic function`."
 msgstr ""
 
 #: ../../library/functools.rst:272

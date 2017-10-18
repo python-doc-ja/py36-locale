@@ -211,11 +211,11 @@ msgid ":func:`groupby`"
 msgstr ""
 
 #: ../../library/itertools.rst:56
-msgid "iterable[, keyfunc]"
+msgid "iterable[, key]"
 msgstr ""
 
 #: ../../library/itertools.rst:56
-msgid "sub-iterators grouped by value of keyfunc(v)"
+msgid "sub-iterators grouped by value of key(v)"
 msgstr ""
 
 #: ../../library/itertools.rst:57

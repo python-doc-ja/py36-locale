@@ -19,6 +19,10 @@ msgstr ""
 msgid "Distributing Python Modules"
 msgstr ""
 
+#: ../../distributing/index.rst:0
+msgid "Email"
+msgstr ""
+
 #: ../../distributing/index.rst:7
 msgid "distutils-sig@python.org"
 msgstr ""

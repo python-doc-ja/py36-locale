@@ -817,72 +817,79 @@ msgid "This module also provides the following legacy functions from the 2.x ``c
 msgstr ""
 
 #: ../../library/subprocess.rst:1169
-msgid "Return ``(status, output)`` of executing *cmd* in a shell."
+msgid "Return ``(exitcode, output)`` of executing *cmd* in a shell."
 msgstr ""
 
 #: ../../library/subprocess.rst:1171
-msgid "Execute the string *cmd* in a shell with :meth:`Popen.check_output` and return a 2-tuple ``(status, output)``. The locale encoding is used; see the notes on :ref:`frequently-used-arguments` for more details."
+msgid "Execute the string *cmd* in a shell with :meth:`Popen.check_output` and return a 2-tuple ``(exitcode, output)``. The locale encoding is used; see the notes on :ref:`frequently-used-arguments` for more details."
 msgstr ""
 
 #: ../../library/subprocess.rst:1175
-msgid "A trailing newline is stripped from the output. The exit status for the command can be interpreted according to the rules for the C function :c:func:`wait`.  Example::"
-msgstr ""
-
-#: ../../library/subprocess.rst:1186
-#: ../../library/subprocess.rst:1202
-msgid "Availability: POSIX & Windows"
+msgid "A trailing newline is stripped from the output. The exit code for the command can be interpreted as the return code of subprocess.  Example::"
 msgstr ""
 
 #: ../../library/subprocess.rst:1188
-#: ../../library/subprocess.rst:1204
-msgid "Windows support added"
+#: ../../library/subprocess.rst:1207
+msgid "Availability: POSIX & Windows"
 msgstr ""
 
-#: ../../library/subprocess.rst:1194
+#: ../../library/subprocess.rst:1190
+msgid "Windows support was added."
+msgstr ""
+
+#: ../../library/subprocess.rst:1193
+msgid "The function now returns (exitcode, output) instead of (status, output) as it did in Python 3.3.3 and earlier.  See :func:`WEXITSTATUS`."
+msgstr ""
+
+#: ../../library/subprocess.rst:1199
 msgid "Return output (stdout and stderr) of executing *cmd* in a shell."
 msgstr ""
 
-#: ../../library/subprocess.rst:1196
+#: ../../library/subprocess.rst:1201
 msgid "Like :func:`getstatusoutput`, except the exit status is ignored and the return value is a string containing the command's output.  Example::"
 msgstr ""
 
 #: ../../library/subprocess.rst:1209
-msgid "Notes"
+msgid "Windows support added"
 msgstr ""
 
 #: ../../library/subprocess.rst:1214
+msgid "Notes"
+msgstr ""
+
+#: ../../library/subprocess.rst:1219
 msgid "Converting an argument sequence to a string on Windows"
 msgstr ""
 
-#: ../../library/subprocess.rst:1216
+#: ../../library/subprocess.rst:1221
 msgid "On Windows, an *args* sequence is converted to a string that can be parsed using the following rules (which correspond to the rules used by the MS C runtime):"
 msgstr ""
 
-#: ../../library/subprocess.rst:1220
+#: ../../library/subprocess.rst:1225
 msgid "Arguments are delimited by white space, which is either a space or a tab."
 msgstr ""
 
-#: ../../library/subprocess.rst:1223
+#: ../../library/subprocess.rst:1228
 msgid "A string surrounded by double quotation marks is interpreted as a single argument, regardless of white space contained within.  A quoted string can be embedded in an argument."
 msgstr ""
 
-#: ../../library/subprocess.rst:1228
+#: ../../library/subprocess.rst:1233
 msgid "A double quotation mark preceded by a backslash is interpreted as a literal double quotation mark."
 msgstr ""
 
-#: ../../library/subprocess.rst:1231
+#: ../../library/subprocess.rst:1236
 msgid "Backslashes are interpreted literally, unless they immediately precede a double quotation mark."
 msgstr ""
 
-#: ../../library/subprocess.rst:1234
+#: ../../library/subprocess.rst:1239
 msgid "If backslashes immediately precede a double quotation mark, every pair of backslashes is interpreted as a literal backslash.  If the number of backslashes is odd, the last backslash escapes the next double quotation mark as described in rule 3."
 msgstr ""
 
-#: ../../library/subprocess.rst:1243
+#: ../../library/subprocess.rst:1248
 msgid ":mod:`shlex`"
 msgstr ""
 
-#: ../../library/subprocess.rst:1244
+#: ../../library/subprocess.rst:1249
 msgid "Module which provides function to parse and escape command lines."
 msgstr ""
 

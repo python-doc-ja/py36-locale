@@ -19,6 +19,10 @@ msgstr ""
 msgid "What's New In Python 3.4"
 msgstr ""
 
+#: ../../whatsnew/3.4.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../whatsnew/3.4.rst:5
 msgid "R. David Murray <rdmurray@bitdance.com> (Editor)"
 msgstr ""
@@ -1599,7 +1603,7 @@ msgid "The CPython Windows installer now adds ``.py`` to the :envvar:`PATHEXT` v
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1962
-msgid "A new ``make`` target `coverage-report <https://docs.python.org/devguide/coverage.html#measuring-coverage-of-c-code-with-gcov-and-lcov>`_ will build python, run the test suite, and generate an HTML coverage report for the C codebase using ``gcov`` and `lcov <http://ltp.sourceforge.net/coverage/lcov.php>`_."
+msgid "A new ``make`` target `coverage-report <https://devguide.python.org/coverage/#measuring-coverage-of-c-code-with-gcov-and-lcov>`_ will build python, run the test suite, and generate an HTML coverage report for the C codebase using ``gcov`` and `lcov <http://ltp.sourceforge.net/coverage/lcov.php>`_."
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1968
@@ -1791,7 +1795,7 @@ msgid "The following obsolete and previously deprecated APIs and features have b
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:2178
-msgid "The unmaintained ``Misc/TextMate`` and ``Misc/vim`` directories have been removed (see the `devguide <https://docs.python.org/devguide>`_ for suggestions on what to use instead)."
+msgid "The unmaintained ``Misc/TextMate`` and ``Misc/vim`` directories have been removed (see the `devguide <https://devguide.python.org>`_ for suggestions on what to use instead)."
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:2182

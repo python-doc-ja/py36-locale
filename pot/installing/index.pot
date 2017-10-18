@@ -19,6 +19,10 @@ msgstr ""
 msgid "Installing Python Modules"
 msgstr ""
 
+#: ../../installing/index.rst:0
+msgid "Email"
+msgstr ""
+
 #: ../../installing/index.rst:9
 msgid "distutils-sig@python.org"
 msgstr ""
@@ -196,22 +200,34 @@ msgid "On such systems, it is often better to use a virtual environment or a per
 msgstr ""
 
 #: ../../installing/index.rst:215
-msgid "Installing binary extensions"
+msgid "Pip not installed"
 msgstr ""
 
 #: ../../installing/index.rst:217
-msgid "Python has typically relied heavily on source based distribution, with end users being expected to compile extension modules from source as part of the installation process."
+msgid "It is possible that ``pip`` does not get installed by default. One potential fix is::"
 msgstr ""
 
 #: ../../installing/index.rst:221
+msgid "There are also additional resources for `installing pip. <https://packaging.python.org/tutorials/installing-packages/#install-pip-setuptools-and-wheel>`__"
+msgstr ""
+
+#: ../../installing/index.rst:226
+msgid "Installing binary extensions"
+msgstr ""
+
+#: ../../installing/index.rst:228
+msgid "Python has typically relied heavily on source based distribution, with end users being expected to compile extension modules from source as part of the installation process."
+msgstr ""
+
+#: ../../installing/index.rst:232
 msgid "With the introduction of support for the binary ``wheel`` format, and the ability to publish wheels for at least Windows and Mac OS X through the Python Packaging Index, this problem is expected to diminish over time, as users are more regularly able to install pre-built extensions rather than needing to build them themselves."
 msgstr ""
 
-#: ../../installing/index.rst:227
+#: ../../installing/index.rst:238
 msgid "Some of the solutions for installing `scientific software <https://packaging.python.org/science/>`__ that are not yet available as pre-built ``wheel`` files may also help with obtaining other binary extensions without needing to build them locally."
 msgstr ""
 
-#: ../../installing/index.rst:234
+#: ../../installing/index.rst:245
 msgid "`Python Packaging User Guide: Binary Extensions <https://packaging.python.org/extensions/>`__"
 msgstr ""
 

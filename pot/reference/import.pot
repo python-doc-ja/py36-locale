@@ -36,7 +36,7 @@ msgid "When calling :func:`__import__` as part of an import statement, the stand
 msgstr ""
 
 #: ../../reference/import.rst:37
-msgid "When a module is first imported, Python searches for the module and if found, it creates a module object [#fnmo]_, initializing it.  If the named module cannot be found, an :exc:`ModuleNotFoundError` is raised.  Python implements various strategies to search for the named module when the import machinery is invoked.  These strategies can be modified and extended by using various hooks described in the sections below."
+msgid "When a module is first imported, Python searches for the module and if found, it creates a module object [#fnmo]_, initializing it.  If the named module cannot be found, a :exc:`ModuleNotFoundError` is raised.  Python implements various strategies to search for the named module when the import machinery is invoked.  These strategies can be modified and extended by using various hooks described in the sections below."
 msgstr ""
 
 #: ../../reference/import.rst:44
@@ -116,7 +116,7 @@ msgid "To begin the search, Python needs the :term:`fully qualified <qualified n
 msgstr ""
 
 #: ../../reference/import.rst:167
-msgid "This name will be used in various phases of the import search, and it may be the dotted path to a submodule, e.g. ``foo.bar.baz``.  In this case, Python first tries to import ``foo``, then ``foo.bar``, and finally ``foo.bar.baz``. If any of the intermediate imports fail, an :exc:`ModuleNotFoundError` is raised."
+msgid "This name will be used in various phases of the import search, and it may be the dotted path to a submodule, e.g. ``foo.bar.baz``.  In this case, Python first tries to import ``foo``, then ``foo.bar``, and finally ``foo.bar.baz``. If any of the intermediate imports fail, a :exc:`ModuleNotFoundError` is raised."
 msgstr ""
 
 #: ../../reference/import.rst:174
@@ -128,11 +128,11 @@ msgid "The first place checked during import search is :data:`sys.modules`.  Thi
 msgstr ""
 
 #: ../../reference/import.rst:186
-msgid "During import, the module name is looked up in :data:`sys.modules` and if present, the associated value is the module satisfying the import, and the process completes.  However, if the value is ``None``, then an :exc:`ModuleNotFoundError` is raised.  If the module name is missing, Python will continue searching for the module."
+msgid "During import, the module name is looked up in :data:`sys.modules` and if present, the associated value is the module satisfying the import, and the process completes.  However, if the value is ``None``, then a :exc:`ModuleNotFoundError` is raised.  If the module name is missing, Python will continue searching for the module."
 msgstr ""
 
 #: ../../reference/import.rst:192
-msgid ":data:`sys.modules` is writable.  Deleting a key may not destroy the associated module (as other modules may hold references to it), but it will invalidate the cache entry for the named module, causing Python to search anew for the named module upon its next import. The key can also be assigned to ``None``, forcing the next import of the module to result in an :exc:`ModuleNotFoundError`."
+msgid ":data:`sys.modules` is writable.  Deleting a key may not destroy the associated module (as other modules may hold references to it), but it will invalidate the cache entry for the named module, causing Python to search anew for the named module upon its next import. The key can also be assigned to ``None``, forcing the next import of the module to result in a :exc:`ModuleNotFoundError`."
 msgstr ""
 
 #: ../../reference/import.rst:199
@@ -196,7 +196,7 @@ msgid "If the meta path finder knows how to handle the named module, it returns 
 msgstr ""
 
 #: ../../reference/import.rst:294
-msgid "The :meth:`~importlib.abc.MetaPathFinder.find_spec()` method of meta path finders is called with two or three arguments.  The first is the fully qualified name of the module being imported, for example ``foo.bar.baz``. The second argument is the path entries to use for the module search.  For top-level modules, the second argument is ``None``, but for submodules or subpackages, the second argument is the value of the parent package's ``__path__`` attribute. If the appropriate ``__path__`` attribute cannot be accessed, an :exc:`ModuleNotFoundError` is raised.  The third argument is an existing module object that will be the target of loading later. The import system passes in a target module only during reload."
+msgid "The :meth:`~importlib.abc.MetaPathFinder.find_spec()` method of meta path finders is called with two or three arguments.  The first is the fully qualified name of the module being imported, for example ``foo.bar.baz``. The second argument is the path entries to use for the module search.  For top-level modules, the second argument is ``None``, but for submodules or subpackages, the second argument is the value of the parent package's ``__path__`` attribute. If the appropriate ``__path__`` attribute cannot be accessed, a :exc:`ModuleNotFoundError` is raised.  The third argument is an existing module object that will be the target of loading later. The import system passes in a target module only during reload."
 msgstr ""
 
 #: ../../reference/import.rst:305
@@ -420,7 +420,7 @@ msgid "module.__path__"
 msgstr ""
 
 #: ../../reference/import.rst:619
-msgid "By definition, if a module has an ``__path__`` attribute, it is a package, regardless of its value."
+msgid "By definition, if a module has a ``__path__`` attribute, it is a package, regardless of its value."
 msgstr ""
 
 #: ../../reference/import.rst:622
@@ -604,7 +604,7 @@ msgid "If it is acceptable to only alter the behaviour of import statements with
 msgstr ""
 
 #: ../../reference/import.rst:891
-msgid "To selectively prevent import of some modules from a hook early on the meta path (rather than disabling the standard import system entirely), it is sufficient to raise :exc:`ModuleNoFoundError` directly from :meth:`~importlib.abc.MetaPathFinder.find_spec` instead of returning ``None``. The latter indicates that the meta path search should continue, while raising an exception terminates it immediately."
+msgid "To selectively prevent import of some modules from a hook early on the meta path (rather than disabling the standard import system entirely), it is sufficient to raise :exc:`ModuleNotFoundError` directly from :meth:`~importlib.abc.MetaPathFinder.find_spec` instead of returning ``None``. The latter indicates that the meta path search should continue, while raising an exception terminates it immediately."
 msgstr ""
 
 #: ../../reference/import.rst:900
@@ -684,7 +684,7 @@ msgid "References"
 msgstr ""
 
 #: ../../reference/import.rst:966
-msgid "The import machinery has evolved considerably since Python's early days.  The original `specification for packages <http://legacy.python.org/doc/essays/packages.html>`_ is still available to read, although some details have changed since the writing of that document."
+msgid "The import machinery has evolved considerably since Python's early days.  The original `specification for packages <https://www.python.org/doc/essays/packages/>`_ is still available to read, although some details have changed since the writing of that document."
 msgstr ""
 
 #: ../../reference/import.rst:971

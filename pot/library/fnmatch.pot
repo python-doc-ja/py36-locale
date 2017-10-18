@@ -76,15 +76,15 @@ msgid "Note that the filename separator (``'/'`` on Unix) is *not* special to th
 msgstr ""
 
 #: ../../library/fnmatch.rst:45
-msgid "Test whether the *filename* string matches the *pattern* string, returning :const:`True` or :const:`False`.  If the operating system is case-insensitive, then both parameters will be normalized to all lower- or upper-case before the comparison is performed.  :func:`fnmatchcase` can be used to perform a case-sensitive comparison, regardless of whether that's standard for the operating system."
+msgid "Test whether the *filename* string matches the *pattern* string, returning :const:`True` or :const:`False`.  Both parameters are case-normalized using :func:`os.path.normcase`. :func:`fnmatchcase` can be used to perform a case-sensitive comparison, regardless of whether that's standard for the operating system."
 msgstr ""
 
-#: ../../library/fnmatch.rst:52
+#: ../../library/fnmatch.rst:51
 msgid "This example will print all file names in the current directory with the extension ``.txt``::"
 msgstr ""
 
-#: ../../library/fnmatch.rst:65
-msgid "Test whether *filename* matches *pattern*, returning :const:`True` or :const:`False`; the comparison is case-sensitive."
+#: ../../library/fnmatch.rst:64
+msgid "Test whether *filename* matches *pattern*, returning :const:`True` or :const:`False`; the comparison is case-sensitive and does not apply :func:`os.path.normcase`."
 msgstr ""
 
 #: ../../library/fnmatch.rst:71

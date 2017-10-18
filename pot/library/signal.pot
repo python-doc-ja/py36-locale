@@ -241,107 +241,107 @@ msgid "Set the wakeup file descriptor to *fd*.  When a signal is received, the s
 msgstr ""
 
 #: ../../library/signal.rst:309
-msgid "The old wakeup fd is returned.  *fd* must be non-blocking.  It is up to the library to remove any bytes before calling poll or select again."
+msgid "The old wakeup fd is returned (or -1 if file descriptor wakeup was not enabled).  If *fd* is -1, file descriptor wakeup is disabled. If not -1, *fd* must be non-blocking.  It is up to the library to remove any bytes from *fd* before calling poll or select again."
 msgstr ""
 
-#: ../../library/signal.rst:312
+#: ../../library/signal.rst:314
 msgid "Use for example ``struct.unpack('%uB' % len(data), data)`` to decode the signal numbers list."
 msgstr ""
 
-#: ../../library/signal.rst:315
-#: ../../library/signal.rst:343
+#: ../../library/signal.rst:317
+#: ../../library/signal.rst:345
 msgid "When threads are enabled, this function can only be called from the main thread; attempting to call it from other threads will cause a :exc:`ValueError` exception to be raised."
 msgstr ""
 
-#: ../../library/signal.rst:319
+#: ../../library/signal.rst:321
 msgid "On Windows, the function now also supports socket handles."
 msgstr ""
 
-#: ../../library/signal.rst:325
+#: ../../library/signal.rst:327
 msgid "Change system call restart behaviour: if *flag* is :const:`False`, system calls will be restarted when interrupted by signal *signalnum*, otherwise system calls will be interrupted.  Returns nothing.  Availability: Unix (see the man page :manpage:`siginterrupt(3)` for further information)."
 msgstr ""
 
-#: ../../library/signal.rst:330
+#: ../../library/signal.rst:332
 msgid "Note that installing a signal handler with :func:`signal` will reset the restart behaviour to interruptible by implicitly calling :c:func:`siginterrupt` with a true *flag* value for the given signal."
 msgstr ""
 
-#: ../../library/signal.rst:337
+#: ../../library/signal.rst:339
 msgid "Set the handler for signal *signalnum* to the function *handler*.  *handler* can be a callable Python object taking two arguments (see below), or one of the special values :const:`signal.SIG_IGN` or :const:`signal.SIG_DFL`.  The previous signal handler will be returned (see the description of :func:`getsignal` above).  (See the Unix man page :manpage:`signal(2)`.)"
 msgstr ""
 
-#: ../../library/signal.rst:347
+#: ../../library/signal.rst:349
 msgid "The *handler* is called with two arguments: the signal number and the current stack frame (``None`` or a frame object; for a description of frame objects, see the :ref:`description in the type hierarchy <frame-objects>` or see the attribute descriptions in the :mod:`inspect` module)."
 msgstr ""
 
-#: ../../library/signal.rst:352
+#: ../../library/signal.rst:354
 msgid "On Windows, :func:`signal` can only be called with :const:`SIGABRT`, :const:`SIGFPE`, :const:`SIGILL`, :const:`SIGINT`, :const:`SIGSEGV`, :const:`SIGTERM`, or :const:`SIGBREAK`. A :exc:`ValueError` will be raised in any other case. Note that not all systems define the same set of signal names; an :exc:`AttributeError` will be raised if a signal name is not defined as ``SIG*`` module level constant."
 msgstr ""
 
-#: ../../library/signal.rst:363
+#: ../../library/signal.rst:365
 msgid "Examine the set of signals that are pending for delivery to the calling thread (i.e., the signals which have been raised while blocked).  Return the set of the pending signals."
 msgstr ""
 
-#: ../../library/signal.rst:367
+#: ../../library/signal.rst:369
 msgid "Availability: Unix (see the man page :manpage:`sigpending(2)` for further information)."
 msgstr ""
 
-#: ../../library/signal.rst:370
+#: ../../library/signal.rst:372
 msgid "See also :func:`pause`, :func:`pthread_sigmask` and :func:`sigwait`."
 msgstr ""
 
-#: ../../library/signal.rst:377
+#: ../../library/signal.rst:379
 msgid "Suspend execution of the calling thread until the delivery of one of the signals specified in the signal set *sigset*.  The function accepts the signal (removes it from the pending list of signals), and returns the signal number."
 msgstr ""
 
-#: ../../library/signal.rst:381
+#: ../../library/signal.rst:383
 msgid "Availability: Unix (see the man page :manpage:`sigwait(3)` for further information)."
 msgstr ""
 
-#: ../../library/signal.rst:384
+#: ../../library/signal.rst:386
 msgid "See also :func:`pause`, :func:`pthread_sigmask`, :func:`sigpending`, :func:`sigwaitinfo` and :func:`sigtimedwait`."
 msgstr ""
 
-#: ../../library/signal.rst:392
+#: ../../library/signal.rst:394
 msgid "Suspend execution of the calling thread until the delivery of one of the signals specified in the signal set *sigset*.  The function accepts the signal and removes it from the pending list of signals. If one of the signals in *sigset* is already pending for the calling thread, the function will return immediately with information about that signal. The signal handler is not called for the delivered signal. The function raises an :exc:`InterruptedError` if it is interrupted by a signal that is not in *sigset*."
 msgstr ""
 
-#: ../../library/signal.rst:401
+#: ../../library/signal.rst:403
 msgid "The return value is an object representing the data contained in the :c:type:`siginfo_t` structure, namely: :attr:`si_signo`, :attr:`si_code`, :attr:`si_errno`, :attr:`si_pid`, :attr:`si_uid`, :attr:`si_status`, :attr:`si_band`."
 msgstr ""
 
-#: ../../library/signal.rst:406
+#: ../../library/signal.rst:408
 msgid "Availability: Unix (see the man page :manpage:`sigwaitinfo(2)` for further information)."
 msgstr ""
 
-#: ../../library/signal.rst:409
+#: ../../library/signal.rst:411
 msgid "See also :func:`pause`, :func:`sigwait` and :func:`sigtimedwait`."
 msgstr ""
 
-#: ../../library/signal.rst:413
+#: ../../library/signal.rst:415
 msgid "The function is now retried if interrupted by a signal not in *sigset* and the signal handler does not raise an exception (see :pep:`475` for the rationale)."
 msgstr ""
 
-#: ../../library/signal.rst:421
+#: ../../library/signal.rst:423
 msgid "Like :func:`sigwaitinfo`, but takes an additional *timeout* argument specifying a timeout. If *timeout* is specified as :const:`0`, a poll is performed. Returns :const:`None` if a timeout occurs."
 msgstr ""
 
-#: ../../library/signal.rst:425
+#: ../../library/signal.rst:427
 msgid "Availability: Unix (see the man page :manpage:`sigtimedwait(2)` for further information)."
 msgstr ""
 
-#: ../../library/signal.rst:428
+#: ../../library/signal.rst:430
 msgid "See also :func:`pause`, :func:`sigwait` and :func:`sigwaitinfo`."
 msgstr ""
 
-#: ../../library/signal.rst:432
+#: ../../library/signal.rst:434
 msgid "The function is now retried with the recomputed *timeout* if interrupted by a signal not in *sigset* and the signal handler does not raise an exception (see :pep:`475` for the rationale)."
 msgstr ""
 
-#: ../../library/signal.rst:441
+#: ../../library/signal.rst:443
 msgid "Example"
 msgstr ""
 
-#: ../../library/signal.rst:443
+#: ../../library/signal.rst:445
 msgid "Here is a minimal example program. It uses the :func:`alarm` function to limit the time spent waiting to open a file; this is useful if the file is for a serial device that may not be turned on, which would normally cause the :func:`os.open` to hang indefinitely.  The solution is to set a 5-second alarm before opening the file; if the operation takes too long, the alarm signal will be sent, and the handler raises an exception. ::"
 msgstr ""
 

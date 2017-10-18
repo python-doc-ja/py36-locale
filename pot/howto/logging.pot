@@ -19,6 +19,10 @@ msgstr ""
 msgid "Logging HOWTO"
 msgstr ""
 
+#: ../../howto/logging.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../howto/logging.rst:5
 msgid "Vinay Sajip <vinay_sajip at red-dove dot com>"
 msgstr ""

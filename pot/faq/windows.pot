@@ -27,10 +27,6 @@ msgstr ""
 msgid "This is not necessarily a straightforward question. If you are already familiar with running programs from the Windows command line then everything will seem obvious; otherwise, you might need a little more guidance."
 msgstr ""
 
-#: ../../faq/windows.rst:0
-msgid "|Python Development on XP|_"
-msgstr ""
-
 #: ../../faq/windows.rst:27
 msgid "This series of screencasts aims to get you up and running with Python on Windows XP.  The knowledge is distilled into 1.5 hours and will get you up and running with the right Python distribution, coding in your choice of IDE, and debugging and writing solid code with unit-tests."
 msgstr ""
@@ -73,10 +69,6 @@ msgstr ""
 
 #: ../../faq/windows.rst:94
 msgid "If the ``python`` command, instead of displaying the interpreter prompt ``>>>``, gives you a message like::"
-msgstr ""
-
-#: ../../faq/windows.rst:0
-msgid "|Adding Python to DOS Path|_"
 msgstr ""
 
 #: ../../faq/windows.rst:102

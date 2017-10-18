@@ -23,10 +23,6 @@ msgstr ""
 msgid "**Source code:** :source:`Lib/logging/handlers.py`"
 msgstr ""
 
-#: ../../library/logging.handlers.rst:0
-msgid "Important"
-msgstr ""
-
 #: ../../library/logging.handlers.rst:14
 msgid "This page contains only reference information. For tutorials, please see"
 msgstr ""
@@ -185,6 +181,11 @@ msgstr ""
 
 #: ../../library/logging.handlers.rst:227
 msgid "The default implementation calls the 'namer' attribute of the handler, if it's callable, passing the default name to it. If the attribute isn't callable (the default is ``None``), the name is returned unchanged."
+msgstr ""
+
+#: ../../library/logging.handlers.rst:0
+#: ../../library/logging.handlers.rst:0
+msgid "Parameters"
 msgstr ""
 
 #: ../../library/logging.handlers.rst:231

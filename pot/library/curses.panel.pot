@@ -72,7 +72,7 @@ msgid "Push the panel to the bottom of the stack."
 msgstr ""
 
 #: ../../library/curses.panel.rst:77
-msgid "Returns true if the panel is hidden (not visible), false otherwise."
+msgid "Returns ``True`` if the panel is hidden (not visible), ``False`` otherwise."
 msgstr ""
 
 #: ../../library/curses.panel.rst:82

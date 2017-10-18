@@ -734,7 +734,7 @@ msgid "Shebang Lines"
 msgstr ""
 
 #: ../../using/windows.rst:551
-msgid "If the first line of a script file starts with ``#!``, it is known as a \"shebang\" line.  Linux and other Unix like operating systems have native support for such lines and are commonly used on such systems to indicate how a script should be executed.  This launcher allows the same facilities to be using with Python scripts on Windows and the examples above demonstrate their use."
+msgid "If the first line of a script file starts with ``#!``, it is known as a \"shebang\" line.  Linux and other Unix like operating systems have native support for such lines and they are commonly used on such systems to indicate how a script should be executed.  This launcher allows the same facilities to be used with Python scripts on Windows and the examples above demonstrate their use."
 msgstr ""
 
 #: ../../using/windows.rst:558
@@ -1062,7 +1062,7 @@ msgid "Compiling Python on Windows"
 msgstr ""
 
 #: ../../using/windows.rst:896
-msgid "If you want to compile CPython yourself, first thing you should do is get the `source <https://www.python.org/downloads/source/>`_. You can download either the latest release's source or just grab a fresh `checkout <https://docs.python.org/devguide/setup.html#getting-the-source-code>`_."
+msgid "If you want to compile CPython yourself, first thing you should do is get the `source <https://www.python.org/downloads/source/>`_. You can download either the latest release's source or just grab a fresh `checkout <https://devguide.python.org/setup/#getting-the-source-code>`_."
 msgstr ""
 
 #: ../../using/windows.rst:901

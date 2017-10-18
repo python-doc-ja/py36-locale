@@ -19,12 +19,12 @@ msgstr ""
 msgid "Porting Python 2 Code to Python 3"
 msgstr ""
 
-#: ../../howto/pyporting.rst:7
-msgid "Brett Cannon"
+#: ../../howto/pyporting.rst:0
+msgid "author"
 msgstr ""
 
-#: ../../howto/pyporting.rst:0
-msgid "Abstract"
+#: ../../howto/pyporting.rst:7
+msgid "Brett Cannon"
 msgstr ""
 
 #: ../../howto/pyporting.rst:11

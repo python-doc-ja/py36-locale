@@ -24,6 +24,6 @@ msgid "The \"What's New in Python\" series of essays takes tours through the mos
 msgstr ""
 
 #: ../../whatsnew/index.rst:30
-msgid "The \"Changelog\" is a HTML version of the file :source:`Misc/NEWS` which contains *all* nontrivial changes to Python for the current version."
+msgid "The \"Changelog\" is an HTML version of the `file built <https://pypi.org/project/blurb>`_ from the contents of the :source:`Misc/NEWS.d` directory tree, which contains *all* nontrivial changes to Python for the current version."
 msgstr ""
 

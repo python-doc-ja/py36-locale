@@ -388,7 +388,7 @@ msgid "Returns an awaitable which when run resumes the execution of the asynchro
 msgstr ""
 
 #: ../../reference/expressions.rst:632
-msgid "Returns an awaitable that raises an exception of type ``type`` at the point where the asynchronous generator was paused, and returns the next value yielded by the generator function as the value of the raised :exc:`StopIteration` exception.  If the asynchronous generator exits without yielding another value, an :exc:`StopAsyncIteration` exception is raised by the awaitable. If the generator function does not catch the passed-in exception, or raises a different exception, then when the awaitalbe is run that exception propagates to the caller of the awaitable."
+msgid "Returns an awaitable that raises an exception of type ``type`` at the point where the asynchronous generator was paused, and returns the next value yielded by the generator function as the value of the raised :exc:`StopIteration` exception.  If the asynchronous generator exits without yielding another value, an :exc:`StopAsyncIteration` exception is raised by the awaitable. If the generator function does not catch the passed-in exception, or raises a different exception, then when the awaitable is run that exception propagates to the caller of the awaitable."
 msgstr ""
 
 #: ../../reference/expressions.rst:647
@@ -1137,7 +1137,7 @@ msgid "``*``, ``@``, ``/``, ``//``, ``%``"
 msgstr ""
 
 #: ../../reference/expressions.rst:1694
-msgid "Multiplication, matrix multiplication division, remainder [#]_"
+msgid "Multiplication, matrix multiplication, division, floor division, remainder [#]_"
 msgstr ""
 
 #: ../../reference/expressions.rst:1698

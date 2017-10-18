@@ -56,7 +56,7 @@ msgid "The *policy* keyword argument was added."
 msgstr ""
 
 #: ../../library/email.compat32-message.rst:68
-msgid "Return the entire message flattened as a string.  When optional *unixfrom* is true, the envelope header is included in the returned string. *unixfrom* defaults to ``False``.  For backward compabitility reasons, *maxheaderlen* defaults to ``0``, so if you want a different value you must override it explicitly (the value specified for *max_line_length* in the policy will be ignored by this method).  The *policy* argument may be used to override the default policy obtained from the message instance. This can be used to control some of the formatting produced by the method, since the specified *policy* will be passed to the ``Generator``."
+msgid "Return the entire message flattened as a string.  When optional *unixfrom* is true, the envelope header is included in the returned string. *unixfrom* defaults to ``False``.  For backward compatibility reasons, *maxheaderlen* defaults to ``0``, so if you want a different value you must override it explicitly (the value specified for *max_line_length* in the policy will be ignored by this method).  The *policy* argument may be used to override the default policy obtained from the message instance. This can be used to control some of the formatting produced by the method, since the specified *policy* will be passed to the ``Generator``."
 msgstr ""
 
 #: ../../library/email.compat32-message.rst:78

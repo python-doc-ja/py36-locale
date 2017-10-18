@@ -713,6 +713,10 @@ msgstr ""
 msgid "Return the timeout in seconds (float) associated with socket operations, or ``None`` if no timeout is set.  This reflects the last call to :meth:`setblocking` or :meth:`settimeout`."
 msgstr ""
 
+#: ../../library/socket.rst:0
+msgid "platform"
+msgstr ""
+
 #: ../../library/socket.rst:1026
 msgid "Windows"
 msgstr ""

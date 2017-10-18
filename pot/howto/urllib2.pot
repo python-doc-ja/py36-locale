@@ -19,6 +19,10 @@ msgstr ""
 msgid "HOWTO Fetch Internet Resources Using The urllib Package"
 msgstr ""
 
+#: ../../howto/urllib2.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../howto/urllib2.rst:7
 msgid "`Michael Foord <http://www.voidspace.org.uk/python/index.shtml>`_"
 msgstr ""
@@ -29,10 +33,6 @@ msgstr ""
 
 #: ../../howto/urllib2.rst:18
 msgid "Introduction"
-msgstr ""
-
-#: ../../howto/urllib2.rst:0
-msgid "Related Articles"
 msgstr ""
 
 #: ../../howto/urllib2.rst:22
@@ -52,7 +52,7 @@ msgid "**urllib.request** is a Python module for fetching URLs (Uniform Resource
 msgstr ""
 
 #: ../../howto/urllib2.rst:36
-msgid "urllib.request supports fetching URLs for many \"URL schemes\" (identified by the string before the \":\" in URL - for example \"ftp\" is the URL scheme of \"ftp://python.org/\") using their associated network protocols (e.g. FTP, HTTP). This tutorial focuses on the most common case, HTTP."
+msgid "urllib.request supports fetching URLs for many \"URL schemes\" (identified by the string before the ``\":\"`` in URL - for example ``\"ftp\"`` is the URL scheme of ``\"ftp://python.org/\"``) using their associated network protocols (e.g. FTP, HTTP). This tutorial focuses on the most common case, HTTP."
 msgstr ""
 
 #: ../../howto/urllib2.rst:41
@@ -289,7 +289,7 @@ msgid "In the above example we only supplied our ``HTTPBasicAuthHandler`` to ``b
 msgstr ""
 
 #: ../../howto/urllib2.rst:512
-msgid "``top_level_url`` is in fact *either* a full URL (including the 'http:' scheme component and the hostname and optionally the port number) e.g. \"http://example.com/\" *or* an \"authority\" (i.e. the hostname, optionally including the port number) e.g. \"example.com\" or \"example.com:8080\" (the latter example includes a port number).  The authority, if present, must NOT contain the \"userinfo\" component - for example \"joe:password@example.com\" is not correct."
+msgid "``top_level_url`` is in fact *either* a full URL (including the 'http:' scheme component and the hostname and optionally the port number) e.g. ``\"http://example.com/\"`` *or* an \"authority\" (i.e. the hostname, optionally including the port number) e.g. ``\"example.com\"`` or ``\"example.com:8080\"`` (the latter example includes a port number).  The authority, if present, must NOT contain the \"userinfo\" component - for example ``\"joe:password@example.com\"`` is not correct."
 msgstr ""
 
 #: ../../howto/urllib2.rst:522

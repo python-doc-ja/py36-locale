@@ -519,7 +519,7 @@ msgid "The ``encodingname`` part is now optional."
 msgstr ""
 
 #: ../../using/cmdline.rst:572
-msgid "On Windows, the encoding specified by this variable is ignored for interactive console buffers unless :envvar:`PYTHONLEGACYWINDOWSIOENCODING` is also specified. Files and pipes redirected through the standard streams are not affected."
+msgid "On Windows, the encoding specified by this variable is ignored for interactive console buffers unless :envvar:`PYTHONLEGACYWINDOWSSTDIO` is also specified. Files and pipes redirected through the standard streams are not affected."
 msgstr ""
 
 #: ../../using/cmdline.rst:579

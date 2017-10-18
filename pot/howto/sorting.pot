@@ -19,8 +19,16 @@ msgstr ""
 msgid "Sorting HOW TO"
 msgstr ""
 
+#: ../../howto/sorting.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../howto/sorting.rst:6
 msgid "Andrew Dalke and Raymond Hettinger"
+msgstr ""
+
+#: ../../howto/sorting.rst:0
+msgid "Release"
 msgstr ""
 
 #: ../../howto/sorting.rst:7

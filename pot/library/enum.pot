@@ -315,8 +315,16 @@ msgstr ""
 msgid "The complete signature is::"
 msgstr ""
 
+#: ../../library/enum.rst:0
+msgid "value"
+msgstr ""
+
 #: ../../library/enum.rst:505
 msgid "What the new Enum class will record as its name."
+msgstr ""
+
+#: ../../library/enum.rst:0
+msgid "names"
 msgstr ""
 
 #: ../../library/enum.rst:507
@@ -335,16 +343,32 @@ msgstr ""
 msgid "or a mapping::"
 msgstr ""
 
+#: ../../library/enum.rst:0
+msgid "module"
+msgstr ""
+
 #: ../../library/enum.rst:524
 msgid "name of module where new Enum class can be found."
+msgstr ""
+
+#: ../../library/enum.rst:0
+msgid "qualname"
 msgstr ""
 
 #: ../../library/enum.rst:526
 msgid "where in module new Enum class can be found."
 msgstr ""
 
+#: ../../library/enum.rst:0
+msgid "type"
+msgstr ""
+
 #: ../../library/enum.rst:528
 msgid "type to mix in to new Enum class."
+msgstr ""
+
+#: ../../library/enum.rst:0
+msgid "start"
 msgstr ""
 
 #: ../../library/enum.rst:530

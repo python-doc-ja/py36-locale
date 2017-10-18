@@ -40,7 +40,7 @@ msgid ":attr:`__package__` and :attr:`__loader__` are set to ``None``."
 msgstr ""
 
 #: ../../c-api/module.rst:53
-msgid "Similar to :c:func:`PyImport_NewObject`, but the name is a UTF-8 encoded string instead of a Unicode object."
+msgid "Similar to :c:func:`PyModule_NewObject`, but the name is a UTF-8 encoded string instead of a Unicode object."
 msgstr ""
 
 #: ../../c-api/module.rst:61

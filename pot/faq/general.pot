@@ -144,7 +144,7 @@ msgid "The source distribution is a gzipped tar file containing the complete C s
 msgstr ""
 
 #: ../../faq/general.rst:169
-msgid "Consult the `Getting Started section of the Python Developer's Guide <https://docs.python.org/devguide/setup.html>`__ for more information on getting the source code and compiling it."
+msgid "Consult the `Getting Started section of the Python Developer's Guide <https://devguide.python.org/setup/>`__ for more information on getting the source code and compiling it."
 msgstr ""
 
 #: ../../faq/general.rst:175
@@ -196,7 +196,7 @@ msgid "Alpha and beta releases are available from https://www.python.org/downloa
 msgstr ""
 
 #: ../../faq/general.rst:225
-msgid "You can also access the development version of Python through Git.  See `The Python Developer's Guide <https://docs.python.org/devguide/>`_ for details."
+msgid "You can also access the development version of Python through Git.  See `The Python Developer's Guide <https://devguide.python.org/>`_ for details."
 msgstr ""
 
 #: ../../faq/general.rst:230
@@ -212,7 +212,7 @@ msgid "You must have a Roundup account to report bugs; this makes it possible fo
 msgstr ""
 
 #: ../../faq/general.rst:241
-msgid "For more information on how Python is developed, consult `the Python Developer's Guide <https://docs.python.org/devguide/>`_."
+msgid "For more information on how Python is developed, consult `the Python Developer's Guide <https://devguide.python.org/>`_."
 msgstr ""
 
 #: ../../faq/general.rst:246

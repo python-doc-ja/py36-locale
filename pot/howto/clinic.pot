@@ -19,12 +19,12 @@ msgstr ""
 msgid "Argument Clinic How-To"
 msgstr ""
 
-#: ../../howto/clinic.rst:7
-msgid "Larry Hastings"
+#: ../../howto/clinic.rst:0
+msgid "author"
 msgstr ""
 
-#: ../../howto/clinic.rst:0
-msgid "Abstract"
+#: ../../howto/clinic.rst:7
+msgid "Larry Hastings"
 msgstr ""
 
 #: ../../howto/clinic.rst:12
@@ -1394,7 +1394,7 @@ msgid "``two-pass``"
 msgstr ""
 
 #: ../../howto/clinic.rst:1409
-msgid "A buffer like ``buffer``.  However, a two-pass buffer can only be written once, and it prints out all text sent to it during all of processing, even from Clinic blocks *after* the"
+msgid "A buffer like ``buffer``.  However, a two-pass buffer can only be dumped once, and it prints out all text sent to it during all processing, even from Clinic blocks *after* the dumping point."
 msgstr ""
 
 #: ../../howto/clinic.rst:1415
@@ -1459,7 +1459,7 @@ msgid "The default filename is ``\"{dirname}/clinic/{basename}.h\"``."
 msgstr ""
 
 #: ../../howto/clinic.rst:1474
-msgid "Save up all most of the output from Clinic, to be written into your file near the end.  For Python files implementing modules or builtin types, it's recommended that you dump the buffer just above the static structures for your module or builtin type; these are normally very near the end.  Using ``buffer`` may require even more editing than ``file``, if your file has static ``PyMethodDef`` arrays defined in the middle of the file."
+msgid "Save up most of the output from Clinic, to be written into your file near the end.  For Python files implementing modules or builtin types, it's recommended that you dump the buffer just above the static structures for your module or builtin type; these are normally very near the end.  Using ``buffer`` may require even more editing than ``file``, if your file has static ``PyMethodDef`` arrays defined in the middle of the file."
 msgstr ""
 
 #: ../../howto/clinic.rst:1483

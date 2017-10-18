@@ -19,12 +19,12 @@ msgstr ""
 msgid "Socket Programming HOWTO"
 msgstr ""
 
-#: ../../howto/sockets.rst:7
-msgid "Gordon McMillan"
+#: ../../howto/sockets.rst:0
+msgid "Author"
 msgstr ""
 
-#: ../../howto/sockets.rst:0
-msgid "Abstract"
+#: ../../howto/sockets.rst:7
+msgid "Gordon McMillan"
 msgstr ""
 
 #: ../../howto/sockets.rst:12

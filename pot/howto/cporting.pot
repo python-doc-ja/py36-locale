@@ -19,12 +19,12 @@ msgstr ""
 msgid "Porting Extension Modules to Python 3"
 msgstr ""
 
-#: ../../howto/cporting.rst:9
-msgid "Benjamin Peterson"
+#: ../../howto/cporting.rst:0
+msgid "author"
 msgstr ""
 
-#: ../../howto/cporting.rst:0
-msgid "Abstract"
+#: ../../howto/cporting.rst:9
+msgid "Benjamin Peterson"
 msgstr ""
 
 #: ../../howto/cporting.rst:14

@@ -92,7 +92,7 @@ msgid ":keyword:`break` and :keyword:`continue` Statements, and :keyword:`else` 
 msgstr ""
 
 #: ../../tutorial/controlflow.rst:160
-msgid "The :keyword:`break` statement, like in C, breaks out of the smallest enclosing :keyword:`for` or :keyword:`while` loop."
+msgid "The :keyword:`break` statement, like in C, breaks out of the innermost enclosing :keyword:`for` or :keyword:`while` loop."
 msgstr ""
 
 #: ../../tutorial/controlflow.rst:163

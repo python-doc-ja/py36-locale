@@ -220,7 +220,7 @@ msgid "Bytes"
 msgstr ""
 
 #: ../../reference/datamodel.rst:321
-msgid "A bytes object is an immutable array.  The items are 8-bit bytes, represented by integers in the range 0 <= x < 256.  Bytes literals (like ``b'abc'``) and the built-in function :func:`bytes` can be used to construct bytes objects.  Also, bytes objects can be decoded to strings via the :meth:`~bytes.decode` method."
+msgid "A bytes object is an immutable array.  The items are 8-bit bytes, represented by integers in the range 0 <= x < 256.  Bytes literals (like ``b'abc'``) and the built-in :func:`bytes()` constructor can be used to create bytes objects.  Also, bytes objects can be decoded to strings via the :meth:`~bytes.decode` method."
 msgstr ""
 
 #: ../../reference/datamodel.rst:359
@@ -248,7 +248,7 @@ msgid "Byte Arrays"
 msgstr ""
 
 #: ../../reference/datamodel.rst:351
-msgid "A bytearray object is a mutable array. They are created by the built-in :func:`bytearray` constructor.  Aside from being mutable (and hence unhashable), byte arrays otherwise provide the same interface and functionality as immutable bytes objects."
+msgid "A bytearray object is a mutable array. They are created by the built-in :func:`bytearray` constructor.  Aside from being mutable (and hence unhashable), byte arrays otherwise provide the same interface and functionality as immutable :class:`bytes` objects."
 msgstr ""
 
 #: ../../reference/datamodel.rst:358
@@ -781,7 +781,7 @@ msgid "Called to create a new instance of class *cls*.  :meth:`__new__` is a sta
 msgstr ""
 
 #: ../../reference/datamodel.rst:1121
-msgid "Typical implementations create a new instance of the class by invoking the superclass's :meth:`__new__` method using ``super(currentclass, cls).__new__(cls[, ...])`` with appropriate arguments and then modifying the newly-created instance as necessary before returning it."
+msgid "Typical implementations create a new instance of the class by invoking the superclass's :meth:`__new__` method using ``super().__new__(cls[, ...])`` with appropriate arguments and then modifying the newly-created instance as necessary before returning it."
 msgstr ""
 
 #: ../../reference/datamodel.rst:1126
@@ -797,7 +797,7 @@ msgid ":meth:`__new__` is intended mainly to allow subclasses of immutable types
 msgstr ""
 
 #: ../../reference/datamodel.rst:1143
-msgid "Called after the instance has been created (by :meth:`__new__`), but before it is returned to the caller.  The arguments are those passed to the class constructor expression.  If a base class has an :meth:`__init__` method, the derived class's :meth:`__init__` method, if any, must explicitly call it to ensure proper initialization of the base class part of the instance; for example: ``BaseClass.__init__(self, [args...])``."
+msgid "Called after the instance has been created (by :meth:`__new__`), but before it is returned to the caller.  The arguments are those passed to the class constructor expression.  If a base class has an :meth:`__init__` method, the derived class's :meth:`__init__` method, if any, must explicitly call it to ensure proper initialization of the base class part of the instance; for example: ``super().__init__([args...])``."
 msgstr ""
 
 #: ../../reference/datamodel.rst:1150
@@ -837,7 +837,7 @@ msgid "The default implementation defined by the built-in type :class:`object` c
 msgstr ""
 
 #: ../../reference/datamodel.rst:1256
-msgid "Called by :func:`bytes` to compute a byte-string representation of an object. This should return a ``bytes`` object."
+msgid "Called by :ref:`bytes <func-bytes>` to compute a byte-string representation of an object. This should return a :class:`bytes` object."
 msgstr ""
 
 #: ../../reference/datamodel.rst:1267
@@ -1285,7 +1285,7 @@ msgid "Metaclass example"
 msgstr ""
 
 #: ../../reference/datamodel.rst:1877
-msgid "The potential uses for metaclasses are boundless. Some ideas that have been explored include logging, interface checking, automatic delegation, automatic property creation, proxies, frameworks, and automatic resource locking/synchronization."
+msgid "The potential uses for metaclasses are boundless. Some ideas that have been explored include enum, logging, interface checking, automatic delegation, automatic property creation, proxies, frameworks, and automatic resource locking/synchronization."
 msgstr ""
 
 #: ../../reference/datamodel.rst:1882

@@ -96,10 +96,10 @@ msgid ":class:`MultipartInvariantViolationDefect` -- A message claimed to be a :
 msgstr ""
 
 #: ../../library/email.errors.rst:104
-msgid ":class:`InvalidBase64PaddingDefect` -- When decoding a block of base64 enocded bytes, the padding was not correct.  Enough padding is added to perform the decode, but the resulting decoded bytes may be invalid."
+msgid ":class:`InvalidBase64PaddingDefect` -- When decoding a block of base64 encoded bytes, the padding was not correct.  Enough padding is added to perform the decode, but the resulting decoded bytes may be invalid."
 msgstr ""
 
 #: ../../library/email.errors.rst:108
-msgid ":class:`InvalidBase64CharactersDefect` -- When decoding a block of base64 enocded bytes, characters outside the base64 alphebet were encountered. The characters are ignored, but the resulting decoded bytes may be invalid."
+msgid ":class:`InvalidBase64CharactersDefect` -- When decoding a block of base64 encoded bytes, characters outside the base64 alphabet were encountered. The characters are ignored, but the resulting decoded bytes may be invalid."
 msgstr ""
 

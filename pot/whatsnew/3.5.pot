@@ -19,6 +19,10 @@ msgstr ""
 msgid "What's New In Python 3.5"
 msgstr ""
 
+#: ../../whatsnew/3.5.rst:0
+msgid "Editors"
+msgstr ""
+
 #: ../../whatsnew/3.5.rst:5
 msgid "Elvis Pranskevichus <elvis@magic.io>, Yury Selivanov <yury@magic.io>"
 msgstr ""

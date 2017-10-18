@@ -35,10 +35,6 @@ msgstr ""
 msgid "Imagine a robotic turtle starting at (0, 0) in the x-y plane.  After an ``import turtle``, give it the command ``turtle.forward(15)``, and it moves (on-screen!) 15 pixels in the direction it is facing, drawing a line as it moves.  Give it the command ``turtle.right(25)``, and it rotates in-place 25 degrees clockwise."
 msgstr ""
 
-#: ../../library/turtle.rst:0
-msgid "Turtle star"
-msgstr ""
-
 #: ../../library/turtle.rst:33
 msgid "Turtle can draw intricate shapes using programs that repeat simple moves."
 msgstr ""
@@ -579,6 +575,62 @@ msgstr ""
 
 #: ../../library/turtle.rst:238
 msgid "Most of the examples in this section refer to a Turtle instance called ``turtle``."
+msgstr ""
+
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+msgid "Parameters"
 msgstr ""
 
 #: ../../library/turtle.rst:247
@@ -1435,7 +1487,7 @@ msgid "string"
 msgstr ""
 
 #: ../../library/turtle.rst:1799
-msgid "Pop up a dialog window for input of a string. Parameter title is the title of the dialog window, propmt is a text mostly describing what information to input. Return the string input. If the dialog is canceled, return ``None``. ::"
+msgid "Pop up a dialog window for input of a string. Parameter title is the title of the dialog window, prompt is a text mostly describing what information to input. Return the string input. If the dialog is canceled, return ``None``. ::"
 msgstr ""
 
 #: ../../library/turtle.rst:1815
@@ -2075,7 +2127,7 @@ msgid ":func:`clone`, :func:`undo`"
 msgstr ""
 
 #: ../../library/turtle.rst:2371
-msgid "yingyang"
+msgid "yinyang"
 msgstr ""
 
 #: ../../library/turtle.rst:2371

@@ -23,10 +23,6 @@ msgstr ""
 msgid "**Source code:** :source:`Lib/logging/__init__.py`"
 msgstr ""
 
-#: ../../library/logging.rst:0
-msgid "Important"
-msgstr ""
-
 #: ../../library/logging.rst:16
 msgid "This page contains the API reference information. For tutorial information and discussion of more advanced topics, see"
 msgstr ""
@@ -507,6 +503,11 @@ msgstr ""
 msgid "The primary information is passed in :attr:`msg` and :attr:`args`, which are combined using ``msg % args`` to create the :attr:`message` field of the record."
 msgstr ""
 
+#: ../../library/logging.rst:0
+#: ../../library/logging.rst:0
+msgid "Parameters"
+msgstr ""
+
 #: ../../library/logging.rst:658
 msgid "The name of the logger used to log the event represented by this LogRecord. Note that this name will always have this value, even though it may be emitted by a handler attached to a different (ancestor) logger."
 msgstr ""
@@ -590,6 +591,7 @@ msgid "Description"
 msgstr ""
 
 #: ../../library/logging.rst:742
+#: ../../library/logging.rst:0
 msgid "args"
 msgstr ""
 
@@ -629,6 +631,7 @@ msgid "Time when the :class:`LogRecord` was created (as returned by :func:`time.
 msgstr ""
 
 #: ../../library/logging.rst:756
+#: ../../library/logging.rst:0
 msgid "exc_info"
 msgstr ""
 
@@ -733,6 +736,7 @@ msgid "The logged message, computed as ``msg % args``. This is set when :meth:`F
 msgstr ""
 
 #: ../../library/logging.rst:784
+#: ../../library/logging.rst:0
 msgid "msg"
 msgstr ""
 
@@ -741,6 +745,7 @@ msgid "The format string passed in the original logging call. Merged with ``args
 msgstr ""
 
 #: ../../library/logging.rst:789
+#: ../../library/logging.rst:0
 msgid "name"
 msgstr ""
 
@@ -1100,12 +1105,24 @@ msgstr ""
 msgid "The logger name."
 msgstr ""
 
+#: ../../library/logging.rst:0
+msgid "level"
+msgstr ""
+
 #: ../../library/logging.rst:1185
 msgid "The logging level (numeric)."
 msgstr ""
 
+#: ../../library/logging.rst:0
+msgid "fn"
+msgstr ""
+
 #: ../../library/logging.rst:1186
 msgid "The full pathname of the file where the logging call was made."
+msgstr ""
+
+#: ../../library/logging.rst:0
+msgid "lno"
 msgstr ""
 
 #: ../../library/logging.rst:1187
@@ -1124,12 +1141,24 @@ msgstr ""
 msgid "An exception tuple, or ``None``."
 msgstr ""
 
+#: ../../library/logging.rst:0
+msgid "func"
+msgstr ""
+
 #: ../../library/logging.rst:1191
 msgid "The name of the function or method which invoked the logging call."
 msgstr ""
 
+#: ../../library/logging.rst:0
+msgid "sinfo"
+msgstr ""
+
 #: ../../library/logging.rst:1193
 msgid "A stack traceback such as is provided by :func:`traceback.print_stack`, showing the call hierarchy."
+msgstr ""
+
+#: ../../library/logging.rst:0
+msgid "kwargs"
 msgstr ""
 
 #: ../../library/logging.rst:1195

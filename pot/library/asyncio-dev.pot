@@ -80,7 +80,7 @@ msgid "Cancellation"
 msgstr ""
 
 #: ../../library/asyncio-dev.rst:54
-msgid "Cancellation of tasks is not common in classic programming. In asynchronous programming, not only it is something common, but you have to prepare your code to handle it."
+msgid "Cancellation of tasks is not common in classic programming. In asynchronous programming, not only is it something common, but you have to prepare your code to handle it."
 msgstr ""
 
 #: ../../library/asyncio-dev.rst:58
