@@ -298,10 +298,9 @@ msgstr "およそ次と等価です::"
 
 #: ../../library/functools.rst:269
 msgid ""
-"Transforms a function into a :term:`single-dispatch <single dispatch>` "
+"Transform a function into a :term:`single-dispatch <single dispatch>` "
 ":term:`generic function`."
 msgstr ""
-"関数を :term:`シングルディスパッチ <single dispatch>` :term:`generic function` に変換します。"
 
 #: ../../library/functools.rst:272
 msgid ""

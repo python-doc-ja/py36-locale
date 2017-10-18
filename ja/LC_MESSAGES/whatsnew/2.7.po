@@ -21,6 +21,10 @@ msgstr ""
 msgid "What's New in Python 2.7"
 msgstr "What's New in Python 2.7"
 
+#: ../../whatsnew/2.7.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../whatsnew/2.7.rst:5
 msgid "A.M. Kuchling (amk at amk.ca)"
 msgstr "A.M. Kuchling (amk at amk.ca)"

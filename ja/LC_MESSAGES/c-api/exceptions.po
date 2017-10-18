@@ -413,7 +413,7 @@ msgid ""
 ":c:data:`PyExc_Warning` is a subclass of :c:data:`PyExc_Exception`; the "
 "default warning category is :c:data:`PyExc_RuntimeWarning`. The standard "
 "Python warning categories are available as global variables whose names are "
-"enumerated at :ref:`standarwarningcategories`."
+"enumerated at :ref:`standardwarningcategories`."
 msgstr ""
 
 #: ../../c-api/exceptions.rst:300
@@ -1582,7 +1582,7 @@ msgid ":exc:`ImportWarning`"
 msgstr ":exc:`ImportWarning`"
 
 #: ../../c-api/exceptions.rst:997
-msgid ":c:data:`PyExc_PendingDepricationWarning`"
+msgid ":c:data:`PyExc_PendingDeprecationWarning`"
 msgstr ""
 
 #: ../../c-api/exceptions.rst:997

@@ -21,6 +21,10 @@ msgstr ""
 msgid "Instrumenting CPython with DTrace and SystemTap"
 msgstr "DTrace と SystemTap で CPython を測定する"
 
+#: ../../howto/instrumentation.rst:0 ../../howto/instrumentation.rst:0
+msgid "author"
+msgstr ""
+
 #: ../../howto/instrumentation.rst:9
 msgid "David Malcolm"
 msgstr "David Malcolm"

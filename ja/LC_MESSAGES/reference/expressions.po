@@ -783,7 +783,7 @@ msgid ""
 ":exc:`StopIteration` exception.  If the asynchronous generator exits without"
 " yielding another value, an :exc:`StopAsyncIteration` exception is raised by"
 " the awaitable. If the generator function does not catch the passed-in "
-"exception, or raises a different exception, then when the awaitalbe is run "
+"exception, or raises a different exception, then when the awaitable is run "
 "that exception propagates to the caller of the awaitable."
 msgstr ""
 
@@ -2157,8 +2157,10 @@ msgid "``*``, ``@``, ``/``, ``//``, ``%``"
 msgstr "``*``, ``@``, ``/``, ``//``, ``%``"
 
 #: ../../reference/expressions.rst:1694
-msgid "Multiplication, matrix multiplication division, remainder [#]_"
-msgstr "乗算、行列の乗算、除算、剰余 [#]_"
+msgid ""
+"Multiplication, matrix multiplication, division, floor division, remainder "
+"[#]_"
+msgstr ""
 
 #: ../../reference/expressions.rst:1698
 msgid "``+x``, ``-x``, ``~x``"

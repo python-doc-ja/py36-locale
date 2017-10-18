@@ -129,10 +129,9 @@ msgstr "取り消し"
 #: ../../library/asyncio-dev.rst:54
 msgid ""
 "Cancellation of tasks is not common in classic programming. In asynchronous "
-"programming, not only it is something common, but you have to prepare your "
+"programming, not only is it something common, but you have to prepare your "
 "code to handle it."
 msgstr ""
-"古典的なプログラミングでは、タスクのキャンセルは一般的ではありません。非同期プログラミングでは、それは一般的であるどころか、それを処理するためのコードを用意する必要があります。"
 
 #: ../../library/asyncio-dev.rst:58
 msgid ""

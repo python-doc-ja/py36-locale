@@ -21,6 +21,10 @@ msgstr ""
 msgid "What's New In Python 3.0"
 msgstr "What's New In Python 3.0"
 
+#: ../../whatsnew/3.0.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../whatsnew/3.0.rst:7
 msgid "Guido van Rossum"
 msgstr "Guido van Rossum"

@@ -21,6 +21,10 @@ msgstr ""
 msgid "What's New In Python 3.4"
 msgstr "What's New In Python 3.4"
 
+#: ../../whatsnew/3.4.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../whatsnew/3.4.rst:5
 msgid "R. David Murray <rdmurray@bitdance.com> (Editor)"
 msgstr "R. David Murray <rdmurray@bitdance.com> (編集者)"
@@ -3593,17 +3597,11 @@ msgstr ""
 
 #: ../../whatsnew/3.4.rst:1962
 msgid ""
-"A new ``make`` target `coverage-report "
-"<https://docs.python.org/devguide/coverage.html#measuring-coverage-of-c"
-"-code-with-gcov-and-lcov>`_ will build python, run the test suite, and "
-"generate an HTML coverage report for the C codebase using ``gcov`` and `lcov"
-" <http://ltp.sourceforge.net/coverage/lcov.php>`_."
+"A new ``make`` target `coverage-report <https://devguide.python.org/coverage"
+"/#measuring-coverage-of-c-code-with-gcov-and-lcov>`_ will build python, run "
+"the test suite, and generate an HTML coverage report for the C codebase "
+"using ``gcov`` and `lcov <http://ltp.sourceforge.net/coverage/lcov.php>`_."
 msgstr ""
-"新たな ``make`` ターゲットの `coverage-report "
-"<https://docs.python.org/devguide/coverage.html#measuring-coverage-of-c"
-"-code-with-gcov-and-lcov>`_ の追加。これは python をビルドし、テストスイートを実行し、 ``gcov`` 、 "
-"`lcov <http://ltp.sourceforge.net/coverage/lcov.php>`_ を用いたカバレッジレポートを HTML "
-"出力します。"
 
 #: ../../whatsnew/3.4.rst:1968
 msgid ""
@@ -4042,14 +4040,9 @@ msgstr "時代遅れとなり、以前に既に非推奨となった以下の AP
 #: ../../whatsnew/3.4.rst:2178
 msgid ""
 "The unmaintained ``Misc/TextMate`` and ``Misc/vim`` directories have been "
-"removed (see the `devguide <https://docs.python.org/devguide>`_ for "
-"suggestions on what to use instead)."
+"removed (see the `devguide <https://devguide.python.org>`_ for suggestions "
+"on what to use instead)."
 msgstr ""
-"保守されていなかった ``Misc/TextMate`` と ``Misc/vim`` ディレクトリは削除されました (代わりに何が使えるかの提案は "
-"`devguide <https://docs.python.org/devguide>`_ をみてください --- 訳注: おそらく "
-"`Additional Resources <https://docs.python.org/devguide/#additional-"
-"resources>`_ に挙げられている `wiki <https://wiki.python.org/moin/PythonEditors>`_ "
-"を指している ---)。"
 
 #: ../../whatsnew/3.4.rst:2182
 msgid ""

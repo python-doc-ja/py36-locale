@@ -60,11 +60,9 @@ msgstr ":attr:`__package__` と :attr:`__loader__` は ``None`` に設定され�
 
 #: ../../c-api/module.rst:53
 msgid ""
-"Similar to :c:func:`PyImport_NewObject`, but the name is a UTF-8 encoded "
+"Similar to :c:func:`PyModule_NewObject`, but the name is a UTF-8 encoded "
 "string instead of a Unicode object."
 msgstr ""
-":c:func:`PyImport_NewObject` に似ていますが、 name は Unicode オブジェクトではなく UTF-8 "
-"でエンコードされた文字列です。"
 
 #: ../../c-api/module.rst:61
 msgid ""

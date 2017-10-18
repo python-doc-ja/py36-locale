@@ -2340,7 +2340,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/datetime.rst:1857
-msgid "`datetuil.tz <https://dateutil.readthedocs.io/en/stable/tz.html>`_"
+msgid "`dateutil.tz <https://dateutil.readthedocs.io/en/stable/tz.html>`_"
 msgstr ""
 
 #: ../../library/datetime.rst:1853
@@ -2353,7 +2353,7 @@ msgstr ""
 
 #: ../../library/datetime.rst:1856
 msgid ""
-"*datetuil.tz* library brings the *IANA timezone database* (also known as the"
+"*dateutil.tz* library brings the *IANA timezone database* (also known as the"
 " Olson database) to Python and its usage is recommended."
 msgstr ""
 

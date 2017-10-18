@@ -230,12 +230,12 @@ msgid ":func:`groupby`"
 msgstr ":func:`groupby`"
 
 #: ../../library/itertools.rst:56
-msgid "iterable[, keyfunc]"
-msgstr "iterable[, keyfunc]"
+msgid "iterable[, key]"
+msgstr ""
 
 #: ../../library/itertools.rst:56
-msgid "sub-iterators grouped by value of keyfunc(v)"
-msgstr "keyfunc(v) の値でグループ化したサブイテレータ"
+msgid "sub-iterators grouped by value of key(v)"
+msgstr ""
 
 #: ../../library/itertools.rst:57
 msgid ":func:`islice`"

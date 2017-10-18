@@ -1423,6 +1423,10 @@ msgstr ""
 "ソケットに指定されたタイムアウト値を取得します。タイムアウト値が設定されている場合には浮動小数点型で秒数が、設定されていなければ ``None`` "
 "が返ります。この値は、最後に呼び出された :meth:`setblocking` または :meth:`settimeout` によって設定されます。"
 
+#: ../../library/socket.rst:0
+msgid "platform"
+msgstr ""
+
 #: ../../library/socket.rst:1026
 msgid "Windows"
 msgstr "Windows"

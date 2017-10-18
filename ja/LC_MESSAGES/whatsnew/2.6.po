@@ -21,6 +21,10 @@ msgstr ""
 msgid "What's New in Python 2.6"
 msgstr "What's New in Python 2.6"
 
+#: ../../whatsnew/2.6.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../whatsnew/2.6.rst:9
 msgid "A.M. Kuchling (amk at amk.ca)"
 msgstr "A.M. Kuchling (amk at amk.ca)"
@@ -333,10 +337,8 @@ msgstr ""
 "<http://sphinx-doc.org/examples.html>`__)、ドキュメンテーションツールとして Sphinx を採用しました。"
 
 #: ../../whatsnew/2.6.rst:236
-msgid ""
-"`Documenting Python <https://docs.python.org/devguide/documenting.html>`__"
+msgid "`Documenting Python <https://devguide.python.org/documenting/>`__"
 msgstr ""
-"`Documenting Python <https://docs.python.org/devguide/documenting.html>`__"
 
 #: ../../whatsnew/2.6.rst:236
 msgid "Describes how to write for Python's documentation."

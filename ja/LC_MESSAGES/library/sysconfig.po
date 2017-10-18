@@ -429,7 +429,7 @@ msgstr ":mod:`sysconfig` をスクリプトとして使う"
 msgid "You can use :mod:`sysconfig` as a script with Python's *-m* option:"
 msgstr "Python の *-m* オプションを使えば、:mod:`sysconfig` をスクリプトとして使用できます:"
 
-#: ../../library/sysconfig.rst:261
+#: ../../library/sysconfig.rst:260
 msgid ""
 "This call will print in the standard output the information returned by "
 ":func:`get_platform`, :func:`get_python_version`, :func:`get_path` and "

@@ -920,13 +920,13 @@ msgstr ""
 
 #: ../../library/collections.rst:774
 msgid ""
-"The *field_names* are a single string with each fieldname separated by "
-"whitespace and/or commas, for example ``'x y'`` or ``'x, y'``.  "
-"Alternatively, *field_names* can be a sequence of strings such as ``['x', "
-"'y']``."
+"The *field_names* are a sequence of strings such as ``['x', 'y']``. "
+"Alternatively, *field_names* can be a single string with each fieldname "
+"separated by whitespace and/or commas, for example ``'x y'`` or ``'x, y'``."
 msgstr ""
-"*field_names* は各フィールド名を空白文字とカンマの片方または両方で区切った文字列です。例えば、``'x y'`` や ``'x, y'``"
-" です。*field_names* には、代わりに ``['x', 'y']`` のような文字列のシーケンスを渡すこともできます。"
+"*field_names* は ``['x', 'y']`` のような文字列のシーケンスです。 *field_names* "
+"には、代わりに各属性名を空白文字 (whitespace) および/またはカンマ (,) で区切った文字列を渡すこともできます。例えば、 ``'x "
+"y'`` や ``'x, y'`` です。"
 
 #: ../../library/collections.rst:778
 msgid ""

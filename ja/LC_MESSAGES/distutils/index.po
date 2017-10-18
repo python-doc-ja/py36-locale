@@ -21,9 +21,17 @@ msgstr ""
 msgid "Distributing Python Modules (Legacy version)"
 msgstr "Python モジュールの配布 (レガシーバージョン)"
 
+#: ../../distutils/index.rst:0
+msgid "Authors"
+msgstr ""
+
 #: ../../distutils/index.rst:7
 msgid "Greg Ward, Anthony Baxter"
 msgstr "Greg Ward, Anthony Baxter"
+
+#: ../../distutils/index.rst:0
+msgid "Email"
+msgstr ""
 
 #: ../../distutils/index.rst:8
 msgid "distutils-sig@python.org"

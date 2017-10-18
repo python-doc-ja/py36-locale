@@ -21,6 +21,10 @@ msgstr ""
 msgid "Argparse Tutorial"
 msgstr "Argparse チュートリアル"
 
+#: ../../howto/argparse.rst:0
+msgid "author"
+msgstr ""
+
 #: ../../howto/argparse.rst:5
 msgid "Tshepang Lekhonkhobe"
 msgstr "Tshepang Lekhonkhobe"

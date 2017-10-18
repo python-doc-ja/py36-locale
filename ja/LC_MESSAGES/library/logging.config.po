@@ -25,10 +25,6 @@ msgstr ":mod:`logging.config` --- ロギングの環境設定"
 msgid "**Source code:** :source:`Lib/logging/config.py`"
 msgstr "**ソースコード:** :source:`Lib/logging/config.py`"
 
-#: ../../library/logging.config.rst:0
-msgid "Important"
-msgstr "重要"
-
 #: ../../library/logging.config.rst:14
 msgid ""
 "This page contains only reference information. For tutorials, please see"
@@ -162,6 +158,10 @@ msgstr ""
 "config-fileformat` "
 "で記述されているとおりにしなければなりません。この関数はアプリケーションから何度も呼び出すことができ、これによって、 "
 "(設定を選択し、選択された設定を読み出す機構をデベロッパが提供していれば) 複数の準備済みの設定からエンドユーザが選択するようにできます。"
+
+#: ../../library/logging.config.rst:0
+msgid "Parameters"
+msgstr ""
 
 #: ../../library/logging.config.rst:90
 msgid ""

@@ -21,6 +21,10 @@ msgstr ""
 msgid "Installing Python Modules (Legacy version)"
 msgstr "Python モジュールのインストール (旧版)"
 
+#: ../../install/index.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../install/index.rst:9
 msgid "Greg Ward"
 msgstr "Greg Ward --- 日本語訳: Python ドキュメント翻訳プロジェクト"

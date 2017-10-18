@@ -25,10 +25,6 @@ msgstr ":mod:`logging.handlers` --- ロギングハンドラ"
 msgid "**Source code:** :source:`Lib/logging/handlers.py`"
 msgstr "**ソースコード:** :source:`Lib/logging/handlers.py`"
 
-#: ../../library/logging.handlers.rst:0
-msgid "Important"
-msgstr "重要"
-
 #: ../../library/logging.handlers.rst:14
 msgid ""
 "This page contains only reference information. For tutorials, please see"
@@ -330,6 +326,10 @@ msgid ""
 msgstr ""
 "デフォルト実装は、ハンドラの 'namer' 属性が callable だった場合、その callable を呼んでデフォルト名を渡します。属性が "
 "callable でない場合 (デフォルトは ``None`` です)、名前は変更せずに返されます。"
+
+#: ../../library/logging.handlers.rst:0 ../../library/logging.handlers.rst:0
+msgid "Parameters"
+msgstr ""
 
 #: ../../library/logging.handlers.rst:231
 msgid "The default name for the log file."
