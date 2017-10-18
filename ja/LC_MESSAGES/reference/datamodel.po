@@ -2673,7 +2673,7 @@ msgstr ""
 msgid ""
 "If the metaclass has no ``__prepare__`` attribute, then the class namespace "
 "is initialised as an empty ordered mapping."
-msgstr ""
+msgstr "メタクラスに ``__prepare__`` 属性がない場合、クラスの名前空間は空の 順序付きマッピングとして初期化されます。"
 
 #: ../../reference/datamodel.rst:1794
 msgid ":pep:`3115` - Metaclasses in Python 3000"
@@ -2707,6 +2707,8 @@ msgid ""
 "class methods, or through the implicit lexically scoped ``__class__`` "
 "reference described in the next section."
 msgstr ""
+"しかし、クラス定義が関数内部で行われる時でさえ、クラス内部で定義されたメソッドはクラススコープで定義された名前を見ることはできません。クラス変数はインスタンスメソッドかクラスメソッドの最初のパラメータからアクセスするか、次の節で説明する、暗黙的に静的スコープが切られている"
+" ``__class__`` 参照からアクセスしなければなりません。"
 
 #: ../../reference/datamodel.rst:1819
 msgid "Creating the class object"
