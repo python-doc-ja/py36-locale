@@ -2755,24 +2755,32 @@ msgid ""
 "ultimately calls ``type.__new__``, the following additional customisation "
 "steps are invoked after creating the class object:"
 msgstr ""
+"デフォルトのメタクラス :class:`type` や最終的には ``type.__new__`` "
+"を呼び出すメタクラスを使っているときは、クラスオブジェクトを作成した後に次のカスタム化の手順が起動されます:"
 
 #: ../../reference/datamodel.rst:1852
 msgid ""
 "first, ``type.__new__`` collects all of the descriptors in the class "
 "namespace that define a :meth:`~object.__set_name__` method;"
 msgstr ""
+"最初に、 ``type.__new__`` が :meth:`~object.__set_name__` "
+"が定義されているクラスの名前空間にある全てのデスクリプタを収集します;"
 
 #: ../../reference/datamodel.rst:1854
 msgid ""
 "second, all of these ``__set_name__`` methods are called with the class "
 "being defined and the assigned name of that particular descriptor; and"
 msgstr ""
+"次に、それら全ての ``__set_name__`` "
+"メソッドが、そのメソッドが定義されているクラス、およびそこに属するデスクリプタに割り当てられている名前を引数として呼び出されます;"
 
 #: ../../reference/datamodel.rst:1856
 msgid ""
 "finally, the :meth:`~object.__init_subclass__` hook is called on the "
 "immediate parent of the new class in its method resolution order."
 msgstr ""
+"最後に、新しいクラスのメソッド解決順序ですぐ上に位置する親クラスで :meth:`~object.__init_subclass__` "
+"フックが呼び出されます。"
 
 #: ../../reference/datamodel.rst:1859
 msgid ""
@@ -2790,6 +2798,8 @@ msgid ""
 "object is discarded. The new copy is wrapped in a read-only proxy, which "
 "becomes the :attr:`~object.__dict__` attribute of the class object."
 msgstr ""
+"新しいクラスが ``type.__new__`` で生成されたときは、名前空間引数として与えられたオブジェクトは新しい順序付きのマッピングに複製され、元のオブジェクトは破棄されます。\n"
+"新しく複製したものは読み取り専用のプロキシでラップされ、クラスオブジェクトの :attr:`~object.__dict__` 属性になります。"
 
 #: ../../reference/datamodel.rst:1870
 msgid ":pep:`3135` - New super"
@@ -2810,6 +2820,8 @@ msgid ""
 "automatic property creation, proxies, frameworks, and automatic resource "
 "locking/synchronization."
 msgstr ""
+"メタクラスは限りない潜在的利用価値を持っています。これまで試されてきたアイデアには、列挙型、ログ記録、インタフェースのチェック、 "
+"自動デリゲーション、自動プロパティ生成、プロキシ、フレームワーク、そして自動リソースロック／同期といったものがあります。"
 
 #: ../../reference/datamodel.rst:1882
 msgid ""
@@ -2991,6 +3003,9 @@ msgid ""
 ":exc:`!OverflowError` by truth value testing, an object must define a "
 ":meth:`__bool__` method."
 msgstr ""
+"CPython では、オブジェクトの長さは最大でも :attr:`sys.maxsize` であることが要求されます。\n"
+"長さが :attr:`!sys.maxsize` を越える場合、(:func:`len` のような) いくつかの機能は :exc:`OverflowError` を送出するでしょう。\n"
+"真偽値としての判定で :exc:`!OverflowError` を送出しないようにするには、オブジェクトは meth:`__bool__` メソッドを定義していなければなりません。"
 
 #: ../../reference/datamodel.rst:2025
 msgid ""
@@ -3198,6 +3213,9 @@ msgid ""
 "where *y* is an instance of a class that has an :meth:`__rsub__` method, "
 "``y.__rsub__(x)`` is called if ``x.__sub__(y)`` returns *NotImplemented*."
 msgstr ""
+"これらのメソッドを呼んで二項算術演算 (``+``, ``-``, ``*``, ``@``, ``/``, ``//``, ``%``, :func:`divmod`, :func:`pow`, ``**``, ``<<``, ``>>``, ``&``, ``^``, ``|``) の、被演算子が反射した (入れ替えられた) ものを実装します。\n"
+"これらの関数は、左側の被演算子が対応する演算をサポートしておらず  [#]_  、非演算子が異なる型の場合にのみ呼び出されます。 [#]_\n"
+"例えば、 *y* が :meth:`__rsub__` メソッドのあるクラスのインスタンスである場合、 式 ``x - y`` を評価すると ``x.__sub__(y)`` が *NotImplemented* を返すときは ``y.__rsub__(x)`` が呼ばれます。"
 
 #: ../../reference/datamodel.rst:2205
 msgid ""
