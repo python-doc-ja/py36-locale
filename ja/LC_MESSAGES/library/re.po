@@ -40,6 +40,9 @@ msgid ""
 " a substitution, the replacement string must be of the same type as both the"
 " pattern and the search string."
 msgstr ""
+"パターンと文字列には Unicode 文字列 (:class:`str`) および 8 ビット文字列 (:class:`bytes`) "
+"が使用できます。しかし、Unicode 文字列と8ビット文字列の混在はできません。すなわち、Unicode "
+"文字列をバイト列のパターンでマッチングしたり、その逆はできません。同様に、置き換え時の置換文字列はパターンおよび検索文字列と同じ型でなくてはなりません。"
 
 #: ../../library/re.rst:24
 msgid ""
@@ -153,6 +156,8 @@ msgid ""
 "either stand for classes of ordinary characters, or affect how the regular "
 "expressions around them are interpreted."
 msgstr ""
+"``'|'`` や ``'('`` "
+"といったいくつかの文字は特殊文字です。特殊文字は通常の文字の種別を表したり、あるいは特殊文字の周辺にある通常の文字に対する解釈方法に影響します。"
 
 #: ../../library/re.rst:87
 msgid ""
@@ -230,7 +235,7 @@ msgstr ""
 
 #: ../../library/re.rst:122
 msgid "``+``"
-msgstr ""
+msgstr "``+``"
 
 #: ../../library/re.rst:120
 msgid ""
