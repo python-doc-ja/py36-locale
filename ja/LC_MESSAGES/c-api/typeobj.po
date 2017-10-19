@@ -2041,7 +2041,7 @@ msgstr ""
 "構造体の中から参照している全てのメモリはエクスポータに属し、コンシューマがいなくなるまで有効でなくてはなりません。 "
 ":c:member:`~Py_buffer.format` 、 :c:member:`~Py_buffer.shape` 、 "
 ":c:member:`~Py_buffer.strides` 、 :c:member:`~Py_buffer.suboffsets` 、 "
-":c:member:`~Py_buffer.internal` はコンシューマからは読み取り専用です。"
+":c:member:`~Py_buffer.internal` はコンシューマからは読み出し専用です。"
 
 #: ../../c-api/typeobj.rst:1300
 msgid ""

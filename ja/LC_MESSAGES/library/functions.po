@@ -402,7 +402,7 @@ msgstr "*整数* の場合、配列はそのサイズになり、null バイト�
 msgid ""
 "If it is an object conforming to the *buffer* interface, a read-only buffer "
 "of the object will be used to initialize the bytes array."
-msgstr "*バッファ* インタフェースに適合するオブジェクトの場合、そのオブジェクトの読み込み専用バッファがバイト配列の初期化に使われます。"
+msgstr "*バッファ* インタフェースに適合するオブジェクトの場合、そのオブジェクトの読み出し専用バッファがバイト配列の初期化に使われます。"
 
 #: ../../library/functions.rst:138
 msgid ""
@@ -2043,7 +2043,7 @@ msgid ""
 msgstr ""
 "*doc* は、与えられれば property 属性のドキュメント文字列になります。与えられなければ、 property は *fget* "
 "のドキュメント文字列(もしあれば)をコピーします。そのため、 :func:`property` をデコレータ (:term:`decorator`) "
-"として使えば、読み取り専用 property を作るのは容易です::"
+"として使えば、読み出し専用 property を作るのは容易です::"
 
 #: ../../library/functions.rst:1235
 msgid ""
@@ -2051,7 +2051,7 @@ msgid ""
 "\"getter\" for a read-only attribute with the same name, and it sets the "
 "docstring for *voltage* to \"Get the current voltage.\""
 msgstr ""
-"``@property`` デコレータは :meth:`voltage` を同じ名前のまま 読み取り専用属性の \"getter\" "
+"``@property`` デコレータは :meth:`voltage` を同じ名前のまま 読み出し専用属性の \"getter\" "
 "にし、*voltage* のドキュメント文字列を \"Get the current voltage.\" に設定します。"
 
 #: ../../library/functions.rst:1239

@@ -346,7 +346,7 @@ msgstr ""
 "幾つかの操作ではバイナリデータを変更する必要があります。\n"
 "その操作のドキュメントではよく \"読み書き可能な bytes-like オブジェクト\" に言及しています。\n"
 "変更可能なバッファーオブジェクトには、 :class:`bytearray` と :class:`bytearray` の :class:`memoryview` などが含まれます。\n"
-"また、他の幾つかの操作では不変なオブジェクト内のバイナリデータ (\"読み込み専用の bytes-like オブジェクト\") を必要します。それには :class:`bytes` と :class:`bytes` の :class:`memoryview` オブジェクトが含まれます。"
+"また、他の幾つかの操作では不変なオブジェクト内のバイナリデータ (\"読み出し専用の bytes-like オブジェクト\") を必要します。それには :class:`bytes` と :class:`bytes` の :class:`memoryview` オブジェクトが含まれます。"
 
 #: ../../glossary.rst:158
 msgid "bytecode"

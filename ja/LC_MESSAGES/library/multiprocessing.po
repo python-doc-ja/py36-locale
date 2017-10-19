@@ -2321,7 +2321,7 @@ msgstr ""
 
 #: ../../library/multiprocessing.rst:1667
 msgid ":class:`BaseManager` instances also have one read-only property:"
-msgstr ":class:`BaseManager` インスタンスも読み取り専用属性を1つ持っています:"
+msgstr ":class:`BaseManager` インスタンスも読み出し専用属性を1つ持っています:"
 
 #: ../../library/multiprocessing.rst:1671
 msgid "The address used by the manager."
@@ -3138,7 +3138,7 @@ msgstr ""
 
 #: ../../library/multiprocessing.rst:2354
 msgid "Listener objects have the following read-only properties:"
-msgstr "リスナーオブジェクトは次の読み取り専用属性を持っています:"
+msgstr "リスナーオブジェクトは次の読み出し専用属性を持っています:"
 
 #: ../../library/multiprocessing.rst:2358
 msgid "The address which is being used by the Listener object."

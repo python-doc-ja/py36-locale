@@ -381,6 +381,10 @@ msgid ""
 "``-`` is escaped (e.g. ``[a\\-z]``) or if it's placed as the first or last "
 "character (e.g. ``[-a]`` or ``[a-]``), it will match a literal ``'-'``."
 msgstr ""
+"連続した文字の範囲を、先頭と最後の2文字とその間に ``'-'`` を挟んだ形で指定できます。``[a-z]`` はすべての小文字の ASCII "
+"文字とマッチします。``[0-5][0-9]`` は ``00`` から ``59`` までの、すべての 2 桁の数字とマッチします。``[0-9A-"
+"Fa-f]`` は任意の 16 進数の数字とマッチします。``-`` が、エスケープされた場合 (例: "
+"``[a\\-z]``)、あるいは先頭か末尾に置かれた場合 (例: ``[-a]`` や ``[a-]``)、リテラル ``'-'`` とマッチします。"
 
 #: ../../library/re.rst:184
 msgid ""
@@ -438,6 +442,13 @@ msgid ""
 "words, the ``'|'`` operator is never greedy.  To match a literal ``'|'``, "
 "use ``\\|``, or enclose it inside a character class, as in ``[|]``."
 msgstr ""
+"``A|B`` (*A* と *B* は任意の RE) は、 *A* か *B* のどちらかとマッチする正規表現を作成します。任意個数の RE "
+"を、このように ``'|'`` で分離することができます。これはグループ (下記参照) "
+"内部でも使えます。走査対象文字列をスキャンする中で、``'|'`` で分離された RE "
+"は左から右への順に走査されます。一つでも完全にマッチしたパターンがあれば、そのパターン枝が受理されます。このことは、もし *A* がマッチすれば、たとえ"
+" *B* によるマッチが全体としてより長いマッチになったとしても、 *B* を決して走査しないことを意味します。言いかえると、``'|'`` "
+"演算子は決して貪欲 (greedy) にはなりません。リテラル ``'|'`` とマッチするには、``\\|`` を使うか、あるいは ``[|]`` "
+"のように文字クラス内に入れます。"
 
 #: ../../library/re.rst:219
 msgid "``(...)``"
@@ -452,6 +463,10 @@ msgid ""
 "literals ``'('`` or ``')'``, use ``\\(`` or ``\\)``, or enclose them inside "
 "a character class: ``[(]``, ``[)]``."
 msgstr ""
+"丸括弧の中にどのような正規表現があってもマッチし、丸括弧はグループの開始と終了を表します; "
+"グループの中身は、マッチが実行された後に回収され、特殊シーケンス ``\\number`` (後述) で参照することができます。リテラル ``'('``"
+" や ``')'`` とマッチするには、``\\(`` や ``\\)`` を使うか、それらを文字クラス内に入れます:  ``[(]``, "
+"``[)]`` 。"
 
 #: ../../library/re.rst:226
 msgid "``(?...)``"
@@ -486,6 +501,11 @@ msgid ""
 " passing a *flag* argument to the :func:`re.compile` function.  Flags should"
 " be used first in the expression string."
 msgstr ""
+"(``'a'``, ``'i'``, ``'L'``, ``'m'``, ``'s'``, ``'u'``, ``'x'`` の集合にある文字を 1 個以上。)\n"
+"グループは空文字列ともマッチします; 正規表現全体に対して、文字に対応するフラグ、 :const:`re.A` (ASCII 限定マッチ)、:const:`re.I` (大文字・小文字を区別しない)、:const:`re.L` (ロケール依存)、:const:`re.M` (MULTILINE モード)、:const:`re.S` (DOTALL モード)、 :const:`re.U` (Unicode マッチ)、 :const:`re.X` (冗長) を設定します。\n"
+"(フラグについては :ref:`contents-of-module-re` を参照してください。)\n"
+"これは、*flag* 引数を :func:`re.compile` 関数に渡すのではなく、そのフラグを正規表現の一部に含めたい場合に役立ちます。\n"
+"フラグは正規表現文字列の先頭で使うべきです。"
 
 #: ../../library/re.rst:246
 msgid "``(?:...)``"
@@ -565,7 +585,7 @@ msgstr "``\\1``"
 
 #: ../../library/re.rst:275
 msgid "when processing match object *m*"
-msgstr ""
+msgstr "マッチオブジェクト *m* の処理時"
 
 #: ../../library/re.rst:275
 msgid "``m.group('quote')``"
@@ -577,7 +597,7 @@ msgstr "``m.end('quote')`` (etc.)"
 
 #: ../../library/re.rst:278
 msgid "in a string passed to the *repl* argument of ``re.sub()``"
-msgstr ""
+msgstr "``re.sub()`` の *repl* 引数へ渡される文字列"
 
 #: ../../library/re.rst:278
 msgid "``\\g<quote>``"
@@ -615,6 +635,9 @@ msgid ""
 "This is called a :dfn:`lookahead assertion`.  For example, ``Isaac "
 "(?=Asimov)`` will match ``'Isaac '`` only if it's followed by ``'Asimov'``."
 msgstr ""
+"``...`` が次に続くものとマッチすればマッチしますが、文字列をまったく消費しません。これは :dfn:`先読みアサーション (lookahead "
+"assertion)` と呼ばれます。例えば、``Isaac (?=Asimov)`` は、``'Isaac '`` に ``'Asimov'`` "
+"が続く場合だけ、``'Isaac '`` とマッチします。"
 
 #: ../../library/re.rst:298
 msgid "``(?!...)``"
@@ -626,6 +649,9 @@ msgid ""
 "assertion`. For example, ``Isaac (?!Asimov)`` will match ``'Isaac '`` only "
 "if it's *not* followed by ``'Asimov'``."
 msgstr ""
+"``...`` が次に続くものとマッチしなければマッチします。これは :dfn:`否定先読みアサーション (negative lookahead "
+"assertion)` です。例えば、``Isaac (?!Asimov)`` は、``'Isaac '`` に ``'Asimov'`` が続か "
+"*ない* 場合のみマッチします。"
 
 #: ../../library/re.rst:323
 msgid "``(?<=...)``"
@@ -644,6 +670,12 @@ msgid ""
 "you will most likely want to use the :func:`search` function rather than the"
 " :func:`match` function:"
 msgstr ""
+"文字列内の現在位置の前に、現在位置で終わる ``...`` とのマッチがあれば、マッチします。これは :dfn:`後読みアサーション` "
+"と呼ばれます。``(?<=abc)def`` は ``'abcdef'`` にマッチを見つけます。後読みは 3 "
+"文字をバックアップし、含まれているパターンとマッチするかどうか検査します。含まれるパターンは、固定長の文字列にのみマッチしなければなりません。すなわち、``abc``"
+" や ``a|b`` は許されますが、``a*`` や ``a{3,4}`` "
+"は許されません。肯定後読みアサーションで始まるパターンは、検索される文字列の先頭とは決してマッチしないことに注意して下さい; "
+"この表現を使用するのは、おそらく :func:`match` 関数より :func:`search` 関数の方が適しています:"
 
 #: ../../library/re.rst:316
 msgid "This example looks for a word following a hyphen:"
@@ -695,6 +727,9 @@ msgid ""
 "then the resulting RE will match the second character.  For example, ``\\$``"
 " matches the character ``'$'``."
 msgstr ""
+"特殊シーケンスは ``'\\'`` と以下のリストの文字から構成されます。\n"
+"ASCII の数値や ASCII の文字でない通常の文字の場合、 RE は 2 番目の文字とマッチします。\n"
+"例えば、``\\$`` は文字 ``'$'`` とマッチします。"
 
 #: ../../library/re.rst:354
 msgid "``\\number``"
@@ -739,6 +774,10 @@ msgid ""
 "means that ``r'\\bfoo\\b'`` matches ``'foo'``, ``'foo.'``, ``'(foo)'``, "
 "``'bar foo baz'`` but not ``'foobar'`` or ``'foo3'``."
 msgstr ""
+"空文字列とマッチしますが、単語の先頭か末尾の時だけです。\n"
+"単語とは単語文字の並びとして定義されます。\n"
+"形式的に記述すると、 ``\\b`` は ``\\w`` 文字および ``\\W`` 文字の間 (およびその逆)、あるいは ``\\w`` と文字列の開始/終了との間の境界として定義されています。\n"
+"例えば、``r'\\bfoo\\b'`` は ``'foo'`` , ``'foo.'`` , ``'(foo)'``, ``'bar foo baz'`` にマッチしますが、``'foobar'``, ``'foo3'`` にはマッチしません。"
 
 #: ../../library/re.rst:367
 msgid ""

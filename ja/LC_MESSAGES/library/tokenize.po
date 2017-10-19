@@ -209,7 +209,7 @@ msgstr ""
 msgid ""
 "Open a file in read only mode using the encoding detected by "
 ":func:`detect_encoding`."
-msgstr ":func:`detect_encoding` を使って検出したエンコーディングを利用して、ファイルを読み込み専用モードで開きます。"
+msgstr ":func:`detect_encoding` を使って検出したエンコーディングを利用して、ファイルを読み出し専用モードで開きます。"
 
 #: ../../library/tokenize.rst:138
 msgid ""

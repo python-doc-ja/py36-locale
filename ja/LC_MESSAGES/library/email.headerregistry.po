@@ -73,7 +73,7 @@ msgstr ""
 
 #: ../../library/email.headerregistry.rst:48
 msgid "This base class defines the following read-only properties:"
-msgstr "基底クラスは以下の読み取り専用属性を定義しています:"
+msgstr "基底クラスは以下の読み出し専用属性を定義しています:"
 
 #: ../../library/email.headerregistry.rst:53
 msgid ""

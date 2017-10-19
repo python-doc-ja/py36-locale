@@ -753,7 +753,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:499 ../../reference/datamodel.rst:510
 msgid "Read-only"
-msgstr "読み込み専用"
+msgstr "読み出し専用"
 
 #: ../../reference/datamodel.rst:506
 msgid ":attr:`~object.__dict__`"
@@ -1510,7 +1510,7 @@ msgid ""
 ":attr:`~slice.stop` is the upper bound; :attr:`~slice.step` is the step "
 "value; each is ``None`` if omitted.  These attributes can have any type."
 msgstr ""
-"読み込み専用の特殊属性: :attr:`~slice.start` は下限です; :attr:`~slice.stop` は上限です; "
+"読み出し専用の特殊属性: :attr:`~slice.start` は下限です; :attr:`~slice.stop` は上限です; "
 ":attr:`~slice.step` はステップの値です; それぞれ省略された場合は ``None`` "
 "となっています。これらの属性は任意の型を持てます。"
 
@@ -2799,7 +2799,7 @@ msgid ""
 "becomes the :attr:`~object.__dict__` attribute of the class object."
 msgstr ""
 "新しいクラスが ``type.__new__`` で生成されたときは、名前空間引数として与えられたオブジェクトは新しい順序付きのマッピングに複製され、元のオブジェクトは破棄されます。\n"
-"新しく複製したものは読み取り専用のプロキシでラップされ、クラスオブジェクトの :attr:`~object.__dict__` 属性になります。"
+"新しく複製したものは読み出し専用のプロキシでラップされ、クラスオブジェクトの :attr:`~object.__dict__` 属性になります。"
 
 #: ../../reference/datamodel.rst:1870
 msgid ":pep:`3135` - New super"
@@ -3669,6 +3669,8 @@ msgid ""
 "still raise a :exc:`TypeError`, but may do so by relying on the behavior "
 "that ``None`` is not callable."
 msgstr ""
+":meth:`__hash__`, :meth:`__iter__`, :meth:`__reversed__`, :meth:`__contains__` メソッドはこのような特別な扱われ方をします;\n"
+"他の特殊メソッドも :exc:`TypeError` を送出するかもしれませんが、これは ``None`` が呼び出し可能でないという振る舞いに基づいた動作です。"
 
 #: ../../reference/datamodel.rst:2619
 msgid ""
@@ -3677,6 +3679,8 @@ msgid ""
 " want to force fallback to the right operand's reflected method—that will "
 "instead have the opposite effect of explicitly *blocking* such fallback."
 msgstr ""
+"ここでの \"サポートしていない\" というのは、クラスがそのメソッドを持っていないか、そのメソッドが ``NotImplemented`` を返すという意味です。\n"
+"右の被演算子の対をなすメソッドへ処理を回したい場合には、メソッドに ``None`` を設定してはいけません—こうするとむしろ、処理を回すのを明示的に *妨げる* という正反対の効果を生みます。"
 
 #: ../../reference/datamodel.rst:2625
 msgid ""

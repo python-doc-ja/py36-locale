@@ -400,7 +400,7 @@ msgstr ":attr:`flags`"
 
 #: ../../c-api/structures.rst:251
 msgid "flag bits indicating if the field should be read-only or writable"
-msgstr "フィールドが読み込み専用か書込み可能なのかを示すビットフラグ"
+msgstr "フィールドが読み出し専用か書込み可能なのかを示すビットフラグ"
 
 #: ../../c-api/structures.rst:255
 msgid ":attr:`doc`"
@@ -563,7 +563,7 @@ msgid ""
 ":c:macro:`READONLY`.  Only :c:macro:`T_OBJECT` and :c:macro:`T_OBJECT_EX` "
 "members can be deleted.  (They are set to *NULL*)."
 msgstr ""
-":attr:`flags` には読み書きアクセス可能なら ``0`` で、読み込み専用なら :c:macro:`READONLY` を設定します。\n"
+":attr:`flags` には読み書きアクセス可能なら ``0`` で、読み出し専用なら :c:macro:`READONLY` を設定します。\n"
 ":attr:`type` に :c:macro:`T_STRING` を使うと、 :c:macro:`READONLY` 扱いになります。\n"
 ":c:macro:`T_OBJECT` メンバと :c:macro:`T_OBJECT_EX` メンバだけが削除できます (*NULL* が代入されます)。"
 

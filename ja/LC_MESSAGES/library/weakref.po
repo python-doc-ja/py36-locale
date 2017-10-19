@@ -226,7 +226,7 @@ msgid ""
 "weakref.  If there is no callback or if the referent of the weakref is no "
 "longer alive then this attribute will have value ``None``."
 msgstr ""
-"この読み込み専用の属性は、現在弱参照に関連付けられているコールバックを返します。コールバックが存在しないか、弱参照のリファレントが生きていない場合、この属性の値は"
+"この読み出し専用の属性は、現在弱参照に関連付けられているコールバックを返します。コールバックが存在しないか、弱参照のリファレントが生きていない場合、この属性の値は"
 " ``None``  になります。"
 
 #: ../../library/weakref.rst:127

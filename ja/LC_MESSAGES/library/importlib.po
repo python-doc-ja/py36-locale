@@ -1005,7 +1005,7 @@ msgid ""
 "(:attr:`errno.EACCES`/:exc:`PermissionError`), do not propagate the "
 "exception."
 msgstr ""
-"パスへの書き込みが読み取り専用のために失敗したとき (:attr:`errno.EACCES`/:exc:`PermissionError`) "
+"パスへの書き込みが読み出し専用のために失敗したとき (:attr:`errno.EACCES`/:exc:`PermissionError`) "
 "、その例外を伝播させません。"
 
 #: ../../library/importlib.rst:673
@@ -1483,7 +1483,7 @@ msgstr "(``__package__``)"
 msgid ""
 "(Read-only) Fully-qualified name of the package to which the module belongs "
 "as a submodule (or ``None``)."
-msgstr "(読み込み専用) サブモジュールとしてモジュールが属するパッケージの完全修飾名 (または ``None``) です。"
+msgstr "(読み出し専用) サブモジュールとしてモジュールが属するパッケージの完全修飾名 (または ``None``) です。"
 
 #: ../../library/importlib.rst:1101
 msgid ""

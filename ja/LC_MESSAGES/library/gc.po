@@ -228,7 +228,7 @@ msgstr ""
 msgid ""
 "The following variables are provided for read-only access (you can mutate "
 "the values but should not rebind them):"
-msgstr "以下の変数は読み込み専用アクセスのために提供されています。(この変数を操作することはできますが、その値は記憶されません):"
+msgstr "以下の変数は読み出し専用アクセスのために提供されています。(この変数を操作することはできますが、その値は記憶されません):"
 
 #: ../../library/gc.rst:182
 msgid ""

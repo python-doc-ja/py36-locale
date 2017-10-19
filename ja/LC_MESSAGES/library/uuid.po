@@ -97,7 +97,7 @@ msgstr ""
 
 #: ../../library/uuid.rst:56
 msgid ":class:`UUID` instances have these read-only attributes:"
-msgstr ":class:`UUID` インスタンスは以下の読み取り専用属性を持ちます:"
+msgstr ":class:`UUID` インスタンスは以下の読み出し専用属性を持ちます:"
 
 #: ../../library/uuid.rst:60
 msgid ""

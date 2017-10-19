@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>, 2017\n"
+"Last-Translator: cocoatomo <cocoatomo77@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -535,7 +535,7 @@ msgstr "reader オブジェクトには以下の公開属性があります:"
 
 #: ../../library/csv.rst:414
 msgid "A read-only description of the dialect in use by the parser."
-msgstr "パーサで使われる表現形式の読み取り専用の記述です。"
+msgstr "パーサで使われる表現形式の読み出し専用の記述です。"
 
 #: ../../library/csv.rst:419
 msgid ""
@@ -599,7 +599,7 @@ msgstr "writer オブジェクトには以下の公開属性があります:"
 
 #: ../../library/csv.rst:463
 msgid "A read-only description of the dialect in use by the writer."
-msgstr "writer で使われる表現形式の読み取り専用の記述です。"
+msgstr "writer で使われる表現形式の読み出し専用の記述です。"
 
 #: ../../library/csv.rst:466
 msgid "DictWriter objects have the following public method:"

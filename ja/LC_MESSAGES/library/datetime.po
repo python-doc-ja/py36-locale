@@ -335,7 +335,7 @@ msgstr ""
 #: ../../library/datetime.rst:220 ../../library/datetime.rst:456
 #: ../../library/datetime.rst:852 ../../library/datetime.rst:1412
 msgid "Instance attributes (read-only):"
-msgstr "インスタンスの属性 (読み込みのみ):"
+msgstr "インスタンスの属性 (読み出しのみ):"
 
 #: ../../library/datetime.rst:223
 msgid "Attribute"

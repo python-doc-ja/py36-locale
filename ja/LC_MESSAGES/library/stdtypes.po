@@ -4477,7 +4477,7 @@ msgid ""
 "'b' or 'c' are also hashable. The hash is defined as ``hash(m) == "
 "hash(m.tobytes())``::"
 msgstr ""
-"'B', 'b', 'c' いずれかのフォーマットのハッシュ可能な (読み込み専用の) 型の1次元メモリビューもまた、ハッシュ可能です。ハッシュは "
+"'B', 'b', 'c' いずれかのフォーマットのハッシュ可能な (読み出し専用の) 型の1次元メモリビューもまた、ハッシュ可能です。ハッシュは "
 "``hash(m) == hash(m.tobytes())`` として定義されています::"
 
 #: ../../library/stdtypes.rst:3445
@@ -4649,7 +4649,7 @@ msgstr "単バイトのビューへキャストする場合、キャスト元の
 
 #: ../../library/stdtypes.rst:3675
 msgid "There are also several readonly attributes available:"
-msgstr "読み込み専用の属性もいくつか使えます:"
+msgstr "読み出し専用の属性もいくつか使えます:"
 
 #: ../../library/stdtypes.rst:3679
 msgid "The underlying object of the memoryview::"
@@ -4670,7 +4670,7 @@ msgstr "多次元配列::"
 
 #: ../../library/stdtypes.rst:3726
 msgid "A bool indicating whether the memory is read only."
-msgstr "メモリが読み込み専用かどうかを示す真偽値です。"
+msgstr "メモリが読み出し専用かどうかを示す真偽値です。"
 
 #: ../../library/stdtypes.rst:3730
 msgid ""
@@ -5273,7 +5273,7 @@ msgid ""
 ":class:`types.MappingProxyType` can be used to create a read-only view of a "
 ":class:`dict`."
 msgstr ""
-":class:`dict` の読み込み専用ビューを作るために :class:`types.MappingProxyType` を使うことができます。"
+":class:`dict` の読み出し専用ビューを作るために :class:`types.MappingProxyType` を使うことができます。"
 
 #: ../../library/stdtypes.rst:4196
 msgid "Dictionary view objects"
@@ -5596,7 +5596,7 @@ msgid ""
 msgstr ""
 "インスタンスを通してメソッド (クラスの名前空間内で定義された関数) にアクセスすると、特殊なオブジェクトが得られます。それは束縛メソッド "
 "(:dfn:`bound method`) オブジェクトで、インスタンスメソッド (:dfn:`instance method`) "
-"とも呼ばれます。呼び出された時、引数リストに ``self`` 引数が追加されます。束縛メソッドには 2 つの特殊読み込み専用属性があります。 "
+"とも呼ばれます。呼び出された時、引数リストに ``self`` 引数が追加されます。束縛メソッドには 2 つの特殊読み出し専用属性があります。 "
 "``m.__self__`` はそのメソッドが操作するオブジェクトで、 ``m.__func__`` はそのメソッドを実装している関数です。 "
 "``m(arg-1, arg-2, ..., arg-n)`` の呼び出しは、 ``m.__func__(m.__self__, arg-1, "
 "arg-2, ..., arg-n)`` の呼び出しと完全に等価です。"

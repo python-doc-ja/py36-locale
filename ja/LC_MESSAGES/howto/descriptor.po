@@ -161,7 +161,7 @@ msgid ""
 "when called.  Defining the :meth:`__set__` method with an exception raising "
 "placeholder is enough to make it a data descriptor."
 msgstr ""
-"読み込み専用のデータデスクリプタを作るには、 :meth:`__get__` と :meth:`__set__` の両方を定義し、 "
+"読み出し専用のデータデスクリプタを作るには、 :meth:`__get__` と :meth:`__set__` の両方を定義し、 "
 ":meth:`__set__` が呼び出されたときに :exc:`AttributeError` が送出されるようにしてください。例外を送出する "
 ":meth:`__set__` メソッドをプレースホルダとして定義すれば、データデスクリプタにするのに十分です。"
 

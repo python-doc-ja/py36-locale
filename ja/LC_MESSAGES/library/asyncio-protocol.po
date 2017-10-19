@@ -208,7 +208,7 @@ msgstr "ReadTransport"
 
 #: ../../library/asyncio-protocol.rst:119
 msgid "Interface for read-only transports."
-msgstr "読み込み専用トランスポートのインターフェースです。"
+msgstr "読み出し専用トランスポートのインターフェースです。"
 
 #: ../../library/asyncio-protocol.rst:123
 msgid ""

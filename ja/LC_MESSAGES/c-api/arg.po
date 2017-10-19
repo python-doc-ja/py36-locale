@@ -189,7 +189,7 @@ msgid ""
 "``s#`` (:class:`str`, read-only :term:`bytes-like object`) [const char \\*, "
 "int or :c:type:`Py_ssize_t`]"
 msgstr ""
-"``s#`` (:class:`str`, 読み取り専用の :term:`bytes-like object`) [const char \\*, "
+"``s#`` (:class:`str`, 読み出し専用の :term:`bytes-like object`) [const char \\*, "
 "int or :c:type:`Py_ssize_t`]"
 
 #: ../../c-api/arg.rst:94
@@ -233,7 +233,7 @@ msgid ""
 "``z#`` (:class:`str`, read-only :term:`bytes-like object` or ``None``) "
 "[const char \\*, int]"
 msgstr ""
-"``z#`` (:class:`str`, 読み取り専用の :term:`bytes-like object` または ``None``) [const"
+"``z#`` (:class:`str`, 読み出し専用の :term:`bytes-like object` または ``None``) [const"
 " char \\*, int]"
 
 #: ../../c-api/arg.rst:109
@@ -245,7 +245,7 @@ msgstr ""
 
 #: ../../c-api/arg.rst:120
 msgid "``y`` (read-only :term:`bytes-like object`) [const char \\*]"
-msgstr "``y`` (読み取り専用の :term:`bytes-like object`) [const char \\*]"
+msgstr "``y`` (読み出し専用の :term:`bytes-like object`) [const char \\*]"
 
 #: ../../c-api/arg.rst:113
 msgid ""
@@ -278,7 +278,7 @@ msgstr ""
 
 #: ../../c-api/arg.rst:129
 msgid "``y#`` (read-only :term:`bytes-like object`) [const char \\*, int]"
-msgstr "``y#`` (読み取り専用の :term:`bytes-like object`) [const char \\*, int]"
+msgstr "``y#`` (読み出し専用の :term:`bytes-like object`) [const char \\*, int]"
 
 #: ../../c-api/arg.rst:128
 msgid ""

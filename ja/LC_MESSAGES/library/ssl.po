@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Arihiro TAKASE <artakase@gmail.com>, 2017\n"
+"Last-Translator: cocoatomo <cocoatomo77@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2358,7 +2358,7 @@ msgstr ":attr:`SSLContext.options` は次のように :class:`Options` のフラ
 msgid ""
 "The protocol version chosen when constructing the context.  This attribute "
 "is read-only."
-msgstr "コンテキストの構築時に選択されたプロトコルバージョン。この属性は読み取り専用です。"
+msgstr "コンテキストの構築時に選択されたプロトコルバージョン。この属性は読み出し専用です。"
 
 #: ../../library/ssl.rst:1676
 msgid ""

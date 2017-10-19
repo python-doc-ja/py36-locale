@@ -309,7 +309,7 @@ msgid ""
 "use::"
 msgstr ""
 "*uri* が真の場合、 *database* は URI "
-"として解釈されます。これにより、オプションを指定することができます。例えば、データベースを読み込み専用モードで使用できるように開くには、次のようにします::"
+"として解釈されます。これにより、オプションを指定することができます。例えば、データベースを読み出し専用モードで使用できるように開くには、次のようにします::"
 
 #: ../../library/sqlite3.rst:220
 msgid ""
@@ -881,7 +881,7 @@ msgid ""
 "remain compatible with the Python DB API, it returns a 7-tuple for each "
 "column where the last six items of each tuple are :const:`None`."
 msgstr ""
-"この読み込み専用の属性は、最後のクエリの結果のカラム名を提供します。 Python DB API との互換性を維持するために、各カラムに対して "
+"この読み出し専用の属性は、最後のクエリの結果のカラム名を提供します。 Python DB API との互換性を維持するために、各カラムに対して "
 "7つのタプルを返しますが、タプルの後ろ6つの要素は全て :const:`None` です。"
 
 #: ../../library/sqlite3.rst:654
@@ -895,7 +895,7 @@ msgid ""
 "calling :meth:`con.cursor() <Connection.cursor>` will have a "
 ":attr:`connection` attribute that refers to *con*::"
 msgstr ""
-"この読み込み専用の属性は、 :class:`Cursor` オブジェクトが使用する SQLite データベースの :class:`Connection`"
+"この読み出し専用の属性は、 :class:`Cursor` オブジェクトが使用する SQLite データベースの :class:`Connection`"
 " を提供します。:meth:`con.cursor() <Connection.cursor>` を呼び出すことにより作成される "
 ":class:`Cursor` オブジェクトは、 *con* を参照する :attr:`connection` 属性を持ちます::"
 

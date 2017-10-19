@@ -132,7 +132,7 @@ msgstr "``'r'``"
 
 #: ../../library/sunau.rst:51
 msgid "Read only mode."
-msgstr "読み込みのみのモード。"
+msgstr "読み出しのみのモード。"
 
 #: ../../library/sunau.rst:54
 msgid "``'w'``"

@@ -203,7 +203,7 @@ msgid ""
 "for the window, and to select the widget's default layout and style. This "
 "option is read-only, and may only be specified when the window is created."
 msgstr ""
-"ウィンドウクラスを指定します。このクラスはオプションデータベースにウィンドウの他のオプションについて問い合わせを行うときに使われ、これによりウィンドウのデフォルトのバインドタグを決定したり、ウィジェットのデフォルトのレイアウトやスタイルを選択します。このオプションは読み取り専用で、ウィンドウが作成されるときにのみ指定できます。"
+"ウィンドウクラスを指定します。このクラスはオプションデータベースにウィンドウの他のオプションについて問い合わせを行うときに使われ、これによりウィンドウのデフォルトのバインドタグを決定したり、ウィジェットのデフォルトのレイアウトやスタイルを選択します。このオプションは読み出し専用で、ウィンドウが作成されるときにのみ指定できます。"
 
 #: ../../library/tkinter.ttk.rst:121
 msgid "cursor"
@@ -1069,7 +1069,7 @@ msgid ""
 "than maximum. This option may be used by the current theme to provide "
 "additional animation effects."
 msgstr ""
-"読み取り専用のオプションです。このウィジェットの値が 0 "
+"読み出し専用のオプションです。このウィジェットの値が 0 "
 "より大きく、かつ決定的モードでは最大値より小さいときに、ウィジェットが定期的にこのオプションの値を増加させます。このオプションは現在の画面テーマが追加のアニメーション効果を出すのに使います。"
 
 #: ../../library/tkinter.ttk.rst:620
@@ -1548,7 +1548,7 @@ msgstr "id"
 
 #: ../../library/tkinter.ttk.rst:911
 msgid "Returns the column name. This is a read-only option."
-msgstr "カラム名を返します。これは読み取り専用のオプションです。"
+msgstr "カラム名を返します。これは読み出し専用のオプションです。"
 
 #: ../../library/tkinter.ttk.rst:913
 msgid "anchor: One of the standard Tk anchor values."
