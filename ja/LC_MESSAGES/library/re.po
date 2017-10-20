@@ -2015,6 +2015,9 @@ msgid ""
 "find all of the adverbs in some text, he or she might use :func:`findall` in"
 " the following manner::"
 msgstr ""
+":func:`findall` は出現するパターン *すべてに* マッチします。:func:`search` "
+"が最初のものだけにマッチするのとは違います。例えば、なにかの文章のすべての副詞を見つけたいとき、下記のように :func:`findall` "
+"を使います::"
 
 #: ../../library/re.rst:1440
 msgid "Finding all Adverbs and their Positions"
@@ -2029,6 +2032,9 @@ msgid ""
 "positions* in some text, he or she would use :func:`finditer` in the "
 "following manner::"
 msgstr ""
+"もし、パターンにマッチするものについて、マッチしたテキスト以上の情報を得たいと考えた時、文字列ではなく :ref:`マッチオブジェクト <match-"
+"objects>` を返す :func:`finditer` が便利です。以下に例を示すように、なにかの文章のすべての副詞と、*その位置を* "
+"調べたい時、以下のように :func:`finditer` を使います::"
 
 #: ../../library/re.rst:1456
 msgid "Raw String Notation"
@@ -2041,6 +2047,8 @@ msgid ""
 "prefixed with another one to escape it.  For example, the two following "
 "lines of code are functionally identical::"
 msgstr ""
+"Raw 文字列記法 (``r\"text\"``) により、バックスラッシュ (``'\\'``) "
+"を個々にバックスラッシュでエスケープすることなしに、正規表現を正常な状態に保つことができます。例えば、以下の 2 つのコードは機能的に等価です::"
 
 #: ../../library/re.rst:1468
 msgid ""
@@ -2049,6 +2057,8 @@ msgid ""
 "Without raw string notation, one must use ``\"\\\\\\\\\"``, making the "
 "following lines of code functionally identical::"
 msgstr ""
+"文字通りのバックスラッシュにマッチさせたいなら、正規表現中ではエスケープする必要があります。Raw 文字列記法では、``r\"\\\\\"``  "
+"になります。Raw 文字列記法を用いない場合、``\"\\\\\\\\\"`` としなくてはなりません。以下のコードは機能的に等価です::"
 
 #: ../../library/re.rst:1480
 msgid "Writing a Tokenizer"
