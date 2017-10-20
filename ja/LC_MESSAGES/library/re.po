@@ -842,6 +842,8 @@ msgid ""
 "``[^0-9]`` (but the flag affects the entire regular expression, so in such "
 "cases using an explicit ``[^0-9]`` may be a better choice)."
 msgstr ""
+"任意の非 10 進数文字にマッチします。これは ``\\d`` の反対です。:const:`ASCII` フラグを使用すると ``[^0-9]`` "
+"と等価になります (ただし、このフラグは正規表現全体に作用しますので、明示的に ``[^0-9]`` と指定する方が良いでしょう)。"
 
 #: ../../library/re.rst:413
 msgid "``\\s``"
@@ -879,6 +881,9 @@ msgid ""
 "regular expression, so in such cases using an explicit ``[^ "
 "\\t\\n\\r\\f\\v]`` may be a better choice)."
 msgstr ""
+"任意の非空白文字にマッチします。これは ``\\s`` の反対です。:const:`ASCII` フラグを使用すると ``[^ "
+"\\t\\n\\r\\f\\v]`` と等価になります (ただし、このフラグは正規表現全体に作用しますので、明示的に ``[^ "
+"\\t\\n\\r\\f\\v]`` と指定する方が良いでしょう)。"
 
 #: ../../library/re.rst:435
 msgid "``\\w``"
@@ -904,6 +909,8 @@ msgid ""
 "matches characters considered alphanumeric in the current locale and the "
 "underscore."
 msgstr ""
+"ASCII 文字セットでの英数字とアンダースコアにマッチします。これは ``[a-zA-Z0-9_]`` と等価です。\n"
+":const:`LOCALE` が使われている場合は、現在のロケールで英数字と見なせる文字とアンダースコアにマッチします。"
 
 #: ../../library/re.rst:444
 msgid "``\\W``"
@@ -918,6 +925,8 @@ msgid ""
 " the :const:`LOCALE` flag is used, matches characters considered "
 "alphanumeric in the current locale and the underscore."
 msgstr ""
+"任意の非単語文字にマッチします。これは ``\\w`` の反対です。:const:`ASCII` フラグを使用した場合、``[^a-zA-Z0-9_]`` と等価になります (ただし、このフラグは正規表現全体に作用しますので、明示的に ``[^a-zA-Z0-9_]`` と指定する方が良い場合があるかもしれません)。\n"
+":const:`LOCALE` が使われている場合は、現在のロケールで英数字と見なせる文字とアンダースコアにマッチします。"
 
 #: ../../library/re.rst:447
 msgid "``\\Z``"
@@ -944,6 +953,7 @@ msgid ""
 "``'\\u'`` and ``'\\U'`` escape sequences are only recognized in Unicode "
 "patterns.  In bytes patterns they are errors."
 msgstr ""
+"``'\\u'`` および ``'\\U'`` エスケープシーケンスは Unicode パターン内でのみ認識されます。バイト列ではエラーとなります。"
 
 #: ../../library/re.rst:462
 msgid ""
@@ -1004,6 +1014,8 @@ msgid ""
 ":func:`~regex.match`, :func:`~regex.search` and other methods, described "
 "below."
 msgstr ""
+"正規表現パターンを :ref:`正規表現オブジェクト <re-objects>` にコンパイルします。このオブジェクトは、以下で述べる "
+":func:`~regex.match` や :func:`~regex.search` や他のメソッドを使って、マッチングに使うことができます。"
 
 #: ../../library/re.rst:504
 msgid ""
@@ -1048,6 +1060,8 @@ msgid ""
 "is only meaningful for Unicode patterns, and is ignored for byte patterns. "
 "Corresponds to the inline flag ``(?a)``."
 msgstr ""
+"``\\w``、``\\W``、``\\b``、``\\B``、``\\d``、``\\D``、``\\s``、および ``\\S`` において、ASCII 文字のみでマッチングを行います。これは Unicode パターンでのみ意味があり、バイト列パターンでは無視されます。\n"
+"インラインフラグの ``(?a)`` に相当します。"
 
 #: ../../library/re.rst:537
 msgid ""
@@ -1065,6 +1079,8 @@ msgid ""
 "Display debug information about compiled expression. No corresponding inline"
 " flag."
 msgstr ""
+"コンパイルした表現に関するデバッグ情報を出力します。\n"
+"相当するインラインフラグはありません。"
 
 #: ../../library/re.rst:553
 msgid ""
@@ -1122,6 +1138,8 @@ msgid ""
 "newline; without this flag, ``'.'`` will match anything *except* a newline. "
 "Corresponds to the inline flag ``(?s)``."
 msgstr ""
+"特殊文字 ``'.'`` を、改行を含むどんな文字にもマッチさせます; このフラグがなければ、``'.'`` は、改行 *以外の* 任意の文字とマッチします。\n"
+"インラインフラグの ``(?s)`` に相当します。"
 
 #: ../../library/re.rst:610
 msgid ""
@@ -1144,7 +1162,7 @@ msgstr "つまり、数字にマッチする下記のふたつの正規表現オ
 
 #: ../../library/re.rst:626
 msgid "Corresponds to the inline flag ``(?x)``."
-msgstr ""
+msgstr "インラインフラグの ``(?x)`` に相当します。"
 
 #: ../../library/re.rst:631
 msgid ""
@@ -1225,7 +1243,7 @@ msgstr "その場合、常に、分割要素が、分割結果のリストの相
 msgid ""
 ":func:`split` doesn't currently split a string on an empty pattern match. "
 "For example::"
-msgstr ""
+msgstr "現在、:func:`split` は空のパターンマッチでは文字列を分割しません。例えば、次のようになります::"
 
 #: ../../library/re.rst:697
 msgid ""
@@ -1303,10 +1321,12 @@ msgid ""
 "of *pattern*.  The function takes a single :ref:`match object <match-"
 "objects>` argument, and returns the replacement string.  For example::"
 msgstr ""
+"もし *repl* が関数であれば、重複しない *pattern* が発生するたびにその関数が呼ばれます。この関数は一つの "
+":ref:`マッチオブジェクト <match-objects>` 引数を取り、置換文字列を返します。例えば::"
 
 #: ../../library/re.rst:768
 msgid "The pattern may be a string or a :ref:`pattern object <re-objects>`."
-msgstr ""
+msgstr "パターンは、文字列でも :ref:`パターンオブジェクト <re-objects>` でも構いません。"
 
 #: ../../library/re.rst:770
 msgid ""
