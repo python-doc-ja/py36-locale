@@ -1396,6 +1396,9 @@ msgid ""
 "``'_'``. This is useful if you want to match an arbitrary literal string "
 "that may have regular expression metacharacters in it.  For example::"
 msgstr ""
+"*pattern* に含まれる、ASCII 文字、数字、および ``'_'`` を除くすべての文字をエスケープします。\n"
+"これは、もしその中に正規表現のメタ文字を持つかもしれない任意のリテラル文字列とマッチしたい時に役立ちます。\n"
+"例えば::"
 
 #: ../../library/re.rst:830
 msgid ""
@@ -1432,15 +1435,15 @@ msgstr "正規表現のパターンです。"
 
 #: ../../library/re.rst:865
 msgid "The index in *pattern* where compilation failed (may be ``None``)."
-msgstr ""
+msgstr "*pattern* のコンパイルに失敗した場所のインデックスです (``None`` の場合もあります)。"
 
 #: ../../library/re.rst:869
 msgid "The line corresponding to *pos* (may be ``None``)."
-msgstr ""
+msgstr "*pos* に対応する行です (``None`` の場合もあります)。"
 
 #: ../../library/re.rst:873
 msgid "The column corresponding to *pos* (may be ``None``)."
-msgstr ""
+msgstr "*pos* に対応する列です (``None`` の場合もあります)。"
 
 #: ../../library/re.rst:875
 msgid "Added additional attributes."
@@ -1489,6 +1492,10 @@ msgid ""
 " compiled regular expression object, ``rx.search(string, 0, 50)`` is "
 "equivalent to ``rx.search(string[:50], 0)``. ::"
 msgstr ""
+"オプションの引数 *endpos* は文字列の検索範囲を制限します。\n"
+"これは文字列の長さが *endpos* 文字だった場合と同じとみなし、*pos* から ``endpos - 1`` の範囲の文字に対してマッチを探します。\n"
+"*endpos* が *pos* よりも小さい場合は、マッチは見つかりません;\n"
+"それ以外の場合は、*rx* をコンパイルされた正規表現だとして、``rx.search(string, 0, 50)`` は ``rx.search(string[:50], 0)`` と等価です。::"
 
 #: ../../library/re.rst:915
 msgid ""
@@ -1506,6 +1513,7 @@ msgid ""
 "The optional *pos* and *endpos* parameters have the same meaning as for the "
 ":meth:`~regex.search` method. ::"
 msgstr ""
+"オプションの引数 *pos* と *endpos* 引数は、 :meth:`~regex.search` メソッドと同じ意味を持ちます。::"
 
 #: ../../library/re.rst:928
 msgid ""
@@ -1538,6 +1546,8 @@ msgid ""
 "also accepts optional *pos* and *endpos* parameters that limit the search "
 "region like for :meth:`search`."
 msgstr ""
+":func:`findall` 関数と同じく、コンパイルしたパターンを使います。\n"
+"ただし、 :meth:`search` と同じように、オプションの引数の *pos* と *endpos* で検索範囲を制限できます。"
 
 #: ../../library/re.rst:964
 msgid ""
@@ -1545,6 +1555,8 @@ msgid ""
 "also accepts optional *pos* and *endpos* parameters that limit the search "
 "region like for :meth:`search`."
 msgstr ""
+":func:`finditer` 関数と同じく、コンパイルしたパターンを使います。\n"
+"ただし、 :meth:`search` と同じように、オプションの引数の *pos* と *endpos* で検索範囲を制限できます。"
 
 #: ../../library/re.rst:971
 msgid "Identical to the :func:`sub` function, using the compiled pattern."
