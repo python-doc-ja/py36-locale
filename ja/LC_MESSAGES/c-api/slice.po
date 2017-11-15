@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
+"Last-Translator: YOSHIDA Katsuhiko <claddvd@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -89,7 +89,7 @@ msgstr "成功のときには ``0`` を、エラーのときには例外をセ�
 
 #: ../../c-api/slice.rst:62
 msgid "Ellipsis Object"
-msgstr ""
+msgstr "省略オブジェクト"
 
 #: ../../c-api/slice.rst:67
 msgid ""
@@ -97,3 +97,6 @@ msgid ""
 " treated just like any other object with respect to reference counts.  Like "
 ":c:data:`Py_None` it is a singleton object."
 msgstr ""
+"Python ``省略`` "
+"オブジェクトにはメソッドがありません。カウントの参照についてちょうど他のオブジェクトと同様に扱われる必要があります。シングルトンオブジェクトの "
+":c:data:`Py_None` のように。"
