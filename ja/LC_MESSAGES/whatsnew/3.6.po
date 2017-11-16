@@ -36,7 +36,7 @@ msgid ""
 ":ref:`changelog <changelog>`."
 msgstr ""
 "この記事では 3.5 と比較した Python 3.6 の新機能を解説します。Python 3.6 "
-"は2016年12月23日にリリースされました。全詳細については `変更履歴 <changelog>` をご覧ください。"
+"は2016年12月23日にリリースされました。全詳細については :ref:`変更履歴 <changelog>` をご覧ください。"
 
 #: ../../whatsnew/3.6.rst:53
 msgid ":pep:`494` - Python 3.6 Release Schedule"
@@ -274,6 +274,9 @@ msgid ""
 "which are evaluated at run time, and then formatted using the :func:`format`"
 " protocol::"
 msgstr ""
+"フォーマット済み文字列リテラルはプレフィックスに ``'f'`` をとり :meth:`str.format` "
+"による書式文字列に似ています。これらには中括弧で囲まれた置換フィールドがあります。置換フィールドは実行時に評価される式で、 :func:`format`"
+" プロトコルによってフォーマットされます::"
 
 #: ../../whatsnew/3.6.rst:203
 msgid ":pep:`498` -- Literal String Interpolation."
