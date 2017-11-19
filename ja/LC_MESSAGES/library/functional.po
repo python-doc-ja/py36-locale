@@ -29,4 +29,4 @@ msgstr "この章では、関数型プログラミングスタイルをサポー
 
 #: ../../library/functional.rst:8
 msgid "The following modules are documented in this chapter:"
-msgstr "この章では以下のモジュールが記述されています:"
+msgstr "この章では以下のモジュールが解説されています:"
