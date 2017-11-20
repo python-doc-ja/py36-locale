@@ -23,7 +23,7 @@ msgstr "Python モジュールのインストール (旧版)"
 
 #: ../../install/index.rst:0
 msgid "Author"
-msgstr ""
+msgstr "著者"
 
 #: ../../install/index.rst:9
 msgid "Greg Ward"

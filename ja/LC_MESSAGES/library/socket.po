@@ -1425,7 +1425,7 @@ msgstr ""
 
 #: ../../library/socket.rst:0
 msgid "platform"
-msgstr ""
+msgstr "プラットフォーム"
 
 #: ../../library/socket.rst:1026
 msgid "Windows"

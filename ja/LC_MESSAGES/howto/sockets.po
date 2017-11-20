@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>, 2017\n"
+"Last-Translator: cocoatomo <cocoatomo77@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +23,7 @@ msgstr "ソケットプログラミング HOWTO"
 
 #: ../../howto/sockets.rst:0
 msgid "Author"
-msgstr ""
+msgstr "著者"
 
 #: ../../howto/sockets.rst:7
 msgid "Gordon McMillan"

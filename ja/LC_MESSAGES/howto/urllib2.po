@@ -23,7 +23,7 @@ msgstr "urllib パッケージを使ってインターネット上のリソー�
 
 #: ../../howto/urllib2.rst:0
 msgid "Author"
-msgstr ""
+msgstr "著者"
 
 #: ../../howto/urllib2.rst:7
 msgid "`Michael Foord <http://www.voidspace.org.uk/python/index.shtml>`_"

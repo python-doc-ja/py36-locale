@@ -23,7 +23,7 @@ msgstr "ソート HOW TO"
 
 #: ../../howto/sorting.rst:0
 msgid "Author"
-msgstr ""
+msgstr "著者"
 
 #: ../../howto/sorting.rst:6
 msgid "Andrew Dalke and Raymond Hettinger"

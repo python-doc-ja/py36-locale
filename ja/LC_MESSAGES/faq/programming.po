@@ -2121,6 +2121,9 @@ msgid ""
 "``close()`` and ``close()`` should make sure that it can be called more than"
 " once for the same object."
 msgstr ""
+"循環参照コレクタがあるとはいえ、オブジェクトに ``close()`` メソッドを明示的に定義し、使い終わったらいつでも呼び出せるようにするのはいいことです。\n"
+"``close()`` メソッドを使うと、サブオブジェクトを参照している属性を取り除けます。\n"
+":meth:`__del__` を直接呼び出さないでください -- :meth:`__del__` は ``close()`` を呼び出すでしょうし、 ``close()`` なら同じオブジェクトに対して複数回呼ばれてもいいことが保証されているでしょう。"
 
 #: ../../faq/programming.rst:1646
 msgid ""

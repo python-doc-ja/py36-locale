@@ -23,7 +23,7 @@ msgstr "デスクリプタ HowTo ガイド"
 
 #: ../../howto/descriptor.rst:0
 msgid "Author"
-msgstr ""
+msgstr "著者"
 
 #: ../../howto/descriptor.rst:5
 msgid "Raymond Hettinger"

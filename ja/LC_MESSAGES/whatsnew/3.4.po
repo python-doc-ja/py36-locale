@@ -23,7 +23,7 @@ msgstr "What's New In Python 3.4"
 
 #: ../../whatsnew/3.4.rst:0
 msgid "Author"
-msgstr ""
+msgstr "著者"
 
 #: ../../whatsnew/3.4.rst:5
 msgid "R. David Murray <rdmurray@bitdance.com> (Editor)"
@@ -3602,6 +3602,11 @@ msgid ""
 "the test suite, and generate an HTML coverage report for the C codebase "
 "using ``gcov`` and `lcov <http://ltp.sourceforge.net/coverage/lcov.php>`_."
 msgstr ""
+"新たな ``make`` ターゲットの `coverage-report <https://devguide.python.org/coverage"
+"/#measuring-coverage-of-c-code-with-gcov-and-lcov>`_ の追加。これは python "
+"をビルドし、テストスイートを実行し、 ``gcov`` と `lcov "
+"<http://ltp.sourceforge.net/coverage/lcov.php>`_ を用いて C 言語のコードベースのカバレッジレポートを"
+" HTML で生成します。"
 
 #: ../../whatsnew/3.4.rst:1968
 msgid ""
@@ -4043,6 +4048,10 @@ msgid ""
 "removed (see the `devguide <https://devguide.python.org>`_ for suggestions "
 "on what to use instead)."
 msgstr ""
+"保守されていなかった ``Misc/TextMate`` と ``Misc/vim`` ディレクトリは削除されました (代わりに何が使えるかの提案は "
+"`devguide <https://devguide.python.org>`_ をみてください --- 訳注: おそらく `Additional "
+"Resources <https://devguide.python.org/#additional-resources>`_ に挙げられている "
+"`wiki <https://wiki.python.org/moin/PythonEditors>`_ を指している ---)。"
 
 #: ../../whatsnew/3.4.rst:2182
 msgid ""
