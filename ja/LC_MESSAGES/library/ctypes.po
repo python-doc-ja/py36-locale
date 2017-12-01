@@ -210,12 +210,17 @@ msgid ""
 "should not be relied upon.  It is deprecated in 3.6.2, and will be removed "
 "in 3.7."
 msgstr ""
+"不正な数の引数が渡されたことを検知した場合、 :mod:`ctypes` は関数を呼び出した後に :exc:`ValueError` を送出することがあります。\n"
+"この動作には依存するべきではありません。\n"
+"この動作は 3.6.2 で非推奨であり、 3.7 で削除予定です。"
 
 #: ../../library/ctypes.rst:171
 msgid ""
 ":exc:`ValueError` is raised when you call an ``stdcall`` function with the "
 "``cdecl`` calling convention, or vice versa::"
 msgstr ""
+"``cdecl`` 呼び出し規約を使って ``stdcall`` 関数を呼び出したときには、 :exc:`ValueError` "
+"が送出されます。逆の場合も同様です::"
 
 #: ../../library/ctypes.rst:186
 msgid ""

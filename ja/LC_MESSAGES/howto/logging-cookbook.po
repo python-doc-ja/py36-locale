@@ -1139,6 +1139,9 @@ msgid ""
 "following is a simple approach which uses JSON to serialise the event in a "
 "machine-parseable manner::"
 msgstr ""
+"多くのログメッセージは人間が読むために書かれるため、機械的に処理しにくくなっていますが、場合によっては (複雑な正規表現を使ってログメッセージをパースしなくても) プログラムがパース *できる* 構造化されたフォーマットでメッセージを出力したい場合があります。\n"
+"logging パッケージを使うと、これを簡単に実現できます。\n"
+"実現する方法は幾つもありますが、次の例は JSON を使ってイベントを、機械でパースできる形にシリアライズする単純な方法です::"
 
 #: ../../howto/logging-cookbook.rst:1709
 msgid "If the above script is run, it prints::"

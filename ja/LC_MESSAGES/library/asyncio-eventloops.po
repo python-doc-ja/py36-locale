@@ -23,7 +23,7 @@ msgstr "イベントループ"
 
 #: ../../library/asyncio-eventloops.rst:6
 msgid "**Source code:** :source:`Lib/asyncio/events.py`"
-msgstr ""
+msgstr "**ソースコード:** :source:`Lib/asyncio/events.py`"
 
 #: ../../library/asyncio-eventloops.rst:9
 msgid "Event loop functions"

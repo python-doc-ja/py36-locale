@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Shun Sakurai <justmyway.yui@gmail.com>, 2017\n"
+"Last-Translator: cocoatomo <cocoatomo77@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +23,7 @@ msgstr "基底イベントループ"
 
 #: ../../library/asyncio-eventloop.rst:8
 msgid "**Source code:** :source:`Lib/asyncio/events.py`"
-msgstr ""
+msgstr "**ソースコード:** :source:`Lib/asyncio/events.py`"
 
 #: ../../library/asyncio-eventloop.rst:10
 msgid ""
