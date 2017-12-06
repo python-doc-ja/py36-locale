@@ -130,6 +130,8 @@ msgid ""
 "can now be used to debug the interpreter memory allocation and access "
 "errors."
 msgstr ""
+"新しい :ref:`PYTHONMALLOC <whatsnew36-pythonmalloc>`  "
+"環境変数が、インタープリタのメモリ確保とメモリアクセスエラーのデバッグに使えるようになりました。"
 
 #: ../../whatsnew/3.6.rst:104
 msgid "Significant improvements in the standard library:"
