@@ -173,6 +173,8 @@ msgid ""
 "better diagnostics for memory allocation errors. See the :ref:`PYTHONMALLOC "
 "section <whatsnew36-pythonmalloc>` for more information."
 msgstr ""
+":mod:`tracemalloc` モジュールが大幅に書き直され、改善されたメモリ割り当てエラーの診断プログラムの提供だけでなく、 :exc:`ResourceWarning` の出力メッセージも改善されています。\n"
+"より詳しいことは :ref:`PYTHONMALLOC 節 <whatsnew36-pythonmalloc>` を参照してください。"
 
 #: ../../whatsnew/3.6.rst:129
 msgid "Security improvements:"
