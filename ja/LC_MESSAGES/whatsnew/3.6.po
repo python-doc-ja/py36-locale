@@ -212,6 +212,8 @@ msgid ""
 "The :mod:`hashlib` module received support for the BLAKE2, SHA-3 and SHAKE "
 "hash algorithms and the :func:`~hashlib.scrypt` key derivation function."
 msgstr ""
+":mod:`hashlib` モジュールで BLAKE2, SHA-3, SHAKE ハッシュアルゴリズムと "
+":func:`~hashlib.scrypt` キー導出関数がサポートされるようになりました。"
 
 #: ../../whatsnew/3.6.rst:148
 msgid "Windows improvements:"
@@ -232,6 +234,8 @@ msgid ""
 "arguments or a config file).  Handling of shebang lines remains unchanged - "
 "\"python\" refers to Python 2 in that case."
 msgstr ""
+"``py.exe`` ランチャーを対話的に使うときに、 (コマンドライン引数や設定ファイルで) バージョンを指定しないと Python 3 よりも Python 2 を選択するということはなくなりました。\n"
+"シェバン行の扱いは以前のままで、 \"python\" とあった場合は Python 2 を指しています。"
 
 #: ../../whatsnew/3.6.rst:158
 msgid ""
