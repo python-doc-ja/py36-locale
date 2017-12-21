@@ -5,7 +5,7 @@ python: '3.6'
 before_install:
 - export TZ=Asia/Tokyo
 install:
-- pip install sphinx==1.6.5
+- pip install sphinx==1.6.5 blurb
 - cd ..
 - pwd
 - ls -la
