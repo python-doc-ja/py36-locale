@@ -1360,8 +1360,8 @@ msgid ""
 "creates a new object.  In the general case, the total runtime cost is "
 "quadratic in the total string length."
 msgstr ""
-":class:`str` および :class:`bytes` "
-"オブジェクトはイミュータブルなので、多くの文字列の結合は結合ごとに新しいオブジェクトを作成し、効率が悪いです。一般的に、合計実行時間のコストは合計文字列の長さの二次方程式です。"
+":class:`str` および :class:`bytes` オブジェクトはイミュータブルなので、多くの文字列の結合は結合ごとに新しいオブジェクトを作成し、効率が悪いです。\n"
+"一般的に、全体の実行時間のコストは文字列の長さの二乗に比例します。"
 
 #: ../../faq/programming.rst:1045
 msgid ""

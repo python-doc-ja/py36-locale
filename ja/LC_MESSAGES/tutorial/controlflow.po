@@ -167,6 +167,8 @@ msgid ""
 "The :keyword:`break` statement, like in C, breaks out of the innermost "
 "enclosing :keyword:`for` or :keyword:`while` loop."
 msgstr ""
+":keyword:`break` 文は、C 言語と同じく、最も内側の :keyword:`for` または :keyword:`while` "
+"ループを中断します。"
 
 #: ../../tutorial/controlflow.rst:163
 msgid ""
