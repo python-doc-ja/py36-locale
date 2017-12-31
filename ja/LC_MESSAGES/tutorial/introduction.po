@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-31 17:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -222,20 +223,20 @@ msgstr "連続して並んでいる複数の *文字列リテラル* (つまり�
 
 #: ../../tutorial/introduction.rst:215
 msgid ""
+"This feature is particularly useful when you want to break long strings::"
+msgstr "この機能は特に、長い文字列を改行したいときに役に立ちます::"
+
+#: ../../tutorial/introduction.rst:222
+msgid ""
 "This only works with two literals though, not with variables or "
 "expressions::"
 msgstr "これは 2 つのリテラルどうしに対してのみ働き、変数や式には働きません::"
 
-#: ../../tutorial/introduction.rst:225
+#: ../../tutorial/introduction.rst:232
 msgid ""
 "If you want to concatenate variables or a variable and a literal, use "
 "``+``::"
 msgstr "変数どうしや変数とリテラルを連結したい場合は、``+`` を使ってください::"
-
-#: ../../tutorial/introduction.rst:230
-msgid ""
-"This feature is particularly useful when you want to break long strings::"
-msgstr "この機能は特に、長い文字列を改行したいときに役に立ちます::"
 
 #: ../../tutorial/introduction.rst:237
 msgid ""

@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-31 18:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Ikuru K <kanumaiku@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
@@ -1123,16 +1124,12 @@ msgstr "セマフォは :ref:`コンテキストマネージメントプロト�
 
 #: ../../library/threading.rst:687
 msgid ""
-"This class implements semaphore objects.  A semaphore manages a counter "
-"representing the number of :meth:`release` calls minus the number of "
-":meth:`acquire` calls, plus an initial value.  The :meth:`acquire` method "
+"This class implements semaphore objects.  A semaphore manages an atomic "
+"counter representing the number of :meth:`release` calls minus the number of"
+" :meth:`acquire` calls, plus an initial value.  The :meth:`acquire` method "
 "blocks if necessary until it can return without making the counter negative."
 " If not given, *value* defaults to 1."
 msgstr ""
-"このクラスはセマフォ (semaphore) オブジェクトを実装します。セマフォは、 :meth:`release` を呼び出した数から "
-":meth:`acquire` を呼び出した数を引き、初期値を足した値を表すカウンタを管理します。 :meth:`acquire` "
-"メソッドは、カウンタの値を負にせずに処理を戻せるまで必要ならば処理をブロックします。 *value* を指定しない場合、デフォルトの値は 1 "
-"になります。"
 
 #: ../../library/threading.rst:693
 msgid ""
@@ -1148,24 +1145,23 @@ msgid "Acquire a semaphore."
 msgstr "セマフォを獲得します。"
 
 #: ../../library/threading.rst:704
-msgid ""
-"When invoked without arguments: if the internal counter is larger than zero "
-"on entry, decrement it by one and return immediately.  If it is zero on "
-"entry, block, waiting until some other thread has called "
-":meth:`~Semaphore.release` to make it larger than zero.  This is done with "
-"proper interlocking so that if multiple :meth:`acquire` calls are blocked, "
-":meth:`~Semaphore.release` will wake exactly one of them up. The "
-"implementation may pick one at random, so the order in which blocked threads"
-" are awakened should not be relied on.  Returns true (or blocks "
-"indefinitely)."
+msgid "When invoked without arguments:"
 msgstr ""
-"引数なしで呼び出した場合: :meth:`~Semaphore.acquire` 処理に入ったときに内部カウンタがゼロより大きければ、カウンタを 1 "
-"デクリメントして即座に処理を戻します。 :meth:`~Semaphore.acquire` 処理に入ったときに内部カウンタがゼロの場合、他のスレッドが"
-" :meth:`~Semaphore.release` を呼び出してカウンタをゼロより大きくするまでブロックします。この処理は、適切なインターロック "
-"(interlock) を介して行い、複数の :meth:`~Semaphore.acquire` 呼び出しがブロックされた場合、 "
-":meth:`~Semaphore.release` が正確に一つのスレッドだけを起こせるようにします。 "
-"実装はランダムに一つ選択してもよいので、ブロックされたスレッドが起こされる順番に依存してはなりません。 true を返します "
-"(または無期限にブロックします)。"
+
+#: ../../library/threading.rst:706
+msgid ""
+"If the internal counter is larger than zero on entry, decrement it by one "
+"and return true immediately."
+msgstr ""
+
+#: ../../library/threading.rst:708
+msgid ""
+"If the internal counter is zero on entry, block until awoken by a call to "
+":meth:`~Semaphore.release`.  Once awoken (and the counter is greater than "
+"0), decrement the counter by 1 and return true.  Exactly one thread will be "
+"awoken by each call to :meth:`~Semaphore.release`.  The order in which "
+"threads are awoken should not be relied on."
+msgstr ""
 
 #: ../../library/threading.rst:714
 msgid ""
