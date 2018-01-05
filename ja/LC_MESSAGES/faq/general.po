@@ -321,6 +321,8 @@ msgid ""
 "<https://devguide.python.org/setup/>`__ for more information on getting the "
 "source code and compiling it."
 msgstr ""
+"ソースコードの入手とコンパイルについて、より詳しい情報は `Getting Started section of the Python "
+"Developer's Guide <https://devguide.python.org/setup/>`__ を参照してください。"
 
 #: ../../faq/general.rst:175
 msgid "How do I get documentation on Python?"
