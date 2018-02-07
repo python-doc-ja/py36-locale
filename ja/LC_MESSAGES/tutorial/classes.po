@@ -30,6 +30,10 @@ msgid ""
 "attributes attached to it for maintaining its state.  Class instances can "
 "also have methods (defined by its class) for modifying its state."
 msgstr ""
+"クラスはデータと機能を組み合わせる方法を提供します。\n"
+"新規にクラスを作成することで、新しいオブジェクトの *型* を作成し、その型を持つ新しい *インスタンス* が作れます。\n"
+"クラスのそれぞれのインスタンスは自身の状態を保持する属性を持てます。\n"
+"クラスのインスタンスは、その状態を変更するための (そのクラスが定義する) メソッドも持てます。"
 
 #: ../../tutorial/classes.rst:13
 msgid ""
@@ -1129,6 +1133,11 @@ msgid ""
 " compact but less versatile than full generator definitions and tend to be "
 "more memory friendly than equivalent list comprehensions."
 msgstr ""
+"単純なジェネレータなら式として簡潔にコーディングできます。\n"
+"その式はリスト内包表記に似た構文を使いますが、角括弧ではなく丸括弧で囲います。\n"
+"ジェネレータ式は、関数の中でジェネレータをすぐに使いたいような状況のために用意されています。\n"
+"ジェネレータ式は完全なジェネレータの定義よりコンパクトですが、ちょっと融通の効かないところがあります。\n"
+"同じ内容を返すリスト内包表記よりはメモリに優しいことが多いという利点があります。"
 
 #: ../../tutorial/classes.rst:885
 msgid "Examples::"
