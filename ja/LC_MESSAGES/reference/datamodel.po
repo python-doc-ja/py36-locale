@@ -1721,7 +1721,7 @@ msgstr ""
 msgid ""
 "It is not guaranteed that :meth:`__del__` methods are called for objects "
 "that still exist when the interpreter exits."
-msgstr ""
+msgstr "インタプリタが終了したときに、残存しているオブジェクトの :meth:`__del__` メソッドが呼び出される保証はありません。"
 
 #: ../../reference/datamodel.rst:1181
 msgid ""
@@ -1732,7 +1732,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:1196
 msgid "Documentation for the :mod:`gc` module."
-msgstr ""
+msgstr ":mod:`gc` モジュールのドキュメント。"
 
 #: ../../reference/datamodel.rst:1200
 msgid ""
