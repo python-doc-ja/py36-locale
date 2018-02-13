@@ -94,6 +94,8 @@ msgid ""
 ":func:`ldngettext` functions. If *codeset* is omitted, then the current "
 "binding is returned."
 msgstr ""
+"*domain* を *codeset* に対応付け、 :func:`lgettext`, :func:`ldgettext`, :func:`lngettext`, :func:`ldngettext` 関数が返すバイト文字列のエンコード方式を変更します。\n"
+"*codeset* が省略された場合は、現在 *domain* に対応付けられているコードセットを返します。"
 
 #: ../../library/gettext.rst:59
 msgid ""
