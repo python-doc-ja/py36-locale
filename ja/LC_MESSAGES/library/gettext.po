@@ -277,12 +277,12 @@ msgid ""
 "*fallback* is false (which is the default), and returns a "
 ":class:`NullTranslations` instance if *fallback* is true."
 msgstr ""
-":file:`.mo` ファイルが見つからなかった場合、 *fallback* が偽 (標準の設定です) ならこの関数は :exc:`OSError` "
+":file:`.mo` ファイルが見つからなかった場合、 *fallback* が偽 (デフォルト値) ならこの関数は :exc:`OSError` "
 "を送出し、 *fallback* が真なら :class:`NullTranslations` インスタンスが返されます。"
 
 #: ../../library/gettext.rst:191
 msgid ":exc:`IOError` used to be raised instead of :exc:`OSError`."
-msgstr "以前は :exc:`OSError` の代わりに :exc:`IOError` が送出されていました。"
+msgstr "以前は :exc:`OSError` ではなく :exc:`IOError` が送出されていました。"
 
 #: ../../library/gettext.rst:197
 msgid ""
