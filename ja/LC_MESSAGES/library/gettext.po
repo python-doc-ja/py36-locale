@@ -117,7 +117,7 @@ msgstr ""
 #: ../../library/gettext.rst:73
 msgid ""
 "Like :func:`.gettext`, but look the message up in the specified *domain*."
-msgstr ""
+msgstr ":func:`.gettext` と同様ですが、指定された *domain* からメッセージを探します。"
 
 #: ../../library/gettext.rst:78
 msgid ""
