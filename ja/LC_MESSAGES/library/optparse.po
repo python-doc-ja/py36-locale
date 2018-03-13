@@ -233,7 +233,7 @@ msgstr ""
 
 #: ../../library/optparse.rst:165
 msgid "positional argument"
-msgstr "位置引数 (positional argument、固定引数)"
+msgstr "位置引数 (positional argument)"
 
 #: ../../library/optparse.rst:163
 msgid ""
@@ -267,7 +267,7 @@ msgid ""
 " positional arguments."
 msgstr ""
 "``-v`` と ``--report`` はどちらもオプションです。``--report`` "
-"オプションが引数をとるとすれば、``report.txt`` はオプションの引数です。``foo`` と ``bar`` は固定引数になります。"
+"オプションが引数をとるとすれば、``report.txt`` はオプションの引数です。``foo`` と ``bar`` は位置引数になります。"
 
 #: ../../library/optparse.rst:185
 msgid "What are options for?"
@@ -298,7 +298,7 @@ msgid ""
 "successfully, that's what positional arguments are for."
 msgstr ""
 "多くの人が自分のプログラムに「必須のオプション」を持たせたいと考えます。しかしよく考えてください。必須なら、それは *オプション(省略可能) "
-"ではないのです！* プログラムを正しく動作させるのに絶対的に必要な情報があるとすれば、そこには固定引数を割り当てるべきなのです。"
+"ではないのです！* プログラムを正しく動作させるのに絶対的に必要な情報があるとすれば、そこには位置引数を割り当てるべきなのです。"
 
 #: ../../library/optparse.rst:200
 msgid ""
@@ -327,13 +327,13 @@ msgstr ""
 
 #: ../../library/optparse.rst:220
 msgid "What are positional arguments for?"
-msgstr "固定引数とは何か"
+msgstr "位置引数とは何か"
 
 #: ../../library/optparse.rst:222
 msgid ""
 "Positional arguments are for those pieces of information that your program "
 "absolutely, positively requires to run."
-msgstr "固定引数とは、プログラムを動作させる上で絶対的に必要な情報となる引数です。"
+msgstr "位置引数とは、プログラムを動作させる上で絶対的に必要な情報となる引数です。"
 
 #: ../../library/optparse.rst:225
 msgid ""
@@ -461,7 +461,7 @@ msgstr ""
 #: ../../library/optparse.rst:298
 msgid ""
 "``args``, the list of positional arguments leftover after parsing options"
-msgstr "オプションの解析後に残った固定引数からなるリスト ``args``"
+msgstr "オプションの解析後に残った位置引数からなるリスト ``args``"
 
 #: ../../library/optparse.rst:300
 msgid ""
@@ -793,7 +793,7 @@ msgid ""
 "script doesn't take any positional arguments."
 msgstr ""
 "usage の文字列を指定しない場合、 :mod:`optparse` は型どおりとはいえ気の利いたデフォルト値、 ``\"Usage: %prog "
-"[options]\"`` を使います。固定引数をとらないスクリプトの場合はこれで十分でしょう。"
+"[options]\"`` を使います。位置引数をとらないスクリプトの場合はこれで十分でしょう。"
 
 #: ../../library/optparse.rst:528
 msgid ""
