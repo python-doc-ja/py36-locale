@@ -148,7 +148,7 @@ msgstr ""
 
 #: ../../howto/argparse.rst:110
 msgid "Introducing Positional arguments"
-msgstr "位置引数の導入"
+msgstr "位置引数の入門"
 
 #: ../../howto/argparse.rst:112
 msgid "An example::"
@@ -202,7 +202,7 @@ msgid ""
 " useful::"
 msgstr ""
 "ヘルプメッセージは十分なように見えますが、それほど分かりやすくもありません。たとえば、``echo`` "
-"は位置指定引数であることがわかりますが、それが何であるかを知るためには推測するかソースコードを見なけれなりません。もうすこしヘルプメッセージ分かりやすくしてみましょう::"
+"は位置引数であることがわかりますが、それが何であるかを知るためには推測するかソースコードを見なけれなりません。もうすこしヘルプメッセージ分かりやすくしてみましょう::"
 
 #: ../../howto/argparse.rst:165
 msgid "And we get:"
@@ -324,7 +324,7 @@ msgstr "新しい機能がヘルプテキストにも反映されている点に
 
 #: ../../howto/argparse.rst:343
 msgid "Combining Positional and Optional arguments"
-msgstr "位置指定引数とOptional引数の併用"
+msgstr "位置引数とOptional引数の併用"
 
 #: ../../howto/argparse.rst:345
 msgid "Our program keeps growing in complexity::"
@@ -336,7 +336,7 @@ msgstr "出力は以下のようになります:"
 
 #: ../../howto/argparse.rst:374
 msgid "We've brought back a positional argument, hence the complaint."
-msgstr "位置指定引数を元に戻したので、引数を指定しないとエラーになりました。"
+msgstr "位置引数を元に戻したので、引数を指定しないとエラーになりました。"
 
 #: ../../howto/argparse.rst:376
 msgid "Note that the order does not matter."

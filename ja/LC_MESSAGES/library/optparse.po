@@ -345,8 +345,8 @@ msgid ""
 " a configuration file, or a GUI: if you make that many demands on your "
 "users, most of them will simply give up."
 msgstr ""
-"よいユーザインタフェースとは、可能な限り少ない固定引数をもつものです。プログラムを正しく動作させるために 17 個もの別個の情報が必要だとしたら、その "
-"*方法* はさして問題にはなりません "
+"よいユーザインタフェースとは、絶対に必要だとされるものが可能な限り少ないものです。プログラムを正しく動作させるために 17 "
+"個もの別個の情報が必要だとしたら、その *方法* はさして問題にはなりません "
 "---ユーザはプログラムを正しく動作させられないうちに諦め、立ち去ってしまうからです。ユーザインタフェースがコマンドラインでも、設定ファイルでも、GUI"
 " やその他の何であっても同じです: 多くの要求をユーザに押し付ければ、ほとんどのユーザはただ音をあげてしまうだけなのです。"
 
@@ -1255,7 +1255,7 @@ msgid ""
 "will create the Option instance for you"
 msgstr ""
 ":func:`make_option` に (すなわち :class:`Option` のコンストラクタに) "
-"固定引数とキーワード引数の組み合わせを渡して、 :class:`Option` インスタンスを生成させます"
+"位置引数とキーワード引数の組み合わせを渡して、 :class:`Option` インスタンスを生成させます"
 
 #: ../../library/optparse.rst:874
 msgid ""
@@ -1530,7 +1530,7 @@ msgstr ""
 msgid ""
 "Additional positional and keyword arguments to pass to ``callback`` after "
 "the four standard callback arguments."
-msgstr "``callback`` に渡される標準的な4つのコールバック引数の後ろに追加する、位置指定引数とキーワード引数。"
+msgstr "``callback`` に渡される標準的な4つのコールバック引数の後ろに追加する、位置引数とキーワード引数。"
 
 #: ../../library/optparse.rst:1060
 msgid ""
@@ -1960,7 +1960,7 @@ msgstr ""
 #: ../../library/optparse.rst:1345
 msgid ""
 "the leftover positional arguments after all options have been processed"
-msgstr "全てのオプションの処理が終わった後で残った固定引数"
+msgstr "全てのオプションの処理が終わった後で残った位置引数"
 
 #: ../../library/optparse.rst:1347
 msgid ""
@@ -2344,7 +2344,7 @@ msgstr ":attr:`~Option.callback_args`"
 
 #: ../../library/optparse.rst:1605
 msgid "a tuple of extra positional arguments to pass to the callback"
-msgstr "その他の固定引数からなるタプルで、コールバックに渡されます"
+msgstr "その他の位置引数からなるタプルで、コールバックに渡されます"
 
 #: ../../library/optparse.rst:1609
 msgid ":attr:`~Option.callback_kwargs`"
@@ -2465,7 +2465,7 @@ msgstr ""
 msgid ""
 "is a tuple of arbitrary positional arguments supplied via the "
 ":attr:`~Option.callback_args` option attribute."
-msgstr ":attr:`~Option.callback_args` オプション属性で与えられた任意の固定引数からなるタプルです。"
+msgstr ":attr:`~Option.callback_args` オプション属性で与えられた任意の位置引数からなるタプルです。"
 
 #: ../../library/optparse.rst:1669
 msgid "``kwargs``"

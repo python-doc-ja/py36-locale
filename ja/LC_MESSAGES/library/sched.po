@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../library/sched.rst:30
 msgid "*timefunc* and *delayfunc* parameters are optional."
-msgstr "*timefunc* と *delayfunc* 引数が任意になりました。"
+msgstr "*timefunc* と *delayfunc* がオプション引数になりました。"
 
 #: ../../library/sched.rst:33
 msgid ""
