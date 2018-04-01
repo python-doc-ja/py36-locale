@@ -42,7 +42,7 @@ msgid ""
 "site also contains distributions of and pointers to many free third party "
 "Python modules, programs and tools, and additional documentation."
 msgstr ""
-"Python Web サイト(htts://www.python.jp) は、 Python "
+"Python Web サイト(htts://www.python.org) は、 Python "
 "インタープリタと標準ライブラリのソースコードと、主要プラットフォームごとにコンパイル済みのバイナリファイルを無料で配布しています。また、Python "
 "Web サイトには、無料のサードパーティモジュールやプログラム、ツール、ドキュメントなども紹介しています。"
 
