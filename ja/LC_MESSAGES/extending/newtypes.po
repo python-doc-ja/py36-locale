@@ -40,6 +40,8 @@ msgid ""
 " type you want to define, the chances are very good that you will only "
 "implement a handful of these."
 msgstr ""
+"*たくさんの* "
+"メソッドがありますね。でもそんなに心配する必要はありません。定義したい型があるなら、実装するのはこのうちのごくわずかですむことがほとんどです。"
 
 #: ../../extending/newtypes.rst:22
 msgid ""
@@ -50,6 +52,9 @@ msgid ""
 "that includes the fields you need and then change the values to suit your "
 "new type. ::"
 msgstr ""
+"すでに予想されているでしょうが、この構造体について入念に見ていき、様々なハンドラについてより詳しい情報を提供します。\n"
+"しかしこれらのメンバが構造体中で定義されている順番は無視します。というのは、これらのメンバの現れる順序は歴史的な遺産によるものだからです。\n"
+"多くの場合いちばん簡単なのは、必要とするメンバがすべて含まれている例をとってきて、新しく作る型に合わせて値を変更することです。 ::"
 
 #: ../../extending/newtypes.rst:31
 msgid ""
