@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -388,370 +389,374 @@ msgid "Reverse the elements of the deque in-place and then return ``None``."
 msgstr ""
 
 #: ../../library/collections.rst:514
-msgid "Rotate the deque *n* steps to the right.  If *n* is negative, rotate to the left.  Rotating one step to the right is equivalent to: ``d.appendleft(d.pop())``."
+msgid "Rotate the deque *n* steps to the right.  If *n* is negative, rotate to the left."
 msgstr ""
 
-#: ../../library/collections.rst:519
+#: ../../library/collections.rst:517
+msgid "When the deque is not empty, rotating one step to the right is equivalent to ``d.appendleft(d.pop())``, and rotating one step to the left is equivalent to ``d.append(d.popleft())``."
+msgstr ""
+
+#: ../../library/collections.rst:522
 msgid "Deque objects also provide one read-only attribute:"
 msgstr ""
 
-#: ../../library/collections.rst:523
+#: ../../library/collections.rst:526
 msgid "Maximum size of a deque or ``None`` if unbounded."
 msgstr ""
 
-#: ../../library/collections.rst:528
+#: ../../library/collections.rst:531
 msgid "In addition to the above, deques support iteration, pickling, ``len(d)``, ``reversed(d)``, ``copy.copy(d)``, ``copy.deepcopy(d)``, membership testing with the :keyword:`in` operator, and subscript references such as ``d[-1]``.  Indexed access is O(1) at both ends but slows to O(n) in the middle.  For fast random access, use lists instead."
 msgstr ""
 
-#: ../../library/collections.rst:534
+#: ../../library/collections.rst:537
 msgid "Starting in version 3.5, deques support ``__add__()``, ``__mul__()``, and ``__imul__()``."
 msgstr ""
 
-#: ../../library/collections.rst:537
+#: ../../library/collections.rst:540
 msgid "Example:"
 msgstr ""
 
-#: ../../library/collections.rst:594
+#: ../../library/collections.rst:597
 msgid ":class:`deque` Recipes"
 msgstr ""
 
-#: ../../library/collections.rst:596
+#: ../../library/collections.rst:599
 msgid "This section shows various approaches to working with deques."
 msgstr ""
 
-#: ../../library/collections.rst:598
+#: ../../library/collections.rst:601
 msgid "Bounded length deques provide functionality similar to the ``tail`` filter in Unix::"
 msgstr ""
 
-#: ../../library/collections.rst:606
+#: ../../library/collections.rst:609
 msgid "Another approach to using deques is to maintain a sequence of recently added elements by appending to the right and popping to the left::"
 msgstr ""
 
-#: ../../library/collections.rst:621
+#: ../../library/collections.rst:624
 msgid "The :meth:`rotate` method provides a way to implement :class:`deque` slicing and deletion.  For example, a pure Python implementation of ``del d[n]`` relies on the :meth:`rotate` method to position elements to be popped::"
 msgstr ""
 
-#: ../../library/collections.rst:630
+#: ../../library/collections.rst:633
 msgid "To implement :class:`deque` slicing, use a similar approach applying :meth:`rotate` to bring a target element to the left side of the deque. Remove old entries with :meth:`popleft`, add new entries with :meth:`extend`, and then reverse the rotation. With minor variations on that approach, it is easy to implement Forth style stack manipulations such as ``dup``, ``drop``, ``swap``, ``over``, ``pick``, ``rot``, and ``roll``."
 msgstr ""
 
-#: ../../library/collections.rst:640
+#: ../../library/collections.rst:643
 msgid ":class:`defaultdict` objects"
 msgstr ""
 
-#: ../../library/collections.rst:644
+#: ../../library/collections.rst:647
 msgid "Returns a new dictionary-like object.  :class:`defaultdict` is a subclass of the built-in :class:`dict` class.  It overrides one method and adds one writable instance variable.  The remaining functionality is the same as for the :class:`dict` class and is not documented here."
 msgstr ""
 
-#: ../../library/collections.rst:649
+#: ../../library/collections.rst:652
 msgid "The first argument provides the initial value for the :attr:`default_factory` attribute; it defaults to ``None``. All remaining arguments are treated the same as if they were passed to the :class:`dict` constructor, including keyword arguments."
 msgstr ""
 
-#: ../../library/collections.rst:655
+#: ../../library/collections.rst:658
 msgid ":class:`defaultdict` objects support the following method in addition to the standard :class:`dict` operations:"
 msgstr ""
 
-#: ../../library/collections.rst:660
+#: ../../library/collections.rst:663
 msgid "If the :attr:`default_factory` attribute is ``None``, this raises a :exc:`KeyError` exception with the *key* as argument."
 msgstr ""
 
-#: ../../library/collections.rst:663
+#: ../../library/collections.rst:666
 msgid "If :attr:`default_factory` is not ``None``, it is called without arguments to provide a default value for the given *key*, this value is inserted in the dictionary for the *key*, and returned."
 msgstr ""
 
-#: ../../library/collections.rst:667
+#: ../../library/collections.rst:670
 msgid "If calling :attr:`default_factory` raises an exception this exception is propagated unchanged."
 msgstr ""
 
-#: ../../library/collections.rst:670
+#: ../../library/collections.rst:673
 msgid "This method is called by the :meth:`__getitem__` method of the :class:`dict` class when the requested key is not found; whatever it returns or raises is then returned or raised by :meth:`__getitem__`."
 msgstr ""
 
-#: ../../library/collections.rst:674
+#: ../../library/collections.rst:677
 msgid "Note that :meth:`__missing__` is *not* called for any operations besides :meth:`__getitem__`. This means that :meth:`get` will, like normal dictionaries, return ``None`` as a default rather than using :attr:`default_factory`."
 msgstr ""
 
-#: ../../library/collections.rst:680
+#: ../../library/collections.rst:683
 msgid ":class:`defaultdict` objects support the following instance variable:"
 msgstr ""
 
-#: ../../library/collections.rst:685
+#: ../../library/collections.rst:688
 msgid "This attribute is used by the :meth:`__missing__` method; it is initialized from the first argument to the constructor, if present, or to ``None``, if absent."
 msgstr ""
 
-#: ../../library/collections.rst:691
+#: ../../library/collections.rst:694
 msgid ":class:`defaultdict` Examples"
 msgstr ""
 
-#: ../../library/collections.rst:693
+#: ../../library/collections.rst:696
 msgid "Using :class:`list` as the :attr:`default_factory`, it is easy to group a sequence of key-value pairs into a dictionary of lists:"
 msgstr ""
 
-#: ../../library/collections.rst:704
+#: ../../library/collections.rst:707
 msgid "When each key is encountered for the first time, it is not already in the mapping; so an entry is automatically created using the :attr:`default_factory` function which returns an empty :class:`list`.  The :meth:`list.append` operation then attaches the value to the new list.  When keys are encountered again, the look-up proceeds normally (returning the list for that key) and the :meth:`list.append` operation adds another value to the list. This technique is simpler and faster than an equivalent technique using :meth:`dict.setdefault`:"
 msgstr ""
 
-#: ../../library/collections.rst:719
+#: ../../library/collections.rst:722
 msgid "Setting the :attr:`default_factory` to :class:`int` makes the :class:`defaultdict` useful for counting (like a bag or multiset in other languages):"
 msgstr ""
 
-#: ../../library/collections.rst:731
+#: ../../library/collections.rst:734
 msgid "When a letter is first encountered, it is missing from the mapping, so the :attr:`default_factory` function calls :func:`int` to supply a default count of zero.  The increment operation then builds up the count for each letter."
 msgstr ""
 
-#: ../../library/collections.rst:735
+#: ../../library/collections.rst:738
 msgid "The function :func:`int` which always returns zero is just a special case of constant functions.  A faster and more flexible way to create constant functions is to use a lambda function which can supply any constant value (not just zero):"
 msgstr ""
 
-#: ../../library/collections.rst:747
+#: ../../library/collections.rst:750
 msgid "Setting the :attr:`default_factory` to :class:`set` makes the :class:`defaultdict` useful for building a dictionary of sets:"
 msgstr ""
 
-#: ../../library/collections.rst:760
+#: ../../library/collections.rst:763
 msgid ":func:`namedtuple` Factory Function for Tuples with Named Fields"
 msgstr ""
 
-#: ../../library/collections.rst:762
+#: ../../library/collections.rst:765
 msgid "Named tuples assign meaning to each position in a tuple and allow for more readable, self-documenting code.  They can be used wherever regular tuples are used, and they add the ability to access fields by name instead of position index."
 msgstr ""
 
-#: ../../library/collections.rst:768
+#: ../../library/collections.rst:771
 msgid "Returns a new tuple subclass named *typename*.  The new subclass is used to create tuple-like objects that have fields accessible by attribute lookup as well as being indexable and iterable.  Instances of the subclass also have a helpful docstring (with typename and field_names) and a helpful :meth:`__repr__` method which lists the tuple contents in a ``name=value`` format."
 msgstr ""
 
-#: ../../library/collections.rst:774
+#: ../../library/collections.rst:777
 msgid "The *field_names* are a sequence of strings such as ``['x', 'y']``. Alternatively, *field_names* can be a single string with each fieldname separated by whitespace and/or commas, for example ``'x y'`` or ``'x, y'``."
 msgstr ""
 
-#: ../../library/collections.rst:778
+#: ../../library/collections.rst:781
 msgid "Any valid Python identifier may be used for a fieldname except for names starting with an underscore.  Valid identifiers consist of letters, digits, and underscores but do not start with a digit or underscore and cannot be a :mod:`keyword` such as *class*, *for*, *return*, *global*, *pass*, or *raise*."
 msgstr ""
 
-#: ../../library/collections.rst:784
+#: ../../library/collections.rst:787
 msgid "If *rename* is true, invalid fieldnames are automatically replaced with positional names.  For example, ``['abc', 'def', 'ghi', 'abc']`` is converted to ``['abc', '_1', 'ghi', '_3']``, eliminating the keyword ``def`` and the duplicate fieldname ``abc``."
 msgstr ""
 
-#: ../../library/collections.rst:789
+#: ../../library/collections.rst:792
 msgid "If *verbose* is true, the class definition is printed after it is built.  This option is outdated; instead, it is simpler to print the :attr:`_source` attribute."
 msgstr ""
 
-#: ../../library/collections.rst:793
+#: ../../library/collections.rst:796
 msgid "If *module* is defined, the ``__module__`` attribute of the named tuple is set to that value."
 msgstr ""
 
-#: ../../library/collections.rst:796
+#: ../../library/collections.rst:799
 msgid "Named tuple instances do not have per-instance dictionaries, so they are lightweight and require no more memory than regular tuples."
 msgstr ""
 
-#: ../../library/collections.rst:799
+#: ../../library/collections.rst:802
 msgid "Added support for *rename*."
 msgstr ""
 
-#: ../../library/collections.rst:802
+#: ../../library/collections.rst:805
 msgid "The *verbose* and *rename* parameters became :ref:`keyword-only arguments <keyword-only_parameter>`."
 msgstr ""
 
-#: ../../library/collections.rst:806
+#: ../../library/collections.rst:809
 msgid "Added the *module* parameter."
 msgstr ""
 
-#: ../../library/collections.rst:825
+#: ../../library/collections.rst:828
 msgid "Named tuples are especially useful for assigning field names to result tuples returned by the :mod:`csv` or :mod:`sqlite3` modules::"
 msgstr ""
 
-#: ../../library/collections.rst:841
+#: ../../library/collections.rst:844
 msgid "In addition to the methods inherited from tuples, named tuples support three additional methods and two attributes.  To prevent conflicts with field names, the method and attribute names start with an underscore."
 msgstr ""
 
-#: ../../library/collections.rst:847
+#: ../../library/collections.rst:850
 msgid "Class method that makes a new instance from an existing sequence or iterable."
 msgstr ""
 
-#: ../../library/collections.rst:857
+#: ../../library/collections.rst:860
 msgid "Return a new :class:`OrderedDict` which maps field names to their corresponding values:"
 msgstr ""
 
-#: ../../library/collections.rst:866
+#: ../../library/collections.rst:869
 msgid "Returns an :class:`OrderedDict` instead of a regular :class:`dict`."
 msgstr ""
 
-#: ../../library/collections.rst:871
+#: ../../library/collections.rst:874
 msgid "Return a new instance of the named tuple replacing specified fields with new values::"
 msgstr ""
 
-#: ../../library/collections.rst:883
+#: ../../library/collections.rst:886
 msgid "A string with the pure Python source code used to create the named tuple class.  The source makes the named tuple self-documenting. It can be printed, executed using :func:`exec`, or saved to a file and imported."
 msgstr ""
 
-#: ../../library/collections.rst:892
+#: ../../library/collections.rst:895
 msgid "Tuple of strings listing the field names.  Useful for introspection and for creating new named tuple types from existing named tuples."
 msgstr ""
 
-#: ../../library/collections.rst:905
+#: ../../library/collections.rst:908
 msgid "To retrieve a field whose name is stored in a string, use the :func:`getattr` function:"
 msgstr ""
 
-#: ../../library/collections.rst:911
+#: ../../library/collections.rst:914
 msgid "To convert a dictionary to a named tuple, use the double-star-operator (as described in :ref:`tut-unpacking-arguments`):"
 msgstr ""
 
-#: ../../library/collections.rst:918
+#: ../../library/collections.rst:921
 msgid "Since a named tuple is a regular Python class, it is easy to add or change functionality with a subclass.  Here is how to add a calculated field and a fixed-width print format:"
 msgstr ""
 
-#: ../../library/collections.rst:937
+#: ../../library/collections.rst:940
 msgid "The subclass shown above sets ``__slots__`` to an empty tuple.  This helps keep memory requirements low by preventing the creation of instance dictionaries."
 msgstr ""
 
-#: ../../library/collections.rst:940
+#: ../../library/collections.rst:943
 msgid "Subclassing is not useful for adding new, stored fields.  Instead, simply create a new named tuple type from the :attr:`_fields` attribute:"
 msgstr ""
 
-#: ../../library/collections.rst:945
+#: ../../library/collections.rst:948
 msgid "Docstrings can be customized by making direct assignments to the ``__doc__`` fields:"
 msgstr ""
 
-#: ../../library/collections.rst:954
+#: ../../library/collections.rst:957
 msgid "Property docstrings became writeable."
 msgstr ""
 
-#: ../../library/collections.rst:957
+#: ../../library/collections.rst:960
 msgid "Default values can be implemented by using :meth:`_replace` to customize a prototype instance:"
 msgstr ""
 
-#: ../../library/collections.rst:968
+#: ../../library/collections.rst:971
 msgid "`Recipe for named tuple abstract base class with a metaclass mix-in <https://code.activestate.com/recipes/577629-namedtupleabc-abstract-base-class-mix-in-for-named/>`_ by Jan Kaliszewski.  Besides providing an :term:`abstract base class` for named tuples, it also supports an alternate :term:`metaclass`-based constructor that is convenient for use cases where named tuples are being subclassed."
 msgstr ""
 
-#: ../../library/collections.rst:975
+#: ../../library/collections.rst:978
 msgid "See :meth:`types.SimpleNamespace` for a mutable namespace based on an underlying dictionary instead of a tuple."
 msgstr ""
 
-#: ../../library/collections.rst:978
+#: ../../library/collections.rst:981
 msgid "See :meth:`typing.NamedTuple` for a way to add type hints for named tuples."
 msgstr ""
 
-#: ../../library/collections.rst:982
+#: ../../library/collections.rst:985
 msgid ":class:`OrderedDict` objects"
 msgstr ""
 
-#: ../../library/collections.rst:984
+#: ../../library/collections.rst:987
 msgid "Ordered dictionaries are just like regular dictionaries but they remember the order that items were inserted.  When iterating over an ordered dictionary, the items are returned in the order their keys were first added."
 msgstr ""
 
-#: ../../library/collections.rst:990
+#: ../../library/collections.rst:993
 msgid "Return an instance of a dict subclass, supporting the usual :class:`dict` methods.  An *OrderedDict* is a dict that remembers the order that keys were first inserted. If a new entry overwrites an existing entry, the original insertion position is left unchanged.  Deleting an entry and reinserting it will move it to the end."
 msgstr ""
 
-#: ../../library/collections.rst:1000
+#: ../../library/collections.rst:1003
 msgid "The :meth:`popitem` method for ordered dictionaries returns and removes a (key, value) pair.  The pairs are returned in :abbr:`LIFO (last-in, first-out)` order if *last* is true or :abbr:`FIFO (first-in, first-out)` order if false."
 msgstr ""
 
-#: ../../library/collections.rst:1007
+#: ../../library/collections.rst:1010
 msgid "Move an existing *key* to either end of an ordered dictionary.  The item is moved to the right end if *last* is true (the default) or to the beginning if *last* is false.  Raises :exc:`KeyError` if the *key* does not exist::"
 msgstr ""
 
-#: ../../library/collections.rst:1022
+#: ../../library/collections.rst:1025
 msgid "In addition to the usual mapping methods, ordered dictionaries also support reverse iteration using :func:`reversed`."
 msgstr ""
 
-#: ../../library/collections.rst:1025
+#: ../../library/collections.rst:1028
 msgid "Equality tests between :class:`OrderedDict` objects are order-sensitive and are implemented as ``list(od1.items())==list(od2.items())``. Equality tests between :class:`OrderedDict` objects and other :class:`~collections.abc.Mapping` objects are order-insensitive like regular dictionaries.  This allows :class:`OrderedDict` objects to be substituted anywhere a regular dictionary is used."
 msgstr ""
 
-#: ../../library/collections.rst:1032
+#: ../../library/collections.rst:1035
 msgid "The items, keys, and values :term:`views <dictionary view>` of :class:`OrderedDict` now support reverse iteration using :func:`reversed`."
 msgstr ""
 
-#: ../../library/collections.rst:1036
+#: ../../library/collections.rst:1039
 msgid "With the acceptance of :pep:`468`, order is retained for keyword arguments passed to the :class:`OrderedDict` constructor and its :meth:`update` method."
 msgstr ""
 
-#: ../../library/collections.rst:1042
+#: ../../library/collections.rst:1045
 msgid ":class:`OrderedDict` Examples and Recipes"
 msgstr ""
 
-#: ../../library/collections.rst:1044
+#: ../../library/collections.rst:1047
 msgid "Since an ordered dictionary remembers its insertion order, it can be used in conjunction with sorting to make a sorted dictionary::"
 msgstr ""
 
-#: ../../library/collections.rst:1062
+#: ../../library/collections.rst:1065
 msgid "The new sorted dictionaries maintain their sort order when entries are deleted.  But when new keys are added, the keys are appended to the end and the sort is not maintained."
 msgstr ""
 
-#: ../../library/collections.rst:1066
+#: ../../library/collections.rst:1069
 msgid "It is also straight-forward to create an ordered dictionary variant that remembers the order the keys were *last* inserted. If a new entry overwrites an existing entry, the original insertion position is changed and moved to the end::"
 msgstr ""
 
-#: ../../library/collections.rst:1079
+#: ../../library/collections.rst:1082
 msgid "An ordered dictionary can be combined with the :class:`Counter` class so that the counter remembers the order elements are first encountered::"
 msgstr ""
 
-#: ../../library/collections.rst:1093
+#: ../../library/collections.rst:1096
 msgid ":class:`UserDict` objects"
 msgstr ""
 
-#: ../../library/collections.rst:1095
+#: ../../library/collections.rst:1098
 msgid "The class, :class:`UserDict` acts as a wrapper around dictionary objects. The need for this class has been partially supplanted by the ability to subclass directly from :class:`dict`; however, this class can be easier to work with because the underlying dictionary is accessible as an attribute."
 msgstr ""
 
-#: ../../library/collections.rst:1103
+#: ../../library/collections.rst:1106
 msgid "Class that simulates a dictionary.  The instance's contents are kept in a regular dictionary, which is accessible via the :attr:`data` attribute of :class:`UserDict` instances.  If *initialdata* is provided, :attr:`data` is initialized with its contents; note that a reference to *initialdata* will not be kept, allowing it be used for other purposes."
 msgstr ""
 
-#: ../../library/collections.rst:1109
+#: ../../library/collections.rst:1112
 msgid "In addition to supporting the methods and operations of mappings, :class:`UserDict` instances provide the following attribute:"
 msgstr ""
 
-#: ../../library/collections.rst:1114
+#: ../../library/collections.rst:1117
 msgid "A real dictionary used to store the contents of the :class:`UserDict` class."
 msgstr ""
 
-#: ../../library/collections.rst:1120
+#: ../../library/collections.rst:1123
 msgid ":class:`UserList` objects"
 msgstr ""
 
-#: ../../library/collections.rst:1122
+#: ../../library/collections.rst:1125
 msgid "This class acts as a wrapper around list objects.  It is a useful base class for your own list-like classes which can inherit from them and override existing methods or add new ones.  In this way, one can add new behaviors to lists."
 msgstr ""
 
-#: ../../library/collections.rst:1127
+#: ../../library/collections.rst:1130
 msgid "The need for this class has been partially supplanted by the ability to subclass directly from :class:`list`; however, this class can be easier to work with because the underlying list is accessible as an attribute."
 msgstr ""
 
-#: ../../library/collections.rst:1133
+#: ../../library/collections.rst:1136
 msgid "Class that simulates a list.  The instance's contents are kept in a regular list, which is accessible via the :attr:`data` attribute of :class:`UserList` instances.  The instance's contents are initially set to a copy of *list*, defaulting to the empty list ``[]``.  *list* can be any iterable, for example a real Python list or a :class:`UserList` object."
 msgstr ""
 
-#: ../../library/collections.rst:1139
+#: ../../library/collections.rst:1142
 msgid "In addition to supporting the methods and operations of mutable sequences, :class:`UserList` instances provide the following attribute:"
 msgstr ""
 
-#: ../../library/collections.rst:1144
+#: ../../library/collections.rst:1147
 msgid "A real :class:`list` object used to store the contents of the :class:`UserList` class."
 msgstr ""
 
-#: ../../library/collections.rst:1147
+#: ../../library/collections.rst:1150
 msgid "**Subclassing requirements:** Subclasses of :class:`UserList` are expected to offer a constructor which can be called with either no arguments or one argument.  List operations which return a new sequence attempt to create an instance of the actual implementation class.  To do so, it assumes that the constructor can be called with a single parameter, which is a sequence object used as a data source."
 msgstr ""
 
-#: ../../library/collections.rst:1154
+#: ../../library/collections.rst:1157
 msgid "If a derived class does not wish to comply with this requirement, all of the special methods supported by this class will need to be overridden; please consult the sources for information about the methods which need to be provided in that case."
 msgstr ""
 
-#: ../../library/collections.rst:1160
+#: ../../library/collections.rst:1163
 msgid ":class:`UserString` objects"
 msgstr ""
 
-#: ../../library/collections.rst:1162
+#: ../../library/collections.rst:1165
 msgid "The class, :class:`UserString` acts as a wrapper around string objects. The need for this class has been partially supplanted by the ability to subclass directly from :class:`str`; however, this class can be easier to work with because the underlying string is accessible as an attribute."
 msgstr ""
 
-#: ../../library/collections.rst:1170
+#: ../../library/collections.rst:1173
 msgid "Class that simulates a string or a Unicode string object.  The instance's content is kept in a regular string object, which is accessible via the :attr:`data` attribute of :class:`UserString` instances.  The instance's contents are initially set to a copy of *sequence*.  The *sequence* can be an instance of :class:`bytes`, :class:`str`, :class:`UserString` (or a subclass) or an arbitrary sequence which can be converted into a string using the built-in :func:`str` function."
 msgstr ""
 
-#: ../../library/collections.rst:1178
+#: ../../library/collections.rst:1181
 msgid "New methods ``__getnewargs__``, ``__rmod__``, ``casefold``, ``format_map``, ``isprintable``, and ``maketrans``."
 msgstr ""
 

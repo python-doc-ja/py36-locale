@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,7 +153,6 @@ msgid "Often, URLError is raised because there is no network connection (no rout
 msgstr ""
 
 #: ../../howto/urllib2.rst:213
-#: ../../howto/urllib2.rst:460
 msgid "e.g. ::"
 msgstr ""
 
@@ -272,83 +272,87 @@ msgstr ""
 msgid "When authentication is required, the server sends a header (as well as the 401 error code) requesting authentication.  This specifies the authentication scheme and a 'realm'. The header looks like: ``WWW-Authenticate: SCHEME realm=\"REALM\"``."
 msgstr ""
 
-#: ../../howto/urllib2.rst:465
+#: ../../howto/urllib2.rst:460
+msgid "e.g."
+msgstr ""
+
+#: ../../howto/urllib2.rst:467
 msgid "The client should then retry the request with the appropriate name and password for the realm included as a header in the request. This is 'basic authentication'. In order to simplify this process we can create an instance of ``HTTPBasicAuthHandler`` and an opener to use this handler."
 msgstr ""
 
-#: ../../howto/urllib2.rst:470
+#: ../../howto/urllib2.rst:472
 msgid "The ``HTTPBasicAuthHandler`` uses an object called a password manager to handle the mapping of URLs and realms to passwords and usernames. If you know what the realm is (from the authentication header sent by the server), then you can use a ``HTTPPasswordMgr``. Frequently one doesn't care what the realm is. In that case, it is convenient to use ``HTTPPasswordMgrWithDefaultRealm``. This allows you to specify a default username and password for a URL. This will be supplied in the absence of you providing an alternative combination for a specific realm. We indicate this by providing ``None`` as the realm argument to the ``add_password`` method."
 msgstr ""
 
-#: ../../howto/urllib2.rst:480
+#: ../../howto/urllib2.rst:482
 msgid "The top-level URL is the first URL that requires authentication. URLs \"deeper\" than the URL you pass to .add_password() will also match. ::"
 msgstr ""
 
-#: ../../howto/urllib2.rst:505
+#: ../../howto/urllib2.rst:507
 msgid "In the above example we only supplied our ``HTTPBasicAuthHandler`` to ``build_opener``. By default openers have the handlers for normal situations -- ``ProxyHandler`` (if a proxy setting such as an :envvar:`http_proxy` environment variable is set), ``UnknownHandler``, ``HTTPHandler``, ``HTTPDefaultErrorHandler``, ``HTTPRedirectHandler``, ``FTPHandler``, ``FileHandler``, ``DataHandler``, ``HTTPErrorProcessor``."
 msgstr ""
 
-#: ../../howto/urllib2.rst:512
+#: ../../howto/urllib2.rst:514
 msgid "``top_level_url`` is in fact *either* a full URL (including the 'http:' scheme component and the hostname and optionally the port number) e.g. ``\"http://example.com/\"`` *or* an \"authority\" (i.e. the hostname, optionally including the port number) e.g. ``\"example.com\"`` or ``\"example.com:8080\"`` (the latter example includes a port number).  The authority, if present, must NOT contain the \"userinfo\" component - for example ``\"joe:password@example.com\"`` is not correct."
 msgstr ""
 
-#: ../../howto/urllib2.rst:522
+#: ../../howto/urllib2.rst:524
 msgid "Proxies"
 msgstr ""
 
-#: ../../howto/urllib2.rst:524
+#: ../../howto/urllib2.rst:526
 msgid "**urllib** will auto-detect your proxy settings and use those. This is through the ``ProxyHandler``, which is part of the normal handler chain when a proxy setting is detected.  Normally that's a good thing, but there are occasions when it may not be helpful [#]_. One way to do this is to setup our own ``ProxyHandler``, with no proxies defined. This is done using similar steps to setting up a `Basic Authentication`_ handler: ::"
 msgstr ""
 
-#: ../../howto/urllib2.rst:537
+#: ../../howto/urllib2.rst:539
 msgid "Currently ``urllib.request`` *does not* support fetching of ``https`` locations through a proxy.  However, this can be enabled by extending urllib.request as shown in the recipe [#]_."
 msgstr ""
 
-#: ../../howto/urllib2.rst:543
+#: ../../howto/urllib2.rst:545
 msgid "``HTTP_PROXY`` will be ignored if a variable ``REQUEST_METHOD`` is set; see the documentation on :func:`~urllib.request.getproxies`."
 msgstr ""
 
-#: ../../howto/urllib2.rst:548
+#: ../../howto/urllib2.rst:550
 msgid "Sockets and Layers"
 msgstr ""
 
-#: ../../howto/urllib2.rst:550
+#: ../../howto/urllib2.rst:552
 msgid "The Python support for fetching resources from the web is layered.  urllib uses the :mod:`http.client` library, which in turn uses the socket library."
 msgstr ""
 
-#: ../../howto/urllib2.rst:553
+#: ../../howto/urllib2.rst:555
 msgid "As of Python 2.3 you can specify how long a socket should wait for a response before timing out. This can be useful in applications which have to fetch web pages. By default the socket module has *no timeout* and can hang. Currently, the socket timeout is not exposed at the http.client or urllib.request levels. However, you can set the default timeout globally for all sockets using ::"
 msgstr ""
 
-#: ../../howto/urllib2.rst:576
+#: ../../howto/urllib2.rst:578
 msgid "Footnotes"
 msgstr ""
 
-#: ../../howto/urllib2.rst:578
+#: ../../howto/urllib2.rst:580
 msgid "This document was reviewed and revised by John Lee."
 msgstr ""
 
-#: ../../howto/urllib2.rst:580
+#: ../../howto/urllib2.rst:582
 msgid "Google for example."
 msgstr ""
 
-#: ../../howto/urllib2.rst:581
+#: ../../howto/urllib2.rst:583
 msgid "Browser sniffing is a very bad practice for website design - building sites using web standards is much more sensible. Unfortunately a lot of sites still send different versions to different browsers."
 msgstr ""
 
-#: ../../howto/urllib2.rst:584
+#: ../../howto/urllib2.rst:586
 msgid "The user agent for MSIE 6 is *'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)'*"
 msgstr ""
 
-#: ../../howto/urllib2.rst:586
+#: ../../howto/urllib2.rst:588
 msgid "For details of more HTTP request headers, see `Quick Reference to HTTP Headers`_."
 msgstr ""
 
-#: ../../howto/urllib2.rst:588
+#: ../../howto/urllib2.rst:590
 msgid "In my case I have to use a proxy to access the internet at work. If you attempt to fetch *localhost* URLs through this proxy it blocks them. IE is set to use the proxy, which urllib picks up on. In order to test scripts with a localhost server, I have to prevent urllib from using the proxy."
 msgstr ""
 
-#: ../../howto/urllib2.rst:593
+#: ../../howto/urllib2.rst:595
 msgid "urllib opener for SSL proxy (CONNECT method): `ASPN Cookbook Recipe <https://code.activestate.com/recipes/456195/>`_."
 msgstr ""
 

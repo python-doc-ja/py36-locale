@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1762,7 +1763,7 @@ msgid "A new function, :func:`catch_warnings`, is a context manager intended for
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2612
-msgid "The XML-RPC :class:`SimpleXMLRPCServer` and :class:`DocXMLRPCServer` classes can now be prevented from immediately opening and binding to their socket by passing True as the ``bind_and_activate`` constructor parameter.  This can be used to modify the instance's :attr:`allow_reuse_address` attribute before calling the :meth:`server_bind` and :meth:`server_activate` methods to open the socket and begin listening for connections. (Contributed by Peter Parente; :issue:`1599845`.)"
+msgid "The XML-RPC :class:`SimpleXMLRPCServer` and :class:`DocXMLRPCServer` classes can now be prevented from immediately opening and binding to their socket by passing ``False`` as the *bind_and_activate* constructor parameter.  This can be used to modify the instance's :attr:`allow_reuse_address` attribute before calling the :meth:`server_bind` and :meth:`server_activate` methods to open the socket and begin listening for connections. (Contributed by Peter Parente; :issue:`1599845`.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2621

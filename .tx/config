@@ -422,6 +422,11 @@ file_filter = <lang>/LC_MESSAGES/extending/newtypes.po
 source_file = pot/extending/newtypes.pot
 source_lang = en
 
+[python-36.extending--newtypes_tutorial]
+file_filter = <lang>/LC_MESSAGES/extending/newtypes_tutorial.po
+source_file = pot/extending/newtypes_tutorial.pot
+source_lang = en
+
 [python-36.extending--windows]
 file_filter = <lang>/LC_MESSAGES/extending/windows.po
 source_file = pot/extending/windows.pot

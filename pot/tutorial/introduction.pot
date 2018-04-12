@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,15 +117,15 @@ msgid "Two or more *string literals* (i.e. the ones enclosed between quotes) nex
 msgstr ""
 
 #: ../../tutorial/introduction.rst:215
+msgid "This feature is particularly useful when you want to break long strings::"
+msgstr ""
+
+#: ../../tutorial/introduction.rst:222
 msgid "This only works with two literals though, not with variables or expressions::"
 msgstr ""
 
-#: ../../tutorial/introduction.rst:225
+#: ../../tutorial/introduction.rst:232
 msgid "If you want to concatenate variables or a variable and a literal, use ``+``::"
-msgstr ""
-
-#: ../../tutorial/introduction.rst:230
-msgid "This feature is particularly useful when you want to break long strings::"
 msgstr ""
 
 #: ../../tutorial/introduction.rst:237

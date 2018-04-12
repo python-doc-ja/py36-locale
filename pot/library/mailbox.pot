@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -348,7 +349,7 @@ msgid "An argument for using the original mbox format rather than a variation."
 msgstr ""
 
 #: ../../library/mailbox.rst:494
-msgid "`\"mbox\" is a family of several mutually incompatible mailbox formats <http://homepage.ntlworld.com/jonathan.deboynepollard/FGA/mail-mbox-formats.html>`_"
+msgid "`\"mbox\" is a family of several mutually incompatible mailbox formats <https://www.loc.gov/preservation/digital/formats/fdd/fdd000383.shtml>`_"
 msgstr ""
 
 #: ../../library/mailbox.rst:495

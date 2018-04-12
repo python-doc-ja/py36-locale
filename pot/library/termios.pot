@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +21,7 @@ msgid ":mod:`termios` --- POSIX style tty control"
 msgstr ""
 
 #: ../../library/termios.rst:14
-msgid "This module provides an interface to the POSIX calls for tty I/O control. For a complete description of these calls, see :manpage:`termios(2)` Unix manual page.  It is only available for those Unix versions that support POSIX *termios* style tty I/O control configured during installation."
+msgid "This module provides an interface to the POSIX calls for tty I/O control. For a complete description of these calls, see :manpage:`termios(3)` Unix manual page.  It is only available for those Unix versions that support POSIX *termios* style tty I/O control configured during installation."
 msgstr ""
 
 #: ../../library/termios.rst:19

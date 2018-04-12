@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -228,263 +229,263 @@ msgid "Added the *copy_function* keyword argument."
 msgstr ""
 
 #: ../../library/shutil.rst:319
-msgid "Return disk usage statistics about the given path as a :term:`named tuple` with the attributes *total*, *used* and *free*, which are the amount of total, used and free space, in bytes."
+msgid "Return disk usage statistics about the given path as a :term:`named tuple` with the attributes *total*, *used* and *free*, which are the amount of total, used and free space, in bytes.  On Windows, *path* must be a directory; on Unix, it can be a file or directory."
 msgstr ""
 
-#: ../../library/shutil.rst:325
+#: ../../library/shutil.rst:326
 msgid "Availability: Unix, Windows."
 msgstr ""
 
-#: ../../library/shutil.rst:329
+#: ../../library/shutil.rst:330
 msgid "Change owner *user* and/or *group* of the given *path*."
 msgstr ""
 
-#: ../../library/shutil.rst:331
+#: ../../library/shutil.rst:332
 msgid "*user* can be a system user name or a uid; the same applies to *group*. At least one argument is required."
 msgstr ""
 
-#: ../../library/shutil.rst:334
+#: ../../library/shutil.rst:335
 msgid "See also :func:`os.chown`, the underlying function."
 msgstr ""
 
-#: ../../library/shutil.rst:336
+#: ../../library/shutil.rst:337
 msgid "Availability: Unix."
 msgstr ""
 
-#: ../../library/shutil.rst:343
+#: ../../library/shutil.rst:344
 msgid "Return the path to an executable which would be run if the given *cmd* was called.  If no *cmd* would be called, return ``None``."
 msgstr ""
 
-#: ../../library/shutil.rst:346
+#: ../../library/shutil.rst:347
 msgid "*mode* is a permission mask passed to :func:`os.access`, by default determining if the file exists and executable."
 msgstr ""
 
-#: ../../library/shutil.rst:349
+#: ../../library/shutil.rst:350
 msgid "When no *path* is specified, the results of :func:`os.environ` are used, returning either the \"PATH\" value or a fallback of :attr:`os.defpath`."
 msgstr ""
 
-#: ../../library/shutil.rst:352
+#: ../../library/shutil.rst:353
 msgid "On Windows, the current directory is always prepended to the *path* whether or not you use the default or provide your own, which is the behavior the command shell uses when finding executables.  Additionally, when finding the *cmd* in the *path*, the ``PATHEXT`` environment variable is checked.  For example, if you call ``shutil.which(\"python\")``, :func:`which` will search ``PATHEXT`` to know that it should look for ``python.exe`` within the *path* directories.  For example, on Windows::"
 msgstr ""
 
-#: ../../library/shutil.rst:368
+#: ../../library/shutil.rst:369
 msgid "This exception collects exceptions that are raised during a multi-file operation. For :func:`copytree`, the exception argument is a list of 3-tuples (*srcname*, *dstname*, *exception*)."
 msgstr ""
 
-#: ../../library/shutil.rst:376
+#: ../../library/shutil.rst:377
 msgid "copytree example"
 msgstr ""
 
-#: ../../library/shutil.rst:378
+#: ../../library/shutil.rst:379
 msgid "This example is the implementation of the :func:`copytree` function, described above, with the docstring omitted.  It demonstrates many of the other functions provided by this module. ::"
 msgstr ""
 
-#: ../../library/shutil.rst:413
+#: ../../library/shutil.rst:414
 msgid "Another example that uses the :func:`ignore_patterns` helper::"
 msgstr ""
 
-#: ../../library/shutil.rst:419
+#: ../../library/shutil.rst:420
 msgid "This will copy everything except ``.pyc`` files and files or directories whose name starts with ``tmp``."
 msgstr ""
 
-#: ../../library/shutil.rst:422
+#: ../../library/shutil.rst:423
 msgid "Another example that uses the *ignore* argument to add a logging call::"
 msgstr ""
 
-#: ../../library/shutil.rst:437
+#: ../../library/shutil.rst:438
 msgid "rmtree example"
 msgstr ""
 
-#: ../../library/shutil.rst:439
+#: ../../library/shutil.rst:440
 msgid "This example shows how to remove a directory tree on Windows where some of the files have their read-only bit set. It uses the onerror callback to clear the readonly bit and reattempt the remove. Any subsequent failure will propagate. ::"
 msgstr ""
 
-#: ../../library/shutil.rst:457
+#: ../../library/shutil.rst:458
 msgid "Archiving operations"
 msgstr ""
 
-#: ../../library/shutil.rst:461
+#: ../../library/shutil.rst:462
 msgid "Added support for the *xztar* format."
 msgstr ""
 
-#: ../../library/shutil.rst:465
+#: ../../library/shutil.rst:466
 msgid "High-level utilities to create and read compressed and archived files are also provided.  They rely on the :mod:`zipfile` and :mod:`tarfile` modules."
 msgstr ""
 
-#: ../../library/shutil.rst:470
+#: ../../library/shutil.rst:471
 msgid "Create an archive file (such as zip or tar) and return its name."
 msgstr ""
 
-#: ../../library/shutil.rst:472
+#: ../../library/shutil.rst:473
 msgid "*base_name* is the name of the file to create, including the path, minus any format-specific extension. *format* is the archive format: one of \"zip\" (if the :mod:`zlib` module is available), \"tar\", \"gztar\" (if the :mod:`zlib` module is available), \"bztar\" (if the :mod:`bz2` module is available), or \"xztar\" (if the :mod:`lzma` module is available)."
 msgstr ""
 
-#: ../../library/shutil.rst:478
+#: ../../library/shutil.rst:479
 msgid "*root_dir* is a directory that will be the root directory of the archive; for example, we typically chdir into *root_dir* before creating the archive."
 msgstr ""
 
-#: ../../library/shutil.rst:482
+#: ../../library/shutil.rst:483
 msgid "*base_dir* is the directory where we start archiving from; i.e. *base_dir* will be the common prefix of all files and directories in the archive."
 msgstr ""
 
-#: ../../library/shutil.rst:486
+#: ../../library/shutil.rst:487
 msgid "*root_dir* and *base_dir* both default to the current directory."
 msgstr ""
 
-#: ../../library/shutil.rst:488
+#: ../../library/shutil.rst:489
 msgid "If *dry_run* is true, no archive is created, but the operations that would be executed are logged to *logger*."
 msgstr ""
 
-#: ../../library/shutil.rst:491
+#: ../../library/shutil.rst:492
 msgid "*owner* and *group* are used when creating a tar archive. By default, uses the current owner and group."
 msgstr ""
 
-#: ../../library/shutil.rst:494
+#: ../../library/shutil.rst:495
 msgid "*logger* must be an object compatible with :pep:`282`, usually an instance of :class:`logging.Logger`."
 msgstr ""
 
-#: ../../library/shutil.rst:497
+#: ../../library/shutil.rst:498
 msgid "The *verbose* argument is unused and deprecated."
 msgstr ""
 
-#: ../../library/shutil.rst:502
+#: ../../library/shutil.rst:503
 msgid "Return a list of supported formats for archiving. Each element of the returned sequence is a tuple ``(name, description)``."
 msgstr ""
 
-#: ../../library/shutil.rst:505
-#: ../../library/shutil.rst:582
+#: ../../library/shutil.rst:506
+#: ../../library/shutil.rst:583
 msgid "By default :mod:`shutil` provides these formats:"
 msgstr ""
 
-#: ../../library/shutil.rst:507
-msgid "*zip*: ZIP file (if the :mod:`zlib` module is available)."
-msgstr ""
-
 #: ../../library/shutil.rst:508
-#: ../../library/shutil.rst:586
-msgid "*tar*: uncompressed tar file."
+msgid "*zip*: ZIP file (if the :mod:`zlib` module is available)."
 msgstr ""
 
 #: ../../library/shutil.rst:509
 #: ../../library/shutil.rst:587
-msgid "*gztar*: gzip'ed tar-file (if the :mod:`zlib` module is available)."
+msgid "*tar*: uncompressed tar file."
 msgstr ""
 
 #: ../../library/shutil.rst:510
 #: ../../library/shutil.rst:588
-msgid "*bztar*: bzip2'ed tar-file (if the :mod:`bz2` module is available)."
+msgid "*gztar*: gzip'ed tar-file (if the :mod:`zlib` module is available)."
 msgstr ""
 
 #: ../../library/shutil.rst:511
 #: ../../library/shutil.rst:589
+msgid "*bztar*: bzip2'ed tar-file (if the :mod:`bz2` module is available)."
+msgstr ""
+
+#: ../../library/shutil.rst:512
+#: ../../library/shutil.rst:590
 msgid "*xztar*: xz'ed tar-file (if the :mod:`lzma` module is available)."
 msgstr ""
 
-#: ../../library/shutil.rst:513
+#: ../../library/shutil.rst:514
 msgid "You can register new formats or provide your own archiver for any existing formats, by using :func:`register_archive_format`."
 msgstr ""
 
-#: ../../library/shutil.rst:519
+#: ../../library/shutil.rst:520
 msgid "Register an archiver for the format *name*."
 msgstr ""
 
-#: ../../library/shutil.rst:521
+#: ../../library/shutil.rst:522
 msgid "*function* is the callable that will be used to unpack archives. The callable will receive the *base_name* of the file to create, followed by the *base_dir* (which defaults to :data:`os.curdir`) to start archiving from. Further arguments are passed as keyword arguments: *owner*, *group*, *dry_run* and *logger* (as passed in :func:`make_archive`)."
 msgstr ""
 
-#: ../../library/shutil.rst:527
+#: ../../library/shutil.rst:528
 msgid "If given, *extra_args* is a sequence of ``(name, value)`` pairs that will be used as extra keywords arguments when the archiver callable is used."
 msgstr ""
 
-#: ../../library/shutil.rst:530
+#: ../../library/shutil.rst:531
 msgid "*description* is used by :func:`get_archive_formats` which returns the list of archivers.  Defaults to an empty string."
 msgstr ""
 
-#: ../../library/shutil.rst:536
+#: ../../library/shutil.rst:537
 msgid "Remove the archive format *name* from the list of supported formats."
 msgstr ""
 
-#: ../../library/shutil.rst:541
+#: ../../library/shutil.rst:542
 msgid "Unpack an archive. *filename* is the full path of the archive."
 msgstr ""
 
-#: ../../library/shutil.rst:543
+#: ../../library/shutil.rst:544
 msgid "*extract_dir* is the name of the target directory where the archive is unpacked. If not provided, the current working directory is used."
 msgstr ""
 
-#: ../../library/shutil.rst:546
+#: ../../library/shutil.rst:547
 msgid "*format* is the archive format: one of \"zip\", \"tar\", \"gztar\", \"bztar\", or \"xztar\".  Or any other format registered with :func:`register_unpack_format`.  If not provided, :func:`unpack_archive` will use the archive file name extension and see if an unpacker was registered for that extension.  In case none is found, a :exc:`ValueError` is raised."
 msgstr ""
 
-#: ../../library/shutil.rst:556
+#: ../../library/shutil.rst:557
 msgid "Registers an unpack format. *name* is the name of the format and *extensions* is a list of extensions corresponding to the format, like ``.zip`` for Zip files."
 msgstr ""
 
-#: ../../library/shutil.rst:560
+#: ../../library/shutil.rst:561
 msgid "*function* is the callable that will be used to unpack archives. The callable will receive the path of the archive, followed by the directory the archive must be extracted to."
 msgstr ""
 
-#: ../../library/shutil.rst:564
+#: ../../library/shutil.rst:565
 msgid "When provided, *extra_args* is a sequence of ``(name, value)`` tuples that will be passed as keywords arguments to the callable."
 msgstr ""
 
-#: ../../library/shutil.rst:567
+#: ../../library/shutil.rst:568
 msgid "*description* can be provided to describe the format, and will be returned by the :func:`get_unpack_formats` function."
 msgstr ""
 
-#: ../../library/shutil.rst:573
+#: ../../library/shutil.rst:574
 msgid "Unregister an unpack format. *name* is the name of the format."
 msgstr ""
 
-#: ../../library/shutil.rst:578
+#: ../../library/shutil.rst:579
 msgid "Return a list of all registered formats for unpacking. Each element of the returned sequence is a tuple ``(name, extensions, description)``."
 msgstr ""
 
-#: ../../library/shutil.rst:584
+#: ../../library/shutil.rst:585
 msgid "*zip*: ZIP file (unpacking compressed files works only if the corresponding module is available)."
 msgstr ""
 
-#: ../../library/shutil.rst:591
+#: ../../library/shutil.rst:592
 msgid "You can register new formats or provide your own unpacker for any existing formats, by using :func:`register_unpack_format`."
 msgstr ""
 
-#: ../../library/shutil.rst:598
+#: ../../library/shutil.rst:599
 msgid "Archiving example"
 msgstr ""
 
-#: ../../library/shutil.rst:600
+#: ../../library/shutil.rst:601
 msgid "In this example, we create a gzip'ed tar-file archive containing all files found in the :file:`.ssh` directory of the user::"
 msgstr ""
 
-#: ../../library/shutil.rst:610
+#: ../../library/shutil.rst:611
 msgid "The resulting archive contains:"
 msgstr ""
 
-#: ../../library/shutil.rst:626
+#: ../../library/shutil.rst:627
 msgid "Querying the size of the output terminal"
 msgstr ""
 
-#: ../../library/shutil.rst:630
+#: ../../library/shutil.rst:631
 msgid "Get the size of the terminal window."
 msgstr ""
 
-#: ../../library/shutil.rst:632
+#: ../../library/shutil.rst:633
 msgid "For each of the two dimensions, the environment variable, ``COLUMNS`` and ``LINES`` respectively, is checked. If the variable is defined and the value is a positive integer, it is used."
 msgstr ""
 
-#: ../../library/shutil.rst:636
+#: ../../library/shutil.rst:637
 msgid "When ``COLUMNS`` or ``LINES`` is not defined, which is the common case, the terminal connected to :data:`sys.__stdout__` is queried by invoking :func:`os.get_terminal_size`."
 msgstr ""
 
-#: ../../library/shutil.rst:640
+#: ../../library/shutil.rst:641
 msgid "If the terminal size cannot be successfully queried, either because the system doesn't support querying, or because we are not connected to a terminal, the value given in ``fallback`` parameter is used. ``fallback`` defaults to ``(80, 24)`` which is the default size used by many terminal emulators."
 msgstr ""
 
-#: ../../library/shutil.rst:646
+#: ../../library/shutil.rst:647
 msgid "The value returned is a named tuple of type :class:`os.terminal_size`."
 msgstr ""
 
-#: ../../library/shutil.rst:648
+#: ../../library/shutil.rst:649
 msgid "See also: The Single UNIX Specification, Version 2, `Other Environment Variables`_."
 msgstr ""
 

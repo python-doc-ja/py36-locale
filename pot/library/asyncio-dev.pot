@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -200,7 +201,7 @@ msgid "Detect exceptions never consumed"
 msgstr ""
 
 #: ../../library/asyncio-dev.rst:212
-msgid "Python usually calls :func:`sys.displayhook` on unhandled exceptions. If :meth:`Future.set_exception` is called, but the exception is never consumed, :func:`sys.displayhook` is not called. Instead, :ref:`a log is emitted <asyncio-logger>` when the future is deleted by the garbage collector, with the traceback where the exception was raised."
+msgid "Python usually calls :func:`sys.excepthook` on unhandled exceptions. If :meth:`Future.set_exception` is called, but the exception is never consumed, :func:`sys.excepthook` is not called. Instead, :ref:`a log is emitted <asyncio-logger>` when the future is deleted by the garbage collector, with the traceback where the exception was raised."
 msgstr ""
 
 #: ../../library/asyncio-dev.rst:218

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,20 +72,20 @@ msgstr ""
 #: ../../library/os.path.rst:224
 #: ../../library/os.path.rst:233
 #: ../../library/os.path.rst:243
-#: ../../library/os.path.rst:252
-#: ../../library/os.path.rst:261
-#: ../../library/os.path.rst:270
-#: ../../library/os.path.rst:288
-#: ../../library/os.path.rst:321
-#: ../../library/os.path.rst:333
-#: ../../library/os.path.rst:342
-#: ../../library/os.path.rst:357
-#: ../../library/os.path.rst:375
-#: ../../library/os.path.rst:388
-#: ../../library/os.path.rst:404
-#: ../../library/os.path.rst:420
-#: ../../library/os.path.rst:441
-#: ../../library/os.path.rst:452
+#: ../../library/os.path.rst:253
+#: ../../library/os.path.rst:263
+#: ../../library/os.path.rst:273
+#: ../../library/os.path.rst:291
+#: ../../library/os.path.rst:324
+#: ../../library/os.path.rst:336
+#: ../../library/os.path.rst:345
+#: ../../library/os.path.rst:360
+#: ../../library/os.path.rst:378
+#: ../../library/os.path.rst:391
+#: ../../library/os.path.rst:407
+#: ../../library/os.path.rst:423
+#: ../../library/os.path.rst:444
+#: ../../library/os.path.rst:455
 msgid "Accepts a :term:`path-like object`."
 msgstr ""
 
@@ -178,123 +179,123 @@ msgid "Return ``True`` if *path* is an absolute pathname.  On Unix, that means i
 msgstr ""
 
 #: ../../library/os.path.rst:249
-msgid "Return ``True`` if *path* is an existing regular file.  This follows symbolic links, so both :func:`islink` and :func:`isfile` can be true for the same path."
+msgid "Return ``True`` if *path* is an :func:`existing <exists>` regular file. This follows symbolic links, so both :func:`islink` and :func:`isfile` can be true for the same path."
 msgstr ""
 
-#: ../../library/os.path.rst:258
-msgid "Return ``True`` if *path* is an existing directory.  This follows symbolic links, so both :func:`islink` and :func:`isdir` can be true for the same path."
+#: ../../library/os.path.rst:259
+msgid "Return ``True`` if *path* is an :func:`existing <exists>` directory.  This follows symbolic links, so both :func:`islink` and :func:`isdir` can be true for the same path."
 msgstr ""
 
-#: ../../library/os.path.rst:267
-msgid "Return ``True`` if *path* refers to a directory entry that is a symbolic link. Always ``False`` if symbolic links are not supported by the Python runtime."
+#: ../../library/os.path.rst:269
+msgid "Return ``True`` if *path* refers to an :func:`existing <exists>` directory entry that is a symbolic link.  Always ``False`` if symbolic links are not supported by the Python runtime."
 msgstr ""
 
-#: ../../library/os.path.rst:276
+#: ../../library/os.path.rst:279
 msgid "Return ``True`` if pathname *path* is a :dfn:`mount point`: a point in a file system where a different file system has been mounted.  On POSIX, the function checks whether *path*'s parent, :file:`path/..`, is on a different device than *path*, or whether :file:`path/..` and *path* point to the same i-node on the same device --- this should detect mount points for all Unix and POSIX variants.  On Windows, a drive letter root and a share UNC are always mount points, and for any other path ``GetVolumePathName`` is called to see if it is different from the input path."
 msgstr ""
 
-#: ../../library/os.path.rst:285
+#: ../../library/os.path.rst:288
 msgid "Support for detecting non-root mount points on Windows."
 msgstr ""
 
-#: ../../library/os.path.rst:294
+#: ../../library/os.path.rst:297
 msgid "Join one or more path components intelligently.  The return value is the concatenation of *path* and any members of *\\*paths* with exactly one directory separator (``os.sep``) following each non-empty part except the last, meaning that the result will only end in a separator if the last part is empty.  If a component is an absolute path, all previous components are thrown away and joining continues from the absolute path component."
 msgstr ""
 
-#: ../../library/os.path.rst:302
+#: ../../library/os.path.rst:305
 msgid "On Windows, the drive letter is not reset when an absolute path component (e.g., ``r'\\foo'``) is encountered.  If a component contains a drive letter, all previous components are thrown away and the drive letter is reset.  Note that since there is a current directory for each drive, ``os.path.join(\"c:\", \"foo\")`` represents a path relative to the current directory on drive :file:`C:` (:file:`c:foo`), not :file:`c:\\\\foo`."
 msgstr ""
 
-#: ../../library/os.path.rst:309
+#: ../../library/os.path.rst:312
 msgid "Accepts a :term:`path-like object` for *path* and *paths*."
 msgstr ""
 
-#: ../../library/os.path.rst:315
+#: ../../library/os.path.rst:318
 msgid "Normalize the case of a pathname.  On Unix and Mac OS X, this returns the path unchanged; on case-insensitive filesystems, it converts the path to lowercase.  On Windows, it also converts forward slashes to backward slashes. Raise a TypeError if the type of *path* is not ``str`` or ``bytes`` (directly or indirectly through the :class:`os.PathLike` interface)."
 msgstr ""
 
-#: ../../library/os.path.rst:327
+#: ../../library/os.path.rst:330
 msgid "Normalize a pathname by collapsing redundant separators and up-level references so that ``A//B``, ``A/B/``, ``A/./B`` and ``A/foo/../B`` all become ``A/B``.  This string manipulation may change the meaning of a path that contains symbolic links.  On Windows, it converts forward slashes to backward slashes. To normalize case, use :func:`normcase`."
 msgstr ""
 
-#: ../../library/os.path.rst:339
+#: ../../library/os.path.rst:342
 msgid "Return the canonical path of the specified filename, eliminating any symbolic links encountered in the path (if they are supported by the operating system)."
 msgstr ""
 
-#: ../../library/os.path.rst:348
+#: ../../library/os.path.rst:351
 msgid "Return a relative filepath to *path* either from the current directory or from an optional *start* directory.  This is a path computation:  the filesystem is not accessed to confirm the existence or nature of *path* or *start*."
 msgstr ""
 
-#: ../../library/os.path.rst:353
+#: ../../library/os.path.rst:356
 msgid "*start* defaults to :attr:`os.curdir`."
 msgstr ""
 
-#: ../../library/os.path.rst:355
-#: ../../library/os.path.rst:367
-#: ../../library/os.path.rst:383
-#: ../../library/os.path.rst:399
+#: ../../library/os.path.rst:358
+#: ../../library/os.path.rst:370
+#: ../../library/os.path.rst:386
+#: ../../library/os.path.rst:402
 msgid "Availability: Unix, Windows."
 msgstr ""
 
-#: ../../library/os.path.rst:363
+#: ../../library/os.path.rst:366
 msgid "Return ``True`` if both pathname arguments refer to the same file or directory. This is determined by the device number and i-node number and raises an exception if an :func:`os.stat` call on either pathname fails."
 msgstr ""
 
-#: ../../library/os.path.rst:369
-#: ../../library/os.path.rst:385
-#: ../../library/os.path.rst:401
+#: ../../library/os.path.rst:372
+#: ../../library/os.path.rst:388
+#: ../../library/os.path.rst:404
 msgid "Added Windows support."
 msgstr ""
 
-#: ../../library/os.path.rst:372
+#: ../../library/os.path.rst:375
 msgid "Windows now uses the same implementation as all other platforms."
 msgstr ""
 
-#: ../../library/os.path.rst:381
+#: ../../library/os.path.rst:384
 msgid "Return ``True`` if the file descriptors *fp1* and *fp2* refer to the same file."
 msgstr ""
 
-#: ../../library/os.path.rst:394
+#: ../../library/os.path.rst:397
 msgid "Return ``True`` if the stat tuples *stat1* and *stat2* refer to the same file. These structures may have been returned by :func:`os.fstat`, :func:`os.lstat`, or :func:`os.stat`.  This function implements the underlying comparison used by :func:`samefile` and :func:`sameopenfile`."
 msgstr ""
 
-#: ../../library/os.path.rst:410
+#: ../../library/os.path.rst:413
 msgid "Split the pathname *path* into a pair, ``(head, tail)`` where *tail* is the last pathname component and *head* is everything leading up to that.  The *tail* part will never contain a slash; if *path* ends in a slash, *tail* will be empty.  If there is no slash in *path*, *head* will be empty.  If *path* is empty, both *head* and *tail* are empty.  Trailing slashes are stripped from *head* unless it is the root (one or more slashes only).  In all cases, ``join(head, tail)`` returns a path to the same location as *path* (but the strings may differ).  Also see the functions :func:`dirname` and :func:`basename`."
 msgstr ""
 
-#: ../../library/os.path.rst:426
+#: ../../library/os.path.rst:429
 msgid "Split the pathname *path* into a pair ``(drive, tail)`` where *drive* is either a mount point or the empty string.  On systems which do not use drive specifications, *drive* will always be the empty string.  In all cases, ``drive + tail`` will be the same as *path*."
 msgstr ""
 
-#: ../../library/os.path.rst:431
+#: ../../library/os.path.rst:434
 msgid "On Windows, splits a pathname into drive/UNC sharepoint and relative path."
 msgstr ""
 
-#: ../../library/os.path.rst:433
+#: ../../library/os.path.rst:436
 msgid "If the path contains a drive letter, drive will contain everything up to and including the colon. e.g. ``splitdrive(\"c:/dir\")`` returns ``(\"c:\", \"/dir\")``"
 msgstr ""
 
-#: ../../library/os.path.rst:437
+#: ../../library/os.path.rst:440
 msgid "If the path contains a UNC path, drive will contain the host name and share, up to but not including the fourth separator. e.g. ``splitdrive(\"//host/computer/dir\")`` returns ``(\"//host/computer\", \"/dir\")``"
 msgstr ""
 
-#: ../../library/os.path.rst:447
+#: ../../library/os.path.rst:450
 msgid "Split the pathname *path* into a pair ``(root, ext)``  such that ``root + ext == path``, and *ext* is empty or begins with a period and contains at most one period. Leading periods on the basename are  ignored; ``splitext('.cshrc')`` returns  ``('.cshrc', '')``."
 msgstr ""
 
-#: ../../library/os.path.rst:458
+#: ../../library/os.path.rst:461
 msgid "Use *splitdrive* instead."
 msgstr ""
 
-#: ../../library/os.path.rst:461
+#: ../../library/os.path.rst:464
 msgid "Split the pathname *path* into a pair ``(unc, rest)`` so that *unc* is the UNC mount point (such as ``r'\\\\host\\mount'``), if present, and *rest* the rest of the path (such as  ``r'\\path\\file.ext'``).  For paths containing drive letters, *unc* will always be the empty string."
 msgstr ""
 
-#: ../../library/os.path.rst:466
+#: ../../library/os.path.rst:469
 msgid "Availability:  Windows."
 msgstr ""
 
-#: ../../library/os.path.rst:471
+#: ../../library/os.path.rst:474
 msgid "``True`` if arbitrary Unicode strings can be used as file names (within limitations imposed by the file system)."
 msgstr ""
 

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +53,7 @@ msgid "`Cython <http://cython.org>`_ and its relative `Pyrex <https://www.cosc.c
 msgstr ""
 
 #: ../../faq/extending.rst:50
-msgid "If you need to interface to some C or C++ library for which no Python extension currently exists, you can try wrapping the library's data types and functions with a tool such as `SWIG <http://www.swig.org>`_.  `SIP <https://riverbankcomputing.com/software/sip/intro>`__, `CXX <http://cxx.sourceforge.net/>`_ `Boost <http://www.boost.org/libs/python/doc/index.html>`_, or `Weave <https://scipy.github.io/devdocs/tutorial/weave.html>`_ are also alternatives for wrapping C++ libraries."
+msgid "If you need to interface to some C or C++ library for which no Python extension currently exists, you can try wrapping the library's data types and functions with a tool such as `SWIG <http://www.swig.org>`_.  `SIP <https://riverbankcomputing.com/software/sip/intro>`__, `CXX <http://cxx.sourceforge.net/>`_ `Boost <http://www.boost.org/libs/python/doc/index.html>`_, or `Weave <https://github.com/scipy/weave>`_ are also alternatives for wrapping C++ libraries."
 msgstr ""
 
 #: ../../faq/extending.rst:61
@@ -60,7 +61,7 @@ msgid "How can I execute arbitrary Python statements from C?"
 msgstr ""
 
 #: ../../faq/extending.rst:63
-msgid "The highest-level function to do this is :c:func:`PyRun_SimpleString` which takes a single string argument to be executed in the context of the module ``__main__`` and returns 0 for success and -1 when an exception occurred (including ``SyntaxError``).  If you want more control, use :c:func:`PyRun_String`; see the source for :c:func:`PyRun_SimpleString` in ``Python/pythonrun.c``."
+msgid "The highest-level function to do this is :c:func:`PyRun_SimpleString` which takes a single string argument to be executed in the context of the module ``__main__`` and returns ``0`` for success and ``-1`` when an exception occurred (including ``SyntaxError``).  If you want more control, use :c:func:`PyRun_String`; see the source for :c:func:`PyRun_SimpleString` in ``Python/pythonrun.c``."
 msgstr ""
 
 #: ../../faq/extending.rst:72

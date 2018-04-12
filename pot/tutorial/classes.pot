@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -456,7 +457,7 @@ msgid "Generator Expressions"
 msgstr ""
 
 #: ../../tutorial/classes.rst:878
-msgid "Some simple generators can be coded succinctly as expressions using a syntax similar to list comprehensions but with parentheses instead of brackets.  These expressions are designed for situations where the generator is used right away by an enclosing function.  Generator expressions are more compact but less versatile than full generator definitions and tend to be more memory friendly than equivalent list comprehensions."
+msgid "Some simple generators can be coded succinctly as expressions using a syntax similar to list comprehensions but with parentheses instead of square brackets. These expressions are designed for situations where the generator is used right away by an enclosing function.  Generator expressions are more compact but less versatile than full generator definitions and tend to be more memory friendly than equivalent list comprehensions."
 msgstr ""
 
 #: ../../tutorial/classes.rst:885

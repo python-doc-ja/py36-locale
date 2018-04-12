@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -447,5 +448,9 @@ msgstr ""
 
 #: ../../library/test.rst:678
 msgid "Class used to record warnings for unit tests. See documentation of :func:`check_warnings` above for more details."
+msgstr ""
+
+#: ../../library/test.rst:684
+msgid "Simple :term:`path-like object`.  It implements the :meth:`__fspath__` method which just returns the *path* argument.  If *path* is an exception, it will be raised in :meth:`!__fspath__`."
 msgstr ""
 

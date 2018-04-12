@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,5 +50,9 @@ msgstr ""
 
 #: ../../library/getpass.rst:44
 msgid "This function checks the environment variables :envvar:`LOGNAME`, :envvar:`USER`, :envvar:`LNAME` and :envvar:`USERNAME`, in order, and returns the value of the first one which is set to a non-empty string.  If none are set, the login name from the password database is returned on systems which support the :mod:`pwd` module, otherwise, an exception is raised."
+msgstr ""
+
+#: ../../library/getpass.rst:51
+msgid "In general, this function should be preferred over :func:`os.getlogin()`."
 msgstr ""
 

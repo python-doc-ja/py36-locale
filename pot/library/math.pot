@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,7 +129,7 @@ msgid "Return the fractional and integer parts of *x*.  Both results carry the s
 msgstr ""
 
 #: ../../library/math.rst:180
-msgid "Return the :class:`~numbers.Real` value *x* truncated to an :class:`~numbers.Integral` (usually an integer). Delegates to ``x.__trunc__()``."
+msgid "Return the :class:`~numbers.Real` value *x* truncated to an :class:`~numbers.Integral` (usually an integer). Delegates to :meth:`x.__trunc__() <object.__trunc__>`."
 msgstr ""
 
 #: ../../library/math.rst:185

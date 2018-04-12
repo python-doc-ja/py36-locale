@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +37,7 @@ msgid "These tools and their built-in counterparts also work well with the high-
 msgstr ""
 
 #: ../../library/itertools.rst:35
-msgid "**Infinite Iterators:**"
+msgid "**Infinite iterators:**"
 msgstr ""
 
 #: ../../library/itertools.rst:38
@@ -287,7 +288,7 @@ msgid "``zip_longest('ABCD', 'xy', fillvalue='-') --> Ax By C- D-``"
 msgstr ""
 
 #: ../../library/itertools.rst:64
-msgid "**Combinatoric generators:**"
+msgid "**Combinatoric iterators:**"
 msgstr ""
 
 #: ../../library/itertools.rst:69
@@ -382,9 +383,9 @@ msgstr ""
 #: ../../library/itertools.rst:101
 #: ../../library/itertools.rst:193
 #: ../../library/itertools.rst:242
-#: ../../library/itertools.rst:468
-#: ../../library/itertools.rst:547
-#: ../../library/itertools.rst:600
+#: ../../library/itertools.rst:477
+#: ../../library/itertools.rst:556
+#: ../../library/itertools.rst:609
 msgid "Roughly equivalent to::"
 msgstr ""
 
@@ -497,107 +498,107 @@ msgstr ""
 msgid "Make an iterator that returns selected elements from the iterable. If *start* is non-zero, then elements from the iterable are skipped until start is reached. Afterward, elements are returned consecutively unless *step* is set higher than one which results in items being skipped.  If *stop* is ``None``, then iteration continues until the iterator is exhausted, if at all; otherwise, it stops at the specified position.  Unlike regular slicing, :func:`islice` does not support negative values for *start*, *stop*, or *step*.  Can be used to extract related fields from data where the internal structure has been flattened (for example, a multi-line report may list a name field on every third line).  Roughly equivalent to::"
 msgstr ""
 
-#: ../../library/itertools.rst:448
+#: ../../library/itertools.rst:457
 msgid "If *start* is ``None``, then iteration starts at zero. If *step* is ``None``, then the step defaults to one."
 msgstr ""
 
-#: ../../library/itertools.rst:454
+#: ../../library/itertools.rst:463
 msgid "Return successive *r* length permutations of elements in the *iterable*."
 msgstr ""
 
-#: ../../library/itertools.rst:456
+#: ../../library/itertools.rst:465
 msgid "If *r* is not specified or is ``None``, then *r* defaults to the length of the *iterable* and all possible full-length permutations are generated."
 msgstr ""
 
-#: ../../library/itertools.rst:460
+#: ../../library/itertools.rst:469
 msgid "Permutations are emitted in lexicographic sort order.  So, if the input *iterable* is sorted, the permutation tuples will be produced in sorted order."
 msgstr ""
 
-#: ../../library/itertools.rst:464
+#: ../../library/itertools.rst:473
 msgid "Elements are treated as unique based on their position, not on their value.  So if the input elements are unique, there will be no repeat values in each permutation."
 msgstr ""
 
-#: ../../library/itertools.rst:495
+#: ../../library/itertools.rst:504
 msgid "The code for :func:`permutations` can be also expressed as a subsequence of :func:`product`, filtered to exclude entries with repeated elements (those from the same position in the input pool)::"
 msgstr ""
 
-#: ../../library/itertools.rst:507
+#: ../../library/itertools.rst:516
 msgid "The number of items returned is ``n! / (n-r)!`` when ``0 <= r <= n`` or zero when ``r > n``."
 msgstr ""
 
-#: ../../library/itertools.rst:512
+#: ../../library/itertools.rst:521
 msgid "Cartesian product of input iterables."
 msgstr ""
 
-#: ../../library/itertools.rst:514
+#: ../../library/itertools.rst:523
 msgid "Roughly equivalent to nested for-loops in a generator expression. For example, ``product(A, B)`` returns the same as ``((x,y) for x in A for y in B)``."
 msgstr ""
 
-#: ../../library/itertools.rst:517
+#: ../../library/itertools.rst:526
 msgid "The nested loops cycle like an odometer with the rightmost element advancing on every iteration.  This pattern creates a lexicographic ordering so that if the input's iterables are sorted, the product tuples are emitted in sorted order."
 msgstr ""
 
-#: ../../library/itertools.rst:522
+#: ../../library/itertools.rst:531
 msgid "To compute the product of an iterable with itself, specify the number of repetitions with the optional *repeat* keyword argument.  For example, ``product(A, repeat=4)`` means the same as ``product(A, A, A, A)``."
 msgstr ""
 
-#: ../../library/itertools.rst:526
+#: ../../library/itertools.rst:535
 msgid "This function is roughly equivalent to the following code, except that the actual implementation does not build up intermediate results in memory::"
 msgstr ""
 
-#: ../../library/itertools.rst:542
+#: ../../library/itertools.rst:551
 msgid "Make an iterator that returns *object* over and over again. Runs indefinitely unless the *times* argument is specified. Used as argument to :func:`map` for invariant parameters to the called function.  Also used with :func:`zip` to create an invariant part of a tuple record."
 msgstr ""
 
-#: ../../library/itertools.rst:558
+#: ../../library/itertools.rst:567
 msgid "A common use for *repeat* is to supply a stream of constant values to *map* or *zip*::"
 msgstr ""
 
-#: ../../library/itertools.rst:566
+#: ../../library/itertools.rst:575
 msgid "Make an iterator that computes the function using arguments obtained from the iterable.  Used instead of :func:`map` when argument parameters are already grouped in tuples from a single iterable (the data has been \"pre-zipped\").  The difference between :func:`map` and :func:`starmap` parallels the distinction between ``function(a,b)`` and ``function(*c)``. Roughly equivalent to::"
 msgstr ""
 
-#: ../../library/itertools.rst:580
+#: ../../library/itertools.rst:589
 msgid "Make an iterator that returns elements from the iterable as long as the predicate is true.  Roughly equivalent to::"
 msgstr ""
 
-#: ../../library/itertools.rst:594
+#: ../../library/itertools.rst:603
 msgid "Return *n* independent iterators from a single iterable."
 msgstr ""
 
-#: ../../library/itertools.rst:596
+#: ../../library/itertools.rst:605
 msgid "The following Python code helps explain what *tee* does (although the actual implementation is more complex and uses only a single underlying :abbr:`FIFO (first-in, first-out)` queue)."
 msgstr ""
 
-#: ../../library/itertools.rst:617
+#: ../../library/itertools.rst:626
 msgid "Once :func:`tee` has made a split, the original *iterable* should not be used anywhere else; otherwise, the *iterable* could get advanced without the tee objects being informed."
 msgstr ""
 
-#: ../../library/itertools.rst:621
+#: ../../library/itertools.rst:630
 msgid "This itertool may require significant auxiliary storage (depending on how much temporary data needs to be stored). In general, if one iterator uses most or all of the data before another iterator starts, it is faster to use :func:`list` instead of :func:`tee`."
 msgstr ""
 
-#: ../../library/itertools.rst:629
+#: ../../library/itertools.rst:638
 msgid "Make an iterator that aggregates elements from each of the iterables. If the iterables are of uneven length, missing values are filled-in with *fillvalue*. Iteration continues until the longest iterable is exhausted.  Roughly equivalent to::"
 msgstr ""
 
-#: ../../library/itertools.rst:654
+#: ../../library/itertools.rst:663
 msgid "If one of the iterables is potentially infinite, then the :func:`zip_longest` function should be wrapped with something that limits the number of calls (for example :func:`islice` or :func:`takewhile`).  If not specified, *fillvalue* defaults to ``None``."
 msgstr ""
 
-#: ../../library/itertools.rst:663
+#: ../../library/itertools.rst:672
 msgid "Itertools Recipes"
 msgstr ""
 
-#: ../../library/itertools.rst:665
+#: ../../library/itertools.rst:674
 msgid "This section shows recipes for creating an extended toolset using the existing itertools as building blocks."
 msgstr ""
 
-#: ../../library/itertools.rst:668
+#: ../../library/itertools.rst:677
 msgid "The extended tools offer the same high performance as the underlying toolset. The superior memory performance is kept by processing elements one at a time rather than bringing the whole iterable into memory all at once. Code volume is kept small by linking the tools together in a functional style which helps eliminate temporary variables.  High speed is retained by preferring \"vectorized\" building blocks over the use of for-loops and :term:`generator`\\s which incur interpreter overhead."
 msgstr ""
 
-#: ../../library/itertools.rst:861
+#: ../../library/itertools.rst:899
 msgid "Note, many of the above recipes can be optimized by replacing global lookups with local variables defined as default values.  For example, the *dotproduct* recipe can be written as::"
 msgstr ""
 

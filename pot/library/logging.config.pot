@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -365,114 +366,114 @@ msgid "As well as external objects, there is sometimes also a need to refer to o
 msgstr ""
 
 #: ../../library/logging.config.rst:531
-msgid "However, a more generic mechanism is needed for user-defined objects which are not known to the :mod:`logging` module.  For example, consider :class:`logging.handlers.MemoryHandler`, which takes a ``target`` argument which is another handler to delegate to. Since the system already knows about this class, then in the configuration, the given ``target`` just needs to be the object id of the relevant target handler, and the system will resolve to the handler from the id.  If, however, a user defines a ``my.package.MyHandler`` which has an ``alternate`` handler, the configuration system would not know that the ``alternate`` referred to a handler.  To cater for this, a generic resolution system allows the user to specify::"
+msgid "However, a more generic mechanism is needed for user-defined objects which are not known to the :mod:`logging` module.  For example, consider :class:`logging.handlers.MemoryHandler`, which takes a ``target`` argument which is another handler to delegate to. Since the system already knows about this class, then in the configuration, the given ``target`` just needs to be the object id of the relevant target handler, and the system will resolve to the handler from the id.  If, however, a user defines a ``my.package.MyHandler`` which has an ``alternate`` handler, the configuration system would not know that the ``alternate`` referred to a handler.  To cater for this, a generic resolution system allows the user to specify:"
 msgstr ""
 
-#: ../../library/logging.config.rst:551
-msgid "The literal string ``'cfg://handlers.file'`` will be resolved in an analogous way to strings with the ``ext://`` prefix, but looking in the configuration itself rather than the import namespace.  The mechanism allows access by dot or by index, in a similar way to that provided by ``str.format``.  Thus, given the following snippet::"
+#: ../../library/logging.config.rst:553
+msgid "The literal string ``'cfg://handlers.file'`` will be resolved in an analogous way to strings with the ``ext://`` prefix, but looking in the configuration itself rather than the import namespace.  The mechanism allows access by dot or by index, in a similar way to that provided by ``str.format``.  Thus, given the following snippet:"
 msgstr ""
 
-#: ../../library/logging.config.rst:567
+#: ../../library/logging.config.rst:571
 msgid "in the configuration, the string ``'cfg://handlers'`` would resolve to the dict with key ``handlers``, the string ``'cfg://handlers.email`` would resolve to the dict with key ``email`` in the ``handlers`` dict, and so on.  The string ``'cfg://handlers.email.toaddrs[1]`` would resolve to ``'dev_team.domain.tld'`` and the string ``'cfg://handlers.email.toaddrs[0]'`` would resolve to the value ``'support_team@domain.tld'``. The ``subject`` value could be accessed using either ``'cfg://handlers.email.subject'`` or, equivalently, ``'cfg://handlers.email[subject]'``.  The latter form only needs to be used if the key contains spaces or non-alphanumeric characters.  If an index value consists only of decimal digits, access will be attempted using the corresponding integer value, falling back to the string value if needed."
 msgstr ""
 
-#: ../../library/logging.config.rst:581
+#: ../../library/logging.config.rst:585
 msgid "Given a string ``cfg://handlers.myhandler.mykey.123``, this will resolve to ``config_dict['handlers']['myhandler']['mykey']['123']``. If the string is specified as ``cfg://handlers.myhandler.mykey[123]``, the system will attempt to retrieve the value from ``config_dict['handlers']['myhandler']['mykey'][123]``, and fall back to ``config_dict['handlers']['myhandler']['mykey']['123']`` if that fails."
 msgstr ""
 
-#: ../../library/logging.config.rst:593
+#: ../../library/logging.config.rst:597
 msgid "Import resolution and custom importers"
 msgstr ""
 
-#: ../../library/logging.config.rst:595
+#: ../../library/logging.config.rst:599
 msgid "Import resolution, by default, uses the builtin :func:`__import__` function to do its importing. You may want to replace this with your own importing mechanism: if so, you can replace the :attr:`importer` attribute of the :class:`DictConfigurator` or its superclass, the :class:`BaseConfigurator` class. However, you need to be careful because of the way functions are accessed from classes via descriptors. If you are using a Python callable to do your imports, and you want to define it at class level rather than instance level, you need to wrap it with :func:`staticmethod`. For example::"
 msgstr ""
 
-#: ../../library/logging.config.rst:610
+#: ../../library/logging.config.rst:614
 msgid "You don't need to wrap with :func:`staticmethod` if you're setting the import callable on a configurator *instance*."
 msgstr ""
 
-#: ../../library/logging.config.rst:617
+#: ../../library/logging.config.rst:621
 msgid "Configuration file format"
 msgstr ""
 
-#: ../../library/logging.config.rst:619
+#: ../../library/logging.config.rst:623
 msgid "The configuration file format understood by :func:`fileConfig` is based on :mod:`configparser` functionality. The file must contain sections called ``[loggers]``, ``[handlers]`` and ``[formatters]`` which identify by name the entities of each type which are defined in the file. For each such entity, there is a separate section which identifies how that entity is configured.  Thus, for a logger named ``log01`` in the ``[loggers]`` section, the relevant configuration details are held in a section ``[logger_log01]``. Similarly, a handler called ``hand01`` in the ``[handlers]`` section will have its configuration held in a section called ``[handler_hand01]``, while a formatter called ``form01`` in the ``[formatters]`` section will have its configuration specified in a section called ``[formatter_form01]``. The root logger configuration must be specified in a section called ``[logger_root]``."
 msgstr ""
 
-#: ../../library/logging.config.rst:634
+#: ../../library/logging.config.rst:638
 msgid "The :func:`fileConfig` API is older than the :func:`dictConfig` API and does not provide functionality to cover certain aspects of logging. For example, you cannot configure :class:`~logging.Filter` objects, which provide for filtering of messages beyond simple integer levels, using :func:`fileConfig`. If you need to have instances of :class:`~logging.Filter` in your logging configuration, you will need to use :func:`dictConfig`. Note that future enhancements to configuration functionality will be added to :func:`dictConfig`, so it's worth considering transitioning to this newer API when it's convenient to do so."
 msgstr ""
 
-#: ../../library/logging.config.rst:644
+#: ../../library/logging.config.rst:648
 msgid "Examples of these sections in the file are given below."
 msgstr ""
 
-#: ../../library/logging.config.rst:657
+#: ../../library/logging.config.rst:661
 msgid "The root logger must specify a level and a list of handlers. An example of a root logger section is given below."
 msgstr ""
 
-#: ../../library/logging.config.rst:666
+#: ../../library/logging.config.rst:670
 msgid "The ``level`` entry can be one of ``DEBUG, INFO, WARNING, ERROR, CRITICAL`` or ``NOTSET``. For the root logger only, ``NOTSET`` means that all messages will be logged. Level values are :func:`eval`\\ uated in the context of the ``logging`` package's namespace."
 msgstr ""
 
-#: ../../library/logging.config.rst:671
+#: ../../library/logging.config.rst:675
 msgid "The ``handlers`` entry is a comma-separated list of handler names, which must appear in the ``[handlers]`` section. These names must appear in the ``[handlers]`` section and have corresponding sections in the configuration file."
 msgstr ""
 
-#: ../../library/logging.config.rst:676
+#: ../../library/logging.config.rst:680
 msgid "For loggers other than the root logger, some additional information is required. This is illustrated by the following example."
 msgstr ""
 
-#: ../../library/logging.config.rst:687
+#: ../../library/logging.config.rst:691
 msgid "The ``level`` and ``handlers`` entries are interpreted as for the root logger, except that if a non-root logger's level is specified as ``NOTSET``, the system consults loggers higher up the hierarchy to determine the effective level of the logger. The ``propagate`` entry is set to 1 to indicate that messages must propagate to handlers higher up the logger hierarchy from this logger, or 0 to indicate that messages are **not** propagated to handlers up the hierarchy. The ``qualname`` entry is the hierarchical channel name of the logger, that is to say the name used by the application to get the logger."
 msgstr ""
 
-#: ../../library/logging.config.rst:696
+#: ../../library/logging.config.rst:700
 msgid "Sections which specify handler configuration are exemplified by the following."
 msgstr ""
 
-#: ../../library/logging.config.rst:706
+#: ../../library/logging.config.rst:710
 msgid "The ``class`` entry indicates the handler's class (as determined by :func:`eval` in the ``logging`` package's namespace). The ``level`` is interpreted as for loggers, and ``NOTSET`` is taken to mean 'log everything'."
 msgstr ""
 
-#: ../../library/logging.config.rst:710
+#: ../../library/logging.config.rst:714
 msgid "The ``formatter`` entry indicates the key name of the formatter for this handler. If blank, a default formatter (``logging._defaultFormatter``) is used. If a name is specified, it must appear in the ``[formatters]`` section and have a corresponding section in the configuration file."
 msgstr ""
 
-#: ../../library/logging.config.rst:715
+#: ../../library/logging.config.rst:719
 msgid "The ``args`` entry, when :func:`eval`\\ uated in the context of the ``logging`` package's namespace, is the list of arguments to the constructor for the handler class. Refer to the constructors for the relevant handlers, or to the examples below, to see how typical entries are constructed."
 msgstr ""
 
-#: ../../library/logging.config.rst:771
+#: ../../library/logging.config.rst:775
 msgid "Sections which specify formatter configuration are typified by the following."
 msgstr ""
 
-#: ../../library/logging.config.rst:780
+#: ../../library/logging.config.rst:784
 msgid "The ``format`` entry is the overall format string, and the ``datefmt`` entry is the :func:`strftime`\\ -compatible date/time format string.  If empty, the package substitutes ISO8601 format date/times, which is almost equivalent to specifying the date format string ``'%Y-%m-%d %H:%M:%S'``.  The ISO8601 format also specifies milliseconds, which are appended to the result of using the above format string, with a comma separator.  An example time in ISO8601 format is ``2003-01-23 00:29:50,411``."
 msgstr ""
 
-#: ../../library/logging.config.rst:788
+#: ../../library/logging.config.rst:792
 msgid "The ``class`` entry is optional.  It indicates the name of the formatter's class (as a dotted module and class name.)  This option is useful for instantiating a :class:`~logging.Formatter` subclass.  Subclasses of :class:`~logging.Formatter` can present exception tracebacks in an expanded or condensed format."
 msgstr ""
 
-#: ../../library/logging.config.rst:796
+#: ../../library/logging.config.rst:800
 msgid "Due to the use of :func:`eval` as described above, there are potential security risks which result from using the :func:`listen` to send and receive configurations via sockets. The risks are limited to where multiple users with no mutual trust run code on the same machine; see the :func:`listen` documentation for more information."
 msgstr ""
 
-#: ../../library/logging.config.rst:805
+#: ../../library/logging.config.rst:809
 msgid "Module :mod:`logging`"
 msgstr ""
 
-#: ../../library/logging.config.rst:805
+#: ../../library/logging.config.rst:809
 msgid "API reference for the logging module."
 msgstr ""
 
-#: ../../library/logging.config.rst:807
+#: ../../library/logging.config.rst:811
 msgid "Module :mod:`logging.handlers`"
 msgstr ""
 
-#: ../../library/logging.config.rst:808
+#: ../../library/logging.config.rst:812
 msgid "Useful handlers included with the logging module."
 msgstr ""
 

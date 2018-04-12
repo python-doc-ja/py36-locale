@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -439,7 +440,7 @@ msgid "Instances of the :class:`Popen` class have the following methods:"
 msgstr ""
 
 #: ../../library/subprocess.rst:586
-msgid "Check if child process has terminated.  Set and return :attr:`~Popen.returncode` attribute."
+msgid "Check if child process has terminated.  Set and return :attr:`~Popen.returncode` attribute. Otherwise, returns ``None``."
 msgstr ""
 
 #: ../../library/subprocess.rst:592
@@ -694,202 +695,206 @@ msgstr ""
 msgid "Support for the *input* keyword argument was added."
 msgstr ""
 
-#: ../../library/subprocess.rst:962
+#: ../../library/subprocess.rst:959
+msgid "*encoding* and *errors* were added.  See :func:`run` for details."
+msgstr ""
+
+#: ../../library/subprocess.rst:965
 msgid "Replacing Older Functions with the :mod:`subprocess` Module"
 msgstr ""
 
-#: ../../library/subprocess.rst:964
+#: ../../library/subprocess.rst:967
 msgid "In this section, \"a becomes b\" means that b can be used as a replacement for a."
 msgstr ""
 
-#: ../../library/subprocess.rst:968
+#: ../../library/subprocess.rst:971
 msgid "All \"a\" functions in this section fail (more or less) silently if the executed program cannot be found; the \"b\" replacements raise :exc:`OSError` instead."
 msgstr ""
 
-#: ../../library/subprocess.rst:972
+#: ../../library/subprocess.rst:975
 msgid "In addition, the replacements using :func:`check_output` will fail with a :exc:`CalledProcessError` if the requested operation produces a non-zero return code. The output is still available as the :attr:`~CalledProcessError.output` attribute of the raised exception."
 msgstr ""
 
-#: ../../library/subprocess.rst:977
+#: ../../library/subprocess.rst:980
 msgid "In the following examples, we assume that the relevant functions have already been imported from the :mod:`subprocess` module."
 msgstr ""
 
-#: ../../library/subprocess.rst:982
+#: ../../library/subprocess.rst:985
 msgid "Replacing /bin/sh shell backquote"
 msgstr ""
 
-#: ../../library/subprocess.rst:988
-#: ../../library/subprocess.rst:999
-#: ../../library/subprocess.rst:1016
+#: ../../library/subprocess.rst:991
+#: ../../library/subprocess.rst:1002
+#: ../../library/subprocess.rst:1019
 msgid "becomes::"
 msgstr ""
 
-#: ../../library/subprocess.rst:993
+#: ../../library/subprocess.rst:996
 msgid "Replacing shell pipeline"
 msgstr ""
 
-#: ../../library/subprocess.rst:1006
+#: ../../library/subprocess.rst:1009
 msgid "The p1.stdout.close() call after starting the p2 is important in order for p1 to receive a SIGPIPE if p2 exits before p1."
 msgstr ""
 
-#: ../../library/subprocess.rst:1009
+#: ../../library/subprocess.rst:1012
 msgid "Alternatively, for trusted input, the shell's own pipeline support may still be used directly:"
 msgstr ""
 
-#: ../../library/subprocess.rst:1022
+#: ../../library/subprocess.rst:1025
 msgid "Replacing :func:`os.system`"
 msgstr ""
 
-#: ../../library/subprocess.rst:1030
+#: ../../library/subprocess.rst:1033
 msgid "Notes:"
 msgstr ""
 
-#: ../../library/subprocess.rst:1032
+#: ../../library/subprocess.rst:1035
 msgid "Calling the program through the shell is usually not required."
 msgstr ""
 
-#: ../../library/subprocess.rst:1034
+#: ../../library/subprocess.rst:1037
 msgid "A more realistic example would look like this::"
 msgstr ""
 
-#: ../../library/subprocess.rst:1047
+#: ../../library/subprocess.rst:1050
 msgid "Replacing the :func:`os.spawn <os.spawnl>` family"
 msgstr ""
 
-#: ../../library/subprocess.rst:1049
+#: ../../library/subprocess.rst:1052
 msgid "P_NOWAIT example::"
 msgstr ""
 
-#: ../../library/subprocess.rst:1055
+#: ../../library/subprocess.rst:1058
 msgid "P_WAIT example::"
 msgstr ""
 
-#: ../../library/subprocess.rst:1061
+#: ../../library/subprocess.rst:1064
 msgid "Vector example::"
 msgstr ""
 
-#: ../../library/subprocess.rst:1067
+#: ../../library/subprocess.rst:1070
 msgid "Environment example::"
 msgstr ""
 
-#: ../../library/subprocess.rst:1076
+#: ../../library/subprocess.rst:1079
 msgid "Replacing :func:`os.popen`, :func:`os.popen2`, :func:`os.popen3`"
 msgstr ""
 
-#: ../../library/subprocess.rst:1106
+#: ../../library/subprocess.rst:1109
 msgid "Return code handling translates as follows::"
 msgstr ""
 
-#: ../../library/subprocess.rst:1122
+#: ../../library/subprocess.rst:1125
 msgid "Replacing functions from the :mod:`popen2` module"
 msgstr ""
 
-#: ../../library/subprocess.rst:1126
+#: ../../library/subprocess.rst:1129
 msgid "If the cmd argument to popen2 functions is a string, the command is executed through /bin/sh.  If it is a list, the command is directly executed."
 msgstr ""
 
-#: ../../library/subprocess.rst:1145
+#: ../../library/subprocess.rst:1148
 msgid ":class:`popen2.Popen3` and :class:`popen2.Popen4` basically work as :class:`subprocess.Popen`, except that:"
 msgstr ""
 
-#: ../../library/subprocess.rst:1148
+#: ../../library/subprocess.rst:1151
 msgid ":class:`Popen` raises an exception if the execution fails."
 msgstr ""
 
-#: ../../library/subprocess.rst:1150
+#: ../../library/subprocess.rst:1153
 msgid "the *capturestderr* argument is replaced with the *stderr* argument."
 msgstr ""
 
-#: ../../library/subprocess.rst:1152
+#: ../../library/subprocess.rst:1155
 msgid "``stdin=PIPE`` and ``stdout=PIPE`` must be specified."
 msgstr ""
 
-#: ../../library/subprocess.rst:1154
+#: ../../library/subprocess.rst:1157
 msgid "popen2 closes all file descriptors by default, but you have to specify ``close_fds=True`` with :class:`Popen` to guarantee this behavior on all platforms or past Python versions."
 msgstr ""
 
-#: ../../library/subprocess.rst:1160
+#: ../../library/subprocess.rst:1163
 msgid "Legacy Shell Invocation Functions"
 msgstr ""
 
-#: ../../library/subprocess.rst:1162
+#: ../../library/subprocess.rst:1165
 msgid "This module also provides the following legacy functions from the 2.x ``commands`` module. These operations implicitly invoke the system shell and none of the guarantees described above regarding security and exception handling consistency are valid for these functions."
 msgstr ""
 
-#: ../../library/subprocess.rst:1169
+#: ../../library/subprocess.rst:1172
 msgid "Return ``(exitcode, output)`` of executing *cmd* in a shell."
 msgstr ""
 
-#: ../../library/subprocess.rst:1171
+#: ../../library/subprocess.rst:1174
 msgid "Execute the string *cmd* in a shell with :meth:`Popen.check_output` and return a 2-tuple ``(exitcode, output)``. The locale encoding is used; see the notes on :ref:`frequently-used-arguments` for more details."
 msgstr ""
 
-#: ../../library/subprocess.rst:1175
+#: ../../library/subprocess.rst:1178
 msgid "A trailing newline is stripped from the output. The exit code for the command can be interpreted as the return code of subprocess.  Example::"
 msgstr ""
 
-#: ../../library/subprocess.rst:1188
-#: ../../library/subprocess.rst:1207
+#: ../../library/subprocess.rst:1191
+#: ../../library/subprocess.rst:1210
 msgid "Availability: POSIX & Windows"
 msgstr ""
 
-#: ../../library/subprocess.rst:1190
+#: ../../library/subprocess.rst:1193
 msgid "Windows support was added."
 msgstr ""
 
-#: ../../library/subprocess.rst:1193
+#: ../../library/subprocess.rst:1196
 msgid "The function now returns (exitcode, output) instead of (status, output) as it did in Python 3.3.3 and earlier.  See :func:`WEXITSTATUS`."
 msgstr ""
 
-#: ../../library/subprocess.rst:1199
+#: ../../library/subprocess.rst:1202
 msgid "Return output (stdout and stderr) of executing *cmd* in a shell."
 msgstr ""
 
-#: ../../library/subprocess.rst:1201
+#: ../../library/subprocess.rst:1204
 msgid "Like :func:`getstatusoutput`, except the exit status is ignored and the return value is a string containing the command's output.  Example::"
 msgstr ""
 
-#: ../../library/subprocess.rst:1209
+#: ../../library/subprocess.rst:1212
 msgid "Windows support added"
 msgstr ""
 
-#: ../../library/subprocess.rst:1214
+#: ../../library/subprocess.rst:1217
 msgid "Notes"
 msgstr ""
 
-#: ../../library/subprocess.rst:1219
+#: ../../library/subprocess.rst:1222
 msgid "Converting an argument sequence to a string on Windows"
 msgstr ""
 
-#: ../../library/subprocess.rst:1221
+#: ../../library/subprocess.rst:1224
 msgid "On Windows, an *args* sequence is converted to a string that can be parsed using the following rules (which correspond to the rules used by the MS C runtime):"
 msgstr ""
 
-#: ../../library/subprocess.rst:1225
+#: ../../library/subprocess.rst:1228
 msgid "Arguments are delimited by white space, which is either a space or a tab."
 msgstr ""
 
-#: ../../library/subprocess.rst:1228
+#: ../../library/subprocess.rst:1231
 msgid "A string surrounded by double quotation marks is interpreted as a single argument, regardless of white space contained within.  A quoted string can be embedded in an argument."
 msgstr ""
 
-#: ../../library/subprocess.rst:1233
+#: ../../library/subprocess.rst:1236
 msgid "A double quotation mark preceded by a backslash is interpreted as a literal double quotation mark."
 msgstr ""
 
-#: ../../library/subprocess.rst:1236
+#: ../../library/subprocess.rst:1239
 msgid "Backslashes are interpreted literally, unless they immediately precede a double quotation mark."
 msgstr ""
 
-#: ../../library/subprocess.rst:1239
+#: ../../library/subprocess.rst:1242
 msgid "If backslashes immediately precede a double quotation mark, every pair of backslashes is interpreted as a literal backslash.  If the number of backslashes is odd, the last backslash escapes the next double quotation mark as described in rule 3."
 msgstr ""
 
-#: ../../library/subprocess.rst:1248
+#: ../../library/subprocess.rst:1251
 msgid ":mod:`shlex`"
 msgstr ""
 
-#: ../../library/subprocess.rst:1249
+#: ../../library/subprocess.rst:1252
 msgid "Module which provides function to parse and escape command lines."
 msgstr ""
 

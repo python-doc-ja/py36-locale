@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -169,55 +170,51 @@ msgstr ""
 msgid "Decode the base85-encoded :term:`bytes-like object` or ASCII string *b* and return the decoded :class:`bytes`.  Padding is implicitly removed, if necessary."
 msgstr ""
 
-#: ../../library/base64.rst:222
-msgid "Both Base85 and Ascii85 have an expansion factor of 5 to 4 (5 Base85 or Ascii85 characters can encode 4 binary bytes), while the better-known Base64 has an expansion factor of 6 to 4.  They are therefore more efficient when space expensive.  They differ by details such as the character map used for encoding."
-msgstr ""
-
-#: ../../library/base64.rst:229
+#: ../../library/base64.rst:221
 msgid "The legacy interface:"
 msgstr ""
 
-#: ../../library/base64.rst:233
+#: ../../library/base64.rst:225
 msgid "Decode the contents of the binary *input* file and write the resulting binary data to the *output* file. *input* and *output* must be :term:`file objects <file object>`. *input* will be read until ``input.readline()`` returns an empty bytes object."
 msgstr ""
 
-#: ../../library/base64.rst:241
+#: ../../library/base64.rst:233
 msgid "Decode the :term:`bytes-like object` *s*, which must contain one or more lines of base64 encoded data, and return the decoded :class:`bytes`."
 msgstr ""
 
-#: ../../library/base64.rst:248
+#: ../../library/base64.rst:240
 msgid "Deprecated alias of :func:`decodebytes`."
 msgstr ""
 
-#: ../../library/base64.rst:255
+#: ../../library/base64.rst:247
 msgid "Encode the contents of the binary *input* file and write the resulting base64 encoded data to the *output* file. *input* and *output* must be :term:`file objects <file object>`. *input* will be read until ``input.read()`` returns an empty bytes object. :func:`encode` inserts a newline character (``b'\\n'``) after every 76 bytes of the output, as well as ensuring that the output always ends with a newline, as per :rfc:`2045` (MIME)."
 msgstr ""
 
-#: ../../library/base64.rst:265
+#: ../../library/base64.rst:257
 msgid "Encode the :term:`bytes-like object` *s*, which can contain arbitrary binary data, and return :class:`bytes` containing the base64-encoded data, with newlines (``b'\\n'``) inserted after every 76 bytes of output, and ensuring that there is a trailing newline, as per :rfc:`2045` (MIME)."
 msgstr ""
 
-#: ../../library/base64.rst:274
+#: ../../library/base64.rst:266
 msgid "Deprecated alias of :func:`encodebytes`."
 msgstr ""
 
-#: ../../library/base64.rst:279
+#: ../../library/base64.rst:271
 msgid "An example usage of the module:"
 msgstr ""
 
-#: ../../library/base64.rst:293
+#: ../../library/base64.rst:285
 msgid "Module :mod:`binascii`"
 msgstr ""
 
-#: ../../library/base64.rst:293
+#: ../../library/base64.rst:285
 msgid "Support module containing ASCII-to-binary and binary-to-ASCII conversions."
 msgstr ""
 
-#: ../../library/base64.rst:296
+#: ../../library/base64.rst:288
 msgid ":rfc:`1521` - MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies"
 msgstr ""
 
-#: ../../library/base64.rst:296
+#: ../../library/base64.rst:288
 msgid "Section 5.2, \"Base64 Content-Transfer-Encoding,\" provides the definition of the base64 encoding."
 msgstr ""
 

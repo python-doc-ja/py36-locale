@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,7 +61,7 @@ msgid "Returns the value of the ``Crawl-delay`` parameter from ``robots.txt`` fo
 msgstr ""
 
 #: ../../library/urllib.robotparser.rst:71
-msgid "Returns the contents of the ``Request-rate`` parameter from ``robots.txt`` in the form of a :func:`~collections.namedtuple` ``(requests, seconds)``.  If there is no such parameter or it doesn't apply to the *useragent* specified or the ``robots.txt`` entry for this parameter has invalid syntax, return ``None``."
+msgid "Returns the contents of the ``Request-rate`` parameter from ``robots.txt`` as a :term:`named tuple` ``RequestRate(requests, seconds)``. If there is no such parameter or it doesn't apply to the *useragent* specified or the ``robots.txt`` entry for this parameter has invalid syntax, return ``None``."
 msgstr ""
 
 #: ../../library/urllib.robotparser.rst:80

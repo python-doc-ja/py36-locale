@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2017, Python Software Foundation
+# Copyright (C) 2001-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,6 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-12 08:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +30,10 @@ msgstr ""
 
 #: ../../tools/templates/dummy.html:6
 msgid "CPython implementation detail:"
+msgstr ""
+
+#: ../../tools/templates/dummy.html:7
+msgid "Deprecated since version {deprecated}, will be removed in version {removed}"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:8
@@ -192,6 +197,58 @@ msgstr ""
 msgid "Copyright"
 msgstr ""
 
+#: ../../tools/templates/indexsidebar.html:1
+msgid "Download"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:2
+msgid "Download these documents"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:3
+msgid "Docs for other versions"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:5
+msgid "Python 3.8 (in development)"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:6
+msgid "Python 3.7 (pre-release)"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:7
+msgid "Python 3.5 (stable)"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:8
+msgid "Python 2.7 (stable)"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:9
+msgid "Old versions"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:12
+msgid "Other resources"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:15
+msgid "PEP Index"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:16
+msgid "Beginner's Guide"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:17
+msgid "Book List"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:18
+msgid "Audio/Visual Talks"
+msgstr ""
+
 #: ../../tools/templates/layout.html:9
 msgid "Documentation "
 msgstr ""
@@ -222,53 +279,5 @@ msgstr ""
 
 #: ../../tools/templates/layout.html:128
 msgid "Created using <a href=\"http://sphinx.pocoo.org/\">Sphinx</a> %(sphinx_version)s."
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:1
-msgid "Download"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:2
-msgid "Download these documents"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:3
-msgid "Docs for other versions"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:5
-msgid "Python 3.7 (in development)"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:6
-msgid "Python 3.5 (stable)"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:7
-msgid "Python 2.7 (stable)"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:8
-msgid "Old versions"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:11
-msgid "Other resources"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:14
-msgid "PEP Index"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:15
-msgid "Beginner's Guide"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:16
-msgid "Book List"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:17
-msgid "Audio/Visual Talks"
 msgstr ""
 
