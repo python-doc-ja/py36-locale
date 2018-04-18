@@ -84,7 +84,7 @@ msgid ""
 "use a particular package, as everyone interested in the package will need to"
 " have the new command implementation."
 msgstr ""
-"このアプローチは新実装をある特定のパッケージで利用したい時、そのパッケージに興味をもつ人全員がコマンドの新実装を必要とする時にもっとも価値があります。"
+"このアプローチは、新実装をある特定のパッケージで利用したい時、そのパッケージに興味をもつ人全員がコマンドの新実装を必要とする時にもっとも価値があります。"
 
 #: ../../distutils/extending.rst:59
 msgid ""
