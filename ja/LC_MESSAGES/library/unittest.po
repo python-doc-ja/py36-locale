@@ -1611,7 +1611,8 @@ msgstr ":meth:`.assertNotRegex`。"
 msgid ""
 "The name ``assertNotRegexpMatches`` is a deprecated alias for "
 ":meth:`.assertNotRegex`."
-msgstr "\"assretNotRegexpMatches\"は\"assertNotRegex\"のエイリアスであることから非推奨となります"
+msgstr ""
+"``assertNotRegexpMatches`` は :meth:`assertNotRegex` のエイリアスであることから非推奨となります。"
 
 #: ../../library/unittest.rst:1184
 msgid ""
@@ -2102,7 +2103,7 @@ msgstr ""
 #: ../../library/unittest.rst:1467
 msgid ""
 "the ``assertNotRegexpMatches`` name in favor of :meth:`.assertNotRegex`."
-msgstr "\"assertNotRegexpMatces\"は'assertNotRegex'にメソッド名が変更になりました"
+msgstr "``assertNotRegexpMatces`` は :meth:`assertNotRegex` にメソッド名が変更になりました。"
 
 #: ../../library/unittest.rst:1473
 msgid "Grouping tests"
