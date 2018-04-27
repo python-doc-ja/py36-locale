@@ -148,7 +148,7 @@ msgstr ""
 
 #: ../../library/typing.rst:131
 msgid "and typechecking for ``ProUserId`` will work as expected."
-msgstr ""
+msgstr "そして ``ProUserId`` に対する型検査は期待通りに動作します。"
 
 #: ../../library/typing.rst:133
 msgid "See :pep:`484` for more details."
