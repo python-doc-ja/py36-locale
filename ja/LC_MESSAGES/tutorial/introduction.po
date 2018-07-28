@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-05 15:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: cocoatomo, 2018\n"
+"Last-Translator: Atsuo Ishimoto <atsuoishimoto@gmail.com>, 2018\n"
 "Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -111,13 +111,13 @@ msgstr "Python では、冪乗を計算するのに ``**`` 演算子が使えま
 msgid ""
 "The equal sign (``=``) is used to assign a value to a variable. Afterwards, "
 "no result is displayed before the next interactive prompt::"
-msgstr "等号 (``=``) は変数に値を代入するときに使います。代入を行っても、結果は出力されず、次の入力プロンプトが表示されます。::"
+msgstr "等号 (``=``) は変数に値を代入します。代入を行っても、結果は出力されず、次の入力プロンプトだけが表示されます。::"
 
 #: ../../tutorial/introduction.rst:92
 msgid ""
 "If a variable is not \"defined\" (assigned a value), trying to use it will "
 "give you an error::"
-msgstr "変数が \"定義\" されていない (つまり値が代入されていない) 場合、その変数を使おうとするとエラーが発生します::"
+msgstr "\"定義\" されていない (つまり値が代入されていない) 変数を使おうとすると、エラーが発生します::"
 
 #: ../../tutorial/introduction.rst:100
 msgid ""
